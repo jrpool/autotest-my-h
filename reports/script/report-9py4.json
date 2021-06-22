@@ -1,0 +1,134 @@
+{
+  "scriptName": "comboHoylman",
+  "what": "Test of the combo command on Manhattan Borough President candidates",
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium"
+    },
+    {
+      "type": "url",
+      "which": "https://www.bradhoylman.com/",
+      "what": "Brad Hoylman",
+      "result": "https://www.bradhoylman.com/"
+    },
+    {
+      "type": "combo",
+      "which": [
+        "combo5",
+        "axeS",
+        "wave1",
+        "linkUlS",
+        "focusOutlineS",
+        "focOpS"
+      ],
+      "url": "https://www.bradhoylman.com/",
+      "result": {
+        "what": "combination of tests",
+        "axeS": {
+          "elementCount": 897,
+          "warnings": 0,
+          "violations": {
+            "minor": 0,
+            "moderate": 2,
+            "serious": 11,
+            "critical": 3
+          }
+        },
+        "wave1": {
+          "status": {
+            "success": true,
+            "httpstatuscode": 200
+          },
+          "statistics": {
+            "pagetitle": "Brad For BP",
+            "pageurl": "https://www.bradhoylman.com/",
+            "time": 3.32,
+            "creditsremaining": 62,
+            "allitemcount": 240,
+            "totalelements": 898,
+            "waveurl": "http://wave.webaim.org/report?url=https://www.bradhoylman.com/",
+            "domid": "15f2e3cbfbda9fa156ce013abbee4255"
+          },
+          "categories": {
+            "error": {
+              "description": "Errors",
+              "count": 3
+            },
+            "contrast": {
+              "description": "Contrast Errors",
+              "count": 5
+            },
+            "alert": {
+              "description": "Alerts",
+              "count": 135
+            },
+            "feature": {
+              "description": "Features",
+              "count": 69
+            },
+            "structure": {
+              "description": "Structural Elements",
+              "count": 15
+            },
+            "aria": {
+              "description": "ARIA",
+              "count": 13
+            }
+          }
+        },
+        "linkUlS": {
+          "result": {
+            "links": 55,
+            "inline": {
+              "total": 12,
+              "underlined": 1,
+              "ulPercent": 8
+            }
+          }
+        },
+        "focusOutlineS": {
+          "result": {
+            "focusableCount": 49,
+            "outlinedCount": 48,
+            "outlinedPercent": 97
+          }
+        },
+        "focOpS": {
+          "result": {
+            "operableButNotFocusable": {
+              "total": 66,
+              "tagNames": {
+                "a": 12,
+                "button": 2,
+                "circle": 2,
+                "div": 14,
+                "g": 1,
+                "img": 14,
+                "path": 1,
+                "span": 6,
+                "strong": 4,
+                "svg": 4,
+                "use": 6
+              }
+            },
+            "focusableButNotOperable": {
+              "total": 1,
+              "tagNames": {
+                "iframe": 1
+              }
+            },
+            "focusableAndOperable": {
+              "total": 48,
+              "tagNames": {
+                "a": 43,
+                "input": 5
+              }
+            }
+          }
+        },
+        "score": 670
+      }
+    }
+  ]
+}
