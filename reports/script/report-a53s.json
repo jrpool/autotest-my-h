@@ -1,0 +1,127 @@
+{
+  "scriptName": "comboLevine",
+  "what": "Test of the combo command on Manhattan Borough President candidates",
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium"
+    },
+    {
+      "type": "url",
+      "which": "http://votemarklevine.com/",
+      "what": "Mark Levine",
+      "result": "http://votemarklevine.com/"
+    },
+    {
+      "type": "combo",
+      "which": [
+        "combo5",
+        "axeS",
+        "wave1",
+        "linkUlS",
+        "focusOutlineS",
+        "focOpS"
+      ],
+      "url": "http://votemarklevine.com/",
+      "result": {
+        "what": "combination of tests",
+        "axeS": {
+          "elementCount": 123,
+          "warnings": 0,
+          "violations": {
+            "minor": 1,
+            "moderate": 9,
+            "serious": 4,
+            "critical": 9
+          }
+        },
+        "wave1": {
+          "status": {
+            "success": true,
+            "httpstatuscode": 200
+          },
+          "statistics": {
+            "pagetitle": "Mark Levine for Manhattan Borough President 2021",
+            "pageurl": "http://votemarklevine.com/",
+            "time": 4.12,
+            "creditsremaining": 61,
+            "allitemcount": 39,
+            "totalelements": 124,
+            "waveurl": "http://wave.webaim.org/report?url=http://votemarklevine.com/",
+            "domid": "48cd814ebdc068d8cc7619d503878943"
+          },
+          "categories": {
+            "error": {
+              "description": "Errors",
+              "count": 11
+            },
+            "contrast": {
+              "description": "Contrast Errors",
+              "count": 2
+            },
+            "alert": {
+              "description": "Alerts",
+              "count": 9
+            },
+            "feature": {
+              "description": "Features",
+              "count": 10
+            },
+            "structure": {
+              "description": "Structural Elements",
+              "count": 7
+            },
+            "aria": {
+              "description": "ARIA",
+              "count": 0
+            }
+          }
+        },
+        "linkUlS": {
+          "result": {
+            "links": 21,
+            "inline": {
+              "total": 7,
+              "underlined": 0,
+              "ulPercent": 0
+            }
+          }
+        },
+        "focusOutlineS": {
+          "result": {
+            "focusableCount": 22,
+            "outlinedCount": 0,
+            "outlinedPercent": 0
+          }
+        },
+        "focOpS": {
+          "result": {
+            "operableButNotFocusable": {
+              "total": 25,
+              "tagNames": {
+                "a": 2,
+                "div": 12,
+                "img": 9,
+                "input": 2
+              }
+            },
+            "focusableButNotOperable": {
+              "total": 1,
+              "tagNames": {
+                "iframe": 1
+              }
+            },
+            "focusableAndOperable": {
+              "total": 21,
+              "tagNames": {
+                "a": 19,
+                "input": 2
+              }
+            }
+          }
+        },
+        "score": 393
+      }
+    }
+  ]
+}
