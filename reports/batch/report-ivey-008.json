@@ -1,0 +1,54 @@
+{
+  "commands": "currentCmd",
+  "batch": "a11yHeros",
+  "what": "Current command for testing",
+  "timeStamp": "ivey",
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium"
+    },
+    {
+      "type": "url",
+      "which": "https://www.evinced.com/",
+      "what": "Evinced home page",
+      "result": "https://www.evinced.com/"
+    },
+    {
+      "type": "test",
+      "which": "labClash",
+      "url": "https://www.evinced.com/",
+      "what": "tabulate and describe inconsistencies in labeling",
+      "result": {
+        "totals": {
+          "wellLabeled": 2,
+          "unlabeled": 0,
+          "mislabeled": 0
+        },
+        "items": {
+          "wellLabeled": [
+            {
+              "index": 0,
+              "type": "submit",
+              "labelType": "aria-label",
+              "texts": {
+                "attribute": "toggle primary navigation menu"
+              }
+            },
+            {
+              "index": 1,
+              "type": "submit",
+              "labelType": "aria-label",
+              "texts": {
+                "attribute": "Show Products",
+                "content": "+"
+              }
+            }
+          ],
+          "unlabeled": [],
+          "mislabeled": []
+        }
+      }
+    }
+  ]
+}

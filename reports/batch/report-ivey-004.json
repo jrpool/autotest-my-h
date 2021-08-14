@@ -1,0 +1,85 @@
+{
+  "commands": "currentCmd",
+  "batch": "a11yHeros",
+  "what": "Current command for testing",
+  "timeStamp": "ivey",
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium"
+    },
+    {
+      "type": "url",
+      "which": "https://deque.com/",
+      "what": "Deque home page",
+      "result": "https://deque.com/"
+    },
+    {
+      "type": "test",
+      "which": "labClash",
+      "url": "https://deque.com/",
+      "what": "tabulate and describe inconsistencies in labeling",
+      "result": {
+        "totals": {
+          "wellLabeled": 2,
+          "unlabeled": 1,
+          "mislabeled": 2
+        },
+        "items": {
+          "wellLabeled": [
+            {
+              "index": 1,
+              "type": "submit",
+              "texts": {
+                "content": "Submit"
+              }
+            },
+            {
+              "index": 2,
+              "type": "submit",
+              "texts": {
+                "content": "Menu"
+              }
+            }
+          ],
+          "unlabeled": [
+            {
+              "index": 4,
+              "type": "submit"
+            }
+          ],
+          "mislabeled": [
+            {
+              "index": 0,
+              "type": "text",
+              "labelTypes": [
+                "aria-label",
+                "label"
+              ],
+              "texts": {
+                "attribute": "Search",
+                "label": [
+                  "Search for:"
+                ]
+              }
+            },
+            {
+              "index": 3,
+              "type": "email",
+              "labelTypes": [
+                "aria-label",
+                "label"
+              ],
+              "texts": {
+                "attribute": "Business Email (Required)",
+                "label": [
+                  "Business Email *"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
