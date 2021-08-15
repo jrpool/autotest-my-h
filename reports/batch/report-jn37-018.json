@@ -1,0 +1,1324 @@
+{
+  "commands": "combo10Detail",
+  "batch": "a11yHeros",
+  "what": "Current command for testing",
+  "timeStamp": "jn37",
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium"
+    },
+    {
+      "type": "url",
+      "which": "https://onlineada.com/",
+      "what": "Online ADA home page",
+      "result": "https://onlineada.com/"
+    },
+    {
+      "type": "combo",
+      "which": [
+        "combo10Detail",
+        "axe",
+        "wave1",
+        "linkUl",
+        "focOl",
+        "focOp",
+        "labClash",
+        "radioSet",
+        "roleS",
+        "styleDiff",
+        "bulk"
+      ],
+      "url": "https://onlineada.com/",
+      "result": {
+        "what": "combination of tests",
+        "axe": {
+          "warnings": 0,
+          "violations": {
+            "minor": 0,
+            "moderate": 18,
+            "serious": 2,
+            "critical": 0
+          },
+          "items": [
+            {
+              "rule": "landmark-one-main",
+              "description": "Ensures the document has a main landmark",
+              "impact": "moderate",
+              "elements": [
+                {
+                  "selector": "html",
+                  "impact": "moderate"
+                }
+              ]
+            },
+            {
+              "rule": "landmark-unique",
+              "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+              "impact": "moderate",
+              "elements": [
+                {
+                  "selector": ".nav-header.nav-primary",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "landmark-is-unique",
+                      "description": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                      "impact": "moderate"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rule": "nested-interactive",
+              "description": "Nested interactive controls are not announced by screen readers",
+              "impact": "serious",
+              "elements": [
+                {
+                  "selector": ".elementor-swiper-button-prev",
+                  "impact": "serious",
+                  "must pass any of": [
+                    {
+                      "check": "no-focusable-content",
+                      "description": "Element has focusable descendants",
+                      "impact": "serious"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-swiper-button-next",
+                  "impact": "serious",
+                  "must pass any of": [
+                    {
+                      "check": "no-focusable-content",
+                      "description": "Element has focusable descendants",
+                      "impact": "serious"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rule": "page-has-heading-one",
+              "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+              "impact": "moderate",
+              "elements": [
+                {
+                  "selector": "html",
+                  "impact": "moderate"
+                }
+              ]
+            },
+            {
+              "rule": "region",
+              "description": "Ensures all page content is contained by landmarks",
+              "impact": "moderate",
+              "elements": [
+                {
+                  "selector": ".oadatb-icon",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-element-8301714",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-element-a6ee291",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".slide-representation",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".swiper-wrapper",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".swiper-pagination",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-swiper-button-prev",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".pause-button",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-swiper-button-next",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-element-fb6f702",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-element-aec3791",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-element-07976a1",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-element-e3ed98a",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-element-1f9d61f",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                },
+                {
+                  "selector": ".elementor-element-017c98a",
+                  "impact": "moderate",
+                  "must pass any of": [
+                    {
+                      "check": "region",
+                      "description": "Some page content is not contained by landmarks",
+                      "impact": "moderate"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "wave1": {
+          "status": {
+            "success": true,
+            "httpstatuscode": 200
+          },
+          "statistics": {
+            "pagetitle": "Online ADA – Digital Accessibility Compliance Tools and Certification",
+            "pageurl": "https://onlineada.com/",
+            "time": 5.83,
+            "creditsremaining": 940,
+            "allitemcount": 235,
+            "totalelements": 654,
+            "waveurl": "http://wave.webaim.org/report?url=https://onlineada.com/",
+            "domid": "0b26b4bc23c8056e5edcb0c8a5f915e6"
+          },
+          "categories": {
+            "error": {
+              "description": "Errors",
+              "count": 0
+            },
+            "contrast": {
+              "description": "Contrast Errors",
+              "count": 7
+            },
+            "alert": {
+              "description": "Alerts",
+              "count": 11
+            },
+            "feature": {
+              "description": "Features",
+              "count": 10
+            },
+            "structure": {
+              "description": "Structural Elements",
+              "count": 31
+            },
+            "aria": {
+              "description": "ARIA",
+              "count": 176
+            }
+          }
+        },
+        "linkUl": {
+          "result": {
+            "totals": {
+              "links": 32,
+              "inline": {
+                "total": 0,
+                "underlined": 0,
+                "underlinedPercent": "N/A"
+              }
+            },
+            "items": {
+              "underlined": [],
+              "notUnderlined": []
+            }
+          }
+        },
+        "focOl": {
+          "result": {
+            "totals": {
+              "total": 62,
+              "types": {
+                "outlineMissing": {
+                  "total": 5,
+                  "tagNames": {
+                    "a": 4,
+                    "button": 1
+                  }
+                },
+                "outlinePresent": {
+                  "total": 57,
+                  "tagNames": {
+                    "a": 25,
+                    "div": 8,
+                    "span": 23,
+                    "button": 1
+                  }
+                }
+              }
+            },
+            "items": {
+              "outlineMissing": [
+                {
+                  "tagName": "a",
+                  "text": "ADA"
+                },
+                {
+                  "tagName": "button",
+                  "text": "Open Menu"
+                },
+                {
+                  "tagName": "a",
+                  "text": "facebook Facebook; facebook Facebook; #pg99yfhd4x4wi4dxviawi"
+                },
+                {
+                  "tagName": "a",
+                  "text": "linkedin LinkedIn; linkedin LinkedIn; #1e5i18unicihlc18a4j097"
+                },
+                {
+                  "tagName": "a",
+                  "text": "youtube Youtube; youtube Youtube; #5sbfrzb4v72dx8q4fwcqm4"
+                }
+              ],
+              "outlinePresent": [
+                {
+                  "tagName": "a",
+                  "text": "Open The Accessibility Toolbar; #skip-to-oadatb"
+                },
+                {
+                  "tagName": "div",
+                  "text": "Open Accessibility Toolbar"
+                },
+                {
+                  "tagName": "a",
+                  "text": "LEARN MORE; LEARN MORE; #85jb227aszdjwgy4fplct"
+                },
+                {
+                  "tagName": "div",
+                  "text": "Press arrow to navigate"
+                },
+                {
+                  "tagName": "div",
+                  "text": "Previous Unpaused Next"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 1"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 2"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 3"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 4"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 5"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 6"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 7"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 8"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 9"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 10"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 11"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 12"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 13"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 14"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 15"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 16"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Go to slide 17"
+                },
+                {
+                  "tagName": "div",
+                  "text": "Previous slide; Previous"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Previous"
+                },
+                {
+                  "tagName": "button",
+                  "text": "pause carousel"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Unpaused"
+                },
+                {
+                  "tagName": "div",
+                  "text": "Next slide; Next"
+                },
+                {
+                  "tagName": "span",
+                  "text": "Next"
+                },
+                {
+                  "tagName": "a",
+                  "text": "JOIN THE PARTNER PROGRAM; JOIN THE PARTNER PROGRAM; #05a6labuehhgu0jmejqbkh"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Get Max Access; Get Max Access; #75wl612n0sysgzh29byze"
+                },
+                {
+                  "tagName": "a",
+                  "text": "An image of several different icons in a half circle around a laptop computer, including a programming icon, a search icon, and a mobile device icon"
+                },
+                {
+                  "tagName": "div",
+                  "text": "An image of several different icons in a half circle around a laptop computer, including a programming icon, a search icon, and a mobile device icon"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Understanding WCAG 2.1; Understanding WCAG 2.1; #mn8ry0fzpkks7599gcycq"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Understanding WCAG 2.1; Read More »; #2jyp92l9p9c7uve82rbnp"
+                },
+                {
+                  "tagName": "a",
+                  "text": "An icon of a list with checkmarks in three boxes on the left side"
+                },
+                {
+                  "tagName": "div",
+                  "text": "An icon of a list with checkmarks in three boxes on the left side"
+                },
+                {
+                  "tagName": "a",
+                  "text": "7 Quick Facts about WCAG; 7 Quick Facts about WCAG; #9thhmzxoc9snl0s5fh3ch9"
+                },
+                {
+                  "tagName": "a",
+                  "text": "7 Quick Facts about WCAG; Read More »; #c9a8kv4mo3ev32of2a31k"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Sharing Gesture Happy People in nature Font People Art Event Leisure Team"
+                },
+                {
+                  "tagName": "div",
+                  "text": "Sharing Gesture Happy People in nature Font People Art Event Leisure Team"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Who Does Digital Accessibility Help? The Diversity of Web Users and the Digital Barriers They Face; Who Does Digital Accessibility Help? The Diversity of Web Users and the Digital Barriers They Face; #qrsh1127sykbh831wpaf"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Who Does Digital Accessibility Help? The Diversity of Web Users and the Digital Barriers They Face; Read More »; #dwnuw5ehpqg27raze6527l"
+                },
+                {
+                  "tagName": "a",
+                  "text": "View More Articles; View More Articles; #2gulamq7cv8wbil2mvms5h"
+                },
+                {
+                  "tagName": "a",
+                  "text": "GET YOUR FREE ANALYSIS; GET YOUR FREE ANALYSIS; #ccjsjedk2tc8w3v0q3kkqr"
+                },
+                {
+                  "tagName": "a",
+                  "text": "GET CONNECTED; GET CONNECTED; #0vv89ni9nbpfndz4v4el7a"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Home; Home; #mul172ulvi926figbrsnuy"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Accessibility Certification; Accessibility Certification; #zfjwdnzqrx8cnhibzdsoro"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Partner Agency Program; Partner Agency Program; #2smr8hnlvgty4ezr788yb"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Accessibility Academy; Accessibility Academy; #zxdz7eytuamupahsyha9hs"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Affiliates; Affiliates; #w162dhe4zcqh3axuv07xke"
+                },
+                {
+                  "tagName": "span",
+                  "text": "facebook"
+                },
+                {
+                  "tagName": "span",
+                  "text": "linkedin"
+                },
+                {
+                  "tagName": "span",
+                  "text": "youtube"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Terms; Terms; #qlbwr11xcibm827blm9pm"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Privacy; Privacy; #xdlv6nil4bgtuf6nivg4l"
+                },
+                {
+                  "tagName": "a",
+                  "text": "Disclaimer; Disclaimer; #g6t3ouobmko63pe2zxja"
+                },
+                {
+                  "tagName": "a",
+                  "text": "ADA"
+                }
+              ]
+            }
+          }
+        },
+        "focOp": {
+          "result": {
+            "totals": {
+              "focusableNotOperable": {
+                "total": 11,
+                "tagName": {
+                  "div": 5,
+                  "span": 6
+                },
+                "focusableHow": {
+                  "Tab": 11,
+                  "ArrowRight": 0,
+                  "ArrowDown": 0
+                }
+              },
+              "operableNotFocusable": {
+                "total": 8,
+                "tagName": {
+                  "div": 1,
+                  "button": 7
+                },
+                "operableWhy": {
+                  "tag": 7,
+                  "cursor": 1,
+                  "onclick": 0
+                }
+              },
+              "focusableAndOperable": {
+                "total": 51,
+                "tagName": {
+                  "a": 29,
+                  "div": 3,
+                  "button": 2,
+                  "span": 17
+                },
+                "focusableHow": {
+                  "Tab": 51,
+                  "ArrowRight": 0,
+                  "ArrowDown": 0
+                },
+                "operableWhy": {
+                  "tag": 31,
+                  "cursor": 20,
+                  "onclick": 0
+                }
+              }
+            },
+            "items": {
+              "focusableNotOperable": [
+                {
+                  "tagName": "div",
+                  "focusableHow": "Tab",
+                  "text": "Press arrow to navigate"
+                },
+                {
+                  "tagName": "div",
+                  "focusableHow": "Tab",
+                  "text": "Previous Unpaused Next"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "text": "Previous"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "text": "Unpaused"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "text": "Next"
+                },
+                {
+                  "tagName": "div",
+                  "focusableHow": "Tab",
+                  "text": "An image of several different icons in a half circle around a laptop computer, including a programming icon, a search icon, and a mobile device icon"
+                },
+                {
+                  "tagName": "div",
+                  "focusableHow": "Tab",
+                  "text": "An icon of a list with checkmarks in three boxes on the left side"
+                },
+                {
+                  "tagName": "div",
+                  "focusableHow": "Tab",
+                  "text": "Sharing Gesture Happy People in nature Font People Art Event Leisure Team"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "text": "facebook"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "text": "linkedin"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "text": "youtube"
+                }
+              ],
+              "operableNotFocusable": [
+                {
+                  "tagName": "div",
+                  "operableWhy": "cursor",
+                  "text": "{<div data-v-aba42aa2=\"\" class=\"ada-ignore-all oadatb-icon oada-blue\" data-autotest-operable=\"cursor\" style=\"height: 68px; width: 68px; background-color: rgb(5, 128, 181); -webkit-mask: url(&quot;https://d5gilh1ztb0u5.cloudfront.net/assets/icons/universal-access.svg&quot;) center center no-repeat;\"></div>}"
+                },
+                {
+                  "tagName": "button",
+                  "operableWhy": "tag",
+                  "text": "Change Contrast ( Default ); #oadatb-focusinit"
+                },
+                {
+                  "tagName": "button",
+                  "operableWhy": "tag",
+                  "text": "Change Font Size ( Default )"
+                },
+                {
+                  "tagName": "button",
+                  "operableWhy": "tag",
+                  "text": "Change Font Family ( Default ); Aa"
+                },
+                {
+                  "tagName": "button",
+                  "operableWhy": "tag",
+                  "text": "Revert to Default Settings"
+                },
+                {
+                  "tagName": "button",
+                  "operableWhy": "tag",
+                  "text": "Speak all page text content"
+                },
+                {
+                  "tagName": "button",
+                  "operableWhy": "tag",
+                  "text": "Enable Click Text to Speech"
+                },
+                {
+                  "tagName": "button",
+                  "operableWhy": "tag",
+                  "text": "Close Accessibility Toolbar"
+                }
+              ],
+              "focusableAndOperable": [
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Open The Accessibility Toolbar; #skip-to-oadatb"
+                },
+                {
+                  "tagName": "div",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Open Accessibility Toolbar"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "ADA"
+                },
+                {
+                  "tagName": "button",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Open Menu"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "LEARN MORE; LEARN MORE; #r528cyc3w4p2ibxtts3fgh"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 1"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 2"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 3"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 4"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 5"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 6"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 7"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 8"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 9"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 10"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 11"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 12"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 13"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 14"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 15"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 16"
+                },
+                {
+                  "tagName": "span",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Go to slide 17"
+                },
+                {
+                  "tagName": "div",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Previous slide; Previous"
+                },
+                {
+                  "tagName": "button",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "pause carousel"
+                },
+                {
+                  "tagName": "div",
+                  "focusableHow": "Tab",
+                  "operableWhy": "cursor",
+                  "text": "Next slide; Next"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "JOIN THE PARTNER PROGRAM; JOIN THE PARTNER PROGRAM; #9s8hsf68n3715j7kzp8ivc"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Get Max Access; Get Max Access; #fi7f69a0srqshejli3oifi"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "An image of several different icons in a half circle around a laptop computer, including a programming icon, a search icon, and a mobile device icon"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Understanding WCAG 2.1; Understanding WCAG 2.1; #vgifirpo6cam1ozh0wnkw"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Understanding WCAG 2.1; Read More »; #roj0rcp6wlq64jl2d7wj5s"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "An icon of a list with checkmarks in three boxes on the left side"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "7 Quick Facts about WCAG; 7 Quick Facts about WCAG; #y3emgeykk2xjpdgl8hhbs"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "7 Quick Facts about WCAG; Read More »; #5oogglm6otmbsh1roefk5p"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Sharing Gesture Happy People in nature Font People Art Event Leisure Team"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Who Does Digital Accessibility Help? The Diversity of Web Users and the Digital Barriers They Face; Who Does Digital Accessibility Help? The Diversity of Web Users and the Digital Barriers They Face; #bjlr208ig6mnqbwtgfie8g"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Who Does Digital Accessibility Help? The Diversity of Web Users and the Digital Barriers They Face; Read More »; #elzckcy1r3hmru7gvej3ka"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "View More Articles; View More Articles; #4y4n8cej7uekgfjzrlo1r"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "GET YOUR FREE ANALYSIS; GET YOUR FREE ANALYSIS; #evs0c07eqemd6hybf3n3nn"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "GET CONNECTED; GET CONNECTED; #tahprc0uug840261sagn8"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Home; Home; #ykl9vjatpmk2nudz5lq0l"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Accessibility Certification; Accessibility Certification; #s88jlq4xf9k049lai1fffz8"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Partner Agency Program; Partner Agency Program; #77x4j1j4c1jfjpn7xbimn5"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Accessibility Academy; Accessibility Academy; #ay0o5sd65pbsn8vzgckea"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Affiliates; Affiliates; #i0gyak7d2fqqs7ot6bdd8"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "facebook Facebook; facebook Facebook; #rgllnunbfno235jvlraml"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "linkedin LinkedIn; linkedin LinkedIn; #d5lm47xxzva2mwmazis"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "youtube Youtube; youtube Youtube; #1t1jq7tr13ra4nswigx02"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Terms; Terms; #0hw97qf95mrajixi8td92ig"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Privacy; Privacy; #f4zflgs315am0l990i4bw"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "Disclaimer; Disclaimer; #00vegujo0whvpqq4z0f6kkzf"
+                },
+                {
+                  "tagName": "a",
+                  "focusableHow": "Tab",
+                  "operableWhy": "tag",
+                  "text": "ADA"
+                }
+              ]
+            }
+          }
+        },
+        "labClash": {
+          "result": {
+            "totals": {
+              "mislabeled": 0,
+              "unlabeled": 0,
+              "wellLabeled": 3
+            },
+            "items": {
+              "mislabeled": [],
+              "unlabeled": [],
+              "wellLabeled": [
+                {
+                  "index": 0,
+                  "tagName": "BUTTON",
+                  "type": "submit",
+                  "labelType": "aria-label",
+                  "texts": {
+                    "attribute": "Open Menu"
+                  }
+                },
+                {
+                  "index": 1,
+                  "tagName": "BUTTON",
+                  "type": "submit",
+                  "labelType": "aria-label",
+                  "texts": {
+                    "attribute": "pause carousel"
+                  }
+                },
+                {
+                  "index": 2,
+                  "tagName": "BUTTON",
+                  "type": "button",
+                  "labelType": "aria-label",
+                  "texts": {
+                    "attribute": "Close",
+                    "content": "×"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "radioSet": {
+          "result": {
+            "totals": {
+              "total": 0,
+              "inSet": 0,
+              "percent": "N.A."
+            },
+            "items": {
+              "inSet": [],
+              "notInSet": []
+            }
+          }
+        },
+        "roleS": {
+          "result": {
+            "roleElements": 53,
+            "badRoleElements": 26,
+            "tagNames": {
+              "DIV": {
+                "button": 3,
+                "dialog": 1
+              },
+              "A": {
+                "button": 5
+              },
+              "SPAN": {
+                "button": 17
+              }
+            }
+          }
+        },
+        "styleDiff": {
+          "result": {
+            "totals": {
+              "h2": {
+                "total": 13,
+                "subtotals": [
+                  10,
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "h3": {
+                "total": 4,
+                "subtotals": [
+                  3,
+                  1
+                ]
+              },
+              "aBlock": {
+                "total": 32,
+                "subtotals": [
+                  7,
+                  6,
+                  5,
+                  3,
+                  3,
+                  3,
+                  3,
+                  1,
+                  1
+                ]
+              },
+              "button": {
+                "total": 3,
+                "subtotals": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "items": {
+              "h2": {
+                "fontWeight": {
+                  "400": 2,
+                  "700": 11
+                },
+                "lineHeight": {
+                  "30px": 11,
+                  "31.2px": 1,
+                  "39px": 1
+                },
+                "fontSize": {
+                  "30px": 88,
+                  "24px": 3
+                }
+              },
+              "h3": {
+                "fontWeight": {
+                  "400": 1,
+                  "600": 3
+                },
+                "lineHeight": {
+                  "23.4px": 3,
+                  "18px": 1
+                }
+              },
+              "aBlock": {
+                "borderStyle": {
+                  "none": 23,
+                  "none none none solid": 9
+                },
+                "borderWidth": {
+                  "0px": 23,
+                  "0px 0px 0px 6px": 9
+                },
+                "fontWeight": {
+                  "400": 18,
+                  "500": 3,
+                  "600": 3,
+                  "700": 8
+                },
+                "lineHeight": {
+                  "26px": 9,
+                  "20px": 6,
+                  "18.2px": 5,
+                  "27.5px": 3,
+                  "23.4px": 3,
+                  "15.6px": 3,
+                  "14px": 3
+                },
+                "maxWidth": {
+                  "none": 31,
+                  "300px": 1
+                },
+                "minHeight": {
+                  "0px": 30,
+                  "auto": 2
+                },
+                "minWidth": {
+                  "0px": 30,
+                  "auto": 2
+                },
+                "fontSize": {
+                  "20px": 153,
+                  "14px": 136,
+                  "16px": 102,
+                  "22px": 51,
+                  "18px": 51,
+                  "12px": 51
+                }
+              },
+              "button": {
+                "borderStyle": {
+                  "none": 2,
+                  "solid": 1
+                },
+                "borderWidth": {
+                  "0px": 2,
+                  "2px": 1
+                },
+                "lineHeight": {
+                  "23px": 1,
+                  "27.6px": 1,
+                  "26px": 1
+                },
+                "maxWidth": {
+                  "none": 2,
+                  "61px": 1
+                },
+                "minHeight": {
+                  "auto": 2,
+                  "0px": 1
+                },
+                "minWidth": {
+                  "auto": 2,
+                  "24px": 1
+                },
+                "fontSize": {
+                  "24px": 34,
+                  "20px": 17
+                }
+              }
+            }
+          }
+        },
+        "bulk": {
+          "result": {
+            "visibleElements": 450
+          }
+        },
+        "deficit": {
+          "total": 297,
+          "axe": 62,
+          "wave1": 43,
+          "linkUl": 0,
+          "focOl": 20,
+          "focOp": 43,
+          "labClash": 0,
+          "radioSet": 0,
+          "roleS": 78,
+          "styleDiff": 34,
+          "bulk": 17
+        }
+      }
+    }
+  ]
+}
