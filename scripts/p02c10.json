@@ -3,7 +3,8 @@
   "acts": [
     {
       "type": "launch",
-      "which": "webkit"
+      "which": "webkit",
+      "what": "used for tests on which chromium fails on some URLs"
     },
     {
       "type": "url",
@@ -17,6 +18,13 @@
       "delay": 2400,
       "interval": 2600,
       "count": 5
+    },
+    {
+      "type": "test",
+      "which": "axe",
+      "withItems": true,
+      "rules": [],
+      "what": "Axe core, all rules"
     },
     {
       "type": "launch",
@@ -83,16 +91,9 @@
     },
     {
       "type": "test",
-      "which": "axe",
-      "withItems": true,
-      "rules": [],
-      "what": "Axe core, all rules"
-    },
-    {
-      "type": "test",
       "which": "ibm",
       "withItems": true,
-      "withNewContent": false,
+      "withNewContent": true,
       "what": "IBM Accessibility Checker"
     },
     {
