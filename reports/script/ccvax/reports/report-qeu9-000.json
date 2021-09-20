@@ -2,7 +2,7 @@
   "script": "p03c10",
   "batch": "ccvaxRest",
   "what": "Axe, IBM, WAVE, and 10 custom tests",
-  "timeStamp": "q8sn",
+  "timeStamp": "qeu9",
   "acts": [
     {
       "type": "launch",
@@ -23,33 +23,7 @@
       "interval": 2600,
       "count": 5,
       "url": "https://www.selective.com/",
-      "result": {
-        "bytes": [
-          570907,
-          507582,
-          507582,
-          570907,
-          507582
-        ],
-        "localRatios": [
-          1.125,
-          1,
-          1.125,
-          1.125
-        ],
-        "meanLocalRatio": 1.094,
-        "maxLocalRatio": 1.125,
-        "globalRatio": 1.125,
-        "pixelChanges": [
-          250574,
-          0,
-          250574,
-          250574
-        ],
-        "meanPixelChange": 187930,
-        "maxPixelChange": 250574,
-        "changeFrequency": 0.75
-      }
+      "result": "ERROR: SCREENSHOTS FAILED"
     },
     {
       "type": "test",
@@ -59,523 +33,7 @@
       "what": "conduct and report an Axe test",
       "url": "https://www.selective.com/",
       "result": {
-        "warnings": 0,
-        "violations": {
-          "minor": 6,
-          "moderate": 23,
-          "serious": 4,
-          "critical": 5
-        },
-        "items": [
-          {
-            "rule": "aria-allowed-attr",
-            "description": "Ensures ARIA attributes are allowed for an element's role",
-            "impact": "critical",
-            "elements": [
-              {
-                "selector": "li[aria-controls=\"navigation01\"]",
-                "impact": "critical",
-                "must pass any of": [
-                  {
-                    "check": "aria-allowed-attr",
-                    "description": "ARIA attribute is not allowed: aria-selected=\"false\"",
-                    "impact": "critical"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "aria-hidden-focus",
-            "description": "Ensures aria-hidden elements do not contain focusable elements",
-            "impact": "serious",
-            "elements": [
-              {
-                "selector": "li[aria-controls=\"navigation00\"]",
-                "impact": "serious"
-              }
-            ]
-          },
-          {
-            "rule": "aria-input-field-name",
-            "description": "Ensures every ARIA input field has an accessible name",
-            "impact": "serious",
-            "elements": [
-              {
-                "selector": ".global_banner > .slick-list.draggable[aria-live=\"polite\"] > .slick-track[role=\"listbox\"]",
-                "impact": "serious",
-                "must pass any of": [
-                  {
-                    "check": "aria-label",
-                    "description": "aria-label attribute does not exist or is empty",
-                    "impact": "serious"
-                  },
-                  {
-                    "check": "aria-labelledby",
-                    "description": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                    "impact": "serious"
-                  },
-                  {
-                    "check": "non-empty-title",
-                    "description": "Element has no title attribute",
-                    "impact": "serious"
-                  }
-                ]
-              },
-              {
-                "selector": ".image_or_video_slider > .slick-list.draggable[aria-live=\"polite\"] > .slick-track[role=\"listbox\"]",
-                "impact": "serious",
-                "must pass any of": [
-                  {
-                    "check": "aria-label",
-                    "description": "aria-label attribute does not exist or is empty",
-                    "impact": "serious"
-                  },
-                  {
-                    "check": "aria-labelledby",
-                    "description": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                    "impact": "serious"
-                  },
-                  {
-                    "check": "non-empty-title",
-                    "description": "Element has no title attribute",
-                    "impact": "serious"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "aria-required-children",
-            "description": "Ensures elements with an ARIA role that require child roles contain them",
-            "impact": "critical",
-            "elements": [
-              {
-                "selector": ".slick-dots",
-                "impact": "critical",
-                "must pass any of": [
-                  {
-                    "check": "aria-required-children",
-                    "description": "Required ARIA child role not present: tab",
-                    "impact": "critical"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "duplicate-id-aria",
-            "description": "Ensures every id attribute value used in ARIA and in labels is unique",
-            "impact": "critical",
-            "elements": [
-              {
-                "selector": "div[aria-describedby=\"slick-slide00\"]",
-                "impact": "critical",
-                "must pass any of": [
-                  {
-                    "check": "duplicate-id-aria",
-                    "description": "Document has multiple elements referenced with ARIA with the same id attribute: slick-slide00",
-                    "impact": "critical"
-                  }
-                ]
-              },
-              {
-                "selector": "div[data-slick-index=\"\\31 \"]",
-                "impact": "critical",
-                "must pass any of": [
-                  {
-                    "check": "duplicate-id-aria",
-                    "description": "Document has multiple elements referenced with ARIA with the same id attribute: slick-slide01",
-                    "impact": "critical"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "duplicate-id",
-            "description": "Ensures every id attribute value is unique",
-            "impact": "minor",
-            "elements": [
-              {
-                "selector": "div[data-id=\"\\30 \"] > .chk_remmber.checkbox",
-                "impact": "minor",
-                "must pass any of": [
-                  {
-                    "check": "duplicate-id",
-                    "description": "Document has multiple static elements with the same id attribute: mobi-chk-agents",
-                    "impact": "minor"
-                  }
-                ]
-              },
-              {
-                "selector": "input[name=\"_publicUserType\"][value=\"\"][type=\"hidden\"]",
-                "impact": "minor",
-                "must pass any of": [
-                  {
-                    "check": "duplicate-id",
-                    "description": "Document has multiple static elements with the same id attribute: _publicUserType",
-                    "impact": "minor"
-                  }
-                ]
-              },
-              {
-                "selector": "input[name=\"_publicPass\"][value=\"\"][type=\"hidden\"]",
-                "impact": "minor",
-                "must pass any of": [
-                  {
-                    "check": "duplicate-id",
-                    "description": "Document has multiple static elements with the same id attribute: _publicPass",
-                    "impact": "minor"
-                  }
-                ]
-              },
-              {
-                "selector": "input[name=\"_publicUser\"][value=\"\"][type=\"hidden\"]",
-                "impact": "minor",
-                "must pass any of": [
-                  {
-                    "check": "duplicate-id",
-                    "description": "Document has multiple static elements with the same id attribute: _publicUser",
-                    "impact": "minor"
-                  }
-                ]
-              },
-              {
-                "selector": "input[value=\"\\31 280\\ x\\ 720\"]",
-                "impact": "minor",
-                "must pass any of": [
-                  {
-                    "check": "duplicate-id",
-                    "description": "Document has multiple static elements with the same id attribute: ScreenResolution",
-                    "impact": "minor"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "landmark-one-main",
-            "description": "Ensures the document has a main landmark",
-            "impact": "moderate",
-            "elements": [
-              {
-                "selector": "html",
-                "impact": "moderate"
-              }
-            ]
-          },
-          {
-            "rule": "landmark-unique",
-            "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
-            "impact": "moderate",
-            "elements": [
-              {
-                "selector": "#top_nav_wrapper",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "landmark-is-unique",
-                    "description": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
-                    "impact": "moderate"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "meta-viewport",
-            "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
-            "impact": "critical",
-            "elements": [
-              {
-                "selector": "meta[name=\"viewport\"]",
-                "impact": "critical",
-                "must pass any of": [
-                  {
-                    "check": "meta-viewport",
-                    "description": "maximum-scale on <meta> tag disables zooming on mobile devices",
-                    "impact": "critical"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "nested-interactive",
-            "description": "Nested interactive controls are not announced by screen readers",
-            "impact": "serious",
-            "elements": [
-              {
-                "selector": "#slick-slide10",
-                "impact": "serious",
-                "must pass any of": [
-                  {
-                    "check": "no-focusable-content",
-                    "description": "Element has focusable descendants",
-                    "impact": "serious"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "presentation-role-conflict",
-            "description": "Flags elements whose role is none or presentation and which cause the role conflict resolution to trigger.",
-            "impact": "minor",
-            "elements": [
-              {
-                "selector": "li[aria-controls=\"navigation01\"]",
-                "impact": "minor",
-                "must pass all of": [
-                  {
-                    "check": "has-global-aria-attribute",
-                    "description": "Element does not have global ARIA attribute",
-                    "impact": "minor"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "rule": "region",
-            "description": "Ensures all page content is contained by landmarks",
-            "impact": "moderate",
-            "elements": [
-              {
-                "selector": ".sktmain",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".page_copy_wrapper",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": "li[aria-controls=\"navigation01\"]",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".banner_action_links_wrapper",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".col-lg-5.offset-md-1.col-md-10:nth-child(1)",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".image_and_copy_wrapper.module-section:nth-child(3) > .container-fluid > .align-content-center.align-items-center.row > .offset-lg-0.col-lg-5.offset-md-1 > .image_and_copy_text > h2",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".image_and_copy_wrapper.module-section:nth-child(3) > .container-fluid > .align-content-center.align-items-center.row > .offset-lg-0.col-lg-5.offset-md-1 > .image_and_copy_text > .image_and_copy_description.rad-list",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".image_and_copy_wrapper.module-section:nth-child(3) > .container-fluid > .align-content-center.align-items-center.row > .offset-lg-0.col-lg-5.offset-md-1 > .image_and_copy_text > .d-md-block.ctaLink.d-none",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".products_wrapper",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".about_module_top > .container-fluid",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".flex-row-reverse > .col-lg-5.col-md-10.col-sm-12:nth-child(1)",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".flex-row-reverse > .offset-lg-0.col-lg-5.offset-md-1 > .image_and_copy_text > h2",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".flex-row-reverse > .offset-lg-0.col-lg-5.offset-md-1 > .image_and_copy_text > .image_and_copy_description.rad-list",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".flex-row-reverse > .offset-lg-0.col-lg-5.offset-md-1 > .image_and_copy_text > .d-md-block.ctaLink.d-none",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".half_width_holder_wrapper.module-section-t-70-b-110:nth-child(7)",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".recent-stories-module",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".rating_title",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".rating",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".total_rating",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".rating_link",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              },
-              {
-                "selector": ".offset-xs-0.offset-lg-1.half_width_bottom_feature:nth-child(2)",
-                "impact": "moderate",
-                "must pass any of": [
-                  {
-                    "check": "region",
-                    "description": "Some page content is not contained by landmarks",
-                    "impact": "moderate"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+        "result": "AXE INJECTION FAILED"
       }
     },
     {
@@ -594,7 +52,7 @@
       "what": "report the count of visible elements",
       "url": "https://www.selective.com/",
       "result": {
-        "visibleElements": 461
+        "visibleElements": 444
       }
     },
     {
@@ -2697,6 +2155,10 @@
               "280px": 69,
               "auto": 12
             },
+            "opacity": {
+              "1": 435,
+              "0.0936529": 1
+            },
             "fontSize": {
               "14px": 2170,
               "17px": 1848,
@@ -2734,12 +2196,12 @@
         "statistics": {
           "pagetitle": "Home, Auto, Business & Flood Insurance Solutions",
           "pageurl": "https://www.selective.com/",
-          "time": 4.12,
-          "creditsremaining": 467,
+          "time": 4.63,
+          "creditsremaining": 407,
           "allitemcount": 269,
           "totalelements": 1980,
           "waveurl": "http://wave.webaim.org/report?url=https://www.selective.com/",
-          "domid": "4368ce3c8ce077cc5d71a2455a22af46"
+          "domid": "eb48a2a3f172d4d88c4fde2d9e9d1c6c"
         },
         "categories": {
           "error": {
@@ -2751,7 +2213,7 @@
                 "description": "Missing alternative text",
                 "count": 1,
                 "selectors": [
-                  "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT + NOSCRIPT + NOSCRIPT + SCRIPT + FORM + DIV + SCRIPT + STYLE + FORM + SCRIPT + SCRIPT + SCRIPT + DIV + SCRIPT + NOSCRIPT + SCRIPT + NOSCRIPT + SCRIPT + SCRIPT + IMG"
+                  "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT + NOSCRIPT + NOSCRIPT + SCRIPT + FORM + DIV + SCRIPT + STYLE + FORM + SCRIPT + SCRIPT + SCRIPT + SCRIPT + NOSCRIPT + SCRIPT + NOSCRIPT + SCRIPT + SCRIPT + IMG"
                 ]
               },
               "label_missing": {
@@ -2978,8 +2440,8 @@
                   "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT",
                   "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT + NOSCRIPT",
                   "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT + NOSCRIPT + NOSCRIPT",
-                  "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT + NOSCRIPT + NOSCRIPT + SCRIPT + FORM + DIV + SCRIPT + STYLE + FORM + SCRIPT + SCRIPT + SCRIPT + DIV + SCRIPT + NOSCRIPT",
-                  "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT + NOSCRIPT + NOSCRIPT + SCRIPT + FORM + DIV + SCRIPT + STYLE + FORM + SCRIPT + SCRIPT + SCRIPT + DIV + SCRIPT + NOSCRIPT + SCRIPT + NOSCRIPT"
+                  "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT + NOSCRIPT + NOSCRIPT + SCRIPT + FORM + DIV + SCRIPT + STYLE + FORM + SCRIPT + SCRIPT + SCRIPT + SCRIPT + NOSCRIPT",
+                  "HTML > BODY#ip3-Homepage > ARTICLE:first-child + NOSCRIPT + NOSCRIPT + NOSCRIPT + SCRIPT + FORM + DIV + SCRIPT + STYLE + FORM + SCRIPT + SCRIPT + SCRIPT + SCRIPT + NOSCRIPT + SCRIPT + NOSCRIPT"
                 ]
               },
               "text_small": {
@@ -3022,57 +2484,57 @@
     {
       "type": "score",
       "which": "p03c10",
-      "what": "3 packages and 10 custom tests, with duplication discounts",
+      "what": "3 packages and 10 custom tests, with duplication discounts (edited)",
       "result": {
-        "total": 402,
-        "axe": 109,
-        "ibm": 126,
-        "wave": 48,
-        "bulk": 10,
-        "focOl": 16,
-        "focOp": 8,
-        "hover": 0,
+        "total": 1803,
+        "axe": 369,
+        "ibm": 369,
+        "wave": 269,
+        "bulk": 17,
+        "focOl": 0,
+        "focOp": 64,
+        "hover": 420,
         "labClash": 2,
         "linkUl": 9,
-        "motion": 0,
+        "motion": 150,
         "radioSet": 0,
-        "role": 18,
-        "styleDiff": 56
+        "role": 14,
+        "styleDiff": 120
       }
     }
   ],
   "testTimes": [
     [
       "hover",
-      115
+      117
     ],
     [
       "ibm",
-      16
-    ],
-    [
-      "motion",
-      14
+      18
     ],
     [
       "focOl",
-      4
+      8
     ],
     [
       "wave",
-      4
+      6
     ],
     [
-      "axe",
-      3
+      "motion",
+      5
     ],
     [
       "focOp",
       3
     ],
     [
+      "axe",
+      0
+    ],
+    [
       "bulk",
-      1
+      0
     ],
     [
       "labClash",
