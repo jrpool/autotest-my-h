@@ -1,5 +1,6 @@
 {
-  "what": "Axe, IBM, WAVE, and 10 custom tests",
+  "what": "Axe, IBM, WAVE, and 13 custom tests",
+  "strict": true,
   "commands": [
     {
       "type": "launch",
@@ -28,7 +29,8 @@
     },
     {
       "type": "launch",
-      "which": "chromium"
+      "which": "chromium",
+      "what": "used for most tests"
     },
     {
       "type": "url",
@@ -42,10 +44,23 @@
     },
     {
       "type": "test",
+      "which": "embAc",
+      "what": "active elements incorrectly embedded in each other",
+      "withItems": true
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "what": "focus indicators",
+      "withItems": true,
+      "revealAll": true
+    },
+    {
+      "type": "test",
       "which": "focOl",
       "what": "outlining of focused elements",
       "withItems": true,
-      "revealAll": false
+      "revealAll": true
     },
     {
       "type": "test",
@@ -104,8 +119,8 @@
     },
     {
       "type": "score",
-      "which": "p03c10",
-      "what": "3 packages and 10 custom tests, with duplication discounts"
+      "which": "p03c13",
+      "what": "3 packages and 13 custom tests, with duplication discounts"
     }
   ]
 }
