@@ -1666,9 +1666,62 @@
     {
       "type": "test",
       "which": "hover",
-      "what": "hover",
+      "what": "tabulate and list hover-caused context additions",
       "withItems": true,
-      "result": "PAGE URL WRONG (https://www.tsmc.com/english/dedicatedFoundry)"
+      "url": "https://www.tsmc.com/english",
+      "result": {
+        "totals": {
+          "triggers": 3,
+          "visibilityTargets": 5,
+          "opacityTargets": 0
+        },
+        "items": [
+          {
+            "tagName": "LI",
+            "id": "NONE",
+            "text": "Dedicated IC Foundry",
+            "newVisibles": [
+              {
+                "tagName": "SPAN",
+                "text": "<span class=\"underScore\"></span>"
+              }
+            ],
+            "opacityChangers": []
+          },
+          {
+            "tagName": "LI",
+            "id": "searchPanel_wrapper_desktop",
+            "text": "Search",
+            "newVisibles": [
+              {
+                "tagName": "INPUT",
+                "text": "<input title=\"Enter the terms you wish to search f"
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "<button class=\"submit\"><i class=\"fas fa-search\"></"
+              }
+            ],
+            "opacityChangers": []
+          },
+          {
+            "tagName": "A",
+            "id": "nav-searchBtn",
+            "text": "<a id=\"nav-searchBtn\" class=\"nav-link dropdown-tog",
+            "newVisibles": [
+              {
+                "tagName": "INPUT",
+                "text": "<input title=\"Enter the terms you wish to search f"
+              },
+              {
+                "tagName": "BUTTON",
+                "text": "<button class=\"submit\"><i class=\"fas fa-search\"></"
+              }
+            ],
+            "opacityChangers": []
+          }
+        ]
+      }
     },
     {
       "type": "test",
@@ -1809,14 +1862,14 @@
           "wave": 321
         },
         "deficit": {
-          "total": 1963,
+          "total": 1835,
           "axe": 221,
           "bulk": 47,
           "embAc": 0,
           "focInd": 0,
           "focOl": null,
           "focOp": null,
-          "hover": null,
+          "hover": 22,
           "ibm": null,
           "labClash": null,
           "linkUl": null,
