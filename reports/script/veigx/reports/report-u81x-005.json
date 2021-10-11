@@ -1,0 +1,536 @@
+{
+  "script": "p03c13",
+  "batch": "veigx",
+  "what": "Axe, IBM, WAVE, and 13 custom tests",
+  "strict": true,
+  "timeStamp": "u81x",
+  "logCount": 14,
+  "logSize": 997,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "webkit",
+      "what": "used for tests on which chromium fails on some URLs"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ing.com/Home.htm",
+      "what": "ING",
+      "result": "https://www.ing.com/Home.htm"
+    },
+    {
+      "type": "test",
+      "which": "motion",
+      "what": "report motion",
+      "delay": 2400,
+      "interval": 2600,
+      "count": 5,
+      "url": "https://www.ing.com/Home.htm",
+      "result": {
+        "bytes": [
+          342851,
+          342851,
+          342851,
+          342851,
+          342851
+        ],
+        "localRatios": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "meanLocalRatio": 1,
+        "maxLocalRatio": 1,
+        "globalRatio": 1,
+        "pixelChanges": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "meanPixelChange": 0,
+        "maxPixelChange": 0,
+        "changeFrequency": 0
+      }
+    },
+    {
+      "type": "test",
+      "which": "axe",
+      "withItems": true,
+      "rules": [],
+      "what": "conduct and report an Axe test",
+      "url": "https://www.ing.com/Home.htm",
+      "result": {
+        "warnings": 0,
+        "violations": {
+          "minor": 0,
+          "moderate": 6,
+          "serious": 13,
+          "critical": 3
+        },
+        "items": [
+          {
+            "rule": "color-contrast",
+            "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+            "impact": "serious",
+            "elements": [
+              {
+                "selector": ".RichardS > h2",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ff6200, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".RichardS > .medium.no-margin-right.no-icon",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #ff6200, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".card-double.card-item > h2",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ff6200, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".stock-entry:nth-child(1) > .stock-name",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ff6200, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".stock-entry:nth-child(1) > .stock-deviation.positive",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3.73 (foreground color: #349651, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".stock-entry:nth-child(2) > .stock-name",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ff6200, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".stock-entry:nth-child(2) > .stock-deviation.positive",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3.73 (foreground color: #349651, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".card-row:nth-child(2) > .full-width.stock-info.card-item > h2",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ff6200, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": "a[title=\"Coronavirus\"] > span",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #ff6200, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".card-row:nth-child(3) > .full-width.stock-info.card-item > h2",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ff6200, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".card-row:nth-child(3) > .full-width.stock-info.card-item > .button-link > span",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #ff6200, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".bcpObjective:nth-child(1) > label > .medium.no-margin-right.no-icon",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #ff6200, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              },
+              {
+                "selector": ".has-border",
+                "impact": "serious",
+                "must pass any of": [
+                  {
+                    "check": "color-contrast",
+                    "description": "Element has insufficient color contrast of 3 (foreground color: #ff6200, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "impact": "serious"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rule": "image-alt",
+            "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+            "impact": "critical",
+            "elements": [
+              {
+                "selector": "a[title=\"ING\\ in\\ your\\ area\"] > img",
+                "impact": "critical",
+                "must pass any of": [
+                  {
+                    "check": "has-alt",
+                    "description": "Element does not have an alt attribute",
+                    "impact": "critical"
+                  },
+                  {
+                    "check": "aria-label",
+                    "description": "aria-label attribute does not exist or is empty",
+                    "impact": "serious"
+                  },
+                  {
+                    "check": "aria-labelledby",
+                    "description": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                    "impact": "serious"
+                  },
+                  {
+                    "check": "non-empty-title",
+                    "description": "Element has no title attribute",
+                    "impact": "serious"
+                  },
+                  {
+                    "check": "presentational-role",
+                    "description": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                    "impact": "minor"
+                  }
+                ]
+              },
+              {
+                "selector": ".card-row:nth-child(2) > .full-width.stock-info.card-item > .figure-left > img",
+                "impact": "critical",
+                "must pass any of": [
+                  {
+                    "check": "has-alt",
+                    "description": "Element does not have an alt attribute",
+                    "impact": "critical"
+                  },
+                  {
+                    "check": "aria-label",
+                    "description": "aria-label attribute does not exist or is empty",
+                    "impact": "serious"
+                  },
+                  {
+                    "check": "aria-labelledby",
+                    "description": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                    "impact": "serious"
+                  },
+                  {
+                    "check": "non-empty-title",
+                    "description": "Element has no title attribute",
+                    "impact": "serious"
+                  },
+                  {
+                    "check": "presentational-role",
+                    "description": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                    "impact": "minor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rule": "meta-viewport",
+            "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+            "impact": "critical",
+            "elements": [
+              {
+                "selector": "meta[name=\"viewport\"]",
+                "impact": "critical",
+                "must pass any of": [
+                  {
+                    "check": "meta-viewport",
+                    "description": "user-scalable=no on <meta> tag disables zooming on mobile devices",
+                    "impact": "critical"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rule": "region",
+            "description": "Ensures all page content is contained by landmarks",
+            "impact": "moderate",
+            "elements": [
+              {
+                "selector": ".global-backtop",
+                "impact": "moderate",
+                "must pass any of": [
+                  {
+                    "check": "region",
+                    "description": "Some page content is not contained by landmarks",
+                    "impact": "moderate"
+                  }
+                ]
+              },
+              {
+                "selector": ".cyort-overlay",
+                "impact": "moderate",
+                "must pass any of": [
+                  {
+                    "check": "region",
+                    "description": "Some page content is not contained by landmarks",
+                    "impact": "moderate"
+                  }
+                ]
+              },
+              {
+                "selector": ".bcpGDPRHeader",
+                "impact": "moderate",
+                "must pass any of": [
+                  {
+                    "check": "region",
+                    "description": "Some page content is not contained by landmarks",
+                    "impact": "moderate"
+                  }
+                ]
+              },
+              {
+                "selector": ".bcpGDPRDescription",
+                "impact": "moderate",
+                "must pass any of": [
+                  {
+                    "check": "region",
+                    "description": "Some page content is not contained by landmarks",
+                    "impact": "moderate"
+                  }
+                ]
+              },
+              {
+                "selector": ".bcpObjective:nth-child(1) > label",
+                "impact": "moderate",
+                "must pass any of": [
+                  {
+                    "check": "region",
+                    "description": "Some page content is not contained by landmarks",
+                    "impact": "moderate"
+                  }
+                ]
+              },
+              {
+                "selector": ".bcpObjective:nth-child(2) > label",
+                "impact": "moderate",
+                "must pass any of": [
+                  {
+                    "check": "region",
+                    "description": "Some page content is not contained by landmarks",
+                    "impact": "moderate"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ing.com/Home.htm",
+      "what": "ING",
+      "result": "ERROR: Visit to https://www.ing.com/Home.htm failed"
+    },
+    {
+      "type": "test",
+      "which": "bulk",
+      "what": "count of visible elements",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "embAc",
+      "what": "active elements incorrectly embedded in each other",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "what": "focus indicators",
+      "withItems": true,
+      "revealAll": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ing.com/Home.htm",
+      "what": "ING",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "focOl",
+      "what": "outlining of focused elements",
+      "withItems": true,
+      "revealAll": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ing.com/Home.htm",
+      "what": "ING",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "focOp",
+      "what": "focusability and operability of elements",
+      "withItems": true,
+      "revealAll": false,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ing.com/Home.htm",
+      "what": "ING",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "what": "hover",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ing.com/Home.htm",
+      "what": "ING",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "labClash",
+      "what": "unlabeled and mislabeled form controls",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "linkUl",
+      "what": "underlining of inline links",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "radioSet",
+      "what": "grouping of radio buttons in fieldsets",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "validity and necessity of role assignments",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "styleDiff",
+      "what": "style consistency of headings, buttons, and links",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "ibm",
+      "withItems": true,
+      "what": "IBM Accessibility Checker",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://www.ing.com/Home.htm",
+      "what": "ING",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "wave",
+      "reportType": 4,
+      "what": "WAVE, report-type 4",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "score",
+      "which": "p03c13",
+      "what": "3 packages and 13 custom tests, with duplication discounts",
+      "error": "ERROR: Cannot read property 'totals' of undefined\nTypeError: Cannot read property 'totals' of undefined\n    at /Users/pool/Documents/Topics/repos/autotest/procs/score/p03c13.js:130:43\n    at Array.forEach (<anonymous>)\n    at exports.scorer (/Users/pool/Documents/Topics/repos/autotest/procs/score/p03c13.js:105:11)\n    at doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:502:24)\n    at doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:691:11)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:691:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:691:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:691:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:691:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:691:5)"
+    }
+  ],
+  "testTimes": [
+    [
+      "motion",
+      14
+    ],
+    [
+      "axe",
+      1
+    ]
+  ]
+}
