@@ -3,9 +3,9 @@
   "batch": "veigxRest",
   "what": "Axe, IBM, WAVE, and 13 custom tests",
   "strict": true,
-  "timeStamp": "udnb",
-  "logCount": 16,
-  "logSize": 448,
+  "timeStamp": "uph3",
+  "logCount": 14,
+  "logSize": 634,
   "acts": [
     {
       "type": "launch",
@@ -172,7 +172,116 @@
       "type": "score",
       "which": "p03c13",
       "what": "3 packages and 13 custom tests, with duplication discounts",
-      "error": "ERROR: Cannot read property 'totals' of undefined\nTypeError: Cannot read property 'totals' of undefined\n    at /Users/pool/Documents/Topics/repos/autotest/procs/score/p03c13.js:130:43\n    at Array.forEach (<anonymous>)\n    at exports.scorer (/Users/pool/Documents/Topics/repos/autotest/procs/score/p03c13.js:105:11)\n    at doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:506:24)\n    at doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:695:11)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:695:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:695:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:695:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:695:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:695:5)"
+      "result": {
+        "ruleDiscounts": {
+          "axe": {
+            "aria-allowed-role": 1,
+            "aria-roles": 2,
+            "color-contrast": 2,
+            "image-redundant-alt": 1,
+            "label": 3,
+            "link-name": 2,
+            "region": 1
+          },
+          "ibm": {
+            "aria_semantics_role": 2,
+            "IBMA_Color_Contrast_WCAG2AA": 2,
+            "Rpt_Aria_OrphanedContent_Native_Host_Sematics": 2,
+            "Rpt_Aria_ValidIdRef": 2,
+            "Rpt_Aria_ValidRole": 2,
+            "WCAG20_A_HasText": 2,
+            "WCAG20_Fieldset_HasLegend": 3,
+            "WCAG20_Input_ExplicitLabel": 2,
+            "WCAG20_Input_RadioChkInFieldSet": 3
+          },
+          "wave": {
+            "alt_redundant": 1,
+            "aria_reference_broken": 2,
+            "contrast": 1,
+            "fieldset_missing": 1,
+            "label_orphaned": 1,
+            "legend_missing": 1,
+            "link_empty": 2,
+            "select_missing_label": 1
+          }
+        },
+        "rules": {
+          "axe": "",
+          "bulk": "",
+          "embAc": "",
+          "focInd": "",
+          "focOl": "",
+          "focOp": "",
+          "hover": "",
+          "ibm": "",
+          "labClash": "",
+          "linkUl": "",
+          "log": "multiply log messages by logWeights.count, sum of characters in log messages by logWeights.size",
+          "motion": "",
+          "radioSet": "",
+          "role": "",
+          "styleDiff": "",
+          "wave": ""
+        },
+        "diffStyles": [
+          "borderStyle",
+          "borderWidth",
+          "fontStyle",
+          "fontWeight",
+          "lineHeight",
+          "maxHeight",
+          "maxWidth",
+          "minHeight",
+          "minWidth",
+          "opacity",
+          "outlineOffset",
+          "outlineStyle",
+          "outlineWidth",
+          "textDecorationLine",
+          "textDecorationStyle",
+          "textDecorationThickness"
+        ],
+        "logWeights": {
+          "count": 0.5,
+          "size": 0.01
+        },
+        "inferences": {
+          "motion": 150,
+          "bulk": 100,
+          "embAc": 100,
+          "focInd": 150,
+          "focOl": 100,
+          "focOp": 150,
+          "hover": 150,
+          "labClash": 100,
+          "linkUl": 150,
+          "radioSet": 100,
+          "role": 100,
+          "styleDiff": 100,
+          "axe": 200,
+          "ibm": 200,
+          "wave": 200
+        },
+        "deficit": {
+          "total": 2063,
+          "axe": null,
+          "bulk": null,
+          "embAc": null,
+          "focInd": null,
+          "focOl": null,
+          "focOp": null,
+          "hover": null,
+          "ibm": null,
+          "labClash": null,
+          "linkUl": null,
+          "log": 13,
+          "motion": null,
+          "radioSet": null,
+          "role": null,
+          "styleDiff": null,
+          "wave": null
+        }
+      }
     }
   ],
   "testTimes": []
