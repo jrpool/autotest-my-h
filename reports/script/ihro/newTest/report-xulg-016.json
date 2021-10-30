@@ -1,0 +1,154 @@
+{
+  "script": "focAll",
+  "batch": "ihro",
+  "what": "focAll",
+  "strict": true,
+  "timeStamp": "xulg",
+  "logCount": 4,
+  "logSize": 443,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.equalityhumanrights.com/en",
+      "what": "Equality and Human Rights Commission",
+      "result": "https://www.equalityhumanrights.com/en"
+    },
+    {
+      "type": "test",
+      "which": "focAll",
+      "what": "focusable and Tab-focused elements",
+      "url": "https://www.equalityhumanrights.com/en",
+      "result": {
+        "tabFocusables": 49,
+        "tabFocused": 64,
+        "discrepancy": 15
+      }
+    },
+    {
+      "type": "score",
+      "which": "a11y03",
+      "what": "3 packages and 16 custom tests, with duplication discounts",
+      "result": {
+        "ruleDiscounts": {
+          "axe": {
+            "aria-allowed-role": 1,
+            "aria-roles": 2,
+            "color-contrast": 2,
+            "image-redundant-alt": 1,
+            "label": 3,
+            "link-name": 2,
+            "region": 1
+          },
+          "ibm": {
+            "aria_semantics_role": 2,
+            "IBMA_Color_Contrast_WCAG2AA": 2,
+            "Rpt_Aria_OrphanedContent_Native_Host_Sematics": 2,
+            "Rpt_Aria_ValidIdRef": 2,
+            "Rpt_Aria_ValidRole": 2,
+            "WCAG20_A_HasText": 2,
+            "WCAG20_Fieldset_HasLegend": 3,
+            "WCAG20_Input_ExplicitLabel": 2,
+            "WCAG20_Input_RadioChkInFieldSet": 3
+          },
+          "wave": {
+            "alt_redundant": 1,
+            "aria_reference_broken": 2,
+            "contrast": 1,
+            "fieldset_missing": 1,
+            "label_orphaned": 1,
+            "legend_missing": 1,
+            "link_empty": 2,
+            "select_missing_label": 1
+          }
+        },
+        "rules": {
+          "axe": "",
+          "bulk": "",
+          "embAc": "",
+          "focAll": "multiply discrepancy between focusable and focused element counts by 3",
+          "focInd": "",
+          "focOp": "",
+          "hover": "",
+          "ibm": "",
+          "labClash": "",
+          "linkUl": "",
+          "log": "multiply log items by respective logWeights; sum",
+          "menuNav": "",
+          "motion": "",
+          "radioSet": "",
+          "role": "",
+          "styleDiff": "",
+          "tabNav": "",
+          "wave": "",
+          "zIndex": ""
+        },
+        "diffStyles": [
+          "borderStyle",
+          "borderWidth",
+          "fontStyle",
+          "fontWeight",
+          "lineHeight",
+          "maxHeight",
+          "maxWidth",
+          "minHeight",
+          "minWidth",
+          "opacity",
+          "outlineOffset",
+          "outlineStyle",
+          "outlineWidth",
+          "textDecorationLine",
+          "textDecorationStyle",
+          "textDecorationThickness"
+        ],
+        "logWeights": {
+          "count": 0.5,
+          "size": 0.01,
+          "prohibited": 15,
+          "visitTimeout": 10,
+          "visitRejection": 10
+        },
+        "inferences": {
+          "axe": 200,
+          "ibm": 200,
+          "wave": 200
+        },
+        "deficit": {
+          "total": 651,
+          "axe": null,
+          "bulk": null,
+          "embAc": null,
+          "focAll": 45,
+          "focInd": null,
+          "focOp": null,
+          "hover": null,
+          "ibm": null,
+          "labClash": null,
+          "linkUl": null,
+          "log": 6,
+          "menuNav": null,
+          "motion": null,
+          "radioSet": null,
+          "role": null,
+          "styleDiff": null,
+          "tabNav": null,
+          "wave": null,
+          "zIndex": null
+        }
+      }
+    }
+  ],
+  "testTimes": [
+    [
+      "focAll",
+      1
+    ]
+  ]
+}
