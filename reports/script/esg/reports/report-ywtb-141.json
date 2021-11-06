@@ -1,0 +1,354 @@
+{
+  "script": "a11y04",
+  "batch": "esgRest",
+  "what": "Axe, IBM, WAVE, and 16 custom tests",
+  "strict": true,
+  "timeStamp": "ywtb",
+  "logCount": 13,
+  "logSize": 685,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 10,
+  "visitRejectionCount": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "webkit",
+      "what": "used for tests on which chromium fails on some URLs"
+    },
+    {
+      "type": "url",
+      "which": "https://transalta.com/",
+      "what": "Transalta Renewables (NALFX)",
+      "result": "ERROR: Visit to https://transalta.com/ failed"
+    },
+    {
+      "type": "test",
+      "which": "motion",
+      "what": "spontaneous change of content",
+      "delay": 2400,
+      "interval": 2600,
+      "count": 5,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "axe",
+      "withItems": true,
+      "rules": [],
+      "what": "Axe core, all rules",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://transalta.com/",
+      "what": "Transalta Renewables (NALFX)",
+      "result": "https://transalta.com/"
+    },
+    {
+      "type": "test",
+      "which": "bulk",
+      "what": "count of visible elements",
+      "url": "https://transalta.com/",
+      "result": {
+        "visibleElements": 718
+      }
+    },
+    {
+      "type": "test",
+      "which": "embAc",
+      "what": "active elements embedded in links or buttons",
+      "withItems": true,
+      "url": "https://transalta.com/",
+      "result": {
+        "totals": {
+          "links": 0,
+          "buttons": 0,
+          "inputs": 0,
+          "selects": 0
+        },
+        "items": []
+      }
+    },
+    {
+      "type": "test",
+      "which": "focAll",
+      "what": "focusable and Tab-focused elements",
+      "url": "https://transalta.com/",
+      "result": {
+        "tabFocusables": 64,
+        "tabFocused": 54,
+        "discrepancy": -10
+      }
+    },
+    {
+      "type": "url",
+      "which": "https://transalta.com/",
+      "what": "Transalta Renewables (NALFX)",
+      "result": "ERROR: Visit to https://transalta.com/ failed"
+    },
+    {
+      "type": "test",
+      "which": "focInd",
+      "what": "focus indicators",
+      "withItems": true,
+      "revealAll": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://transalta.com/",
+      "what": "Transalta Renewables (NALFX)",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "focOp",
+      "what": "focusability and operability of elements",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://transalta.com/",
+      "what": "Transalta Renewables (NALFX)",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "hover",
+      "what": "hover-triggered content changes",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://transalta.com/",
+      "what": "Transalta Renewables (NALFX)",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "labClash",
+      "what": "unlabeled and mislabeled form controls",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "linkUl",
+      "what": "underlining of inline links",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "menuNav",
+      "what": "keyboard navigation within true-focus menus",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://transalta.com/",
+      "what": "Transalta Renewables (NALFX)",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "radioSet",
+      "what": "grouping of radio buttons in fieldsets",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "role",
+      "what": "validity and necessity of role assignments",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "styleDiff",
+      "what": "style consistency of headings, buttons, and links",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "tabNav",
+      "what": "keyboard navigation within tab lists",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "zIndex",
+      "what": "elements with non-auto z indexes",
+      "withItems": true,
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "ibm",
+      "withItems": true,
+      "what": "IBM Accessibility Checker",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "url",
+      "which": "https://transalta.com/",
+      "what": "Transalta Renewables (NALFX)",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "test",
+      "which": "wave",
+      "reportType": 4,
+      "what": "WAVE, report-type 4",
+      "result": "ERROR: No page identified"
+    },
+    {
+      "type": "score",
+      "which": "a11y04",
+      "what": "3 packages and 16 custom tests, with duplication discounts",
+      "result": {
+        "ruleDiscounts": {
+          "axe": {
+            "aria-allowed-role": 1,
+            "aria-roles": 2,
+            "color-contrast": 2,
+            "image-redundant-alt": 1,
+            "label": 3,
+            "link-name": 2,
+            "region": 1
+          },
+          "ibm": {
+            "aria_semantics_role": 2,
+            "IBMA_Color_Contrast_WCAG2AA": 2,
+            "Rpt_Aria_OrphanedContent_Native_Host_Sematics": 2,
+            "Rpt_Aria_ValidIdRef": 2,
+            "Rpt_Aria_ValidRole": 2,
+            "WCAG20_A_HasText": 2,
+            "WCAG20_Fieldset_HasLegend": 3,
+            "WCAG20_Input_ExplicitLabel": 2,
+            "WCAG20_Input_RadioChkInFieldSet": 3
+          },
+          "wave": {
+            "alt_redundant": 1,
+            "aria_reference_broken": 2,
+            "contrast": 1,
+            "fieldset_missing": 1,
+            "label_orphaned": 1,
+            "legend_missing": 1,
+            "link_empty": 2,
+            "select_missing_label": 1
+          }
+        },
+        "rules": {
+          "axe": "",
+          "bulk": "subtract 150 from visible elements; make 0 if negative; raise to 0.9th power; multiply by 0.15",
+          "embAc": "multiply link- or button-contained links, buttons, inputs, and selects by 5",
+          "focAll": "multiply discrepancy between focusable and focused element counts by 3",
+          "focInd": "",
+          "focOp": "",
+          "hover": "",
+          "ibm": "",
+          "labClash": "",
+          "linkUl": "",
+          "log": "multiply log items by respective logWeights; sum",
+          "menuNav": "",
+          "motion": "",
+          "radioSet": "",
+          "role": "",
+          "styleDiff": "",
+          "tabNav": "",
+          "wave": "",
+          "zIndex": ""
+        },
+        "diffStyles": [
+          "borderStyle",
+          "borderWidth",
+          "fontStyle",
+          "fontWeight",
+          "lineHeight",
+          "maxHeight",
+          "maxWidth",
+          "minHeight",
+          "minWidth",
+          "opacity",
+          "outlineOffset",
+          "outlineStyle",
+          "outlineWidth",
+          "textDecorationLine",
+          "textDecorationStyle",
+          "textDecorationThickness"
+        ],
+        "logWeights": {
+          "count": 0.5,
+          "size": 0.01,
+          "prohibited": 15,
+          "visitTimeout": 10,
+          "visitRejection": 10
+        },
+        "inferences": {
+          "motion": 150,
+          "focInd": 150,
+          "focOp": 150,
+          "hover": 150,
+          "labClash": 100,
+          "linkUl": 150,
+          "menuNav": 150,
+          "radioSet": 100,
+          "role": 100,
+          "styleDiff": 100,
+          "tabNav": 150,
+          "zIndex": 100,
+          "axe": 200,
+          "ibm": 200,
+          "wave": 200
+        },
+        "deficit": {
+          "total": 2338,
+          "axe": null,
+          "bulk": 45,
+          "embAc": 0,
+          "focAll": 30,
+          "focInd": null,
+          "focOp": null,
+          "hover": null,
+          "ibm": null,
+          "labClash": null,
+          "linkUl": null,
+          "log": 113,
+          "menuNav": null,
+          "motion": null,
+          "radioSet": null,
+          "role": null,
+          "styleDiff": null,
+          "tabNav": null,
+          "wave": null,
+          "zIndex": null
+        }
+      }
+    }
+  ],
+  "testTimes": [
+    [
+      "focAll",
+      2
+    ],
+    [
+      "bulk",
+      1
+    ],
+    [
+      "embAc",
+      0
+    ]
+  ]
+}
