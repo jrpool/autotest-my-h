@@ -1,0 +1,120 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 1,
+  "logSize": 986,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 1,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.indeed.com/",
+      "what": "Recruit Holdings (VEIGX)",
+      "result": "https://www.indeed.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.indeed.com/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Interfering with a user agent's ability to zoom may be a failure of this Success Criterion.",
+          "code": "&lt;meta name=\"viewport\"\ncontent=\"width=device-width,\ninitial-scale=1.0,\nmaximum-scale=1.0\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h1\nclass=\"jobsearch-Header-h1--hi\nden\"&gt;Indeed&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button tabindex=\"0\"\naria-label=\"Primary\nnavigation\"\ndata-gnav-element-name=\"Burger\nenu\" data-gnav-action=\"open\"\naria-controls=\"gnav-burger-men\n-nav\" aria-expanded=\"false\"\nclass=\"gnav-header-tyjnkf\ne8ju0x51\"&gt;&lt;style\ndata-emotion-gnav-header=\"1h5e\nvm\"&gt;#gnav-ma...&lt;/button&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span id=\"gnav-header-end\"\ntabindex=\"-1\"\nclass=\"gnav-header-85m0bu\nesbq1260\"&gt;Start of main\ncontent&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"jobsearch-PopularSearch\nsPillBoxes-content\"&gt;&lt;a\nclass=\"jobsearch-PopularSearch\nsPillBoxes-pillB...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "The language specified in the lang attribute of this element does not appear to be well-formed.",
+          "code": "&lt;a lang=\"es_US\"\nclass=\"jobsearch-TextLink-link\n\nhref=\"/setprefs?action=set&amp\namp;hl=es&amp;amp;prevhl=en&am\n;amp;tk=1forq7e26t615800\"\nrel=\"nofollow\"&gt;español&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H58\" target=\"_blank\">H58</a>"
+          ],
+          "id": "H58"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nclass=\"serpLinking-button\"\naria-expanded=\"false\"&gt;&lt;d\nv\nclass=\"AccordionList-header\"&g\n;&lt;span\nclass=\"Acc...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "errorcount": 2
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

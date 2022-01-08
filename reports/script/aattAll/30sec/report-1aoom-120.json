@@ -1,0 +1,165 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 1,
+  "logSize": 28,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.kimberly-clark.com.mx/",
+      "what": "Kimberly-Clark de Mexico (AMDWX)",
+      "result": "https://www.kimberly-clark.com.mx/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.kimberly-clark.com.mx/",
+      "result": [
+        {
+          "type": "error",
+          "msg": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+          "code": "&lt;html\nxmlns=\"http://www.w3.org/1999/\nhtml\" style=\"\" class=\" js\ncsstransforms3d\"&gt;&lt;head&g\n;&lt;title&gt;\n\tKimberly-Clark de MÃ©xico |\nKimberl...&lt;/html&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H57\" target=\"_blank\">H57</a>"
+          ],
+          "id": "H57"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form method=\"post\"\naction=\"/\"\nid=\"aspnetForm\"&gt;\n&lt;div\nclass=\"aspNetHidden\"&gt;\n&lt;input type=\"hidden\"\nn...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"col-1ter\"\nstyle=\"width: 37%; \"&gt;\n            \n            &lt;a\nhref=\"/finanzas\"\nclas...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"text\"\nid=\"buscar\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input type=\"text\"\nid=\"buscar\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a href=\"#\" id=\"trigger\"\nclass=\"menu-trigger\"&gt;\n&lt;img\nsrc=\"/data/global/img/util/log\n-color.png\" s...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;span style=\"font-size:\nxx-small; color:\n#ffffff;\"&gt;Bienvenido al\nSitio de Kimberly-Clark de\nMÃ©xicoNa...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/data/2021/KCMSOSTHEROBAN\nER-1.jpg\" style=\"display:\nblock; margin-left: auto;\nmargin-right: auto;\"\nwidth=\"945\" height=\"425\"\ncaption=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"slideCount\"&gt;&lt;a\nhref=\"#\" slide-pos=\"0\"\nclass=\"selected\"&gt;o&lt;/a&gt\n&lt;a...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a href=\"#\"&gt;&lt;img\nsrc=\"/data/global/img/util/fle\nha-izquierda.p...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a href=\"#\"&gt;&lt;img\nsrc=\"/data/global/img/util/fle\nha-derecha.png...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div id=\"bandaFoot\"&gt;   \n       \n           &lt;!--&lt;img\nsrc=\"/data/global/...&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "errorcount": 8
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      4
+    ]
+  ]
+}

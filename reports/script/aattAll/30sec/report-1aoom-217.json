@@ -1,0 +1,665 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 40,
+  "logSize": 3528,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://benetech.org/",
+      "what": "Benetech",
+      "result": "https://benetech.org/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://benetech.org/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Interfering with a user agent's ability to zoom may be a failure of this Success Criterion.",
+          "code": "&lt;meta name=\"viewport\"\ncontent=\"width=device-width,\ninitial-scale=1.0,\nmaximum-scale=1.0,\nuser-scalable=no\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a class=\"show-on-focus\nheader-contentSkip\"\nhref=\"#mainContentAnchor\"&gt;\n\t\t\t\t\t\t\tSkip to\nContent\t\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a\nhref=\"https://benetech.org\"\naria-label=\"Benetech Logo to\nhomepage\"&gt;\n\t\t\t\t\t\n\t\n\t\n\t\t&lt;picture&gt;\n\t\t\t\t\t\t\t\t\t&lt;source\nmedia=\"(mi...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;noscript&gt;\n\t\t\t&amp;lt;img\nsrc=\"https://benetech.org/wp-c\nntent/u...&lt;/noscript&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form role=\"search\"\nmethod=\"GET\"\naction=\"https://benetech.org\"\nclass=\"header-search-wrapper\"&\nt;\n\t\t\t\t\t\t\t&lt;input type=\"text\"\nclass=\"header-search-in...&lt;\nform&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tHelp create more\nequity in\nliteracy\t\t...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/get\ninvolved/equity-in-literacy/\"\nclass=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"0\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"hero-slide-background\nresponsiveImage--loaded\"\ndata-responsive-image=\"\"\ntitle=\"\"\ndata-image-xs=\"https://benetec\n.org/wp-content/uploads/2021/0\n/2boys-scaled-mobile-95-480x80\n.jpg\"\ndata-image-sm=\"https://benetec\n.org/wp-content/uploads/2021/0\n/2boys-scaled-mobile-95-800x80\n.jpg\"\ndata-image-md=\"https://benetec\n.org/wp-content/uploads/2021/0\n/2boys-scaled-mobile-95-1024x8\n0.jpg\"\ndata-image-lg=\"https://benetec\n.org/wp-content/uploads/2021/0\n/2boys-scaled-mobile-95-1365x8\n0.jpg\"\ndata-image-xl=\"https://benetec\n.org/wp-content/uploads/2021/0\n/2boys-scaled-mobile-95-1920x8\n0.jpg\"\nstyle=\"background-image:\nurl(&amp;quot;https://benetech\norg/wp-content/uploads/2021/08\n2boys-scaled-mobile-95-1365x80\n.jpg&amp;quot;);\"&gt;&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a class=\"band-text \"\nhref=\"https://benetech.org/new\n/press/benetech-names-ayan-kis\nore-chief-executive-officer/\"&\nt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tBenetech Names\nAyan Kishore Chief\nEx...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.94:1. Recommendation:  change text colour to #c95000.",
+          "code": "&lt;a\nhref=\"https://benetech.org/wor\n-area/education/\"\nclass=\"tile-button \"\naria-label=\"Read more about\nEducation\"&gt;\n\t\t\t\t\t\tSee Education\nWork\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a\nhref=\"https://benetech.org/wor\n-area/education/\"\nclass=\"tile-button \"\naria-label=\"Read more about\nEducation\"&gt;\n\t\t\t\t\t\tSee Education\nWork\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.94:1. Recommendation:  change text colour to #c95000.",
+          "code": "&lt;a\nhref=\"https://benetech.org/wor\n-area/employment/\"\nclass=\"tile-button \"\naria-label=\"Read more about\nEmployment\"&gt;\n\t\t\t\t\t\tSee Employment\nWork\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a\nhref=\"https://benetech.org/wor\n-area/employment/\"\nclass=\"tile-button \"\naria-label=\"Read more about\nEmployment\"&gt;\n\t\t\t\t\t\tSee Employment\nWork\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.94:1. Recommendation:  change text colour to #c95000.",
+          "code": "&lt;a\nhref=\"https://benetech.org/wor\n-area/social-inclusion/\"\nclass=\"tile-button \"\naria-label=\"Read more about\nSocial Inclusion\"&gt;\n\t\t\t\t\t\tSee Social Inclusion\nWork\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a\nhref=\"https://benetech.org/wor\n-area/social-inclusion/\"\nclass=\"tile-button \"\naria-label=\"Read more about\nSocial Inclusion\"&gt;\n\t\t\t\t\t\tSee Social Inclusion\nWork\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.94:1. Recommendation:  change text colour to #c95000.",
+          "code": "&lt;a\nhref=\"https://benetech.org/wor\n-area/prior-work/\"\nclass=\"tile-button \"\naria-label=\"Read more about\nPrior Work\"&gt;\n\t\t\t\t\t\tSee Prior\nWork\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a\nhref=\"https://benetech.org/wor\n-area/prior-work/\"\nclass=\"tile-button \"\naria-label=\"Read more about\nPrior Work\"&gt;\n\t\t\t\t\t\tSee Prior\nWork\t\t\t\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h3\nclass=\"listBand-listItem-title\n\" style=\"color: rgb(174, 171,\n202)\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t20\nmillion+\t\t\t\t\t\t\t\t\t\t\t&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h3\nclass=\"listBand-listItem-title\n\" style=\"color: rgb(143, 203,\n214)\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t50+\t\t\t\t\t\t\t\t\t\t\t&lt;\nh3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h3\nclass=\"listBand-listItem-title\n\" style=\"color: rgb(151, 217,\n166)\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t170+\t\t\t\t\t\t\t\t\t\t\t&lt\n/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"listBand-backgroundImag\n responsiveImage--loaded\"\ndata-responsive-image=\"\"\ntitle=\"\"\ndata-image-xs=\"https://benetec\n.org/wp-content/uploads/2017/0\n/img_6833_5039780101_o-480x768\njpg\"\ndata-image-sm=\"https://benetec\n.org/wp-content/uploads/2017/0\n/img_6833_5039780101_o-800x768\njpg\"\ndata-image-md=\"https://benetec\n.org/wp-content/uploads/2017/0\n/img_6833_5039780101_o-1024x76\n.jpg\"\ndata-image-lg=\"https://benetec\n.org/wp-content/uploads/2017/0\n/img_6833_5039780101_o-1365x76\n.jpg\"\ndata-image-xl=\"https://benetec\n.org/wp-content/uploads/2017/0\n/img_6833_5039780101_o-1920x76\n.jpg\"\nstyle=\"background-image:\nurl(&amp;quot;https://benetech\norg/wp-content/uploads/2017/05\nimg_6833_5039780101_o-1365x768\njpg&amp;quot;);\"&gt;&lt;/div&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.94:1. Recommendation:  change text colour to #c95000.",
+          "code": "&lt;a\nhref=\"https://benetech.org/app\noach/\" class=\"steps-step-link\n\"&gt;\n                             \n          Learn\nMor...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #212121.",
+          "code": "&lt;noscript&gt;\n\t\t\t&amp;lt;img\nsrc=\"https://benetech.org/wp-c\nntent/u...&lt;/noscript&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"featureBand-buttons\n\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/\niv&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nsrc=\"https://go.pardot.com/l/6\n3003/2019-02-18/7kwm\"\nwidth=\"100%\" height=\"500\"\ntype=\"text/html\"\nframeborder=\"0\"\nallowtransparency=\"true\"\nstyle=\"border: 0px; overflow:\nhidden; height: 189px;\"\nid=\"iFrameResizer0\"\nscrolling=\"no\"&gt;&lt;/iframe&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.94:1. Recommendation:  change text colour to #c95000.",
+          "code": "&lt;noscript&gt;\n\t\t\t&amp;lt;img\nsrc=\"https://benetech.org/wp-c\nntent/u...&lt;/noscript&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a&gt;Benetech&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a&gt;Get\nInvolved&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div class=\"splash\nwmpci-popup-wrp design1\"\nid=\"wmpci-popup-wrp\"&gt;\n\t&lt;div\nclass=\"wmpci-popup-body\"&gt;\n\t\t\n\t\t\t\t&lt;a\nhref=\"j...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tBridging the\nEducation to Employment\n...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tDigital literacy\nprogram empowers\nbl...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tIs the future of\nliteracy\ndigital?\t\t\t...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tWatch the\non-demand panel\ndiscussion...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tMeet\nEmery\t\t\t\t\t\t\t\t\t\t\t&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tStudent with\ndyslexia discovers a\nlo...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tBridging the\nSocial Sector &lt;br\nclass=...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tEmpowering\ncommunities together\n\t\t\t\t...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tBridging the\nEducation to Employment\n...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tDigital literacy\nprogram empowers\nbl...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tHelp create more\nequity in\nliteracy\t\t...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tIs the future of\nliteracy\ndigital?\t\t\t...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tWatch the\non-demand panel\ndiscussion...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tMeet\nEmery\t\t\t\t\t\t\t\t\t\t\t&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tStudent with\ndyslexia discovers a\nlo...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tBridging the\nSocial Sector &lt;br\nclass=...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tEmpowering\ncommunities together\n\t\t\t\t...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;h1\nclass=\"hero-slide-title \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\tBridging the\nEducation to Employment\n...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1.01:1. Recommendation:  change background to #949494.",
+          "code": "&lt;div\nclass=\"hero-slide-body \"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\tDigital literacy\nprogram empowers\nbl...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #212121.",
+          "code": "&lt;noscript&gt;\n\t\t\t&amp;lt;img\nsrc=\"https://benetech.org/wp-c\nntent/u...&lt;/noscript&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #212121.",
+          "code": "&lt;noscript&gt;\n\t\t\t&amp;lt;img\nsrc=\"https://benetech.org/wp-c\nntent/u...&lt;/noscript&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #212121.",
+          "code": "&lt;noscript&gt;\n\t\t\t&amp;lt;img\nsrc=\"https://benetech.org/wp-c\nntent/u...&lt;/noscript&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/new\n/press/benetech-lavelle-india-\nigital-first-education/\"\nclass=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/abo\nt/events/inclusive-education-s\nries/\" class=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnone\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/sto\ny/bookshare-emery-dyslexia-rea\ning/\" class=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnone\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/app\noach/\" class=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/new\n/press/benetech-lavelle-india-\nigital-first-education/\"\nclass=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/get\ninvolved/equity-in-literacy/\"\nclass=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/abo\nt/events/inclusive-education-s\nries/\" class=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnone\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/sto\ny/bookshare-emery-dyslexia-rea\ning/\" class=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnone\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/app\noach/\" class=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://benetech.org/new\n/press/benetech-lavelle-india-\nigital-first-education/\"\nclass=\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\thero-slide-button\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"\ntabindex=\"-1\"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "errorcount": 32
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

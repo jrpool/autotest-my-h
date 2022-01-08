@@ -1,0 +1,1535 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 56,
+  "logSize": 4844,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.deltaww.com/en-US/index",
+      "what": "Delta Electronics (AMDWX)",
+      "result": "https://www.deltaww.com/en-US/index"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.deltaww.com/en-US/index",
+      "result": [
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form method=\"post\"\naction=\"./index\"\nid=\"form1\"&gt;\n&lt;div\nclass=\"aspNetHidden\"&gt;\n&lt;input type=\"hidden\"\nn...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a href=\"..//index\"\nclass=\"logo\"&gt;\n        &lt;img\nsrc=\"../images/logo.svg\"&gt;\n      &lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"javascript:;\"\nid=\"header_search_link\"\nclass=\"search\"&gt;&lt;span\nuk-icon=\"icon: search; ratio:\n1.8\" class=\"uk...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h3\nclass=\"nav-title\"&gt;Power\nElectronics&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h1 to be properly nested.",
+          "code": "&lt;h3\nclass=\"nav-title\"&gt;Power\nElectronics&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/ImagesNew/banner/innergie\nlogo.svg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/ImagesNew/banner/vivitek_\nogo.svg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202011160409038873\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202011160409210944\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202011160409349483\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202011160409480825\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202108181530451992\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel2_02\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel2_02\"\nclass=\"Solutionslevel2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"SolutionsM2\"\ndata-nextexpandlevels=\"1\"\n...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel2_05\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel2_05\"\nclass=\"Solutionslevel2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"SolutionsM2\"\ndata-nextexpandlevels=\"0\"\n...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel2_01\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel2_01\"\nclass=\"Solutionslevel2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"SolutionsM2\"\ndata-nextexpandlevels=\"1\"\n...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel2_06\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel2_06\"\nclass=\"Solutionslevel2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"SolutionsM2\"\ndata-nextexpandlevels=\"0\"\n...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel2_03\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel2_03\"\nclass=\"Solutionslevel2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"SolutionsM2\"\ndata-nextexpandlevels=\"0\"\n...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"javascript:;\"\nclass=\"goLevel2\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel3_0202\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel3_0202\"\ndata-cid=\"0202\" class=\"level3\nSolutionslevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"Solutionslist3\"\ndata-cid=\"020201\"\ndata-...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel3_0201\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel3_0201\"\ndata-cid=\"0201\" class=\"level3\nSolutionslevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"Solutionslist3\"\ndata-cid=\"020101\"\ndata-...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel3_0204\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel3_0204\"\ndata-cid=\"0204\" class=\"level3\nSolutionslevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"Solutionslist3\"\ndata-cid=\"020401\"\ndata-...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel3_0101\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel3_0101\"\ndata-cid=\"0101\" class=\"level3\nSolutionslevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"Solutionslist3\"\ndata-cid=\"010101\"\ndata-...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Solutionslevel3_0103\" found on the web page.",
+          "code": "&lt;ul\nid=\"Solutionslevel3_0103\"\ndata-cid=\"0103\" class=\"level3\nSolutionslevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"Solutionslist3\"\ndata-cid=\"010301\"\ndata-...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/ImagesNew/banner/innergie\nlogo.svg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/ImagesNew/banner/vivitek_\nogo.svg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_04\" found on the web page.",
+          "code": "&lt;ul id=\"level2_04\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"1\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_19\" found on the web page.",
+          "code": "&lt;ul id=\"level2_19\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"1\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_03\" found on the web page.",
+          "code": "&lt;ul id=\"level2_03\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"0\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_22\" found on the web page.",
+          "code": "&lt;ul id=\"level2_22\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"0\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_06\" found on the web page.",
+          "code": "&lt;ul id=\"level2_06\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"1\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_23\" found on the web page.",
+          "code": "&lt;ul id=\"level2_23\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"0\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_20\" found on the web page.",
+          "code": "&lt;ul id=\"level2_20\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"1\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_21\" found on the web page.",
+          "code": "&lt;ul id=\"level2_21\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"0\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level2_11\" found on the web page.",
+          "code": "&lt;ul id=\"level2_11\"\nclass=\"level2_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"ProductsM2\"\ndata-nextexpandlevels=\"0\"\nd...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0401\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0401\"\ndata-cid=\"0401\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"040102\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0402\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0402\"\ndata-cid=\"0402\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"040201\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0403\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0403\"\ndata-cid=\"0403\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"040301\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0404\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0404\"\ndata-cid=\"0404\"\ndata-url=\"Networking\"\nclass=\"level3 level3_ul\"\nstyle=\"display:none\"&gt;&lt;h3\nclass=\"nav-title\"\nalt=\"040402\"&gt;Networking\nComp...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_01\" found on the web page.",
+          "code": "&lt;ul id=\"level3_01\"\ndata-cid=\"01\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"0101\"\ndata-url...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_02\" found on the web page.",
+          "code": "&lt;ul id=\"level3_02\"\ndata-cid=\"02\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"0201\"\ndata-url...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_1701\" found on the web page.",
+          "code": "&lt;ul id=\"level3_1701\"\ndata-cid=\"1701\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"170101\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0303\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0303\"\ndata-cid=\"0303\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"030301\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0302\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0302\"\ndata-cid=\"0302\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"030201\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0601\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0601\"\ndata-cid=\"0601\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"060101\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0602\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0602\"\ndata-cid=\"0602\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"060201\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0603\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0603\"\ndata-cid=\"0603\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"060301\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0604\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0604\"\ndata-cid=\"0604\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"060405\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0606\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0606\"\ndata-cid=\"0606\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"060601\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0609\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0609\"\ndata-cid=\"0609\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"060901\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0607\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0607\"\ndata-cid=\"0607\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"060711\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_0610\" found on the web page.",
+          "code": "&lt;ul id=\"level3_0610\"\ndata-cid=\"0610\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"061001\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_2301\" found on the web page.",
+          "code": "&lt;ul id=\"level3_2301\"\ndata-cid=\"2301\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"230101\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_09\" found on the web page.",
+          "code": "&lt;ul id=\"level3_09\"\ndata-cid=\"09\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"0901\"\ndata-url...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_07\" found on the web page.",
+          "code": "&lt;ul id=\"level3_07\"\ndata-cid=\"07\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"0701\"\ndata-url...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_05\" found on the web page.",
+          "code": "&lt;ul id=\"level3_05\"\ndata-cid=\"05\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"0501\"\ndata-url...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"level3_2111\" found on the web page.",
+          "code": "&lt;ul id=\"level3_2111\"\ndata-cid=\"2111\" class=\"level3\nlevel3_ul\"\nstyle=\"display:none\"&gt;&lt;li\nclass=\"categorylist3\"\ndata-cid=\"211101\"\ndata-u...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202011160409038873\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202011160409210944\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202011160409349483\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202011160409480825\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/images/202108181530451992\n01.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"text\"\nid=\"s_q\" class=\"\"\nplaceholder=\"SEARCH...\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input type=\"text\"\nid=\"s_q\" class=\"\"\nplaceholder=\"SEARCH...\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5\nclass=\"the-title\"&gt;Delta\nRecognized as a Best Taiwan\nGlobal Brand  fo...&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202102180957\n85440001.jpg?w=1920\"\nclass=\"pic-desktop \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202102180957\n85440001.jpg?w=1920\"\nclass=\"pic-mobile \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202112131639\n97660001.jpg?w=1920\"\nclass=\"pic-desktop \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202112131639\n22746002.jpg?w=1920\"\nclass=\"pic-mobile \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202111241058\n15809001.jpg?w=1920\"\nclass=\"pic-desktop \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202111241100\n48819002.jpg?w=1920\"\nclass=\"pic-mobile \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202103161558\n16257001.jpg?w=1920\"\nclass=\"pic-desktop \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202103161558\n16257001.jpg?w=1920\"\nclass=\"pic-mobile \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202102220157\n87208001.jpg?w=1920\"\nclass=\"pic-desktop \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202102220157\n87208001.jpg?w=1920\"\nclass=\"pic-mobile \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202102180957\n85440001.jpg?w=1920\"\nclass=\"pic-desktop \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202102180957\n85440001.jpg?w=1920\"\nclass=\"pic-mobile \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202112131639\n97660001.jpg?w=1920\"\nclass=\"pic-desktop \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202112131639\n22746002.jpg?w=1920\"\nclass=\"pic-mobile \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100342\n20123001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5\nclass=\"the-title\"&gt;Smart\nEnergy Solutions&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100350\n64960001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100351\n34509001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100325\n49947001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100328\n03440001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100333\n56347001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100340\n44763001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100342\n20123001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100350\n64960001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100351\n34509001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100325\n49947001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100328\n03440001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"swiper-lazy\nswiper-lazy-loaded\"\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100333\n56347001.jpg?w=307\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100407\n75595001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5\nclass=\"the-title\"&gt;ICT\nInfrastructure&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100413\n35854001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202012160912\n71350001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202012160915\n60341001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011160327\n08053001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202101290305\n96869001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100401\n97977001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100402\n09395001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100413\n89611001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202012170205\n07738001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100406\n02918001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100407\n75595001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100413\n35854001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202012160912\n71350001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202012160915\n60341001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011160327\n08053001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202101290305\n96869001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100401\n97977001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/Images/202011100402\n09395001.jpg?w=226\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021111\n1315561975.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n1151315561975.jpg?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202111151315561975.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5\nclass=\"the-title\"&gt;Delta\nSelected for DJSI \"World\nIndex\" for the\nElev...&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/news_de\nault.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/news\ndefault.jpg?w=752 2x\nhttps://filecenter.deltaww.com\nnews/images/album/news_default\njpg?w=700 3x \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021110\n1653181006.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n1081653181006.jpg?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202111081653181006.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/news_de\nault.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/news\ndefault.jpg?w=752 2x\nhttps://filecenter.deltaww.com\nnews/images/album/news_default\njpg?w=700 3x \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/news_de\nault.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/news\ndefault.jpg?w=752 2x\nhttps://filecenter.deltaww.com\nnews/images/album/news_default\njpg?w=700 3x \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021122\n1514282727.JPG?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n2241514282727.JPG?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202112241514282727.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021121\n1728126684.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n2101728126684.jpg?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202112101728126684.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/news_de\nault.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/news\ndefault.jpg?w=752 2x\nhttps://filecenter.deltaww.com\nnews/images/album/news_default\njpg?w=700 3x \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021120\n1713196910.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n2021713196910.jpg?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202112021713196910.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021113\n1608545674.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n1301608545674.jpg?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202111301608545674.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021111\n1315561975.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n1151315561975.jpg?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202111151315561975.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/news_de\nault.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/news\ndefault.jpg?w=752 2x\nhttps://filecenter.deltaww.com\nnews/images/album/news_default\njpg?w=700 3x \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021110\n1653181006.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n1081653181006.jpg?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202111081653181006.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/news_de\nault.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/news\ndefault.jpg?w=752 2x\nhttps://filecenter.deltaww.com\nnews/images/album/news_default\njpg?w=700 3x \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/news_de\nault.jpg?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/news\ndefault.jpg?w=752 2x\nhttps://filecenter.deltaww.com\nnews/images/album/news_default\njpg?w=700 3x \"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/news/images/album/2021122\n1514282727.JPG?w=305\"\nsrcset=\"https://filecenter.del\naww.com/news/images/album/2021\n2241514282727.JPG?w=752 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nnews=\"\" images=\"\" album=\"\"\n202112241514282727.jpg?w=\"700\"\n3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5\nclass=\"the-title\"&gt;Delta\nSelected for DJSI \"World\nIndex\" for the\nElev...&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/images/202111160956\n21431001.jpg?w=400\"\nsrcset=\"https://filecenter.del\naww.com/index/images/202111160\n56421431001.jpg?w=756 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nindex=\"\" images=\"\"\n202111160956421431001.jpg?w=\"8\n0\" 3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://filecenter.deltaw\n.com/index/images/202011170544\n05273001.jpg?w=400\"\nsrcset=\"https://filecenter.del\naww.com/index/images/202011170\n44105273001.jpg?w=756 2x \"\nhttps:=\"\"\nfilecenter.deltaww.com=\"\"\nindex=\"\" images=\"\"\n202011170544105273001.jpg?w=\"8\n0\" 3x=\"\" \"=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5\nclass=\"the-title\"&gt;Moving\ntowards Smart and Green\nManufacturing&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe width=\"560\"\nheight=\"315\"\nsrc=\"https://www.youtube.com/e\nbed/WZzm5KfSAFE\"\nframeborder=\"0\"\nallow=\"accelerometer;\nautoplay; encrypted-media;\ngyroscope;\npicture-in-picture\"\nallowfullscreen=\"\"&gt;&lt;/ifr\nme&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe width=\"560\"\nheight=\"315\"\nsrc=\"https://www.youtube.com/e\nbed/oJ_wCP75Sl4\"\nframeborder=\"0\"\nallow=\"accelerometer;\nautoplay; encrypted-media;\ngyroscope;\npicture-in-picture\"\nallowfullscreen=\"\"&gt;&lt;/ifr\nme&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe width=\"560\"\nheight=\"315\"\nsrc=\"https://www.youtube.com/e\nbed/POzvikZSF6Q\"\nframeborder=\"0\"\nallow=\"accelerometer;\nautoplay; encrypted-media;\ngyroscope;\npicture-in-picture\"\nallowfullscreen=\"\"&gt;&lt;/ifr\nme&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe width=\"560\"\nheight=\"315\"\nsrc=\"https://www.youtube.com/e\nbed/WZzm5KfSAFE\"\nframeborder=\"0\"\nallow=\"accelerometer;\nautoplay; encrypted-media;\ngyroscope;\npicture-in-picture\"\nallowfullscreen=\"\"&gt;&lt;/ifr\nme&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe width=\"560\"\nheight=\"315\"\nsrc=\"https://www.youtube.com/e\nbed/oJ_wCP75Sl4\"\nframeborder=\"0\"\nallow=\"accelerometer;\nautoplay; encrypted-media;\ngyroscope;\npicture-in-picture\"\nallowfullscreen=\"\"&gt;&lt;/ifr\nme&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"#\" uk-totop=\"\"\nuk-scroll=\"\" class=\"goTop\nuk-icon uk-totop\"&gt;&lt;svg\nwidth=\"18\" height=\"10\"\nviewBox=\"0 0 18 10\"\nxm...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"footer-misc\"&gt;\n      &lt;a href=\"/\"\nclass=\"logo\"&gt;&lt;img\nsrc=\"../image...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a href=\"/\"\nclass=\"logo\"&gt;&lt;img\nsrc=\"../images/logo-w.svg\"&gt;\nlt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"../images/icon/icon-mail.\nvg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"../images/icon/icon-world\nsvg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Capa_1\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.facebook.com\ndelta.electronics.group/\"\ntarget=\"_blank\"\nclass=\"fb\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.linkedin.com\ncompany/delta-electronics/\"\ntarget=\"_blank\"\nclass=\"linkedin\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.instagram.co\n/delta.electronics.group/\"\ntarget=\"_top\"\nclass=\"instagram\"&gt;&lt;/a&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.youtube.com/\nhannel/UC8X-TedwXTbSXBGmjGhjL0\n\" target=\"_blank\"\nclass=\"youtube\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://page.line.me/216\nvwhg?openQrModal=true\"\ntarget=\"_top\"\nclass=\"line-app\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "errorcount": 140
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      11
+    ]
+  ]
+}

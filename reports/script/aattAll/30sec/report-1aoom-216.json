@@ -1,0 +1,747 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 8,
+  "logSize": 86,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://cja.org/",
+      "what": "Center for Justice and Accountability",
+      "result": "https://cja.org/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://cja.org/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h2 id=\"skip-to-title\"\nclass=\"screen-reader-text\"&gt;\nkip to:&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.",
+          "code": "&lt;h2 id=\"skip-to-title\"\nclass=\"screen-reader-text\"&gt;\nkip to:&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h2 id=\"skip-to-title\"\nclass=\"screen-reader-text\"&gt;\nkip to:&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a href=\"#site-navigation\"\nclass=\"screen-reader-shortcut\"\ngt; Skip to\nnavigation&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"site-navigation\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#site-navigation\"\nclass=\"screen-reader-shortcut\"\ngt; Skip to\nnavigation&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a href=\"#content\"\nclass=\"screen-reader-shortcut\"\ngt; Skip to content&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a href=\"#colophon\"\nclass=\"screen-reader-shortcut\"\ngt; Skip to footer&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a class=\"skip-link\nscreen-reader-text\"\nhref=\"#content\" role=\"link\"\ntitle=\"Skip to content\"&gt;\n\t\tSkip to content&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;span\nclass=\"screen-reader-text\"&gt;\nain Menu&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;rs-module-wrap\nid=\"rev_slider_9_1_wrapper\"\ndata-source=\"gallery\"\nstyle=\"visibility: visible;\nbackground:\nurl(&amp;quot;https://cja.org/\np-content/uploads/2016/04/hp-c\nver.jpg&amp;quot;) right top\n/ cover no-repeat rgb(0, 0,\n0); padding: 0px; margin: 0px\nauto; height: 610px; display:\nblock; width: auto; overflow:\nvisible;\"&gt;&lt;rs-module\nid=\"rev_slider_9_1\"\nstyle=\"height:\n610p...&lt;/rs-module-wrap&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;rs-progress-bar\nstyle=\"background: rgba(255,\n255, 255, 0.5);\ntransform-origin: 0% 50%;\ntransform: translate3d(0px,\n0px, 0px) scale(0.3998,\n1);\"&gt;&lt;/rs-progress-bar&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;canvas style=\"width:\n100%; height: 100%;\nbackground-color:\ntransparent; opacity: 1;\nfilter: none;\" width=\"1170\"\nheight=\"610\"&gt;&lt;/canvas&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h1\nid=\"slider-9-slide-63-layer-4\"\nclass=\"rs-layer\"\ndata-type=\"image\"\ndata-rsp_ch=\"on\"\ndata-xy=\"x:l,l,l,c;xo:10px,10p\n,10px,0;y:m,m,m,t;yo:45px,45px\n45px,10px;\" data-text=\"l:22;\"\ndata-dim=\"w:['400px','400px','\n00px','400px'];h:['400px','400\nx','400px','400px'];\"\ndata-frame_1=\"e:power2.inOut;\"\ndata-frame_999=\"o:0;e:nothing;\nt:w;\" style=\"z-index: 5;\ncolor: rgb(255, 255, 255);\nwidth: 400px; height: 400px;\nmin-height: 0px; min-width:\n0px; max-height: none;\nmax-width: none;\ntransform-origin: 50% 50%;\nopacity: 1; transform:\ntranslate(0px, 0px);\nvisibility: visible;\"\ndata-idcheck=\"true\"\ndata-stylerecorder=\"true\"\ndata-initialised=\"true\"&gt;&lt\nimg\nsrc=\"//cja.org/wp-content/uplo\nds/2016/04/hp-...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h2 style=\"font-size:\n30px;color:\n#4b4e53;line-height:\n36px;text-align:\nleft;font-family:Lato;font-wei\nht:300;font-style:normal\"\nclass=\"vc_custom_heading\nwpb_animate_when_almost_visibl\n wpb_cms_animate fadeIn wow\ncms_animate fadeIn wow\nvc_custom_1591119106209\"&gt;We\nBring&lt;br&gt;\nHuman Rights&lt;br&gt;\nAbusers To&lt;br&gt;\n&lt;stro...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h2 style=\"color: #fff;\nfont-family: Lato;\nline-height: 27px;\nfont-weight: 400; font-style:\nnormal; font-size: 20px;\ntext-align: center;\nmargin-top: 10px;\"&gt;PARTNER\nWITH US&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"1200\"\nheight=\"1200\"\nsrc=\"https://cja.org/wp-conten\n/uploads/2015/11/lyon-photogra\nhy-1-1.jpg\"\nclass=\"attachment-full\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://cja.org/wp-con\nent/uploads/2015/11/lyon-photo\nraphy-1-1.jpg 1200w,\nhttps://cja.org/wp-content/upl\nads/2015/11/lyon-photography-1\n1-150x150.jpg 150w,\nhttps://cja.org/wp-content/upl\nads/2015/11/lyon-photography-1\n1-300x300.jpg 300w,\nhttps://cja.org/wp-content/upl\nads/2015/11/lyon-photography-1\n1-768x768.jpg 768w,\nhttps://cja.org/wp-content/upl\nads/2015/11/lyon-photography-1\n1-1024x1024.jpg 1024w,\nhttps://cja.org/wp-content/upl\nads/2015/11/lyon-photography-1\n1-650x650.jpg 650w,\nhttps://cja.org/wp-content/upl\nads/2015/11/lyon-photography-1\n1-480x480.jpg 480w,\nhttps://cja.org/wp-content/upl\nads/2015/11/lyon-photography-1\n1-500x500.jpg 500w,\nhttps://cja.org/wp-content/upl\nads/2015/11/lyon-photography-1\n1-624x624.jpg 624w\"\nsizes=\"(max-width: 1200px)\n100vw, 1200px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"1000\"\nheight=\"1000\"\nsrc=\"https://cja.org/wp-conten\n/uploads/2015/11/box-6.jpg\"\nclass=\"attachment-full\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://cja.org/wp-con\nent/uploads/2015/11/box-6.jpg\n1000w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-6-150x150.jpg\n150w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-6-300x300.jpg\n300w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-6-768x768.jpg\n768w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-6-650x650.jpg\n650w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-6-480x480.jpg\n480w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-6-500x500.jpg\n500w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-6-624x624.jpg\n624w\" sizes=\"(max-width:\n1000px) 100vw, 1000px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"1000\"\nheight=\"1000\"\nsrc=\"https://cja.org/wp-conten\n/uploads/2015/11/box-10.jpg\"\nclass=\"attachment-full\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://cja.org/wp-con\nent/uploads/2015/11/box-10.jpg\n1000w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-10-150x150.jpg\n150w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-10-300x300.jpg\n300w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-10-768x768.jpg\n768w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-10-650x650.jpg\n650w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-10-480x480.jpg\n480w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-10-500x500.jpg\n500w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-10-624x624.jpg\n624w\" sizes=\"(max-width:\n1000px) 100vw, 1000px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"1000\"\nheight=\"1000\"\nsrc=\"https://cja.org/wp-conten\n/uploads/2015/11/box-7.jpg\"\nclass=\"attachment-full\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://cja.org/wp-con\nent/uploads/2015/11/box-7.jpg\n1000w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-7-150x150.jpg\n150w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-7-300x300.jpg\n300w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-7-768x768.jpg\n768w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-7-650x650.jpg\n650w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-7-480x480.jpg\n480w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-7-500x500.jpg\n500w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-7-624x624.jpg\n624w\" sizes=\"(max-width:\n1000px) 100vw, 1000px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"1000\"\nheight=\"1000\"\nsrc=\"https://cja.org/wp-conten\n/uploads/2015/11/box2.jpg\"\nclass=\"attachment-full\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://cja.org/wp-con\nent/uploads/2015/11/box2.jpg\n1000w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box2-150x150.jpg\n150w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box2-300x300.jpg\n300w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box2-768x768.jpg\n768w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box2-650x650.jpg\n650w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box2-480x480.jpg\n480w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box2-500x500.jpg\n500w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box2-624x624.jpg\n624w\" sizes=\"(max-width:\n1000px) 100vw, 1000px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"1000\"\nheight=\"1000\"\nsrc=\"https://cja.org/wp-conten\n/uploads/2015/11/box-8.jpg\"\nclass=\"attachment-full\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://cja.org/wp-con\nent/uploads/2015/11/box-8.jpg\n1000w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-8-150x150.jpg\n150w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-8-300x300.jpg\n300w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-8-768x768.jpg\n768w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-8-650x650.jpg\n650w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-8-480x480.jpg\n480w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-8-500x500.jpg\n500w,\nhttps://cja.org/wp-content/upl\nads/2015/11/box-8-624x624.jpg\n624w\" sizes=\"(max-width:\n1000px) 100vw, 1000px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"1200\"\nheight=\"1200\"\nsrc=\"https://cja.org/wp-conten\n/uploads/2015/11/EU-Humanitari\nn-Aid-and-Civil-Protection8-1.\npg\" class=\"attachment-full\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://cja.org/wp-con\nent/uploads/2015/11/EU-Humanit\nrian-Aid-and-Civil-Protection8\n1.jpg 1200w,\nhttps://cja.org/wp-content/upl\nads/2015/11/EU-Humanitarian-Ai\n-and-Civil-Protection8-1-150x1\n0.jpg 150w,\nhttps://cja.org/wp-content/upl\nads/2015/11/EU-Humanitarian-Ai\n-and-Civil-Protection8-1-300x3\n0.jpg 300w,\nhttps://cja.org/wp-content/upl\nads/2015/11/EU-Humanitarian-Ai\n-and-Civil-Protection8-1-768x7\n8.jpg 768w,\nhttps://cja.org/wp-content/upl\nads/2015/11/EU-Humanitarian-Ai\n-and-Civil-Protection8-1-1024x\n024.jpg 1024w,\nhttps://cja.org/wp-content/upl\nads/2015/11/EU-Humanitarian-Ai\n-and-Civil-Protection8-1-650x6\n0.jpg 650w,\nhttps://cja.org/wp-content/upl\nads/2015/11/EU-Humanitarian-Ai\n-and-Civil-Protection8-1-480x4\n0.jpg 480w,\nhttps://cja.org/wp-content/upl\nads/2015/11/EU-Humanitarian-Ai\n-and-Civil-Protection8-1-500x5\n0.jpg 500w,\nhttps://cja.org/wp-content/upl\nads/2015/11/EU-Humanitarian-Ai\n-and-Civil-Protection8-1-624x6\n4.jpg 624w\"\nsizes=\"(max-width: 1200px)\n100vw, 1200px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h3 style=\"font-size:\n30px;color:\n#ffffff;line-height:\n36px;text-align: left\"\nclass=\"vc_custom_heading\nuppercase\nvc_custom_1591139627950\"&gt;Hu\nan Rights\n&lt;strong&gt;Issues&lt;/stron\n&gt;&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div style=\"text-align:\ncenter\"&gt;Genocide&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div style=\"text-align:\ncenter\"&gt;Torture&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div style=\"text-align:\ncenter\"&gt;Crimes Against\nHumanity&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div style=\"text-align:\ncenter\"&gt;War\nCrimes&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div style=\"text-align:\ncenter\"&gt;Sexual and\nGender-based\nViolence&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div style=\"text-align:\ncenter\"&gt;Arbitrary\nDetention&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h2 style=\"font-size:\n30px;color:\n#4b4e53;line-height:\n36px;text-align:\nleft;font-family:Lato;font-wei\nht:300;font-style:normal\"\nclass=\"vc_custom_heading\nvc_custom_1591047176543\"&gt;Ou\n\n&lt;strong&gt;Impact&lt;/stron\n&gt;&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://cja.org/wp-conten\n/uploads/2020/06/basic-spread-\next-bookmark.png\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://cja.org/wp-conten\n/uploads/2020/06/basic-flag2.p\ng\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://cja.org/wp-conten\n/uploads/2020/06/basic-cup.png\n alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h2 style=\"font-size:\n36px; color: rgb(255, 255,\n255); line-height: 36px;\ntext-align: center; cursor:\npointer;\"\nclass=\"vc_custom_heading\nvideo vc_custom_1591303933560\npum-trigger\"&gt;&lt;a\nhref=\"#popmake-15373\"\ntitle=\"Video\"\nclass=\"pum-...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 3:1.",
+          "code": "&lt;a href=\"#popmake-15373\"\ntitle=\"Video\"\nclass=\"pum-trigger\"\nstyle=\"cursor:\npointer;\"&gt;Learn About CJA\nWatch Our Video&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h2 style=\"font-size:\n30px;color:\n#4b4e53;line-height:\n36px;text-align:\nleft;font-family:Lato;font-wei\nht:300;font-style:normal\"\nclass=\"vc_custom_heading\nvc_custom_1591047186089\"&gt;&l\n;strong&gt;News&lt;/strong&gt;\nlt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form autocomplete=\"off\"\nname=\"wpv-filter-15448\"\naction=\"/?wpv_view_count=15448\n method=\"get\"\nclass=\"wpv-filter-form\njs-wpv-filter-form\njs-wpv-filter-form-15448\njs-wpv-form-full\"\ndata-viewnumber=\"15448\"\ndata-viewid=\"15448\"\ndata-viewhash=\"eyJuYW1lIjoidGV\ndGltb25pYWwtc2xpZGVyIn0=\"\ndata-viewwidgetid=\"0\"\ndata-orderby=\"\" data-order=\"\"\ndata-orderbyas=\"\"\ndata-orderbysecond=\"\"\ndata-ordersecond=\"\"\ndata-parametric=\"{&amp;quot;qu\nry&amp;quot;:&amp;quot;normal&\nmp;quot;,&amp;quot;id&amp;quot\n:&amp;quot;15448&amp;quot;,&am\n;quot;view_id&amp;quot;:&amp;q\not;15448&amp;quot;,&amp;quot;w\ndget_id&amp;quot;:0,&amp;quot;\niew_hash&amp;quot;:&amp;quot;1\n448&amp;quot;,&amp;quot;action\namp;quot;:&amp;quot;\\/?wpv_vie\n_count=15448&amp;quot;,&amp;qu\nt;sort&amp;quot;:{&amp;quot;or\nerby&amp;quot;:&amp;quot;&amp;\nuot;,&amp;quot;order&amp;quot;\n&amp;quot;&amp;quot;,&amp;quot\norderby_as&amp;quot;:&amp;quot\n&amp;quot;,&amp;quot;orderby_s\ncond&amp;quot;:&amp;quot;&amp;\nuot;,&amp;quot;order_second&am\n;quot;:&amp;quot;&amp;quot;},&\nmp;quot;orderby&amp;quot;:&amp\nquot;&amp;quot;,&amp;quot;orde\n&amp;quot;:&amp;quot;&amp;quot\n,&amp;quot;orderby_as&amp;quot\n:&amp;quot;&amp;quot;,&amp;quo\n;orderby_second&amp;quot;:&amp\nquot;&amp;quot;,&amp;quot;orde\n_second&amp;quot;:&amp;quot;&a\np;quot;,&amp;quot;ajax_form&am\n;quot;:&amp;quot;&amp;quot;,&a\np;quot;ajax_results&amp;quot;:\namp;quot;&amp;quot;,&amp;quot;\nffect&amp;quot;:&amp;quot;fade\namp;quot;,&amp;quot;prebefore&\nmp;quot;:&amp;quot;&amp;quot;,\namp;quot;before&amp;quot;:&amp\nquot;&amp;quot;,&amp;quot;afte\n&amp;quot;:&amp;quot;&amp;quot\n,&amp;quot;attributes&amp;quot\n:[],&amp;quot;environment&amp;\nuot;:{&amp;quot;current_post_i\n&amp;quot;:2258,&amp;quot;pare\nt_post_id&amp;quot;:2258,&amp;\nuot;parent_term_id&amp;quot;:0\n&amp;quot;parent_user_id&amp;q\not;:0,&amp;quot;archive&amp;qu\nt;:{&amp;quot;type&amp;quot;:&\nmp;quot;&amp;quot;,&amp;quot;n\nme&amp;quot;:&amp;quot;&amp;qu\nt;,&amp;quot;data&amp;quot;:[]\n},&amp;quot;loop&amp;quot;:{&a\np;quot;type&amp;quot;:&amp;quo\n;&amp;quot;,&amp;quot;name&amp\nquot;:&amp;quot;&amp;quot;,&am\n;quot;data&amp;quot;:[],&amp;q\not;id&amp;quot;:0}}\"\ndata-attributes=\"[]\"\ndata-environment=\"{&amp;quot;c\nrrent_post_id&amp;quot;:2258,&\nmp;quot;parent_post_id&amp;quo\n;:2258,&amp;quot;parent_term_i\n&amp;quot;:0,&amp;quot;parent_\nser_id&amp;quot;:0,&amp;quot;a\nchive&amp;quot;:{&amp;quot;typ\n&amp;quot;:&amp;quot;&amp;quot\n,&amp;quot;name&amp;quot;:&amp\nquot;&amp;quot;,&amp;quot;data\namp;quot;:[]}}\"&gt;&lt;input\ntype=\"hidden\"\nclass=\"js-wpv-dps-filter-data.\n.&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"ssmi-icon-row\nicon-style-1\"&gt;&lt;a\nhref=\"https://www.facebook.com\nCJA/\"\nclass=\"ssm...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;i style=\" color: #FFFFFF;\n\" class=\"fa fa-facebook fa-fw\nssmi-icon\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"screen-reader-text\"&gt;\nacebook&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;i style=\" color: #FFFFFF;\n\" class=\"fa fa-twitter fa-fw\nssmi-icon\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"screen-reader-text\"&gt;\nwitter&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;i style=\" color: #FFFFFF;\n\" class=\"fa fa-youtube fa-fw\nssmi-icon\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"screen-reader-text\"&gt;\nouTube&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;i style=\" color: #FFFFFF;\n\" class=\"fa fa-linkedin fa-fw\nssmi-icon\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"screen-reader-text\"&gt;\ninkedIn&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;i style=\" color: #FFFFFF;\n\" class=\"fa fa-flickr fa-fw\nssmi-icon\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"screen-reader-text\"&gt;\nlickr&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;i style=\" color: #FFFFFF;\n\" class=\"fa fa-snapchat-ghost\nfa-fw ssmi-icon\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"screen-reader-text\"&gt;\nnapchat&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div id=\"cookie-notice\"\nrole=\"dialog\"\nclass=\"cookie-revoke-hidden\ncn-position-bottom\ncn-effect-fade\ncookie-notice-visible\"\naria-label=\"Cookie Notice\"\nstyle=\"background-color:\nrgba(0,0,0,1);\"&gt;&lt;div\nclass=\"cookie-notice-container\n style=\"color:...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div id=\"cookie-notice\"\nrole=\"dialog\"\nclass=\"cookie-revoke-hidden\ncn-position-bottom\ncn-effect-fade\ncookie-notice-visible\"\naria-label=\"Cookie Notice\"\nstyle=\"background-color:\nrgba(0,0,0,1);\"&gt;&lt;div\nclass=\"cookie-notice-container\n style=\"color:...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cookie-notice-container\n style=\"color:\n#fff;\"&gt;&lt;span\nid=\"cn-notice-text\"\nclass=\"cn-text-container...&lt\n/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img class=\"lb-image\"\nsrc=\"data:image/gif;base64,R0l\nODlhAQABAIAAAP///wAAACH5BAEAAA\nALAAAAAABAAEAAAICRAEAOw==\"\nalt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"lb-nav\"&gt;&lt;a\nclass=\"lb-prev\"\naria-label=\"Previous image\"\nhre...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a class=\"lb-prev\"\naria-label=\"Previous image\"\nhref=\"\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a class=\"lb-next\"\naria-label=\"Next image\"\nhref=\"\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"lb-cancel\"&gt;&lt;/a&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"lb-close\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nstyle=\"background-color:\nrgb(255, 255, 255); border:\n1px solid rgb(204, 204, 204);\nbox-shadow: rgba(0, 0, 0,\n0.2) 2px 2px 3px; position:\nabsolute; transition:\nvisibility 0s linear 0.3s,\nopacity 0.3s linear 0s;\nopacity: 0; visibility:\nhidden; z-index: 2000000000;\nleft: 0px; top:\n-10000px;\"&gt;&lt;div\nstyle=\"width: 100%; height:\n100%; position:\nf...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div style=\"width: 100%;\nheight: 100%; position:\nfixed; top: 0px; left: 0px;\nz-index: 2000000000;\nbackground-color: rgb(255,\n255, 255); opacity:\n0.05;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div style=\"width: 100%;\nheight: 100%; position:\nfixed; top: 0px; left: 0px;\nz-index: 2000000000;\nbackground-color: rgb(255,\n255, 255); opacity:\n0.05;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This label's \"for\" attribute contains an ID for an element that is not a form control. Ensure that you have entered the correct ID for the intended element.",
+          "code": "&lt;label\nclass=\"gfield_label\"\nfor=\"input_8_11\"&gt;CAPTCHA&lt\n/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H44\" target=\"_blank\">H44</a>"
+          ],
+          "id": "H44"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span style=\"color:\n#ffffff;\"&gt;LEARN\nMORE&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span style=\"color:\n#ffffff;\"&gt;LEARN\nMORE&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span style=\"color:\n#ffffff;\"&gt;LEARN\nMORE&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span style=\"color:\n#ffffff;\"&gt;LEARN\nMORE&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span style=\"color:\n#ffffff;\"&gt;LEARN\nMORE&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span style=\"color:\n#ffffff;\"&gt;LEARN\nMORE&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "errorcount": 6
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      9
+    ]
+  ]
+}

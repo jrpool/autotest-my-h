@@ -1,0 +1,960 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 1,
+  "logSize": 46,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.icij.org/",
+      "what": "International Consortium of Investigative Journalists",
+      "result": "https://www.icij.org/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.icij.org/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div id=\"generic-header\"\ndata-turbolinks-permanent=\"\"\nclass=\"navbar\nnavbar-expand-lg navbar-light\ngeneric-header\ngeneric-header--collapsed\"\nstyle=\"position: fixed;\nheight: 60px;\"&gt;&lt;div\nclass=\"headroom--top\nheadroom--not-bottom\nhea...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\ndata-ga=\"Navbar|click|Home|1\"\nhref=\"/\"\nclass=\"brand\"&gt;&lt;img\nsrc=\"https://www.icij.org/app/\nhemes/icij/dis...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a data-ga=\"Featured\nhome|click|Pandora Papers\ncaps off 2021 with\nconsequences felt around the\nglobe|1\"\nhref=\"https://www.icij.org/inv\nstigations/pandora-papers/pand\nra-papers-caps-off-2021-with-c\nnsequences-felt-around-the-glo\ne/\"&gt;&lt;img width=\"1920\"\nheight=\"1080\"\nsrc=\"https://media...&lt;/a&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h5\nclass=\"post-kicker\"&gt;IMPACT&\nt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h1 to be properly nested.",
+          "code": "&lt;h5\nclass=\"post-kicker\"&gt;IMPACT&\nt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h2 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-author\"&gt;By Michael\nHudson&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"d-block\ntext-left badge p-0\"&gt;Dec\n21, 2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2021/10/web_GettyImages-1\n03075370-360x200.jpg\" alt=\"\"\nloading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-author\"&gt;By Scilla\nAlecci&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0 d-block\ntext-left badge\"&gt;Jan 03,\n2022&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-author\"&gt;By Will\nFitzgibbon&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0 d-block\ntext-left badge\"&gt;Dec 20,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-author\"&gt;By Hamish\nBoland-Rudder&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0 d-block\ntext-left badge\"&gt;Jan 06,\n2022&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-author\"&gt;By Spencer\nWoodman&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0 d-block\ntext-left badge\"&gt;Dec 15,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;a data-ga=\"Shortcut home\ntop projects|click|All\ninvestigations|1\"\nhref=\"/investigations\"\nclass=\"nav-link\"&gt;All\ninvestigations&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2019/11/CC-192w-RicardoWe\nbezahn-360x200.png\" alt=\"\"\nloading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2019/07/ML-Mauritus-ICIJ-\notext-360x200.jpg\" alt=\"\"\nloading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2019/06/MAN_IN_BOARDROOM_\n_LOGO_ICIJ-1920w-360x200.png\"\nalt=\"\" loading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2019/05/solitary_voices_c\nver_project-1138x640-1-360x200\npng\" alt=\"\" loading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2018/11/CC_Overview-1-360\n200.jpg\" alt=\"\"\nloading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h2\nclass=\"title-banner-home\"&gt;W\nNT TO KNOW WHEN WE\nPUBLISH?&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p&gt;Help us change the\nworld. Get our stories by\nemail...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset&gt;&lt;label\nfor=\"input-email\"\nclass=\"text-uppercase\ntex...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset&gt;&lt;label\nfor=\"input-email\"\nclass=\"text-uppercase\ntex...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;a data-ga=\"Shortcut\nlatest news home|click|More\nstories|0\"\ndata-toggle=\"dropdown\"\nhref=\"#\" role=\"button\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\nclass=\"nav-link\ndropdown-toggle\"&gt;More\nstories&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2021/10/web_20211006_EP-1\n9139B_CUG_EG_025_RESIZED_XL-36\nx200.jpg\" alt=\"\"\nloading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-light\"&gt;IMPACT&lt;/h5&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 24,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 24,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2021/10/Pandora-Papers-Ba\nner-Close-Crop-360x200.jpg\"\nalt=\"\" loading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 22,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 22,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2021/10/Pandora-Papers-Ba\nner-Close-Crop-360x200.jpg\"\nalt=\"\" loading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2021/12/web_GettyImages-1\n34769053-360x200.jpg\" alt=\"\"\nloading=\"lazy\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"360\"\nheight=\"200\"\nsrc=\"https://media.icij.org/up\noads/2020/09/London-HeidiFinn-\n60x200.jpg\" alt=\"\"\nloading=\"lazy\"\nsrcset=\"https://media.icij.org\nuploads/2020/09/London-HeidiFi\nn-360x200.jpg 360w,\nhttps://media.icij.org/uploads\n2020/09/London-HeidiFinn-760x4\n2.jpg 760w,\nhttps://media.icij.org/uploads\n2020/09/London-HeidiFinn-1151x\n40.jpg 1151w,\nhttps://media.icij.org/uploads\n2020/09/London-HeidiFinn-768x4\n7.jpg 768w,\nhttps://media.icij.org/uploads\n2020/09/London-HeidiFinn.jpg\n1200w\" sizes=\"(max-width:\n360px) 100vw, 360px\"\nclass=\"attachment-thumbnail\nsize-thumbnail\nwp-post-image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 10,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 10,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 09,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"badge\np-0\"&gt;Dec 09,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;a data-ga=\"Shortcut\nrecent investigations\nhome|click|More|1\"\ndata-toggle=\"dropdown\"\nhref=\"#\" role=\"button\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\nclass=\"nav-link\ndropdown-toggle\"&gt;More&lt;/a\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-light\"&gt;COLLABORATION&\nt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-light\"&gt;MEET THE\nINVESTIGATORS&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Sep 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Sep 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Sep 20,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Sep 20,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Aug 10,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Aug 10,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"badge\nbadge-light\"&gt;LUANDA\nLEAKS&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 09,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 09,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Sep 03,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Sep 03,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Aug 02,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Aug 02,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h2\nclass=\"title-banner\"&gt;Suppor\n independent\njournalism&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p&gt;ICIJ’s\ninvestigations are supported\nby readers lik...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;a data-ga=\"Shortcut\nrecent mti home|click|More|1\"\ndata-toggle=\"dropdown\"\nhref=\"#\" role=\"button\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\nclass=\"nav-link\ndropdown-toggle\"&gt;More&lt;/a\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Dec 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Oct 26,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Oct 26,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Sep 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h5 class=\"p-0\nbadge\"&gt;Sep 21,\n2021&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.74:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;a data-ga=\"Shortcut leak\nto ICIJ home|click|Contact\nICIJ|1\" href=\"/leak/\"\nclass=\"nav-link\"&gt;Contact\nICIJ&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.",
+          "code": "&lt;div class=\"footer-content\ncontent-info\"&gt;&lt;div\nclass=\"container\"&gt;&lt;div\nclass=\"container\"&gt;&lt;div..\n&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.",
+          "code": "&lt;div\nclass=\"container\"&gt;&lt;div\nclass=\"container\"&gt;&lt;div\nclass=\"row\"&gt;&lt;div\nclass...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.",
+          "code": "&lt;div\nclass=\"container\"&gt;&lt;div\nclass=\"row\"&gt;&lt;div\nclass=\"col-12 col-md-5\nmb-5\"...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.",
+          "code": "&lt;div\nclass=\"row\"&gt;&lt;div\nclass=\"col-12 col-md-5\nmb-5\"&gt;&lt;h5\nclass=\"text-...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.",
+          "code": "&lt;div class=\"col-12\ncol-md-5 mb-5\"&gt;&lt;h5\nclass=\"text-uppercase\ntext-white clearfix\ngene...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"text-uppercase\ntext-white clearfix\ngeneric-footer__icij\nmb-3\"&gt;&lt;a\ndata-ga=\"Footer|click|Home|1\"\nhref=\"https://ici...&lt;/h5&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h5 class=\"text-uppercase\ntext-white clearfix\ngeneric-footer__icij\nmb-3\"&gt;&lt;a\ndata-ga=\"Footer|click|Home|1\"\nhref=\"https://ici...&lt;/h5&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\ndata-ga=\"Footer|click|Home|1\"\nhref=\"https://icij.org\"\ntarget=\"_blank\"\nclass=\"brand\"&gt;&lt;img\nheight=\"50px\"\nsrc=\"https://www.icij.org/app/\n...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "warning",
+          "msg": "This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.",
+          "code": "&lt;p&gt;\n          1800 M Street NW,\nFront 1 #33019 &lt;br&gt;\n ...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p&gt;&lt;strong&gt;&lt;a\nhref=\"mailto:contact@icij.org\"\nclass=\"t...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "errorcount": 36
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      6
+    ]
+  ]
+}

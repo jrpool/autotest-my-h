@@ -1,0 +1,635 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 2,
+  "logSize": 144,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.tsmc.com/english",
+      "what": "TSMC (VEIGX)",
+      "result": "https://www.tsmc.com/english"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.tsmc.com/english",
+      "result": [
+        {
+          "type": "error",
+          "msg": "This element has role of \"button\" but does not have a name available to an accessibility API. Valid names are: element content, aria-label , aria-labelledby .",
+          "code": "&lt;a\nid=\"nav-searchBtn-mobile\"\nclass=\"nav-link\ndropdown-toggle\" href=\"#\"\nrole=\"button\"\ngtag=\"Header-search_icon\"&gt;\n                             \n      &lt;i\nclass=\"fas...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This element has role of \"button\" but does not have a name available to an accessibility API. Valid names are: element content, aria-label , aria-labelledby .",
+          "code": "&lt;a id=\"nav-searchBtn\"\nclass=\"nav-link\ndropdown-toggle\"\ndata-toggle=\"dropdown\"\nhref=\"#\" role=\"button\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\ngtag=\"Header-search_icon\"&gt;\n                             \n      &lt;i\nclass=\"fas...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset\nclass=\"js-form-item\njs-form-type-search\nform-type-search\njs-form-item-keys\nform-item-keys form-no-label\nform-group col-auto\"&gt;\n          &lt;label\nfor=\"edit-keys\"\nclass=\"sr-only\"&gt;...&lt;/fie\ndset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset\nclass=\"js-form-item\njs-form-type-search\nform-type-search\njs-form-item-keys\nform-item-keys form-no-label\nform-group col-auto\"&gt;\n          &lt;label\nfor=\"edit-keys\"\nclass=\"sr-only\"&gt;...&lt;/fie\ndset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;label for=\"edit-keys\"\nclass=\"sr-only\"&gt;Search&lt;/\nabel&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nclass=\"submit\"&gt;&lt;i\nclass=\"fas\nfa-search\"&gt;&lt;/i&gt;&lt;/b\ntton&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"langSelect_hover\" found on the web page.",
+          "code": "&lt;li id=\"langSelect_hover\"\nclass=\"nav-item isIcon\"&gt;\n                             \n  &lt;span\nclass=\"lang...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"block-languageswitcher\" found on the web page.",
+          "code": "&lt;div\nclass=\"language-switcher-langu\nge-url language-select block\nblock-language\nblock-language-blocklanguage-i\nterface\"\nid=\"block-languageswitcher\"\nrole=\"navigation\"&gt;\n  \n    \n      &lt;div\nclass=\"content\"&gt;\n      &lt;ul\nreg...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"block-searchform\" found on the web page.",
+          "code": "&lt;div\nclass=\"search-block-form\ngoogle-cse search-form block\nblock-search\nblock-search-form-block\"\ndata-drupal-selector=\"search-b\nock-form\"\nid=\"block-searchform\"\nrole=\"search\"&gt;\n  \n    \n      &lt;div\nclass=\"container narrow\"&gt;\n    ...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"search-block-form\" found on the web page.",
+          "code": "&lt;form\nregion=\"header_bottom\"\naction=\"/english/search/websit\n\" method=\"get\"\nid=\"search-block-form\"\naccept-charset=\"UTF-8\"\nclass=\"search-form\nsearch-block-form form-row\"\nnovalidate=\"novalidate\"&gt;\n  \n\n\n  &lt;fieldset\nclass=\"js-form-item\njs-form-type...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset\nclass=\"js-form-item\njs-form-type-search\nform-type-search\njs-form-item-keys\nform-item-keys form-no-label\nform-group col-auto\"&gt;\n          &lt;label\nfor=\"edit-keys\"\nclass=\"sr-only\"&gt;...&lt;/fie\ndset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset\nclass=\"js-form-item\njs-form-type-search\nform-type-search\njs-form-item-keys\nform-item-keys form-no-label\nform-group col-auto\"&gt;\n          &lt;label\nfor=\"edit-keys\"\nclass=\"sr-only\"&gt;...&lt;/fie\ndset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;label for=\"edit-keys\"\nclass=\"sr-only\"&gt;Search&lt;/\nabel&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"edit-keys\" found on the web page.",
+          "code": "&lt;input title=\"Enter the\nterms you wish to search\nfor.\"\ndata-drupal-selector=\"edit-key\n\" data-msg-maxlength=\"Search\nfield has a maximum length of\n128.\" type=\"search\"\nid=\"edit-keys\" name=\"keys\"\nvalue=\"\" size=\"15\"\nmaxlength=\"128\"\nclass=\"form-search\nform-control\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nclass=\"submit\"&gt;&lt;i\nclass=\"fas\nfa-search\"&gt;&lt;/i&gt;&lt;/b\ntton&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"edit-actions--4\" found on the web page.",
+          "code": "&lt;div\ndata-drupal-selector=\"edit-act\nons\" class=\"form-actions\njs-form-wrapper form-group\ncol-auto\"\nid=\"edit-actions--4\"&gt;&lt;in\nut\ndata-drupal-selector=\"edit-sub\nit\" type=\"su...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"edit-submit--2\" found on the web page.",
+          "code": "&lt;input\ndata-drupal-selector=\"edit-sub\nit\" type=\"submit\"\nid=\"edit-submit--2\"\nvalue=\"Search\" class=\"button\njs-form-submit form-submit\nbtn btn-primary\nform-control\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h2 class=\"slideTitle\"&gt;\n                    TSMC's\nChiplets Integration\n ...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.",
+          "code": "&lt;h2 class=\"slideTitle\"&gt;\n                    TSMC's\nChiplets Integration\n ...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.",
+          "code": "&lt;a id=\"main-content\"\ntabindex=\"-1\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"linkList\"&gt;\n                \n            &lt;a\nhref=\"https://pr....&lt;/div&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a class=\"text-white\"&gt;\n          BLOG\n        &lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"/themes/custom/tsmc_dcom/\nmages/career_1920x580.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select id=\"location\"\nname=\"location\"\nclass=\"customSelect\"\ndata-location=\"data-location\"\nstyle=\"\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select id=\"location\"\nname=\"location\"\nclass=\"customSelect\"\ndata-location=\"data-location\"\nstyle=\"\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select id=\"location\"\nname=\"location\"\nclass=\"customSelect\"\ndata-location=\"data-location\"\nstyle=\"\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select id=\"jobField\"\nname=\"jobfield\"\nclass=\"customSelect\"\ndata-job-field=\"data-job-field\n&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select id=\"jobField\"\nname=\"jobfield\"\nclass=\"customSelect\"\ndata-job-field=\"data-job-field\n&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select id=\"jobField\"\nname=\"jobfield\"\nclass=\"customSelect\"\ndata-job-field=\"data-job-field\n&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select id=\"majorSection\"\nname=\"majorSection\"\nclass=\"customSelect\"\ndata-major-section=\"data-major\nsection\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select id=\"majorSection\"\nname=\"majorSection\"\nclass=\"customSelect\"\ndata-major-section=\"data-major\nsection\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select id=\"majorSection\"\nname=\"majorSection\"\nclass=\"customSelect\"\ndata-major-section=\"data-major\nsection\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select\nid=\"careerSectionInput\"\nname=\"careerSectionInput\"\nclass=\"customSelect\"\ndata-career-section=\"data-care\nr-section\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select\nid=\"careerSectionInput\"\nname=\"careerSectionInput\"\nclass=\"customSelect\"\ndata-career-section=\"data-care\nr-section\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nid=\"careerSectionInput\"\nname=\"careerSectionInput\"\nclass=\"customSelect\"\ndata-career-section=\"data-care\nr-section\"&gt;\n                  &lt;option\nvalue=\"\"\nselected=\"sele...&lt;/select&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"https://www.tsmc.com/csr\nen/resources/documents.html\"\nstyle=\"background-image:url(/s\ntes/dcom/2021-07/csrReportCove\n_600x375.jpg);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"Corporate\nSocial Responsibility Report\"\ndata-label_type=\"https://www.t\nmc.com/csr/en/resources/docume\nts.html\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"https://www.tsmc.com/csr\nen/resources/documents.html\"\nstyle=\"background-image:url(/s\ntes/dcom/2021-07/csrReportCove\n_600x375.jpg);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"Corporate\nSocial Responsibility Report\"\ndata-label_type=\"https://www.t\nmc.com/csr/en/resources/docume\nts.html\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5\nclass=\"card-title\"&gt;Corporat\n Social Responsibility\nReport&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"/english/event/CSD_33\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/CSD.jpg);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"33th\nTaiwan Continuous Improvement\nAwards (TCIA)\"\ndata-label_type=\"/english/even\n/CSD_33\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"/english/event/CSD_33\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/CSD.jpg);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"33th\nTaiwan Continuous Improvement\nAwards (TCIA)\"\ndata-label_type=\"/english/even\n/CSD_33\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"/english/aboutTSMC/tsmc_\nharity\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/icharity.jpg)\n\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nCharity Foundation\"\ndata-label_type=\"/english/abou\nTSMC/tsmc_charity\"&gt;&lt;/a&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"/english/aboutTSMC/tsmc_\nharity\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/icharity.jpg)\n\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nCharity Foundation\"\ndata-label_type=\"/english/abou\nTSMC/tsmc_charity\"&gt;&lt;/a&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"/english/aboutTSMC/tsmc_\noundation\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/foundation.jp\n);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nEducation and Culture\nFoundation\"\ndata-label_type=\"/english/abou\nTSMC/tsmc_foundation\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"/english/aboutTSMC/tsmc_\noundation\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/foundation.jp\n);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nEducation and Culture\nFoundation\"\ndata-label_type=\"/english/abou\nTSMC/tsmc_foundation\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"https://www.tsmcmoi.com/\nn/\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/moi.jpg);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nMuseum of Innovation\"\ndata-label_type=\"https://www.t\nmcmoi.com/en/\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"https://www.tsmcmoi.com/\nn/\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/moi.jpg);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nMuseum of Innovation\"\ndata-label_type=\"https://www.t\nmcmoi.com/en/\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/green.jpg);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nGreen Buildings\"\ndata-label_type=\"\"&gt;&lt;/a&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a class=\"img ga-tag\"\nhref=\"\"\nstyle=\"background-image:url(/s\ntes/dcom/2020-08/green.jpg);\"\ndata-category_type=\"Img-Box\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nGreen Buildings\"\ndata-label_type=\"\"&gt;&lt;/a&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a class=\"learnMore\nga-tag\" href=\"\"\ndata-category_type=\"More-Link\"\ndata-category_area=\"Related-In\normation\"\ndata-label_content=\"TSMC\nGreen Buildings\"\ndata-label_type=\"\"&gt;LEARN\nMORE &lt;i class=\"fas\nfa-chevron-right\"&gt;&lt;/i&gt\n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div id=\"shareBox\"\nclass=\"alwaysOpen\"&gt;\n&lt;div class=\"share-items\"\nonclick=\"\"&gt; &lt;a\nid=\"share...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;div class=\"share-items\"\nonclick=\"\"&gt; &lt;a\nid=\"share_linkedIn\"\nclass=\"share-item\nlinkedIn...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"share-items\"\nonclick=\"\"&gt; &lt;a\nid=\"share_linkedIn\"\nclass=\"share-item\nlinkedIn...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a class=\"share-item\nplaceholder\"\ndata-category_area=\"Share-Box\"\ndata-labal_content=\"\"\ndata-labal_type=\"https://www.t\nmc.com/english\"\ndata-action=\"share\"&gt; &lt;i\nclass=\"fas\nfa-share-alt\"&gt;&lt;/i&gt;\n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor elements should not be used for defining in-page link targets. If not using the ID for other purposes (such as CSS or scripting), consider moving it to a parent element.",
+          "code": "&lt;a id=\"backToTopWrapper\"\nclass=\"share-item\"&gt; &lt;i\nclass=\"fas\nfa-chevron-up\"&gt;&lt;/i&gt;\n&lt;span\nclass=\"la...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nblock=\"block-footerbottommenu\"\nregion=\"footer_fourth\"\nclass=\"clearfix\nbottom-menu\"&gt;\n                    \n                &lt;a\nhref=\"/en...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.85:1. Recommendation:  change background to #767676.",
+          "code": "&lt;p&gt;We use cookies to\nimprove your user experience\nand...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.3:1. Recommendation:  change text colour to #0000b1.",
+          "code": "&lt;a\nhref=\"https://www.tsmc.com/eng\nish/privacy.htm\"&gt;Privacy\n&amp;amp; Cookie\nPolicy&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.82:1. Recommendation:  change background to #767676.",
+          "code": "&lt;button type=\"button\"\nclass=\"find-more-button\neu-cookie-compliance-more-butt\nn\nfind-more-button-processed\"&gt\nI Accept&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.82:1. Recommendation:  change background to #767676.",
+          "code": "&lt;button type=\"button\"\nclass=\"agree-button\neu-cookie-compliance-secondary\nbutton\"&gt;I\nAccept&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "errorcount": 34
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

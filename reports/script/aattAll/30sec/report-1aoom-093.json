@@ -1,0 +1,910 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 3,
+  "logSize": 118,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.enel.com/",
+      "what": "ENEL (NALFX)",
+      "result": "https://www.enel.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.enel.com/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h2 data-v-4609fa8b=\"\"\nclass=\"title\"&gt;&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.",
+          "code": "&lt;h2 data-v-4609fa8b=\"\"\nclass=\"title\"&gt;&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h2 data-v-4609fa8b=\"\"\nclass=\"title\"&gt;&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a data-v-4609fa8b=\"\"\nhref=\"#main\" tabindex=\"0\"\nclass=\"skip-link\"&gt;&lt;/a&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a data-v-4609fa8b=\"\"\ntarget=\"_self\"\nname=\"&amp;amp;lid=company&amp\namp;lpos=megamenu\"\nhref=\"https://www.enel.com/com\nany/about-us\" aria-label=\"Go\nto Company\" title=\"Go to\nCompany\"\nclass=\"item-link\"&gt;Company\n                             \n      &lt;span ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "This element has role of \"button\" but does not have a name available to an accessibility API. Valid names are: element content, aria-label , aria-labelledby .",
+          "code": "&lt;a data-v-56caa878=\"\"\nhref=\"#\" title=\"Toggle menu\"\nrole=\"button\"\naria-controls=\"main-navigation\nmenu-mobile\"\naria-expanded=\"false\"\nclass=\"toggler\"&gt;&lt;span\ndata-v-56caa878=\"\"\nclass=\"tw-menu-container\"...&l\n;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button data-v-56caa878=\"\"\ntabindex=\"0\"\nclass=\"search\"&gt;&lt;svg\ndata-v-56caa878=\"\" width=\"20\"\nheight=\"20\"\ncla...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img data-v-4a0fdab6=\"\"\nsrc=\"/content/dam/enel-com/imm\ngini/master-azienda_2400x1160/\ntorie_2400x1160/veduta-aerea-v\nlle-ain_2400x1160.jpg.resize.3\n8.300.center.center.jpeg \"\nsrcset=\"/content/dam/enel-com/\nmmagini/master-azienda_2400x11\n0/storie_2400x1160/veduta-aere\n-valle-ain_2400x1160.jpg.resiz\n.348.300.center.center.jpeg\n1x,\n/content/dam/enel-com/immagini\nmaster-azienda_2400x1160/stori\n_2400x1160/veduta-aerea-valle-\nin_2400x1160.jpg.resize.768.60\n.center.center@2x.jpeg 2x,\n/content/dam/enel-com/immagini\nmaster-azienda_2400x1160/stori\n_2400x1160/veduta-aerea-valle-\nin_2400x1160.jpg.resize.768.60\n.center.center@2x.jpeg 3x\"\nalt=\"\"\ndata-module-id=\"EXTRA-E0M2\"&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Sustainabi\nity&lt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;The circular\neconomy in the energy\ntransition&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img data-v-4a0fdab6=\"\"\nsrc=\"/content/dam/enel-com/imm\ngini/horizontal-media_1584x960\ncampi-pale-eoliche-piloni_1584\n960.jpg.resize.348.300.center.\nenter.jpeg \"\nsrcset=\"/content/dam/enel-com/\nmmagini/horizontal-media_1584x\n60/campi-pale-eoliche-piloni_1\n84x960.jpg.resize.348.300.cent\nr.center.jpeg 1x,\n/content/dam/enel-com/immagini\nhorizontal-media_1584x960/camp\n-pale-eoliche-piloni_1584x960.\npg.resize.768.600.center.cente\n@2x.jpeg 2x,\n/content/dam/enel-com/immagini\nhorizontal-media_1584x960/camp\n-pale-eoliche-piloni_1584x960.\npg.resize.768.600.center.cente\n@2x.jpeg 3x\" alt=\"\"\ndata-module-id=\"EXTRA-E0M2\"&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Sustainabi\nity&lt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;Grids4Africa:\nthe program to support the\ndevelopme...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img data-v-4a0fdab6=\"\"\nsrc=\"/content/dam/enel-com/imm\ngini/master-azienda_2400x1160/\nollage-foto-education-sdg_2400\n1160.jpg.resize.348.300.center\ncenter.jpeg \"\nsrcset=\"/content/dam/enel-com/\nmmagini/master-azienda_2400x11\n0/collage-foto-education-sdg_2\n00x1160.jpg.resize.348.300.cen\ner.center.jpeg 1x,\n/content/dam/enel-com/immagini\nmaster-azienda_2400x1160/colla\ne-foto-education-sdg_2400x1160\njpg.resize.768.600.center.cent\nr@2x.jpeg 2x,\n/content/dam/enel-com/immagini\nmaster-azienda_2400x1160/colla\ne-foto-education-sdg_2400x1160\njpg.resize.768.600.center.cent\nr@2x.jpeg 3x\" alt=\"\"\ndata-module-id=\"EXTRA-E0M2\"&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Sustainabi\nity&lt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;Changing the\nworld through\neducation&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;section\ndata-v-41bafff5=\"\"\naem-id=\"elevator_pitch_wrapp-1\n14836470\"\naem-comp=\"ElevatorPitchWrapper\n\ndata-background=\"/content/dam/\nnel-com/immagini/elevator-pitc\n_2880x1700/about-us-products-s\nrvices_2880x1700.jpg.resize.14\n0.850.center.center.jpeg;/cont\nnt/dam/enel-com/immagini/eleva\nor-pitch_2880x1700/about-us-pr\nducts-services_2880x1700.jpg.r\nsize.2880.1700.center.center@2\n.jpeg;/content/dam/enel-com/im\nagini/elevator-pitch_2880x1700\nabout-us-products-services_288\nx1700.jpg.resize.2880.1700.cen\ner.center@2x.jpeg;/content/dam\nenel-com/immagini/elevator-pit\nh_2880x1700/about-us-products-\nervices_2880x1700.jpg.resize.1\n40.850.center.center.jpeg;/con\nent/dam/enel-com/immagini/elev\ntor-pitch_2880x1700/about-us-p\noducts-services_2880x1700.jpg.\nesize.2880.1700.center.center@\nx.jpeg;/content/dam/enel-com/i\nmagini/elevator-pitch_2880x170\n/about-us-products-services_28\n0x1700.jpg.resize.2880.1700.ce\nter.center@2x.jpeg;/content/da\n/enel-com/immagini/elevator-pi\nch_2880x1700/about-us-products\nservices_2880x1700.jpg.resize.\n440.850.center.center.jpeg;/co\ntent/dam/enel-com/immagini/ele\nator-pitch_2880x1700/about-us-\nroducts-services_2880x1700.jpg\nresize.2880.1700.center.center\n2x.jpeg;/content/dam/enel-com/\nmmagini/elevator-pitch_2880x17\n0/about-us-products-services_2\n80x1700.jpg.resize.2880.1700.c\nnter.center@2x.jpeg\"\ndata-anchor-id=\"#\"\ndata-gradient-color=\"255,\n255, 255\"\nclass=\"ElevatorPitchWrapper\ngutter-top-small   \ngradient-enabled\"\ndata-module-id=\"E1M4\"\nstyle=\"background-image:\nurl(&amp;quot;/content/dam/ene\n-com/immagini/elevator-pitch_2\n80x1700/about-us-products-serv\nces_2880x1700.jpg.resize.1440.\n50.center.center.jpeg&amp;quot\n);\"&gt;&lt;div\ndata-v-41bafff5=\"\"\nclass=\"container\"&gt;&lt;div\ndat...&lt;/section&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;div data-v-287c4b24=\"\"\nclass=\"category\"\nstyle=\"opacity: 0;\"&gt;Who we\nare\n        &lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h2 data-v-287c4b24=\"\"\nclass=\"title big \"\nstyle=\"opacity: 0;\"&gt;The\npower company that is\nchanging the face of\nene...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p\ndata-v-287c4b24=\"\"&gt;Enel\nbegan as an energy utility\nlike many others.&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p\ndata-v-287c4b24=\"\"&gt;But as\nour capacity to power society\ngrew, so did ...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p\ndata-v-287c4b24=\"\"&gt;Yet no\nmatter how fast we grow, we\nwill never be a...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img data-v-58c83c32=\"\"\nsrc=\"/content/dam/enel-com/imm\ngini/loghi-e-icone/storia_48px\nsvg\" alt=\"\" class=\"image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h3 data-v-58c83c32=\"\"\nclass=\"title\"&gt;\n            Our story\n        &lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p\ndata-v-58c83c32=\"\"&gt;First\nin Italy and then in more\nthan 30\ncountries,...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a data-v-58c83c32=\"\"\ndata-animation=\"\"\nhref=\"https://www.enel.com/com\nany/about-us/our-story\"\naria-label=\"Find out more\nabout the Enel Group's story\"\ntitle=\"Discover more\"\ntarget=\"_self\" class=\"cta\ncta-link\"&gt;&lt;span\ndata-v-58c83c32=\"\"&gt;Discover\nmore&lt;svg\ndata-v-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\ndata-v-58c83c32=\"\"&gt;Discover\nmore&lt;svg\ndata-v-58c83c32=\"\" width=\"12\"\nhe...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img data-v-58c83c32=\"\"\nsrc=\"/content/dam/enel-com/imm\ngini/loghi-e-icone/vision_48px\nsvg\" alt=\"\" class=\"image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h3 data-v-58c83c32=\"\"\nclass=\"title\"&gt;\n            Vision\n        &lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p\ndata-v-58c83c32=\"\"&gt;We\nbelieve that by working\ntogether we can create\n...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a data-v-58c83c32=\"\"\ndata-animation=\"\"\nhref=\"https://www.enel.com/com\nany/about-us/vision\"\naria-label=\"Find out more\nabout the Enel Group's\nvision\" title=\"Discover more\"\ntarget=\"_self\" class=\"cta\ncta-link\"&gt;&lt;span\ndata-v-58c83c32=\"\"&gt;Discover\nmore&lt;svg\ndata-v-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\ndata-v-58c83c32=\"\"&gt;Discover\nmore&lt;svg\ndata-v-58c83c32=\"\" width=\"12\"\nhe...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img data-v-58c83c32=\"\"\nsrc=\"/content/dam/enel-com/imm\ngini/loghi-e-icone/mappa_48px.\nvg\" alt=\"\" class=\"image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h3 data-v-58c83c32=\"\"\nclass=\"title\"&gt;\n            Locations\n        &lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p\ndata-v-58c83c32=\"\"&gt;Our\nglobal reach extends from\nEurope to Latin\nAmer...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a data-v-58c83c32=\"\"\ndata-animation=\"\"\nhref=\"https://www.enel.com/com\nany/about-us/where-we-are\"\naria-label=\"Find out more\nabout the Enel Group's\npresence in the world\"\ntitle=\"Discover more\"\ntarget=\"_self\" class=\"cta\ncta-link\"&gt;&lt;span\ndata-v-58c83c32=\"\"&gt;Discover\nmore&lt;svg\ndata-v-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\ndata-v-58c83c32=\"\"&gt;Discover\nmore&lt;svg\ndata-v-58c83c32=\"\" width=\"12\"\nhe...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img data-v-58c83c32=\"\"\nsrc=\"/content/dam/enel-com/imm\ngini/loghi-e-icone/gruppo-enel\n48px.svg\" alt=\"\"\nclass=\"image\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h3 data-v-58c83c32=\"\"\nclass=\"title\"&gt;\n            Management team\n        &lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p\ndata-v-58c83c32=\"\"&gt;Get to\nknow our organization, Chair\nand Management...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a data-v-58c83c32=\"\"\ndata-animation=\"\"\nhref=\"https://www.enel.com/com\nany/about-us/chairman-manageme\nt-team\" aria-label=\"Find out\nmore about the Enel Group's\nmanagement team\"\ntitle=\"Discover more\"\ntarget=\"_self\" class=\"cta\ncta-link\"&gt;&lt;span\ndata-v-58c83c32=\"\"&gt;Discover\nmore&lt;svg\ndata-v-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\ndata-v-58c83c32=\"\"&gt;Discover\nmore&lt;svg\ndata-v-58c83c32=\"\" width=\"12\"\nhe...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;div data-v-287c4b24=\"\"\nclass=\"category\"\nstyle=\"opacity:\n0;\"&gt;Products and Services\n        &lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h2 data-v-287c4b24=\"\"\nclass=\"title big \"\nstyle=\"opacity: 0;\"&gt;Energy\nis our starting\npoint&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p\ndata-v-287c4b24=\"\"&gt;In\naddition to the 217 TWh\nproduced in 2020, we\nse...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a data-v-287c4b24=\"\"\ndata-animation=\"\"\nhref=\"https://www.enel.com/com\nany/services-and-products\"\ntarget=\"_self\" aria-label=\"Go\nto the Enel Group's products\nand services page\" class=\"cta\ncta-link \"&gt;&lt;span\ndata-v-287c4b24=\"\"&gt;See all\nour products\n    ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\ndata-v-287c4b24=\"\"&gt;See all\nour products\n                       \n&lt;svg ...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"gradient\"\nstyle=\"background:\nlinear-gradient(rgb(255, 255,\n255) 2167px, rgba(255, 255,\n255, 0)\n2517px);\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div data-v-591b74b4=\"\"\ndata-background=\"/content/dam/\nnel-com/immagini/doorways_1368\n1560/about-us-commitments_1368\n1560.jpg.resize.320.450.center\ncenter.jpeg;/content/dam/enel-\nom/immagini/doorways_1368x1560\nabout-us-commitments_1368x1560\njpg.resize.640.900.center.cent\nr@2x.jpeg;/content/dam/enel-co\n/immagini/doorways_1368x1560/a\nout-us-commitments_1368x1560.j\ng.resize.640.900.center.center\n2x.jpeg;/content/dam/enel-com/\nmmagini/doorways_1368x1560/abo\nt-us-commitments_1368x1560.jpg\nresize.348.450.center.center.j\neg;/content/dam/enel-com/immag\nni/doorways_1368x1560/about-us\ncommitments_1368x1560.jpg.resi\ne.696.900.center.center@2x.jpe\n;/content/dam/enel-com/immagin\n/doorways_1368x1560/about-us-c\nmmitments_1368x1560.jpg.resize\n696.900.center.center@2x.jpeg;\ncontent/dam/enel-com/immagini/\noorways_1368x1560/about-us-com\nitments_1368x1560.jpg.resize.6\n4.780.center.center.jpeg;/cont\nnt/dam/enel-com/immagini/doorw\nys_1368x1560/about-us-commitme\nts_1368x1560.jpg.resize.1368.1\n60.center.center@2x.jpeg;/cont\nnt/dam/enel-com/immagini/doorw\nys_1368x1560/about-us-commitme\nts_1368x1560.jpg.resize.1368.1\n60.center.center@2x.jpeg\"\nclass=\"box box-1\"\nstyle=\"background-image:\nurl(&amp;quot;/content/dam/ene\n-com/immagini/doorways_1368x15\n0/about-us-commitments_1368x15\n0.jpg.resize.684.780.center.ce\nter.jpeg&amp;quot;);\"&gt;&lt;d\nv data-v-591b74b4=\"\"\nclass=\"content\"&gt;&lt;div\ndata-...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h3 data-v-591b74b4=\"\"\nid=\"doorway-item-150661146-tit\ne\" class=\"title \"&gt;Discover\nwhat motivates us to keep on\ndriving chan...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\ndata-v-591b74b4=\"\"&gt;Commitme\nts&lt;svg data-v-591b74b4=\"\"\nwidth=\"12\"\nheig...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"gradient\"\nstyle=\"background:\nlinear-gradient(rgba(239,\n242, 247, 0.9) 311px,\nrgba(239, 242, 247, 0)\n611px);\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div data-v-591b74b4=\"\"\ndata-background=\"/content/dam/\nnel-com/immagini/doorways_1368\n1560/about-us-join-us_1368x156\n.jpg.resize.320.450.center.cen\ner.jpeg;/content/dam/enel-com/\nmmagini/doorways_1368x1560/abo\nt-us-join-us_1368x1560.jpg.res\nze.640.900.center.center@2x.jp\ng;/content/dam/enel-com/immagi\ni/doorways_1368x1560/about-us-\noin-us_1368x1560.jpg.resize.64\n.900.center.center@2x.jpeg;/co\ntent/dam/enel-com/immagini/doo\nways_1368x1560/about-us-join-u\n_1368x1560.jpg.resize.348.450.\nenter.center.jpeg;/content/dam\nenel-com/immagini/doorways_136\nx1560/about-us-join-us_1368x15\n0.jpg.resize.696.900.center.ce\nter@2x.jpeg;/content/dam/enel-\nom/immagini/doorways_1368x1560\nabout-us-join-us_1368x1560.jpg\nresize.696.900.center.center@2\n.jpeg;/content/dam/enel-com/im\nagini/doorways_1368x1560/about\nus-join-us_1368x1560.jpg.resiz\n.684.780.center.center.jpeg;/c\nntent/dam/enel-com/immagini/do\nrways_1368x1560/about-us-join-\ns_1368x1560.jpg.resize.1368.15\n0.center.center@2x.jpeg;/conte\nt/dam/enel-com/immagini/doorwa\ns_1368x1560/about-us-join-us_1\n68x1560.jpg.resize.1368.1560.c\nnter.center@2x.jpeg\"\nclass=\"box box-1\"\nstyle=\"background-image:\nurl(&amp;quot;/content/dam/ene\n-com/immagini/doorways_1368x15\n0/about-us-join-us_1368x1560.j\ng.resize.684.780.center.center\njpeg&amp;quot;);\"&gt;&lt;div\ndata-v-591b74b4=\"\"\nclass=\"content\"&gt;&lt;div\ndata-...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h3 data-v-591b74b4=\"\"\nid=\"doorway-item-2-1243529163-\nitle\" class=\"title \"&gt;Join\nus and play your part in the\nnew energy era&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\ndata-v-591b74b4=\"\"&gt;Join\nus&lt;svg data-v-591b74b4=\"\"\nwidth=\"12\"\nheight=\"...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"gradient\"\nstyle=\"background:\nlinear-gradient(rgba(239,\n242, 247, 0.9) 311px,\nrgba(239, 242, 247, 0)\n611px);\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a data-v-0e6ac4cc=\"\"\nhref=\"#\" aria-label=\"Select\nyour language\" role=\"button\"\naria-haspopup=\"dialog\"\nclass=\"trigger\"&gt;&lt;img\ndata-v-0e6ac4cc=\"\"\nheight=\"12\"\nsrc=\"/etc.clie...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"titleError\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"contentError\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"titleInfo\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"contentInfo\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"titlePlay\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"contentPlay\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"ico_show_pwd\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"ico_show_pwd-2\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Tracciato_13531\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Rettangolo_18560\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"Tracciato_13530\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nid=\"truste-consent-track\"\nstyle=\"background-color:\nrgb(0, 0, 0); opacity: 1;\ndisplay: block;\"&gt;  &lt;div\nid=\"truste-consent-content\"\nclass=\"truste-b...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nid=\"truste-consent-track\"\nstyle=\"background-color:\nrgb(0, 0, 0); opacity: 1;\ndisplay: block;\"&gt;  &lt;div\nid=\"truste-consent-content\"\nclass=\"truste-b...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.01:1. Recommendation:  change text colour to #757575.",
+          "code": "&lt;button\nid=\"truste-show-consent\"\ntype=\"button\"\nclass=\"truste-button2\"&gt;Sett\nngs&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nid=\"truste-consent-close\"\nsrc=\"//consent.trustarc.com/ge\n?name=arena_close.svg\"\nstyle=\"cursor:pointer\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Investors&\nt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;The decade\nof electrification&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Corporate&\nt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;The history\nof electricity in Chile is\nonline&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Circular\neconomy&lt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;Decarbonizing\ncities is also good for the\nplanet&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Sustainabi\nity&lt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;Promoting\ninclusion through innovation:\nthis is En...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Sustainabi\nity&lt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;Green\ntechnology to fight soil\nerosion&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Market&lt;\nem&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;One million\nprosumers for the energy\ntransition&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;em data-v-4a0fdab6=\"\"\nclass=\"category\"&gt;Corporate&\nt;/em&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h3 data-v-4a0fdab6=\"\"\nclass=\"title\"&gt;Putting\npeople at the center: Enel\nhas launched a ...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "errorcount": 17
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

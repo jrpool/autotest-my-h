@@ -1,0 +1,714 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://crd.org/",
+      "what": "Civil Rights Defenders",
+      "result": "https://crd.org/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://crd.org/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;link rel=\"mask-icon\"\nhref=\"https://crd.org/wp-conte\nt/themes/civil-rights/assets/d\nst/assets/icons/safari-pinned-\nab.svg\" color=\"#5bbad5\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nid=\"CybotCookiebotDialog\"\nname=\"CybotCookiebotDialog\"\nrole=\"dialog\" aria-modal=\"\"\naria-describedby=\"CybotCookieb\ntDialogBodyContentTitle\"\ntabindex=\"-1\" lang=\"sv\"\ndir=\"ltr\" ng-non-bindable=\"\"\nstyle=\"display: flex;\"\ndata-template=\"popup\"\nclass=\"CybotCookiebotDialogAct\nve\"&gt;&lt;div\nclass=\"CybotCookiebotDialogCon\nentWrapper\"&gt;&lt;d...&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nclass=\"CybotCookiebotBannerClo\neButton\"\naria-label=\"\"&gt;&lt;svg\nxmlns=\"http://www.w3.org/2000/\nvg\"\nwidth=\"14\"...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This form control has an \"aria-label\" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.",
+          "code": "&lt;button\nclass=\"CybotCookiebotBannerClo\neButton\"\naria-label=\"\"&gt;&lt;svg\nxmlns=\"http://www.w3.org/2000/\nvg\"\nwidth=\"14\"...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA6\" target=\"_blank\">ARIA6</a>"
+          ],
+          "id": "ARIA6"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"CybotCookiebotFader\nCybotCookiebotFaderLeft\"\nstyle=\"display: block;\nbackground-image:\nlinear-gradient(to right,\nrgb(0, 0, 0), rgba(0, 0, 0,\n0.8), rgba(255, 255, 255,\n0));\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"CybotCookiebotFader\nCybotCookiebotFaderRight\"\nstyle=\"background-image:\nlinear-gradient(to left,\nrgb(0, 0, 0), rgba(0, 0, 0,\n0.8), rgba(255, 255, 255,\n0));\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"CybotCookiebotFader\"\nstyle=\"display: block;\nbackground-image:\nlinear-gradient(to top,\nrgb(0, 0, 0), rgba(0, 0, 0,\n0.8), rgba(255, 255, 255,\n0));\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h2\nid=\"CybotCookiebotDialogBodyCo\ntentTitle\"\nlang=\"sv\"&gt;Cookies på\ncrd.org&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.",
+          "code": "&lt;h2\nid=\"CybotCookiebotDialogBodyCo\ntentTitle\"\nlang=\"sv\"&gt;Cookies på\ncrd.org&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"CybotCookiebotFader\"\nstyle=\"display: block;\nbackground-image:\nlinear-gradient(to top,\nrgb(0, 0, 0), rgba(0, 0, 0,\n0.8), rgba(255, 255, 255,\n0));\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This checkboxinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"checkbox\"\nid=\"CybotCookiebotDialogBodyLe\nelButtonNecessaryInline\"\nclass=\"CybotCookiebotDialogBod\nLevelButton\nCybotCookiebotDialogBodyLevelB\nttonDisabled\"\ndisabled=\"disabled\"\nchecked=\"checked\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input type=\"checkbox\"\nid=\"CybotCookiebotDialogBodyLe\nelButtonNecessaryInline\"\nclass=\"CybotCookiebotDialogBod\nLevelButton\nCybotCookiebotDialogBodyLevelB\nttonDisabled\"\ndisabled=\"disabled\"\nchecked=\"checked\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This checkboxinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"checkbox\"\nid=\"CybotCookiebotDialogBodyLe\nelButtonPreferencesInline\"\nclass=\"CybotCookiebotDialogBod\nLevelButton\nCybotCookiebotDialogBodyLevelC\nnsentCheckbox\"\ndata-target=\"CybotCookiebotDia\nogBodyLevelButtonPreferences\"\nchecked=\"checked\"\ntabindex=\"0\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input type=\"checkbox\"\nid=\"CybotCookiebotDialogBodyLe\nelButtonPreferencesInline\"\nclass=\"CybotCookiebotDialogBod\nLevelButton\nCybotCookiebotDialogBodyLevelC\nnsentCheckbox\"\ndata-target=\"CybotCookiebotDia\nogBodyLevelButtonPreferences\"\nchecked=\"checked\"\ntabindex=\"0\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This checkboxinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"checkbox\"\nid=\"CybotCookiebotDialogBodyLe\nelButtonStatisticsInline\"\nclass=\"CybotCookiebotDialogBod\nLevelButton\nCybotCookiebotDialogBodyLevelC\nnsentCheckbox\"\ndata-target=\"CybotCookiebotDia\nogBodyLevelButtonStatistics\"\nchecked=\"checked\"\ntabindex=\"0\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input type=\"checkbox\"\nid=\"CybotCookiebotDialogBodyLe\nelButtonStatisticsInline\"\nclass=\"CybotCookiebotDialogBod\nLevelButton\nCybotCookiebotDialogBodyLevelC\nnsentCheckbox\"\ndata-target=\"CybotCookiebotDia\nogBodyLevelButtonStatistics\"\nchecked=\"checked\"\ntabindex=\"0\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This checkboxinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"checkbox\"\nid=\"CybotCookiebotDialogBodyLe\nelButtonMarketingInline\"\nclass=\"CybotCookiebotDialogBod\nLevelButton\nCybotCookiebotDialogBodyLevelC\nnsentCheckbox\"\ndata-target=\"CybotCookiebotDia\nogBodyLevelButtonMarketing\"\nchecked=\"checked\"\ntabindex=\"0\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input type=\"checkbox\"\nid=\"CybotCookiebotDialogBodyLe\nelButtonMarketingInline\"\nclass=\"CybotCookiebotDialogBod\nLevelButton\nCybotCookiebotDialogBodyLevelC\nnsentCheckbox\"\ndata-target=\"CybotCookiebotDia\nogBodyLevelButtonMarketing\"\nchecked=\"checked\"\ntabindex=\"0\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"CybotCookiebotDialogDet\nilBodyContentCookieGroup\"&gt;&\nt;a\nclass=\"CybotCookiebotDialogDet\nilBodyContentCoo...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"CybotCookiebotFader\"\nstyle=\"display: block;\nbackground-image:\nlinear-gradient(to top,\nrgb(0, 0, 0), rgba(0, 0, 0,\n0.8), rgba(255, 255, 255,\n0));\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"CybotCookiebotFader\"\nstyle=\"display: block;\nbackground-image:\nlinear-gradient(to top,\nrgb(0, 0, 0), rgba(0, 0, 0,\n0.8), rgba(255, 255, 255,\n0));\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.2:1. Recommendation:  change background to #c75300.",
+          "code": "&lt;button\nid=\"CybotCookiebotDialogBodyLe\nelButtonLevelOptinAllowAll\"\nclass=\"CybotCookiebotDialogBod\nButton\" tabindex=\"0\"\nlang=\"sv\"&gt;Tillåt\nalla&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nid=\"CybotCookiebotBannerCloseB\nttonE2E\"\nclass=\"CybotCookiebotBannerClo\neButton\"\naria-label=\"\"&gt;&lt;svg\nxmlns=\"http://www.w3.org/2000/\nvg\"\nwidth=\"14\"...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This form control has an \"aria-label\" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.",
+          "code": "&lt;button\nid=\"CybotCookiebotBannerCloseB\nttonE2E\"\nclass=\"CybotCookiebotBannerClo\neButton\"\naria-label=\"\"&gt;&lt;svg\nxmlns=\"http://www.w3.org/2000/\nvg\"\nwidth=\"14\"...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA6\" target=\"_blank\">ARIA6</a>"
+          ],
+          "id": "ARIA6"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a\nclass=\"site-header__logo__link\n href=\"https://crd.org/\"\nrel=\"home\"&gt;Civil Rights\nDefenders&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nclass=\"hamburger-menu-button__\nrigger\"&gt;&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"pll_switcher\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a\nhref=\"#pll_switcher\"&gt;ENG&lt\n/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"pll_switcher\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a\nhref=\"#pll_switcher\"&gt;ENG&lt\n/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h1\nclass=\"entry-title\"&gt;DICTATO\n OF SWEDEN – The Board\nGame&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p&gt;Looking for Dictator\nof Sweden? Click the button\nb...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.85:1. Recommendation:  change background to #cd4d00.",
+          "code": "&lt;a\nhref=\"https://crd.org/sv/dicta\norofsweden/\"\nclass=\"button\"&gt;To Dictator\nof Sweden&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h2 to be properly nested.",
+          "code": "&lt;h4\nclass=\"sub-pages__page__title\"\ngt;Regions&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"324\"\nheight=\"220\"\nsrc=\"https://crd.org/wp-conten\n/uploads/2022/01/2022_Kazakhst\nn_protests_—_Aqtobe_January_4_\n1-1-324x220.jpg\"\nclass=\"article-teaser__contain\nr__image__img wp-post-image\"\nalt=\"\"\nsrcset=\"https://crd.org/wp-con\nent/uploads/2022/01/2022_Kazak\nstan_protests_—_Aqtobe_January\n4_01-1-324x220.jpg 324w,\nhttps://crd.org/wp-content/upl\nads/2022/01/2022_Kazakhstan_pr\ntests_—_Aqtobe_January_4_01-1-\n48x440.jpg 648w\"\nsizes=\"(max-width: 324px)\n100vw, 324px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4\nclass=\"article-teaser__contain\nr__content__title\"&gt;Joint\nStatement on the Alarming\nSituation in\nKazak...&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"324\"\nheight=\"220\"\nsrc=\"https://crd.org/wp-conten\n/uploads/2022/01/MicrosoftTeam\n-image-7-1-324x220.jpg\"\nclass=\"article-teaser__contain\nr__image__img wp-post-image\"\nalt=\"\"\nsrcset=\"https://crd.org/wp-con\nent/uploads/2022/01/MicrosoftT\nams-image-7-1-324x220.jpg\n324w,\nhttps://crd.org/wp-content/upl\nads/2022/01/MicrosoftTeams-ima\ne-7-1-648x440.jpg 648w\"\nsizes=\"(max-width: 324px)\n100vw, 324px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"324\"\nheight=\"220\"\nsrc=\"https://crd.org/wp-conten\n/uploads/2021/12/LEB_2189-2-32\nx220.jpg\"\nclass=\"article-teaser__contain\nr__image__img wp-post-image\"\nalt=\"\"\nsrcset=\"https://crd.org/wp-con\nent/uploads/2021/12/LEB_2189-2\n324x220.jpg 324w,\nhttps://crd.org/wp-content/upl\nads/2021/12/LEB_2189-2-648x440\njpg 648w\" sizes=\"(max-width:\n324px) 100vw, 324px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"324\"\nheight=\"220\"\nsrc=\"https://crd.org/wp-conten\n/uploads/2021/12/Copy-for-webs\nte-1-324x220.jpg\"\nclass=\"article-teaser__contain\nr__image__img wp-post-image\"\nalt=\"\"\nsrcset=\"https://crd.org/wp-con\nent/uploads/2021/12/Copy-for-w\nbsite-1-324x220.jpg 324w,\nhttps://crd.org/wp-content/upl\nads/2021/12/Copy-for-website-1\n648x440.jpg 648w\"\nsizes=\"(max-width: 324px)\n100vw, 324px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element has role of \"button\" but does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button role=\"button\"\nclass=\"owl-dot\nactive\"&gt;&lt;span&gt;&lt;/sp\nn&gt;&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.48:1. Recommendation:  change text colour to #bd4600.",
+          "code": "&lt;a\nclass=\"article-teasers__footer\n_link arrow-link\narrow-link--accent\"\nhref=\"/category/news/\"&gt;Read\nour latest news here&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;h2\nclass=\"content-teaser__contain\nr__title\"&gt;Thousands were\nexecuted&amp;nbsp;in Iran in\n1988 – now...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p&gt;A historic trial\nagainst an Iranian citizen\nsuspec...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.85:1. Recommendation:  change background to #cd4d00.",
+          "code": "&lt;a\nhref=\"https://crd.org/category\ntrial-reports/\"\nclass=\"content-teaser__contain\nr__action button\"&gt;Follow\nthe trial here&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nclass=\"large-article-teaser__c\nntainer__column__image__img\"\nsrc=\"https://crd.org/wp-conten\n/uploads/2020/08/thrd2-1-863x6\n6.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p&gt;You can listen to\nepisodes of The Human Rights\nDef...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.85:1. Recommendation:  change text colour to #cd4d00.",
+          "code": "&lt;a\nhref=\"https://open.spotify.com\nshow/2P1STQCD5ALBDoxtMzdpGN?si\ndRcpQviLQzmIyDZvsxRzfA\"&gt;Spo\nify&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.85:1. Recommendation:  change text colour to #cd4d00.",
+          "code": "&lt;a\nhref=\"https://podcasts.apple.c\nm/gb/podcast/the-human-rights-\nefender/id1517613802\"&gt;Apple\nPodcasts&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"campaign-content\ncampaign-content--align-center\ncampaign-content--has-backgrou\nd-image\"\nstyle=\"background-image:\nurl(https://crd.org/wp-content\nuploads/2018/03/olena-shevchen\no-ukraine.jpg)\"&gt;\n    &lt;div\nclass=\"campaign-content__inner\ncampaign-...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 3:1.",
+          "code": "&lt;h1&gt;Covid-19: Human\nRights Must be\nRespected.&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;p&gt;Authoritarian\ngovernments must not use the\ncorona ...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.85:1. Recommendation:  change background to #cd4d00.",
+          "code": "&lt;a\nhref=\"https://crd.org/wearewat\nhingyou/\"\nclass=\"button\"&gt;Read\nmore&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a\nclass=\"site-footer__logo__link\n href=\"https://crd.org/\"\nrel=\"home\"&gt;Civil Rights\nDefenders&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h2 to be properly nested.",
+          "code": "&lt;h4\nclass=\"widget-title\"&gt;Head\nOffice&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "errorcount": 22
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      11
+    ]
+  ]
+}

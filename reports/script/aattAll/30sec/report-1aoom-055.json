@@ -1,0 +1,365 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 1,
+  "logSize": 177,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://allisontransmission.com/",
+      "what": "Allison Transmission (CCVAX)",
+      "result": "https://allisontransmission.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://allisontransmission.com/",
+      "result": [
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset\nid=\"SFSearchHolder_T173FF50701\n_ctl00_ctl00_main\"\nclass=\"sfsearchBox\ninactive\"&gt;\n    &lt;span tabindex=\"-1\"\nrole=\"presentation\"\nclass...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset\nid=\"SFSearchHolder_T173FF50701\n_ctl00_ctl00_main\"\nclass=\"sfsearchBox\ninactive\"&gt;\n    &lt;span tabindex=\"-1\"\nrole=\"presentation\"\nclass...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.",
+          "code": "&lt;a class=\"map-link\"\nid=\"map-links\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"mobile-nav-btn\"\nhref=\"#\"&gt;\n\t\t  \n\n\t\t&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"map-links\" found on the web page.",
+          "code": "&lt;a class=\"map-link\"\nid=\"map-links\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.",
+          "code": "&lt;a class=\"map-link\"\nid=\"map-links\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3\nclass=\"nav-head\"&gt;&lt;a\ntitle=\"Vocational\nApplications\" target=\"_self\"\n...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/ev-solutions\"\ntarget=\"_self\"&gt;EV\nSolutions&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/why-allison\"\ntarget=\"_self\"&gt;Why\nAllison&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/parts-service\"\ntarget=\"_self\"&gt;Parts +\nService&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/company\"\ntarget=\"_self\"&gt;Company&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/careers\"\ntarget=\"_self\"&gt;Careers at\nAllison&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/sales-service-locator\"\ntarget=\"_self\"&gt;Sales +\nService Locator&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/suppliers\"\ntarget=\"_self\"&gt;Suppliers&lt\n/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/merchandise\"\ntarget=\"_blank\"&gt;Merchandise\nlt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/contact\"\ntarget=\"_self\"&gt;Contact&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"MobileNavLink\" found on the web page.",
+          "code": "&lt;a class=\"mobileMenuLink\"\nid=\"MobileNavLink\"\nrunat=\"server\"\nhref=\"/my-allison\"\ntarget=\"_self\"&gt;My\nAllison&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input id=\"mobileSearch\"\nclass=\"mob-sea\nhasPlaceholder\" type=\"text\"\nplaceholder=\"SEARCH\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input id=\"mobileSearch\"\nclass=\"mob-sea\nhasPlaceholder\" type=\"text\"\nplaceholder=\"SEARCH\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://www.allisontransm\nssion.com/images/default-sourc\n/marketing-images/studioalliso\nbanner_v5.png?sfvrsn=a3e6fd1d_\n7\" alt=\"\"\ndraggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://www.allisontransm\nssion.com/images/default-sourc\n/marketing-images/fractranslid\nr.png?sfvrsn=966bfb1d_29\"\nalt=\"\" draggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://www.allisontransm\nssion.com/images/default-sourc\n/0.0-homepage-slider-images/ve\ntbanner.jpg?sfvrsn=a26fc61d_27\n alt=\"\" draggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://www.allisontransm\nssion.com/images/default-sourc\n/pictures-of-press-releases/hi\nodakarrally.tmb-.png?Culture=e\n&amp;amp;sfvrsn=4fc9cf1d_9\"&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"sfContentBlock\"&gt;&lt;\n href=\"/company/newsroom\"\nclass=\"red-btn\npress\"&gt;...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\" width=\"1\"\nsrc=\"/images/default-source/de\nault-album/map.png?sfvrsn=2\"&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"/images/default-source/de\nault-album/fluid-filter_550x32\n.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\" width=\"1\"\nsrc=\"/images/default-source/de\nault-album/allisonflag_458x292\njpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"icon-facebook\"\nid=\"icon-facebook\"\nhref=\"https://www.facebook.com\nALLISONTRANSMISSION/\"\ntarget=\"_blank\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"icon-twitter\"\nid=\"icon-twitter\"\nhref=\"https://twitter.com/Alli\nonTrans\"\ntarget=\"_blank\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"icon-linkedin\"\nid=\"icon-linkedin\"\nhref=\"https://www.linkedin.com\ncompany/allison-transmission\"\ntarget=\"_blank\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"icon-youtube\"\nid=\"icon-youtube\"\nhref=\"https://www.youtube.com/\n/AllisonTransmissioninc\"\ntarget=\"_blank\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\" width=\"1\"\nheight=\"1\"\nstyle=\"border-width: 0px;\nborder-style: solid;\"\nsrc=\"https://bobit.blueconic.n\nt/s/3Vc.gif\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "errorcount": 21
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      1
+    ]
+  ]
+}

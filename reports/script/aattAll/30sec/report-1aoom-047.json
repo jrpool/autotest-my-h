@@ -1,0 +1,592 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 1,
+  "logSize": 59,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.adp.com/",
+      "what": "ADP (VEIGX)",
+      "result": "https://www.adp.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.adp.com/",
+      "result": [
+        {
+          "type": "error",
+          "msg": "A title should be provided for the document, using a non-empty title element in the head section.",
+          "code": "&lt;head&gt;\n    &lt;meta\ncharset=\"UTF-8\"&gt;\n\t&lt;meta\nhttp-equiv=\"X-U...&lt;/head&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H25\" target=\"_blank\">H25</a>"
+          ],
+          "id": "H25"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a href=\"\" class=\"level-3\n\"&gt;Awards&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p&gt;&lt;strong&gt;About\nADP&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"utility\"&gt;\n\t\t&lt;!--&lt;div\nclass=\"mobile-contact\ntext-center\"&gt;\n\t\t...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3 class=\"p-style size20\"\ndata-ae-heading-level=\"3\"\naria-level=\"2\"&gt;Answer a\nfew questions, and we'll help\nyou find th...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nclass=\"select-roles\"\ntabindex=\"-1\"\naria-label=\"Select your role\"\naria-labelledby=\"ae-main-form-\nabel1\"&gt;\n\t\t\t&lt;option value=\"\"\nclass=\"default\"&gt;Select\nyour r...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nclass=\"select-roles\"\ntabindex=\"-1\"\naria-label=\"Select your role\"\naria-labelledby=\"ae-main-form-\nabel1\"&gt;\n\t\t\t&lt;option value=\"\"\nclass=\"default\"&gt;Select\nyour r...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nclass=\"select-interests\"\ntabindex=\"-1\"\naria-label=\"What are you\ninterested in?\"\naria-labelledby=\"ae-main-form-\nabel2\"&gt;\n\t\t\t&lt;option value=\"\"\nclass=\"default\"&gt;What are\nyou ...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nclass=\"select-interests\"\ntabindex=\"-1\"\naria-label=\"What are you\ninterested in?\"\naria-labelledby=\"ae-main-form-\nabel2\"&gt;\n\t\t\t&lt;option value=\"\"\nclass=\"default\"&gt;What are\nyou ...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/-/media/adp/reskin2022/i\nages/home/img-solution-wizard.\nng?rev=45b62475cf3745c4bdc15f3\n241e83d1&amp;amp;hash=87721B14\n3FC177CBE611BBC94B53E27\"\nalt=\"\"\ndata-lazy=\"/-/media/adp/reskin\n022/images/home/img-solution-w\nzard.png?rev=45b62475cf3745c4b\nc15f39241e83d1&amp;amp;hash=87\n21B1403FC177CBE611BBC94B53E27\"\nclass=\"img-responsive\nmx-auto\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/-/media/adp/reskin2022/i\nages/home/managing_paying_icn_\nuperior_payroll.svg?rev=1004c1\naab124e01824d891042a8ed83&amp;\nmp;la=en&amp;amp;hash=62CF1411\nA261B5436A3AAB39DC3B64A\"\nalt=\"\"\ndata-lazy=\"/-/media/adp/reskin\n022/images/home/managing_payin\n_icn_superior_payroll.svg?rev=\n004c12aab124e01824d891042a8ed8\n&amp;amp;la=en&amp;amp;hash=62\nF14118A261B5436A3AAB39DC3B64A\"\nclass=\"card-img\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5 class=\"title\"\ndata-ae-heading-level=\"5\"\naria-level=\"3\"&gt;Superior\npayroll and HR tech&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/-/media/adp/reskin2022/i\nages/home/managing_paying_icn_\nrusted_by.svg?rev=e0c1a9f5fe3c\n58980ba4ebaa3a0a773&amp;amp;la\nen&amp;amp;hash=757B1C99C6895A\n1C2C2F4F6C430941E\" alt=\"\"\ndata-lazy=\"/-/media/adp/reskin\n022/images/home/managing_payin\n_icn_trusted_by.svg?rev=e0c1a9\n5fe3c458980ba4ebaa3a0a773&amp;\nmp;la=en&amp;amp;hash=757B1C99\n6895AB1C2C2F4F6C430941E\"\nclass=\"card-img\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/-/media/adp/reskin2022/i\nages/home/managing_paying_icn_\nxpert_service.svg?rev=b8cb888d\n87b4fdf8a05a5fc9104e7ad&amp;am\n;la=en&amp;amp;hash=B8E1AEDF1E\nA5D0678CF99947931C8F5\" alt=\"\"\ndata-lazy=\"/-/media/adp/reskin\n022/images/home/managing_payin\n_icn_expert_service.svg?rev=b8\nb888da87b4fdf8a05a5fc9104e7ad&\nmp;amp;la=en&amp;amp;hash=B8E1\nEDF1E3A5D0678CF99947931C8F5\"\nclass=\"card-img\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a class=\"ae-offscreen\nae-accessible-carousel-link\nae-exclude\"\naria-label=\"Accessible\nCarousel\" href=\"#\"\nstyle=\"top: 2137.39px; left:\n0px; display:\nnone;\"&gt;Accessible\nCarousel&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"card\"&gt;\n&lt;img alt=\"\"\nsrc=\"/-/media/adp/reskin2022/i\nages/h...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"/-/media/adp/reskin2022/i\nages/home/img-small-biz.svg?re\n=9b0fa09f121e4871b68aef564cdfa\n64&amp;amp;hash=F175C159074CDF\n3C78A02C0619E7768\"\nclass=\"card-img\"\nstyle=\"opacity: 1;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"card-body\"&gt;\n&lt;p class=\"title-brow\npink-40\"&gt;1-49\nEmployees&lt;/p&gt;\n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"card\"&gt;\n&lt;img alt=\"\"\nsrc=\"/-/media/adp/reskin2022/i\nages/h...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"/-/media/adp/reskin2022/i\nages/home/img-mid-biz.svg?rev=\n3cdfbc7a7a546189d0c0f7e57068a7\n&amp;amp;hash=AD3C734514B95104\n64B2285FDF761C5\"\nclass=\"card-img\"\nstyle=\"opacity: 1;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"card-body\"&gt;\n&lt;p class=\"title-brow\npurple-40\"&gt;50-999\nEmployees&lt;...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"card\"&gt;\n&lt;img alt=\"\"\nsrc=\"/-/media/adp/reskin2022/i\nages/h...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"/-/media/adp/reskin2022/i\nages/home/img-large-biz.svg?re\n=e4d4fbc1200641e882a7c8792a633\n70&amp;amp;hash=133FADE17B8A0E\n6CAEAE92E1C9F6C9C\"\nclass=\"card-img\"\nstyle=\"opacity: 1;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"card-body\"&gt;\n&lt;p class=\"title-brow\nbrown-40\"&gt;1000+\nEmployees&lt;/p...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a class=\"ae-offscreen\nae-accessible-carousel-link\nae-exclude\"\naria-label=\"Accessible\nCarousel\" href=\"#\"\nstyle=\"top: 3013.39px; left:\n0px; display:\nnone;\"&gt;Accessible\nCarousel&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4 class=\"title\"\ndata-ae-heading-level=\"4\"\naria-level=\"3\"&gt;ADP named a\n2021 Customers’ Choice for\nCloud HCM S...&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nclass=\"card-img skiplazy\"\nsrc=\"/-/media/adp/reskin2022/i\nages/home/latest_news_awards_l\ngo_gartner_2021.png?rev=a2e32e\n9375c45d4a82c042f8bbb8d41&amp;\nmp;hash=7FCA4983922F45581BEAD3\nC5570070E\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nclass=\"card-img skiplazy\"\nsrc=\"/-/media/adp/reskin2022/i\nages/home/homepage_promo_thumb\n400w_en.jpg?rev=eb53a9bfa3e34d\n98d942ee79a8e8f99&amp;amp;hash\n49A2B05E02641D2F0A7E8B87998EDC\n2\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nclass=\"card-img skiplazy\"\nsrc=\"/-/media/adp/reskin2022/i\nages/home/latest_news_discover\nrun.png?rev=322b070611714cb194\n0289d58e1b98d&amp;amp;hash=2E3\n57C3EB0CA56BF8363A4E62627D12\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a class=\"ae-offscreen\nae-accessible-carousel-link\nae-exclude\"\naria-label=\"Accessible\nCarousel\" href=\"#\"\nstyle=\"top: 3687.31px; left:\n0px; display:\nnone;\"&gt;Accessible\nCarousel&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/-/media/adp/redesign2018\nimages/about-adp/why-adp/logo-\nortune-admired-companies-award\npng?rev=789b49f90d464f7d9beec8\nf93ff8059&amp;amp;h=164&amp;am\n;w=332&amp;amp;la=en&amp;amp;h\nsh=57C3D18AED69765995AF72639FA\n49FB\" class=\"card-img\nskiplazy\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This content looks like it is simulating an unordered list using plain text. If so, marking up this content with a ul element would add proper structure information to the document.",
+          "code": "&lt;div class=\"note text-left\next-mt px-gutter\"&gt;\n&lt;p&gt;* From\n&lt;em&gt;Fortune&lt;/em&gt;.\n©2021\n&lt;em&gt;Fortune&lt;/em...&lt\n/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This content looks like it is simulating an unordered list using plain text. If so, marking up this content with a ul element would add proper structure information to the document.",
+          "code": "&lt;p&gt;* From\n&lt;em&gt;Fortune&lt;/em&gt;.\n©2021\n&lt;em&gt;Fortune&lt;/em&gt;\nMe...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"client-bg\"\nstyle=\"background-image:\nurl(/-/media/adp/reskin2022/im\nges/home/bkgd-testimonial-amaz\nn.jpg);\"&gt;&amp;nbsp;&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"row\ncenter-block px-gutter\ntext-center white\"&gt;\n&lt;p class=\"title-brow\"\nrole=\"heading\"\naria-level=\"...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "code": "&lt;form\naction=\"/formbuilder?fxb.FormI\nemId=a40590ec-676b-47f4-a19e-f\nc91321715e&amp;amp;fxb.HtmlPre\nix=fxb.dd631d0e-2600-4acd-8688\n170b4638c7a5&amp;amp;fxb.PageI\nemId=e81dedb7-ff22-448e-9f38-a\n54e2ce5667&amp;amp;fxb.Renderi\ngId=6b14029c-a948-48bb-8074-4a\n2092d4d7a&amp;amp;fxb.EntryId=\nf82c67f-069c-47b1-8294-f7af49f\na430\" data-ajax=\"true\"\ndata-ajax-failure=\"integrate3r\nPartyOnError(xhr, status,\nerror,'a40590ec-676b-47f4-a19e\nfdc91321715e',5f82c67f-069c-47\n1-8294-f7af49fba430);\"\ndata-ajax-method=\"Post\"\ndata-ajax-mode=\"replace-with\"\ndata-ajax-success=\"$.validator\nunobtrusive.parse('#fxb_dd631d\ne-2600-4acd-8688-170b4638c7a5_\n40590ec-676b-47f4-a19e-fdc9132\n715e');$.fxbFormTracker.parse(\n#fxb_dd631d0e-2600-4acd-8688-1\n0b4638c7a5_a40590ec-676b-47f4-\n19e-fdc91321715e');integrate3r\nPartyAfterSuccess(data,\nstatus,\nxhr,'a40590ec-676b-47f4-a19e-f\nc91321715e','5f82c67f-069c-47b\n-8294-f7af49fba430');\"\ndata-ajax-update=\"#fxb_dd631d0\n-2600-4acd-8688-170b4638c7a5_a\n0590ec-676b-47f4-a19e-fdc91321\n15e\"\ndata-sc-fxb=\"a40590ec-676b-47f\n-a19e-fdc91321715e\"\nenctype=\"multipart/form-data\"\nid=\"fxb_dd631d0e-2600-4acd-868\n-170b4638c7a5_a40590ec-676b-47\n4-a19e-fdc91321715e\"\nmethod=\"post\"\nnovalidate=\"novalidate\"&gt;&lt\ninput\nid=\"fxb_dd631d0e-2600-4acd-868\n-170b4638c7a...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "This hidden form field is labelled in some way. There should be no need to label a hidden form field.",
+          "code": "&lt;input\nid=\"fxb_dd631d0e-2600-4acd-868\n-170b4638c7a5_Fields_Index_305\n47a7-15c7-4d5e-bfb2-e03255042e\nd\"\nname=\"fxb.dd631d0e-2600-4acd-8\n88-170b4638c7a5.Fields.Index\"\ntype=\"hidden\"\nvalue=\"305e47a7-15c7-4d5e-bfb2\ne03255042e8d\"\naria-labelledby=\"ae-main-form-\nabel9\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "This hidden form field is labelled in some way. There should be no need to label a hidden form field.",
+          "code": "&lt;input\nid=\"fxb_dd631d0e-2600-4acd-868\n-170b4638c7a5_Fields_305e47a7-\n5c7-4d5e-bfb2-e03255042e8d__It\nmId\"\nname=\"fxb.dd631d0e-2600-4acd-8\n88-170b4638c7a5.Fields[305e47a\n-15c7-4d5e-bfb2-e03255042e8d].\ntemId\" type=\"hidden\"\nvalue=\"305e47a7-15c7-4d5e-bfb2\ne03255042e8d\"\naria-labelledby=\"ae-main-form-\nabel9\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;label\nfor=\"fxb_dd631d0e-2600-4acd-86\n8-170b4638c7a5_Fields_305e47a7\n15c7-4d5e-bfb2-e03255042e8d__V\nlue\" class=\"label-country\"\nid=\"ae-country-label0\"&gt;Coun\nry&lt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nid=\"fxb_dd631d0e-2600-4acd-868\n-170b4638c7a5_Fields_305e47a7-\n5c7-4d5e-bfb2-e03255042e8d__Va\nue\"\nname=\"fxb.dd631d0e-2600-4acd-8\n88-170b4638c7a5.Fields[305e47a\n-15c7-4d5e-bfb2-e03255042e8d].\nalue\" class=\"select-country\"\ndata-sc-tracking=\"True\"\ndata-sc-field-name=\"Country\"\ndata-sc-field-key=\"46E9AD9EC9C\n4325AAA02607D1CC04EC\"\ndata-val-required=\"Please\nenter Country.\"\ndata-val=\"true\" tabindex=\"-1\"\naria-label=\"United States\"\naria-labelledby=\"ae-main-form-\nabel9\"\nautocomplete=\"country\"&gt;\n        &lt;option\nvalue=\"Afghanistan\"&gt;Afghani\ntan&lt;/...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "This hidden form field is labelled in some way. There should be no need to label a hidden form field.",
+          "code": "&lt;input type=\"hidden\"\nname=\"fxb.dd631d0e-2600-4acd-8\n88-170b4638c7a5.Fields[41a0169\n-e146-43fd-b1b6-e40c01637d3f].\nalue\" value=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "This hidden form field is labelled in some way. There should be no need to label a hidden form field.",
+          "code": "&lt;input type=\"hidden\"\nname=\"fxb.dd631d0e-2600-4acd-8\n88-170b4638c7a5.Fields[41a0169\n-e146-43fd-b1b6-e40c01637d3f].\nequired\" value=\"false\"\ndata-sc-conditions-required=\"\"\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p\nclass=\"form-disclaimer\"&gt;By\nclicking &lt;span\nclass=\"cta-value\"&gt;Get\nStarted&lt;/s...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"/-/media/adp/redesign2018\nui/logo-adp-fy19.svg?rev=3fdce\n0c1c7349e0a222b9864a196c45&amp\namp;hash=E888C56E0A0520040CB1C\n703FFF849A\"\nclass=\"skiplazy\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mobile-nav\"&gt;\n\t&lt;div\nclass=\"call-menu\"&gt;\n\t\t&lt;div\nclass=\"menu-wrap\"...&lt;/div&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"menu-wrap\"&gt;\n\t\t\t&lt;button\nclass=\"close-icn\"\naria-label=\"Close\"&gt;&lt;...&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "code": "&lt;form\naction=\"/formbuilder?fxb.FormI\nemId=c006c521-52dd-4c6e-9f13-3\nb055d23783&amp;amp;fxb.HtmlPre\nix=fxb.d0366632-6f9a-4118-b8f9\n208cf19968ec&amp;amp;fxb.PageI\nemId=e81dedb7-ff22-448e-9f38-a\n54e2ce5667&amp;amp;fxb.Renderi\ngId=6b14029c-a948-48bb-8074-4a\n2092d4d7a&amp;amp;fxb.EntryId=\n10a90a2-f938-4ecd-888d-b5e5fd0\nc59c\" data-ajax=\"true\"\ndata-ajax-failure=\"integrate3r\nPartyOnError(xhr, status,\nerror,'c006c521-52dd-4c6e-9f13\n31b055d23783',910a90a2-f938-4e\nd-888d-b5e5fd04c59c);\"\ndata-ajax-method=\"Post\"\ndata-ajax-mode=\"replace-with\"\ndata-ajax-success=\"$.validator\nunobtrusive.parse('#fxb_d03666\n2-6f9a-4118-b8f9-208cf19968ec_\n006c521-52dd-4c6e-9f13-31b055d\n3783');$.fxbFormTracker.parse(\n#fxb_d0366632-6f9a-4118-b8f9-2\n8cf19968ec_c006c521-52dd-4c6e-\nf13-31b055d23783');integrate3r\nPartyAfterSuccess(data,\nstatus,\nxhr,'c006c521-52dd-4c6e-9f13-3\nb055d23783','910a90a2-f938-4ec\n-888d-b5e5fd04c59c');\"\ndata-ajax-update=\"#fxb_d036663\n-6f9a-4118-b8f9-208cf19968ec_c\n06c521-52dd-4c6e-9f13-31b055d2\n783\"\ndata-sc-fxb=\"c006c521-52dd-4c6\n-9f13-31b055d23783\"\nenctype=\"multipart/form-data\"\nid=\"fxb_d0366632-6f9a-4118-b8f\n-208cf19968ec_c006c521-52dd-4c\ne-9f13-31b055d23783\"\nmethod=\"post\"\nnovalidate=\"novalidate\"&gt;&lt\ninput\nid=\"fxb_d0366632-6f9a-4118-b8f\n-208cf19968e...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img style=\"width: 0px;\nheight: 0px; display: none;\nvisibility: hidden;\"\nid=\"batBeacon784728892265\"\nwidth=\"0\" height=\"0\" alt=\"\"\nsrc=\"https://bat.bing.com/acti\nn/0?ti=5105257&amp;amp;Ver=2&a\np;amp;mid=f2b565f4-1a30-4703-8\na9-282b6262e11b&amp;amp;sid=04\nb19e0702c11ecad65ff7aae2b8bec&\nmp;amp;vid=04ab3020702c11ecbbe\n1fa9f909219a&amp;amp;vids=1&am\n;amp;pi=0&amp;amp;lg=en-US&amp\namp;sw=1280&amp;amp;sh=720&amp\namp;sc=30&amp;amp;tl=Payroll,%\n0HR%20and%20Tax%20Services%20%\nC%20ADP%20Official%20Site&amp;\nmp;kw=Payroll,%20HR%20and%20Ta\n%20Services&amp;amp;p=https%3A\n2F%2Fwww.adp.com%2F&amp;amp;r=\namp;amp;lt=945&amp;amp;evt=pag\nLoad&amp;amp;msclkid=N&amp;amp\nsv=1&amp;amp;rn=926929\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nid=\"drift-frame-controller\"\nclass=\"drift-conductor-item\ndrift-frame-controller\ndrift-frame-controller-align-r\nght\" style=\"right: 24px;\nwidth: 76px !important;\nmax-width: none; position:\nfixed; z-index: 2147483647;\nheight: 0px !important;\nbottom: 24px;\"&gt;&lt;iframe\nclass=\"drift-frame-controller\"\nscrolling=\"...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;iframe\nclass=\"drift-frame-controller\"\nscrolling=\"no\" title=\"Drift\nWidget Icon\" allow=\"autoplay;\nencrypted-media; fullscreen;\"\nframeborder=\"0\"\nsrc=\"https://js.driftt.com/cor\n?embedId=u3ade2tpn6nh&amp;amp;\negion=US&amp;amp;forceShow=fal\ne&amp;amp;skipCampaigns=false&\nmp;amp;sessionId=bd7821e2-61d3\n4e86-b427-42e3d718726e&amp;amp\nsessionStarted=1641609493.468&\nmp;amp;campaignRefreshToken=f8\nef669-09e3-4e14-b8ff-195ed18f0\nc5&amp;amp;hideController=fals\n&amp;amp;pageLoadStartTime=164\n609488752&amp;amp;mode=CHAT&am\n;amp;driftEnableLog=false\"\nstyle=\"background:\ntransparent; width: 100%;\nmax-width: 100%; height:\n100%; border: none;\"\ndata-gtm-yt-inspected-8920951_\n14=\"true\"\ndata-gtm-yt-inspected-8920951_\n15=\"true\"\ndata-gtm-yt-inspected-8920951_\n16=\"true\"\ndata-gtm-yt-inspected-8920951_\n74=\"true\"\ndata-gtm-yt-inspected-8920951_\n75=\"true\"\ndata-gtm-yt-inspected-1_19=\"tr\ne\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nid=\"ae-userStateStore\"\nsrc=\"https://wsv3cdn.audioeye.\nom/frame/cookieStorage.html?bu\nld=prod&amp;amp;pscb=\"\nstyle=\"display: none; height:\n0px; width: 0px;\"\ndata-gtm-yt-inspected-8920951_\n14=\"true\"\ndata-gtm-yt-inspected-8920951_\n15=\"true\"\ndata-gtm-yt-inspected-8920951_\n16=\"true\"\ndata-gtm-yt-inspected-8920951_\n74=\"true\"\ndata-gtm-yt-inspected-8920951_\n75=\"true\"\ndata-gtm-yt-inspected-1_19=\"tr\ne\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;ul\nclass=\"drop-menu-links\"\nrole=\"presentation\"&gt;\n\t\t\t\t&lt;li\nclass=\"drop-menu-panel\"\nrole=\"presentatio...&lt;/ul&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li\nclass=\"drop-menu-panel\"\nrole=\"presentation\"&gt;\n\t\t\t\t\t&lt;img\nsrc=\"/-/media/adp/redesign2018\nimages/s...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "errorcount": 4
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      8
+    ]
+  ]
+}

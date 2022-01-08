@@ -1,0 +1,1102 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 5,
+  "logSize": 930,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.nationalgrid.com/",
+      "what": "National Grid (VEIGX)",
+      "result": "https://www.nationalgrid.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.nationalgrid.com/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.",
+          "code": "&lt;a id=\"top\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"main-menu\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a class=\"visually-hidden\nfocusable skip-link\"\nhref=\"#main-menu\"&gt;\nSkip to main navigation\n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input\nclass=\"top_nav__search-form__s\narch-field initial closed\"\ntype=\"text\" name=\"query\"\nvalue=\"\"\nplaceholder=\"Search\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input\nclass=\"top_nav__search-form__s\narch-field initial closed\"\ntype=\"text\" name=\"query\"\nvalue=\"\"\nplaceholder=\"Search\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a\nclass=\"nested-navigation__link\n-up-level\"&gt;\nHome\n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a\nclass=\"nested-navigation__link\n-up-level\"&gt;\nNational Grid Ventures\n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/sites/default/files/styl\ns/hero_large/public/images/App\n20VA%20Getty%201320549811%20WS\njpg?h=19547a00&amp;amp;itok=ZV\n19yUZ\" alt=\"\"\ntypeof=\"foaf:Image\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3&gt;&lt;span&gt;Quick\nlinks&lt;/span&gt;\n&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Presentational markup used that has become obsolete in HTML5.",
+          "code": "&lt;center&gt;&lt;div\nclass=\"pulse\"&gt;&lt;a\nhref=\"#section1\"&gt;&lt;img\nsrc=\"h...&lt;/center&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"#section1\"&gt;&lt;img\nsrc=\"https://www.nationalgrid.\nom/sites/defau...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/sites/default/files/styl\ns/standard_promo_16_9/public/i\nages/AllFistsIn_Getty120888214\n_640x360.jpg?h=7a6e80fd&amp;am\n;itok=3Q2WJvzq\" width=\"555\"\nheight=\"312\" alt=\"\"\ntypeof=\"foaf:Image\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"standard-promo-content\"\ngt;&lt;a class=\"title\"\nhref=\"/stories/journey-to-net-\ner...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/sites/default/files/styl\ns/standard_promo_16_9/public/i\nages/HyGrid%20hydrogen%20blend\nng%20project%201280x720.jpg?h=\nec48580&amp;amp;itok=DYb73spQ\"\nwidth=\"555\" height=\"312\"\nalt=\"\" typeof=\"foaf:Image\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"standard-promo-content\"\ngt;&lt;a class=\"title\"\nhref=\"/stories/journey-to-net-\ner...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/sites/default/files/styl\ns/standard_promo_16_9/public/i\nages/FAP045-NationalGrid-V4-02\n02.jpg?h=2991b15d&amp;amp;itok\n4HWz7-lN\" width=\"555\"\nheight=\"312\" alt=\"\"\ntypeof=\"foaf:Image\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"standard-promo-content\"\ngt;&lt;a class=\"title\"\nhref=\"/podcasts/clean-energy-r\nvo...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/eastcoasthydrogenr\nport-firststepconvertukgasnetw\nrks\" class=\"lightbox-wrapper\"\nid=\"lighbox0\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/JonButterwor...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4&gt;&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/east...&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox0\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/eastcoasthydrogenr\nport-firststepconvertukgasnetw\nrks\" id=\"lighbox0\"\nclass=\"lightbox-wrapper\"&gt;Ea\nt Coast Hydrogen report marks\nfirst major step ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/sites/default/files/imag\ns/Richborough_SF6Replacement_6\n0x360.jpg\" width=\"631\"\nheight=\"360\"\ntypeof=\"foaf:Image\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox0\" found on the web page.",
+          "code": "&lt;a\nhref=\"https://www.youtube.com/\nmbed/3vvCvZia0qI?autoplay=1&am\n;amp;start=0&amp;amp;rel=0&amp\namp;enablejsapi=1&amp;amp;mute\n1&amp;amp;version=3\"\ndata-lity=\"\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox0\"&gt;&lt;div\nclass=\"video-embed-field-provi\ner-youtube vid...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe width=\"854\"\nheight=\"480\" frameborder=\"0\"\nallowfullscreen=\"allowfullscre\nn\"\nsrc=\"https://www.youtube.com/e\nbed/3vvCvZia0qI?autoplay=1&amp\namp;start=0&amp;amp;rel=0&amp;\nmp;enablejsapi=1&amp;amp;mute=\n&amp;amp;version=3\"\ndata-object-fit=\"cover\"&gt;&lt\n/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"poster\"\ndata-object-fit=\"cover\"\nsrc=\"http://img.youtube.com/vi\n3vvCvZia0qI/0.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox0\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/project-replacing-\nf6-greener-alternative-will-cu\n-emissions\" id=\"lighbox0\"\nclass=\"lightbox-wrapper\"&gt;Pr\nject replacing SF6 with\ngreener alternative\nwil...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/new-online-tool-wi\nl-help-uk-ports-transition-net\nzero\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox0\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/PortOfTyneCo...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox0\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/new-online-tool-wi\nl-help-uk-ports-transition-net\nzero\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox0\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/PortOfTyneCo...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox0\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/new-online-tool-wi\nl-help-uk-ports-transition-net\nzero\" id=\"lighbox0\"\nclass=\"lightbox-wrapper\"&gt;Ne\n online tool will help UK\nports transition to\nn...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"/stories/community-spiri\n-stories/grid-good-celebrates-\nne-year-bringing-young-people-\npportunities\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox0\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/Sitting_Wall...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox0\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/community-spiri\n-stories/grid-good-celebrates-\nne-year-bringing-young-people-\npportunities\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox0\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/Sitting_Wall...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox0\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/community-spiri\n-stories/grid-good-celebrates-\nne-year-bringing-young-people-\npportunities\" id=\"lighbox0\"\nclass=\"lightbox-wrapper\"&gt;‘G\nid for Good’ celebrates one\nyear of bringing\nyo...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.",
+          "code": "&lt;a\nid=\"section1\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/sites/default/files/styl\ns/investor_image_large/public/\nmages/shareprice.jpg?h=974972f\n&amp;amp;itok=wBAxt__g\"\nalt=\"\" typeof=\"foaf:Image\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h4 to be properly nested.",
+          "code": "&lt;h6\nclass=\"stock--exchange\"&gt;LSE\nlt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.",
+          "code": "&lt;a\nid=\"section2?ref=section2\"&gt;\nlt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/sites/default/files/styl\ns/standard_promo_16_9/public/i\nages/SarahWoolhamJaffier_JA281\n19-46.jpg?h=1444fb9d&amp;amp;i\nok=6HvMJ7f3\" width=\"555\"\nheight=\"312\" alt=\"\"\ntypeof=\"foaf:Image\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"standard-promo-content\"\ngt;&lt;a class=\"title\"\nhref=\"/careers\"&gt;&lt;h2&gt;\nCareers at N...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/sites/default/files/styl\ns/standard_promo_16_9/public/i\nages/responsibility.png?h=4e6d\n31c&amp;amp;itok=XE2vWojL\"\nwidth=\"555\" height=\"312\"\nalt=\"\" typeof=\"foaf:Image\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe width=\"854\"\nheight=\"480\" frameborder=\"0\"\nallowfullscreen=\"allowfullscre\nn\"\nsrc=\"https://www.youtube.com/e\nbed/KnQbi-Q82Kk?autoplay=0&amp\namp;start=0&amp;amp;rel=0\"\ndata-object-fit=\"cover\"&gt;&lt\n/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"poster\"\nsrc=\"http://img.youtube.com/vi\nKnQbi-Q82Kk/0.jpg\"\ndata-object-fit=\"cover\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"standard-promo-content\"\ngt;&lt;a class=\"link\"\ntarget=\"_blank\"\nhref=\"https://www....&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4&gt;&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/how-...&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox1\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/how-can-i-reduce-m\n-carbon-footprint-home\"\nid=\"lighbox1\"\nclass=\"lightbox-wrapper\"&gt;Ho\n can I reduce my carbon\nfootprint at home?&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox1\" found on the web page.",
+          "code": "&lt;a\nhref=\"https://www.nationalgrid\ncom/stories/journey-to-net-zer\n-stories/green-light-signals-c\nean-energy-10-downing-street\"\ntarget=\"_blank\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox1\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/Green%20Ligh...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox1\" found on the web page.",
+          "code": "&lt;a\nhref=\"https://www.nationalgrid\ncom/stories/journey-to-net-zer\n-stories/green-light-signals-c\nean-energy-10-downing-street\"\ntarget=\"_blank\" id=\"lighbox1\"\nclass=\"lightbox-wrapper\"&gt;Gr\nen lights at 10 Downing\nStreet highlight\ntransi...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox1\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/grid-work-stori\ns/constructions-first-neurodiv\nrse-and-sustainable-cabin\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox1\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/IMG-20210506...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox1\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/grid-work-stori\ns/constructions-first-neurodiv\nrse-and-sustainable-cabin\"\nid=\"lighbox1\"\nclass=\"lightbox-wrapper\"&gt;Co\nstruction’s first\nneurodiverse AND sustainable\n...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/london-glasgow-cyc\ne-challenge\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox1\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/DavidWelling...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox1\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/london-glasgow-cyc\ne-challenge\"\nclass=\"lightbox-wrapper\"\nid=\"lighbox1\"&gt;&lt;img\nsrc=\"/sites/default/files/imag\ns/DavidWelling...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"lighbox1\" found on the web page.",
+          "code": "&lt;a\nhref=\"/stories/journey-to-net-\nero-stories/london-glasgow-cyc\ne-challenge\" id=\"lighbox1\"\nclass=\"lightbox-wrapper\"&gt;Lo\ndon to Glasgow cycle\nchallenge: Highlighting\nne...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"pg__c\" found on the web page.",
+          "code": "&lt;footer class=\"page-node\npage-footer\nfooter_nav_present\"\nid=\"pg__c\"&gt;\n&lt;div\nclass=\"page-footer__cols\ncontainer\"&gt;\n&lt;div cl...&lt;/footer&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a href=\"\"\nclass=\"navigation__link\"&gt;Co\nnect with us&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a href=\"\"\nclass=\"navigation__link\"&gt;Wo\nk for us&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a href=\"\"\nclass=\"navigation__link\"&gt;Ou\n policies&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a href=\"\"\nclass=\"navigation__link\"&gt;Mo\ne from National Grid&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"cookie-announcement--bu\ntons\"&gt;&lt;a href=\"#\"\nclass=\"cookie-announcement--di\nmiss bt...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"cky-consent-bar\ncky-popup box-center\"\nstyle=\"background:#fff;color:#\n65662;border:1px solid\n#d4d8df;top:40%;right:auto;bot\nom:auto;left:50%\"\nid=\"cky-consent\"&gt;&lt;div\nclass=\"cky-consent-title\"\nstyle=\"color:#56566...&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cky-consent-title\"\nstyle=\"color:#565662\"\ncky-i18n=\"gdpr.notice.title\"&g\n;Cookie consent&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;p class=\"cky-bar-text\"\nstyle=\"color:#565662\"\ncky-i18n=\"gdpr.notice.text\"&gt\nThis website uses cookies\nthat help the website\nfu...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;button class=\"cky-btn\ncky-btn-settings\"\nstyle=\"color:#7f7f7f;backgroun\n-color:transparent;border-colo\n:transparent\"\nid=\"cky-btn-settings\"\ncky-i18n=\"gdpr.buttons.setting\n.title\"&gt;Manage\npreferences&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"cky-modal-backdrop\ncky-fade cky-show\"\nid=\"cky-modal-backdrop\"&gt;&lt\n/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div class=\"cky-modal\ncky-fade\"\nid=\"cky-settings-popup\"&gt;&lt\ndiv class=\"cky-modal-dialog\"\nstyle=\"background-co...&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"cky-modal-dialog\"\nstyle=\"background-color:#fff\"&\nt;&lt;div\nclass=\"cky-modal-content\"\nstyle=\"border:1px\ns...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"cky-tab-menu\"\nstyle=\"background-color:#f2f5f\n\"\nid=\"cky-tab-menu\"&gt;&lt;div\nclass=\"cky-tab-item\ncky-tab-item-active\"\nstyl...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-item\"\nstyle=\"color:#000;border-color\n#d4d8df\"\nid=\"cky-tab-item-necessary\"\ncky-i18n=\"detail.tabItem.neces\nary.title\"&gt;Necessary&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-item\"\nstyle=\"color:#000;border-color\n#d4d8df\"\nid=\"cky-tab-item-functional\"\ncky-i18n=\"detail.tabItem.funct\nonal.title\"&gt;Functional&lt;/\niv&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-item\"\nstyle=\"color:#000;border-color\n#d4d8df\"\nid=\"cky-tab-item-analytics\"\ncky-i18n=\"detail.tabItem.analy\nics.title\"&gt;Analytics&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-item\"\nstyle=\"color:#000;border-color\n#d4d8df\"\nid=\"cky-tab-item-performance\"\ncky-i18n=\"detail.tabItem.perfo\nmance.title\"&gt;Performance&lt\n/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-item\"\nstyle=\"color:#000;border-color\n#d4d8df\"\nid=\"cky-tab-item-advertisement\n\ncky-i18n=\"detail.tabItem.adver\nisement.title\"&gt;Advertisemen\n&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-item\"\nstyle=\"color:#000;border-color\n#d4d8df\"\nid=\"cky-tab-item-other\"\ncky-i18n=\"detail.tabItem.other\ntitle\"&gt;Others&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"cky-tab-content\"\nid=\"cky-tab-content\"\nstyle=\"background-color:#fff\"&\nt;&lt;div\nclass=\"cky-tab-content-item\ncky-tab-content-a...&lt;/div&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cky-tab-content-item\ncky-tab-content-active\"\nid=\"cky-tab-content-privacy\"\nstyle=\"color:#565662\"&gt;&lt;d\nv class=\"cky-tab-title\"\nstyle=\"color:#565662\"\ni...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-title\"\nstyle=\"color:#565662\"\nid=\"cky-tab-title-privacy\"\ncky-i18n=\"detail.tabItem.priva\ny.title\"&gt;Privacy\nPolicy&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-desc\"\ncky-i18n=\"detail.tabItem.priva\ny.text\"\nstyle=\"color:#565662\"&gt;&lt;p\ngt;This website uses cookies\nto improve your\nexper...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cky-tab-content-item\"\nid=\"cky-tab-content-necessary\"\nstyle=\"color:#565662\"&gt;&lt;d\nv class=\"cky-tab-title\"\nstyle=\"color:#565662\"\ni...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-title\"\nstyle=\"color:#565662\"\nid=\"cky-tab-title-necessary\"\ncky-i18n=\"detail.tabItem.neces\nary.title\"&gt;Necessary&lt;lab\nl class=\"cky-switch\"\nfor=\"cky-checkb...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;label class=\"cky-switch\"\nfor=\"cky-checkbox-category-nec\nssary\"\nonclick=\"event.stopPropagation\n);\"&gt;&lt;input\ntype=\"checkbox\"\nid=\"cky-checkbox-category-n...\nlt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-desc\"\ncky-i18n=\"detail.tabItem.neces\nary.text\"\nstyle=\"color:#565662\"&gt;&lt;p\ngt;Necessary cookies are\ncrucial for the basic\nfun...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+          "code": "&lt;table\nid=\"cky-cookie-audit-table-nec\nssary\"\nclass=\"cky-cookie-audit-table\"\ngt;&lt;thead&gt;&lt;tr&gt;&lt;\nh\ncky-i18n=\"auditTable.cookie\"&g\n;Cookie...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H39\" target=\"_blank\">H39</a>"
+          ],
+          "id": "H39"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cky-tab-content-item\"\nid=\"cky-tab-content-functional\n\nstyle=\"color:#565662\"&gt;&lt;d\nv class=\"cky-tab-title\"\nstyle=\"color:#565662\"\ni...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-title\"\nstyle=\"color:#565662\"\nid=\"cky-tab-title-functional\"\ncky-i18n=\"detail.tabItem.funct\nonal.title\"&gt;Functional&lt;l\nbel class=\"cky-switch\"\nfor=\"cky-check...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;label class=\"cky-switch\"\nfor=\"cky-checkbox-category-fun\ntional\"\nonclick=\"event.stopPropagation\n);\"&gt;&lt;input\ntype=\"checkbox\"\nid=\"cky-checkbox-category-f...\nlt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-desc\"\ncky-i18n=\"detail.tabItem.funct\nonal.text\"\nstyle=\"color:#565662\"&gt;&lt;p\ngt;Functional cookies help to\nperform certain\nfunc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+          "code": "&lt;table\nid=\"cky-cookie-audit-table-fun\ntional\"\nclass=\"cky-cookie-audit-table\"\ngt;&lt;thead&gt;&lt;tr&gt;&lt;\nh\ncky-i18n=\"auditTable.cookie\"&g\n;Cookie...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H39\" target=\"_blank\">H39</a>"
+          ],
+          "id": "H39"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cky-tab-content-item\"\nid=\"cky-tab-content-analytics\"\nstyle=\"color:#565662\"&gt;&lt;d\nv class=\"cky-tab-title\"\nstyle=\"color:#565662\"\ni...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-title\"\nstyle=\"color:#565662\"\nid=\"cky-tab-title-analytics\"\ncky-i18n=\"detail.tabItem.analy\nics.title\"&gt;Analytics&lt;lab\nl class=\"cky-switch\"\nfor=\"cky-checkb...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;label class=\"cky-switch\"\nfor=\"cky-checkbox-category-ana\nytics\"\nonclick=\"event.stopPropagation\n);\"&gt;&lt;input\ntype=\"checkbox\"\nid=\"cky-checkbox-category-a...\nlt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-desc\"\ncky-i18n=\"detail.tabItem.analy\nics.text\"\nstyle=\"color:#565662\"&gt;&lt;p\ngt;Analytical cookies are\nused to understand how\nv...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+          "code": "&lt;table\nid=\"cky-cookie-audit-table-ana\nytics\"\nclass=\"cky-cookie-audit-table\"\ngt;&lt;thead&gt;&lt;tr&gt;&lt;\nh\ncky-i18n=\"auditTable.cookie\"&g\n;Cookie...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H39\" target=\"_blank\">H39</a>"
+          ],
+          "id": "H39"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cky-tab-content-item\"\nid=\"cky-tab-content-performanc\n\"\nstyle=\"color:#565662\"&gt;&lt;d\nv class=\"cky-tab-title\"\nstyle=\"color:#565662\"\ni...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-title\"\nstyle=\"color:#565662\"\nid=\"cky-tab-title-performance\"\ncky-i18n=\"detail.tabItem.perfo\nmance.title\"&gt;Performance&lt\nlabel class=\"cky-switch\"\nfor=\"cky-chec...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;label class=\"cky-switch\"\nfor=\"cky-checkbox-category-per\normance\"\nonclick=\"event.stopPropagation\n);\"&gt;&lt;input\ntype=\"checkbox\"\nid=\"cky-checkbox-category-p...\nlt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-desc\"\ncky-i18n=\"detail.tabItem.perfo\nmance.text\"\nstyle=\"color:#565662\"&gt;&lt;p\ngt;Performance cookies are\nused to understand and\n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+          "code": "&lt;table\nid=\"cky-cookie-audit-table-per\normance\"\nclass=\"cky-cookie-audit-table\"\ngt;&lt;thead&gt;&lt;tr&gt;&lt;\nh\ncky-i18n=\"auditTable.cookie\"&g\n;Cookie...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H39\" target=\"_blank\">H39</a>"
+          ],
+          "id": "H39"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cky-tab-content-item\"\nid=\"cky-tab-content-advertisem\nnt\"\nstyle=\"color:#565662\"&gt;&lt;d\nv class=\"cky-tab-title\"\nstyle=\"color:#565662\"\ni...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-title\"\nstyle=\"color:#565662\"\nid=\"cky-tab-title-advertisemen\n\"\ncky-i18n=\"detail.tabItem.adver\nisement.title\"&gt;Advertisemen\n&lt;label class=\"cky-switch\"\nfor=\"cky-ch...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;label class=\"cky-switch\"\nfor=\"cky-checkbox-category-adv\nrtisement\"\nonclick=\"event.stopPropagation\n);\"&gt;&lt;input\ntype=\"checkbox\"\nid=\"cky-checkbox-category-a...\nlt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-desc\"\ncky-i18n=\"detail.tabItem.adver\nisement.text\"\nstyle=\"color:#565662\"&gt;&lt;p\ngt;Advertisement cookies are\nused to deliver\nvisit...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+          "code": "&lt;table\nid=\"cky-cookie-audit-table-adv\nrtisement\"\nclass=\"cky-cookie-audit-table\"\ngt;&lt;thead&gt;&lt;tr&gt;&lt;\nh\ncky-i18n=\"auditTable.cookie\"&g\n;Cookie...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H39\" target=\"_blank\">H39</a>"
+          ],
+          "id": "H39"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"cky-tab-content-item\"\nid=\"cky-tab-content-other\"\nstyle=\"color:#565662\"&gt;&lt;d\nv class=\"cky-tab-title\"\nstyle=\"color:#565662\"\ni...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-title\"\nstyle=\"color:#565662\"\nid=\"cky-tab-title-other\"\ncky-i18n=\"detail.tabItem.other\ntitle\"&gt;Others&lt;label\nclass=\"cky-switch\"\nfor=\"cky-checkbox-...&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;label class=\"cky-switch\"\nfor=\"cky-checkbox-category-oth\nr\"\nonclick=\"event.stopPropagation\n);\"&gt;&lt;input\ntype=\"checkbox\"\nid=\"cky-checkbox-category-o...\nlt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div class=\"cky-tab-desc\"\ncky-i18n=\"detail.tabItem.other\ntext\"\nstyle=\"color:#565662\"&gt;&lt;p\ngt;Other uncategorized\ncookies are those that are\n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+          "code": "&lt;table\nid=\"cky-cookie-audit-table-oth\nr\"\nclass=\"cky-cookie-audit-table\"\ngt;&lt;thead&gt;&lt;tr&gt;&lt;\nh\ncky-i18n=\"auditTable.cookie\"&g\n;Cookie...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H39\" target=\"_blank\">H39</a>"
+          ],
+          "id": "H39"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nstyle=\"font-weight:700;color:#\n40404;font-size:9px;text-decor\ntion:none\" rel=\"noreferrer\"\ntarget=\"_blank\"\nhref=\"https://www.cookieyes.co\n/powered-by-CookieYes/\"&gt;Coo\nieYes&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "errorcount": 30
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

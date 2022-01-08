@@ -1,0 +1,1090 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 28,
+  "logSize": 1803,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.cargurus.com/",
+      "what": "CarGurus (CCVAX)",
+      "result": "https://www.cargurus.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.cargurus.com/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\naria-haspopup=\"listbox\"\naria-expanded=\"false\"\nid=\"location-menu-control\"\nclass=\"menuToggle\"\naria-label=\"Country Selector\nEN Selected\"&gt;\n          &lt;span\nclass=\"labelWrap\"&gt;\n           \n&lt;i...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/hero/en-us/1600/\ncott@2x.jpg?io=true&amp;amp;fo\nmat=jpg&amp;amp;auto=webp')\"&g\n;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"https://static1.cargurus.\nom/gfx/reskin/hero/en-us/1600/\ncott@2x.jpg?io=true&amp;amp;fo\nmat=jpg&amp;amp;auto=webp\"\nclass=\"embedResponsiveItem\"\nrole=\"img\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h6&gt;Great\nDeal&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h1 to be properly nested.",
+          "code": "&lt;h6&gt;Great\nDeal&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;h1&gt;Know more, shop\nwisely&lt;sup&gt;&lt;/sup&gt;&\nt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This label's \"for\" attribute contains an ID that does not exist in the document fragment.",
+          "code": "&lt;label\nfor=\"heroSearch-tab-3\"\nclass=\"ft-homepage-search__tab\n__fsbo \" data-short=\"Sell My\nCar\"\ndata-condition-selector-value=\nFSBOCar\" data-tab-name=\"FSBO\"\ntabindex=\"0\"&gt;\n\n      &lt;a\nhref=\"/sell-car/?pid=SellMyCar\nomepageT...&lt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H44\" target=\"_blank\">H44</a>"
+          ],
+          "id": "H44"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nuv-crossover.png?io=true&amp;a\np;format=jpg&amp;amp;auto=webp\n)\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3 class=\"title\"&gt;SUV /\nCrossover&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nedan.png?io=true&amp;amp;forma\n=jpg&amp;amp;auto=webp')\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nickup.png?io=true&amp;amp;form\nt=jpg&amp;amp;auto=webp')\"&gt;\nlt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\noupe.png?io=true&amp;amp;forma\n=jpg&amp;amp;auto=webp')\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\natchback.png?io=true&amp;amp;f\nrmat=jpg&amp;amp;auto=webp')\"&\nt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nonvertible.png?io=true&amp;amp\nformat=jpg&amp;amp;auto=webp')\n&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nagon.png?io=true&amp;amp;forma\n=jpg&amp;amp;auto=webp')\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\ninivan.png?io=true&amp;amp;for\nat=jpg&amp;amp;auto=webp')\"&gt\n&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select name=\"minPrice\"\nclass=\"minPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Minimum\nprice\"&gt;\n                   \n&lt;option\nvalue=\"0\"&gt;---&lt;/option...\nlt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"minPrice\"\nclass=\"minPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Minimum\nprice\"&gt;\n                   \n&lt;option\nvalue=\"0\"&gt;---&lt;/option...\nlt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"maxPrice\"\nclass=\"maxPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Maximum\nprice\"&gt;\n                     \n&lt;option\nvalue=\"1000\"&gt;$1,000...&lt;/\nelect&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select name=\"minPrice\"\nclass=\"minPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Minimum\nprice\"&gt;\n                   \n&lt;option\nvalue=\"0\"&gt;---&lt;/option...\nlt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"minPrice\"\nclass=\"minPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Minimum\nprice\"&gt;\n                   \n&lt;option\nvalue=\"0\"&gt;---&lt;/option...\nlt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"maxPrice\"\nclass=\"maxPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Maximum\nprice\"&gt;\n                     \n&lt;option\nvalue=\"1000\"&gt;$1,000...&lt;/\nelect&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nuv-crossover.png?io=true&amp;a\np;format=jpg&amp;amp;auto=webp\n)\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nedan.png?io=true&amp;amp;forma\n=jpg&amp;amp;auto=webp')\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nickup.png?io=true&amp;amp;form\nt=jpg&amp;amp;auto=webp')\"&gt;\nlt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\noupe.png?io=true&amp;amp;forma\n=jpg&amp;amp;auto=webp')\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\natchback.png?io=true&amp;amp;f\nrmat=jpg&amp;amp;auto=webp')\"&\nt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nonvertible.png?io=true&amp;amp\nformat=jpg&amp;amp;auto=webp')\n&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\nagon.png?io=true&amp;amp;forma\n=jpg&amp;amp;auto=webp')\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/bodystyle/small/\ninivan.png?io=true&amp;amp;for\nat=jpg&amp;amp;auto=webp')\"&gt\n&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select name=\"minPrice\"\nclass=\"minPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Minimum\nprice\"&gt;\n                   \n&lt;option\nvalue=\"0\"&gt;---&lt;/option...\nlt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"minPrice\"\nclass=\"minPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Minimum\nprice\"&gt;\n                   \n&lt;option\nvalue=\"0\"&gt;---&lt;/option...\nlt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"maxPrice\"\nclass=\"maxPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Maximum\nprice\"&gt;\n                     \n&lt;option\nvalue=\"1000\"&gt;$1,000...&lt;/\nelect&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select name=\"minPrice\"\nclass=\"minPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Minimum\nprice\"&gt;\n                   \n&lt;option\nvalue=\"0\"&gt;---&lt;/option...\nlt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"minPrice\"\nclass=\"minPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Minimum\nprice\"&gt;\n                   \n&lt;option\nvalue=\"0\"&gt;---&lt;/option...\nlt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"maxPrice\"\nclass=\"maxPriceSelector\nform-control\nselect-min-price\"\naria-label=\"Maximum\nprice\"&gt;\n                     \n&lt;option\nvalue=\"1000\"&gt;$1,000...&lt;/\nelect&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "This fieldset element does not have a name available to an accessibility API. Valid names are: legend element, aria-label , aria-labelledby .",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.",
+          "code": "&lt;fieldset&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;input type=\"hidden\"\nname=\"sou...&lt;/fieldset&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://static1.cargurus.\nom/gfx/cg/financing/welcome/cr\ndit_card.svg\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://static1.cargurus.\nom/gfx/cg/financing/welcome/fa\nt_clock.svg\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://static1.cargurus.\nom/gfx/cg/financing/welcome/ch\nrt.svg\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div class=\"alertContainer\ndesktop\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3 class=\"header3\"&gt;Get\nthe &lt;span\nclass=\"subTextEnhanced\"&gt;bes\n offer i...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"/gfx/reskin/testi\nonials/mdave.jpg?io=true&amp;a\np;format=jpg&amp;amp;auto=webp\n&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h3 to be properly nested.",
+          "code": "&lt;h6\nclass=\"comment-title\"&gt;what\nour users say&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"/gfx/reskin/testi\nonials/pnadina.jpg?io=true&amp\namp;format=jpg&amp;amp;auto=we\np\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h5 to be properly nested.",
+          "code": "&lt;h6\nclass=\"comment-title\"&gt;what\nour users say&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"/gfx/reskin/testi\nonials/dmike.jpg?io=true&amp;a\np;format=jpg&amp;amp;auto=webp\n&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h5 to be properly nested.",
+          "code": "&lt;h6\nclass=\"comment-title\"&gt;what\nour users say&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"/gfx/reskin/testi\nonials/gmeagan.jpg?io=true&amp\namp;format=jpg&amp;amp;auto=we\np\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h5 to be properly nested.",
+          "code": "&lt;h6\nclass=\"comment-title\"&gt;what\nour users say&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"/gfx/reskin/testi\nonials/malex.jpg?io=true&amp;a\np;format=jpg&amp;amp;auto=webp\n&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h5 to be properly nested.",
+          "code": "&lt;h6\nclass=\"comment-title\"&gt;what\nour users say&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"/gfx/reskin/testi\nonials/cmatt.jpg?io=true&amp;a\np;format=jpg&amp;amp;auto=webp\n&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h5 to be properly nested.",
+          "code": "&lt;h6\nclass=\"comment-title\"&gt;what\nour users say&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"carousel-control-group\"\nstyle=\"\"&gt;\n          &lt;a\nhref=\"#testimonials\"\nclass=\"carousel...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;li\ndata-carousel=\"testimonials\"\nclass=\"pause\"\nonclick=\"pauseCarousel('testim\nnials')\"&gt;&lt;button\naria-label=\"Pause\nSlideshow\"&gt;&lt;/button&gt;&\nt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"//images.ctfasset\n.net/c9t6u0qhbv9e/75JelYhsGr6l\nWhL3kYQDu/5caf2ed0f79dae9945c1\ne7581cb2271/DSC04026.jpg\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4 class=\"title\"&gt;\n\n        &lt;a\nhref=\"javascript:void(0);\"\nclass=\"sln...&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"//images.ctfasset\n.net/c9t6u0qhbv9e/5KDyRH7jBZKt\nGLWDEmAal/796728d295b573ff83e1\n9fb8ab492bb/2022_Toyota_GR_86_\neview_Lead_In.jpg\"&gt;&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"//images.ctfasset\n.net/c9t6u0qhbv9e/6jjZXjgLqOI4\nyO9RopERz/e8250c20b3e736923716\nd65cfad2479/DSC_0812.jpg\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"//images.ctfasset\n.net/c9t6u0qhbv9e/6I0Bh4puY8lg\ni6Lbp5moh/0387e74a5f7c9ed9151a\ne0b2c474764/2022_Mercedes-Benz\nEQS_Review_Lead_In.jpg\"&gt;&lt\n/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"//images.ctfasset\n.net/c9t6u0qhbv9e/fV6QekXMJEdV\nkiepynMH/e90778ee68e850d70d162\nd031af4bc7/CG_2022_Mazda_MX-30\nEV_Soul_Red_Front_Quarter_View\njpg\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"carousel-control-group\"\nstyle=\"width: 100%;\ntext-align: center;\"&gt;\n          &lt;a\nhref=\"#test_drives\"\nclass=\"carousel-...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"https://static.ca\ngurus.com/images/site/2022/01/\n6/15/07/2024_chevrolet_silvera\no_ev-pic-4320273914754825916-1\n00x1200.jpeg?io=true&amp;amp;f\nrmat=jpg&amp;amp;auto=webp\"&gt\n&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4 class=\"title\"&gt;\n\n        &lt;a\nhref=\"javascript:void(0);\"\nclass=\"sln...&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"https://static.ca\ngurus.com/images/site/2022/01/\n6/09/58/2023_ford_ranger-pic-8\n34108271134686075-1600x1200.jp\ng?io=true&amp;amp;format=jpg&a\np;amp;auto=webp\"&gt;&lt;/div&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"https://static.ca\ngurus.com/images/site/2022/01/\n4/10/37/2022_lexus_lc_hybrid-p\nc-4245224490331521529-1600x120\n.jpeg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp\"&gt;&lt;/d\nv&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"https://static.ca\ngurus.com/images/site/2021/12/\n7/09/48/2022_land_rover_range_\nover-pic-1711208588734016958-1\n00x1200.jpeg?io=true&amp;amp;f\nrmat=jpg&amp;amp;auto=webp\"&gt\n&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"mediaContainer\"&gt;&lt;\n href=\"javascript:void(0);\"\nclass=\"slnk\"\nonclick...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"image\nembedResponsiveItem hide\nblur\"\nstyle=\"background-image:\nURL('https://static1.cargurus.\nom/gfx/reskin/no-image-availab\ne.jpg?io=true&amp;amp;format=j\ng&amp;amp;auto=webp');\"\ndata-imgscr=\"https://static.ca\ngurus.com/images/site/2021/12/\n1/16/55/2022_jeep_grand_cherok\ne_4xe-pic-12750951493630441843\n1600x1200.jpeg?io=true&amp;amp\nformat=jpg&amp;amp;auto=webp\"&\nt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"carousel-control-group\"\nstyle=\"width: 100%;\ntext-align: center;\"&gt;\n          &lt;a\nhref=\"#previews\"\nclass=\"carousel-con...&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"Ls5dxK\"&gt;&lt;a\nhref=\"https://www.facebook.com\ncargurus/\"\ntitle...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"qlz7Wg\"&gt;&lt;a\nhref=\"https://cargurus.onelink\nme/B6Vh/ca40db53...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"Ls5dxK\"&gt;&lt;a\nhref=\"https://www.facebook.com\ncargurus/\"\ntitle...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe height=\"0\"\nwidth=\"0\" style=\"display:\nnone; visibility: hidden;\"\nsrc=\"//6637310.fls.doubleclick\nnet/activityi;src=6637310;type\ncount0;cat=cargu00;ord=1641609\n28368.27ka7em;gtm=2wg150;auidd\n=1484567724.1641609928;ps=1;~o\nef=https%3A%2F%2Fwww.cargurus.\nom%2F?\"\ndata-gtm-yt-inspected-1_12=\"tr\ne\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe height=\"0\"\nwidth=\"0\" style=\"display:\nnone; visibility: hidden;\"\nsrc=\"//10743458.fls.doubleclic\n.net/activityi;src=10743458;ty\ne=cargu;cat=cargu0;ord=5869077\n58349;gtm=2wg150;auiddc=148456\n724.1641609928;ps=1;~oref=http\n%3A%2F%2Fwww.cargurus.com%2F?\"\ndata-gtm-yt-inspected-1_12=\"tr\ne\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img style=\"width:0px;\nheight:0px; display:none;\nvisibility:hidden;\"\nid=\"batBeacon542887890049\"\nwidth=\"0\" height=\"0\" alt=\"\"\nsrc=\"https://bat.bing.com/acti\nn/0?ti=5036753&amp;amp;Ver=2&a\np;amp;mid=e6bf006c-ce9e-47c7-9\n60-1f600279a14c&amp;amp;sid=0a\n53dd0702d11ec91d271de882f2e58&\nmp;amp;vid=0a1572a0702d11ecbc9\nadf912d96df9&amp;amp;vids=1&am\n;amp;pi=0&amp;amp;lg=en-US&amp\namp;sw=1280&amp;amp;sh=720&amp\namp;sc=30&amp;amp;tl=Buy%20%26\n20Sell%20Cars%3A%20Reviews,%20\nrices,%20and%20Financing%20-%2\nCarGurus&amp;amp;kw=used%20car\nnew%20car,instant%20market%20v\nlue,dealer%20reviews,vehicle%2\nhistory,options,trim,deal%20ra\ning,great%20deal,good%20deal,f\nir,high%20price,overpriced,pri\ne,color,mileage,search,filter,\nell%20your%20car,sell%20my%20c\nr,financing,auto%20loan,review\n,expert%20review&amp;amp;p=htt\ns%3A%2F%2Fwww.cargurus.com%2F&\nmp;amp;r=&amp;amp;lt=1412&amp;\nmp;evt=pageLoad&amp;amp;msclki\n=N&amp;amp;sv=1&amp;amp;rn=150\n50\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe height=\"0\"\nwidth=\"0\" style=\"display:\nnone; visibility: hidden;\"\nsrc=\"//10743458.fls.doubleclic\n.net/activityi;src=10743458;ty\ne=cargu;cat=cargu004;ord=1;num\n3612826103137;gtm=2wg150;auidd\n=1484567724.1641609928;ps=1;~o\nef=https%3A%2F%2Fwww.cargurus.\nom%2F?\"\ndata-gtm-yt-inspected-1_12=\"tr\ne\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"https://p.dlx.addthis.com\ne/mp/g-10020?pkey=&amp;amp;chp\nm=HOM|&amp;amp;chpsg=|&amp;amp\nchpcr=&amp;amp;chpck=||&amp;am\n;chpth=|DESKTOP&amp;amp;rand=8\n38700\" style=\"display: none;\nheight: 0px; width: 0px;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nid=\"notificationsButton\"\nclass=\"cgds_tooltip\"\nrole=\"tooltip\"\naria-hidden=\"true\"\ndata-popper-placement=\"bottom\"\nstyle=\"position: absolute;\ninset: 0px auto auto 0px;\nmargin: 0px; transform:\ntranslate(-24px, 54px);\"&gt;\n            Notifications\n            &lt;span\ndata-...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nid=\"savedListingsButton\"\nclass=\"cgds_tooltip\"\nrole=\"tooltip\"\naria-hidden=\"true\"\ndata-popper-placement=\"bottom\"\nstyle=\"position: absolute;\ninset: 0px auto auto 0px;\nmargin: 0px; transform:\ntranslate(-51px, 54px);\"&gt;\n            Saved cars\n&amp;amp; searches\n           ...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "errorcount": 18
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      7
+    ]
+  ]
+}

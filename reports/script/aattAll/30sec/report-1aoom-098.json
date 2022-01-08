@@ -1,0 +1,870 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 9,
+  "logSize": 494,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.eversource.com/content/ct-c",
+      "what": "Eversource Energy (NALFX)",
+      "result": "https://www.eversource.com/content/ct-c"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.eversource.com/content/ct-c",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Interfering with a user agent's ability to zoom may be a failure of this Success Criterion.",
+          "code": "&lt;meta name=\"viewport\"\ncontent=\"width=device-width,\ninitial-scale=1,\nmaximum-scale=1\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3&gt;To provide you with\nthe best experience&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"modal-footer\"&gt;     \n          \n                &lt;a\nhref=\"#\" class...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4 class=\"map-label\nnh-label\"&gt;&lt;a href=\"#NH\"\nonclick=\"App.regionSelectorMod\nl.set...&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"NH\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#NH\"\nonclick=\"App.regionSelectorMod\nl.setLocationMap('PSNH')\"\ndata-region=\"NewHampshire\"\ndata-di-id=\"di-id-d3d72f83-3bb\n5930\"&gt;New\nHampshire&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"EMA\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#EMA\"\nonclick=\"App.regionSelectorMod\nl.setLocationMap('NStar')\"\ndata-region=\"EasternMass\"\ndata-di-id=\"di-id-9cd5bbf6-8c1\nca48\"&gt;Eastern\nMassachusetts&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"WMA\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#WMA\"\nonclick=\"App.regionSelectorMod\nl.setLocationMap('WMECO')\"\ndata-region=\"WesternMass\"\ndata-di-id=\"di-id-9cd5bbf6-963\n0eaa\"&gt;Western\nMassachusetts&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"CT\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#CT\"\nonclick=\"App.regionSelectorMod\nl.setLocationMap('CLP')\"\ndata-region=\"Connecticut\"\ndata-di-id=\"di-id-d3d72f83-dce\ndbf9\"&gt;Connecticut&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"NH\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#NH\"\nonclick=\"App.regionSelectorMod\nl.setLocationMap('PSNH')\"\ndata-region=\"NewHampshireXs\"\ndata-di-id=\"di-id-82626ece-281\n1ead\"&gt;New\nHampshire&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"EMA\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#EMA\"\nonclick=\"App.regionSelectorMod\nl.setLocationMap('NStar')\"\ndata-region=\"EasternMassXs\"\ndata-di-id=\"di-id-9532429c-430\n9b52\"&gt;Eastern\nMassachusetts&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"WMA\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#WMA\"\nonclick=\"App.regionSelectorMod\nl.setLocationMap('WMECO')\"\ndata-region=\"WesternMassXs\"\ndata-di-id=\"di-id-9532429c-592\n5fb0\"&gt;Western\nMassachusetts&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"CT\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#CT\"\nonclick=\"App.regionSelectorMod\nl.setLocationMap('CLP')\"\ndata-region=\"ConnecticutXs\"\ndata-di-id=\"di-id-82626ece-cf4\n9c64\"&gt;Connecticut&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Select\nRegion&lt;/span&gt;&lt;span\nclass...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;New\nHampshire&lt;/span&gt;&lt;span\nclass...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Eastern\nMassachusetts&lt;/span&gt;&lt;\np...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Western\nMassachusetts&lt;/span&gt;&lt;\np...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Connecticut&lt\n/span&gt;&lt;span\nclass=\"...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nname=\"ctl00$ctl00$Header$servi\neTerritory$ddlTerritory\"\nid=\"Header_serviceTerritory_dd\nTerritory\"\nclass=\"ddlTerritorySelector\"\ntabindex=\"-98\"&gt;\n\t&lt;option\nvalue=\"0\"&gt;Select\nRegion&lt;/option&gt;\n\t&lt;optio...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nname=\"ctl00$ctl00$Header$servi\neTerritory$ddlTerritory\"\nid=\"Header_serviceTerritory_dd\nTerritory\"\nclass=\"ddlTerritorySelector\"\ntabindex=\"-98\"&gt;\n\t&lt;option\nvalue=\"0\"&gt;Select\nRegion&lt;/option&gt;\n\t&lt;optio...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.eversource.c\nm/security/account/editprofile\nReturnUrl=/content/ct-c\"\nid=\"userLink\"\ndata-di-id=\"#userLink\"&gt;&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;label\nfor=\"ddIWantTo\"&gt;How can we\nhelp you?&lt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Pay\nBill&lt;/span&gt;&lt;span\nclass=\"gly...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;View\nBill&lt;/span&gt;&lt;span\nclass=\"gl...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Save Money\n&amp;amp;\nEnergy&lt;/span&gt;&lt;...&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Report or\nCheck an\nOutage&lt;/span...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Start / Stop\nService&lt;/span&gt;&lt;spa...\nlt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Manage\nSettings&lt;/span&gt;&lt;span\ncla...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Contact\nUs&lt;/span&gt;&lt;span\nclass=\"g...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"ddIWantTo\"\nid=\"ddIWantTo\"\nclass=\"form-control\nselectpicker\" aria-label=\"Use\nthis dropdown box to access\nbill pay, report outage and\nother quicklinks.\"\ndata-style=\"btn-select\"\ntabindex=\"-98\"&gt;\n                &lt;option\nselected=\"selected\"\nvalue...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button type=\"button\"\nclass=\"close\"\naria-label=\"Close\"&gt;&lt;span\naria-hidden=\"true\"&gt;X&lt;/sp\nn&gt;&lt;span\nclass=\"sr-o...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a title=\"My Account\"\ndata-subnav=\"1\"\naria-haspopup=\"true\"\nrole=\"menuitem\"&gt;My\nAccount&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a title=\"Save Money\n&amp;amp; Energy\"\ndata-subnav=\"2\"\naria-haspopup=\"true\"\nrole=\"menuitem\"&gt;Save Money\n&amp;amp; Energy&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a title=\"Outages\n&amp;amp; Storms\"\ndata-subnav=\"3\"\naria-haspopup=\"true\"\nrole=\"menuitem\"&gt;Outages\n&amp;amp; Storms&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a title=\"Safety\"\ndata-subnav=\"4\"\naria-haspopup=\"true\"\nrole=\"menuitem\"&gt;Safety&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.",
+          "code": "&lt;a name=\"MainContent\"\ntitle=\"Main Content\"\ndata-di-id=\"di-id-aae39270-f08\necd7\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Select\nRegion&lt;/span&gt;&lt;span\nclass...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;New\nHampshire&lt;/span&gt;&lt;span\nclass...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Eastern\nMassachusetts&lt;/span&gt;&lt;\np...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Western\nMassachusetts&lt;/span&gt;&lt;\np...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Connecticut&lt\n/span&gt;&lt;span\nclass=\"...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select\nname=\"ctl00$ctl00$Main$Login$d\nlTerritoryLogin\"\nid=\"Main_Login_ddlTerritoryLog\nn\"\nclass=\"ddlTerritorySelectorLog\nn\" tabindex=\"-98\"&gt;\n\t&lt;option\nvalue=\"0\"&gt;Select\nRegion&lt;/option&gt;\n\t&lt;optio...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nname=\"ctl00$ctl00$Main$Login$d\nlTerritoryLogin\"\nid=\"Main_Login_ddlTerritoryLog\nn\"\nclass=\"ddlTerritorySelectorLog\nn\" tabindex=\"-98\"&gt;\n\t&lt;option\nvalue=\"0\"&gt;Select\nRegion&lt;/option&gt;\n\t&lt;optio...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select\nname=\"ctl00$ctl00$Main$Login$d\nlTerritoryLogin\"\nid=\"Main_Login_ddlTerritoryLog\nn\"\nclass=\"ddlTerritorySelectorLog\nn\" tabindex=\"-98\"&gt;\n\t&lt;option\nvalue=\"0\"&gt;Select\nRegion&lt;/option&gt;\n\t&lt;optio...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nname=\"ctl00$ctl00$Main$Login$d\nlTerritoryLogin\"\nid=\"Main_Login_ddlTerritoryLog\nn\"\nclass=\"ddlTerritorySelectorLog\nn\" tabindex=\"-98\"&gt;\n\t&lt;option\nvalue=\"0\"&gt;Select\nRegion&lt;/option&gt;\n\t&lt;optio...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h2\nstyle=\"font-size:22px;white-sp\nce:pre;\"&gt;&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"item active\"\nonclick=\"location.href='/conte\nt/ct-c/residential/my-account/\nilling-payments/help-pay-my-bi\nl';\" style=\"cursor: pointer;\nbackground-image:\nurl(https://www.eversource.com\ncontent/images/default-source/\nanners/house-night-lights-web.\npg?sfvrsn=1c0d262_4)\"&gt;\n                    \n                    &lt;a\nhref=...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;div class=\"item active\"\nonclick=\"location.href='/conte\nt/ct-c/residential/my-account/\nilling-payments/help-pay-my-bi\nl';\" style=\"cursor: pointer;\nbackground-image:\nurl(https://www.eversource.com\ncontent/images/default-source/\nanners/house-night-lights-web.\npg?sfvrsn=1c0d262_4)\"&gt;\n                    \n                    &lt;a\nhref=...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"item active\"\nonclick=\"location.href='/conte\nt/ct-c/residential/my-account/\nilling-payments/help-pay-my-bi\nl';\" style=\"cursor: pointer;\nbackground-image:\nurl(https://www.eversource.com\ncontent/images/default-source/\nanners/house-night-lights-web.\npg?sfvrsn=1c0d262_4)\"&gt;\n                    \n                    &lt;a\nhref=...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"/content/ct-c/residentia\n/my-account/billing-payments/h\nlp-pay-my-bill\"\nstyle=\"text-decoration: none\"\ndata-di-id=\"di-id-216c6aa-ec6c\n7be\"&gt;\n                       \n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"/content/ct-c/residentia\n/my-account/billing-payments/h\nlp-pay-my-bill\"\nstyle=\"text-decoration: none\"\ndata-di-id=\"di-id-85052fd4-7d2\n1d53\"&gt;\n                           \n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"/content/ct-c/residentia\n/my-account/billing-payments/h\nlp-pay-my-bill\"\nstyle=\"text-decoration: none\"\ndata-di-id=\"di-id-c33d67c5-f72\nc7fc\"&gt;\n                             \n  &lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"/content/ct-c/residentia\n/my-account/billing-payments/h\nlp-pay-my-bill\"\nstyle=\"text-decoration: none\"\ndata-di-id=\"di-id-19fe3cfb-d2b\n43cf\"&gt;\n                             \n      &lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"banner-text\"&gt;&lt;a\nhref=\"/content/ct-c/residentia\n/my-account/bill...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;p\nclass=\"c-hero-100__header\"&gt;\net help with your&lt;br&gt;\nheating bill this\nwinter&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"/content/ct-c/residentia\n/my-account/billing-payments/h\nlp-pay-my-bill\"\nclass=\"banner-cta\"\ntitle=\"Explore plans and\nprograms\"\ndata-di-id=\"di-id-682f09bd-390\nc369\"&gt;Explore plans and\nprograms&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nsrc=\"https://5094988.fls.doubl\nclick.net/activityi;src=509498\n;type=main0;cat=evers0;dc_lat=\ndc_rdid=;tag_for_child_directe\n_treatment=;tfua=;npa=;gdpr=${\nDPR};gdpr_consent=${GDPR_CONSE\nT_755};ord=1;num=6508589415205\n157?\" width=\"1\" height=\"1\"\nframeborder=\"0\"\nstyle=\"display:none\"&gt;&lt;/i\nrame&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.57:1. Recommendation:  change text colour to #007aca.",
+          "code": "&lt;a id=\"dt-feature-callout\"\nclass=\"c-feature-card__link\"\nhref=\"/content/ct-c/residentia\n/my-account/billing-payments/a\nout-your-bill/winter-cost-of-g\ns-increase\"\ndata-di-id=\"#dt-feature-callou\n\"&gt;What you can\nexpect&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"c-site-footer__containe\n\nc-site-footer__container-flex\"\ngt;\n&lt;a id=\"logo\"\nclass=\"c-site-footer__logo\"\nhref=\"/c...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3:1. Recommendation:  change background to #007cbe.",
+          "code": "&lt;a id=\"dt-contact-button\"\nclass=\"c-site-footer__btn\nc-site-footer__btn--primary\"\nhref=\"/content/ct-c/about/cont\nct\"\ndata-di-id=\"#dt-contact-button\n&gt;Contact Us&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.3:1. Recommendation:  change text colour to #fdfdff.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.3:1. Recommendation:  change text colour to #fdfdff.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.3:1. Recommendation:  change text colour to #fdfdff.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.3:1. Recommendation:  change text colour to #fdfdff.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.3:1. Recommendation:  change text colour to #fdfdff.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.7:1. Recommendation:  change background to #122939.",
+          "code": "&lt;li\nclass=\"c-site-footer__legal-co\ny-copyright\"&gt;©2021\nEversource. All rights\nreserved&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"error-message\" found on the web page.",
+          "code": "&lt;div id=\"error-message\"\nclass=\"error\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Select\nRegion&lt;/span&gt;&lt;span\nclass...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;New\nHampshire&lt;/span&gt;&lt;span\nclass...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Eastern\nMassachusetts&lt;/span&gt;&lt;\np...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Western\nMassachusetts&lt;/span&gt;&lt;\np...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a tabindex=\"0\" class=\"\"\nstyle=\"\" data-tokens=\"null\"\nrole=\"menuitem\"&gt;&lt;span\nclass=\"text\"&gt;Connecticut&lt\n/span&gt;&lt;span\nclass=\"...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select\nid=\"ddlTerritoryService\"\nclass=\"ddlTerritorySelectorSer\nice\" tabindex=\"-98\"&gt;\n                             \n      &lt;option\nvalue...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nid=\"ddlTerritoryService\"\nclass=\"ddlTerritorySelectorSer\nice\" tabindex=\"-98\"&gt;\n                             \n      &lt;option\nvalue...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select\nid=\"ddlTerritoryService\"\nclass=\"ddlTerritorySelectorSer\nice\" tabindex=\"-98\"&gt;\n                             \n      &lt;option\nvalue...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nid=\"ddlTerritoryService\"\nclass=\"ddlTerritorySelectorSer\nice\" tabindex=\"-98\"&gt;\n                             \n      &lt;option\nvalue...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"gas\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#gas\" class=\"btn\nbtn-primary\nselect-service-area-type\"\ndata-di-id=\"di-id-43272cd9-540\n022e\"&gt;Gas&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"electric\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#electric\"\nclass=\"btn btn-primary\nselect-service-area-type\"\ndata-di-id=\"di-id-fca0c28e-eab\n9e83\"&gt;Electric&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"modal-body\"&gt;\n               \n&lt;p&gt;&lt;strong&gt;You\nare now leaving\n&lt;t...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p&gt;&lt;strong&gt;You\nare now leaving &lt;text\nid=\"sourceDomain...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a class=\"btn btn-default\"\ndata-dismiss=\"modal\"&gt;Stay\nHere&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "errorcount": 30
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

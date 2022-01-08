@@ -1,0 +1,879 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 1,
+  "logSize": 58,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.progressive.com/",
+      "what": "Progressive (VEIGX)",
+      "result": "https://www.progressive.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.progressive.com/",
+      "result": [
+        {
+          "type": "error",
+          "msg": "A title should be provided for the document, using a non-empty title element in the head section.",
+          "code": "&lt;head&gt;\n\t&lt;!-- Machine Name: C00\n--&gt;\n\t&lt;!-- View:\n/Views/ma...&lt;/head&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H25\" target=\"_blank\">H25</a>"
+          ],
+          "id": "H25"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nsrc=\"javascript:void(0)\"\ntitle=\"\" style=\"width: 0px;\nheight: 0px; border: 0px;\ndisplay:\nnone;\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"sr-only\"&gt;Close\nBanner&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;h1\ntabindex=\"-1\"&gt;Welcome to\n&lt;span\nclass=\"notranslate\"&gt;Progres\nive&lt;/...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"notranslate\"&gt;Progres\nive&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;p&gt;Bundle up and\nsave&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;h2 class=\"copy h4-style\ncentered\"&gt;Select a product\nto quote&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"s\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#s\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"bundle_se\ntion\" data-qs-product=\"BU-SP\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\t\t\t\t\t\t\t&lt;span\nclass=\"h5-style tag\"&gt;Save\n4%&lt;sup&gt;â€&amp;...&lt;/a&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span class=\"h5-style\ntag\"&gt;Save\n4%&lt;sup&gt;â€&amp;nbsp;&lt;/\nup&gt;&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;sup&gt;â€&amp;nbsp;&lt;/su\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"auto_sect\non\" data-qs-product=\"AU\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\t\t\t\t\t\t\t&lt;span\nclass=\"h5-style\ntag\"&gt;Popular&lt;/span&gt;\n...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span class=\"h5-style\ntag\"&gt;Popular&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"s\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#s\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"life_sect\non\" data-qs-product=\"L-SP\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\n\t\t\t\t\t\t&lt;img class=\"image\"\nsrc=\"https://www.progre...&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"homeowner\n_section\" data-qs-product=\"H\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\n\t\t\t\t\t\t&lt;img class=\"image\"\nsrc=\"https://www.progre...&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"rvtrailer\nsection\" data-qs-product=\"RV\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\n\t\t\t\t\t\t&lt;img class=\"image\"\nsrc=\"https://www.progre...&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"renters_s\nction\" data-qs-product=\"R\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\n\t\t\t\t\t\t&lt;img class=\"image\"\nsrc=\"https://www.progre...&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"motorcycl\n_section\"\ndata-qs-product=\"MC\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\n\t\t\t\t\t\t&lt;img class=\"image\"\nsrc=\"https://www.progre...&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"condo_sec\nion\" data-qs-product=\"C\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\n\t\t\t\t\t\t&lt;img class=\"image\"\nsrc=\"https://www.progre...&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"boat_sect\non\" data-qs-product=\"BT\"\nclass=\"link shadow-box\nshadow-box-animation\"&gt;\n\n\t\t\t\t\t\t&lt;img class=\"image\"\nsrc=\"https://www.progre...&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"p\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#p\"\naria-haspopup=\"dialog\"\ndata-tracking-label=\"seeall_se\ntion\" class=\"link shadow-box\nshadow-box-animation\"&gt;\n\t\t\t\t\t\t\t\t&lt;img class=\"image\"\nsrc=\"https://www.progr...&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a href=\"/home-retrieve\"\ndata-monetate-event=\"QuoteRetr\neveLink\"\ndata-tracking-label=\"retrieve\"\nclass=\"link block-link\nis-simple bounce\"&gt;Continue\nprevious &lt;span\nclass=\"last-word\"&gt;quote&lt;\np...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"last-word\"&gt;quote&lt;\npan class=\"arrow\"\naria-hidden=\"true\"&gt;â€º&lt;/\n...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a href=\"/agent\"\ndata-monetate-event=\"FAALink\"\ndata-tracking-label=\"FAA\"\nclass=\"link block-link\nis-simple bounce\"&gt;Find an\n&lt;span\nclass=\"last-word\"&gt;agent&lt;\npan class=\"...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"last-word\"&gt;agent&lt;\npan class=\"arrow\"\naria-hidden=\"true\"&gt;â€º&lt;/\n...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://images.contentsta\nk.io/v3/assets/blt62d40591b365\nda3/bltf62c2178145a120e/619d4a\n2dd6fcd0cf29500cc/multiproduct\nhome-illustration-winter-01.sv\n\" class=\"left\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://images.contentsta\nk.io/v3/assets/blt62d40591b365\nda3/bltc16fdf39e8ef0098/619d4a\n2eb16c322c4dd25be/multiproduct\nsnowmobile-illustration-winter\n01.svg\" class=\"right\"\nalt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.progressive.\nom/auto/\"&gt;auto\ninsurance&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\nasteriskSymbol\"\ndisclosure-key=\"*\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;*&lt;/sp\nn&gt;&lt;span\nclass=\"sr-o...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"sr-only\"&gt;Disclosure&\nt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img loading=\"lazy\" alt=\"\"\nsrc=\"https://images.contentsta\nk.io/v3/assets/blt62d40591b365\nda3/blt090e66a7c5d1292c/5d9b34\n0b517f10ef0a91d4d/content-imag\n_homepage-products.svg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"quote-scroll\"&gt;\n                    &lt;div\ndata-bundle=\"\"&gt;\n        ...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"reverse\" found on the web page.",
+          "code": "&lt;button type=\"button\"\naria-pressed=\"false\"\nid=\"reverse\"\ndata-value=\"AU\"&gt;&lt;span\nclass=\"bundle-text\"&gt;&lt;spa\n\nclass=\"check-icon\"...&lt;/butt\nn&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"q2\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#q2\"\nclass=\"see-all\"\ndata-qsmodal=\"see-all\"\naria-haspopup=\"dialog\"&gt;Or,\nsee all products&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l2\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l2\"\nclass=\"learn-more\"\ndata-qsmodal=\"learn-more\"\naria-haspopup=\"dialog\"&gt;Or,\nlearn more&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\nasteriskSymbol\"\ndisclosure-key=\"*\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;*&lt;/sp\nn&gt;&lt;span\nclass=\"sr-o...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\"\ndisclosure-key=\"â€&amp;nbsp;â€\namp;nbsp;\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;â€&amp;n\nsp;â€&amp;nbsp;&lt;/span&gt;&l\n;s...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\nasteriskSymbol\"\ndisclosure-key=\"**\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;**&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\"\ndisclosure-key=\"â€¡â€¡\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;â€¡â€¡&l\n;/span&gt;&lt;span\nclass=...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\nasteriskSymbol\"\ndisclosure-key=\"*\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;*&lt;/sp\nn&gt;&lt;span\nclass=\"sr-o...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"sub-products-section\"\ndata-tooltip=\"below\"&gt;\n                &lt;div\nclass=\"qs-zip inactive\"&gt;\n   ...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"reverse\" found on the web page.",
+          "code": "&lt;button type=\"button\"\naria-pressed=\"false\"\nid=\"reverse\"\ndata-value=\"AU\"&gt;&lt;span\nclass=\"bundle-text\"&gt;&lt;spa\n\nclass=\"check-icon\"...&lt;/butt\nn&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"ToolTipDialog\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#ToolTipDialog\"\nclass=\"disclosure-anchor\ndeltaSymbol\"\ndisclosure-key=\"Î”\"\naria-haspopup=\"dialog\"&gt;&lt;\npan\naria-hidden=\"true\"&gt;Î”&lt;/s\nan&gt;&lt;span\nclass=\"sr-...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"reverse\" found on the web page.",
+          "code": "&lt;button type=\"button\"\naria-pressed=\"false\"\nid=\"reverse\"\ndata-value=\"AU\"&gt;&lt;span\nclass=\"bundle-text\"&gt;&lt;spa\n\nclass=\"check-icon\"...&lt;/butt\nn&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"p\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#p\"\nclass=\"see-all\"\ndata-qsmodal=\"see-all\"\naria-haspopup=\"dialog\"&gt;Or,\nsee all products&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"l2\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#l2\"\nclass=\"learn-more\"\ndata-qsmodal=\"learn-more\"\naria-haspopup=\"dialog\"&gt;Or,\nlearn more&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p\nid=\"ZipFirstBundleCallout\"&gt;\nlt;strong&gt;Save 4% on\naverage&lt;sup&gt;â€&amp;nbsp;\nlt;/sup&gt; if y...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form&gt;\n                    &lt;ul\nclass=\"items\"&gt;\n          ...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://www.progressive.c\nm/content/images/domainprogres\nive/wh3/base/icons/monotone/se\nrch.svg\" alt=\"\"\nclass=\"icon\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"sr-only\"&gt;Facebook&lt\n/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"sr-only\"&gt;Instagram&l\n;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"sr-only\"&gt;Twitter&lt;\nspan&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"sr-only\"&gt;YouTube&lt;\nspan&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"sr-only\"&gt;Lifelanes&l\n;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p\ndata-entry-id=\"bltf2fc0a5cb269\n38f\"&gt;&lt;span\nclass=\"notranslate\"&gt;Progres\nive\nHome&lt;/span&gt;Â...&lt;/p&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe height=\"0\"\nwidth=\"0\" style=\"display:\nnone; visibility: hidden;\"\nsrc=\"//1384245.fls.doubleclick\nnet/activityi;src=1384245;type\nWEBXGTM1;cat=PGRHP003;ord=1;nu\n=1673657746743;gtm=2wg150;auid\nc=1169514389.1641610916;u6=Des\ntop;u3=;u16=https%3A%2F%2Fwww.\nrogressive.com%2F;u12=undefine\n;ps=1;~oref=https%3A%2F%2Fwww.\nrogressive.com%2F?\"&gt;&lt;/if\name&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span class=\"arrow\"\naria-hidden=\"true\"&gt;â€º&lt;/\npan&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span class=\"arrow\"\naria-hidden=\"true\"&gt;â€º&lt;/\npan&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "errorcount": 43
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      8
+    ]
+  ]
+}

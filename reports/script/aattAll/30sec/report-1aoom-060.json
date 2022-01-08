@@ -1,0 +1,1140 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 12,
+  "logSize": 1005,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.atlascopcogroup.com/en",
+      "what": "Atlas Copco (VEIGX)",
+      "result": "https://www.atlascopcogroup.com/en"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.atlascopcogroup.com/en",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Interfering with a user agent's ability to zoom may be a failure of this Success Criterion.",
+          "code": "&lt;meta name=\"viewport\"\ncontent=\"width=device-width,\ninitial-scale=1.0,\nuser-scalable=no\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nid=\"internal-external-iframe\"\nsrc=\"https://ac-iam-scalertest\nazurewebsites.net/\"\nstyle=\"display:\nnone\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a href=\"\"\nclass=\"megadropdown-mobile__li\nk\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a href=\"\"\nclass=\"megadropdown-mobile__li\nk\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"stock-ticker\"&gt;\n\n&lt;input type=\"hidden\"\nclass=\"stock-ticker-url\"\nva...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a class=\"cap-form\njs-modal\nc-nav-meta__link\"&gt;\n                    Calendar\n                &lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;li onclick=\"var\ns_objectID='about\\u002Dus';\"\nclass=\"nav-list__item\nmegamenu__container\njs-dropdown\"\ndata-target-selector=\"#dropdow\n-about-us\"&gt;\n            \n            &lt;a\nhref=\"/en/about-us\"\nc...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h6\nclass=\"u-color-alpha-base\"&gt;\nurpose&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h1 to be properly nested.",
+          "code": "&lt;h6\nclass=\"u-color-alpha-base\"&gt;\nurpose&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;li onclick=\"var\ns_objectID='innovation';\"\nclass=\"nav-list__item\nmegamenu__container\njs-dropdown\"\ndata-target-selector=\"#dropdow\n-innovation\"&gt;\n            \n            &lt;a\nhref=\"/en/innovation\"...&lt;/l\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;li onclick=\"var\ns_objectID='sustainability';\"\nclass=\"nav-list__item\nmegamenu__container\njs-dropdown\"\ndata-target-selector=\"#dropdow\n-sustainability\"&gt;\n            \n            &lt;a\nhref=\"/en/sustainabil...&lt;/l\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;li onclick=\"var\ns_objectID='careers';\"\nclass=\"nav-list__item\nmegamenu__container\njs-dropdown\"\ndata-target-selector=\"#dropdow\n-careers\"&gt;\n            \n            &lt;a\nhref=\"/en/careers\"\ncl...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;li onclick=\"var\ns_objectID='media';\"\nclass=\"nav-list__item\nmegamenu__container\njs-dropdown\"\ndata-target-selector=\"#dropdow\n-media\"&gt;\n            \n            &lt;a\nhref=\"/en/media\"\nclas...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;li onclick=\"var\ns_objectID='investor\\u002Drela\nions';\" class=\"nav-list__item\nmegamenu__container\njs-dropdown\"\ndata-target-selector=\"#dropdow\n-investor-relations\"&gt;\n            \n            &lt;a\nhref=\"/en/investor-re...&lt;/l\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;input maxlength=\"40\"\ntype=\"text\"\ndata-search-page=\"/content/cor\norate/en\"\ndata-number-of-items=\"4\"\ndata-links-label=\"Quick\nlinks\"\ndata-suggest-label=\"Suggested\nsearch\" data-language=\"en\"\ndata-site=\"corporate\"\nclass=\"c-input-text\njs-typeahead-search\nc-input-text--search tt-input\ntt-hint\" readonly=\"\"\nautocomplete=\"off\"\nspellcheck=\"false\"\ntabindex=\"-1\" dir=\"ltr\"\nstyle=\"position: absolute;\ntop: 0px; left: 0px;\nborder-color: transparent;\nbox-shadow: none; opacity: 1;\nbackground: none 0% 0% / auto\nrepeat scroll padding-box\nborder-box rgba(0, 0, 0,\n0);\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input maxlength=\"40\"\ntype=\"text\"\ndata-search-page=\"/content/cor\norate/en\"\ndata-number-of-items=\"4\"\ndata-links-label=\"Quick\nlinks\"\ndata-suggest-label=\"Suggested\nsearch\" data-language=\"en\"\ndata-site=\"corporate\"\nclass=\"c-input-text\njs-typeahead-search\nc-input-text--search tt-input\ntt-hint\" readonly=\"\"\nautocomplete=\"off\"\nspellcheck=\"false\"\ntabindex=\"-1\" dir=\"ltr\"\nstyle=\"position: absolute;\ntop: 0px; left: 0px;\nborder-color: transparent;\nbox-shadow: none; opacity: 1;\nbackground: none 0% 0% / auto\nrepeat scroll padding-box\nborder-box rgba(0, 0, 0,\n0);\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input maxlength=\"40\"\ntype=\"text\"\ndata-search-page=\"/content/cor\norate/en\"\ndata-number-of-items=\"4\"\ndata-links-label=\"Quick\nlinks\"\ndata-suggest-label=\"Suggested\nsearch\" data-language=\"en\"\ndata-site=\"corporate\"\nclass=\"c-input-text\njs-typeahead-search\nc-input-text--search tt-input\ntt-hint\" readonly=\"\"\nautocomplete=\"off\"\nspellcheck=\"false\"\ntabindex=\"-1\" dir=\"ltr\"\nstyle=\"position: absolute;\ntop: 0px; left: 0px;\nborder-color: transparent;\nbox-shadow: none; opacity: 1;\nbackground: none 0% 0% / auto\nrepeat scroll padding-box\nborder-box rgba(0, 0, 0,\n0);\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;input maxlength=\"40\"\ntype=\"text\"\ndata-search-page=\"/content/cor\norate/en\"\ndata-number-of-items=\"4\"\ndata-links-label=\"Quick\nlinks\"\ndata-suggest-label=\"Suggested\nsearch\" data-language=\"en\"\ndata-site=\"corporate\"\nname=\"search\"\nplaceholder=\"What are you\nlooking for?\"\nclass=\"c-input-text\njs-typeahead-search\nc-input-text--search\ntt-input\" autocomplete=\"off\"\nspellcheck=\"false\" dir=\"auto\"\nstyle=\"position: relative;\nvertical-align: top;\nbackground-color:\ntransparent;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input maxlength=\"40\"\ntype=\"text\"\ndata-search-page=\"/content/cor\norate/en\"\ndata-number-of-items=\"4\"\ndata-links-label=\"Quick\nlinks\"\ndata-suggest-label=\"Suggested\nsearch\" data-language=\"en\"\ndata-site=\"corporate\"\nname=\"search\"\nplaceholder=\"What are you\nlooking for?\"\nclass=\"c-input-text\njs-typeahead-search\nc-input-text--search\ntt-input\" autocomplete=\"off\"\nspellcheck=\"false\" dir=\"auto\"\nstyle=\"position: relative;\nvertical-align: top;\nbackground-color:\ntransparent;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input maxlength=\"40\"\ntype=\"text\"\ndata-search-page=\"/content/cor\norate/en\"\ndata-number-of-items=\"4\"\ndata-links-label=\"Quick\nlinks\"\ndata-suggest-label=\"Suggested\nsearch\" data-language=\"en\"\ndata-site=\"corporate\"\nname=\"search\"\nplaceholder=\"What are you\nlooking for?\"\nclass=\"c-input-text\njs-typeahead-search\nc-input-text--search\ntt-input\" autocomplete=\"off\"\nspellcheck=\"false\" dir=\"auto\"\nstyle=\"position: relative;\nvertical-align: top;\nbackground-color:\ntransparent;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h2 to be properly nested.",
+          "code": "&lt;h4 class=\"u-mb-delta\nu-color-neutral-light\"&gt;&lt;\n&gt;Latest corporate press\nreleases&lt;/p&gt;&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a hidden=\"\"\nhref=\"/en/media/corporate-pres\n-releases/2021/20211210-acquis\ntion-provac\" class=\"c-link\njs-blocklink__source\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a hidden=\"\"\nhref=\"/en/media/corporate-pres\n-releases/2021/20211109-acquis\ntion-steri\" class=\"c-link\njs-blocklink__source\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a hidden=\"\"\nhref=\"/en/media/corporate-pres\n-releases/2021/20211029-scienc\n-based-targets\" class=\"c-link\njs-blocklink__source\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"mfp-iframe\"\nstyle=\"    position:\nabsolute;display: block;top:\n0;left: 0;width: 100%;height:\n100%;box-shadow: 0 0 8px\nrgba(0,0,0,.6);background:\n#000;\"&gt;\n                        \n                       \n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"fallbackImg\"\nclass=\"lazyload\ncq-dd-videoThumbnail\"\ndata-srcset=\"//atlascopco.scen\n7.com/is/image/atlascopco/mats\nrahmstrom-interview-2021?$land\ncape1600$&amp;amp;fmt=png-alph\n&amp;amp;fit=stretch,1 1600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/mats-rahmstrom-in\nerview-2021?$landscape1280$&am\n;amp;fmt=png-alpha 1280w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/mats-rahmstrom-in\nerview-2021?$landscape950$&amp\namp;fmt=png-alpha 950w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/mats-rahmstrom-in\nerview-2021?$landscape800$&amp\namp;fmt=png-alpha 800w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/mats-rahmstrom-in\nerview-2021?$landscape600$&amp\namp;fmt=png-alpha 600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/mats-rahmstrom-in\nerview-2021?$landscape400$&amp\namp;fmt=png-alpha 400w\"\ndata-sizes=\"auto\"\ndata-height=\"auto\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"mfp-iframe\"\nstyle=\"    position:\nabsolute;display: block;top:\n0;left: 0;width: 100%;height:\n100%;box-shadow: 0 0 8px\nrgba(0,0,0,.6);background:\n#000;\"&gt;\n                        \n                       \n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"fallbackImg\"\nclass=\"lazyload\ncq-dd-videoThumbnail\"\ndata-srcset=\"//atlascopco.scen\n7.com/is/image/atlascopco/atla\n-copco-group-center-sickla-ban\ner?$landscape1600$ 1600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n1280$ 1280w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n950$ 950w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n800$ 800w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n600$ 600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n400$ 400w\" data-sizes=\"auto\"\ndata-height=\"auto\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"fallbackImg\" found on the web page.",
+          "code": "&lt;img id=\"fallbackImg\"\nclass=\"lazyload\ncq-dd-videoThumbnail\"\ndata-srcset=\"//atlascopco.scen\n7.com/is/image/atlascopco/atla\n-copco-group-center-sickla-ban\ner?$landscape1600$ 1600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n1280$ 1280w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n950$ 950w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n800$ 800w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n600$ 600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/atlas-copco-group\ncenter-sickla-banner?$landscap\n400$ 400w\" data-sizes=\"auto\"\ndata-height=\"auto\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"mfp-iframe\"\nstyle=\"    position:\nabsolute;display: block;top:\n0;left: 0;width: 100%;height:\n100%;box-shadow: 0 0 8px\nrgba(0,0,0,.6);background:\n#000;\"&gt;\n                        \n                       \n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"fallbackImg\"\nclass=\"lazyload\ncq-dd-videoThumbnail\"\ndata-srcset=\"//atlascopco.scen\n7.com/is/image/atlascopco/late\nt-results-lowres-950-475?$land\ncape1600$&amp;amp;fit=stretch,\n 1600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape1280$&am\n;amp;fit=stretch,1 1280w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape950$\n950w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape800$\n800w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape600$\n600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape400$\n400w\" data-sizes=\"auto\"\ndata-height=\"auto\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"fallbackImg\" found on the web page.",
+          "code": "&lt;img id=\"fallbackImg\"\nclass=\"lazyload\ncq-dd-videoThumbnail\"\ndata-srcset=\"//atlascopco.scen\n7.com/is/image/atlascopco/late\nt-results-lowres-950-475?$land\ncape1600$&amp;amp;fit=stretch,\n 1600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape1280$&am\n;amp;fit=stretch,1 1280w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape950$\n950w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape800$\n800w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape600$\n600w,\n//atlascopco.scene7.com/is/ima\ne/atlascopco/latest-results-lo\nres-950-475?$landscape400$\n400w\" data-sizes=\"auto\"\ndata-height=\"auto\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4\nclass=\"u-color-neutral-light\nu-mb-delta\"&gt;Industrial\nIdeas&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a hidden=\"\"\nhref=\"/en/media/industrial-ide\ns/2020/why-train-beats-the-pla\ne\" class=\"c-link\nc-link--external\njs-blocklink__source\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a hidden=\"\"\nhref=\"/en/media/industrial-ide\ns/2021/no-waste-low-emissions\"\nclass=\"c-link\nc-link--external\njs-blocklink__source\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"crt-grid-post-image\"\nstyle=\"background-image:url('h\ntps://curator-assets.b-cdn.net\n58fad3dd-9153-442a-b6c9-b24d17\n120d0/234769490.jpg?width=480&\nmp;amp;quality=75');\"&gt;&lt;/\niv&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div&gt;A new year of\nopportunities awaits! Another\nstep t...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;div\nclass=\"crt-image-carousel\"&gt;\nlt;i\nclass=\"crt-icon-image-carousel\n&gt;&lt;/i&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"crt-date\"&gt;14 hours\nago&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"crt-post-text\"&gt;A\nnew year of opportunities\nawaits! Another step\nt...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.facebook.com\natlascopco\"\ntarget=\"_blank\"&gt;Atlas\nCopco&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.facebook.com\natlascopco\"\ntarget=\"_blank\"&gt;@atlascopco\nlt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"crt-post-share\"&gt;   \n             &lt;span\nclass=\"crt-share-hint\"&gt;&lt;\nsp...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"crt-share-facebook\"\nc-on:click-prevent=\"onShareFac\nbookClick\"&gt;&lt;i\nclass=\"crt-icon-facebook\"&gt;&\nt;/i&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"crt-share-twitter\"\nc-on:click-prevent=\"onShareTwi\nterClick\"&gt;&lt;i\nclass=\"crt-icon-twitter\"&gt;&l\n;/i&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"crt-grid-post-image\"\nstyle=\"background-image:url('h\ntps://pbs.twimg.com/media/FIa7\njEXoAIB6HA.jpg:medium');\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div&gt;Meet Nurgul\nAtayer, Global Marketing\nCommunication...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;div\nclass=\"crt-image-carousel\"&gt;\nlt;i\nclass=\"crt-icon-image-carousel\n&gt;&lt;/i&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"crt-date\"&gt;Yesterday&\nt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"crt-post-text\"&gt;Meet\nNurgul Atayer, Global\nMarketing\nCommunication...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.twitter.com/\ntlasCopcoGroup\"\ntarget=\"_blank\"&gt;Atlas\nCopco&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.twitter.com/\ntlasCopcoGroup\"\ntarget=\"_blank\"&gt;@AtlasCopco\nroup&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"crt-post-share\"&gt;   \n             &lt;span\nclass=\"crt-share-hint\"&gt;&lt;\nsp...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"crt-share-facebook\"\nc-on:click-prevent=\"onShareFac\nbookClick\"&gt;&lt;i\nclass=\"crt-icon-facebook\"&gt;&\nt;/i&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"crt-share-twitter\"\nc-on:click-prevent=\"onShareTwi\nterClick\"&gt;&lt;i\nclass=\"crt-icon-twitter\"&gt;&l\n;/i&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"crt-grid-post-image\"\nstyle=\"background-image:url('h\ntps://curator-assets.b-cdn.net\n58fad3dd-9153-442a-b6c9-b24d17\n120d0/234575628.jpg?width=480&\nmp;amp;quality=75');\"&gt;&lt;/\niv&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div&gt;Our colleague\nNurgul Atayer is working as\nGlobal M...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;div\nclass=\"crt-image-carousel\"&gt;\nlt;i\nclass=\"crt-icon-image-carousel\n&gt;&lt;/i&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"crt-date\"&gt;Yesterday&\nt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"crt-post-text\"&gt;Our\ncolleague Nurgul Atayer is\nworking as Global\nM...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.facebook.com\natlascopco\"\ntarget=\"_blank\"&gt;Atlas\nCopco&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.facebook.com\natlascopco\"\ntarget=\"_blank\"&gt;@atlascopco\nlt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"crt-post-share\"&gt;   \n             &lt;span\nclass=\"crt-share-hint\"&gt;&lt;\nsp...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"crt-share-facebook\"\nc-on:click-prevent=\"onShareFac\nbookClick\"&gt;&lt;i\nclass=\"crt-icon-facebook\"&gt;&\nt;/i&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"crt-share-twitter\"\nc-on:click-prevent=\"onShareTwi\nterClick\"&gt;&lt;i\nclass=\"crt-icon-twitter\"&gt;&l\n;/i&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"crt-grid-post-image\"\nstyle=\"background-image:url('h\ntps://pbs.twimg.com/media/FIQT\n95XMAIrfH9.jpg:medium');\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div&gt;Discover some of\nour most sustainable\ninnovations ...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;div\nclass=\"crt-image-carousel\"&gt;\nlt;i\nclass=\"crt-icon-image-carousel\n&gt;&lt;/i&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"crt-date\"&gt;3 days\nago&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"crt-post-text\"&gt;Disco\ner some of our most\nsustainable innovations\n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.twitter.com/\ntlasCopcoGroup\"\ntarget=\"_blank\"&gt;Atlas\nCopco&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://www.twitter.com/\ntlasCopcoGroup\"\ntarget=\"_blank\"&gt;@AtlasCopco\nroup&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"crt-post-share\"&gt;   \n             &lt;span\nclass=\"crt-share-hint\"&gt;&lt;\nsp...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"crt-share-facebook\"\nc-on:click-prevent=\"onShareFac\nbookClick\"&gt;&lt;i\nclass=\"crt-icon-facebook\"&gt;&\nt;/i&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"crt-share-twitter\"\nc-on:click-prevent=\"onShareTwi\nterClick\"&gt;&lt;i\nclass=\"crt-icon-twitter\"&gt;&l\n;/i&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form action=\"#\"\nclass=\"o-grid o-grid--small\nu-mb-gamma\"&gt;\n                &lt;div\nclass=\"o-grid__item\nu-1-of-2...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "This label's \"for\" attribute contains an ID that does not exist in the document fragment.",
+          "code": "&lt;label\nfor=\"select-country\"&gt;\n                       \nCountry/area\n            ...&lt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H44\" target=\"_blank\">H44</a>"
+          ],
+          "id": "H44"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select\nclass=\"select-country\"\nname=\"countryselect\"&gt;\n                           \n&lt;option value=\"\"&gt;\n&lt;/o...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nclass=\"select-country\"\nname=\"countryselect\"&gt;\n                           \n&lt;option value=\"\"&gt;\n&lt;/o...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select\nclass=\"select-country\"\nname=\"countryselect\"&gt;\n                           \n&lt;option value=\"\"&gt;\n&lt;/o...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nclass=\"select-country\"\nname=\"countryselect\"&gt;\n                           \n&lt;option value=\"\"&gt;\n&lt;/o...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "This label's \"for\" attribute contains an ID that does not exist in the document fragment.",
+          "code": "&lt;label\nfor=\"select-language\"&gt;\n                       \nLanguage\n               \n...&lt;/label&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H44\" target=\"_blank\">H44</a>"
+          ],
+          "id": "H44"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select name=\"\"\nclass=\"select-language\"\ndata-root=\"/content/corporate/\nn/jcr:content/par/ac-in-countr\n-banner\"&gt;&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select name=\"\"\nclass=\"select-language\"\ndata-root=\"/content/corporate/\nn/jcr:content/par/ac-in-countr\n-banner\"&gt;&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select name=\"\"\nclass=\"select-language\"\ndata-root=\"/content/corporate/\nn/jcr:content/par/ac-in-countr\n-banner\"&gt;&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select name=\"\"\nclass=\"select-language\"\ndata-root=\"/content/corporate/\nn/jcr:content/par/ac-in-countr\n-banner\"&gt;&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h5 to be properly nested.",
+          "code": "&lt;h6\nclass=\"u-mb-beta\"&gt;Get in\ntouch&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h6\nclass=\"u-mb-beta\"&gt;&lt;/h6&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h6\nclass=\"u-color-alpha-base\"&gt;\nlt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"ac-social-click\" found on the web page.",
+          "code": "&lt;input type=\"hidden\"\nid=\"ac-social-click\"\nvalue=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.facebook.com\natlascopco/\"\ndata-social-follow=\"facebook\"\ntarget=\"_blank\"\nrel=\"noreferrer noopener\"\nclass=\"c-social-link\ndtm-social-follow\"&gt;&lt;i\nclass=\"c-icon\nc-icon--facebook\ndtm-social-follo...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://twitter.com/atla\ncopcogroup\"\ndata-social-follow=\"twitter\"\ntarget=\"_blank\"\nrel=\"noreferrer noopener\"\nclass=\"c-social-link\ndtm-social-follow\"&gt;&lt;i\nclass=\"c-icon c-icon--twitter\ndtm-social-follow...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.linkedin.com\ncompany/atlas-copco\"\ndata-social-follow=\"linkedin\"\ntarget=\"_blank\"\nrel=\"noreferrer noopener\"\nclass=\"c-social-link\ndtm-social-follow\"&gt;&lt;i\nclass=\"c-icon\nc-icon--linkedin\ndtm-social-follo...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.youtube.com/\nser/AtlasCopcoGroup\"\ndata-social-follow=\"youtube\"\ntarget=\"_blank\"\nrel=\"noreferrer noopener\"\nclass=\"c-social-link\ndtm-social-follow\"&gt;&lt;i\nclass=\"c-icon c-icon--youtube\ndtm-social-follow...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.instagram.co\n/atlascopcogroup/\"\ndata-social-follow=\"instagram\"\ntarget=\"_blank\"\nrel=\"noreferrer noopener\"\nclass=\"c-social-link\ndtm-social-follow\"&gt;&lt;i\nclass=\"c-icon\nc-icon--instagram\ndtm-social-foll...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"onetrust-pc-dark-filter\not-fade-in\"\nstyle=\"z-index:2147483645\"&gt;\nlt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div id=\"onetrust-pc-sdk\"\nclass=\"otPcCenter ot-hide\not-fade-in\" aria-modal=\"true\"\nrole=\"dialog\"\naria-labelledby=\"ot-pc-title\"\nlang=\"en\"&gt;&lt;!-- Close\nButton --&gt;&lt;div\nclass=\"ot-pc-header\"&gt;&lt;!-\n..&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"ot-pc-logo\"\nrole=\"img\"\naria-label=\"Company Logo\"\nstyle=\"background-image:\nurl(&amp;quot;https://cdn.cook\nelaw.org/logos/214cc03f-7b8e-4\n83-a7e7-0339b52694d8/cb4d3913-\na99-4f59-9d7b-8f94ac1437bc/5b8\ne0e8-259b-4cdf-b41c-3ced38afcd\n2/LOGO-AC.png&amp;quot;);\n                   \nbackground-position:\nleft\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a\nhref=\"https://www.atlascopco.c\nm/privacyportal/en\"\nclass=\"privacy-notice-link\"\nrel=\"noopener\"\ntarget=\"_blank\"\naria-label=\"More information\nabout your privacy, opens in\na new tab\"&gt;Read our\nPrivacy and Cookie\nPolicy&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button class=\"ot-link-btn\nback-btn-handler\"\naria-label=\"Back\"&gt;&lt;svg\nid=\"ot-back-arw\"\nxmlns=\"http://www.w3.org/200..\n&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\nid=\"filter-btn-handler\"\naria-label=\"Filter\"\naria-haspopup=\"true\"&gt;&lt;sv\n role=\"presentation\"\naria-hidden=\"true\"\nxmlns=...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nclass=\"ot-host-box\"\naria-expanded=\"false\"&gt;&lt;/\nutton&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h3\nclass=\"ot-host-name\"&gt;&lt;/h\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h4\nclass=\"ot-host-desc\"&gt;&lt;/h\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"https://www.onetrust.com\nproducts/cookie-consent/\"\ntarget=\"_blank\" rel=\"noopener\nnoreferrer\"\nstyle=\"background-image:\nurl(&amp;quot;https://cdn.cook\nelaw.org/logos/static/poweredB\n_ot_logo.svg&amp;quot;)\"\naria-label=\"Powered by\nOneTrust Opens in a new\nTab\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nid=\"onetrust-banner-sdk\"\nclass=\"otCenterRounded\ndefault\nvertical-align-content\"&gt;&lt\ndiv class=\"ot-sdk-container\"\nrole=\"dialog\"\naria-d...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"crt-popup-wrapper\"&gt;\n     &lt;div\nclass=\"crt-popup-wrapper-c\"&gt\n          &lt;...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "errorcount": 41
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      4
+    ]
+  ]
+}

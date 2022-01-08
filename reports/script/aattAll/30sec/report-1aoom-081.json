@@ -1,0 +1,467 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 36,
+  "logSize": 3122,
+  "prohibitedCount": 2,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.cisco.com/",
+      "what": "Cisco (VEIGX)",
+      "result": "https://www.cisco.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.cisco.com/",
+      "result": [
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"fw-footer\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a id=\"skiplink-footer\"\nhref=\"#fw-footer\"\nclass=\"last\"&gt;Skip to\nfooter&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\nid=\"fwt-nav-button\"\naria-labelledby=\"fwt-nav-butto\n-label\" aria-haspopup=\"true\"\naria-expanded=\"false\"&gt;\n            &lt;div&gt;\n               \n&lt;span&gt;&lt;/span&gt;\n ...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\nid=\"fwt-search-button\"\naria-label=\"Search\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\ntitle=\"Search\"&gt;\n&lt;span\nclass=\"forCdcr\"&gt;Search&lt;/\npan&gt; &lt;svg\nxmlns=\"h...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\nid=\"fwt-profile-button\"\nclass=\"ellipsis-short\nellipsis-medium\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\naria-labelledby=\"fwt-profile-b\ntton-loggedout-title\"\ntitle=\"Log In\"&gt;\n        &lt;svg\nxmlns=\"http://www.w3.org/2000/\nvg\" w...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"fwt-profile-button-loggedout-title\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\nid=\"fwt-language-button\"\nclass=\"ellipsis-short\nellipsis-medium\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\naria-labelledby=\"fwt-language-\nutton-icon-title\"\ntitle=\"Choose Language\nSelection\"&gt;\n                &lt;svg\nclass=\"forCdc\"\nxmlns=\"http:/...&lt;/button&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"fwt-language-button-icon-title\" found on the web page.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\nid=\"fwt-profile_ellipsis-butto\n\" class=\"ellipsis-short\nellipsis-medium\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\naria-labelledby=\"fwt-profile_e\nlipsis-button-loggedout-title\"\ntitle=\"Log In\"&gt;\n                &lt;svg\nxmlns=\"http://www.w3.org/200..\n&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\nid=\"fwt-language_ellipsis-butt\nn\" class=\"ellipsis-short\nellipsis-medium\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\naria-labelledby=\"fwt-language_\nllipsis-button-icon-title\"\ntitle=\"Choose Language\nSelection\"&gt;\n                &lt;svg\nxmlns=\"http://www.w3.org/200..\n&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nid=\"language-selector-back-but\non\"\nclass=\"back-button\"&gt;&lt;/bu\nton&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3&gt;It's the most\nwonderful time to save money\n&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"social\ninner\"&gt;\n                &lt;a\nid=\"ff-facebook\"\nhref=\"//www.f...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div class=\"social\nouter\"&gt;\n            &lt;a\nid=\"ff-facebook\"\nhref=\"//www.faceb...&lt;/div&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"ff-facebook\" found on the web page.",
+          "code": "&lt;a id=\"ff-facebook\"\nhref=\"//www.facebook.com/Cisco\n\" title=\"facebook\"\ntarget=\"_self\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"ff-twitter\" found on the web page.",
+          "code": "&lt;a id=\"ff-twitter\"\nhref=\"//twitter.com/Cisco/\"\ntitle=\"twitter\"\ntarget=\"_self\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"ff-linkedin\" found on the web page.",
+          "code": "&lt;a id=\"ff-linkedin\"\nhref=\"//www.linkedin.com/compa\ny/cisco\" title=\"linkedin\"\ntarget=\"_self\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"ff-youtube\" found on the web page.",
+          "code": "&lt;a id=\"ff-youtube\"\nhref=\"//www.youtube.com/user/c\nsco\" title=\"youtube\"\ntarget=\"_self\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"ff-instagram\" found on the web page.",
+          "code": "&lt;a id=\"ff-instagram\"\nhref=\"//www.instagram.com/cisc\n/\" title=\"instagram\"\ntarget=\"_self\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"onetrust-pc-dark-filter\not-hide\not-fade-in\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div id=\"onetrust-pc-sdk\"\nclass=\"otPcTab ot-hide\not-fade-in\"\nrole=\"alertdialog\"\naria-modal=\"true\" lang=\"en\"\naria-label=\"Consent\nManager\"&gt;&lt;!-- pc header\n--&gt;&lt;div\nclass=\"ot-pc-header\"\nrole=\"...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button class=\"ot-link-btn\nback-btn-handler\"\naria-label=\"Back\"&gt;&lt;svg\nid=\"ot-back-arw\"\nxmlns=\"http://www.w3.org/200..\n&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button\nid=\"filter-btn-handler\"\naria-label=\"Filter\"\naria-haspopup=\"true\"&gt;&lt;sv\n role=\"presentation\"\naria-hidden=\"true\"\nxmlns=...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"https://www.onetrust.com\nproducts/cookie-consent/\"\ntarget=\"_blank\" rel=\"noopener\nnoreferrer\"\nstyle=\"background-image:\nurl(&amp;quot;https://cdn.cook\nelaw.org/logos/static/poweredB\n_ot_logo.svg&amp;quot;);\"\naria-label=\"Powered by\nOneTrust Opens in a new\nTab\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nid=\"onetrust-banner-sdk\"\nclass=\"otFlat bottom\not-wo-title\nvertical-align-content\"\ntabindex=\"0\" style=\"bottom:\n0px;\"&gt;&lt;div\nrole=\"alertdialog\"\naria-describedby=\"onetrust...&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p\nid=\"onetrust-policy-text\"&gt;B\n continuing to use our\nwebsite, you acknowledge\n...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;a style=\"cursor:\npointer;\"\nonclick=\"Optanon.ToggleInfoDis\nlay();\"&gt;Change\nSettings&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "code": "&lt;a style=\"cursor:\npointer;\"\nonclick=\"Optanon.ToggleInfoDis\nlay();\"&gt;Change\nSettings&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nid=\"cross-domain-iframe\"\nsrc=\"https://www.cisco.com/ass\nts/ctm/xdc/xdcLsFrame.html\"\nstyle=\"display:\nnone;\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nid=\"utag_215_iframe\"\nheight=\"1\" width=\"1\"\nstyle=\"display:none\"\nsrc=\"//3569326.fls.doubleclick\nnet/activityi;src=3569326;type\nviq0_0;cat=gl_vi000;u1=MjMuNDc\nMTQ1LjIxMy41NDM5MTY0MTYwOTk3Mz\n4MQ%3D%3D;u4=017e37944fdb00167\n129a6237120007f0016077007ee;u9\nen;u18=us;ord=7156710404891.29\n?\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nid=\"utag_191_iframe\"\nheight=\"1\" width=\"1\"\nstyle=\"display:none\"\nsrc=\"//3569326.fls.doubleclick\nnet/activityi;src=3569326;type\nthene0;cat=gl_tn00;u1=MjMuNDcu\nTQ1LjIxMy41NDM5MTY0MTYwOTk3MzY\nMQ%3D%3D;u4=017e37944fdb001679\n29a6237120007f0016077007ee;u9=\nn;u18=us;ord=2654195576553.557\n?\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe height=\"0\"\nwidth=\"0\" style=\"display:\nnone; visibility: hidden;\"\nsrc=\"https://3569326.fls.doubl\nclick.net/activityi;src=356932\n;type=gl_au0;cat=gl_au0;ord=67\n4469877281;gtm=2od150;auiddc=8\n2103887.1641609976;u1=MjMuNDcu\nTQ1LjIxMy41NDM5MTY0MTYwOTk3MzY\nMQ%3D%3D;u4=017e37944fdb001679\n29a6237120007f0016077007ee;u18\nus;u9=en;ps=1;~oref=https%3A%2\n%2Fwww.cisco.com%2F?\"&gt;&lt;/\nframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"https://cdn.bizible.com/m\nipv?_biz_r=&amp;amp;_biz_h=-17\n9904874&amp;amp;_biz_u=d002b89\nbc764076f1615bdde36d6b68&amp;a\np;_biz_s=34b923&amp;amp;_biz_l\nhttps%3A%2F%2Fwww.cisco.com%2F\namp;amp;_biz_t=1641609975932&a\np;amp;_biz_i=Cisco%20-%20Netwo\nking%2C%20Cloud%2C%20and%20Cyb\nrsecurity%20Solutions&amp;amp;\nbiz_n=0&amp;amp;rnd=629690&amp\namp;cdn_o=a&amp;amp;_biz_z=164\n609975933\" style=\"display:\nnone;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe height=\"0\"\nwidth=\"0\" style=\"display:\nnone; visibility: hidden;\"\nsrc=\"https://3569326.fls.doubl\nclick.net/activityi;src=356932\n;type=visitor;cat=vis;gtm=2od1\n0;auiddc=842103887.1641609976;\n1=MjMuNDcuMTQ1LjIxMy41NDM5MTY0\nTYwOTk3MzY4MQ%3D%3D;u4=017e379\n4fdb001679129a6237120007f00160\n7007ee;u9=en;u18=us;gdid=dYmQx\nT;ps=1;~oref=https%3A%2F%2Fwww\ncisco.com%2F?\"&gt;&lt;/iframe&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"https://cdn.bizibly.com/u\n_biz_u=d002b89bbc764076f1615bd\ne36d6b68&amp;amp;_biz_s=34b923\namp;amp;_biz_l=https%3A%2F%2Fw\nw.cisco.com%2F&amp;amp;_biz_t=\n641609975936&amp;amp;_biz_i=Ci\nco%20-%20Networking%2C%20Cloud\n2C%20and%20Cybersecurity%20Sol\ntions&amp;amp;rnd=388831&amp;a\np;cdn_o=a&amp;amp;_biz_z=16416\n9975936\" style=\"display:\nnone;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img alt=\"\"\nsrc=\"https://cdn.bizible.com/m\nu?mapType=ecid&amp;amp;mapValu\n=B8D07FF4520E94C10A490D4C%40Ad\nbeOrg_219895883810297376611289\n7277055577268&amp;amp;_biz_u=d\n02b89bbc764076f1615bdde36d6b68\namp;amp;_biz_s=34b923&amp;amp;\nbiz_l=https%3A%2F%2Fwww.cisco.\nom%2F&amp;amp;_biz_t=164160997\n937&amp;amp;_biz_i=Cisco%20-%2\nNetworking%2C%20Cloud%2C%20and\n20Cybersecurity%20Solutions&am\n;amp;_biz_n=1&amp;amp;rnd=3759\n8&amp;amp;cdn_o=a&amp;amp;_biz\nz=1641609976716\"\nstyle=\"display: none;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li class=\"ot-abt-tab\"\nrole=\"presentation\"&gt;&lt;!--\nAbout Privacy container\n--&gt;&lt;div\nclass=\"ot-act...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li class=\"ot-cat-item\not-always-active-group\"\nrole=\"presentation\"\ndata-optanongroupid=\"1\"&gt;&lt\ndiv\nclass=\"category-menu-switch-ha\ndler\" role=\"ta...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li class=\"ot-cat-item\"\nrole=\"presentation\"\ndata-optanongroupid=\"2\"&gt;&lt\ndiv\nclass=\"category-menu-switch-ha\ndler\" role=\"ta...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li class=\"ot-cat-item\"\nrole=\"presentation\"\ndata-optanongroupid=\"4\"&gt;&lt\ndiv\nclass=\"category-menu-switch-ha\ndler\" role=\"ta...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li class=\"ot-cat-item\"\nrole=\"presentation\"\ndata-optanongroupid=\"3\"&gt;&lt\ndiv\nclass=\"category-menu-switch-ha\ndler\" role=\"ta...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "errorcount": 19
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

@@ -1,0 +1,1375 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail20",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aoom",
+  "logCount": 5,
+  "logSize": 778,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://eastgroup.net/",
+      "what": "EastGroup Properties (CCVAX)",
+      "result": "https://eastgroup.net/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://eastgroup.net/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Interfering with a user agent's ability to zoom may be a failure of this Success Criterion.",
+          "code": "&lt;meta name=\"viewport\"\ncontent=\"width=device-width,\ninitial-scale=1.0,\nmaximum-scale=1.0,\nminimum-scale=1.0,\nuser-scalable=no\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form role=\"search\"\nmethod=\"get\" id=\"searchform\"\naction=\"https://eastgroup.net/\n&gt;&lt;div class=\"expanded\nrow align-middle\"&gt;&lt;div\nclass=...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input class=\"input\"\ntype=\"text\"\nplaceholder=\"Enter your\nsearch terms\" value=\"\"\nname=\"s\" id=\"s\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input class=\"input\"\ntype=\"text\"\nplaceholder=\"Enter your\nsearch terms\" value=\"\"\nname=\"s\" id=\"s\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"#\"\nclass=\"show_hide\"\nrel=\"#searchbar\"&gt;&lt;i\nclass=\"fa\nfa-close\"&gt;&lt;/i&gt;&lt;/a&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fa\nfa-close\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "This element has role of \"button\" but does not have a name available to an accessibility API. Valid names are: element content, aria-label , aria-labelledby .",
+          "code": "&lt;span\nclass=\"mega-toggle-label\"\nrole=\"button\"\naria-expanded=\"false\"&gt;&lt;s\nan\nclass=\"mega-toggle-label-close\n\"&gt;&lt;/span&gt;&lt;spa...&l\n;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-wrap-main-menu\" found on the web page.",
+          "code": "&lt;div\nid=\"mega-menu-wrap-main-menu\"\nclass=\"mega-menu-wrap\"&gt;&lt;\niv\nclass=\"mega-menu-toggle\"&gt;&l\n;div\nclass=\"mega-tog...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-toggle-block-1\" found on the web page.",
+          "code": "&lt;div\nclass=\"mega-toggle-block\nmega-menu-toggle-block\nmega-toggle-block-1\"\nid=\"mega-toggle-block-1\"\ntabindex=\"0\"&gt;&lt;span\nclass=\"mega-toggle-label\"\nrole=\"button\"\naria...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This element has role of \"button\" but does not have a name available to an accessibility API. Valid names are: element content, aria-label , aria-labelledby .",
+          "code": "&lt;span\nclass=\"mega-toggle-label\"\nrole=\"button\"\naria-expanded=\"false\"&gt;&lt;s\nan\nclass=\"mega-toggle-label-close\n\"&gt;&lt;/span&gt;&lt;spa...&l\n;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-main-menu\" found on the web page.",
+          "code": "&lt;ul\nid=\"mega-menu-main-menu\"\nclass=\"mega-menu\nmax-mega-menu\nmega-menu-horizontal\"\ndata-event=\"hover_intent\"\ndata-effect=\"disabled\"\ndata-effect-speed=\"200\"\ndata-effect-mobile=\"disabled\"\ndata-effect-speed-mobile=\"0\"\ndata-mobile-force-width=\"false\n data-second-click=\"close\"\ndata-document-click=\"collapse\"\ndata-vertical-behaviour=\"stand\nrd\" data-breakpoint=\"640\"\ndata-unbind=\"true\"\ndata-mobile-state=\"collapse_al\n\"\ndata-hover-intent-timeout=\"300\n\ndata-hover-intent-interval=\"10\n\"&gt;&lt;li\nclass=\"mega-menu-item\nmega-menu-item-type-post...&lt\n/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-187\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-post_type\nmega-menu-item-object-page\nmega-align-bottom-left\nmega-menu-flyout\nmega-menu-item-187\"\nid=\"mega-menu-item-187\"&gt;&lt\na class=\"mega-menu-link\"\nhref=\"https://eastgroup....&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-1305\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-post_type\nmega-menu-item-object-page\nmega-align-bottom-left\nmega-menu-flyout\nmega-menu-item-1305\"\nid=\"mega-menu-item-1305\"&gt;&l\n;a class=\"mega-menu-link\"\nhref=\"https://eastgroup....&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-254\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-custom\nmega-menu-item-object-custom\nmega-align-bottom-left\nmega-menu-flyout\nmega-menu-item-254\"\nid=\"mega-menu-item-254\"&gt;&lt\na class=\"mega-menu-link\"\nhref=\"http://investor.ea...&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-2943\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-custom\nmega-menu-item-object-custom\nmega-align-bottom-left\nmega-menu-flyout\nmega-menu-item-2943\"\nid=\"mega-menu-item-2943\"&gt;&l\n;a class=\"mega-menu-link\"\nhref=\"http://investor.ea...&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-2364\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-post_type\nmega-menu-item-object-page\nmega-align-bottom-left\nmega-menu-flyout\nmega-menu-item-2364\"\nid=\"mega-menu-item-2364\"&gt;&l\n;a class=\"mega-menu-link\"\nhref=\"https://eastgroup....&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-2251\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-post_type\nmega-menu-item-object-page\nmega-menu-item-has-children\nmega-align-bottom-left\nmega-menu-flyout\nmega-menu-item-2251\"\nid=\"mega-menu-item-2251\"&gt;&l\n;a class=\"mega-menu-link\"\nhref=\"https://eastgroup....&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-186\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-post_type\nmega-menu-item-object-page\nmega-menu-item-186\"\nid=\"mega-menu-item-186\"&gt;&lt\na class=\"mega-menu-link\"\nhref=\"https://eastgroup....&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-334\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-post_type\nmega-menu-item-object-page\nmega-menu-item-334\"\nid=\"mega-menu-item-334\"&gt;&lt\na class=\"mega-menu-link\"\nhref=\"https://eastgroup....&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-1910\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-post_type\nmega-menu-item-object-page\nmega-menu-item-1910\"\nid=\"mega-menu-item-1910\"&gt;&l\n;a class=\"mega-menu-link\"\nhref=\"https://eastgroup....&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-184\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-post_type\nmega-menu-item-object-page\nmega-align-bottom-left\nmega-menu-flyout\nmega-menu-item-184\"\nid=\"mega-menu-item-184\"&gt;&lt\na class=\"mega-menu-link\"\nhref=\"https://eastgroup....&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"mega-menu-item-1436\" found on the web page.",
+          "code": "&lt;li class=\"mega-menu-item\nmega-menu-item-type-custom\nmega-menu-item-object-custom\nmega-align-bottom-left\nmega-menu-flyout\nmega-menu-item-1436\"\nid=\"mega-menu-item-1436\"&gt;&l\n;a target=\"_blank\"\nclass=\"mega-menu-link\"\nhref=\"ht...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.facebook.com\neastgroupproperties/\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fab\nfa-facebook-f\"&gt;&lt;/i&gt;&l\n;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fab\nfa-facebook-f\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://twitter.com/East\nroupProp\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fab\nfa-twitter\"&gt;&lt;/i&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fab\nfa-twitter\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.linkedin.com\ncompany/5805496\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fab\nfa-linkedin-in\"&gt;&lt;/i&gt;&\nt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fab\nfa-linkedin-in\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"#\"\nclass=\"show_hide\"\nrel=\"#searchbar\"&gt;&lt;i\nclass=\"fas\nfa-search\"&gt;&lt;/i&gt;&lt;/a\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fas\nfa-search\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nclass=\"slider-title\"&gt;Horizo\n Commerce\nPark&lt;br&gt;&lt;span\nclass=\"slider-city\"...&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"slider-city\"&gt;Orlando\n FL&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://eastgroup.net/man\nge/wp-content/uploads/2016/03/\nGP-slider01.jpg\" alt=\"\"\ndraggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nclass=\"slider-title\"&gt;World\nHouston International\nBusiness\nCenter&lt;br&gt;&lt;sp...&lt;/\niv&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"slider-city\"&gt;Houston\n TX&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://eastgroup.net/man\nge/wp-content/uploads/2016/04/\nGP-slider02.jpg\" alt=\"\"\ndraggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nclass=\"slider-title\"&gt;ParkVi\nw Commerce\nCenter&lt;br&gt;&lt;span\nclass=\"slider-ci...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"slider-city\"&gt;Dallas,\nTX&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://eastgroup.net/man\nge/wp-content/uploads/2016/04/\nGP-slider03.jpg\" alt=\"\"\ndraggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nclass=\"slider-title\"&gt;Southr\ndge Commerce\nPark&lt;br&gt;&lt;span\nclass=\"slider-ci...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"slider-city\"&gt;Orlando\n FL&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://eastgroup.net/man\nge/wp-content/uploads/2016/04/\nGP-slider04.jpg\" alt=\"\"\ndraggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nclass=\"slider-title\"&gt;Kyrene\n202 Business\nPark&lt;br&gt;&lt;span\nclass=\"slider-ci...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"slider-city\"&gt;Phoenix\n AZ&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://eastgroup.net/man\nge/wp-content/uploads/2016/04/\nGP-slider05.jpg\" alt=\"\"\ndraggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nclass=\"slider-title\"&gt;Ridgev\new 35&lt;br&gt;&lt;span\nclass=\"slider-city\"&gt;San\nAnto...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"slider-city\"&gt;San\nAntonio, TX&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://eastgroup.net/man\nge/wp-content/uploads/2020/02/\nidgeview1and2-2-scaled-e163310\n268645.jpg\" alt=\"\"\ndraggable=\"false\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a href=\"#\"\nclass=\"flex-active\"&gt;1&lt;/a\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a href=\"#\"&gt;2&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a href=\"#\"&gt;3&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a href=\"#\"&gt;4&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a href=\"#\"&gt;5&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a href=\"#\"&gt;6&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h1&gt;EastGroup\nProperties&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p&gt;EastGroup\nProperties, Inc. (NYSE:EGP),\nan S&amp;amp;P ...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;strong&gt;EastGroup’s\nportfolio, including\ndevelopment\nproje...&lt;/strong&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h2&gt;News&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://eastgroup.net/ne\ns/\"&gt;VIEW ALL NEWS &lt;i\nclass=\"fa\nfa-angle-right\"&gt;&lt;/i&gt;&\nt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fa\nfa-angle-right\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://eastgroup.net/ea\ntgroup-properties-announces-fo\nrth-quarter-2021-earnings-conf\nrence-call-and-webcast/\"&gt;Ea\ntGroup Properties Announces\nFourth Quarter\n2021...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;p\nclass=\"news-date\"&gt;January\n6th, 2022&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://eastgroup.net/ea\ntgroup-properties-announces-di\nidend-increase-10/\"&gt;EastGro\np Properties Announces\nDividend Increase&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;p\nclass=\"news-date\"&gt;December\n1st, 2021&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://eastgroup.net/ea\ntgroup-properties-announces-re\nent-business-activity-5/\"&gt;E\nstGroup Properties Announces\nRecent Business\nAct...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;p\nclass=\"news-date\"&gt;November\n8th, 2021&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"https://eastgroup.net/ea\ntgroup-properties-announces-th\nrd-quarter-2021-results/\"&gt;E\nstGroup Properties Announces\nThird Quarter 2021\n...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;p\nclass=\"news-date\"&gt;October\n26th, 2021&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h2 id=\"stock_quote\"\nclass=\"stock-quote\"&gt;\n&lt;span id=\"stock_change\"\nclass=\"change\"&gt;&lt;/span&gt\n &lt;s...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"650\"\nheight=\"650\"\nsrc=\"https://i1.wp.com/eastgro\np.net/manage/wp-content/upload\n/2018/10/01-18-EastGroup-1530B\noadmoor-0957.jpg?resize=650%2C\n50&amp;amp;ssl=1\"\nclass=\"attachment-properties-t\numb size-properties-thumb\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://i1.wp.com/east\nroup.net/manage/wp-content/upl\nads/2018/10/01-18-EastGroup-15\n0Broadmoor-0957.jpg?resize=150\n2C150&amp;amp;ssl=1 150w,\nhttps://i1.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/01-18-EastGroup-1530Broadm\nor-0957.jpg?resize=650%2C650&a\np;amp;ssl=1 650w,\nhttps://i1.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/01-18-EastGroup-1530Broadm\nor-0957.jpg?resize=250%2C250&a\np;amp;ssl=1 250w,\nhttps://i1.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/01-18-EastGroup-1530Broadm\nor-0957.jpg?zoom=2&amp;amp;res\nze=650%2C650&amp;amp;ssl=1\n1300w\" sizes=\"(max-width:\n650px) 100vw, 650px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h2 to be properly nested.",
+          "code": "&lt;h4&gt;Broadmoor Commerce\nPark&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Location&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;City&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Size&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Buildings&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"650\"\nheight=\"650\"\nsrc=\"https://i2.wp.com/eastgro\np.net/manage/wp-content/upload\n/2019/11/AerialsEdgeWood-2-sca\ned.jpg?resize=650%2C650&amp;am\n;ssl=1\"\nclass=\"attachment-properties-t\numb size-properties-thumb\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://i2.wp.com/east\nroup.net/manage/wp-content/upl\nads/2019/11/AerialsEdgeWood-2-\ncaled.jpg?resize=150%2C150&amp\namp;ssl=1 150w,\nhttps://i2.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/11/AerialsEdgeWood-2-scaled.j\ng?resize=650%2C650&amp;amp;ssl\n1 650w,\nhttps://i2.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/11/AerialsEdgeWood-2-scaled.j\ng?resize=250%2C250&amp;amp;ssl\n1 250w,\nhttps://i2.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/11/AerialsEdgeWood-2-scaled.j\ng?zoom=2&amp;amp;resize=650%2C\n50&amp;amp;ssl=1 1300w\"\nsizes=\"(max-width: 650px)\n100vw, 650px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Location&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;City&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Size&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Buildings&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"650\"\nheight=\"650\"\nsrc=\"https://i0.wp.com/eastgro\np.net/manage/wp-content/upload\n/2020/07/tricountycrossingthre\nandfour-41-scaled-e16038165319\n0.jpg?resize=650%2C650&amp;amp\nssl=1\"\nclass=\"attachment-properties-t\numb size-properties-thumb\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://i0.wp.com/east\nroup.net/manage/wp-content/upl\nads/2020/07/tricountycrossingt\nreeandfour-41-scaled-e16038165\n1950.jpg?resize=150%2C150&amp;\nmp;ssl=1 150w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/202\n/07/tricountycrossingthreeandf\nur-41-scaled-e1603816531950.jp\n?resize=650%2C650&amp;amp;ssl=\n 650w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/202\n/07/tricountycrossingthreeandf\nur-41-scaled-e1603816531950.jp\n?resize=250%2C250&amp;amp;ssl=\n 250w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/202\n/07/tricountycrossingthreeandf\nur-41-scaled-e1603816531950.jp\n?zoom=2&amp;amp;resize=650%2C6\n0&amp;amp;ssl=1 1300w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/202\n/07/tricountycrossingthreeandf\nur-41-scaled-e1603816531950.jp\n?zoom=3&amp;amp;resize=650%2C6\n0&amp;amp;ssl=1 1950w\"\nsizes=\"(max-width: 650px)\n100vw, 650px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Location&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;City&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Size&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Buildings&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"650\"\nheight=\"650\"\nsrc=\"https://i0.wp.com/eastgro\np.net/manage/wp-content/upload\n/2019/07/image006-scaled-e1592\n45965460.jpg?resize=650%2C650&\nmp;amp;ssl=1\"\nclass=\"attachment-properties-t\numb size-properties-thumb\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://i0.wp.com/east\nroup.net/manage/wp-content/upl\nads/2019/07/image006-scaled-e1\n92245965460.jpg?resize=150%2C1\n0&amp;amp;ssl=1 150w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/07/image006-scaled-e159224596\n460.jpg?resize=650%2C650&amp;a\np;ssl=1 650w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/07/image006-scaled-e159224596\n460.jpg?resize=250%2C250&amp;a\np;ssl=1 250w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/07/image006-scaled-e159224596\n460.jpg?zoom=2&amp;amp;resize=\n50%2C650&amp;amp;ssl=1 1300w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/07/image006-scaled-e159224596\n460.jpg?zoom=3&amp;amp;resize=\n50%2C650&amp;amp;ssl=1 1950w\"\nsizes=\"(max-width: 650px)\n100vw, 650px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Location&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;City&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Size&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Buildings&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"650\"\nheight=\"650\"\nsrc=\"https://i1.wp.com/eastgro\np.net/manage/wp-content/upload\n/2018/10/STREAM-00378-e1563566\n68899.jpg?resize=650%2C650&amp\namp;ssl=1\"\nclass=\"attachment-properties-t\numb size-properties-thumb\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://i1.wp.com/east\nroup.net/manage/wp-content/upl\nads/2018/10/STREAM-00378-e1563\n66468899.jpg?resize=150%2C150&\nmp;amp;ssl=1 150w,\nhttps://i1.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/STREAM-00378-e156356646889\n.jpg?resize=650%2C650&amp;amp;\nsl=1 650w,\nhttps://i1.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/STREAM-00378-e156356646889\n.jpg?resize=250%2C250&amp;amp;\nsl=1 250w,\nhttps://i1.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/STREAM-00378-e156356646889\n.jpg?zoom=2&amp;amp;resize=650\n2C650&amp;amp;ssl=1 1300w\"\nsizes=\"(max-width: 650px)\n100vw, 650px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Location&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;City&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Size&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Buildings&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"650\"\nheight=\"650\"\nsrc=\"https://i2.wp.com/eastgro\np.net/manage/wp-content/upload\n/2017/10/creekview121number3an\n4-30-cmyk-R1-scaled-e162430437\n816.jpg?resize=650%2C650&amp;a\np;ssl=1\"\nclass=\"attachment-properties-t\numb size-properties-thumb\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://i2.wp.com/east\nroup.net/manage/wp-content/upl\nads/2017/10/creekview121number\nand4-30-cmyk-R1-scaled-e162430\n373816.jpg?resize=150%2C150&am\n;amp;ssl=1 150w,\nhttps://i2.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/creekview121number3and4-30\ncmyk-R1-scaled-e1624304373816.\npg?resize=650%2C650&amp;amp;ss\n=1 650w,\nhttps://i2.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/creekview121number3and4-30\ncmyk-R1-scaled-e1624304373816.\npg?resize=250%2C250&amp;amp;ss\n=1 250w,\nhttps://i2.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/10/creekview121number3and4-30\ncmyk-R1-scaled-e1624304373816.\npg?zoom=2&amp;amp;resize=650%2\n650&amp;amp;ssl=1 1300w\"\nsizes=\"(max-width: 650px)\n100vw, 650px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Location&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;City&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Size&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Buildings&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"650\"\nheight=\"650\"\nsrc=\"https://i0.wp.com/eastgro\np.net/manage/wp-content/upload\n/2020/01/1322Dev-RockyPiont-sc\nled-e1624304806358.jpg?resize=\n50%2C650&amp;amp;ssl=1\"\nclass=\"attachment-properties-t\numb size-properties-thumb\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://i0.wp.com/east\nroup.net/manage/wp-content/upl\nads/2020/01/1322Dev-RockyPiont\nscaled-e1624304806358.jpg?resi\ne=150%2C150&amp;amp;ssl=1\n150w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/202\n/01/1322Dev-RockyPiont-scaled-\n1624304806358.jpg?resize=650%2\n650&amp;amp;ssl=1 650w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/202\n/01/1322Dev-RockyPiont-scaled-\n1624304806358.jpg?resize=250%2\n250&amp;amp;ssl=1 250w\"\nsizes=\"(max-width: 650px)\n100vw, 650px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Location&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;City&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Size&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Buildings&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"650\"\nheight=\"650\"\nsrc=\"https://i0.wp.com/eastgro\np.net/manage/wp-content/upload\n/2019/02/FrazierFoto-1000-Aft-\narker-pklot-1_.jpg?resize=650%\nC650&amp;amp;ssl=1\"\nclass=\"attachment-properties-t\numb size-properties-thumb\"\nalt=\"\" loading=\"lazy\"\nsrcset=\"https://i0.wp.com/east\nroup.net/manage/wp-content/upl\nads/2019/02/FrazierFoto-1000-A\nt-Darker-pklot-1_.jpg?resize=1\n0%2C150&amp;amp;ssl=1 150w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/02/FrazierFoto-1000-Aft-Darke\n-pklot-1_.jpg?resize=650%2C650\namp;amp;ssl=1 650w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/02/FrazierFoto-1000-Aft-Darke\n-pklot-1_.jpg?resize=250%2C250\namp;amp;ssl=1 250w,\nhttps://i0.wp.com/eastgroup.ne\n/manage/wp-content/uploads/201\n/02/FrazierFoto-1000-Aft-Darke\n-pklot-1_.jpg?zoom=2&amp;amp;r\nsize=650%2C650&amp;amp;ssl=1\n1300w\" sizes=\"(max-width:\n650px) 100vw, 650px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Location&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;City&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Size&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #5c7a90.",
+          "code": "&lt;div class=\"columns\nlarge-6 medium-6 small-6\nprop-head\"&gt;Buildings&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change background to #5c7a90.",
+          "code": "&lt;a\nhref=\"https://eastgroup.net/pr\nperties/\"&gt;View Property\nMarkets&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.1:1. Recommendation:  change background to #5c7a90.",
+          "code": "&lt;p&gt;&lt;strong&gt;Street\nAddress&lt;/strong&gt;&lt;br&g\n;400 W Parkway P...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.1:1. Recommendation:  change background to #5c7a90.",
+          "code": "&lt;strong&gt;Street\nAddress&lt;/strong&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.1:1. Recommendation:  change background to #5c7a90.",
+          "code": "&lt;strong&gt;P:&lt;/strong&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.1:1. Recommendation:  change background to #5c7a90.",
+          "code": "&lt;strong&gt;F:&lt;/strong&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.facebook.com\neastgroupproperties/\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fab\nfa-facebook-f\"&gt;&lt;/i&gt;&l\n;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fab\nfa-facebook-f\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://twitter.com/East\nroupProp\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fab\nfa-twitter\"&gt;&lt;/i&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fab\nfa-twitter\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.linkedin.com\ncompany/5805496\"\ntarget=\"_blank\"&gt;&lt;i\nclass=\"fab\nfa-linkedin-in\"&gt;&lt;/i&gt;&\nt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.",
+          "code": "&lt;i class=\"fab\nfa-linkedin-in\"&gt;&lt;/i&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.3:1. Recommendation:  change background to #355369.",
+          "code": "&lt;p\nclass=\"footer-copy\"&gt;©2022\n&lt;strong&gt;EastGroup\nProperties&lt;/strong&gt; All\nRi...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.3:1. Recommendation:  change background to #355369.",
+          "code": "&lt;strong&gt;EastGroup\nProperties&lt;/strong&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://pixel.wp.com/g.gi\n?v=ext&amp;amp;j=1%3A10.4&amp;\nmp;blog=167811914&amp;amp;post\n4&amp;amp;tz=0&amp;amp;srv=eas\ngroup.net&amp;amp;host=eastgro\np.net&amp;amp;ref=&amp;amp;fcp\n872&amp;amp;rand=0.74536175120\n947\" alt=\"\" width=\"6\"\nheight=\"5\" id=\"wpstats\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"grecaptcha-badge\"\ndata-style=\"bottomright\"\nstyle=\"width: 256px; height:\n60px; display: block;\ntransition: right 0.3s ease\n0s; position: fixed; bottom:\n14px; right: -186px;\nbox-shadow: gray 0px 0px 5px;\nborder-radius: 2px; overflow:\nhidden;\"&gt;&lt;div\nclass=\"grecaptcha-logo\"&gt;&lt\niframe\ntitle=\"reCAPT...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This textarea element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;textarea\nid=\"g-recaptcha-response-10000\n\" name=\"g-recaptcha-response\"\nclass=\"g-recaptcha-response\"\nstyle=\"width: 250px; height:\n40px; border: 1px solid\nrgb(193, 193, 193); margin:\n10px 25px; padding: 0px;\nresize: none; display:\nnone;\"&gt;&lt;/textarea&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;textarea\nid=\"g-recaptcha-response-10000\n\" name=\"g-recaptcha-response\"\nclass=\"g-recaptcha-response\"\nstyle=\"width: 250px; height:\n40px; border: 1px solid\nrgb(193, 193, 193); margin:\n10px 25px; padding: 0px;\nresize: none; display:\nnone;\"&gt;&lt;/textarea&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe style=\"display:\nnone;\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nclass=\"slider-title\"&gt;Ridgev\new 35&lt;br&gt;&lt;span\nclass=\"slider-city\"&gt;San\nAnto...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nclass=\"slider-title\"&gt;Horizo\n Commerce\nPark&lt;br&gt;&lt;span\nclass=\"slider-city\"...&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"slider-city\"&gt;San\nAntonio, TX&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"slider-city\"&gt;Orlando\n FL&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "errorcount": 70
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      4
+    ]
+  ]
+}
