@@ -1,0 +1,940 @@
+{
+  "script": "aatt",
+  "batch": "aattAll",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1anss",
+  "logCount": 46,
+  "logSize": 3086,
+  "prohibitedCount": 2,
+  "visitTimeoutCount": 1,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.wyndhamhotels.com/",
+      "what": "Wyndham (CCVAX)",
+      "result": "https://www.wyndhamhotels.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.wyndhamhotels.com/",
+      "result": [
+        {
+          "type": "error",
+          "msg": "A title should be provided for the document, using a non-empty title element in the head section.",
+          "code": "&lt;head&gt;\n  \n   \n    \n        &lt;/head&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H25\" target=\"_blank\">H25</a>"
+          ],
+          "id": "H25"
+        },
+        {
+          "type": "error",
+          "msg": "The language specified in the lang attribute of the document element does not appear to be well-formed.",
+          "code": "",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H57\" target=\"_blank\">H57</a>"
+          ],
+          "id": "H57"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nsrc=\"javascript:void(0)\"\ntitle=\"\" style=\"width: 0px;\nheight: 0px; border: 0px;\ndisplay:\nnone;\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "Interfering with a user agent's ability to zoom may be a failure of this Success Criterion.",
+          "code": "&lt;meta name=\"viewport\"\ncontent=\"width=device-width,in\ntial-scale=1.0,maximum-scale=2\n0,user-scalable=yes\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"alert-component\nbg-dark knockout-body-text\"\nstyle=\"background-image:url()\n\"&gt;\n\t\t\n\n\n&lt;div class=\"aem-Grid\naem-Grid--12\naem-Grid--...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p&gt;&lt;a\nhref=\"?lightbox=/content/whg-e\nomm-responsive/e...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"?lightbox=/content/whg-e\nomm-responsive/en-us/whg/about\nus/faq-covid-19/covid-19-updat\ns.display.html\"\ndata-lightbox-trigger=\"\"\ndata-toggle=\"modal\"\ndata-remote=\"false\"\ndata-target=\"#genericLightbox\"\ndata-lightbox-path=\"/content/w\ng-ecomm-responsive/en-us/whg/a\nout-us/faq-covid-19/covid-19-u\ndates.display.html\"&gt;READY\nFOR TRAVEL&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"#\"\nclass=\"site-wide-alert-close\"&\nt;\n                        &lt;i\nclass=\"whg-core-icon-p...&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"#\"\nclass=\"site-wide-alert-close\"&\nt;\n                    &lt;i\nclass=\"whg-core-icon-plus\"...&\nt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"wyndham-rewards-links\"&\nt;\n                      &lt;a\nhref=\"#\"\nclass=\"wr-login...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"wyndham-rewards-user-de\nails hidden dropdown\"&gt;\n                      &lt;a\nhref=\"#\"\nclass=\"wr-logge...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"#\"\nclass=\"separator-circle\"&gt;&l\n;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"user-points\"&gt;\n                        &lt;a\nhref=\"#\"\nclass=\"wr-log...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form\nname=\"booking-bar-hidden\"\naction=\"#\" class=\"hidden-xs\nhidden-sm hidden-md\"\nrole=\"search\"&gt;\n  &lt;input type=\"hidden\"\nname=\"autocomplete\"\nid=\"au...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "error",
+          "msg": "This checkboxinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"checkbox\"\nname=\"redeemWRPoint\"\nid=\"redeemWRPoint\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input type=\"checkbox\"\nname=\"redeemWRPoint\"\nid=\"redeemWRPoint\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"col-xs-24\npll-image-container-fit\neager-load\neager-load-pageload\"\ndata-src=\"/content/dam/creativ\n-images/en-us/wr/text/3x2/wr_3\n2_fall_broadscale_refresh_text\ndec21.jpg?\"\ndata-info=\"{&amp;quot;sm&amp;q\not;:{&amp;quot;s&amp;quot;:&am\n;quot;/content/dam/creative-im\nges/en-us/wr/text/3x2/wr_3x2_f\nll_broadscale_refresh_text_dec\n1.jpg&amp;quot;,&amp;quot;r&am\n;quot;:1.5},&amp;quot;sd&amp;q\not;:{&amp;quot;s&amp;quot;:&am\n;quot;/content/dam/creative-im\nges/en-us/wr/text/3x2/wr_3x2_f\nll_broadscale_refresh_text_dec\n1.jpg&amp;quot;,&amp;quot;r&am\n;quot;:1.5},&amp;quot;wm&amp;q\not;:&amp;quot;720&amp;quot;,&a\np;quot;wd&amp;quot;:&amp;quot;\n800&amp;quot;,&amp;quot;wt&amp\nquot;:&amp;quot;1200&amp;quot;\n\" style=\"background-image:\nurl(&amp;quot;/content/dam/cre\ntive-images/en-us/wr/text/3x2/\nr_3x2_fall_broadscale_refresh_\next_dec21.jpg?downsize=1800:*&\nmp;quot;);\"&gt;\n\n                &lt;img\nsrc=\"data:image/png;base64,...\nlt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"data:image/png;base64,iVB\nRw0KGgoAAAANSUhEUgAAAAEAAAABCA\nAAAC1HAwCAAAAC0lEQVR42mNkYAAAA\nYAAjCB0C8AAAAASUVORK5CYII=\"\nclass=\"pll-image-container-pla\neholder\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;a\nhref=\"https://www.wyndhamhotel\n.com/hotel-deals/earn-a-free-n\nght?icid=IN%3Aoh7oa0lqv5tcfm6\"\ntarget=\"_self\"&gt;STAY ANY 4\nNIGHTS,&lt;br&gt;GET 1\nFREE&lt;br&gt;&lt;span\nstyle=\"f...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span style=\"font-size:\n15.0px;\"&gt;Restrictions\n&amp;amp; Terms\nApply&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;a\nhref=\"?lightbox=/content/whg-e\nomm-responsive/en-us/wr/lightb\nx/earn-a-free-night-terms.disp\nay.html\" target=\"_self\"\ndata-lightbox-trigger=\"\"\ndata-toggle=\"modal\"\ndata-remote=\"false\"\ndata-target=\"#genericLightbox\"\ndata-lightbox-path=\"/content/w\ng-ecomm-responsive/en-us/wr/li\nhtbox/earn-a-free-night-terms.\nisplay.html\"&gt;Valid for\n7,500 bonus points. Free\nnight redemptio...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"pll-background-wrapper\npll-image-container-fit\neager-load\neager-load-pageload\"\ndata-info=\"{&amp;quot;sd&amp;q\not;:{&amp;quot;c&amp;quot;:&am\n;quot;0:1200&amp;quot;,&amp;qu\nt;s&amp;quot;:&amp;quot;/conte\nt/dam/creative-images/en-us/wr\ntext/3x2/wr_3x2_fall_broadscal\n_refresh_text_dec21.jpg&amp;qu\nt;,&amp;quot;r&amp;quot;:0.0},\namp;quot;wm&amp;quot;:&amp;quo\n;720&amp;quot;,&amp;quot;wd&am\n;quot;:&amp;quot;1800&amp;quot\n,&amp;quot;wt&amp;quot;:&amp;q\not;1200&amp;quot;}\"\nstyle=\"background-image:\nurl(&amp;quot;/content/dam/cre\ntive-images/en-us/wr/text/3x2/\nr_3x2_fall_broadscale_refresh_\next_dec21.jpg?crop=0:1200;*,*&\nmp;amp;downsize=1800:*&amp;quo\n;);\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "code": "&lt;form\nname=\"booking-bar-form\"\nclass=\"booking-bar-form\nbooking-bar-main\" action=\"#\"\nmethod=\"post\"\ndata-parsley-validate=\"\"\nrole=\"search\"\nnovalidate=\"\"&gt;\n  &lt;nav class=\"add-top\nbooking-bar\"\nid=\"bookingBar...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H71\" target=\"_blank\">H71</a>"
+          ],
+          "id": "H71"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p style=\"text-align:\ncenter;\"&gt;&lt;a\nhref=\"https://www.wyndhamhotel\n.com/wyndham-rew...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nq_jan19.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\ni_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\ne_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nq_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nx_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\na_jan19.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nr_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nu_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nt_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nj_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nl_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nt_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nh_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\ng_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\na_jan19.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nr_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nn_may18.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\nz_mar19.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/images/\nlobal/logos/wr-whg-logos-text-\nffers-component/wr_logo_brand_\ns_sep19.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/creativ\n-images/en-us/um/flat/misc/whr\nicon_no_link_star_apr19.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/creativ\n-images/en-us/um/flat/misc/whr\nicon_no_link_lap_top_jul21.svg\n class=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/creativ\n-images/en-us/um/flat/misc/whr\nicon_no_link_spray_may20.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4 style=\"text-align:\ncenter;\"&gt;&amp;nbsp;&lt;/h4&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h4 style=\"text-align:\ncenter;\"&gt;&amp;nbsp;&lt;/h4&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/creativ\n-images/en-us/um/flat/misc/whr\nicon_no_link_sale_tag_apr19.sv\n\" class=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"modal_rlnyog?icid=IN%3Anj6fyuga00mz799\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a\nhref=\"#modal_rlnyog?icid=IN%3A\nj6fyuga00mz799\"\nclass=\"btn-secondary\ncard-button\"\ntarget=\"_self\"&gt;Book\nNow&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/creativ\n-images/en-us/um/flat/misc/whr\nicon_no_link_credit_cards_apr1\n.svg\" class=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/creativ\n-images/en-us/um/flat/misc/whr\nicon_no_link_mobile_checkin_au\n20.svg\" class=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p&gt;&lt;b&gt;Lightning\nBook&lt;sup&gt;®&lt;/sup&gt;&l\n;/b&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/creativ\n-images/en-us/um/flat/misc/whr\nicon_no_link_account_aug20.svg\n class=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p&gt;&lt;b&gt;Wyndham\nRewards\nAccount&lt;/b&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\ndata-src=\"/content/dam/creativ\n-images/en-us/um/flat/misc/whr\nicon_no_link_heart_apr20.svg\"\nclass=\"img-responsive\nlazy-load-viewport\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p&gt;&lt;b&gt;Mobile\nCheck-In &amp;amp;\nCheckout&lt;/b&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"data:image/png;base64,iVB\nRw0KGgoAAAANSUhEUgAAAAEAAAABCA\nAAAC1HAwCAAAAC0lEQVR42mNkYAAAA\nYAAjCB0C8AAAAASUVORK5CYII=\"\nclass=\"pll-image-full-size \"\nalt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"data:image/png;base64,iVB\nRw0KGgoAAAANSUhEUgAAAAEAAAABCA\nAAAC1HAwCAAAAC0lEQVR42mNkYAAAA\nYAAjCB0C8AAAAASUVORK5CYII=\"\nclass=\"pll-image-full-size \"\nalt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;A\nto Club\nDiscounts&lt;/strong&gt;&lt;/p\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;P\ny Now &amp;amp; Save 15% or\nMore&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;$\n Off Per\nNight&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;E\nrth Day Adventure\nSale&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;T\ne Rewarding Rate for\nMembers&lt;/strong&gt;&lt;/p&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;S\nay 2+ Nights, Save\n20%&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;$\n Off Per\nNight&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;S\nnior Discount at Wyndham\nHotels &amp;amp;\nRe...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;B\nst Available Rate + Bonus\nPoints&lt;/strong...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;A\nRP\nDiscount&lt;/strong&gt;&lt;/p&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;S\nve up to\n15%&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;S\nve up to\n15%&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;E\neryday Heroes\nRate&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;D\nlce\nOffer&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;E\nclusive Military Offer: Save\nup to 15% +...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;M\nmbers Always Get the Lowest\nPrice&lt;/stron...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p class=\"headline-g\nbook-redeem-title\nform-title\"&gt;&lt;strong&gt;G\nt up to 20%\nOff&lt;/strong&gt;&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"app-download-container\"\ngt;\n          &lt;a\nid=\"apple-app-download\"\nclass=\"app-d...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a id=\"apple-app-download\"\nclass=\"app-download-button\nlazy-load-footer-app-badge\nlazy-load-viewport\"\nhref=\"https://itunes.apple.com\napp/apple-store/id783649785?pt\n1019643&amp;amp;mt=8&amp;amp;c\n=MW:ALL:20150202:MWFOOT\"&gt;\n          &lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div align=\"center\"\nstyle=\"border-top:1px solid\nrgba(255,255,255,.2);\"&gt;\n&lt;div&gt;&lt;img\ndata-src=\"https://www.wyndhamh\ntels.com...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\ndata-src=\"https://www.wyndhamh\ntels.com/content/dam/images/co\nmon/en-us/us-news/WHG_US_News_\nadge_sep2017-2.png\"\nclass=\"lazy-load-viewport\"\nstyle=\"padding:50px 0;\nwidth:200px;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li\nrole=\"presentation\"&gt;\n                      &lt;a\nhref=\"https://www.wyndha...&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li\nrole=\"presentation\"&gt;\n                      &lt;a\nhref=\"https://www.wyndha...&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li\nrole=\"presentation\"&gt;\n                      &lt;a\nhref=\"https://www.wyndha...&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li\nrole=\"presentation\"&gt;\n                      &lt;a\nhref=\"https://www.wyndha...&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li\nrole=\"presentation\"&gt;\n                      &lt;a\nhref=\"https://www.wyndha...&lt\n/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li\nrole=\"presentation\"&gt;\n                   \n&lt;a&gt;&lt;/a&gt;\n                  &lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li role=\"presentation\"\nclass=\"nav-toll-free-number\nhidden\"&gt;\n                    &lt;a\nhref=\"#\"&gt;&lt;/a&gt;\n            ...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "type": "error",
+          "msg": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+          "code": "&lt;li role=\"presentation\"\nclass=\"language-selector\"&gt;\n    &lt;div\nclass=\"dropdown\"&gt;\n        &lt;button\nclass=...&lt;/li&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F92\" target=\"_blank\">F92</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA4\" target=\"_blank\">ARIA4</a>"
+          ],
+          "id": "ARIA4+F92"
+        },
+        {
+          "errorcount": 23
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      16
+    ]
+  ]
+}

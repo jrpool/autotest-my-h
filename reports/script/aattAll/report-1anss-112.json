@@ -1,0 +1,1045 @@
+{
+  "script": "aatt",
+  "batch": "aattAll",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1anss",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://corelab.com/",
+      "what": "Core Laboratories (CCVAX)",
+      "result": "https://corelab.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://corelab.com/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+          "code": "&lt;table id=\"langIcons\"&gt;\n                       \n&lt;thead&gt;\n                \n...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H39\" target=\"_blank\">H39</a>"
+          ],
+          "id": "H39"
+        },
+        {
+          "type": "error",
+          "msg": "This buttoninput element does not have a name available to an accessibility API. Valid names are: value , aria-label , aria-labelledby .",
+          "code": "&lt;input id=\"btnUS\"\ntype=\"button\" value=\"\"\ntitle=\"English\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This buttoninput element does not have a name available to an accessibility API. Valid names are: value , aria-label , aria-labelledby .",
+          "code": "&lt;input id=\"btnCn\"\ntype=\"button\" value=\"\"\ntitle=\"Chinese\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This buttoninput element does not have a name available to an accessibility API. Valid names are: value , aria-label , aria-labelledby .",
+          "code": "&lt;input id=\"btnRu\"\ntype=\"button\" value=\"\"\ntitle=\"Russian\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input\nname=\"ctl00$txtSearch\"\ntype=\"text\" id=\"txtSearch\"\nclass=\"txtSearch\"\nplaceholder=\"Search our site\"\nautocomplete=\"off\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input\nname=\"ctl00$txtSearch\"\ntype=\"text\" id=\"txtSearch\"\nclass=\"txtSearch\"\nplaceholder=\"Search our site\"\nautocomplete=\"off\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "error",
+          "msg": "This buttoninput element does not have a name available to an accessibility API. Valid names are: value , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"submit\"\nname=\"ctl00$btnSearch\"\nvalue=\"\" id=\"btnSearch\"\nclass=\"btn-search\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h3&gt;Reservoir\nDescription&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h1 to be properly nested.",
+          "code": "&lt;h3&gt;Reservoir\nDescription&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"vjs-poster\"\ntabindex=\"-1\"\nstyle=\"background-image:\nurl(&amp;quot;/images/intro/co\nelab_video_poster.jpg&amp;quot\n);\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"vjs-poster\"\ntabindex=\"-1\"\nstyle=\"background-image:\nurl(&amp;quot;/images/intro/co\nelab_video_poster.jpg&amp;quot\n);\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"vjs-poster\"\ntabindex=\"-1\"\nstyle=\"background-image:\nurl(&amp;quot;/images/intro/co\nelab_video_poster.jpg&amp;quot\n);\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h5 element should be an h3 to be properly nested.",
+          "code": "&lt;h5&gt;Corporate\nPresentation&lt;/h5&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/investors/cms/images/pre\nentation-video-poster-thumb.jp\n\" alt=\"\"\nclass=\"img-responsive\nvideobutton-background\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div id=\"spotlightImages\"\nstyle=\"background-image:\nurl(&amp;quot;/images/advanced\ncuttings-spotlight.jpg&amp;quo\n;); width: 110px; height:\n142px; position: relative;\nbackground-position: left\ntop;\"&gt;                   \n                    &lt;a\nhref=\"p...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div id=\"spotlightImages\"\nstyle=\"background-image:\nurl(&amp;quot;/images/advanced\ncuttings-spotlight.jpg&amp;quo\n;); width: 110px; height:\n142px; position: relative;\nbackground-position: left\ntop;\"&gt;                   \n                    &lt;a\nhref=\"p...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"ps/drc\"&gt;&lt;img\nsrc=\"/images/drc.jpg\" alt=\"\"\nstyle=\"display: ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"owen/charges-HEROPerFRAC\n&gt;&lt;img\nsrc=\"/images/heroperfrac.jpg\"\nalt=\"\" style=\"d...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"/sanchez\"&gt;&lt;img\nsrc=\"/images/sanchez-tech.jpg\"\nalt=\"\" style=\"...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"https://www.youtube.com/\natch?v=0tvDpnWK9vg\"\ntarget=\"_blank\"&gt;&lt;img\nsrc=\"/images/iron-corehand.jpg\n alt=\"\" style=...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"irs/corefinder\"&gt;&lt;i\ng\nsrc=\"/images/CoreFinder-Spotli\nht.png\" alt=\"\"...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages11\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: 0px 0px;\nleft: 0px; top: 0px; opacity:\n1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages11\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: 0px 0px;\nleft: 0px; top: 0px; opacity:\n1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages12\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -16px\n0px; left: 16px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages12\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -16px\n0px; left: 16px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages13\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -32px\n0px; left: 32px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages13\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -32px\n0px; left: 32px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages14\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -48px\n0px; left: 48px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages14\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -48px\n0px; left: 48px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages15\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -64px\n0px; left: 64px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages15\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -64px\n0px; left: 64px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages16\"\nstyle=\"width: 15px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -80px\n0px; left: 80px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages16\"\nstyle=\"width: 15px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -80px\n0px; left: 80px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages17\"\nstyle=\"width: 15px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -95px\n0px; left: 95px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages17\"\nstyle=\"width: 15px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -95px\n0px; left: 95px; top: 0px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages21\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: 0px\n-29px; left: 0px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages21\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: 0px\n-29px; left: 0px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages22\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -16px\n-29px; left: 16px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages22\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -16px\n-29px; left: 16px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages23\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -32px\n-29px; left: 32px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages23\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -32px\n-29px; left: 32px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages24\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -48px\n-29px; left: 48px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages24\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -48px\n-29px; left: 48px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages25\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -64px\n-29px; left: 64px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages25\"\nstyle=\"width: 16px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -64px\n-29px; left: 64px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages26\"\nstyle=\"width: 15px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -80px\n-29px; left: 80px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages26\"\nstyle=\"width: 15px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -80px\n-29px; left: 80px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages27\"\nstyle=\"width: 15px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -95px\n-29px; left: 95px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages27\"\nstyle=\"width: 15px; height:\n29px; float: left; position:\nabsolute;\nbackground-position: -95px\n-29px; left: 95px; top: 29px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages31\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: 0px\n-58px; left: 0px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages31\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: 0px\n-58px; left: 0px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages32\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -16px\n-58px; left: 16px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages32\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -16px\n-58px; left: 16px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages33\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -32px\n-58px; left: 32px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages33\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -32px\n-58px; left: 32px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages34\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -48px\n-58px; left: 48px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages34\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -48px\n-58px; left: 48px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages35\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -64px\n-58px; left: 64px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages35\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -64px\n-58px; left: 64px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages36\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -80px\n-58px; left: 80px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages36\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -80px\n-58px; left: 80px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages37\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -95px\n-58px; left: 95px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages37\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -95px\n-58px; left: 95px; top: 58px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages41\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: 0px\n-86px; left: 0px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages41\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: 0px\n-86px; left: 0px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages42\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -16px\n-86px; left: 16px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages42\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -16px\n-86px; left: 16px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages43\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -32px\n-86px; left: 32px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages43\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -32px\n-86px; left: 32px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages44\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -48px\n-86px; left: 48px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages44\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -48px\n-86px; left: 48px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages45\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -64px\n-86px; left: 64px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages45\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -64px\n-86px; left: 64px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages46\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -80px\n-86px; left: 80px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages46\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -80px\n-86px; left: 80px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages47\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -95px\n-86px; left: 95px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages47\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -95px\n-86px; left: 95px; top: 86px;\nopacity: 1; background-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages51\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: 0px\n-114px; left: 0px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages51\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: 0px\n-114px; left: 0px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages52\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -16px\n-114px; left: 16px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages52\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -16px\n-114px; left: 16px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages53\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -32px\n-114px; left: 32px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages53\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -32px\n-114px; left: 32px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages54\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -48px\n-114px; left: 48px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages54\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -48px\n-114px; left: 48px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages55\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -64px\n-114px; left: 64px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages55\"\nstyle=\"width: 16px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -64px\n-114px; left: 64px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages56\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -80px\n-114px; left: 80px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages56\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -80px\n-114px; left: 80px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages57\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -95px\n-114px; left: 95px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"irs/studies/eor-eagle-fo\nd\" class=\"cs-spotlightImages\"\nid=\"cs-spotlightImages57\"\nstyle=\"width: 15px; height:\n28px; float: left; position:\nabsolute;\nbackground-position: -95px\n-114px; left: 95px; top:\n114px; opacity: 1;\nbackground-image:\nurl(&amp;quot;/images/EOR-Spot\night.png&amp;quot;);\"&gt;&lt;/\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nid=\"cs-navigation-spotlightIma\nes\" style=\"display:\nnone;\"&gt;&lt;a href=\"#\"\nid=\"cs-prev-spotlightImages\"\nclass=\"cs...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"#\"\nid=\"cs-prev-spotlightImages\"\nclass=\"cs-prev\"\nstyle=\"position: absolute;\ntop: 56px; left: 0px;\nz-index: 1001; line-height:\n30px; opacity:\n0.7;\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a href=\"#\"\nid=\"cs-next-spotlightImages\"\nclass=\"cs-next\"\nstyle=\"position: absolute;\ntop: 56px; right: 0px;\nz-index: 1001; line-height:\n30px; opacity:\n0.7;\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nid=\"cs-buttons-spotlightImages\n class=\"cs-buttons\"\nstyle=\"left: 45%;\nmargin-left: -57.5px;\nposition: relative;\"&gt;&lt;a\nhref=\"#\"\nclass=\"cs-button-spotlightImag\ns\" id=\"...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/images/icons/loading.gif\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/images/icons/loading.gif\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/images/icons/loading.gif\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"vjs-poster\"\ntabindex=\"-1\"\nstyle=\"background-image:\nurl(&amp;quot;/images/intro/co\nelab_video_poster.jpg&amp;quot\n);\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe height=\"0\"\nwidth=\"0\" style=\"display:\nnone; visibility: hidden;\"\nsrc=\"https://8999991.fls.doubl\nclick.net/activityi;src=899999\n;type=homep0;cat=https0;ord=15\n4541800086;gtm=2od150;auiddc=2\n36683468.1641600231;ps=1;~oref\nhttps%3A%2F%2Fcorelab.com%2F?\"\ngt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "errorcount": 52
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      2
+    ]
+  ]
+}

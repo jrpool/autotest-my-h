@@ -1,0 +1,365 @@
+{
+  "script": "aatt",
+  "batch": "aattAll",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1anss",
+  "logCount": 12,
+  "logSize": 969,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 1,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.scotiabank.com/ca/en/personal.html",
+      "what": "Scotiabank (VEIGX)",
+      "result": "https://www.scotiabank.com/ca/en/personal.html"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.scotiabank.com/ca/en/personal.html",
+      "result": [
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"at--1660509177\" found on the web page.",
+          "code": "&lt;style id=\"at--1660509177\"\nclass=\"at-flicker-control\"&gt;\nTML &gt; BODY &gt;\nDIV:nth-of-type(1) &gt;\nMAIN:nth-of-typ...&lt;/style&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"at--1660509177\" found on the web page.",
+          "code": "&lt;style id=\"at--1660509177\"\nclass=\"at-flicker-control\"&gt;\nTML &gt; BODY &gt;\nDIV:nth-of-type(1) &gt;\nMAIN:nth-of-typ...&lt;/style&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"at--1660509177\" found on the web page.",
+          "code": "&lt;style id=\"at--1660509177\"\nclass=\"at-flicker-control\"&gt;\nTML &gt; BODY &gt;\nDIV:nth-of-type(1) &gt;\nMAIN:nth-of-typ...&lt;/style&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"at--1660509177\" found on the web page.",
+          "code": "&lt;style id=\"at--1660509177\"\nclass=\"at-flicker-control\"&gt;\nTML &gt; BODY &gt;\nDIV:nth-of-type(1) &gt;\nMAIN:nth-of-typ...&lt;/style&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form id=\"search\"\nclass=\"bns--search-new\nsearch-bns desktop\"\nrole=\"search\"\ndata-recent-searches=\"false\"&g\n;\n                &lt;label\nfor=\"header__search\"\nclass...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"button\"\nclass=\"s--submit\"\ndata-submit=\"\"&gt;\n                \n                \n              \n...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nclass=\"s--submit--icon\"\nsrc=\"data:image/svg+xml;base64\nPD94bWwgdmVyc2lvbj0iMS4wIiBlbm\nvZGluZz0idXRmLTgiPz48c3ZnIHZlc\nNpb249IjEuMSIgaWQ9IkxheWVyXzEi\nHhtbG5zPSJodHRwOi8vd3d3LnczLm9\nZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbm\n9Imh0dHA6Ly93d3cudzMub3JnLzE5O\nkveGxpbmsiIHg9IjBweCIgeT0iMHB4\niB2aWV3Qm94PSIwIDAgNTEuMSA1MS4\nIiBzdHlsZT0iZW5hYmxlLWJhY2tncm\n1bmQ6bmV3IDAgMCA1MS4xIDUxLjE7I\nB4bWw6c3BhY2U9InByZXNlcnZlIj48\n3R5bGUgdHlwZT0idGV4dC9jc3MiPi5\ndDB7ZmlsbDojNzQ3NDc0O3N0cm9rZT\njNzQ3NDc0O3N0cm9rZS13aWR0aDoyO\nN0cm9rZS1taXRlcmxpbWl0OjEwO308\n3N0eWxlPjx0aXRsZT5JY29uX1NlYXJ\naDwvdGl0bGU+PGRlc2M+Q3JlYXRlZC\n3aXRoIFNrZXRjaC48L2Rlc2M+PGcga\nQ9IlN5bWJvbHMiPjxnIGlkPSJJY29u\n1NlYXJjaCI+PHBhdGggaWQ9IkNvbWJ\nbmVkLVNoYXBlIiBjbGFzcz0ic3QwIi\nkPSJNMzEuOCwzMC45YzAuMSwwLDAuM\nwwLjEsMC4zLDAuMmwxNy44LDE3Ljhj\nC4zLDAuMywwLjMsMC44LDAsMS4xYy0\nLjMsMC4zLTAuOCwwLjMtMS4xLDBMMz\nsMzIuMWMtMC4xLTAuMS0wLjEtMC4yL\nAuMi0wLjNjLTMuMiwyLjktNy40LDQu\ny0xMi4xLDQuN0M5LDM2LjYsMSwyOC4\nLDEsMTguOEMxLDksOSwxLDE4LjgsMX\nxNy44LDgsMTcuOCwxNy44QzM2LjYsM\nMuNSwzNC44LDI3LjcsMzEuOCwzMC45\niBNMzUuMSwxOC44YzAtOS03LjMtMTY\nMy0xNi4zLTE2LjNTMi41LDkuOCwyLj\nsMTguOGMwLDksNy4zLDE2LjMsMTYuM\nwxNi4zUzM1LjEsMjcuOCwzNS4xLDE4\njh6Ii8+PC9nPjwvZz48L3N2Zz4=\"\nalt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div&gt;\n                    &lt;a\nhref=\"https://www.scotiaon...&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"21\"\nheight=\"21\"\nsrc=\"/etc/designs/bns/img/canv\ns/lock-white.svg\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img width=\"21\"\nheight=\"21\"\nsrc=\"/etc/designs/bns/img/canv\ns/lock-red.svg\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form class=\"mav__search\nsearch-bns\nmobile\"&gt;&lt;label\nfor=\"header__search_mobile\"\nclass=\"sr-only\"...&lt;/form&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nid=\"language\"&gt;&lt;option\nvalue=\"/ca/en/personal.html\"&g\n;English&lt;/opti...&lt;/selec\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nid=\"language\"&gt;&lt;option\nvalue=\"/ca/en/personal.html\"&g\n;English&lt;/opti...&lt;/selec\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nid=\"siteNames\"&gt;&lt;option\nvalue=\"/ca/en/personal.html\"&g\n;Personal&lt;/opt...&lt;/selec\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nid=\"siteNames\"&gt;&lt;option\nvalue=\"/ca/en/personal.html\"&g\n;Personal&lt;/opt...&lt;/selec\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nid=\"09b3fbc5-d44d-d4cd-e432-3f\n05658667b\"\nclass=\"brand3-hero-renditions\n mediaDisabledTablet \nmediaDisabledMobile \"\ndata-renditions=\"{&amp;quot;de\nault&amp;quot;:&amp;quot;/cont\nnt/dam/scotiabank/canada/commo\n/imagery/Scotiabank-investment\n-sheep-hero-homepage.jpg/_jcr_\nontent/renditions/cq5dam.web.1\n80.1280.jpeg&amp;quot;,&amp;qu\nt;small&amp;quot;:false,&amp;q\not;medium&amp;quot;:false,&amp\nquot;large&amp;quot;:&amp;quot\n/content/dam/scotiabank/canada\ncommon/imagery/Scotiabank-inve\ntments-sheep-hero-homepage.jpg\n_jcr_content/renditions/cq5dam\nweb.2000.2000.jpg&amp;quot;}\"\ndata-sizes=\"{&amp;quot;large&a\np;quot;:&amp;quot;550px&amp;qu\nt;,&amp;quot;medium&amp;quot;:\namp;quot;67vw&amp;quot;,&amp;q\not;small&amp;quot;:&amp;quot;1\n0vw&amp;quot;}\" style=\"\nheight:550px;\nbackground-image:\nurl('/content/dam/scotiabank/c\nnada/common/imagery/Scotiabank\ninvestments-sheep-hero-homepag\n.jpg/_jcr_content/renditions/c\n5dam.web.2000.2000.jpg')\nheight:550px;\nbackground-image:\nurl('/content/dam/scotiabank/c\nnada/common/imagery/Scotiabank\ninvestments-sheep-hero-homepag\n.jpg/_jcr_content/renditions/c\n5dam.web.2000.2000.jpg')\"&gt;&\nt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select\nclass=\"rec-tabs-select\"\nrole=\"tablist\"\ndata-dropdown-type=\"selection\"\ngt;\n                    \n                        \n   ...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select\nclass=\"rec-tabs-select\"\nrole=\"tablist\"\ndata-dropdown-type=\"selection\"\ngt;\n                    \n                        \n   ...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nclass=\"rec-tabs-select\"\nrole=\"tablist\"\ndata-dropdown-type=\"selection\"\ngt;\n                    \n                        \n   ...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"featured\" found on the web page.",
+          "code": "&lt;option role=\"tab\"\naria-controls=\"featured-panel\"\naria-selected=\"true\"\nid=\"featured\"\nclass=\"option-element\"\nvalue=\"featured-panel\"\nselected=\"true\"&gt;Featured\n                           \n&lt;/option&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"accounts\" found on the web page.",
+          "code": "&lt;option\naria-controls=\"accounts-panel\"\nid=\"accounts\"\nclass=\"option-element\"\naria-selected=\"false\"\nvalue=\"accounts-panel\"&gt;Acco\nnts\n                           \n&lt;/option&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"CreditCards-eng\" found on the web page.",
+          "code": "&lt;option\naria-controls=\"credit-cards-pa\nel\" id=\"CreditCards-eng\"\nclass=\"option-element\"\naria-selected=\"false\"\nvalue=\"credit-cards-panel\"&gt;\nredit cards\n                           \n&lt;/option&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"borrowing\" found on the web page.",
+          "code": "&lt;option\naria-controls=\"borrowing-panel\n id=\"borrowing\"\nclass=\"option-element\"\naria-selected=\"false\"\nvalue=\"borrowing-panel\"&gt;Bor\nowing\n                           \n&lt;/option&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"investments\" found on the web page.",
+          "code": "&lt;option\naria-controls=\"investments-pan\nl\" id=\"investments\"\nclass=\"option-element\"\naria-selected=\"false\"\nvalue=\"investments-panel\"&gt;I\nvestments\n                           \n&lt;/option&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"learning\" found on the web page.",
+          "code": "&lt;option\naria-controls=\"learning-panel\"\nid=\"learning\"\nclass=\"option-element\"\naria-selected=\"false\"\nvalue=\"learning-panel\"&gt;Lear\ning\n                           \n&lt;/option&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"map--bg\"\nstyle=\"background-image:\nurl(\\2f content\\2f\ndam\\2fscotiabank\\2f canada\\2f\nen\\2fimagery\\2fMap_Background.\npg)\"&gt;\n        &lt;div\nclass=\"container\"&gt;\n            &lt;div\n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"/content/dam/scotiabank/i\nages/new-brand/v4/Branch-v3.sv\n\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;div&gt;\n                             \n      &lt;h2\nclass=\"ma...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h2\nclass=\"map--card-title\"&gt;Loc\nte branches, advisors, and\nABMs&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span class=\"text\n\"&gt;Find your nearest\nbranch&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div style=\"text-align:\ncenter;\"&gt;&lt;a\nhref=\"https://www.cdic.ca/en/a\nout-di/what-we-c...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p class=\"f--social\"&gt;\n                        &lt;a\ntarget=\"_blank\"\nhref=\"...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "errorcount": 15
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      2
+    ]
+  ]
+}

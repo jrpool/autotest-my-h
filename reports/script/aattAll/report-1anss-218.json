@@ -1,0 +1,810 @@
+{
+  "script": "aatt",
+  "batch": "aattAll",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1anss",
+  "logCount": 6,
+  "logSize": 696,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 1,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.signify.com/en-us",
+      "what": "Signify (NALFX)",
+      "result": "https://www.signify.com/en-us"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.signify.com/en-us",
+      "result": [
+        {
+          "type": "error",
+          "msg": "A title should be provided for the document, using a non-empty title element in the head section.",
+          "code": "&lt;head&gt;&lt;style\ntype=\"text/css\"&gt;@font-face\n{ font-family:\nr...&lt;/head&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H25\" target=\"_blank\">H25</a>"
+          ],
+          "id": "H25"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nsrc=\"javascript:void(0)\"\ntitle=\"\" style=\"width: 0px;\nheight: 0px; border: 0px;\ndisplay:\nnone;\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"javascript:void(0);\"\ntarget=\"\"\ndata-track-type=\"track-nav-nen\n\" data-track-compid=\"n07\"\ndata-track-navid=\"text\"\ndata-track-navdest=\"javascript\nvoid(0);\"\nclass=\"p-inactive\"&gt;&lt;span\nclass=\"p-link-more\"&gt;&lt;/sp\nn&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input\nclass=\"se20__input-field\"\ntype=\"text\" placeholder=\"What\nare you looking for?\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input\nclass=\"se20__input-field\"\ntype=\"text\" placeholder=\"What\nare you looking for?\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;section\nclass=\"p-gc04v3-gridcontainer\np-full-bleed\n                           \n                         \n                             \n             \n                             \n             \n                             \n               \n                      \np-l-spacing-top-e\np-m-spacing-top-e\np-s-spacing-top-d\np-xs-spacing-top-d\np-l-spacing-bottom-e\np-m-spacing-bottom-e\np-s-spacing-bottom-d\np-xs-spacing-bottom-d \" id=\"\"\ndata-comp-id=\"gc04v3Gridcontai\ner\"\ndata-containerlink=\"{'useLink'\n'no'}\" data-gc-linkurl=\"\"\ndata-cookie-id=\"\"\ndata-lazyload=\"disabled\"\nstyle=\"min-height: 140px;\nbackground-image:\nurl(&amp;quot;/content/dam/sig\nify/canada-english/homepage/si\nnify-ecatalog-masthead-l.jpg&a\np;quot;); background-repeat:\nno-repeat;\nbackground-position: center\ncenter; background-size:\ncover;\"\ndata-background=\"{&amp;quot;bl\ned&amp;quot;:&amp;quot;yes&amp\nquot;,&amp;quot;fill&amp;quot;\n&amp;quot;image&amp;quot;,&amp\nquot;solidcolor&amp;quot;:&amp\nquot;highcontrast&amp;quot;,&a\np;quot;transparency&amp;quot;:\namp;quot;100&amp;quot;,&amp;qu\nt;gradientcolor&amp;quot;:&amp\nquot;highcontrast&amp;quot;,&a\np;quot;videoLoop&amp;quot;:&am\n;quot;yes&amp;quot;,&amp;quot;\nideoSourceUrl&amp;quot;:&amp;q\not;&amp;quot;,&amp;quot;videoP\nsterUrl&amp;quot;:&amp;quot;&a\np;quot;,&amp;quot;l&amp;quot;:\n&amp;quot;repeat&amp;quot;:&am\n;quot;no-repeat&amp;quot;,&amp\nquot;halign&amp;quot;:&amp;quo\n;center&amp;quot;,&amp;quot;va\nign&amp;quot;:&amp;quot;center\namp;quot;,&amp;quot;image&amp;\nuot;:&amp;quot;/content/dam/si\nnify/canada-english/homepage/s\ngnify-ecatalog-masthead-l.jpg&\nmp;quot;,&amp;quot;position&am\n;quot;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;m&amp;quot;:{\namp;quot;repeat&amp;quot;:&amp\nquot;no-repeat&amp;quot;,&amp;\nuot;halign&amp;quot;:&amp;quot\ncenter&amp;quot;,&amp;quot;val\ngn&amp;quot;:&amp;quot;center&\nmp;quot;,&amp;quot;image&amp;q\not;:&amp;quot;/content/dam/sig\nify/canada-english/homepage/si\nnify-ecatalog-masthead-m.jpg&a\np;quot;,&amp;quot;position&amp\nquot;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;s&amp;quot;:{\namp;quot;repeat&amp;quot;:&amp\nquot;no-repeat&amp;quot;,&amp;\nuot;halign&amp;quot;:&amp;quot\nright&amp;quot;,&amp;quot;vali\nn&amp;quot;:&amp;quot;center&a\np;quot;,&amp;quot;image&amp;qu\nt;:&amp;quot;/content/dam/sign\nfy/canada-english/homepage/sig\nify-ecatalog-masthead-s.jpg&am\n;quot;,&amp;quot;position&amp;\nuot;:&amp;quot;right\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;xs&amp;quot;:\n&amp;quot;repeat&amp;quot;:&am\n;quot;no-repeat&amp;quot;,&amp\nquot;halign&amp;quot;:&amp;quo\n;center&amp;quot;,&amp;quot;va\nign&amp;quot;:&amp;quot;center\namp;quot;,&amp;quot;image&amp;\nuot;:&amp;quot;/content/dam/si\nnify/canada-english/homepage/s\ngnify-ecatalog-masthead-xs.jpg\namp;quot;,&amp;quot;position&a\np;quot;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;}}\"\ndata-customheight=\"{&amp;quot;\n&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;140px&amp;quot;,   \n\n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;m&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;140px&amp;quot;,   \n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;s&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;226px&amp;quot;,   \n\n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;xs&amp;quot;:{&amp;q\not;minheight&amp;quot;:&amp;qu\nt;226px&amp;quot;,&amp;quot;cu\ntomheight&amp;quot;:&amp;quot;\nustom&amp;quot;}}\"\ndata-cellmargin=\"{&amp;quot;l&\nmp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;&amp;quot;},\n                             \n       \n&amp;quot;m&amp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;&amp;quot;},\n                             \n       \n&amp;quot;s&amp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;14px&amp;quot;},\n                             \n       \n&amp;quot;xs&amp;quot;:{&amp;q\not;cellmargin&amp;quot;:&amp;q\not;14px&amp;quot;}}\"&gt;\n            &lt;div\nclass=\"p-gc04-positioning\"&gt;\n    ...&lt;/section&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h2&gt;&lt;div\nstyle=\"text-align:\ncenter;\"&gt;&lt;span\nclass=\"p-he...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.",
+          "code": "&lt;h2&gt;&lt;div\nstyle=\"text-align:\ncenter;\"&gt;&lt;span\nclass=\"p-he...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;span class=\"p-heading-03\np-text-shadow\"&gt;Start\nplanning with Signify\nluminaires &amp;amp;\nlamps&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span&gt;View product\ncatalog&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;section\nclass=\"p-gc04v3-gridcontainer\np-full-bleed\n                           \n                         \n                             \n             \n                             \n             \n                             \n               \n                      \np-l-spacing-top-e\np-m-spacing-top-e\np-s-spacing-top-d\np-xs-spacing-top-d\np-l-spacing-bottom-e\np-m-spacing-bottom-e\np-s-spacing-bottom-d\np-xs-spacing-bottom-d \" id=\"\"\ndata-comp-id=\"gc04v3Gridcontai\ner\"\ndata-containerlink=\"{'useLink'\n'no'}\" data-gc-linkurl=\"\"\ndata-cookie-id=\"\"\ndata-lazyload=\"disabled\"\nstyle=\"min-height: 140px;\nbackground-image:\nurl(&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/uvc-header-\n.jpg&amp;quot;);\nbackground-repeat: no-repeat;\nbackground-position: center\ncenter; background-size:\ncover;\"\ndata-background=\"{&amp;quot;bl\ned&amp;quot;:&amp;quot;yes&amp\nquot;,&amp;quot;fill&amp;quot;\n&amp;quot;image&amp;quot;,&amp\nquot;solidcolor&amp;quot;:&amp\nquot;highcontrast&amp;quot;,&a\np;quot;transparency&amp;quot;:\namp;quot;100&amp;quot;,&amp;qu\nt;gradientcolor&amp;quot;:&amp\nquot;highcontrast&amp;quot;,&a\np;quot;videoLoop&amp;quot;:&am\n;quot;yes&amp;quot;,&amp;quot;\nideoSourceUrl&amp;quot;:&amp;q\not;&amp;quot;,&amp;quot;videoP\nsterUrl&amp;quot;:&amp;quot;&a\np;quot;,&amp;quot;l&amp;quot;:\n&amp;quot;repeat&amp;quot;:&am\n;quot;no-repeat&amp;quot;,&amp\nquot;halign&amp;quot;:&amp;quo\n;center&amp;quot;,&amp;quot;va\nign&amp;quot;:&amp;quot;center\namp;quot;,&amp;quot;image&amp;\nuot;:&amp;quot;/content/dam/si\nnify/master/homepage/mastheadc\nrousel-homepage-new/uvc-header\nl.jpg&amp;quot;,&amp;quot;posi\nion&amp;quot;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;m&amp;quot;:{\namp;quot;repeat&amp;quot;:&amp\nquot;no-repeat&amp;quot;,&amp;\nuot;halign&amp;quot;:&amp;quot\ncenter&amp;quot;,&amp;quot;val\ngn&amp;quot;:&amp;quot;center&\nmp;quot;,&amp;quot;image&amp;q\not;:&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/uvc-header-\n.jpg&amp;quot;,&amp;quot;posit\non&amp;quot;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;s&amp;quot;:{\namp;quot;repeat&amp;quot;:&amp\nquot;no-repeat&amp;quot;,&amp;\nuot;halign&amp;quot;:&amp;quot\ncenter&amp;quot;,&amp;quot;val\ngn&amp;quot;:&amp;quot;center&\nmp;quot;,&amp;quot;image&amp;q\not;:&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/uvc-header-\n.jpg&amp;quot;,&amp;quot;posit\non&amp;quot;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;xs&amp;quot;:\n&amp;quot;repeat&amp;quot;:&am\n;quot;no-repeat&amp;quot;,&amp\nquot;halign&amp;quot;:&amp;quo\n;center&amp;quot;,&amp;quot;va\nign&amp;quot;:&amp;quot;center\namp;quot;,&amp;quot;image&amp;\nuot;:&amp;quot;/content/dam/si\nnify/master/homepage/mastheadc\nrousel-homepage-new/uvc-header\nxs.jpg&amp;quot;,&amp;quot;pos\ntion&amp;quot;:&amp;quot;cente\n\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;}}\"\ndata-customheight=\"{&amp;quot;\n&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;140px&amp;quot;,   \n\n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;m&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;140px&amp;quot;,   \n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;s&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;226px&amp;quot;,   \n\n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;xs&amp;quot;:{&amp;q\not;minheight&amp;quot;:&amp;qu\nt;226px&amp;quot;,&amp;quot;cu\ntomheight&amp;quot;:&amp;quot;\nustom&amp;quot;}}\"\ndata-cellmargin=\"{&amp;quot;l&\nmp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;&amp;quot;},\n                             \n       \n&amp;quot;m&amp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;&amp;quot;},\n                             \n       \n&amp;quot;s&amp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;14px&amp;quot;},\n                             \n       \n&amp;quot;xs&amp;quot;:{&amp;q\not;cellmargin&amp;quot;:&amp;q\not;14px&amp;quot;}}\"&gt;\n            &lt;div\nclass=\"p-gc04-positioning\"&gt;\n    ...&lt;/section&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-five-sixths\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-twelfth\np-push-m-none p-push-s-none\np-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;span class=\"p-heading-03\np-text-shadow\"&gt;Power of\nUV-C to neutralize viruses\n&amp;amp;\nbacteria...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_3\" found on the web page.",
+          "code": "&lt;div id=\"item_3\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-third\np-m-one-third p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-third\np-push-m-one-third\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span&gt;Find out\nmore&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;section\nclass=\"p-gc04v3-gridcontainer\np-full-bleed\n                           \n                         \n                             \n             \n                             \n             \n                             \n               \n                      \np-l-spacing-top-e\np-m-spacing-top-e\np-s-spacing-top-d\np-xs-spacing-top-d\np-l-spacing-bottom-e\np-m-spacing-bottom-e\np-s-spacing-bottom-d\np-xs-spacing-bottom-d \" id=\"\"\ndata-comp-id=\"gc04v3Gridcontai\ner\"\ndata-containerlink=\"{'useLink'\n'no'}\" data-gc-linkurl=\"\"\ndata-cookie-id=\"\"\ndata-lazyload=\"disabled\"\nstyle=\"min-height: 140px;\nbackground-image:\nurl(&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/street-ligh\ning-smart-masthead-l.jpg&amp;q\not;); background-repeat:\nno-repeat;\nbackground-position: center\ncenter; background-size:\ncover;\"\ndata-background=\"{&amp;quot;bl\ned&amp;quot;:&amp;quot;yes&amp\nquot;,&amp;quot;fill&amp;quot;\n&amp;quot;image&amp;quot;,&amp\nquot;solidcolor&amp;quot;:&amp\nquot;highcontrast&amp;quot;,&a\np;quot;transparency&amp;quot;:\namp;quot;100&amp;quot;,&amp;qu\nt;gradientcolor&amp;quot;:&amp\nquot;highcontrast&amp;quot;,&a\np;quot;videoLoop&amp;quot;:&am\n;quot;yes&amp;quot;,&amp;quot;\nideoSourceUrl&amp;quot;:&amp;q\not;&amp;quot;,&amp;quot;videoP\nsterUrl&amp;quot;:&amp;quot;&a\np;quot;,&amp;quot;l&amp;quot;:\n&amp;quot;repeat&amp;quot;:&am\n;quot;no-repeat&amp;quot;,&amp\nquot;halign&amp;quot;:&amp;quo\n;center&amp;quot;,&amp;quot;va\nign&amp;quot;:&amp;quot;center\namp;quot;,&amp;quot;image&amp;\nuot;:&amp;quot;/content/dam/si\nnify/master/homepage/mastheadc\nrousel-homepage-new/street-lig\nting-smart-masthead-l.jpg&amp;\nuot;,&amp;quot;position&amp;qu\nt;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;m&amp;quot;:{\namp;quot;repeat&amp;quot;:&amp\nquot;no-repeat&amp;quot;,&amp;\nuot;halign&amp;quot;:&amp;quot\ncenter&amp;quot;,&amp;quot;val\ngn&amp;quot;:&amp;quot;center&\nmp;quot;,&amp;quot;image&amp;q\not;:&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/street-ligh\ning-smart-masthead-m.jpg&amp;q\not;,&amp;quot;position&amp;quo\n;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;s&amp;quot;:{\namp;quot;repeat&amp;quot;:&amp\nquot;no-repeat&amp;quot;,&amp;\nuot;halign&amp;quot;:&amp;quot\ncenter&amp;quot;,&amp;quot;val\ngn&amp;quot;:&amp;quot;center&\nmp;quot;,&amp;quot;image&amp;q\not;:&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/street-ligh\ning-smart-masthead-s.jpg&amp;q\not;,&amp;quot;position&amp;quo\n;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;xs&amp;quot;:\n&amp;quot;repeat&amp;quot;:&am\n;quot;no-repeat&amp;quot;,&amp\nquot;halign&amp;quot;:&amp;quo\n;center&amp;quot;,&amp;quot;va\nign&amp;quot;:&amp;quot;center\namp;quot;,&amp;quot;image&amp;\nuot;:&amp;quot;/content/dam/si\nnify/master/homepage/mastheadc\nrousel-homepage-new/street-lig\nting-smart-masthead-xs.jpg&amp\nquot;,&amp;quot;position&amp;q\not;:&amp;quot;center\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;}}\"\ndata-customheight=\"{&amp;quot;\n&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;140px&amp;quot;,   \n\n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;m&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;140px&amp;quot;,   \n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;s&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;226px&amp;quot;,   \n\n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;xs&amp;quot;:{&amp;q\not;minheight&amp;quot;:&amp;qu\nt;226px&amp;quot;,&amp;quot;cu\ntomheight&amp;quot;:&amp;quot;\nustom&amp;quot;}}\"\ndata-cellmargin=\"{&amp;quot;l&\nmp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;&amp;quot;},\n                             \n       \n&amp;quot;m&amp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;&amp;quot;},\n                             \n       \n&amp;quot;s&amp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;14px&amp;quot;},\n                             \n       \n&amp;quot;xs&amp;quot;:{&amp;q\not;cellmargin&amp;quot;:&amp;q\not;14px&amp;quot;}}\"&gt;\n            &lt;div\nclass=\"p-gc04-positioning\"&gt;\n    ...&lt;/section&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-five-sixths\np-m-five-sixths p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-twelfth\np-push-m-one-twelfth\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;span class=\"p-heading-03\np-heading-medium\"&gt;Acquiring\nFluence to strengthen\nAgriculture\ngrowth...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span&gt;Read press\nrelease&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_3\" found on the web page.",
+          "code": "&lt;div id=\"item_3\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-third\np-m-one-third p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-sixth\np-push-m-one-sixth\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;span&gt;View all press\nreleases&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"p-video-background\"\nstyle=\"background:\nurl(&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/street-ligh\ning-smart-masthead-l.jpg&amp;q\not;) center center / cover\nno-repeat; width: 100%;\nheight: 100%; position:\nabsolute;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-five-sixths\np-m-five-sixths p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-twelfth\np-push-m-one-twelfth\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_2\" found on the web page.",
+          "code": "&lt;div id=\"item_2\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-third\np-m-one-third p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-sixth\np-push-m-one-sixth\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_3\" found on the web page.",
+          "code": "&lt;div id=\"item_3\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-third\np-m-one-third p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-sixth\np-push-m-one-sixth\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;section\nclass=\"p-gc04v3-gridcontainer\np-full-bleed\n                           \n                         \n                             \n             \n                             \n             \n                             \n               \n                      \np-l-spacing-top-e\np-m-spacing-top-e\np-s-spacing-top-d\np-xs-spacing-top-d\np-l-spacing-bottom-e\np-m-spacing-bottom-e\np-s-spacing-bottom-d\np-xs-spacing-bottom-d \" id=\"\"\ndata-comp-id=\"gc04v3Gridcontai\ner\"\ndata-containerlink=\"{'useLink'\n'yes',\n                             \n                 \n'url':'/content/signify/en_US/\nortfolio/product-selection-gui\nes.html',\n                             \n                 \n'navdest':':content:signify:en\nus:portfolio:product-selection\nguides.html',\n                             \n                 \n'target':'_self',\n                             \n                 \n'omniture':'product_selector_g\nide'}\"\ndata-gc-linkurl=\"/content/sign\nfy/en_US/portfolio/product-sel\nction-guides\"\ndata-cookie-id=\"\"\ndata-lazyload=\"disabled\"\nstyle=\"cursor: pointer;\nmin-height: 140px;\nbackground-image:\nurl(&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/psg-homepag\n-mh-l.jpg&amp;quot;);\nbackground-repeat: no-repeat;\nbackground-position: center\ncenter; background-size:\ncover;\"\ndata-background=\"{&amp;quot;bl\ned&amp;quot;:&amp;quot;yes&amp\nquot;,&amp;quot;fill&amp;quot;\n&amp;quot;image&amp;quot;,&amp\nquot;solidcolor&amp;quot;:&amp\nquot;highcontrast&amp;quot;,&a\np;quot;transparency&amp;quot;:\namp;quot;100&amp;quot;,&amp;qu\nt;gradientcolor&amp;quot;:&amp\nquot;highcontrast&amp;quot;,&a\np;quot;videoLoop&amp;quot;:&am\n;quot;yes&amp;quot;,&amp;quot;\nideoSourceUrl&amp;quot;:&amp;q\not;&amp;quot;,&amp;quot;videoP\nsterUrl&amp;quot;:&amp;quot;&a\np;quot;,&amp;quot;l&amp;quot;:\n&amp;quot;repeat&amp;quot;:&am\n;quot;no-repeat&amp;quot;,&amp\nquot;halign&amp;quot;:&amp;quo\n;center&amp;quot;,&amp;quot;va\nign&amp;quot;:&amp;quot;center\namp;quot;,&amp;quot;image&amp;\nuot;:&amp;quot;/content/dam/si\nnify/master/homepage/mastheadc\nrousel-homepage-new/psg-homepa\ne-mh-l.jpg&amp;quot;,&amp;quot\nposition&amp;quot;:&amp;quot;c\nnter\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;m&amp;quot;:{\namp;quot;repeat&amp;quot;:&amp\nquot;no-repeat&amp;quot;,&amp;\nuot;halign&amp;quot;:&amp;quot\ncenter&amp;quot;,&amp;quot;val\ngn&amp;quot;:&amp;quot;center&\nmp;quot;,&amp;quot;image&amp;q\not;:&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/psg-homepag\n-mh-m.jpg&amp;quot;,&amp;quot;\nosition&amp;quot;:&amp;quot;ce\nter\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;s&amp;quot;:{\namp;quot;repeat&amp;quot;:&amp\nquot;no-repeat&amp;quot;,&amp;\nuot;halign&amp;quot;:&amp;quot\ncenter&amp;quot;,&amp;quot;val\ngn&amp;quot;:&amp;quot;center&\nmp;quot;,&amp;quot;image&amp;q\not;:&amp;quot;/content/dam/sig\nify/master/homepage/mastheadca\nousel-homepage-new/psg-homepag\n-mh-s.jpg&amp;quot;,&amp;quot;\nosition&amp;quot;:&amp;quot;ce\nter\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;},&amp;quot;xs&amp;quot;:\n&amp;quot;repeat&amp;quot;:&am\n;quot;no-repeat&amp;quot;,&amp\nquot;halign&amp;quot;:&amp;quo\n;center&amp;quot;,&amp;quot;va\nign&amp;quot;:&amp;quot;center\namp;quot;,&amp;quot;image&amp;\nuot;:&amp;quot;/content/dam/si\nnify/master/homepage/mastheadc\nrousel-homepage-new/psg-homepa\ne-mh-xs.jpg&amp;quot;,&amp;quo\n;position&amp;quot;:&amp;quot;\nenter\ncenter&amp;quot;,&amp;quot;siz\n&amp;quot;:&amp;quot;cover&amp\nquot;}}\"\ndata-customheight=\"{&amp;quot;\n&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;140px&amp;quot;,   \n\n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;m&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;140px&amp;quot;,   \n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;s&amp;quot;:\n{&amp;quot;minheight&amp;quot;\n&amp;quot;226px&amp;quot;,   \n\n&amp;quot;customheight&amp;quo\n;:&amp;quot;custom&amp;quot;},\n                             \n       \n&amp;quot;xs&amp;quot;:{&amp;q\not;minheight&amp;quot;:&amp;qu\nt;226px&amp;quot;,&amp;quot;cu\ntomheight&amp;quot;:&amp;quot;\nustom&amp;quot;}}\"\ndata-cellmargin=\"{&amp;quot;l&\nmp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;&amp;quot;},\n                             \n       \n&amp;quot;m&amp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;&amp;quot;},\n                             \n       \n&amp;quot;s&amp;quot;:\n{&amp;quot;cellmargin&amp;quot\n:&amp;quot;14px&amp;quot;},\n                             \n       \n&amp;quot;xs&amp;quot;:{&amp;q\not;cellmargin&amp;quot;:&amp;q\not;14px&amp;quot;}}\"&gt;\n            &lt;div\nclass=\"p-gc04-positioning\"&gt;\n    ...&lt;/section&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-five-sixths\np-m-five-sixths p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-twelfth\np-push-m-one-twelfth\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;div class=\"p-body-text\np-l-col1 p-m-col1\n                p-s-col1\np-xs-col1 p-text-smaller\"&gt;\n                ,&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_2\" found on the web page.",
+          "code": "&lt;div id=\"item_2\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-third\np-m-one-third p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-sixth\np-push-m-one-sixth\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_3\" found on the web page.",
+          "code": "&lt;div id=\"item_3\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-third\np-m-one-third p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-sixth\np-push-m-one-sixth\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button class=\"p-nav-prev\np-active\"\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"interaction\"\ndata-track-description=\"carous\nl_left\"\ndata-track-compid=\"gc03v2-gene\nic-content-carousel\"\ntype=\"button\"&gt;\n                             \n  &lt;i\nclass=\"p-icon-...&lt;/button&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button class=\"p-nav-next\np-active\"\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"interaction\"\ndata-track-description=\"carous\nl_right\"\ndata-track-compid=\"gc03v2-gene\nic-content-carousel\"\ntype=\"button\"&gt;\n                             \n  &lt;i\nclass=\"p-icon-...&lt;/button&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_2\" found on the web page.",
+          "code": "&lt;div id=\"item_2\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-half\np-m-one-half p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_2\" found on the web page.",
+          "code": "&lt;div id=\"item_2\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-quarter\np-m-one-half p-s-one-half\np-xs-one-half\n                             \n                 \np-push-l-five-twelfths\np-push-m-none p-push-s-none\np-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_3\" found on the web page.",
+          "code": "&lt;div id=\"item_3\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-quarter\np-m-one-half p-s-one-half\np-xs-one-half\n                             \n                 \np-push-l-five-twelfths\np-push-m-none p-push-s-none\np-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_2\" found on the web page.",
+          "code": "&lt;div id=\"item_2\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-half\np-m-one-half p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_6\" found on the web page.",
+          "code": "&lt;div id=\"item_6\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-half\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-one-twelfth\np-push-m-none p-push-s-none\np-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-quarter\np-m-one-half p-s-one-half\np-xs-one-half\n                             \n                 \np-push-l-one-twelfth\np-push-m-none p-push-s-none\np-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_2\" found on the web page.",
+          "code": "&lt;div id=\"item_2\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-quarter\np-m-one-half p-s-one-half\np-xs-one-half\n                             \n                 \np-push-l-one-twelfth\np-push-m-none p-push-s-none\np-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_9\" found on the web page.",
+          "code": "&lt;div id=\"item_9\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_4\" found on the web page.",
+          "code": "&lt;div id=\"item_4\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-quarter\np-m-one-half p-s-one-half\np-xs-one-half\n                             \n                 \np-push-l-one-twelfth\np-push-m-none p-push-s-none\np-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_10\" found on the web page.",
+          "code": "&lt;div id=\"item_10\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_8\" found on the web page.",
+          "code": "&lt;div id=\"item_8\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-quarter\np-m-one-half p-s-one-half\np-xs-one-half\n                             \n                 \np-push-l-one-twelfth\np-push-m-none p-push-s-none\np-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_2\" found on the web page.",
+          "code": "&lt;div id=\"item_2\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/luminaires.jpg\"\ntitle=\"Genlyte Luminaires\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/oem.png\" title=\"OEM\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/led.jpg\" title=\"Philips\nLamps\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/electronics.jpg\"\ntitle=\"Advance\nElectronics\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/retrofit.jpg\"\ntitle=\"Philips Retrofit\nKits\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/controls.jpg\"\ntitle=\"Controls\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;section\nclass=\"p-gc08-teasercontainer\np-full-bleed\np-l-spacing-top-e\np-m-spacing-top-e\np-s-spacing-top-d\np-xs-spacing-top-d\np-l-spacing-bottom-e\np-m-spacing-bottom-e\np-s-spacing-bottom-d\np-xs-spacing-bottom-d\np-full-bleed-max-content-width\n data-containerlink=\"\"\ndata-is-internal-cell1=\"false\"\ndata-is-internal-cell2=\"false\"\nstyle=\"background-color:rgba(2\n5,255,255,1.0); filter:\nprogid:DXImageTransform.Micros\nft.gradient(StartColorStr='#FF\nFFF',\nEndColorStr='#FFFFFF');\"\ndata-background=\"\"\ndata-customheight=\"{&amp;quot;\n&amp;quot;:{&amp;quot;paddingc\nll1&amp;quot;:&amp;quot;p-l-bo\n-padding&amp;quot;,&amp;quot;p\nddingcell2&amp;quot;:&amp;quot\np-l-box-padding&amp;quot;,&amp\nquot;cell1minheight&amp;quot;:\namp;quot;0&amp;quot;,&amp;quot\ncell2minheight&amp;quot;:&amp;\nuot;0&amp;quot;,&amp;quot;cell\ncustomheight&amp;quot;:&amp;qu\nt;dynamic&amp;quot;,&amp;quot;\nell2customheight&amp;quot;:&am\n;quot;dynamic&amp;quot;},&amp;\nuot;m&amp;quot;:{&amp;quot;pad\ningcell1&amp;quot;:&amp;quot;&\nmp;quot;,&amp;quot;paddingcell\n&amp;quot;:&amp;quot;p-m-box-p\ndding&amp;quot;,&amp;quot;cell\nminheight&amp;quot;:&amp;quot;\n&amp;quot;,&amp;quot;cell2minh\night&amp;quot;:&amp;quot;0&amp\nquot;,&amp;quot;cell1customhei\nht&amp;quot;:&amp;quot;dynamic\namp;quot;,&amp;quot;cell2custo\nheight&amp;quot;:&amp;quot;dyn\nmic&amp;quot;},&amp;quot;s&amp\nquot;:{&amp;quot;paddingcell1&\nmp;quot;:&amp;quot;&amp;quot;,\namp;quot;paddingcell2&amp;quot\n:&amp;quot;p-s-box-padding&amp\nquot;,&amp;quot;cell1minheight\namp;quot;:&amp;quot;0&amp;quot\n,&amp;quot;cell2minheight&amp;\nuot;:&amp;quot;0&amp;quot;,&am\n;quot;cell1customheight&amp;qu\nt;:&amp;quot;dynamic&amp;quot;\n&amp;quot;cell2customheight&am\n;quot;:&amp;quot;dynamic&amp;q\not;},&amp;quot;xs&amp;quot;:{&\nmp;quot;paddingcell1&amp;quot;\n&amp;quot;&amp;quot;,&amp;quot\npaddingcell2&amp;quot;:&amp;qu\nt;p-xs-box-padding&amp;quot;,&\nmp;quot;cell1minheight&amp;quo\n;:&amp;quot;0&amp;quot;,&amp;q\not;cell2minheight&amp;quot;:&a\np;quot;0&amp;quot;,&amp;quot;c\nll1customheight&amp;quot;:&amp\nquot;dynamic&amp;quot;,&amp;qu\nt;cell2customheight&amp;quot;:\namp;quot;dynamic&amp;quot;},&a\np;quot;swapl&amp;quot;:{},&amp\nquot;swapm&amp;quot;:{},&amp;q\not;swaps&amp;quot;:{},&amp;quo\n;swapxs&amp;quot;:{}}\"\ndata-comp-id=\"gc08Teasercontai\ner\"&gt;\n            &lt;div\nclass=\"p-gc08-positioning\n\"&gt;\n   ...&lt;/section&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3&gt;&lt;span\nclass=\"p-heading-03\np-heading-light\"&gt;Our\ninn...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-half\np-m-one-half p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_2\" found on the web page.",
+          "code": "&lt;div id=\"item_2\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-half\np-m-one-half p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_3\" found on the web page.",
+          "code": "&lt;div id=\"item_3\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-half\np-m-one-half p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.signify.com/\nlobal/case-studies\"\ndata-is-internal=\"\"\nclass=\"p-omniture-link\"&gt;&am\n;nbsp;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/homepage-investor.jpg\"\ntitle=\"Investor relations\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/en-us/port\nolio/readytogo/ready-to-go-mh-\ns.jpg\" title=\"Ready to go\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/services.jpg\"\ntitle=\"Lighting Services\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/warranties.jpg\"\ntitle=\"Warranties\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"/b-dam/signify/master/hom\npage/homepage-innovation.jpg\"\ntitle=\"Energy Solutions\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"item_1\" found on the web page.",
+          "code": "&lt;div id=\"item_1\"\nclass=\"p-grid-item \n                             \n             \n                             \n             \n                             \n              p-l-one-whole\np-m-one-whole p-s-one-whole\np-xs-one-whole\n                             \n                 \np-push-l-none p-push-m-none\np-push-s-none p-push-xs-none\n                             \n                 \np-pull-l-none p-pull-m-none\np-pull-s-none\np-pull-xs-none\"&gt;\n                           \n&lt;div\nclass=\"container...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"follow_us\"\ndata-track-compid=\"gc23v2\"\ndata-track-servicename=\"twitte\n\"\nhref=\"https://twitter.com/sign\nfycompany\" target=\"_blank\"\ntitle=\"\"&gt;\n                \n                \n               ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"follow_us\"\ndata-track-compid=\"gc23v2\"\ndata-track-servicename=\"facebo\nk\"\nhref=\"https://www.facebook.com\nPhilipsLightUs\"\ntarget=\"_blank\" title=\"\"&gt;\n                \n                \n               ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"follow_us\"\ndata-track-compid=\"gc23v2\"\ndata-track-servicename=\"youtub\n\"\nhref=\"https://www.youtube.com/\nlaylist?list=PLj9hU1O4UB02b4eP\nWE2dbA7t8zuUPfmQ\"\ntarget=\"_blank\" title=\"\"&gt;\n                \n                \n               ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"follow_us\"\ndata-track-compid=\"gc23v2\"\ndata-track-servicename=\"linked\nn\"\nhref=\"https://www.linkedin.com\ncompany/signifycompany/\"\ntarget=\"_blank\" title=\"\"&gt;\n                \n                \n               ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"follow_us\"\ndata-track-compid=\"gc23v2\"\ndata-track-servicename=\"blog\"\nhref=\"https://www.signify.com/\nn-us/blog\" target=\"_self\"\ntitle=\"\"&gt;\n                \n                \n               ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"follow_us\"\ndata-track-compid=\"gc23v2\"\ndata-track-servicename=\"instag\nam\"\nhref=\"https://www.instagram.co\n/Signifycompany/\"\ntarget=\"_blank\" title=\"\"&gt;\n                \n                \n               ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\ndata-track-type=\"track-convers\non\"\ndata-track-name=\"follow_us\"\ndata-track-compid=\"gc23v2\"\ndata-track-servicename=\"pinter\nst\"\nhref=\"https://www.pinterest.co\n/signifyunitedstates/\"\ntarget=\"_blank\" title=\"\"&gt;\n                \n                \n               ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div id=\"truste-button\"\nstyle=\"visibility: hidden;\nposition: fixed; bottom: 0px;\nleft: 0px; z-index:\n999;\"&gt;&lt;div\nid=\"teconsent\"\nstyle=\"background: rgb(0,\n137,...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div id=\"teconsent\"\nstyle=\"background: rgb(0,\n137, 196); border-radius:\n2px; display: inline-block;\npadding: 11px 24px\n10px;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "errorcount": 57
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      3
+    ]
+  ]
+}
