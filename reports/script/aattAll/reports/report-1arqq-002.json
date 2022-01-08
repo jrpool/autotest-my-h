@@ -1,0 +1,1755 @@
+{
+  "script": "aatt",
+  "batch": "aattAllBadJSON",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1arqq",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.sercomm.com/home.aspx",
+      "what": "Sercomm (AMDWX)",
+      "result": "https://www.sercomm.com/home.aspx"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.sercomm.com/home.aspx",
+      "result": [
+        {
+          "type": "error",
+          "msg": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+          "code": "&lt;html&gt;&lt;head&gt;\n&lt;meta name=\"viewport\"\ncontent=\"width=1400\"&gt;...&lt\n/html&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H57\" target=\"_blank\">H57</a>"
+          ],
+          "id": "H57"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;table id=\"topnavtable\"\ncellpadding=\"0\"\ncellspacing=\"0\" border=\"0\"\nalign=\"left\" width=\"100%\"&gt;\n\t\t\t\t&lt;tbody&gt;&lt;tr&gt;\n\t\t\t\t\t&lt;td\nalign=\"center\"&gt;\n\t&lt;!-- MA...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td align=\"center\"&gt;\n\t&lt;!-- MAIN DIV --&gt;\n\t&lt;div id=\"main\"\nalign=\"center\"...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div id=\"main\"\nalign=\"center\" style=\"width:\n1280px;\"&gt;\n\t\t&lt;!-- NAVIGATION --&gt;\n\t\t&lt;div\nid=\"topnavcontainer\"...&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;table id=\"topnavtable\"\ncellpadding=\"0\"\ncellspacing=\"0\" border=\"0\"\nalign=\"left\" width=\"100%\"&gt;\n\t\t\t\t&lt;tbody&gt;&lt;tr&gt;\n\t\t\t\t\t&lt;td width=\"281\"\nonmouseover=...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"topnavtable\" found on the web page.",
+          "code": "&lt;table id=\"topnavtable\"\ncellpadding=\"0\"\ncellspacing=\"0\" border=\"0\"\nalign=\"left\" width=\"100%\"&gt;\n\t\t\t\t&lt;tbody&gt;&lt;tr&gt;\n\t\t\t\t\t&lt;td width=\"281\"\nonmouseover=...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td width=\"281\"\nonmouseover=\"fCloseOpenElem(tr\ne,false)\"&gt;\n\t\t\t\t\t\t&lt;img\nsrc=\"img/share/logo-top.jpg\"\nstyle=\"cu...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"img/share/logo-top.jpg\"\nstyle=\"cursor:pointer;\"\nonclick=\"fGotoURL(gLANGLINK[pL\nNGON])\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;img\nsrc=\"img/share/logo-top.jpg\"\nstyle=\"cursor:pointer;\"\nonclick=\"fGotoURL(gLANGLINK[pL\nNGON])\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td id=\"menucontainer\"\nalign=\"right\" valign=\"middle\"\nonmouseover=\"fCloseOpenElem(tr\ne,false)\"&gt;&lt;table\ncellspacing=\"0\"\ncellpadding=\"0\" border=\"0\"\n...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td id=\"menucontainer\"\nalign=\"right\" valign=\"middle\"\nonmouseover=\"fCloseOpenElem(tr\ne,false)\"&gt;&lt;table\ncellspacing=\"0\"\ncellpadding=\"0\" border=\"0\"\n...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td id=\"m0\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(0,tru\n)\"\nonmouseout=\"fMO_Topmenu(0,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;L1id=1&amp;amp;L2id=1')\"\ngt;COMPANY&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td id=\"m0\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(0,tru\n)\"\nonmouseout=\"fMO_Topmenu(0,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;L1id=1&amp;amp;L2id=1')\"\ngt;COMPANY&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td id=\"m0\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(0,tru\n)\"\nonmouseout=\"fMO_Topmenu(0,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;L1id=1&amp;amp;L2id=1')\"\ngt;COMPANY&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td id=\"m1\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(1,tru\n)\"\nonmouseout=\"fMO_Topmenu(1,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=prod&a\np;amp;L1id=2&amp;amp;L2id=1')\"\ngt;SOLUTIONS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td id=\"m1\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(1,tru\n)\"\nonmouseout=\"fMO_Topmenu(1,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=prod&a\np;amp;L1id=2&amp;amp;L2id=1')\"\ngt;SOLUTIONS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td id=\"m1\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(1,tru\n)\"\nonmouseout=\"fMO_Topmenu(1,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=prod&a\np;amp;L1id=2&amp;amp;L2id=1')\"\ngt;SOLUTIONS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td id=\"m2\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(2,tru\n)\"\nonmouseout=\"fMO_Topmenu(2,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=3&amp;amp;l2id=6')\"\ngt;INVESTORS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td id=\"m2\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(2,tru\n)\"\nonmouseout=\"fMO_Topmenu(2,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=3&amp;amp;l2id=6')\"\ngt;INVESTORS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td id=\"m2\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(2,tru\n)\"\nonmouseout=\"fMO_Topmenu(2,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=3&amp;amp;l2id=6')\"\ngt;INVESTORS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td id=\"m3\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(3,tru\n)\"\nonmouseout=\"fMO_Topmenu(3,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=news&a\np;amp;L1id=4&amp;amp;L2id=1')\"\ngt;NEWS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td id=\"m3\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(3,tru\n)\"\nonmouseout=\"fMO_Topmenu(3,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=news&a\np;amp;L1id=4&amp;amp;L2id=1')\"\ngt;NEWS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td id=\"m3\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(3,tru\n)\"\nonmouseout=\"fMO_Topmenu(3,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=news&a\np;amp;L1id=4&amp;amp;L2id=1')\"\ngt;NEWS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td id=\"m4\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(4,tru\n)\"\nonmouseout=\"fMO_Topmenu(4,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=5&amp;amp;l2id=13')\n&gt;CAREERS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td id=\"m4\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(4,tru\n)\"\nonmouseout=\"fMO_Topmenu(4,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=5&amp;amp;l2id=13')\n&gt;CAREERS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td id=\"m4\"\nclass=\"navborder1\"\nonmouseover=\"fMO_Topmenu(4,tru\n)\"\nonmouseout=\"fMO_Topmenu(4,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=5&amp;amp;l2id=13')\n&gt;CAREERS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td id=\"m5\"\nclass=\"navborder2\"\nonmouseover=\"fMO_Topmenu(5,tru\n)\"\nonmouseout=\"fMO_Topmenu(5,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=6&amp;amp;l2id=17')\n&gt;CONTACTS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td id=\"m5\"\nclass=\"navborder2\"\nonmouseover=\"fMO_Topmenu(5,tru\n)\"\nonmouseout=\"fMO_Topmenu(5,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=6&amp;amp;l2id=17')\n&gt;CONTACTS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td id=\"m5\"\nclass=\"navborder2\"\nonmouseover=\"fMO_Topmenu(5,tru\n)\"\nonmouseout=\"fMO_Topmenu(5,fals\n)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=info&a\np;amp;l1id=6&amp;amp;l2id=17')\n&gt;CONTACTS&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td align=\"center\"\nvalign=\"middle\"\nstyle=\"padding: 5px 20px 0px\n20px;\"&gt;&lt;img\nsrc=\"images/share/linkedin-log\n.png\" width=\"2...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"images/share/linkedin-log\n.png\" width=\"26\" height=\"26\"\nstyle=\"cursor:pointer;\"\nonclick=\"window.open('https://\nww.linkedin.com/company/sercom\n');\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;img\nsrc=\"images/share/linkedin-log\n.png\" width=\"26\" height=\"26\"\nstyle=\"cursor:pointer;\"\nonclick=\"window.open('https://\nww.linkedin.com/company/sercom\n');\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nid=\"searchboxcontainer\"\nwidth=\"145\" align=\"right\"\nvalign=\"middle\"\nonmouseover=\"fCloseOpenElem(tr\ne,false)\"&gt;\n\t\t\t\t\t\t&lt;input id=\"search\"\nname=\"search\"\ntype=\"text...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td\nid=\"searchboxcontainer\"\nwidth=\"145\" align=\"right\"\nvalign=\"middle\"\nonmouseover=\"fCloseOpenElem(tr\ne,false)\"&gt;\n\t\t\t\t\t\t&lt;input id=\"search\"\nname=\"search\"\ntype=\"text...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;input id=\"search\"\nname=\"search\" type=\"text\"\nclass=\"searchfieldoff\"\nvalue=\"\"\nonmouseover=\"fSwapImg(searchic\nn,'img/share/icon-search-ov.jp\n');fSearchMOfx(this,true);\"\nonmouseout=\"fSwapImg(searchico\n,'img/share/icon-search-off.jp\n');fSearchMOfx(this,false)\"\nonclick=\"this.className='searc\nfieldov'; this.value=''\"\nonkeydown=\"fProductSearch('sea\nch',event.keyCode)\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;input id=\"search\"\nname=\"search\" type=\"text\"\nclass=\"searchfieldoff\"\nvalue=\"\"\nonmouseover=\"fSwapImg(searchic\nn,'img/share/icon-search-ov.jp\n');fSearchMOfx(this,true);\"\nonmouseout=\"fSwapImg(searchico\n,'img/share/icon-search-off.jp\n');fSearchMOfx(this,false)\"\nonclick=\"this.className='searc\nfieldov'; this.value=''\"\nonkeydown=\"fProductSearch('sea\nch',event.keyCode)\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input id=\"search\"\nname=\"search\" type=\"text\"\nclass=\"searchfieldoff\"\nvalue=\"\"\nonmouseover=\"fSwapImg(searchic\nn,'img/share/icon-search-ov.jp\n');fSearchMOfx(this,true);\"\nonmouseout=\"fSwapImg(searchico\n,'img/share/icon-search-off.jp\n');fSearchMOfx(this,false)\"\nonclick=\"this.className='searc\nfieldov'; this.value=''\"\nonkeydown=\"fProductSearch('sea\nch',event.keyCode)\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input id=\"search\"\nname=\"search\" type=\"text\"\nclass=\"searchfieldoff\"\nvalue=\"\"\nonmouseover=\"fSwapImg(searchic\nn,'img/share/icon-search-ov.jp\n');fSearchMOfx(this,true);\"\nonmouseout=\"fSwapImg(searchico\n,'img/share/icon-search-off.jp\n');fSearchMOfx(this,false)\"\nonclick=\"this.className='searc\nfieldov'; this.value=''\"\nonkeydown=\"fProductSearch('sea\nch',event.keyCode)\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nid=\"searchiconcontainer\"\nonmouseover=\"fSwapImg(searchic\nn,'img/share/icon-search-ov.jp\n');fCloseOpenElem(true,false)\"\nonmouseout=\"fSwapImg(searchico\n,'img/share/icon-search-off.jp\n')\"\nonclick=\"fProductSearch('searc\n',null)\" align=\"center\"\nwidth=\"40\"&gt;\n\t\t\t\t\t\t&lt;img id=\"searchicon\"\nsrc=\"img/share/icon-se...&lt;/\nd&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td\nid=\"searchiconcontainer\"\nonmouseover=\"fSwapImg(searchic\nn,'img/share/icon-search-ov.jp\n');fCloseOpenElem(true,false)\"\nonmouseout=\"fSwapImg(searchico\n,'img/share/icon-search-off.jp\n')\"\nonclick=\"fProductSearch('searc\n',null)\" align=\"center\"\nwidth=\"40\"&gt;\n\t\t\t\t\t\t&lt;img id=\"searchicon\"\nsrc=\"img/share/icon-se...&lt;/\nd&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td\nid=\"searchiconcontainer\"\nonmouseover=\"fSwapImg(searchic\nn,'img/share/icon-search-ov.jp\n');fCloseOpenElem(true,false)\"\nonmouseout=\"fSwapImg(searchico\n,'img/share/icon-search-off.jp\n')\"\nonclick=\"fProductSearch('searc\n',null)\" align=\"center\"\nwidth=\"40\"&gt;\n\t\t\t\t\t\t&lt;img id=\"searchicon\"\nsrc=\"img/share/icon-se...&lt;/\nd&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td\nid=\"searchiconcontainer\"\nonmouseover=\"fSwapImg(searchic\nn,'img/share/icon-search-ov.jp\n');fCloseOpenElem(true,false)\"\nonmouseout=\"fSwapImg(searchico\n,'img/share/icon-search-off.jp\n')\"\nonclick=\"fProductSearch('searc\n',null)\" align=\"center\"\nwidth=\"40\"&gt;\n\t\t\t\t\t\t&lt;img id=\"searchicon\"\nsrc=\"img/share/icon-se...&lt;/\nd&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"searchicon\"\nsrc=\"img/share/icon-search-off\njpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td id=\"langcontainer\"\nalign=\"left\" valign=\"middle\"\nwidth=\"96\"\nstyle=\"padding-left:10px;\"\nonmouseover=\"fCloseOpenElem(fa\nse,false)\"&gt;\n\t\t\t\t\t\t&lt;img id=\"langicon\"\nstyle=\"cursor:pointer;\"\n...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td id=\"langcontainer\"\nalign=\"left\" valign=\"middle\"\nwidth=\"96\"\nstyle=\"padding-left:10px;\"\nonmouseover=\"fCloseOpenElem(fa\nse,false)\"&gt;\n\t\t\t\t\t\t&lt;img id=\"langicon\"\nstyle=\"cursor:pointer;\"\n...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"langicon\"\nstyle=\"cursor:pointer;\"\nsrc=\"img/share/icon-lang-off.j\ng\"\nonmouseover=\"this.src='img/sha\ne/icon-lang-ov.jpg'\"\nonmouseout=\"this.src='img/shar\n/icon-lang-off.jpg'\"\nonclick=\"fOpenLangMenu(this)\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;img id=\"langicon\"\nstyle=\"cursor:pointer;\"\nsrc=\"img/share/icon-lang-off.j\ng\"\nonmouseover=\"this.src='img/sha\ne/icon-lang-ov.jpg'\"\nonmouseout=\"this.src='img/shar\n/icon-lang-off.jpg'\"\nonclick=\"fOpenLangMenu(this)\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;img id=\"langicon\"\nstyle=\"cursor:pointer;\"\nsrc=\"img/share/icon-lang-off.j\ng\"\nonmouseover=\"this.src='img/sha\ne/icon-lang-ov.jpg'\"\nonmouseout=\"this.src='img/shar\n/icon-lang-off.jpg'\"\nonclick=\"fOpenLangMenu(this)\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;img id=\"langicon\"\nstyle=\"cursor:pointer;\"\nsrc=\"img/share/icon-lang-off.j\ng\"\nonmouseover=\"this.src='img/sha\ne/icon-lang-ov.jpg'\"\nonmouseout=\"this.src='img/shar\n/icon-lang-off.jpg'\"\nonclick=\"fOpenLangMenu(this)\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"images/wifi_6.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div id=\"bnrtxt0\"\nstyle=\"position: absolute;\ntop: 80px; left: 225px;\nwidth: 1200px; opacity: 1;\"\nalign=\"left\"&gt;&lt;font\nstyle=\"font-family: Calibri,\nArial, sans-ser...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Presentational markup used that has become obsolete in HTML5.",
+          "code": "&lt;font style=\"font-family:\nCalibri, Arial, sans-serif;\nfont-size:100px;\ncolor:#000000;\nline-height:100px;\"&gt;WiFi 6\n&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;font style=\"font-family:\nCalibri, Arial, sans-serif;\nfont-size:100px;\ncolor:#000000;\nline-height:100px;\"&gt;WiFi 6\n&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;font style=\"font-family:\nCalibri, Arial, sans-serif;\nfont-size:100px;\ncolor:#000000;\nline-height:100px;\"&gt;WiFi 6\n&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Presentational markup used that has become obsolete in HTML5.",
+          "code": "&lt;font style=\"font-family:\nCalibri, Arial, sans-serif;\nfont-size:38px;\ncolor:#000000;\nline-height:40px;\"&gt;Simply\nFaster Connection&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 3:1.",
+          "code": "&lt;font style=\"font-family:\nCalibri, Arial, sans-serif;\nfont-size:38px;\ncolor:#000000;\nline-height:40px;\"&gt;Simply\nFaster Connection&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;font style=\"font-family:\nCalibri, Arial, sans-serif;\nfont-size:38px;\ncolor:#000000;\nline-height:40px;\"&gt;Simply\nFaster Connection&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;div\nstyle=\"position:absolute;\ntop:0px; left:0px;\nwidth:1400px; height:590px;\ncursor:pointer;\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=prod2n\nw&amp;amp;L1id=2&amp;amp;L2id=\n&amp;amp;L3id=33')\"&gt;&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"img/share/arw-bannerimg-l\nft.png\"\nstyle=\"cursor:pointer;\npadding:5px;\"\nonmouseover=\"this.style.opacit\n=1;fAutorunBannerStop();gAUTOR\nNBANNER=false;\"\nonmouseout=\"this.style.opacity\n.7;fAutorunBannerStart();gAUTO\nUNBANNER=true;\"\nonclick=\"fAutorunBannerStop();\nLoadNewBannerImg('bnrimgcont',\n1,null);gAUTORUNBANNER=false;\"\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;img\nsrc=\"img/share/arw-bannerimg-l\nft.png\"\nstyle=\"cursor:pointer;\npadding:5px;\"\nonmouseover=\"this.style.opacit\n=1;fAutorunBannerStop();gAUTOR\nNBANNER=false;\"\nonmouseout=\"this.style.opacity\n.7;fAutorunBannerStart();gAUTO\nUNBANNER=true;\"\nonclick=\"fAutorunBannerStop();\nLoadNewBannerImg('bnrimgcont',\n1,null);gAUTORUNBANNER=false;\"\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;img\nsrc=\"img/share/arw-bannerimg-l\nft.png\"\nstyle=\"cursor:pointer;\npadding:5px;\"\nonmouseover=\"this.style.opacit\n=1;fAutorunBannerStop();gAUTOR\nNBANNER=false;\"\nonmouseout=\"this.style.opacity\n.7;fAutorunBannerStart();gAUTO\nUNBANNER=true;\"\nonclick=\"fAutorunBannerStop();\nLoadNewBannerImg('bnrimgcont',\n1,null);gAUTORUNBANNER=false;\"\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;img\nsrc=\"img/share/arw-bannerimg-l\nft.png\"\nstyle=\"cursor:pointer;\npadding:5px;\"\nonmouseover=\"this.style.opacit\n=1;fAutorunBannerStop();gAUTOR\nNBANNER=false;\"\nonmouseout=\"this.style.opacity\n.7;fAutorunBannerStart();gAUTO\nUNBANNER=true;\"\nonclick=\"fAutorunBannerStop();\nLoadNewBannerImg('bnrimgcont',\n1,null);gAUTORUNBANNER=false;\"\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"img/share/arw-bannerimg-r\nght.png\"\nstyle=\"cursor:pointer;\npadding:5px;\"\nonmouseover=\"this.style.opacit\n=1;fAutorunBannerStop();gAUTOR\nNBANNER=false;\"\nonmouseout=\"this.style.opacity\n.7;fAutorunBannerStart();gAUTO\nUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nLoadNewBannerImg('bnrimgcont',\n,null);gAUTORUNBANNER=false;\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;img\nsrc=\"img/share/arw-bannerimg-r\nght.png\"\nstyle=\"cursor:pointer;\npadding:5px;\"\nonmouseover=\"this.style.opacit\n=1;fAutorunBannerStop();gAUTOR\nNBANNER=false;\"\nonmouseout=\"this.style.opacity\n.7;fAutorunBannerStart();gAUTO\nUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nLoadNewBannerImg('bnrimgcont',\n,null);gAUTORUNBANNER=false;\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;img\nsrc=\"img/share/arw-bannerimg-r\nght.png\"\nstyle=\"cursor:pointer;\npadding:5px;\"\nonmouseover=\"this.style.opacit\n=1;fAutorunBannerStop();gAUTOR\nNBANNER=false;\"\nonmouseout=\"this.style.opacity\n.7;fAutorunBannerStart();gAUTO\nUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nLoadNewBannerImg('bnrimgcont',\n,null);gAUTORUNBANNER=false;\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;img\nsrc=\"img/share/arw-bannerimg-r\nght.png\"\nstyle=\"cursor:pointer;\npadding:5px;\"\nonmouseover=\"this.style.opacit\n=1;fAutorunBannerStop();gAUTOR\nNBANNER=false;\"\nonmouseout=\"this.style.opacity\n.7;fAutorunBannerStart();gAUTO\nUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nLoadNewBannerImg('bnrimgcont',\n,null);gAUTORUNBANNER=false;\"&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nalign=\"center\"&gt;&lt;table\ncellpadding=\"0\"\ncellspacing=\"0\" border=\"0\"\n...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(0);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt0\"\nclass=\"bnrbltov\"&gt;&lt;/div&g\n;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(0);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt0\"\nclass=\"bnrbltov\"&gt;&lt;/div&g\n;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(0);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt0\"\nclass=\"bnrbltov\"&gt;&lt;/div&g\n;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(0);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt0\"\nclass=\"bnrbltov\"&gt;&lt;/div&g\n;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(1);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt1\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(1);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt1\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(1);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt1\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(1);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt1\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(2);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt2\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(2);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt2\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(2);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt2\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(2);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt2\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(3);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt3\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(3);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt3\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(3);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt3\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(3);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt3\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(4);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt4\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(4);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt4\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(4);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt4\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(4);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt4\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(5);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt5\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(5);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt5\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(5);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt5\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(5);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt5\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(6);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt6\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(6);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt6\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(6);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt6\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;td width=\"23\"\nalign=\"center\"\nonmouseover=\"fAutorunBannerSto\n();gAUTORUNBANNER=false;\"\nonmouseout=\"fAutorunBannerStar\n();gAUTORUNBANNER=false;\"\nonclick=\"fAutorunBannerStop();\nClickBannerBlt(6);gAUTORUNBANN\nR=false;\"&gt;&lt;div\nid=\"bnrblt6\"\nclass=\"bnrbltoff\"&gt;&lt;/div&\nt;&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div id=\"scdivtop\"\nstyle=\"position: relative;\ntop: 15px; height: 390px;\nwidth: 1400px; opacity: 1;\"\nalign=\"left\"&gt;&lt;div\nid=\"scdiv0\" style=\"position:\nabsolute; top:\n0...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;div id=\"scdiv0\"\nstyle=\"position: absolute;\ntop: 0px; left: 0px; width:\n810px; height: 390px; cursor:\npointer; overflow: hidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',0,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',0,4,false)\"\nonclick=\"fGotoURL('https://www\nsercomm.com/contpage.aspx?lang\nd=1&amp;amp;type=news-detail&a\np;amp;L1id=4&amp;amp;L2id=3&am\n;amp;newsid=1686&amp;amp;pagei\n=1')\"&gt;&lt;img id=\"scimg0\"\nsrc=\"images/Booth_2021.png\"&gt\n&lt;div ...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;div id=\"scdiv0\"\nstyle=\"position: absolute;\ntop: 0px; left: 0px; width:\n810px; height: 390px; cursor:\npointer; overflow: hidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',0,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',0,4,false)\"\nonclick=\"fGotoURL('https://www\nsercomm.com/contpage.aspx?lang\nd=1&amp;amp;type=news-detail&a\np;amp;L1id=4&amp;amp;L2id=3&am\n;amp;newsid=1686&amp;amp;pagei\n=1')\"&gt;&lt;img id=\"scimg0\"\nsrc=\"images/Booth_2021.png\"&gt\n&lt;div ...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;div id=\"scdiv0\"\nstyle=\"position: absolute;\ntop: 0px; left: 0px; width:\n810px; height: 390px; cursor:\npointer; overflow: hidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',0,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',0,4,false)\"\nonclick=\"fGotoURL('https://www\nsercomm.com/contpage.aspx?lang\nd=1&amp;amp;type=news-detail&a\np;amp;L1id=4&amp;amp;L2id=3&am\n;amp;newsid=1686&amp;amp;pagei\n=1')\"&gt;&lt;img id=\"scimg0\"\nsrc=\"images/Booth_2021.png\"&gt\n&lt;div ...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"scimg0\"\nsrc=\"images/Booth_2021.png\"&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nstyle=\"position:absolute;\ntop:40px; left:100px;\nwidth:100%;\npointer-event:none;\"\nclass=\"showcasetxtlg\"&gt;CES\n2022&lt;br&gt;&lt;font\nclass=\"showcasetxtsmwht\"&gt;Da\ne：Ja...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Presentational markup used that has become obsolete in HTML5.",
+          "code": "&lt;font\nclass=\"showcasetxtsmwht\"&gt;Da\ne：January 5~8,\n2022&lt;br&gt;Venue：Las\nVegas, NV, Uni...&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;font\nclass=\"showcasetxtsmwht\"&gt;Da\ne：January 5~8,\n2022&lt;br&gt;Venue：Las\nVegas, NV, Uni...&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div id=\"scbox0\"\nstyle=\"position:absolute;\ntop:0px; left:0px;\nwidth:100%; height:100%;\nbackground-color:#000000;\nopacity:0;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;div id=\"scdiv1\"\nstyle=\"position: absolute;\ntop: 0px; left: 810px; width:\n590px; height: 390px; cursor:\npointer; overflow: hidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',1,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',1,4,false)\"\nonclick=\"fOpenPopVid('images/v\ndeo/SerComm-Next-Gen-Connectiv\nty_SD\n540p.mp4','&amp;nbsp;')\"&gt;&l\n;img id=\"scimg1\"\nsrc=\"images/showcaseimg-R1-vid\no....&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;div id=\"scdiv1\"\nstyle=\"position: absolute;\ntop: 0px; left: 810px; width:\n590px; height: 390px; cursor:\npointer; overflow: hidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',1,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',1,4,false)\"\nonclick=\"fOpenPopVid('images/v\ndeo/SerComm-Next-Gen-Connectiv\nty_SD\n540p.mp4','&amp;nbsp;')\"&gt;&l\n;img id=\"scimg1\"\nsrc=\"images/showcaseimg-R1-vid\no....&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;div id=\"scdiv1\"\nstyle=\"position: absolute;\ntop: 0px; left: 810px; width:\n590px; height: 390px; cursor:\npointer; overflow: hidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',1,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',1,4,false)\"\nonclick=\"fOpenPopVid('images/v\ndeo/SerComm-Next-Gen-Connectiv\nty_SD\n540p.mp4','&amp;nbsp;')\"&gt;&l\n;img id=\"scimg1\"\nsrc=\"images/showcaseimg-R1-vid\no....&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"scimg1\"\nsrc=\"images/showcaseimg-R1-vid\no.jpg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Presentational markup used that has become obsolete in HTML5.",
+          "code": "&lt;font\nclass=\"showcasetxtsmbk\"&gt;&lt\n/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div id=\"scbox1\"\nstyle=\"position:absolute;\ntop:0px; left:0px;\nwidth:100%; height:100%;\nbackground-color:#000000;\nopacity:0;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div id=\"scdivbottom\"\nstyle=\"position: relative;\ntop: 15px; height: 390px;\nwidth: 1400px; opacity: 0;\"\nalign=\"left\"&gt;&lt;div\nid=\"scdiv2\" style=\"position:\nabsolute; top:\n0...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;div id=\"scdiv2\"\nstyle=\"position: absolute;\ntop: 0px; left: -690px;\nwidth: 690px; height: 390px;\ncursor: pointer; overflow:\nhidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',2,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',2,4,false)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=prod2n\nw&amp;amp;L1id=2&amp;amp;L2id=\n&amp;amp;L3id=9')\"&gt;&lt;img\nid=\"scimg2\"\nsrc=\"images/Website Image_IP\nCama...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;div id=\"scdiv2\"\nstyle=\"position: absolute;\ntop: 0px; left: -690px;\nwidth: 690px; height: 390px;\ncursor: pointer; overflow:\nhidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',2,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',2,4,false)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=prod2n\nw&amp;amp;L1id=2&amp;amp;L2id=\n&amp;amp;L3id=9')\"&gt;&lt;img\nid=\"scimg2\"\nsrc=\"images/Website Image_IP\nCama...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;div id=\"scdiv2\"\nstyle=\"position: absolute;\ntop: 0px; left: -690px;\nwidth: 690px; height: 390px;\ncursor: pointer; overflow:\nhidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',2,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',2,4,false)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=prod2n\nw&amp;amp;L1id=2&amp;amp;L2id=\n&amp;amp;L3id=9')\"&gt;&lt;img\nid=\"scimg2\"\nsrc=\"images/Website Image_IP\nCama...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"scimg2\"\nsrc=\"images/Website Image_IP\nCamara_Final.png\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nstyle=\"position:absolute;\ntop:40px; left:100px;\nwidth:100%;\npointer-event:none;\"\nclass=\"showcasetxtlg\"&gt;IP\nCamera&lt;br&gt;&lt;font\nclass=\"showcasetxtsmwht\"&gt;Se\ncom...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Presentational markup used that has become obsolete in HTML5.",
+          "code": "&lt;font\nclass=\"showcasetxtsmwht\"&gt;Se\ncomm Provides Various\nSolutions &lt;br&gt;for Home\nSe...&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;font\nclass=\"showcasetxtsmwht\"&gt;Se\ncomm Provides Various\nSolutions &lt;br&gt;for Home\nSe...&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div id=\"scbox2\"\nstyle=\"position:absolute;\ntop:0px; left:0px;\nwidth:100%; height:100%;\nbackground-color:#000000;\nopacity:0;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by an event handler for this element is available through the keyboard",
+          "code": "&lt;div id=\"scdiv3\"\nstyle=\"position: absolute;\ntop: 0px; left: 1280px;\nwidth: 710px; height: 390px;\ncursor: pointer; overflow:\nhidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',3,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',3,4,false)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=news-d\ntail&amp;amp;L1id=4&amp;amp;L2\nd=1&amp;amp;newsid=1276&amp;am\n;pageid=1')\"&gt;&lt;img\nid=\"scimg3\"\nsrc=\"images/mmWaveSmallCell_2.\npg...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G90\" target=\"_blank\">G90</a>"
+          ],
+          "id": "G90"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;div id=\"scdiv3\"\nstyle=\"position: absolute;\ntop: 0px; left: 1280px;\nwidth: 710px; height: 390px;\ncursor: pointer; overflow:\nhidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',3,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',3,4,false)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=news-d\ntail&amp;amp;L1id=4&amp;amp;L2\nd=1&amp;amp;newsid=1276&amp;am\n;pageid=1')\"&gt;&lt;img\nid=\"scimg3\"\nsrc=\"images/mmWaveSmallCell_2.\npg...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;div id=\"scdiv3\"\nstyle=\"position: absolute;\ntop: 0px; left: 1280px;\nwidth: 710px; height: 390px;\ncursor: pointer; overflow:\nhidden;\"\nonmouseover=\"fMouseoverFXDimIc\nn('scbox',3,4,true)\"\nonmouseout=\"fMouseoverFXDimIco\n('scbox',3,4,false)\"\nonclick=\"fGotoURL('contpage.as\nx?langid=1&amp;amp;type=news-d\ntail&amp;amp;L1id=4&amp;amp;L2\nd=1&amp;amp;newsid=1276&amp;am\n;pageid=1')\"&gt;&lt;img\nid=\"scimg3\"\nsrc=\"images/mmWaveSmallCell_2.\npg...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"scimg3\"\nsrc=\"images/mmWaveSmallCell_2.\npg\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;div\nstyle=\"position:absolute;\ntop:40px; left:70px;\nwidth:100%;\npointer-event:none;\"\nclass=\"showcasetxtlg\"&gt;5G\nmmWave Small Cell\n&lt;br&gt;&lt;font\nclass=\"showcasetxts...&lt;/div\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Presentational markup used that has become obsolete in HTML5.",
+          "code": "&lt;font\nclass=\"showcasetxtsmwht\"&gt;Se\ncomm’s 5G Enterprise mmWave\n&lt;br&gt;Small Cell\nAchi...&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;font\nclass=\"showcasetxtsmwht\"&gt;Se\ncomm’s 5G Enterprise mmWave\n&lt;br&gt;Small Cell\nAchi...&lt;/font&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div id=\"scbox3\"\nstyle=\"position:absolute;\ntop:0px; left:0px;\nwidth:100%; height:100%;\nbackground-color:#000000;\nopacity:0;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div id=\"sitemapcontainer\"\nalign=\"left\" style=\"opacity:\n0;\"&gt;&lt;table\ncellpadding=\"0\"\ncellspacing=\"0\" border=\"0\"\n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;table cellpadding=\"0\"\ncellspacing=\"0\" border=\"0\"\nalign=\"left\" style=\"width:\n1280px;\"&gt;&lt;tbody&gt;&lt;t\n&gt;&lt;td height=\"60\"\ncolspan=\"6\"&gt;&lt;/td&gt;&lt;\ntr&gt;&lt;...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"300\"\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"top\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"300\"\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"top\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"300\"\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"top\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"300\"\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"top\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"300\"\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"top\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td width=\"0\"\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"top\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=info&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=info&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=news&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=info&amp;amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:0px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td\nstyle=\"padding-left:30px;\"\nalign=\"left\"\nvalign=\"middle\"&gt;&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=prod2new&amp;...&lt\n/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div id=\"ciscontainer\"\nalign=\"center\"&gt;\n\t\t\t&lt;table cellpadding=\"0\"\ncellspacing=\"0\"\nborder=...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;table cellpadding=\"0\"\ncellspacing=\"0\" border=\"0\"\nalign=\"left\" width=\"100%\"\nstyle=\"width: 1280px;\"&gt;\n\t\t\t\t&lt;tbody&gt;&lt;tr&gt;\n\t\t\t\t\t&lt;td align=\"left\"\nstyle=\"padd...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td align=\"left\"\nstyle=\"padding-left:40px;\"&gt;\n\t\t\t\t\t\t&lt;img\nsrc=\"img/share/logo-bottom.jpg\n&gt;\t\t\t\t\t&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img\nsrc=\"img/share/logo-bottom.jpg\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;td align=\"right\"\nvalign=\"bottom\"\nstyle=\"padding:0px 40px 26px\n0px;\"&gt;\n\t\t\t\t\t\t&lt;a\nhref=\"contpage.aspx?langid=1&a\np;amp;type=in...&lt;/td&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div\nid=\"langmenucontainer\"\nalign=\"center\"&gt;&lt;div\nid=\"langmenubg\"&gt;&lt;/div&gt\n&lt;div id=\"langmenutxt\"\na...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;div id=\"langmenutxt\"\nalign=\"center\"\nonmouseover=\"clearTimeout(gLAN\nINTERVAL);gLANGMENUFLAG=true;\"\nonmouseout=\"gLANGMENUFLAG=fals\n;gLANGINTERVAL=setTimeout(fClo\neLangMenu,300);\"&gt;&lt;br&gt;\nlt;br&gt;&lt;p id=\"langitem0\"\nstyle=\"opacity:0;\nheight...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.",
+          "code": "&lt;div id=\"langmenutxt\"\nalign=\"center\"\nonmouseover=\"clearTimeout(gLAN\nINTERVAL);gLANGMENUFLAG=true;\"\nonmouseout=\"gLANGMENUFLAG=fals\n;gLANGINTERVAL=setTimeout(fClo\neLangMenu,300);\"&gt;&lt;br&gt;\nlt;br&gt;&lt;p id=\"langitem0\"\nstyle=\"opacity:0;\nheight...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "type": "warning",
+          "msg": "Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.",
+          "code": "&lt;div id=\"langmenutxt\"\nalign=\"center\"\nonmouseover=\"clearTimeout(gLAN\nINTERVAL);gLANGMENUFLAG=true;\"\nonmouseout=\"gLANGMENUFLAG=fals\n;gLANGINTERVAL=setTimeout(fClo\neLangMenu,300);\"&gt;&lt;br&gt;\nlt;br&gt;&lt;p id=\"langitem0\"\nstyle=\"opacity:0;\nheight...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR20\" target=\"_blank\">SCR20</a>"
+          ],
+          "id": "SCR20"
+        },
+        {
+          "errorcount": 83
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

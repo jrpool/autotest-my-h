@@ -1,0 +1,200 @@
+{
+  "script": "aatt",
+  "batch": "aattAllBadJSON",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1arqq",
+  "logCount": 10,
+  "logSize": 374,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://reta-vortaro.de/revo/dlg/index-1g.html",
+      "what": "Reta Vortaro",
+      "result": "https://reta-vortaro.de/revo/dlg/index-1g.html"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://reta-vortaro.de/revo/dlg/index-1g.html",
+      "result": [
+        {
+          "type": "error",
+          "msg": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+          "code": "&lt;html&gt;&lt;head&gt;\n    &lt;meta\ncharset=\"UTF-8\"&gt;\n    &lt;link\nrel=\"p...&lt;/html&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H57\" target=\"_blank\">H57</a>"
+          ],
+          "id": "H57"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div id=\"MathJax_Message\"\nstyle=\"display:\nnone;\"&gt;&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"search\"\nid=\"x:q\" name=\"q\"\nmaxlength=\"55\"\nplaceholder=\"ĵokeroj: %\n(pluraj) kaj _ (unu)\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h1&gt;&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Heading markup should be used if this content is intended as a heading.",
+          "code": "&lt;p style=\"font-size:\n120%\"&gt;&lt;b&gt;&lt;span\nclass=\"literoj\"\nlang=\"eo\"&gt;&lt;a\nhref=\"../inx...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p&gt;&lt;a\nhref=\"lx_en_a.html\"&gt;&lt;b&g\n;angla&lt;/b&gt;&lt;/a&gt;&lt;\n href=\"lx...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p&gt;&lt;a\nhref=\"lx_ab_0.html\"&gt;abĥaza&\nt;/a&gt;&lt;br&gt;&lt;a\nhref=\"lx_a...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Align attributes .",
+          "code": "&lt;h1 align=\"center\"\nstyle=\"color:black;\nfont-size: xx-large\"&gt;Reta\nVortaro&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H49\" target=\"_blank\">H49</a>"
+          ],
+          "id": "H49"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;h1 align=\"center\"\nstyle=\"color:black;\nfont-size: xx-large\"&gt;Reta\nVortaro&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3&gt;\n    kun difinoj, ekzemploj,\n    tradukoj,\nindekso...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"search\"\nid=\"w:q\" name=\"q\"\nmaxlength=\"255\"\nplaceholder=\"vorto...\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p&gt;\n      ... progresigi la\nvortaron kun\n      &lt;a tar...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p&gt;\n      Por faciligi la\nredaktadon ni provizas\ndive...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p&gt;\n      Regule kaj aŭtomate ni\naktualigas la\nliston...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p class=\"piedlinio\"&gt;\n        &lt;a class=\"redakto\"\ntitle=\"Datumprotekta\nd...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "errorcount": 5
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

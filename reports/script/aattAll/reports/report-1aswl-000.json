@@ -1,0 +1,157 @@
+{
+  "script": "aatt",
+  "batch": "aattAllFail",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1aswl",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://lernu.net/",
+      "what": "lernu!",
+      "result": "https://lernu.net/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://lernu.net/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a aria-label=\"learn more\nabout cookies\" role=\"button\"\ntabindex=\"0\" class=\"cc-link\"\nhref=\"https://lernu.net/privat\nco\" target=\"_blank\"&gt;Pli da\ninformoj&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;a aria-label=\"dismiss\ncookie message\" role=\"button\"\ntabindex=\"0\" class=\"cc-btn\ncc-dismiss\"&gt;Akcepti&lt;/a&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div id=\"wrapper\"\nclass=\"main\"&gt;\n    &lt;a class=\"sr-only\nsr-only-focusable\"\nhref=\"#c...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"content\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a class=\"sr-only\nsr-only-focusable\"\nhref=\"#content\"&gt;Al la\nenhavo&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"navbar-brand\"\nhref=\"/\"&gt;&lt;div\nclass=\"logo icon svg-sprite\nsvg\"&gt;&lt;svg\nxmlns=\"...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This element has role of \"button\" but does not have a name available to an accessibility API. Valid names are: element content, aria-label , aria-labelledby .",
+          "code": "&lt;a class=\"dropdown-toggle\"\ndata-toggle=\"dropdown\"\nrole=\"button\"\naria-haspopup=\"true\"\naria-expanded=\"false\"\nhref=\"#\"&gt;&lt;span\nclass=\"caret\"&gt;&lt;/span&gt;\nlt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a class=\"btn-play\nsvg-sprite svg\"\ndata-src=\"https://www.youtube.\nom/watch?v=RlftmTm8I18\"\nhref=\"https://www.youtube.com/\natch?v=RlftmTm8I18\"\ntarget=\"_blank\"&gt;&lt;svg\nxmlns=\"http://www.w3.org/2000/\nvg\" id=\"btn-pl...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://facebook.com/ler\nu.net\"\ntarget=\"_blank\"&gt;&lt;div\nclass=\"icon svg-sprite svg\nfacebook\"&gt;&lt;svg\nxml...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://twitter.com/lern\n_net\"\ntarget=\"_blank\"&gt;&lt;div\nclass=\"icon svg-sprite svg\ntwitter\"&gt;&lt;svg\nxmln...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4 class=\"modal-title\"\nid=\"myModalLabel\"&gt;Elektu\nvian lingvon&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img id=\"jp_poster_0\"\nstyle=\"width: 0px; height:\n0px; display: none;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "errorcount": 7
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}

@@ -1,0 +1,955 @@
+{
+  "script": "aatt",
+  "batch": "aattAllBadJSON",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1arqq",
+  "logCount": 195,
+  "logSize": 8416,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.childrensdefense.org/",
+      "what": "Children’s Defense Fund",
+      "result": "https://www.childrensdefense.org/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.childrensdefense.org/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"lp-bar__iframe-wrapper\"\nid=\"lp-bar-e5ExwYb55d4ccCWNJ2h\nrh\"&gt;&lt;iframe\nclass=\"lp-bar__iframe\"\nscrolling=\"no\"\nfram...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nclass=\"lp-bar__iframe\"\nscrolling=\"no\"\nframeborder=\"0\"\nsrc=\"//childrensdefense.lpages\nco/serve-leadbar/e5ExwYb55d4cc\nWNJ2hyrh/\"\ndata-bar-frame-id=\"e5ExwYb55d4\ncCWNJ2hyrh\"\ndata-bar-frame-params-key=\"NO_\nARAMS_20160921\"\ndata-bar-open-on-load=\"true\"&g\n;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.61:1. Recommendation:  change background to #008297.",
+          "code": "&lt;button\nid=\"sign-up-button\"\nclass=\"reset-button\nsign-up-button pum-trigger\"\nrole=\"button\" style=\"cursor:\npointer;\"&gt;Sign Up for\nEmail&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"fusion-social-networks-\nrapper\"&gt;&lt;a\nclass=\"fusion-social-network-i\non\nfusion-toolti...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nclass=\"fusion-social-network-i\non fusion-tooltip\nfusion-facebook\nfusion-icon-facebook\"\nstyle=\"color:#ffffff;\"\nhref=\"https://www.facebook.com\nChildrensDefenseFund\"\ntarget=\"_blank\" rel=\"noopener\nnoreferrer\"\ndata-placement=\"bottom\"\ndata-title=\"Facebook\"\ndata-toggle=\"tooltip\"\ntitle=\"\"\ndata-original-title=\"Facebook\"\ngt;&lt;span\nclass=\"screen-reader-text\"&gt;\nacebook&lt;/span&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nclass=\"fusion-social-network-i\non fusion-tooltip\nfusion-twitter\nfusion-icon-twitter\"\nstyle=\"color:#ffffff;\"\nhref=\"https://twitter.com/Chil\nDefender\" target=\"_blank\"\nrel=\"noopener noreferrer\"\ndata-placement=\"bottom\"\ndata-title=\"Twitter\"\ndata-toggle=\"tooltip\"\ntitle=\"\"\ndata-original-title=\"Twitter\"&\nt;&lt;span\nclass=\"screen-reader-text\"&gt;\nwitter&lt;/span&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nclass=\"fusion-social-network-i\non fusion-tooltip\nfusion-instagram\nfusion-icon-instagram\"\nstyle=\"color:#ffffff;\"\nhref=\"https://www.instagram.co\n/childdefender1973\"\ntarget=\"_blank\" rel=\"noopener\nnoreferrer\"\ndata-placement=\"bottom\"\ndata-title=\"Instagram\"\ndata-toggle=\"tooltip\"\ntitle=\"\"\ndata-original-title=\"Instagram\n&gt;&lt;span\nclass=\"screen-reader-text\"&gt;\nnstagram&lt;/span&gt;&lt;/a&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nclass=\"fusion-social-network-i\non fusion-tooltip\nfusion-youtube\nfusion-icon-youtube\"\nstyle=\"color:#ffffff;\"\nhref=\"http://www.youtube.com/c\nildrensdefense\"\ntarget=\"_blank\" rel=\"noopener\nnoreferrer\"\ndata-placement=\"bottom\"\ndata-title=\"YouTube\"\ndata-toggle=\"tooltip\"\ntitle=\"\"\ndata-original-title=\"YouTube\"&\nt;&lt;span\nclass=\"screen-reader-text\"&gt;\nouTube&lt;/span&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has role of \"button\" but does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button id=\"search-button\"\nclass=\"reset-button\"\nrole=\"button\"&gt;&lt;i\nclass=\"fa\nfa-search\"&gt;&lt;/i&gt;&lt;/b\ntton&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form\ndata-sf-form-id=\"14995\"\ndata-is-rtl=\"0\"\ndata-maintain-state=\"\"\ndata-results-url=\"https://www.\nhildrensdefense.org/search/\"\ndata-ajax-url=\"https://www.chi\ndrensdefense.org/search/?sf_da\na=all\"\ndata-ajax-form-url=\"https://ww\n.childrensdefense.org/?sfid=14\n95&amp;amp;sf_action=get_data&\nmp;amp;sf_data=form\"\ndata-display-result-method=\"ar\nhive\"\ndata-use-history-api=\"1\"\ndata-template-loaded=\"0\"\ndata-lang-code=\"\"\ndata-ajax=\"1\"\ndata-ajax-data-type=\"html\"\ndata-ajax-target=\"#main\"\ndata-ajax-pagination-type=\"nor\nal\"\ndata-ajax-links-selector=\".pag\nnation a\"\ndata-update-ajax-url=\"1\"\ndata-only-results-ajax=\"1\"\ndata-scroll-to-pos=\"window\"\ndata-scroll-on-action=\"all\"\ndata-init-paged=\"1\"\ndata-auto-update=\"1\"\ndata-auto-count=\"1\"\ndata-auto-count-refresh-mode=\"\n\"\naction=\"https://www.childrensd\nfense.org/search/\"\nmethod=\"post\"\nclass=\"searchandfilter\"\nid=\"search-filter-form-14995\"\nautocomplete=\"off\"\ndata-instance-count=\"1\"&gt;&lt\nul&gt;&lt;li\nclass=\"sf-field-search\"\ndata-sf-field-name...&lt;/form\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change background to #da3a32.",
+          "code": "&lt;a\nhref=\"https://secure.childrens\nefense.org/site/Donation2?4642\ndonation=form1&amp;amp;df_id=4\n42&amp;amp;mfc_pref=T&amp;amp;\n_src=web&amp;amp;s_subsrc=top~\nav~button\"&gt;Donate\nNow&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form&gt;\n\t\t\t    &lt;select\nonchange=\"document.location.hr\nf=t...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select\nonchange=\"document.location.hr\nf=this.value\"&gt;\n\t\t\t       \n&lt;option&gt;Select&lt;/optio\n&gt;\n\t\t\t       \n&lt;op...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select\nonchange=\"document.location.hr\nf=this.value\"&gt;\n\t\t\t       \n&lt;option&gt;Select&lt;/optio\n&gt;\n\t\t\t       \n&lt;op...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select\nonchange=\"document.location.hr\nf=this.value\"&gt;\n\t\t\t       \n&lt;option&gt;Select&lt;/optio\n&gt;\n\t\t\t       \n&lt;op...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select\nonchange=\"document.location.hr\nf=this.value\"&gt;\n\t\t\t       \n&lt;option&gt;Select&lt;/optio\n&gt;\n\t\t\t       \n&lt;op...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\nfusion-equal-height-columns\"\nstyle=\"background-color:\n#15a3bc;background-position:\ncenter\ncenter;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:0\nx;padding-left:60px;margin-bot\nom: 50px;margin-top:\n5px;\"&gt;&lt;div\nclass=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 390px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-builder-row\nfusion-build...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px 20px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 390px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-column-content-c\nntered\" style=...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h2\nclass=\"title-heading-left\"\nstyle=\"margin:0;font-size:1em;\n&gt;Invest in the future of\nour country’s\nchildren&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.",
+          "code": "&lt;h2\nclass=\"title-heading-left\"\nstyle=\"margin:0;font-size:1em;\n&gt;Invest in the future of\nour country’s\nchildren&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 390px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;span\nclass=\"fusion-imageframe\nimageframe-none\nima...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Img element with empty alt text must have absent or empty title attribute.",
+          "code": "&lt;img\nsrc=\"https://www.childrensdefe\nse.org/wp-content/uploads/2021\n12/Invest-in-Children.png\"\nwidth=\"528\" height=\"390\"\nalt=\"\" title=\"Invest in\nChildren\"\nclass=\"img-responsive\nwp-image-30362\"\nsrcset=\"https://www.childrensd\nfense.org/wp-content/uploads/2\n21/12/Invest-in-Children-200x1\n8.png 200w,\nhttps://www.childrensdefense.o\ng/wp-content/uploads/2021/12/I\nvest-in-Children-400x295.png\n400w,\nhttps://www.childrensdefense.o\ng/wp-content/uploads/2021/12/I\nvest-in-Children.png 528w\"\nsizes=\"(max-width: 800px)\n100vw, 528px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\"\nstyle=\"background-color:\n#ffffff;background-position:\ncenter\ncenter;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:5\npx;padding-left:60px;margin-to\n: 5px;\"&gt;&lt;div\nclass=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px 30px 0px\n30px;background-position:left\ntop;background-repeat:no-repea\n;-webkit-background-size:cover\n-moz-background-size:cover;-o-\nackground-size:cover;backgroun\n-size:cover;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-title title\nfusion-title...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box reverse-text\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\nfusion-equal-height-columns\"\nstyle=\"background-color:\n#ffffff;background-position:\ncenter\ncenter;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:0\nx;padding-left:60px;\"&gt;&lt;d\nv class=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"background-color:\nrgb(103, 59, 144); padding:\n0px; background-position:\nleft top; background-repeat:\nno-repeat; background-size:\ncover; min-height: 795px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;span\nclass=\"fusion-imageframe\nimageframe-n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 30px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 275px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-title title\nfusion-title-6\nfusi...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.",
+          "code": "&lt;h3\nclass=\"title-heading-left\"\nstyle=\"margin:0;font-size:1em;\n&gt;Child Tax Credit\nResources&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"background-color:\nrgb(25, 194, 224); padding:\n0px; background-position:\nleft top; background-repeat:\nno-repeat; background-size:\ncover; min-height: 795px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-builder-row\nfusion-build...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 30px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 396px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-title title\nfusion-title-7\nfusi...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2.14:1. Recommendation:  change background to #00a3bf.",
+          "code": "&lt;h3\nclass=\"title-heading-left\"\nstyle=\"margin:0;font-size:1em;\n&gt;Children Ages 5-11: It’s\nYour Turn to Get\nVaccinat...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.14:1. Recommendation:  change background to #00829a.",
+          "code": "&lt;p&gt;In light of CDC\napproval of a COVID-19\nvaccine for...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.14:1. Recommendation:  change text colour to #00829a.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\nead More&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 399px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-sep-clear\"&gt;&l\n;/div&gt;&lt;div\nclass=\"fu...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box reverse-text\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\nfusion-equal-height-columns\"\nstyle=\"background-color:\n#ffffff;background-position:\ncenter\ncenter;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:0\nx;padding-left:60px;\"&gt;&lt;d\nv class=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"background-color:\nrgb(249, 89, 81); padding:\n0px; background-position:\nleft top; background-repeat:\nno-repeat; background-size:\ncover; min-height: 737px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-builder-row\nfusion-build...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 30px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 340px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-title title\nfusion-title-8\nfusi...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change background to #da3a32.",
+          "code": "&lt;p&gt;All about the Build\nBack Better Act and what it\nme...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change text colour to #da3a32.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\nearn more&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"background-color:\nrgb(21, 163, 188); padding:\n0px; background-position:\nleft top; background-repeat:\nno-repeat; background-size:\ncover; min-height: 737px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;span\nclass=\"fusion-imageframe\nimageframe-n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 30px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 275px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-title title\nfusion-title-9\nfusi...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3:1. Recommendation:  change background to #008299.",
+          "code": "&lt;p&gt;Our recent report\nand factsheets provide an\novervi...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3:1. Recommendation:  change text colour to #008299.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\nxplore the report&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\nfusion-equal-height-columns\"\nstyle=\"background-color:\n#f1f1f1;background-position:\nright\nbottom;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:0\nx;padding-left:60px;margin-bot\nom: 50px;margin-top:\n20px;\"&gt;&lt;div\nclass=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px;\nbackground-position: right\nbottom; background-repeat:\nno-repeat; background-size:\ncover; min-height: 413px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-builder-row\nfusion-build...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px 20px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 413px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-column-content-c\nntered\" style=...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change background to #da3a32.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\nonate Monthly&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 413px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;span\nclass=\"fusion-imageframe\nimageframe-none\nima...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Img element with empty alt text must have absent or empty title attribute.",
+          "code": "&lt;img\nsrc=\"https://www.childrensdefe\nse.org/wp-content/uploads/2020\n07/cutout-girl-528px.png\"\nwidth=\"528\" height=\"413\"\nalt=\"\"\ntitle=\"cutout-girl-528px\"\nclass=\"img-responsive\nwp-image-22626\"\nsrcset=\"https://www.childrensd\nfense.org/wp-content/uploads/2\n20/07/cutout-girl-528px-200x15\n.png 200w,\nhttps://www.childrensdefense.o\ng/wp-content/uploads/2020/07/c\ntout-girl-528px-400x313.png\n400w,\nhttps://www.childrensdefense.o\ng/wp-content/uploads/2020/07/c\ntout-girl-528px.png 528w\"\nsizes=\"(max-width: 800px)\n100vw, 528px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box no-cover\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\"\nstyle=\"background-color:\n#ffffff;background-position:\ncenter\ncenter;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:0\nx;padding-left:60px;margin-top\n 50px;\"&gt;&lt;div\nclass=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px 0px 0px\n0px;background-position:left\ntop;background-repeat:no-repea\n;-webkit-background-size:cover\n-moz-background-size:cover;-o-\nackground-size:cover;backgroun\n-size:cover;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-content-boxes\ncontent-bo...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"col\ncontent-box-wrapper\ncontent-wrapper\nlink-area-link-icon\nicon-hover-animation-fade\"\nstyle=\"background-color:transp\nrent;\"\ndata-animationoffset=\"100%\"&gt\n&lt;div class=\"heading\nheading-with-icon\nicon-left\"&gt;&lt;...&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://www.childrensdefe\nse.org/wp-content/uploads/2020\n07/our-work.png\" width=\"190\"\nheight=\"190\" alt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"content-container\"\nstyle=\"color:#747474;\"&gt;\n&lt;p&gt;We fight to make\nsure every child in America\nh...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change background to #da3a32.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\nearn more&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"col\ncontent-box-wrapper\ncontent-wrapper\nlink-area-link-icon\nicon-hover-animation-fade\"\nstyle=\"background-color:transp\nrent;\"\ndata-animationoffset=\"100%\"&gt\n&lt;div class=\"heading\nheading-with-icon\nicon-left\"&gt;&lt;...&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://www.childrensdefe\nse.org/wp-content/uploads/2020\n07/a-good-investment.png\"\nwidth=\"190\" height=\"190\"\nalt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"content-container\"\nstyle=\"color:#747474;\"&gt;\n&lt;p&gt;Your gift is put to\nimmediate use to help all\n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.83:1. Recommendation:  change background to #ab6600.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\nnvest in Children&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box\nfusion-parallax-none\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\nfusion-equal-height-columns\"\nstyle=\"background-color:\n#ffffff;background-image:\nurl(&amp;quot;https://www.chil\nrensdefense.org/wp-content/upl\nads/2020/08/email-sign-up-back\nrounnd.jpg&amp;quot;);backgrou\nd-position: center\ncenter;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:0\nx;padding-left:60px;margin-bot\nom: 50px;margin-top:\n5px;-webkit-background-size:co\ner;-moz-background-size:cover;\no-background-size:cover;backgr\nund-size:cover;\"&gt;&lt;div\nclass=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 347px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-builder-row\nfusion-build...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px 20px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 347px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-column-content-c\nntered\" style=...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.",
+          "code": "&lt;h2\nclass=\"title-heading-left\"\nstyle=\"margin:0;font-size:1em;\n&gt;Count me in!&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.",
+          "code": "&lt;p&gt;Be a champion for\nevery child. Sign up for\nupdates...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\"\nstyle=\"background-color:\n#ffffff;background-position:\ncenter\ncenter;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:0\nx;padding-left:60px;\"&gt;&lt;d\nv class=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px 0px 0px\n0px;background-position:left\ntop;background-repeat:no-repea\n;-webkit-background-size:cover\n-moz-background-size:cover;-o-\nackground-size:cover;backgroun\n-size:cover;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-content-boxes\ncontent-bo...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"col\ncontent-box-wrapper\ncontent-wrapper\nlink-area-link-icon\nicon-hover-animation-fade\"\nstyle=\"background-color:transp\nrent;\"\ndata-animationoffset=\"100%\"&gt\n&lt;div class=\"heading\nheading-with-icon\nicon-left\"&gt;&lt;...&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://www.childrensdefe\nse.org/wp-content/uploads/2020\n07/freedom-schools.png\"\nwidth=\"190\" height=\"190\"\nalt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"content-container\"\nstyle=\"color:#747474;\"&gt;\n&lt;p&gt;More than 150,000\nchildren have experienced\nou...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3:1. Recommendation:  change background to #008299.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\noin the Movement&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div class=\"col\ncontent-box-wrapper\ncontent-wrapper\nlink-area-link-icon\nicon-hover-animation-fade\"\nstyle=\"background-color:transp\nrent;\"\ndata-animationoffset=\"100%\"&gt\n&lt;div class=\"heading\nheading-with-icon\nicon-left\"&gt;&lt;...&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img\nsrc=\"https://www.childrensdefe\nse.org/wp-content/uploads/2020\n07/marian-wright-edelman.png\"\nwidth=\"190\" height=\"190\"\nalt=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;div\nclass=\"content-container\"\nstyle=\"color:#747474;\"&gt;\n&lt;p&gt;Our founder and\nlifelong advocate for\ndisadvan...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.8:1. Recommendation:  change background to #588202.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\nead Child Watch&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-fullwidth\nfullwidth-box\nnonhundred-percent-fullwidth\nnon-hundred-percent-height-scr\nlling\nfusion-equal-height-columns\"\nstyle=\"background-color:\n#f1f1f1;background-position:\nright\nbottom;background-repeat:\nno-repeat;padding-top:0px;padd\nng-right:60px;padding-bottom:0\nx;padding-left:60px;margin-bot\nom: 0px;margin-top:\n0px;\"&gt;&lt;div\nclass=\"fusion-builder-row\nfusion-row \"&gt;&lt;div\nc...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px;\nbackground-position: right\nbottom; background-repeat:\nno-repeat; background-size:\ncover; min-height: 492px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;\n\t\t\t\t\t\t&lt;div\nclass=\"fusion-builder-row\nfusion-build...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 492px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;span\nclass=\"fusion-imageframe\nimageframe-none\nima...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Img element with empty alt text must have absent or empty title attribute.",
+          "code": "&lt;img\nsrc=\"https://www.childrensdefe\nse.org/wp-content/uploads/2020\n07/cutout-boy-528px.png\"\nwidth=\"528\" height=\"492\"\nalt=\"\"\ntitle=\"cutout-boy-528px\"\nclass=\"img-responsive\nwp-image-22625\"\nsrcset=\"https://www.childrensd\nfense.org/wp-content/uploads/2\n20/07/cutout-boy-528px-200x186\npng 200w,\nhttps://www.childrensdefense.o\ng/wp-content/uploads/2020/07/c\ntout-boy-528px-400x373.png\n400w,\nhttps://www.childrensdefense.o\ng/wp-content/uploads/2020/07/c\ntout-boy-528px.png 528w\"\nsizes=\"(max-width: 800px)\n100vw, 528px\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;div\nclass=\"fusion-column-wrapper\"\nstyle=\"padding: 0px 20px;\nbackground-position: left\ntop; background-repeat:\nno-repeat; background-size:\ncover; min-height: 492px;\nheight: auto;\"\ndata-bg-url=\"\"&gt;&lt;div\nclass=\"fusion-column-content-c\nntered\" style=...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.19:1. Recommendation:  change background to #da3a32.",
+          "code": "&lt;span\nclass=\"fusion-button-text\"&gt;\nur Impact&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.",
+          "code": "&lt;h4\nclass=\"widget-title\"&gt;About\nUs&lt;/h4&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"fusion-social-networks-\nrapper\"&gt;\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nclass=\"fusion-social-network-i\non fusion-tooltip\nfusion-facebook\nfusion-icon-facebook\"\nhref=\"https://www.facebook.com\nChildrensDefenseFund\"\ntitle=\"Facebook\"\naria-label=\"Facebook\"\nrel=\"noopener noreferrer\"\ntarget=\"_blank\"\nstyle=\"font-size:16px;color:#C\nC6C6;\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nclass=\"fusion-social-network-i\non fusion-tooltip\nfusion-twitter\nfusion-icon-twitter\"\nhref=\"https://twitter.com/Chil\nDefender\" title=\"Twitter\"\naria-label=\"Twitter\"\nrel=\"noopener noreferrer\"\ntarget=\"_blank\"\nstyle=\"font-size:16px;color:#C\nC6C6;\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nclass=\"fusion-social-network-i\non fusion-tooltip\nfusion-instagram\nfusion-icon-instagram\"\nhref=\"https://www.instagram.co\n/childdefender1973\"\ntitle=\"Instagram\"\naria-label=\"Instagram\"\nrel=\"noopener noreferrer\"\ntarget=\"_blank\"\nstyle=\"font-size:16px;color:#C\nC6C6;\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a\nclass=\"fusion-social-network-i\non fusion-tooltip\nfusion-youtube\nfusion-icon-youtube\"\nhref=\"http://www.youtube.com/c\nildrensdefense\"\ntitle=\"YouTube\"\naria-label=\"YouTube\"\nrel=\"noopener noreferrer\"\ntarget=\"_blank\"\nstyle=\"font-size:16px;color:#C\nC6C6;\"&gt;&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with no link content and no name and/or ID attribute.",
+          "code": "&lt;a\nclass=\"fusion-one-page-text-li\nk\nfusion-page-load-link\"&gt;&lt;\na&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;a href=\"#\" id=\"toTop\"\nstyle=\"display:\nnone;\"&gt;&lt;span\nid=\"toTopHover\"&gt;&lt;/span&g\n;&lt;span\nclass=\"screen-r...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Img element is marked so that it is ignored by Assistive Technology.",
+          "code": "&lt;img style=\"width:0px;\nheight:0px; display:none;\nvisibility:hidden;\"\nid=\"batBeacon643192427667\"\nwidth=\"0\" height=\"0\" alt=\"\"\nsrc=\"https://bat.bing.com/acti\nn/0?ti=25089643&amp;amp;Ver=2&\nmp;amp;mid=1cfb586a-914c-4e52-\n6c1-e28d793cab8d&amp;amp;sid=3\nbfa720708811ec9715f309e4ba3a4a\namp;amp;vid=3dbfd030708811ecbb\n3ef2ec52c94c2&amp;amp;vids=1&a\np;amp;pi=0&amp;amp;lg=en-US&am\n;amp;sw=1280&amp;amp;sh=720&am\n;amp;sc=30&amp;amp;tl=Children\ns%20Defense%20Fund%20%E2%80%94\n20Leave%20No%20Child%20Behind%\n2%AE&amp;amp;p=https%3A%2F%2Fw\nw.childrensdefense.org%2F&amp;\nmp;r=&amp;amp;lt=2038&amp;amp;\nvt=pageLoad&amp;amp;msclkid=N&\nmp;amp;sv=1&amp;amp;rn=327323\"\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H67\" target=\"_blank\">H67</a>"
+          ],
+          "id": "H67"
+        },
+        {
+          "errorcount": 25
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      10
+    ]
+  ]
+}

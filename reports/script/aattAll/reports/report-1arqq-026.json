@@ -1,0 +1,985 @@
+{
+  "script": "aatt",
+  "batch": "aattAllBadJSON",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1arqq",
+  "logCount": 28,
+  "logSize": 767,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.se.com/us/en/",
+      "what": "Schneider Electric (VEIGX)",
+      "result": "https://www.se.com/us/en/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://www.se.com/us/en/",
+      "result": [
+        {
+          "type": "error",
+          "msg": "A title should be provided for the document, using a non-empty title element in the head section.",
+          "code": "&lt;head&gt;\n        &lt;meta\ncharset=\"utf-8\"&gt;\n        &lt;meta\nname...&lt;/head&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H25\" target=\"_blank\">H25</a>"
+          ],
+          "id": "H25"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nsrc=\"javascript:void(0)\"\ntitle=\"\" style=\"width: 0px;\nheight: 0px; border: 0px;\ndisplay:\nnone;\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a tabindex=\"1\"\nhref=\"#maincontent\"&gt;Skip\nTo Main Content&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"button\"\nclass=\"sdl-header-se_metabar-i\nem\n\nsdl-header-se_metabar-login-to\ngle\n sdl-header-se_metabar-toggle\njs-login-btn\" xtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;span&gt;\n &lt;span\nclass=\"sdl-header-se_metabar-i\non-...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"button\"\nclass=\"sdl-header-se_country-b\nnner-btn-close\njs-header-banner-btn-close\"\naria-label=\"\" xtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;svg\nclass=\"sdl-header-se_country-b\nnner-icon-cl...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This form control has an \"aria-label\" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.",
+          "code": "&lt;button type=\"button\"\nclass=\"sdl-header-se_country-b\nnner-btn-close\njs-header-banner-btn-close\"\naria-label=\"\" xtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;svg\nclass=\"sdl-header-se_country-b\nnner-icon-cl...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA6\" target=\"_blank\">ARIA6</a>"
+          ],
+          "id": "ARIA6"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a data-tpl-xpm=\"\"\ntabindex=\"0\" aria-label=\"My\nProducts\"\nhref=\"https://www.se.com/us/en\nproduct-cart\"\naria-labelledby=\"shopping-cart\nnav-link-0\"\nclass=\"sdl-header-se_shopping-\nart\n sdl-header-se_btn-nav\n \"&gt;\n &lt;div\nclass=\"sdl-header-se_shopping-\nart-link-wra...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"sdl-header-se_country-l\nst js-header-list hide\"&gt;\n &lt;div\nclass=\"sdl-header-se_country-l\nst-head js-h...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"button\"\nclass=\"sdl-header-se_country-l\nst-btn-close\njs-header-list-btn-close\"\naria-label=\"\" xtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;svg\nclass=\"sdl-header-se_country-l\nst-icon-clos...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This form control has an \"aria-label\" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.",
+          "code": "&lt;button type=\"button\"\nclass=\"sdl-header-se_country-l\nst-btn-close\njs-header-list-btn-close\"\naria-label=\"\" xtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;svg\nclass=\"sdl-header-se_country-l\nst-icon-clos...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/ARIA6\" target=\"_blank\">ARIA6</a>"
+          ],
+          "id": "ARIA6"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"sdl-header-se_mob-brand\nlist-wrap js-brand-list-wrap\nhide\"&gt;\n &lt;div\nclass=\"se-container\"&gt;\n &lt;div\nclass=\"se-row\"&gt;...&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button\nclass=\"sdl-header-se_mob-brand\nlist-back-btn js-back-btn\"\nxtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;svg&gt;&lt;use\nxlink:href=\"#icon-arrow-right\"\ngt;&lt;/use&gt;&lt;...&lt;/but\non&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"button\"\nclass=\"sdl-header-se_mob-brand\nlist-close-btn js-close-btn\"\nxtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;svg\nclass=\"sdl-header-se_mob-brand\nlist-icon-cl...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"sdl-header-se_notificat\non-container\njs-notification-wrap \nhide\"&gt;\n &lt;div\nclass=\"se-container\"&gt;\n &lt;div class=\"se-row\ns...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change background to #0c7eb0.",
+          "code": "&lt;span\nclass=\"se-font-a11y-link4\nse-btn-text se-rich-text\"\ndata-shave=\"2\"&gt;\n Learn more\n &lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"sdl-banner-full-image-c\nrousel_modal js-modal-video\nhide\"&gt;\n &lt;div\nclass=\"sdl-banner-full-image-c\nrousel_modal...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"button\"\nclass=\"sdl-banner-full-image-c\nrousel_modal-content-close\"\nxtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;svg&gt;&lt;use\nxlink:href=\"#close-1-20x20\"&gt\n&lt;/use&gt;&lt;/sv...&lt;/but\non&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Iframe element requires a non-empty title attribute that identifies the frame.",
+          "code": "&lt;iframe\nclass=\"youku-iframe\njs-youku-iframe hide\"\nallow=\"autoplay\"\nallowfullscreen=\"true\"&gt;&lt;\niframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H64\" target=\"_blank\">H64</a>"
+          ],
+          "id": "H64"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change background to #0c7eb0.",
+          "code": "&lt;span\nclass=\"se-font-a11y-link4\nse-btn-text se-rich-text\"&gt;\nStart your net-zero journey\n&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change background to #0c7eb0.",
+          "code": "&lt;span\nclass=\"se-font-a11y-link4\nse-btn-text\nse-rich-text\"&gt;Share with\nyour&amp;nbsp;&lt;span\nclass=\"nowrap\"&gt;networks...&\nt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change background to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;networks&lt;\npan&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"visuallyhidden\"&gt;&amp\nnbsp;opens in new\nwindow&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change background to #0c7eb0.",
+          "code": "&lt;span\nclass=\"se-font-a11y-link4\nse-btn-text se-rich-text\"&gt;\nLearn more &lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change background to #0c7eb0.",
+          "code": "&lt;span class=\"se-btn-text\nse-rich-text\"\ndata-tpl-xpm=\"\"&gt;Watch\nMatthew's story&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change background to #0c7eb0.",
+          "code": "&lt;span class=\"se-btn-text\nse-rich-text\"\ndata-tpl-xpm=\"\"&gt;Watch the\nvideo&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"/us/en/work/campaign/inn\nvation/overview.jsp\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{tips-list}\"&gt;Learn&a\np;nbsp;&lt;span\nclass=\"nowrap\"&gt;how&lt;span&\nt;&lt;svg focu...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;how&lt;span&\nt;&lt;svg focusable=\"false\"\naria-hidden=\"true\"...&lt;/span\ngt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"https://www.se.com/us/en\nwork/support/resources-and-too\ns/tools/ \"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{tips-list}\"&gt;Get&amp\nnbsp;&lt;span\nclass=\"nowrap\"&gt;started&lt;s\nan&gt;&lt;svg fo...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;started&lt;s\nan&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"t...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a href=\"/us/en/partners/\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{tips-list}\"&gt;Resourc\ns and&amp;nbsp;&lt;span\nclass=\"nowrap\"&gt;support&lt;s\n...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;support&lt;s\nan&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"t...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2:1. Recommendation:  change text colour to #18a833.",
+          "code": "&lt;h2\nclass=\"se-font-title2-2\nse-color-life-green\nse-rich-text\"\ndata-tpl-xpm=\"\"&gt;Most\nviewed products&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.26:1. Recommendation:  change text colour to #097bad.",
+          "code": "&lt;a\nhref=\"https://www.se.com/us/en\nall-products\" title=\"See all\nproducts\"\nclass=\"se-font-text2-0 \"\ndata-tpl-xpm=\"\"&gt;\n See all&amp;nbsp;&lt;span\nclass=\"nowrap\"&gt;products&lt;\npan ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.26:1. Recommendation:  change text colour to #097bad.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;products&lt;\npan class=\"svg-ml\"&gt;&lt;svg\nfocusable=\"false...&lt;/span&g\n;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 2:1. Recommendation:  change text colour to #18a833.",
+          "code": "&lt;h3 class=\"se-font-title3\nse-color-life-green\nse-rich-text\"\ndata-rich-text=\"\"\ndata-tpl-xpm=\"\"&gt;\n Solutions\n &lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.26:1. Recommendation:  change text colour to #097bad.",
+          "code": "&lt;a\nhref=\"/us/en/work/solutions/\"\ntitle=\"See all solutions\"\ndata-tpl-xpm=\"\"&gt;See\nall&amp;nbsp;&lt;span\nclass=\"nowrap\"&gt;solutions&lt\nspan c...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.26:1. Recommendation:  change text colour to #097bad.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;solutions&lt\nspan\nclass=\"svg-ml\"&gt;&lt;svg\nfocusable=\"fals...&lt;/span&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h2\nclass=\"se-font-title4\"&gt;\n&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div class=\"\n\nsdl-application-social-media-s\nare-vertical se-reset-css\nsdl-is-two-columns\"\ndata-tpl-type=\"Component\nTemplate\"\ndata-tpl-name=\"Application -\nSocial Media Share -\nVertical\"\ndata-tpl-tcmid=\"739-18864-1015\n3\" data-tpl-index=\"6\"\ndata-sticky=\"\"\ndata-flow-out=\"\" style=\"top:\n150px;\"&gt;\n &lt;ul\nclass=\"sdl-application-social-\nedia-share-ve...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"sdl-message-browser-com\natibility_modal-overlay\njs-modal-wrap\n  se-reset-css\n \n  hide\" id=\"IEModalWrap\"&gt;\n &lt;div class=\"se-container\n\"&gt;\n &lt;div class=\"se-row\n...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"button\"\nclass=\"sdl-message-browser-com\natibility_close-btn\njs-modal-close-btn\"\nid=\"IEModalCloseBtn\"\nxtm-t=\"A\"\nxtm-n=\"%v||%n::button::#title^\nname^#\"&gt;\n &lt;svg&gt;&lt;use\nxlink:href=\"#close-1-20x20\"&gt\n&lt;/use&gt;&lt;/sv...&lt;/but\non&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"sdl-application-chat-po\n-up se-reset-css hide\nsdl-is-two-columns\"\ndata-chat-js-url=\"https://c.la\n-c2-ord.salesforceliveagent.co\n/content/g/js/46.0/deployment.\ns\"\ndata-chat-live-agent-init-url=\nhttps://d.la2-c2-ord.salesforc\nliveagent.com/chat\"\ndata-chat-instance-code=\"00DA0\n00000abSm\"\ndata-chat-website-code=\"572120\n00004FwT\"\ndata-chat-button-id=\"5731H0000\n0DeYJ\"\ndata-chat-referring-site-name=\nWeb\"\ndata-chat-country-code=\"US\"\ndata-chat-country-name=\"USA\"\ndata-chat-timer-id=\"1\"\ndata-tpl-type=\"Component\nTemplate\"\ndata-tpl-name=\"Application -\nChat Pop up\"\ndata-tpl-tcmid=\"739-0\"\ndata-tpl-index=\"9\"\ndata-flow-out=\"\"&gt;\n\n\n &lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"/us/en/about-us/press/ne\ns/global-2020/important-update\ncovid-19.jsp\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{rightrail}\"&gt;COVID-1\n&amp;nbsp;&lt;span\nclass=\"nowrap\"&gt;Update&lt;sp\nn&gt;&lt;sv...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;Update&lt;sp\nn&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"tr...&lt;/span&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;Products&lt;\npan&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"https://tools.se.app/xre\n/index.html\" target=\"_blank\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"E\"\nxtm-n=\"{rightrail}\"&gt;Product\nCompetitive\nCross&amp;nbsp;&lt;span\nclass=\"nowrap...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;Reference&lt\nspan&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"visuallyhidden\"&gt;&amp\nnbsp;opens in new\nwindow&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"/us/en/work/support/\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{rightrail}\"&gt;Get&amp\nnbsp;&lt;span\nclass=\"nowrap\"&gt;Support&lt;s\nan&gt;&lt;svg fo...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;Support&lt;s\nan&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"t...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"/us/en/work/support/loca\nor/\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{rightrail}\"&gt;Find a\nDistributor\nor&amp;nbsp;&lt;span\nclass=\"nowrap\"&gt;Re...&lt;/a&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;Reseller&lt;\npan&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"/us/en/brands/squared/\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{rightrail}\"&gt;Square&\nmp;nbsp;&lt;span\nclass=\"nowrap\"&gt;D™&lt;span&g\n;&lt;svg focu...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;D™&lt;span&g\n;&lt;svg focusable=\"false\"\naria-hidden=\"true\"&gt;...&lt;/\npan&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;Careers&lt;s\nan&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"t...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"/us/en/work/support/reso\nrces-and-tools/digestplus/\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{rightrail}\"&gt;View\nthe&amp;nbsp;&lt;span\nclass=\"nowrap\"&gt;Digest&lt;sp\nn&gt;&lt;sv...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;Digest&lt;sp\nn&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"tr...&lt;/span&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"/us/en/about-us/events/i\nnovation-experience/\"\nclass=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{rightrail}\"&gt;Webinar\n and&amp;nbsp;&lt;span\nclass=\"nowrap\"&gt;events&lt;sp\nn...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;events&lt;sp\nn&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"tr...&lt;/span&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;a\nhref=\"/us/en/work/products/loc\nl/safety-notices/2020/surgeloc\n\" class=\"se-font-a11y-link4 \"\ndata-tpl-xpm=\"\" xtm-t=\"N\"\nxtm-n=\"{rightrail}\"&gt;Surgelo\nic™ NQ SurgeLoc™ Surge\nProtection&amp;nbsp;&lt;sp...&\nt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.36:1. Recommendation:  change text colour to #0c7eb0.",
+          "code": "&lt;span\nclass=\"nowrap\"&gt;Device&lt;sp\nn&gt;&lt;svg\nfocusable=\"false\"\naria-hidden=\"tr...&lt;/span&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This emailinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"email\"\nid=\"sdl-footer-seemail\"\nname=\"email\" class=\"se-input\"\nplaceholder=\"Email\"\nrequired=\"\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This select element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;select class=\"se-select\"\nname=\"iama\" id=\"iama\"\ndata-tpl-xpm=\"\"\nrequired=\"\"&gt;\n\n &lt;option value=\"\"&gt;I am\na...&lt;/option&gt;\n &lt;option\nva...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "This select element does not have a value available to an accessibility API.",
+          "code": "&lt;select class=\"se-select\"\nname=\"iama\" id=\"iama\"\ndata-tpl-xpm=\"\"\nrequired=\"\"&gt;\n\n &lt;option value=\"\"&gt;I am\na...&lt;/option&gt;\n &lt;option\nva...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;select class=\"se-select\"\nname=\"iama\" id=\"iama\"\ndata-tpl-xpm=\"\"\nrequired=\"\"&gt;\n\n &lt;option value=\"\"&gt;I am\na...&lt;/option&gt;\n &lt;option\nva...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "If this selection list contains groups of related options, they should be grouped with optgroup.",
+          "code": "&lt;select class=\"se-select\"\nname=\"iama\" id=\"iama\"\ndata-tpl-xpm=\"\"\nrequired=\"\"&gt;\n\n &lt;option value=\"\"&gt;I am\na...&lt;/option&gt;\n &lt;option\nva...&lt;/select&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H85\" target=\"_blank\">H85</a>"
+          ],
+          "id": "H85"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"visuallyhidden\"&gt;&amp\nnbsp;opens in new\nwindow&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"visuallyhidden\"&gt;&amp\nnbsp;opens in new\nwindow&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"subMenu\" found on the web page.",
+          "code": "&lt;ul aria-label=\"About Us\"\nrole=\"menu\" id=\"subMenu\"&gt;\n \n &lt;li class=\"card-link\"\nrole=\"none\"&gt;\n &lt;a href=\"/...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"subMenu\" found on the web page.",
+          "code": "&lt;ul aria-label=\"SERVICES\"\nrole=\"menu\" id=\"subMenu\"&gt;\n \n &lt;li class=\"card-link\"\nrole=\"none\"&gt;\n &lt;a href=\"/...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"subMenu\" found on the web page.",
+          "code": "&lt;ul aria-label=\"SOFTWARE\"\nrole=\"menu\" id=\"subMenu\"&gt;\n \n &lt;li class=\"card-link\"\nrole=\"none\"&gt;\n &lt;a href=\"h...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"subMenu\" found on the web page.",
+          "code": "&lt;ul aria-label=\"Support\"\nrole=\"menu\" id=\"subMenu\"&gt;\n \n &lt;li class=\"card-link\"\nrole=\"none\"&gt;\n &lt;a href=\"/...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"subMenu\" found on the web page.",
+          "code": "&lt;ul aria-label=\"CONTACT\"\nrole=\"menu\" id=\"subMenu\"&gt;\n \n &lt;li class=\"card-link\"\nrole=\"none\"&gt;\n &lt;a href=\"/...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"visuallyhidden\"&gt;&amp\nnbsp;opens in new\nwindow&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"visuallyhidden\"&gt;&amp\nnbsp;opens in new\nwindow&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Duplicate id attribute value \"subMenu\" found on the web page.",
+          "code": "&lt;ul aria-label=\"SOLUTIONS\"\nrole=\"menu\" id=\"subMenu\"&gt;\n \n \n &lt;li class=\"card-link\"\nrole=\"none\"&gt;\n &lt;a href=...&lt;/ul&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F77\" target=\"_blank\">F77</a>"
+          ],
+          "id": "F77"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;span\nclass=\"visuallyhidden\"&gt;&amp\nnbsp;opens in new\nwindow&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"sdl-footer-se_notificat\non-container\njs-notification-wrap  hide\"\nstyle=\"top: 150px;\"&gt;\n &lt;div\nclass=\"se-container\"&gt;\n &lt;div class=\"se-row\ns...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+          "code": "&lt;form id=\"fileUploadForm\"\nenctype=\"multipart/form-data\"\nmethod=\"post\"\ntarget=\"fileUploadIframe\"&gt;&\nt;input type=\"file\"\nid=\"fileSelector\" name=\"file\"\ns...&lt;/form&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#understandable\" target=\"_blank\">Understandable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H32\" target=\"_blank\">H32</a>"
+          ],
+          "id": "H32"
+        },
+        {
+          "type": "error",
+          "msg": "This fileinput element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+          "code": "&lt;input type=\"file\"\nid=\"fileSelector\" name=\"file\"\nstyle=\"display: none;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "code": "&lt;input type=\"file\"\nid=\"fileSelector\" name=\"file\"\nstyle=\"display: none;\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F68\" target=\"_blank\">F68</a>"
+          ],
+          "id": "F68"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nid=\"footer_tc_privacy\"\nclass=\"tc-reset-css\ntc-privacy-banner\ntc-privacy-footer\"&gt;&lt;div\nid=\"footer_tc_privacy_containe\n_text\" class=\"...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;span style=\"font-size:\n125%; color: #ffffff;\nfont-weight:\nbold;\"&gt;Cookies and\nPrivacy&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;a href=\"#\"\nonclick=\"tC.privacyCenter.show\nrivacyCenter();return false\"\nstyle=\"color:\n#42b4e6;\"&gt;set your\npreferences here.&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nid=\"drift-frame-controller\"\nclass=\"drift-conductor-item\ndrift-frame-controller\ndrift-frame-controller-align-r\nght drift-has-chat\"\nstyle=\"right: 24px; width:\n360px; max-width: none;\nposition: fixed; z-index:\n2147483647; height: 100px;\nbottom: 42px;\"&gt;&lt;iframe\nclass=\"drift-frame-controller\"\nscrolling=\"...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.",
+          "code": "&lt;iframe\nclass=\"drift-frame-controller\"\nscrolling=\"no\" title=\"Drift\nWidget Icon\" allow=\"autoplay;\nencrypted-media; fullscreen;\"\nframeborder=\"0\"\nsrc=\"https://js.driftt.com/cor\n?embedId=2cs3bpk9ps4n&amp;amp;\negion=US&amp;amp;forceShow=fal\ne&amp;amp;skipCampaigns=false&\nmp;amp;sessionId=fba06a41-3dfe\n4870-a40f-ec6ea56ab7fa&amp;amp\nsessionStarted=1641648820.847&\nmp;amp;campaignRefreshToken=8d\nf1639-5478-43ad-b9aa-fdd96b6f2\n79&amp;amp;hideController=fals\n&amp;amp;pageLoadStartTime=164\n648818224&amp;amp;mode=CHAT&am\n;amp;driftEnableLog=false\"\nstyle=\"background:\ntransparent; width: 100%;\nmax-width: 100%; height:\n100%; border:\nnone;\"&gt;&lt;/iframe&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"embeddedServiceHelpButt\nn\" style=\"display:\nnone;\"&gt;&lt;div\nclass=\"helpButton\"&gt;&lt;butt\nn class=\"uiButton\nhe...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"helpButton\"&gt;&lt;butt\nn class=\"uiButton\nhelpButtonDisabled\"\nhref=\"...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "errorcount": 61
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      6
+    ]
+  ]
+}

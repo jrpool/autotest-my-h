@@ -1,0 +1,712 @@
+{
+  "script": "aatt",
+  "batch": "aattAllBadJSON",
+  "what": "aatt",
+  "strict": true,
+  "testDate": "2022-01-08",
+  "timeStamp": "1arqq",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://orsted.com/",
+      "what": "Orsted (NALFX)",
+      "result": "https://orsted.com/"
+    },
+    {
+      "type": "test",
+      "which": "aatt",
+      "what": "AATT with HTML CodeSniffer WCAG 2.1 AA ruleset",
+      "url": "https://orsted.com/",
+      "result": [
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div id=\"coiOverlay\"\nrole=\"banner\"\naria-hidden=\"false\"\nstyle=\"display: flex;\"&gt;\n  &lt;div tabindex=\"0\"\nrole=\"dialog\"\naria-modal=\"tru...&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.",
+          "code": "&lt;h2\nclass=\"coi-banner__headline\"\nid=\"coiBannerHeadline\"&gt;This\nwebsite uses\ncookies&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.",
+          "code": "&lt;h2\nclass=\"coi-banner__headline\"\nid=\"coiBannerHeadline\"&gt;This\nwebsite uses\ncookies&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;button tabindex=\"0\"\nonclick=\"CookieInformation.dec\nineAllCategories()\"\nonkeypress=\"CookieInformation.\neclineAllCategories()\"\naria-label=\"Accept only\nnecessary cookies\"\nid=\"declineButton\"\nclass=\"coi-banner__decline\"\nstyle=\"display:\nflex;\"&gt;Accept only\nnecessary\ncookies&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;button tabindex=\"0\"\nonclick=\"CookieInformation.sub\nitAllCategories();\"\nonkeypress=\"CookieInformation.\nubmitAllCategories();\"\naria-label=\"Accept all\ncookies\"\nclass=\"coi-banner__accept\"&gt;\nccept all\ncookies&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+          "code": "&lt;h2\nclass=\"coi-banner__headline\"&g\n;  &lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H42\" target=\"_blank\">H42</a>"
+          ],
+          "id": "H42"
+        },
+        {
+          "type": "warning",
+          "msg": "Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+          "code": "&lt;button tabindex=\"0\"\nonclick=\"TogglePage(this,\n'coiPage-1')\"\nonkeypress=\"TogglePage(this,\n'coiPage-1')\"\naria-label=\"Hide details\"\nclass=\"coi-banner__lastpage\"&g\n;Privacy\nControls&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F96\" target=\"_blank\">F96</a>"
+          ],
+          "id": "F96"
+        },
+        {
+          "type": "warning",
+          "msg": "The heading structure is not logically nested. This h6 element should be an h3 to be properly nested.",
+          "code": "&lt;h6&gt;&lt;strong&gt;1.\nProcessing of personal data\nvia cookies...&lt;/h6&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G141\" target=\"_blank\">G141</a>"
+          ],
+          "id": "G141"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;button tabindex=\"1\"\naria-label=\"renew-consent\"\nid=\"Coi-Renew\"\nonclick=\"javascript:CookieCons\nnt.renew();\"\nonkeypress=\"javascript:CookieC\nnsent.renew();\"\nstyle=\"display: none;\"&gt;\n  &lt;svg version=\"1.1\"\nid=\"coi-renew-svg\"\nxmlns=\"ht...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;header\nclass=\"headerSlider\"&gt;\n            &lt;div\nclass=\"headerSlider-top\"&gt;\n      ...&lt;/header&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"nav-overlay\"&gt;&lt;/di\n&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "warning",
+          "msg": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+          "code": "&lt;div\nclass=\"header-navigation\"&gt;\n                           \n&lt;div\nclass=\"header-na...&lt;/div&gt\n",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C32\" target=\"_blank\">C32</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C31\" target=\"_blank\">C31</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C33\" target=\"_blank\">C33</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/C38\" target=\"_blank\">C38</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/SCR34\" target=\"_blank\">SCR34</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G206\" target=\"_blank\">G206</a>"
+          ],
+          "id": "C31+C32+C33+C38+G206+SCR34"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nclass=\"headerMegaNavigation-me\nu-item-link\nmain-navigation__search-btn\"\nhref=\"javascript:\nvoid(0);\"&gt;\n                             \n                 \n&lt;...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"submit\"\nclass=\"btn\"&gt;\n                             \n                 \n&lt;...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+          "code": "&lt;button type=\"submit\"\nclass=\"btn\"&gt;\n                             \n                 \n&lt;...&lt;/button&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of 1:1. Recommendation:  change text colour to #949494.",
+          "code": "&lt;h1 class=\"h1\nteaser-headline-accent\"\nid=\"fbaf70ca-ab83-427b-9c1f-b1\nb63005b21\"&gt;It’s time to\nstep up global action on\nclimate chan...&lt;/h1&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1:1. Recommendation:  change text colour to #767676.",
+          "code": "&lt;h2 class=\"h3\nteaser-headline\"&gt;The steps\ntaken in the next few years\nwill determi...&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change text colour to #227bbc.",
+          "code": "&lt;a class=\"btn teaser-btn\"\nhref=\"/en/act-now/climate-acti\nn-now\"&gt;See what needs to\nbe &lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change text colour to #227bbc.",
+          "code": "&lt;a\nhref=\"/en/media/newsroom/news\"\nclass=\"link-arrow\nnews-list-teaser__header-link\"\ngt;See all news&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nype\"&gt;Company\nAnnouncement&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nitle\" data-title=\"Marianne\nWiinholt has decided to step\ndown as CFO ...\"&gt;Marianne\nWiinholt has decided to step\ndown as CFO of Ørsted. The\nBoard has initiated the\nprocess of identifying the\nnext CFO of Ørsted&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nate\"\ndata-date=\"2021-12-23T08:42:40\n0000000Z\"&gt;23 December\n2021&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nype\"&gt;News&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nitle\" data-title=\"The world’s\nbiggest offshore wind farm,\nHornsea 2,...\"&gt;The world’s\nbiggest offshore wind farm,\nHornsea 2, generates first\npower&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nate\"\ndata-date=\"2021-12-20T13:35:00\n0000000Z\"&gt;20 December\n2021&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nype\"&gt;Company\nAnnouncement&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nitle\" data-title=\"Ørsted\nawarded 846 MW offshore wind\ncontract in Ma...\"&gt;Ørsted\nawarded 846 MW offshore wind\ncontract in\nMaryland&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nate\"\ndata-date=\"2021-12-17T21:10:24\n0000000Z\"&gt;17 December\n2021&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nype\"&gt;News&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nitle\" data-title=\"Ørsted\nscores ’A’ on gold standard\nclimate action ...\"&gt;Ørsted\nscores ’A’ on gold standard\nclimate action list –\nagain&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nate\"\ndata-date=\"2021-12-07T08:47:55\n0000000Z\"&gt;7 December\n2021&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nype\"&gt;News&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nitle\" data-title=\"Ørsted\ntakes final investment\ndecision on two\nGerm...\"&gt;Ørsted takes\nfinal investment decision on\ntwo German offshore wind\nfarms&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;div\nclass=\"news-list-teaser__item-\nate\"\ndata-date=\"2021-12-01T14:10:38\n0000000Z\"&gt;1 December\n2021&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.86:1. Recommendation:  change text colour to #003d69.",
+          "code": "&lt;div class=\"link-arrow\nnews-list-teaser__item-cta\"&gt\nSee the full news list\nhere&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;span style=\"color:\n#4099da;\"&gt;Capital Markets\nDay 2021&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;a class=\"btn teaser-btn\"\nhref=\"/en/capital-markets-day-\n021\" target=\"_blank\"&gt;Go to\nevent homepage&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;a class=\"btn teaser-btn\"\nhref=\"/en/investors/further-in\normation/financial-calendar\"&g\n;All upcoming events&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.54:1. Recommendation:  change text colour to #d34242.",
+          "code": "&lt;div class=\"stock-delta\nis-negative\"&gt;-33.40 DKK /\n-4.38 %&lt;/div&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+          "code": "&lt;table\nclass=\"stock-data\"&gt;\n           \n&lt;tbody&gt;&lt;tr\nclass=\"stock-volume\"&gt;\n    ...&lt;/table&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H39\" target=\"_blank\">H39</a>"
+          ],
+          "id": "H39"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.54:1. Recommendation:  change text colour to #d34242.",
+          "code": "&lt;span\nclass=\"stock-index-delta\nis-negative\"&gt;-15.32 /\n-0.87 %&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change text colour to #227bbc.",
+          "code": "&lt;a class=\"link-arrow\"\nhref=\"/en/investors/shares\"&gt\nGet more shareholder\ninformation&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;a class=\"btn teaser-btn\"\nhref=\"/en/investors/ir-materia\n/annual-reporting-2020\"&gt;See\nall 2020 reports&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;h3 class=\"h4\nteaser-headline\"&gt;Find our\nresults and other information\nrelevant to...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;a class=\"link-arrow\nteaser-link-arrow\"\nhref=\"/en/investors\"&gt;Go to\nInvestor Relation&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.86:1. Recommendation:  change text colour to #001e35.",
+          "code": "&lt;a class=\"link-arrow\nteaser-link-arrow\"\nhref=\"/en/about-us/about-orste\n/about-our-name\"\ntarget=\"_blank\"&gt;Join\nDanish ESA astronaut Andreas\nMogensen in our ...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 3:1.",
+          "code": "&lt;h2 class=\"h3\nteaser-headline-accent\ntheme-color-accent\"\nid=\"831e040b-fcfc-490f-9958-b3\nc82582401\"&gt;About\nus&lt;/h2&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G145\" target=\"_blank\">G145</a>"
+          ],
+          "id": "G145"
+        },
+        {
+          "type": "warning",
+          "msg": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+          "code": "&lt;h3 class=\"h3\nteaser-headline\"&gt;We are a\nrenewable energy company that\ntakes tangi...&lt;/h3&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change background to #227bbc.",
+          "code": "&lt;a class=\"btn teaser-btn\"\nhref=\"/en/about-us/about-orste\n/about-our-name\"&gt;Read more\nabout our company&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "code": "&lt;img class=\"image__element\nbackground-image-center-center\n\nid=\"A7fb6cfc7-7bbb-4ecb-ab1d-f\naf740963ff\" loading=\"lazy\"\nsrc=\"https://orstedcdn.azureed\ne.net/-/media/sustainability/c\nrbon-neutrality.ashx?mh=1440&a\np;amp;mw=1440&amp;amp;rev=e510\n2b96a08482c80b8b7b97aebd8e4&am\n;amp;extension=webp&amp;amp;ha\nh=F8254EA21688B8550C220FCA068B\n66A\"\nsrcset=\"https://orstedcdn.azur\nedge.net/-/media/sustainabilit\n/carbon-neutrality.ashx?mh=480\namp;amp;mw=480&amp;amp;rev=e51\n92b96a08482c80b8b7b97aebd8e4&a\np;amp;extension=webp&amp;amp;h\nsh=75698F7412F600E441834DDD089\n4185 480w,\nhttps://orstedcdn.azureedge.ne\n/-/media/sustainability/carbon\nneutrality.ashx?mh=720&amp;amp\nmw=720&amp;amp;rev=e51092b96a0\n482c80b8b7b97aebd8e4&amp;amp;e\ntension=webp&amp;amp;hash=2956\n109ACC060DDBCD45F0929FC977C\n720w,\nhttps://orstedcdn.azureedge.ne\n/-/media/sustainability/carbon\nneutrality.ashx?mh=1080&amp;am\n;mw=1080&amp;amp;rev=e51092b96\n08482c80b8b7b97aebd8e4&amp;amp\nextension=webp&amp;amp;hash=0C\n42F363E738D0C7C2DC967EE52A3CE\n1080w,\nhttps://orstedcdn.azureedge.ne\n/-/media/sustainability/carbon\nneutrality.ashx?mh=1200&amp;am\n;mw=1200&amp;amp;rev=e51092b96\n08482c80b8b7b97aebd8e4&amp;amp\nextension=webp&amp;amp;hash=9B\n4ADB6E0E611704C537F085AB31480\n1200w,\nhttps://orstedcdn.azureedge.ne\n/-/media/sustainability/carbon\nneutrality.ashx?mh=1440&amp;am\n;mw=1440&amp;amp;rev=e51092b96\n08482c80b8b7b97aebd8e4&amp;amp\nextension=webp&amp;amp;hash=F8\n54EA21688B8550C220FCA068B066A\n1440w\"&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H37\" target=\"_blank\">H37</a>"
+          ],
+          "id": "H37"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;span style=\"color:\n#4099da;\"&gt;Carbon neutral\ncompany &lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;span style=\"color:\n#4099da;\"&gt;by\n2025&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change text colour to #227bbc.",
+          "code": "&lt;span style=\"color:\n#4099da;\"&gt;As we continue\nour green transformation\ntowards a ...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+          "code": "&lt;span style=\"color:\n#4099da;\"&gt;As we continue\nour green transformation\ntowards a ...&lt;/span&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/F24\" target=\"_blank\">F24</a>"
+          ],
+          "id": "F24"
+        },
+        {
+          "type": "error",
+          "msg": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.09:1. Recommendation:  change text colour to #227bbc.",
+          "code": "&lt;a class=\"link-arrow\nteaser-link-arrow\"\nhref=\"/en/about-us/about-orste\n/our-green-energy-transformati\nn\"&gt;See our green\ntransformation story&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "warning",
+          "msg": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+          "code": "&lt;a href=\"#top\"\nclass=\"skip\"&gt;Return to the\ntop&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G18\" target=\"_blank\">G18</a>"
+          ],
+          "id": "G18"
+        },
+        {
+          "type": "error",
+          "msg": "This link points to a named anchor \"top\" within the document, but no anchor exists with that name.",
+          "code": "&lt;a href=\"#top\"\nclass=\"skip\"&gt;Return to the\ntop&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#operable\" target=\"_blank\">Operable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G1\" target=\"_blank\">G1</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G123\" target=\"_blank\">G123</a>",
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/G124\" target=\"_blank\">G124</a>"
+          ],
+          "id": "G1+G123+G124"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;div\nclass=\"social-flex\"&gt;\n                           \n&lt;a\nhref=\"https://www....&lt;/div&\nt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.Facebook.com\norsted\" class=\"social-flex\nsocial-circle icon\nis-type-facebook\"&gt;\n                           \n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+          "code": "&lt;a\nhref=\"https://www.Instagram.co\n/orsted\" class=\"social-flex\nsocial-circle icon \"&gt;\n                             \n      &lt;img\nsrc=\"htt...&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H30\" target=\"_blank\">H30</a>"
+          ],
+          "id": "H30"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.linkedin.com\ncompany/orsted\"\nclass=\"social-flex\nsocial-circle icon\nis-type-linkedin\"&gt;\n                           \n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.Twitter.com/\nrsted\" class=\"social-flex\nsocial-circle icon\nis-type-twitter\"&gt;\n                           \n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "error",
+          "msg": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "code": "&lt;a\nhref=\"https://www.youtube.com/\n/%C3%98rstedChannel\"\nclass=\"social-flex\nsocial-circle icon\nis-type-youtube\"&gt;\n                           \n&lt;/a&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#robust\" target=\"_blank\">Robust</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H91\" target=\"_blank\">H91</a>"
+          ],
+          "id": "H91"
+        },
+        {
+          "type": "warning",
+          "msg": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+          "code": "&lt;p&gt;&lt;a\nhref=\"https://orsted.com/en/su\ntainability/esg-...&lt;/p&gt;",
+          "principle": "<a href=\"http://www.w3.org/TR/WCAG20/#perceivable\" target=\"_blank\">Perceivable</a>",
+          "techniques": [
+            "<a href=\"http://www.w3.org/TR/WCAG20-TECHS/H48\" target=\"_blank\">H48</a>"
+          ],
+          "id": "H48"
+        },
+        {
+          "errorcount": 45
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "aatt",
+      5
+    ]
+  ]
+}
