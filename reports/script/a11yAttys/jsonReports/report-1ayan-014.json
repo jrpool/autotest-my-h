@@ -20508,7 +20508,125 @@
       "type": "score",
       "which": "asp08",
       "what": "4 packages and 16 custom tests, with duplication discounts",
-      "error": "ERROR: facts.filter is not a function\nTypeError: facts.filter is not a function\n    at /Users/pool/Documents/Topics/repos/autotest/procs/score/asp08.js:144:34\n    at Array.forEach (<anonymous>)\n    at exports.scorer (/Users/pool/Documents/Topics/repos/autotest/procs/score/asp08.js:137:13)\n    at doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:731:24)\n    at doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:1193:11)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:1193:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:1193:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:1193:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:1193:5)\n    at async doActs (/Users/pool/Documents/Topics/repos/autotest/index.js:1193:5)"
+      "result": {
+        "scoreProc": "asp",
+        "version": "8",
+        "ruleDiscounts": {
+          "aatt": {
+            "e:F77": 2,
+            "e:G18": 2,
+            "e:H91": 2,
+            "w:F24": 1,
+            "w:G18": 1,
+            "w:H67": 2
+          },
+          "axe": {
+            "aria-allowed-role": 1,
+            "aria-roles": 2,
+            "color-contrast": 2,
+            "duplicate-id": 1,
+            "image-redundant-alt": 1,
+            "label": 3,
+            "link-name": 2,
+            "nested-interactive": 2,
+            "region": 1
+          },
+          "ibm": {
+            "aria_semantics_role": 2,
+            "IBMA_Color_Contrast_WCAG2AA": 2,
+            "Rpt_Aria_OrphanedContent_Native_Host_Sematics": 2,
+            "Rpt_Aria_ValidIdRef": 2,
+            "Rpt_Aria_ValidRole": 2,
+            "WCAG20_A_HasText": 2,
+            "WCAG20_Fieldset_HasLegend": 3,
+            "WCAG20_Input_ExplicitLabel": 2,
+            "WCAG20_Input_RadioChkInFieldSet": 3
+          },
+          "wave": {
+            "alt_redundant": 1,
+            "aria_reference_broken": 2,
+            "contrast": 1,
+            "fieldset_missing": 1,
+            "label_orphaned": 1,
+            "legend_missing": 1,
+            "link_empty": 2,
+            "select_missing_label": 1
+          }
+        },
+        "rules": {
+          "aatt": "",
+          "axe": "multiply minor by 2, moderate by 3, serious by 4, critical by 5; sum; subtract discounts",
+          "bulk": "subtract 250 from visible elements; make 0 if negative; raise to 0.9th power; multiply by 0.15",
+          "embAc": "multiply link- or button-contained links, buttons, inputs, and selects by 3 (discounted)",
+          "focAll": "multiply discrepancy between focusable and focused element counts by 3",
+          "focInd": "multiply indicatorless-when-focused elements by 5",
+          "focOp": "multiply nonfocusable operable elements by 4, nonoperable focusable by 1; sum",
+          "hover": "multiply elements changing page on hover by 4, made visible by 2, with directly changed opacity by 0.1, with indirectly changed opacity by 0.2, unhoverable by 2; sum",
+          "ibm": "multiply violations by 4, recommendatons by 2; sum; subtract discounts",
+          "labClash": "multiply conflictually labeled elements by 2, unlabeled elements by 2; sum",
+          "linkUl": "multiply nonunderlined inline links by 3",
+          "log": "multiply log items by respective logWeights; sum",
+          "menuNav": "multiply Home and End errors by 1 and other key-navigation errors by 3; sum",
+          "motion": "get PNG screenshot sizes (sss); get differing-pixel counts between adjacent PNG screenshots (pd); “sssd” = sss difference ÷ smaller sss - 1; multiply mean adjacent sssd by 5, maximum adjacent sssd by 2, maximum over-all ssd by 1; divide mean pd by 10,000, maximum pd by 25,000; multiply count of non-0 pd by 30; sum",
+          "radioSet": "multiply radio buttons not in fieldsets with legends and no other-name radio buttons by 2",
+          "role": "multiple role attributes with invalid or native-HTML-equivalent values by 2",
+          "styleDiff": "for each of element classes block a, inline a, button, h1, h2, h3, h4, h5, and h6, get diffStyles-distinct styles; multiply their count minus 1 by 2; multiply count of elements with non-plurality styles by 0.2; sum",
+          "tabNav": "multiply Home and End errors by 1 and other key-navigation errors by 3; sum",
+          "wave": "multiply alerts by 2, contrast errors by 3, errors by 4; sum; subtract discounts",
+          "zIndex": "multiply non-auto z indexes by 3"
+        },
+        "diffStyles": [
+          "borderStyle",
+          "borderWidth",
+          "fontStyle",
+          "fontWeight",
+          "lineHeight",
+          "maxHeight",
+          "maxWidth",
+          "minHeight",
+          "minWidth",
+          "opacity",
+          "outlineOffset",
+          "outlineStyle",
+          "outlineWidth",
+          "textDecorationLine",
+          "textDecorationStyle",
+          "textDecorationThickness"
+        ],
+        "logWeights": {
+          "count": 0.5,
+          "size": 0.01,
+          "prohibited": 15,
+          "visitTimeout": 10,
+          "visitRejection": 10
+        },
+        "inferences": {
+          "aatt": 179
+        },
+        "deficit": {
+          "total": 3760,
+          "aatt": null,
+          "axe": 50,
+          "bulk": 6,
+          "embAc": 0,
+          "focAll": 0,
+          "focInd": 2340,
+          "focOp": 475,
+          "hover": 208,
+          "ibm": 30,
+          "labClash": 22,
+          "linkUl": 42,
+          "log": 17,
+          "menuNav": 0,
+          "motion": 0,
+          "radioSet": 0,
+          "role": 8,
+          "styleDiff": 135,
+          "tabNav": 0,
+          "wave": 158,
+          "zIndex": 90
+        }
+      }
     }
   ],
   "testTimes": [
