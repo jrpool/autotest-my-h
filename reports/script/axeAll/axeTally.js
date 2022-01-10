@@ -1,6 +1,6 @@
 /*
-  aattTally
-  Compiles data on the per-URL distributions of issues in aatt tests.
+  axeTally
+  Compiles data on the per-URL distributions of issues in axe tests.
 */
 const fs = require('fs');
 const tally = () => {
