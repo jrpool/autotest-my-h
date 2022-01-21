@@ -1,0 +1,724 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://archive.org/",
+      "what": "Internet Archive",
+      "result": "https://archive.org/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://archive.org/",
+      "result": [
+        {
+          "index": 17,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/form[1]/fieldset[1]/a[1]",
+            "codeLines": [
+              "<a data-event-click-tracking=\"TopNav|WaybackMachineLogoLink\" href=\"https://web.archive.org/web/\">",
+              "  <!--?lit$974014892$-->",
+              "  <svg height=\"55\" viewBox=\"0 0 205 55\" width=\"205\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "    <g fill=\"none\">",
+              "      <path d=\"m41.5442526 5.47625158v36.05869762s-.0825635.8039669.6808836.8039669c.7634442 0 .577...",
+              "      <path d=\"m164.347608 2.25946661v7.4442539c.21729-.35229187 1.198489-1.67028746 3.735798-1.670...",
+              "    </g>",
+              "  </svg>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 172,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r17",
+            "ruleSummary": "Elements with aria-hidden='true' are not focusable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r17",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "nav",
+            "path": "/div[1]/div[1]/nav[1]",
+            "codeLines": [
+              "<nav class=\"media-menu\" aria-hidden=\"true\" aria-expanded=\"false\">",
+              "  <div class=\"menu-group\">",
+              "    <!--?lit$974014892$-->",
+              "    <!---->",
+              "    <media-button data-mediatype=\"web\">",
+              "      #shadow-root (open)",
+              "        <!---->",
+              "        ",
+              "        <a href=\"/web/\" class=\"menu-item web \" data-event-click-tracking=\"TopNav|NavMenuWeb\" title=...",
+              "          <!--?lit$974014892$-->",
+              "          <span class=\"icon \">",
+              "            <!--?lit$974014892$-->",
+              "            <svg height=\"40\" viewBox=\"0 0 40 40\" width=\"40\" xmlns=\"http://www.w3.org/2000/svg\" aria...",
+              "              <title id=\"webTitleID\">",
+              "                Web icon",
+              "              </title>",
+              "              <desc id=\"webDescID\">",
+              "                An illustration of a computer application window",
+              "              </desc>",
+              "              <path class=\"fill-color\" d=\"m8 28.7585405v-8.1608108-9.3577297h24v9.3577297 8.1608108...",
+              "            </svg>",
+              "          </span>",
+              "          <span class=\"label\">",
+              "            <!--?lit$974014892$-->",
+              "            Wayback Machine",
+              "          </span>",
+              "        </a>",
+              "    </media-button>",
+              "    <!---->",
+              "    <!---->",
+              "    <media-button data-mediatype=\"texts\">",
+              "      #shadow-root (open)",
+              "        <!---->",
+              "        ",
+              "        <a href=\"/details/texts\" class=\"menu-item texts \" data-event-click-tracking=\"TopNav|NavMenu...",
+              "          <!--?lit$974014892$-->",
+              "          <span class=\"icon \">",
+              "            <!--?lit$974014892$-->",
+              "            <svg height=\"40\" viewBox=\"0 0 40 40\" width=\"40\" xmlns=\"http://www.w3.org/2000/svg\" aria...",
+              "              <title id=\"textsTitleID\">",
+              "                Texts icon",
+              "              </title>",
+              "              <desc id=\"textsDescID\">",
+              "                An illustration of an open book.",
+              "              </desc>",
+              "              <path class=\"fill-color\" d=\"m10.3323235 11.0007023h6.9060825c.8851083 0 1.5847122.306...",
+              "            </svg>",
+              "          </span>",
+              "          <span class=\"label\">",
+              "            <!--?lit$974014892$-->",
+              "            Books",
+              "          </span>",
+              "        </a>",
+              "    </media-button>",
+              "    <!---->",
+              "    <!---->",
+              "    <media-button data-mediatype=\"video\">",
+              "      #shadow-root (open)",
+              "        <!---->",
+              "        ",
+              "        <a href=\"/details/movies\" class=\"menu-item video \" data-event-click-tracking=\"TopNav|NavMen...",
+              "          <!--?lit$974014892$-->",
+              "          <span class=\"icon \">",
+              "            <!--?lit$974014892$-->",
+              "            <svg height=\"40\" viewBox=\"0 0 40 40\" width=\"40\" xmlns=\"http://www.w3.org/2000/svg\" aria...",
+              "              <title id=\"videoTitleID\">",
+              "                Video icon",
+              "              </title>",
+              "              <desc id=\"videoDescID\">",
+              "                An illustration of two cells of a film strip.",
+              "              </desc>",
+              "              <path class=\"fill-color\" d=\"m31.0117647 12.0677966c0 .4067797-.2823529.6779661-.70588...",
+              "            </svg>",
+              "          </span>",
+              "          <span class=\"label\">",
+              "            <!--?lit$974014892$-->",
+              "            Video",
+              "          </span>",
+              "        </a>",
+              "    </media-button>",
+              "    <!---->",
+              "    <!---->",
+              "    <media-button data-mediatype=\"audio\">",
+              "      #shadow-root (open)",
+              "        <!---->",
+              "        ",
+              "        <a href=\"/details/audio\" class=\"menu-item audio \" data-event-click-tracking=\"TopNav|NavMenu...",
+              "          <!--?lit$974014892$-->",
+              "          <span class=\"icon \">",
+              "            <!--?lit$974014892$-->",
+              "            <svg width=\"40px\" height=\"40px\" viewBox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http://www.w3....",
+              "              <title id=\"audioTitleID\">",
+              "                Audio icon",
+              "              </title>",
+              "              <desc id=\"audioDescID\">",
+              "                An illustration of an audio speaker.",
+              "              </desc>",
+              "              <g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+              "                <g transform=\"translate(10, 8)\" class=\"fill-color\">",
+              "                  <path d=\"M19.4264564,11.8585048 L19.4264564,20.7200433 C19.4264564,22.3657576 18....",
+              "                  <ellipse cx=\"10.2016028\" cy=\"16.5690777\" rx=\"1.35659611\" ry=\"1.34075134\"></ellips...",
+              "                </g>",
+              "              </g>",
+              "            </svg>",
+              "          </span>",
+              "          <span class=\"label\">",
+              "            <!--?lit$974014892$-->",
+              "            Audio",
+              "          </span>",
+              "        </a>",
+              "    </media-button>",
+              "    <!---->",
+              "    <!---->",
+              "    <media-button data-mediatype=\"software\">",
+              "      #shadow-root (open)",
+              "        <!---->",
+              "        ",
+              "        <a href=\"/details/software\" class=\"menu-item software \" data-event-click-tracking=\"TopNav|N...",
+              "          <!--?lit$974014892$-->",
+              "          <span class=\"icon \">",
+              "            <!--?lit$974014892$-->",
+              "            <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\" aria...",
+              "              <title id=\"softwareTitleID\">",
+              "                Software icon",
+              "              </title>",
+              "              <desc id=\"softwareDescID\">",
+              "                An illustration of a 3.5\" floppy disk.",
+              "              </desc>",
+              "              <path class=\"fill-color\" d=\"m32 30.6900373v-21.44521088c0-.82988428-.4156786-1.244826...",
+              "            </svg>",
+              "          </span>",
+              "          <span class=\"label\">",
+              "            <!--?lit$974014892$-->",
+              "            Software",
+              "          </span>",
+              "        </a>",
+              "    </media-button>",
+              "    <!---->",
+              "    <!---->",
+              "    <media-button data-mediatype=\"images\">",
+              "      #shadow-root (open)",
+              "        <!---->",
+              "        ",
+              "        <a href=\"/details/image\" class=\"menu-item images \" data-event-click-tracking=\"TopNav|NavMen...",
+              "          <!--?lit$974014892$-->",
+              "          <span class=\"icon \">",
+              "            <!--?lit$974014892$-->",
+              "            <svg height=\"40\" viewBox=\"0 0 40 40\" width=\"40\" xmlns=\"http://www.w3.org/2000/svg\" aria...",
+              "              <title id=\"imagesTitleID\">",
+              "                Images icon",
+              "              </title>",
+              "              <desc id=\"imagesDescID\">",
+              "                An illustration of two photographs.",
+              "              </desc>",
+              "              <path class=\"fill-color\" d=\"m20.8219178 15.3769871c0 1.1136708-.8767123 1.8932404-1.8...",
+              "            </svg>",
+              "          </span>",
+              "          <span class=\"label\">",
+              "            <!--?lit$974014892$-->",
+              "            Images",
+              "          </span>",
+              "        </a>",
+              "    </media-button>",
+              "    <!---->",
+              "    <!---->",
+              "    <media-button data-mediatype=\"donate\">",
+              "      #shadow-root (open)",
+              "        <!---->",
+              "        ",
+              "        <a href=\"/donate/\" class=\"menu-item donate \" data-event-click-tracking=\"TopNav|NavMenuDonat...",
+              "          <!--?lit$974014892$-->",
+              "          <span class=\"icon \">",
+              "            <!--?lit$974014892$-->",
+              "            <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\" aria...",
+              "              <title id=\"donateTitleID\">",
+              "                Donate icon",
+              "              </title>",
+              "              <desc id=\"donateDescID\">",
+              "                An illustration of a heart shape",
+              "              </desc>",
+              "              <path class=\"fill-color\" d=\"m30.0120362 11.0857287c-1.2990268-1.12627221-2.8599641-1....",
+              "            </svg>",
+              "          </span>",
+              "          <span class=\"label\">",
+              "            <!--?lit$974014892$-->",
+              "            Donate",
+              "          </span>",
+              "        </a>",
+              "    </media-button>",
+              "    <!---->",
+              "    <!---->",
+              "    <media-button data-mediatype=\"more\">",
+              "      #shadow-root (open)",
+              "        <!---->",
+              "        ",
+              "        <a href=\"/about/\" class=\"menu-item more \" data-event-click-tracking=\"TopNav|NavMenuMore\" ti...",
+              "          <!--?lit$974014892$-->",
+              "          <span class=\"icon \">",
+              "            <!--?lit$974014892$-->",
+              "            <svg height=\"40\" viewBox=\"0 0 40 40\" width=\"40\" xmlns=\"http://www.w3.org/2000/svg\" aria...",
+              "              <title id=\"ellipsesTitleID\">",
+              "                Ellipses icon",
+              "              </title>",
+              "              <desc id=\"ellipsesDescID\">",
+              "                An illustration of text ellipses.",
+              "              </desc>",
+              "              <path class=\"fill-color\" d=\"m10.5 17.5c1.3807119 0 2.5 1.1192881 2.5 2.5s-1.1192881 2...",
+              "            </svg>",
+              "          </span>",
+              "          <span class=\"label\">",
+              "            <!--?lit$974014892$-->",
+              "            More",
+              "          </span>",
+              "        </a>",
+              "    </media-button>",
+              "    <!---->",
+              "  </div>",
+              "</nav>"
+            ]
+          }
+        },
+        {
+          "index": 173,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r17",
+            "ruleSummary": "Elements with aria-hidden='true' are not focusable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r17",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "nav",
+            "path": "/div[1]/nav[1]",
+            "codeLines": [
+              "<nav class=\"initial search-hidden\" aria-hidden=\"true\" aria-expanded=\"false\">",
+              "  <ul>",
+              "    <!--?lit$974014892$-->",
+              "    <!---->",
+              "    <li>",
+              "      <!--?lit$974014892$-->",
+              "      <a href=\"/account/signup\" data-event-click-tracking=\"TopNav|NavAvatarMenu-Signup\">",
+              "        <!--?lit$974014892$-->",
+              "        Sign up for free",
+              "      </a>",
+              "    </li>",
+              "    <!---->",
+              "    <!---->",
+              "    <li>",
+              "      <!--?lit$974014892$-->",
+              "      <a href=\"/account/login\" data-event-click-tracking=\"TopNav|NavAvatarMenu-Login\">",
+              "        <!--?lit$974014892$-->",
+              "        Log in",
+              "      </a>",
+              "    </li>",
+              "    <!---->",
+              "  </ul>",
+              "</nav>"
+            ]
+          }
+        },
+        {
+          "index": 182,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r18",
+            "ruleSummary": "aria-* states and properties are allowed",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r18",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+                "name": "ARIA5",
+                "title": "Using WAI-ARIA state and property attributes to expose the state of a user interface"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "aria-expanded",
+            "path": "/div[1]/form[1]/div[2]/@aria-expanded",
+            "codeLines": [
+              "aria-expanded=\"true\""
+            ]
+          }
+        },
+        {
+          "index": 371,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/a[1]/text()[1]",
+            "codeLines": [
+              "Skip to main content"
+            ]
+          }
+        },
+        {
+          "index": 426,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r60",
+            "ruleSummary": "Groups have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r60",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "fieldset",
+            "path": "/div[1]/form[1]/div[2]/fieldset[1]",
+            "codeLines": [
+              "<fieldset>",
+              "  <label>",
+              "    <input type=\"radio\" name=\"sin\" value=\"\" checked>",
+              "    <span>",
+              "      <!--?lit$974014892$-->",
+              "      Search metadata",
+              "    </span>",
+              "  </label>",
+              "  <label>",
+              "    <input type=\"radio\" name=\"sin\" value=\"TXT\">",
+              "    <span>",
+              "      <!--?lit$974014892$-->",
+              "      Search text contents",
+              "    </span>",
+              "  </label>",
+              "  <label>",
+              "    <input type=\"radio\" name=\"sin\" value=\"TV\">",
+              "    <span>",
+              "      <!--?lit$974014892$-->",
+              "      Search TV news captions",
+              "    </span>",
+              "  </label>",
+              "  <label>",
+              "    <input type=\"radio\" name=\"sin\" value=\"RADIO\">",
+              "    <span>",
+              "      <!--?lit$974014892$-->",
+              "      Search radio transcripts",
+              "    </span>",
+              "  </label>",
+              "  <label>",
+              "    <input type=\"radio\" name=\"sin\" value=\"WEB\">",
+              "    <span>",
+              "      <!--?lit$974014892$-->",
+              "      Search archived web sites",
+              "    </span>",
+              "  </label>",
+              "</fieldset>"
+            ]
+          }
+        },
+        {
+          "index": 510,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/form[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Search the history of over",
+              "  <!--?lit$974014892$-->",
+              "  624 billion",
+              "  <a data-event-click-tracking=\"TopNav|WaybackMachineStatsLink\" href=\"https://blog.archive.org/2016...",
+              "    web pages",
+              "  </a>",
+              "  on the Internet.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 531,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/form[1]/fieldset[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"url\" id=\"url\" placeholder=\"enter URL or keywords\">"
+            ]
+          }
+        },
+        {
+          "index": 532,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/div[1]/form[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input id=\"search-input\" size=\"25\" name=\"search\" type=\"text\" aria-controls=\"search_options\" placeho..."
+            ]
+          }
+        },
+        {
+          "index": 533,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/div[1]/form[1]/div[2]/fieldset[1]/label[1]/input[1]",
+            "codeLines": [
+              "<input type=\"radio\" name=\"sin\" value=\"\" checked>"
+            ]
+          }
+        },
+        {
+          "index": 534,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/div[1]/form[1]/div[2]/fieldset[1]/label[2]/input[1]",
+            "codeLines": [
+              "<input type=\"radio\" name=\"sin\" value=\"TXT\">"
+            ]
+          }
+        },
+        {
+          "index": 535,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/div[1]/form[1]/div[2]/fieldset[1]/label[3]/input[1]",
+            "codeLines": [
+              "<input type=\"radio\" name=\"sin\" value=\"TV\">"
+            ]
+          }
+        },
+        {
+          "index": 536,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/div[1]/form[1]/div[2]/fieldset[1]/label[4]/input[1]",
+            "codeLines": [
+              "<input type=\"radio\" name=\"sin\" value=\"RADIO\">"
+            ]
+          }
+        },
+        {
+          "index": 537,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/div[1]/form[1]/div[2]/fieldset[1]/label[5]/input[1]",
+            "codeLines": [
+              "<input type=\"radio\" name=\"sin\" value=\"WEB\">"
+            ]
+          }
+        },
+        {
+          "index": 542,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      6
+    ]
+  ]
+}

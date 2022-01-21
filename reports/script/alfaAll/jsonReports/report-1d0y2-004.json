@@ -1,0 +1,829 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 40,
+  "logSize": 3528,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://benetech.org/",
+      "what": "Benetech",
+      "result": "https://benetech.org/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://benetech.org/",
+      "result": [
+        {
+          "index": 53,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r13",
+            "ruleSummary": "<iframe> elements have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r13",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "iframe",
+            "path": "/html[1]/body[1]/footer[1]/section[1]/div[2]/div[1]/div[1]/div[2]/iframe[1]",
+            "codeLines": [
+              "<iframe src=\"https://go.pardot.com/l/683003/2019-02-18/7kwm\" width=\"100%\" height=\"500\" type=\"text/h...",
+              "  #document",
+              "    <!doctype html>",
+              "    <html>",
+              "      <head>",
+              "        <base href=\"\">",
+              "        <meta charset=\"utf-8\">",
+              "        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">",
+              "        <meta name=\"description\" content=\"\">",
+              "        <title></title>",
+              "        <style>",
+              "          form .form-group {",
+              "          \t\t        margin-bottom: 16px;",
+              "          \t\t    }",
+              "          \t\t",
+              "          \t\t    form .form-group .form-field {",
+              "                          margin-bottom: 0;",
+              "                      }",
+              "                      ",
+              "                      form .form-group .form-field input {",
+              "                          margin-bottom: 10px;",
+              "                      }",
+              "                      ",
+              "                      form .form-group .error {",
+              "                          margin-bottom: 0;",
+              "                          color: #DD5145;",
+              "                      }",
+              "                      ",
+              "                      form input[type=\"submit\"], form input[type=\"button\"] {",
+              "                          display: inline-block;",
+              "                          padding: 0 2em;",
+              "                          white-space: nowrap;",
+              "                          border-radius: 1.5em;",
+              "                          text-transform: uppercase;",
+              "                          font-family: \"Uni Neue\", Helvetica, Arial, sans-serif;",
+              "                          font-weight: 600;",
+              "                          box-sizing: border-box;",
+              "                          border: 2px solid #b74900;",
+              "                          transition: background 300ms, color 300ms, border-color 300ms;",
+              "                          line-height: 2.5em;",
+              "                          cursor: pointer;",
+              "                          height: 2.5em;",
+              "                          color: white;",
+              "                          background: #b74900;",
+              "                      }",
+              "        </style>",
+              "        <link rel=\"stylesheet\" type=\"text/css\" href=\"https://benetech.org/wp-content/themes/benetec...",
+              "        <script type=\"text/javascript\" src=\"https://pi.pardot.com/pd.js\"></script>",
+              "        <script type=\"text/javascript\" src=\"https://go.pardot.com/js/piUtils.js?ver=2021-09-20\"></s...",
+              "        <script type=\"text/javascript\">",
+              "          piAId = '684003';",
+              "          piCId = '2690';",
+              "          piHostname = 'pi.pardot.com';",
+              "          if(!window['pi']) { window['pi'] = {}; } pi = window['pi']; if(!pi['tracker']) { pi['trac...",
+              "          (function() {",
+              "          \tfunction async_load(){",
+              "          \t\tvar s = document.createElement('script'); s.type = 'text/javascript';",
+              "          \t\ts.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pard...",
+              "          \t\tvar c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);",
+              "          \t}",
+              "          \tif(window.attachEvent) { window.attachEvent('onload', async_load); }",
+              "          \telse { window.addEventListener('load', async_load, false); }",
+              "          })();",
+              "        </script>",
+              "      </head>",
+              "      <body>",
+              "        <form accept-charset=\"UTF-8\" method=\"post\" action=\"https://go.pardot.com/l/683003/2019-02-1...",
+              "          <style type=\"text/css\">",
+              "            form.form p label { color: #ffffff; float: left; display: inline; }",
+              "            form.form p.required label, form.form span.required label { background: none; padding-l...",
+              "          </style>",
+              "          <style>",
+              "            label {",
+              "                color: white !important;",
+              "              }",
+              "          </style>",
+              "          <div class=\"form-group\">",
+              "            <div class=\"form-field  first_name pd-text required required-custom    \">",
+              "              <label class=\"field-label required required-custom\" for=\"683003_83562pi_683003_83562\"...",
+              "                First Name *",
+              "              </label>",
+              "              <input type=\"text\" name=\"683003_83562pi_683003_83562\" id=\"683003_83562pi_683003_83562...",
+              "            </div>",
+              "            <p id=\"error_for_683003_83562pi_683003_83562\" style=\"display:none\"></p>",
+              "          </div>",
+              "          <div class=\"form-group\">",
+              "            <div class=\"form-field  email pd-text required required-custom    \">",
+              "              <label class=\"field-label required required-custom\" for=\"683003_5278pi_683003_5278\">",
+              "                Email *",
+              "              </label>",
+              "              <input type=\"text\" name=\"683003_5278pi_683003_5278\" id=\"683003_5278pi_683003_5278\" va...",
+              "            </div>",
+              "            <p id=\"error_for_683003_5278pi_683003_5278\" style=\"display:none\"></p>",
+              "          </div>",
+              "          <p style=\"position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;\">",
+              "            <label for=\"pi_extra_field\">",
+              "              Comments",
+              "            </label>",
+              "            <input type=\"text\" name=\"pi_extra_field\" id=\"pi_extra_field\">",
+              "          </p>",
+              "          <!-- forces IE5-8 to correctly submit UTF8 content  -->",
+              "          <input name=\"_utf8\" type=\"hidden\" value=\"☃\">",
+              "          <p class=\"submit\">",
+              "            <input type=\"button\" accesskey=\"s\" value=\"Submit\">",
+              "          </p>",
+              "          <script type=\"text/javascript\" src=\"https://benetech.org/wp-content/themes/benetech/pardo...",
+              "            <style>",
+              "              #pardot-form > div > div > label, label {",
+              "                color: white !important;",
+              "              }",
+              "            </style>",
+              "            ",
+              "                ",
+              "            ",
+              "                <script type=\"text/javascript\">",
+              "            //<![CDATA[",
+              "            ",
+              "            \tvar anchors = document.getElementsByTagName(\"a\");",
+              "            \tfor (var i=0; i<anchors.length; i++) {",
+              "            \t\tvar anchor = anchors[i];",
+              "            \t\tif(anchor.getAttribute(\"href\")&&!anchor.getAttribute(\"target\")) {",
+              "            \t\t\tanchor.target = \"_top\";",
+              "            \t\t}",
+              "            \t}",
+              "            \t\t",
+              "            //]]>",
+              "          </script>",
+              "          <input type=\"hidden\" name=\"hiddenDependentFields\" id=\"hiddenDependentFields\" value=\"\">",
+              "        </form>",
+              "        <script type=\"text/javascript\">",
+              "          (function(){ pardot.$(document).ready(function(){ (function() {",
+              "          \tvar $ = window.pardot.$;",
+              "          \twindow.pardot.FormDependencyMap = [];",
+              "          ",
+              "          \t$('.form-field-primary input, .form-field-primary select').each(function(index, input) {",
+              "          \t\t$(input).on('change', window.piAjax.checkForDependentField);",
+              "          \t\twindow.piAjax.checkForDependentField.call(input);",
+              "          \t});",
+              "          })(); });})();",
+              "        </script>",
+              "        <script>",
+              "          var config = {",
+              "              errorSelector: '.error',",
+              "              errorClass: 'error',",
+              "              errorIdPrefix: 'error_msg_'",
+              "          };",
+              "          ",
+              "          let forms = document.querySelectorAll(\"form\");",
+              "          ",
+              "          if (forms && forms.length > 0) {",
+              "              forms.forEach((form) => {",
+              "                  // Iterate through each form-field section to check if the child control is requi...",
+              "                  form.querySelectorAll('.form-field').forEach((formField) => {",
+              "                      // Check if the parent container is marked with the required class so we can ...",
+              "                      if (formField.classList.contains('required')) {",
+              "                          formField.querySelectorAll('input, select, textarea').forEach((control) =...",
+              "                              control.required = true;",
+              "                          });",
+              "                      }",
+              "          ",
+              "                      // If the form has a radio section properly mark it as a radio grouping.",
+              "                      if (formField.classList.contains('pd-radio')) {",
+              "                          let formFieldLabel = formField.querySelector('.field-label');",
+              "          ",
+              "                          if (formFieldLabel) {",
+              "                              formFieldLabel.id = `a11y-radio-group-lbl-${formFieldLabel.innerText....",
+              "          ",
+              "                              formField.setAttribute('role', 'radiogroup');",
+              "                              formField.setAttribute('aria-labelledby', formFieldLabel.id);",
+              "                          }",
+              "                      }",
+              "                  });",
+              "          ",
+              "                  // See if any errors have been loaded by pardot directly.",
+              "                  form.querySelectorAll(config.errorSelector).forEach((errorMsg) => {",
+              "                      // Error message is already supplied into the inner text by pardot so just st...",
+              "                      // If the error msg id is not specified in the form layout ensure one is set ...",
+              "                      if (!errorMsg.id) {",
+              "                          errorMsg.id = Math.random().toString(36).substring(7);",
+              "                      }",
+              "          ",
+              "                      let idSegments = errorMsg.id.split(config.errorIdPrefix).filter(function(item...",
+              "          ",
+              "                      if (idSegments.length > 1) {",
+              "                          let erroredInputSegment = idSegments[1];",
+              "          ",
+              "                          let erroredInput = document.querySelector(`name[${erroredInputSegment}]`)...",
+              "                          erroredInput.setAttribute('aria-describedby', errorMsg.id);",
+              "                      }",
+              "                  });",
+              "          ",
+              "                  // For client validation we want the submit button to be of type button and not s...",
+              "                  let btnSubmit = form.querySelector('input[type=\"submit\"]');",
+              "          ",
+              "                  btnSubmit.type = 'button';",
+              "          ",
+              "                  if (btnSubmit) {",
+              "                      btnSubmit.addEventListener('click', (event) => {",
+              "                          let erroredInputs = [];",
+              "          ",
+              "                          // Iterate through the required inputs to check if any are missing a valu...",
+              "                          form.querySelectorAll('[required]:not([type=\"radio\"])').forEach((required...",
+              "                              // Check if the required control is visible if it is not then it is a...",
+              "                              if (requiredControl.offsetParent !== null) {",
+              "                                  if (requiredControl.matches('[type=\"checkbox\"]')) {",
+              "                                      if (!requiredControl.checked) {",
+              "                                          erroredInputs.push({",
+              "                                              element: requiredControl,",
+              "                                              message: 'The checkbox is required'",
+              "                                          });",
+              "                                      }",
+              "                                  }",
+              "                                  else {",
+              "                                      // Text, email, or password input.",
+              "                                      if (!requiredControl.value) {",
+              "                                          erroredInputs.push({",
+              "                                              element: requiredControl,",
+              "                                              message: 'The field is required'",
+              "                                          });",
+              "                                      }",
+              "                                  }",
+              "                              }",
+              "                          });",
+              "          ",
+              "                          var radioMap = {};",
+              "          ",
+              "                          // Iterate through the required radios to ensure a value from the require...",
+              "                          form.querySelectorAll('[type=\"radio\"][required]').forEach((requiredContro...",
+              "                              if (radioMap[requiredControl.name] == undefined) {",
+              "                                  radioMap[requiredControl.name] = false;",
+              "                              }",
+              "          ",
+              "                              if (requiredControl.checked) {",
+              "                                  radioMap[requiredControl.name] = true;",
+              "                              }",
+              "                          });",
+              "          ",
+              "                          for (var prop in radioMap) {",
+              "                              // Radio group is missing a selected value.",
+              "                              if (!radioMap[prop]) {",
+              "                                  erroredInputs.push({",
+              "                                      element: form.querySelector(`[name=\"${prop}\"`),",
+              "                                      message: 'A selection from the radio group is required'",
+              "                                  });",
+              "                              }",
+              "                          }",
+              "          ",
+              "                          console.log('Errored inputs');",
+              "                          console.log(erroredInputs);",
+              "          ",
+              "                          // Display error message for input elements that have an error.",
+              "                          erroredInputs.forEach((erroredInput) => {",
+              "                              if (erroredInput.element) {",
+              "                                  let name = erroredInput.element.name;",
+              "          ",
+              "                                  // If the element is a radio input remove the [] that pardot appe...",
+              "                                  if(erroredInput.element.matches('[type=\"radio\"]')) {",
+              "                                      name = name.substring(0, name.indexOf(\"[]\"));",
+              "                                  }",
+              "          ",
+              "                                  let errorMsgId = `error_msg_${name}`;",
+              "          ",
+              "                                  let errorMsg = document.querySelector(`#${errorMsgId}`);",
+              "              ",
+              "                                  if (!errorMsg) {",
+              "                                      errorMsg = document.createElement('p');",
+              "                                      errorMsg.id = errorMsgId;",
+              "                                      errorMsg.innerText = erroredInput.message;",
+              "                                      errorMsg.style.display = 'block';",
+              "                                      errorMsg.classList.add(config.errorClass);",
+              "              ",
+              "                                      // Get the close parent form-field.",
+              "                                      let formField = erroredInput.element.closest('.form-field');",
+              "          ",
+              "                                      console.log('Closest form field');",
+              "                                      console.log(formField);",
+              "              ",
+              "                                      if (formField) {",
+              "                                          formField.insertAdjacentHTML('afterend', errorMsg.outerHT...",
+              "                                      }",
+              "                                  }",
+              "              ",
+              "                                  erroredInput.element.setAttribute('aria-describedby', errorMsgId)...",
+              "                              }",
+              "                          });",
+              "          ",
+              "                          // If no errors submit form.",
+              "                          if (erroredInputs.length === 0) {",
+              "                              form.submit();",
+              "                          } else {",
+              "                              erroredInputs[0].element.focus();",
+              "                          }",
+              "                      });",
+              "                  }",
+              "              });",
+              "          }",
+              "        </script>",
+              "        <div style=\"clear: both; display: block; height: 0px;\"></div>",
+              "      </body>",
+              "    </html>",
+              "</iframe>"
+            ]
+          }
+        },
+        {
+          "index": 54,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r14",
+            "ruleSummary": "Visible labels are included in accessible names",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r14",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#label-in-name",
+                "chapter": "2.5.3",
+                "title": "Label in Name"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G208",
+                "name": "G208",
+                "title": "Including the text of the visible label as part of the accessible name"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://benetech.org/work-area/education/\" class=\"tile-button \" aria-label=\"Read more abou...",
+              "  See Education Work",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 55,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r14",
+            "ruleSummary": "Visible labels are included in accessible names",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r14",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#label-in-name",
+                "chapter": "2.5.3",
+                "title": "Label in Name"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G208",
+                "name": "G208",
+                "title": "Including the text of the visible label as part of the accessible name"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://benetech.org/work-area/employment/\" class=\"tile-button \" aria-label=\"Read more abo...",
+              "  See Employment Work",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 56,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r14",
+            "ruleSummary": "Visible labels are included in accessible names",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r14",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#label-in-name",
+                "chapter": "2.5.3",
+                "title": "Label in Name"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G208",
+                "name": "G208",
+                "title": "Including the text of the visible label as part of the accessible name"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://benetech.org/work-area/social-inclusion/\" class=\"tile-button \" aria-label=\"Read mo...",
+              "  See Social Inclusion Work",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 57,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r14",
+            "ruleSummary": "Visible labels are included in accessible names",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r14",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#label-in-name",
+                "chapter": "2.5.3",
+                "title": "Label in Name"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G208",
+                "name": "G208",
+                "title": "Including the text of the visible label as part of the accessible name"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://benetech.org/work-area/prior-work/\" class=\"tile-button \" aria-label=\"Read more abo...",
+              "  See Prior Work",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 647,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r47",
+            "ruleSummary": "<meta name='viewport'> elements do not prevent zoom",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r47",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#reflow",
+                "chapter": "1.4.10",
+                "title": "Reflow"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "meta",
+            "path": "/html[1]/head[1]/meta[3]",
+            "codeLines": [
+              "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scala..."
+            ]
+          }
+        },
+        {
+          "index": 791,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "blockquote",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/blockquote[1]",
+            "codeLines": [
+              "<blockquote class=\"footer-testimonial slick-slide slick-current slick-active\" data-slick-index=\"0\" ...",
+              "  <div class=\"footer-testimonial-image\">",
+              "    <picture>",
+              "      <source media=\"(min-width: 736px)\" srcset=\"https://benetech.org/wp-content/uploads/2017/08/sk...",
+              "      <source media=\"(max-width: 735px)\" srcset=\"https://benetech.org/wp-content/uploads/2017/08/sk...",
+              "      <img srcset=\"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\" alt=...",
+              "    </picture>",
+              "    <noscript>",
+              "      <img src=\"https://benetech.org/wp-content/uploads/2017/08/skoll-logo-trans-1-2-e1503515071224...",
+              "    </noscript>",
+              "  </div>",
+              "  <div class=\"footer-testimonial-text\">",
+              "    <p class=\"footer-testimonial-quote\">",
+              "      We’ve been thrilled by Benetech’s ability to repeatedly reach scale in bridging Silicon Valle...",
+              "    </p>",
+              "    <cite class=\"footer-testimonial-attribution\">",
+              "      <strong>",
+              "        Jeff Skoll",
+              "      </strong>",
+              "      , Founder and Chairman, The Skoll Foundation",
+              "    </cite>",
+              "  </div>",
+              "</blockquote>"
+            ]
+          }
+        },
+        {
+          "index": 816,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/h1[1]/text()[1]",
+            "codeLines": [
+              "Help create more equity in literacy"
+            ]
+          }
+        },
+        {
+          "index": 827,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/section[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/h3[1]/text()[1]",
+            "codeLines": [
+              "20 million+"
+            ]
+          }
+        },
+        {
+          "index": 851,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[2]/div[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Copyright 2022 | Benetech | Software for Social Good"
+            ]
+          }
+        },
+        {
+          "index": 860,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/h1[1]/text()[1]",
+            "codeLines": [
+              "Help create more equity in literacy"
+            ]
+          }
+        },
+        {
+          "index": 900,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/blockquote[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p class=\"footer-testimonial-quote\">",
+              "  We’ve been thrilled by Benetech’s ability to repeatedly reach scale in bridging Silicon Valley te...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 990,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[1]/div[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"683003_83562pi_683003_83562\" id=\"683003_83562pi_683003_83562\" value=\"\" cla..."
+            ]
+          }
+        },
+        {
+          "index": 991,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[1]/div[2]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"683003_5278pi_683003_5278\" id=\"683003_5278pi_683003_5278\" value=\"\" class=\"..."
+            ]
+          }
+        },
+        {
+          "index": 993,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Learn More"
+            ]
+          }
+        },
+        {
+          "index": 999,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[3]/a[1]/text()[1]",
+            "codeLines": [
+              "GIVE"
+            ]
+          }
+        },
+        {
+          "index": 1000,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[3]/a[2]/text()[1]",
+            "codeLines": [
+              "BECOME A PARTNER"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      6
+    ]
+  ]
+}

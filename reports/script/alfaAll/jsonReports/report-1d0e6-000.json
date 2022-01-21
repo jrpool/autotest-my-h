@@ -1,0 +1,1792 @@
+{
+  "script": "alfa",
+  "batch": "alfaAll",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0e6",
+  "logCount": 2,
+  "logSize": 97,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://accessibilityventures.com/",
+      "what": "Accessibility Ventures",
+      "result": "https://accessibilityventures.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://accessibilityventures.com/",
+      "result": [
+        {
+          "index": 31,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r12",
+            "ruleSummary": "Buttons have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r12",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[10]/div[3]/form[1]/button[1]",
+            "codeLines": [
+              "<button type=\"submit\" class=\"sidr-class-searchform-submit\">",
+              "  <span class=\"fa fa-search\"></span>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 129,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r17",
+            "ruleSummary": "Elements with aria-hidden='true' are not focusable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r17",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[4]",
+            "codeLines": [
+              "<div class=\"cli-modal\" id=\"cliSettingsPopup\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"cliSettin...",
+              "  <div class=\"cli-modal-dialog\" role=\"document\">",
+              "    <div class=\"cli-modal-content cli-bar-popup\">",
+              "      <button type=\"button\" class=\"cli-modal-close\" id=\"cliModalClose\">",
+              "        <svg class=\"\" viewBox=\"0 0 24 24\">",
+              "          <path d=\"M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 ...",
+              "          <path d=\"M0 0h24v24h-24z\" fill=\"none\"></path>",
+              "        </svg>",
+              "      </button>",
+              "      <div class=\"cli-modal-body\">",
+              "        <div class=\"cli-container-fluid cli-tab-container\">",
+              "          <div class=\"cli-row\">",
+              "            <div class=\"cli-col-12 cli-align-items-stretch cli-px-0\">",
+              "              <div class=\"cli-privacy-overview\">",
+              "                <div class=\"cli-privacy-content\">",
+              "                  <div class=\"cli-privacy-content-text\"></div>",
+              "                </div>",
+              "                <a class=\"cli-privacy-readmore\" data-readmore-text=\"Show more\" data-readless-text=\"...",
+              "              </div>",
+              "            </div>",
+              "            <div class=\"cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container\">",
+              "              <div class=\"cli-tab-section cli-privacy-tab\">",
+              "                <div class=\"cli-tab-header\">",
+              "                  <a class=\"cli-nav-link cli-settings-mobile\"></a>",
+              "                </div>",
+              "                <div class=\"cli-tab-content\">",
+              "                  <div class=\"cli-tab-pane cli-fade\">",
+              "                    <p></p>",
+              "                  </div>",
+              "                </div>",
+              "              </div>",
+              "              <div class=\"cli-tab-section\">",
+              "                <div class=\"cli-tab-header\">",
+              "                  <a class=\"cli-nav-link cli-settings-mobile\" data-target=\"necessary\" data-toggle=\"...",
+              "                    Necessary",
+              "                  </a>",
+              "                  <span class=\"cli-necessary-caption\">",
+              "                    Always Enabled",
+              "                  </span>",
+              "                </div>",
+              "                <div class=\"cli-tab-content\">",
+              "                  <div class=\"cli-tab-pane cli-fade\" data-id=\"necessary\">",
+              "                    <p></p>",
+              "                  </div>",
+              "                </div>",
+              "              </div>",
+              "            </div>",
+              "          </div>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 375,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h4",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h4[1]",
+            "codeLines": [
+              "<h4 class=\"vcex-module vcex-heading vcex-heading-plain vc_custom_1554214953182 wpex-rcss-1\" data-wp...",
+              "  <span class=\"vcex-heading-inner clr\">",
+              "    The Accessibility Tool Makes Your Website More Compatible With Assistive Technologies For Those...",
+              "  </span>",
+              "</h4>"
+            ]
+          }
+        },
+        {
+          "index": 379,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h4",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[5]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/header[1]/h4[1]",
+            "codeLines": [
+              "<h4 style=\"font-size: 22px;line-height: 2\" class=\"vc_custom_heading\">",
+              "  GET STARTED NOW!",
+              "</h4>"
+            ]
+          }
+        },
+        {
+          "index": 385,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[2]/text()[1]",
+            "codeLines": [
+              "Facebook"
+            ]
+          }
+        },
+        {
+          "index": 422,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Copyright - Accessibility Ventures LLC 2020 - All Rights Reserved"
+            ]
+          }
+        },
+        {
+          "index": 423,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "This website uses cookies to improve your experience. You can opt-out at any time."
+            ]
+          }
+        },
+        {
+          "index": 424,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/span[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Accept"
+            ]
+          }
+        },
+        {
+          "index": 425,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/span[1]/a[2]/text()[1]",
+            "codeLines": [
+              "Reject"
+            ]
+          }
+        },
+        {
+          "index": 426,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/span[1]/a[3]/text()[1]",
+            "codeLines": [
+              "Read More"
+            ]
+          }
+        },
+        {
+          "index": 427,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[10]/div[2]/ul[1]/li[1]/a[1]/span[1]/text()[1]",
+            "codeLines": [
+              "About Us"
+            ]
+          }
+        },
+        {
+          "index": 428,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[10]/div[2]/ul[1]/li[2]/a[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Why You Need It"
+            ]
+          }
+        },
+        {
+          "index": 429,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[10]/div[2]/ul[1]/li[3]/a[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Website Accessibility Tips"
+            ]
+          }
+        },
+        {
+          "index": 430,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[10]/div[2]/ul[1]/li[4]/a[1]/span[1]/text()[1]",
+            "codeLines": [
+              "FAQs"
+            ]
+          }
+        },
+        {
+          "index": 447,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"http://www.facebook.com/TheAccessibilityTool\" title=\"Facebook\" target=\"_blank\" class=\"wpex...",
+              "  <span class=\"fa fa-facebook\" aria-hidden=\"true\"></span>",
+              "  <span class=\"screen-reader-text\">",
+              "    Facebook",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 448,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://accessibilityventures.com/\" rel=\"home\" class=\"main-logo\">",
+              "  <img src=\"https://accessibilityventures.com/wp-content/uploads/2019/06/Accessibility-Ventures-Log...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 449,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+            "codeLines": [
+              "<a title=\"About Accessibility Ventures\" href=\"https://accessibilityventures.com/about-accessibility...",
+              "  <span class=\"link-inner\">",
+              "    About Us",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 450,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+            "codeLines": [
+              "<a href=\"https://accessibilityventures.com/why-websites-need-to-be-accessible/\">",
+              "  <span class=\"link-inner\">",
+              "    Why You Need It",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 451,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+            "codeLines": [
+              "<a title=\"Website Accessibility Tips\" href=\"https://accessibilityventures.com/website-accessibility...",
+              "  <span class=\"link-inner\">",
+              "    Website Accessibility Tips",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 452,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+            "codeLines": [
+              "<a title=\"Accessibility Tool Frequently Asked Questions\" href=\"https://accessibilityventures.com/fa...",
+              "  <span class=\"link-inner\">",
+              "    FAQs",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 453,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://signup.accessibilitytool.com\" title=\"Sign Up for the Accessibility Tool\" class=\"vc...",
+              "  <span class=\"theme-button-inner\">",
+              "    Get Started Now!",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 454,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[2]/header[1]/div[2]/h1[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://vimeo.com/274406037?embedded=true&source=video_title&owner=37194812\" target=\"_blan...",
+              "  The Accessibility Tool from Accessibility Ventures",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 455,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[2]/header[1]/div[2]/div[1]/h2[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://vimeo.com/user37194812?embedded=true&source=owner_name&owner=37194812\" target=\"_bl...",
+              "  Accessibility Ventures",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 456,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/button[1]",
+            "codeLines": [
+              "<button type=\"button\" class=\"play rounded-box state-paused\" aria-label=\"Play\">",
+              "  <div class=\"tiny-bars\">",
+              "    <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 65 40\" focusable=\"false\">",
+              "      <defs>",
+              "        <clipPath id=\"rounded-border\">",
+              "          <rect height=\"100%\" width=\"100%\" x=\"0\" y=\"0\" rx=\"5\"></rect>",
+              "        </clipPath>",
+              "        <pattern id=\"tiny-buffer\" patternUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"10\" height=\"10\" ...",
+              "          <line x1=\"5\" y1=\"-1\" x2=\"-5\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-linecap=\"butt\"...",
+              "          <line x1=\"10\" y1=\"-1\" x2=\"0\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-linecap=\"butt\"...",
+              "          <line x1=\"15\" y1=\"-1\" x2=\"5\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-linecap=\"butt\"...",
+              "        </pattern>",
+              "      </defs>",
+              "      <g clip-path=\"url(#rounded-border)\">",
+              "        <rect class=\"buffer hidden\" height=\"3\" width=\"110%\" x=\"0\" y=\"37\" fill=\"url(#tiny-buffer)\"><...",
+              "        <rect class=\"loaded\" height=\"3\" width=\"0\" x=\"0\" y=\"37\" fill=\"#666\"></rect>",
+              "        <rect class=\"played fill\" height=\"3\" width=\"0\" x=\"0\" y=\"37\"></rect>",
+              "      </g>",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"play-icon\">",
+              "    <svg viewBox=\"0 0 20 20\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hidden=\"true\">",
+              "      <polygon class=\"fill\" points=\"1,0 20,10 1,20\"></polygon>",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"pause-icon\">",
+              "    <svg viewBox=\"0 0 20 20\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hidden=\"true\">",
+              "      <rect class=\"fill\" width=\"6\" height=\"20\" x=\"0\" y=\"0\"></rect>",
+              "      <rect class=\"fill\" width=\"6\" height=\"20\" x=\"12\" y=\"0\"></rect>",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"replay-icon\">",
+              "    <svg viewBox=\"-387 605 16 16\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hidden=\"tru...",
+              "      <path class=\"fill\" d=\"M-387 606v4c0 .6.4 1 1 1h4c.6 0 1-.4 1-1s-.4-1-1-1h-1.5c1.1-1.2 2.7-2 4...",
+              "    </svg>",
+              "  </div>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 459,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/button[1]",
+            "codeLines": [
+              "<button type=\"button\" class=\"toggle cc off\" aria-haspopup=\"true\" aria-label=\"Choose captions\">",
+              "  <svg viewBox=\"0 0 20 14\" focusable=\"false\" aria-hidden=\"true\">",
+              "    <path class=\"fill\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17 0h-14c-1.657 0-3 1.343-3 3v8c...",
+              "  </svg>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 460,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/button[2]",
+            "codeLines": [
+              "<button type=\"button\" class=\"vp-prefs js-prefs\" aria-haspopup=\"true\" aria-label=\"Settings\">",
+              "  <svg class=\"icon-gear\" viewBox=\"0 0 16 16\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-...",
+              "    <defs>",
+              "      <clipPath id=\"icon-gear-mask-hd\">",
+              "        <polygon points=\"19 9.422 19 0 0 0 0 16 4.996 16 6 9.422 19 9.422\"></polygon>",
+              "      </clipPath>",
+              "      <clipPath id=\"icon-gear-mask-4k\">",
+              "        <polygon points=\"19 0 0 0 0 16 .656 16 7.641 9.422 19 9.422\"></polygon>",
+              "      </clipPath>",
+              "    </defs>",
+              "    <g class=\"icon-gear-group\">",
+              "      <path class=\"icon-gear-cog fill\" d=\"M8.75,0 L7.25,0 C6.69771525,0 6.25,0.44771525 6.25,1 L6.2...",
+              "    </g>",
+              "    <g class=\"icon-gear-text icon-gear-text-hd\">",
+              "      <polygon class=\"fill\" points=\"10.17 12.38 10.46 10.43 12.22 10.43 11.36 16 9.6 16 9.95 13.76 ...",
+              "      <path class=\"fill\" d=\"M17.82,11.23 C17.65,10.98 17.32,10.43 15.93,10.43 L13.37,10.43 L12.51,1...",
+              "    </g>",
+              "    <g class=\"icon-gear-text icon-gear-text-4k\">",
+              "      <polygon class=\"fill\" points=\"11.82 10.29 13.58 10.29 13.19 12.17 13.19 12.17 15.19 10.27 17....",
+              "      <path class=\"fill\" d=\"M7.86,14.9 L5.31,14.9 L5.61,13.41 L8.78,10.41 L10.36,10.41 L9.72,13.51 ...",
+              "    </g>",
+              "  </svg>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 461,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/button[4]",
+            "codeLines": [
+              "<button type=\"button\" class=\"fullscreen\" aria-label=\"Enter full screen\">",
+              "  <div class=\"fullscreen-icon\">",
+              "    <svg viewBox=\"0 0 12 12\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hidden=\"true\">",
+              "      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" transform=\"translate(...",
+              "      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" transform=\"translate(...",
+              "      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" transform=\"translate(...",
+              "      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" transform=\"translate(...",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"unfullscreen-icon\">",
+              "    <svg viewBox=\"0 0 12 12\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-labelledby=\"unfu...",
+              "      <title id=\"unfullscreen-icon-title\">",
+              "        undefined",
+              "      </title>",
+              "      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 -5,-1.1\" transfo...",
+              "      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 -5,-1.1\" transfo...",
+              "      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 -5,-1.1\" transfo...",
+              "      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 -5,-1.1\" transfo...",
+              "    </svg>",
+              "  </div>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 462,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/div[5]/a[1]",
+            "codeLines": [
+              "<a href=\"https://vimeo.com/274406037?embedded=true&source=vimeo_logo&owner=37194812\" target=\"_blank...",
+              "  <svg viewBox=\"0 0 140 40\" preserveAspectRatio=\"xMidYMid\" role=\"img\" focusable=\"false\" aria-labell...",
+              "    <title id=\"logo-icon-title\">",
+              "      Vimeo",
+              "    </title>",
+              "    <g>",
+              "      <path class=\"fill logo-v\" d=\"M31.277 18.832c-.14 3.052-2.27 7.229-6.39 12.531-4.259 5.536-7.8...",
+              "      <path class=\"fill logo-i\" d=\"M50.613 28.713c-1.313 2.484-3.119 4.733-5.417 6.748-3.143 2.718-...",
+              "      <path class=\"fill logo-m\" d=\"M94.543 28.713c-1.314 2.484-3.117 4.733-5.416 6.748-3.145 2.718-...",
+              "      <path class=\"fill logo-e\" d=\"M120.922 28.642c-1.361 2.249-4.033 4.495-8.02 6.743-4.971 2.856-...",
+              "      <path class=\"fill logo-o\" d=\"M140.018 23.926c-.189 4.31-1.781 8.031-4.783 11.169-3.002 3.137-...",
+              "    </g>",
+              "  </svg>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 463,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://signup.accessibilitytool.com\" title=\"Sign Up for the Accessibility Tool\" class=\"vc...",
+              "  <span class=\"theme-button-inner\">",
+              "    Get Started Now!",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 465,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://signup.accessibilitytool.com\" title=\"Sign Up for the Accessibility Tool\" class=\"vc...",
+              "  <span class=\"theme-button-inner\">",
+              "    Get Started Now!",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 466,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"tel:484-378-1824\">",
+              "  484-378-1824",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 467,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/a[1]",
+            "codeLines": [
+              "<a href=\"mailto:info@accessibilityventures.com\" title=\"Email Us\">",
+              "  Email Us",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 468,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://accessibilityventures.com/privacy-policy/\">",
+              "  Privacy Policy",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 469,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "codeLines": [
+              "<a href=\"https://accessibilityventures.com/cancellation-policy/\">",
+              "  Cancellation Policy",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 470,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "codeLines": [
+              "<a href=\"https://accessibilityventures.com/support-center/\">",
+              "  Support Center",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 471,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+            "codeLines": [
+              "<a href=\"https://signup.accessibilitytool.com/terms-of-service/\">",
+              "  Terms of Service",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 472,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/span[1]/a[3]",
+            "codeLines": [
+              "<a href=\"https://accessibilityventures.com/privacy-policy\" id=\"CONSTANT_OPEN_URL\" target=\"_blank\" c...",
+              "  Read More",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 473,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[4]/div[1]/div[1]/button[1]",
+            "codeLines": [
+              "<button type=\"button\" class=\"cli-modal-close\" id=\"cliModalClose\">",
+              "  <svg class=\"\" viewBox=\"0 0 24 24\">",
+              "    <path d=\"M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5...",
+              "    <path d=\"M0 0h24v24h-24z\" fill=\"none\"></path>",
+              "  </svg>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 474,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[10]/div[2]/ul[1]/li[1]/a[1]",
+            "codeLines": [
+              "<a title=\"About Accessibility Ventures\" href=\"https://accessibilityventures.com/about-accessibility...",
+              "  <span class=\"sidr-class-link-inner\">",
+              "    About Us",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 475,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[10]/div[2]/ul[1]/li[2]/a[1]",
+            "codeLines": [
+              "<a href=\"https://accessibilityventures.com/why-websites-need-to-be-accessible/\">",
+              "  <span class=\"sidr-class-link-inner\">",
+              "    Why You Need It",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 476,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[10]/div[2]/ul[1]/li[3]/a[1]",
+            "codeLines": [
+              "<a title=\"Website Accessibility Tips\" href=\"https://accessibilityventures.com/website-accessibility...",
+              "  <span class=\"sidr-class-link-inner\">",
+              "    Website Accessibility Tips",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 477,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[10]/div[2]/ul[1]/li[4]/a[1]",
+            "codeLines": [
+              "<a title=\"Accessibility Tool Frequently Asked Questions\" href=\"https://accessibilityventures.com/fa...",
+              "  <span class=\"sidr-class-link-inner\">",
+              "    FAQs",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 479,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[10]/div[3]/form[1]/button[1]",
+            "codeLines": [
+              "<button type=\"submit\" class=\"sidr-class-searchform-submit\">",
+              "  <span class=\"fa fa-search\"></span>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 480,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Website Accessibility Made Simple!"
+            ]
+          }
+        },
+        {
+          "index": 481,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h4[1]/span[1]/text()[1]",
+            "codeLines": [
+              "The Accessibility Tool Makes Your Website More Compatible With Assistive Technologies For Those Wit..."
+            ]
+          }
+        },
+        {
+          "index": 489,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[2]/header[1]/div[2]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "from"
+            ]
+          }
+        },
+        {
+          "index": 495,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[5]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/header[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "It's Inexpensive and Easy"
+            ]
+          }
+        },
+        {
+          "index": 496,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[5]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/header[1]/h4[1]/text()[1]",
+            "codeLines": [
+              "GET STARTED NOW!"
+            ]
+          }
+        },
+        {
+          "index": 497,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[5]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/p[1]/span[1]/strong[1]/text()[1]",
+            "codeLines": [
+              "The Accessibility Tool is your solution to make your business website more accessible to those with..."
+            ]
+          }
+        },
+        {
+          "index": 508,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Website Accessibility Made Simple!"
+            ]
+          }
+        },
+        {
+          "index": 509,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h4[1]/span[1]/text()[1]",
+            "codeLines": [
+              "The Accessibility Tool Makes Your Website More Compatible With Assistive Technologies For Those Wit..."
+            ]
+          }
+        },
+        {
+          "index": 517,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[2]/header[1]/div[2]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "from"
+            ]
+          }
+        },
+        {
+          "index": 523,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[5]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/header[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "It's Inexpensive and Easy"
+            ]
+          }
+        },
+        {
+          "index": 524,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[5]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/header[1]/h4[1]/text()[1]",
+            "codeLines": [
+              "GET STARTED NOW!"
+            ]
+          }
+        },
+        {
+          "index": 525,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[5]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/p[1]/span[1]/strong[1]/text()[1]",
+            "codeLines": [
+              "The Accessibility Tool is your solution to make your business website more accessible to those with..."
+            ]
+          }
+        },
+        {
+          "index": 746,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/div[3]/div[1]",
+            "codeLines": [
+              "<div class=\"focus-target\" role=\"slider\" aria-label=\"Progress Bar\" aria-valuemin=\"0\" aria-valuemax=\"..."
+            ]
+          }
+        },
+        {
+          "index": 747,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/div[4]",
+            "codeLines": [
+              "<div class=\"volume\" role=\"slider\" title=\"Volume (use up/down arrow keys to change)\" aria-valuemin=\"...",
+              "  <div></div>",
+              "  <div></div>",
+              "  <div></div>",
+              "  <div></div>",
+              "  <div></div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 748,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[10]/div[3]/form[1]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" name=\"s\" autocomplete=\"off\" placeholder=\"Search\">"
+            ]
+          }
+        },
+        {
+          "index": 749,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]/span[1]/text()[1]",
+            "codeLines": [
+              "About Us"
+            ]
+          }
+        },
+        {
+          "index": 750,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[2]/nav[1]/ul[1]/li[2]/a[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Why You Need It"
+            ]
+          }
+        },
+        {
+          "index": 751,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[2]/nav[1]/ul[1]/li[3]/a[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Website Accessibility Tips"
+            ]
+          }
+        },
+        {
+          "index": 752,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/header[1]/div[1]/div[2]/nav[1]/ul[1]/li[4]/a[1]/span[1]/text()[1]",
+            "codeLines": [
+              "FAQs"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      9
+    ]
+  ]
+}

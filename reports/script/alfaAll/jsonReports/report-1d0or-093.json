@@ -1,0 +1,240 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0or",
+  "logCount": 9,
+  "logSize": 908,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 1,
+  "visitRejectionCount": 2,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.stc.com.sa/wps/wcm/connect/arabic/individual/individual",
+      "what": "Saudi Telecom (AMDWX)",
+      "result": "https://www.stc.com.sa/wps/wcm/connect/arabic/individual/individual"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.stc.com.sa/wps/wcm/connect/arabic/individual/individual",
+      "result": [
+        {
+          "index": 37,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r4",
+            "ruleSummary": "<html> document elements have a lang attribute",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r4",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#language-of-page",
+                "chapter": "3.1.1",
+                "title": "Language of Page"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+                "name": "H57",
+                "title": "Using the language attribute on the HTML element"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "html",
+            "path": "/html[1]",
+            "codeLines": [
+              "<html>",
+              "...",
+              "</html>"
+            ]
+          }
+        },
+        {
+          "index": 58,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r61",
+            "ruleSummary": "Documents start with a level 1 heading",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r61",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 64,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/h2[1]/text()[1]",
+            "codeLines": [
+              "block"
+            ]
+          }
+        },
+        {
+          "index": 73,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/h2[1]/text()[1]",
+            "codeLines": [
+              "block"
+            ]
+          }
+        },
+        {
+          "index": 86,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  The page cannot be displayed. Please contact the administrator for additional information.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 87,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[3]/div[1]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  URL: www.stc.com.sa/wps/wcm/connect/arabic/individual/individual",
+              "  <br>",
+              "  <br>",
+              "  Client IP: 12.15.136.25",
+              "  <br>",
+              "  Attack ID: 20000051",
+              "  <br>",
+              "  Message ID: 029274058481",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 107,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      4
+    ]
+  ]
+}

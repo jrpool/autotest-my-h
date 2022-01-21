@@ -1,0 +1,4376 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 8,
+  "logSize": 253,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.prochoiceamerica.org/",
+      "what": "NARAL Pro-Choice America",
+      "result": "https://www.prochoiceamerica.org/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.prochoiceamerica.org/",
+      "result": [
+        {
+          "index": 9,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/header[1]/div[2]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"http://www.prochoiceamerica.org/\">",
+              "  <svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org...",
+              "    <style type=\"text/css\">",
+              "      .st2{fill:#2E1E53;}",
+              "      \t.st3{fill:#7F3E88;}",
+              "      \t.st4{clip-path:url(#SVGID_2_);}",
+              "      \t.st5{fill:#FFFFFF;}",
+              "      \t.st6{fill:#F3F3F3;}",
+              "    </style>",
+              "    <g>",
+              "      <path class=\"st00\" d=\"M974.8,44.5h23.9v6.3h-17v6.7h15v6.3h-15v12.1h-6.9V44.5z\"></path>",
+              "      <path class=\"st00\" d=\"M1017.6,44.5h14.3c4,0,7,1.1,9.1,3.2c1.8,1.9,2.8,4.5,2.7,7.2V55c0.1,2.2-...",
+              "      \t\tc-1.3,1.6-3,2.8-4.9,3.5l7.7,11.2h-8.1l-6.7-10h-5.4v10h-6.9L1017.6,44.5z M1031.5,59.7c1.4,0....",
+              "      \t\tc0.9-0.8,1.4-2,1.4-3.2v-0.1c0.1-1.3-0.4-2.5-1.4-3.3c-1.2-0.8-2.6-1.2-4-1.1h-6.9v9H1031.5z\">...",
+              "      <path class=\"st00\" d=\"M1063.4,44.5h23.6v6.1h-16.8V57h14.8v6.1h-14.8v6.6h17v6.1h-23.8L1063.4,4...",
+              "      <path class=\"st00\" d=\"M1106.9,44.5h23.6v6.1h-16.8V57h14.8v6.1h-14.8v6.6h17v6.1H1107L1106.9,44...",
+              "      <path class=\"st00\" d=\"M1150.4,44.5h12.2c2.3,0,4.6,0.4,6.8,1.2c2,0.7,3.7,1.9,5.3,3.3c1.5,1.4,2...",
+              "      \t\tv0.1c0,2.1-0.4,4.2-1.2,6.2c-0.8,1.9-2,3.6-3.4,5c-1.5,1.4-3.3,2.6-5.3,3.3c-2.2,0.8-4.5,1.2-6...",
+              "      \t\tv18.9h5.3c1.3,0,2.6-0.2,3.8-0.7c2.3-0.9,4-2.6,4.9-4.9c0.5-1.2,0.7-2.5,0.7-3.8v-0.1c0-1.3-0....",
+              "      \t\tc-0.9-2.3-2.6-4-4.9-4.9c-1.2-0.5-2.5-0.7-3.8-0.7L1157.2,50.7z\"></path>",
+              "      <path class=\"st00\" d=\"M1214.1,76.4c-2.3,0-4.6-0.4-6.7-1.3c-2-0.8-3.7-2-5.3-3.5c-1.5-1.4-2.7-3...",
+              "      \t\tv-0.1c0-2.2,0.4-4.3,1.3-6.3c1.7-3.9,4.8-7,8.8-8.6c4.3-1.7,9.1-1.7,13.4,0c2,0.8,3.7,2,5.3,3....",
+              "      \t\tc0.8,2,1.2,4.1,1.2,6.3v0.1c0,2.2-0.4,4.3-1.3,6.3c-1.7,3.9-4.8,7-8.8,8.6C1218.7,76,1216.4,76...",
+              "      \t\tc1.3,0,2.6-0.2,3.8-0.8c1.1-0.5,2.1-1.2,2.9-2.1c0.8-0.9,1.5-2,2-3.1c0.5-1.2,0.7-2.5,0.7-3.8v...",
+              "      \t\tc-0.9-2.3-2.7-4.2-5-5.3c-1.2-0.5-2.5-0.8-3.8-0.8c-1.3,0-2.6,0.2-3.8,0.8c-1.1,0.5-2.1,1.2-2....",
+              "      \t\tc-0.5,1.2-0.7,2.5-0.7,3.8v0.1c0,1.3,0.2,2.6,0.7,3.8c0.4,1.2,1.1,2.2,2,3.1C1209.2,69,1211.6,...",
+              "      <path class=\"st00\" d=\"M1250.4,44.5h7.4l8.2,13.3l8.2-13.3h7.4v31.3h-6.9V55.4l-8.8,13.4h-0.2l-8...",
+              "      <path class=\"st00\" d=\"M1329.9,44.5h6.9v31.3h-6.9V44.5z\"></path>",
+              "      <path class=\"st00\" d=\"M1369.3,76.3c-2.4,0-4.8-0.4-7-1.2c-2.3-0.8-4.5-2.1-6.3-3.8l4.1-4.9c1.3,...",
+              "      \t\tc1.2,0.1,2.3-0.2,3.3-0.8c0.8-0.5,1.2-1.3,1.2-2.2v-0.1c0-0.4-0.1-0.8-0.3-1.2c-0.2-0.4-0.6-0....",
+              "      \t\tc-0.8-0.3-1.9-0.6-3.2-1c-1.6-0.4-3-0.9-4.3-1.3c-1.2-0.4-2.3-1-3.3-1.7c-0.9-0.7-1.6-1.6-2.1-...",
+              "      \t\tc-0.1-2.6,1.1-5.1,3-6.9c1-0.9,2.2-1.5,3.5-2c1.4-0.5,2.9-0.7,4.4-0.7c2.2,0,4.3,0.3,6.3,1c1.9...",
+              "      \t\tc-1.3-0.9-2.7-1.7-4.1-2.3c-1.3-0.5-2.6-0.8-4-0.8c-1.1-0.1-2.1,0.2-3,0.8c-0.6,0.5-1,1.2-1,2v...",
+              "      \t\tc0.3,0.4,0.6,0.8,1.1,1c0.7,0.4,1.4,0.6,2.1,0.9c0.9,0.3,2,0.6,3.3,1c1.4,0.4,2.9,0.8,4.2,1.4c...",
+              "      \t\tc0.8,0.7,1.5,1.6,2,2.6c0.5,1.1,0.7,2.3,0.6,3.5v0.1c0,1.4-0.3,2.8-0.9,4.1c-0.5,1.2-1.3,2.2-2...",
+              "      \t\tC1372.4,76,1370.9,76.3,1369.3,76.3z\"></path>",
+              "      <path class=\"st00\" d=\"M1427.1,44.5h23.9v6.3h-17v6.7h15v6.3h-15v12.1h-6.9L1427.1,44.5z\"></path...",
+              "      <path class=\"st00\" d=\"M1485.2,76.4c-2.3,0-4.6-0.4-6.7-1.3c-2-0.8-3.8-2-5.3-3.5c-1.5-1.5-2.7-3...",
+              "      \t\tv-0.1c0-2.2,0.4-4.3,1.3-6.3c1.7-3.9,4.8-7,8.8-8.6c4.3-1.7,9.1-1.7,13.4,0c2,0.8,3.7,2,5.3,3....",
+              "      \t\tc0.8,2,1.2,4.1,1.2,6.3v0.1c0,2.2-0.4,4.3-1.3,6.3c-1.7,3.9-4.8,7-8.8,8.6C1489.7,76,1487.5,76...",
+              "      \t\tc1.3,0,2.6-0.2,3.8-0.8c1.1-0.5,2.1-1.2,2.9-2.1c0.8-0.9,1.5-2,2-3.1c0.5-1.2,0.7-2.5,0.7-3.8v...",
+              "      \t\tc-0.4-1.2-1.1-2.2-2-3.1c-0.9-0.9-1.9-1.6-3-2.1c-1.2-0.5-2.5-0.8-3.8-0.8c-1.3,0-2.6,0.2-3.8,...",
+              "      \t\tc-0.8,0.9-1.5,2-2,3.1c-0.5,1.2-0.7,2.5-0.7,3.8v0.1c0,1.3,0.2,2.6,0.7,3.8c0.4,1.2,1.1,2.2,2,...",
+              "      \t\tC1482.7,69.8,1484,70.1,1485.3,70.1L1485.3,70.1z\"></path>",
+              "      <path class=\"st00\" d=\"M1521.5,44.5h14.3c4,0,7,1.1,9.1,3.2c1.8,1.9,2.8,4.5,2.7,7.2V55c0.1,2.2-...",
+              "      \t\tc-1.3,1.6-3,2.8-4.9,3.5l7.7,11.2h-8.1l-6.7-10h-5.4v10h-6.9L1521.5,44.5z M1535.4,59.7c1.4,0....",
+              "      \t\tc0.9-0.8,1.4-2,1.4-3.2v-0.1c0.1-1.3-0.4-2.5-1.4-3.3c-1.2-0.8-2.6-1.2-4-1.1h-6.9v9H1535.4z\">...",
+              "      <path class=\"st00\" d=\"M833.8,113.5h79.1V139h-48.6v9.4h45.3v22.4h-45.3v10.1h49.3v25.5h-79.7V11...",
+              "      <path class=\"st00\" d=\"M915.1,113.5h34.7l18,52.1l18-52.1h34.2l-37.6,93.4h-29.7L915.1,113.5z\"><...",
+              "      <path class=\"st00\" d=\"M1023.9,113.5h79.1V139h-48.6v9.4h45.3v22.4h-45.3v10.1h49.3v25.5h-79.7L1...",
+              "      <path class=\"st00\" d=\"M1112,113.5h45.3c8.3,0,15.1,0.9,20.5,2.8c4.8,1.6,9.2,4.2,12.9,7.7c2.8,2...",
+              "      \t\tc1.5,4,2.2,8.2,2.1,12.5v0.3c0,6.8-1.6,12.5-4.9,17.2c-3.4,4.8-8,8.6-13.4,11.1l21.6,31.5H1167...",
+              "      \t\t M1156.3,157.6c3.7,0,6.6-0.8,8.7-2.4c2.1-1.5,3.3-4,3.2-6.6v-0.3c0-3-1.1-5.2-3.2-6.7c-2.1-1....",
+              "      \t\tL1156.3,157.6z\"></path>",
+              "      <path class=\"st00\" d=\"M1230.9,173.4l-35-59.9h34.7l15.9,30.5l16-30.5h34.3l-35,59.5v33.2h-31L12...",
+              "      <path class=\"st11\" d=\"M1306.7,113.5h41.6c10.7,0,18.8,2.7,24.2,8.2c4.1,4.1,6.4,9.6,6.2,15.4v0....",
+              "      \t\tc-0.7,2.1-1.7,4-2.9,5.8c-1.2,1.6-2.6,3.1-4.2,4.3c-1.6,1.2-3.3,2.3-5,3.2c5,1.6,9.6,4.3,13.3,...",
+              "      \t\tc0.1,3.8-0.8,7.6-2.4,11c-1.6,3.2-4,5.9-7,7.9c-3.3,2.2-6.9,3.9-10.8,4.8c-4.6,1.2-9.4,1.7-14....",
+              "      \t\t M1362.4,139.8c0.1-3.4-1.4-6.7-4.2-8.7c-2.8-2.1-6.8-3.1-12.1-3.1h-23.4v24.8h22.2c5.3,0,9.5-...",
+              "      \t\tL1362.4,139.8z M1367.6,178.8c0.1-3.7-1.6-7.2-4.7-9.2c-3.1-2.2-7.9-3.2-14.4-3.2h-25.8v25.5h2...",
+              "      \t\ts4.8-5.3,4.8-9.5L1367.6,178.8z\"></path>",
+              "      <path class=\"st11\" d=\"M1446.4,207.8c-6.7,0.1-13.4-1.2-19.6-3.8c-5.7-2.4-10.9-5.9-15.2-10.3c-4...",
+              "      \t\tc-2.4-5.9-3.6-12.1-3.6-18.5v-0.3c0-6.3,1.2-12.6,3.6-18.5c2.3-5.7,5.7-10.9,10.1-15.2c9.2-9.3...",
+              "      \t\tc6.7-0.1,13.4,1.2,19.6,3.8c11.5,4.8,20.5,13.9,25.2,25.5c2.4,5.9,3.6,12.1,3.6,18.5v0.3c0,6.3...",
+              "      \t\tc-2.3,5.7-5.7,10.9-10.1,15.2C1472.1,202.9,1459.5,208.1,1446.4,207.8L1446.4,207.8z M1446.7,1...",
+              "      \t\tc2.8-3,5-6.5,6.4-10.3c1.6-4.1,2.4-8.4,2.3-12.7v-0.3c0-4.4-0.8-8.7-2.3-12.7c-1.5-3.9-3.7-7.4...",
+              "      \t\tc-4-1.7-8.4-2.6-12.7-2.6c-8.5-0.1-16.7,3.3-22.5,9.5c-2.8,3-5,6.5-6.4,10.3c-1.6,4.1-2.3,8.4-...",
+              "      \t\tc1.5,3.9,3.7,7.4,6.5,10.5c2.8,3,6.2,5.4,10,7.1C1438,191.9,1442.3,192.8,1446.7,192.7L1446.7,...",
+              "      <path class=\"st11\" d=\"M1514.8,113.5h34.6c6.8-0.1,13.6,1.1,20,3.5c5.8,2.2,11.1,5.5,15.6,9.7c4....",
+              "      \t\tc2.4,5.8,3.6,12,3.6,18.2v0.3c0.1,6.3-1.2,12.5-3.6,18.3c-2.3,5.5-5.8,10.6-10.1,14.7c-4.5,4.2...",
+              "      \t\tc-6.4,2.4-13.2,3.7-20,3.6h-34.6V113.5z M1531,128.4v63h18.3c4.5,0.1,9-0.7,13.2-2.3c3.8-1.4,7...",
+              "      \t\tc2.8-2.8,5-6.2,6.5-9.9c1.6-4,2.4-8.2,2.3-12.5v-0.3c0-4.3-0.8-8.6-2.3-12.6c-1.5-3.7-3.7-7.1-...",
+              "      \t\tc-4.2-1.6-8.7-2.4-13.2-2.4L1531,128.4z\"></path>",
+              "      <path class=\"st11\" d=\"M1637,169.7l-36.8-56.2h19.3l25.8,40.9l26.2-40.9h18.7l-36.8,55.8v36.9H16...",
+              "    </g>",
+              "    <g>",
+              "      <path class=\"st2\" d=\"M779.6,229.6H191.2V20h551.6c20.3,0,36.8,16.5,36.8,36.8L779.6,229.6z\"></p...",
+              "      <path class=\"st3\" d=\"M191.2,229.6H45.8C25.5,229.6,9,213.1,9,192.7l0,0V20h182.2V229.6z\"></path...",
+              "      <g>",
+              "        <defs>",
+              "          <path id=\"SVGID_1_\" d=\"M9,20v172.7c0,20.3,16.5,36.8,36.8,36.8c0,0,0,0,0,0h145.4V20H9z\"></...",
+              "        </defs>",
+              "        <clipPath id=\"SVGID_2_\">",
+              "          <use xlink:href=\"#SVGID_1_\" style=\"overflow:visible;\"></use>",
+              "        </clipPath>",
+              "        <g class=\"st4\">",
+              "          <path class=\"st5\" d=\"M117,220.8c-10.8-10-25.1-17.5-33.6-33.6c5.5,2.7,18.1,1.7,23.9,0.5c5....",
+              "          \t\t\t\tc4.1-5.5,4.8-10.6,6.2-19.5c1.4-8.9,10.7-13.3,10.7-13.3s-1-4-7.3-5.9c-6.3-2-9.5-0.4-13...",
+              "          \t\t\t\tc-0.2,1.8-0.4,3.5-0.4,5.3c0.2,2.9,0.9,5.7,2.1,8.3c1.9,4.8,3.1,9.8,3.5,14.9c0.1,5.4-1....",
+              "          \t\t\t\tc-2.1-0.3-3.5-0.8-2.3-1.6c0.8-0.6,2.6-0.5,5.8-1c2-0.3,4.9-1.2,6.3-2.9c-2.5-2.6-6.1-2....",
+              "          \t\t\t\tc-1.4,0.4-1.9-0.5-1-1.4c0.9-0.9,5.6-2.3,8.4-2.7c1.6-0.2,3.2-0.2,4.8,0c0,0-0.7-4.1-4.6...",
+              "          \t\t\t\tc0,0-2.9-3.9,0.1-5.3c2-0.9,2.5,1.4,4.6,1.4c3.5,0,5.5-2.6,5.5-7.8c0-10.4,0.9-21,6.9-23...",
+              "          \t\t\t\tc-6-2.6-11.7-5.7-17.1-9.3c-4.7-3.3-8.7-7.5-12-12.2c0,0,0.9,2.3-3.1,6.7s-15,7.1-21.8,1...",
+              "          \t\t\t\tc2.1-5.7,10.1-7.9,13.5-8.5c-0.8-0.9-1.8-1.6-3-2c-0.2-0.1-0.3-0.3-0.3-0.6c0.1-0.1,0.2-...",
+              "          \t\t\t\tc3.8,1.2,4.4,5.1,4.7,8.2c0.3,3.1-0.7,4.8-2.9,4.7c-2.2-0.1-5.9-2.2-9.1-2.1c-3.2,0.1-4....",
+              "          \t\t\t\tc0,0-7,3.5-7.3,8.7c-0.2,5.2,2.5,11.3,2.4,13.6c-0.1,2.2-1,2.8-2.5,3s-2.8-1.2-3.1,0.3c-...",
+              "          \t\t\t\tc-0.8,1-1,2.4-0.7,3.6c0.7,2.1,2.9,3.2,5,2.5c0,0,0.1,0,0.1,0c2.8-0.8,2.9-4.4,2.9-4.4c1...",
+              "          \t\t\t\tc0,0-1.7,11.6-3.3,21.2c-0.8,4.8,0.4,9.7,3.3,13.6c7.4,10.1,13.9,17.2,20.6,21.5c8.3,5.3...",
+              "          \t\t\t\tC132.9,240.2,127.8,230.8,117,220.8\"></path>",
+              "          <path class=\"st5\" d=\"M229.7,51.6L229.7,51.6\"></path>",
+              "          <path class=\"st5\" d=\"M165.4,93.6c0,0,63.6-41.7,64.3-42c-0.8,0.4-65.1,27.4-70.9,28.8c-4.7-...",
+              "          \t\t\t\tc0,0-43.6,49-48.5,53.8c-7.6-4.2-19.3-5.1-19.3-5.1l-11.6-70.1c0,0-4.2,64.1-4,70.1c-14....",
+              "          \t\t\t\tc0,0,36.3,59.9,39.3,63c-5.2,3.9-10.6,12.7-10.6,12.7L-10,74c0,0,51.4,20.2,57.4,23.5c-1...",
+              "          \t\t\t\tc0,0,50.9-7.4,54.3-8c1.1,3,2.7,5.8,4.7,8.2c-1.5,2.6-2.4,5.4-2.7,8.4c-0.6,9,6.6,6.7,8....",
+              "          \t\t\t\tc4.3-1.6,8-12.7,20-17.8c8.8-3.7,19.8-8,22-15.4c2.2,4.4,12,10.8,20.3,12.7c14.4,3.3,24....",
+              "          \t\t\t\tc10,6.1,13.2,17.9,13.8,20.2c0.2,0.7,0.3,1.2,0.3,1.2c2.3-7.9,2.8-21.5,2.8-21.5s68.8-6....",
+              "          \t\t\t\tC167.7,96.6,165.4,93.6,165.4,93.6 M56.1,120.6c-0.6-0.9-1.4-1.8-2.2-2.5c-1.2-1-2.1-0.9...",
+              "          \t\t\t\tc1.5,1.5,2.8,3,4.1,4.6L56.1,120.6z M57.2,115.2c-0.9-1.3-1.8-2.5-2.9-3.6c-1.5-1.6-3.1-...",
+              "          \t\t\t\tc2.5,2,5,6.5,5,6.5L57.2,115.2z M59.4,109.1c-1.1-1.7-2.2-3.4-3.5-4.9c-1.6-1.9-3.8-2.7-...",
+              "          \t\t\t\tc1.9,0.8,3.2,3.2,4.5,5.1c1.2,1.7,2.4,3.9,2.4,3.9L59.4,109.1z M62.1,103.5c-1-2.4-2.2-4...",
+              "          \t\t\t\tc0.3-1.8,1-3.6,2.6-2.2c1.6,1.4,2.9,3.2,3.9,5.1c1,2,3.2,5.7,3.2,5.7L62.1,103.5z M66.2,...",
+              "          \t\t\t\tc-1.5-2.8-5.2-4.8-4.4-6.4s2.6-3.5,4.3-1.8c2,2.1,3.5,4.7,4.3,7.4c0.5,1.8,1.2,3.6,2,5.3...",
+              "          \t\t\t\tc0,0-1.6-4.5-2.9-7.5c-1.3-3-5-6.2-4-8.1c1-1.9,4.1-4.2,5.5-2.7c1.3,1.5,3.3,6.3,4,10c0....",
+              "          \t\t\t\t M79.1,89.5c-0.5-3-1.2-5.9-2-8.8c-1.1-3.5-4.3-8.2-2.4-9.7c1.9-1.5,6-3.4,7.3,0.1c1.3,3...",
+              "          \t\t\t\tL79.1,89.5z M88.4,86.8c0,0-0.6-5.5-1.1-10.1c-0.5-4.3-2.4-8.2-0.7-9.8c1.7-1.6,7.4-2,7....",
+              "          \t\t\t\tc0.1,3.1,0.2,7.9,0.2,7.9L88.4,86.8z M166.2,118.5c0.8,0.7,1.2,2.1-0.1,3.7c-1,1.3-1.9,2...",
+              "          \t\t\t\tc0.3-0.9,0.8-1.8,1.3-2.6C164.5,119.7,165.3,117.8,166.2,118.5 M163.3,103.4c1.6,0.9,2.1...",
+              "          \t\t\t\tc-0.5-0.8-1-1.6-1.5-2.4c0.7-1.8,1.5-3.6,2.4-5.3C159.6,104.8,161.7,102.5,163.3,103.4 M...",
+              "          \t\t\t\tc0.1,0.6,0,1.1-0.3,1.6c-1.2,1.4-3.6,2.6-4.8,5c-1.2,2.3-2.3,5-2.3,5l-2.1-2.9c0,0,1.2-4...",
+              "          \t\t\t\tC157.4,96.2,157.5,96.2,159.2,95.8 M155.7,87.9c2-0.1,3.1,2.9,1.2,4.8c-1.9,1.9-4.3,3.1-...",
+              "          \t\t\t\tc0.5-2.7,1.6-5.3,3.2-7.5C152.8,88.7,153.7,88,155.7,87.9 M147.9,80.3c2-0.5,5.6,1.8,3.5...",
+              "          \t\t\t\tc-0.9,2.2-1.3,3.5-1.3,3.5l-3.6-2.9c0.6-3.2,1.6-6.2,3.1-9.1C145.5,81.7,146,80.8,147.9,...",
+              "          \t\t\t\tc2.9,0.6,4.4,2.2,3.4,4.4c-1.4,3.5-2.6,7.1-3.6,10.7c-0.3,1.2-0.6,2.4-0.7,3.6l-5.8-3.1c...",
+              "          \t\t\t\tC135.1,75.8,135.7,73,138.5,73.6 M122.9,73.6c0.6-2.9,1.2-6.4,4-5.8c2.7,0.7,6.3,1.2,5.4...",
+              "          \t\t\t\tc-0.6,3.3-0.7,4.5-0.7,4.5l-7.3-2C121.3,86.5,122.3,76.5,122.9,73.6 M110.9,69.5c0.5-3.1...",
+              "          \t\t\t\tc0.5,1.7-0.6,5.5-0.9,10c-0.3,4.5-0.8,8.8-0.8,8.8l-8-0.9C110.3,80,110.5,74.7,110.9,69....",
+              "          \t\t\t\ts-1.3-9.1,1.3-9.9c2.6-0.8,7.1-1.2,7.2,3.7c0.1,2.2-0.2,16.8-0.2,16.8L99.2,85.5z M159.5...",
+              "          \t\t\t\tc1.2-2.1,2.6-3.8,3.6-2.8c1.1,1.1,1.1,2.8,0,3.9c0,0,0,0-0.1,0.1c-1.5,1.7-2.8,3.5-3.9,5...",
+              "          \t\t\t\t M166.8,129.7l-1.3,2.1c-0.3-0.9-0.6-2-1-3c0.3-0.6,0.6-1.4,0.8-1.9c0.5-1,1.1-1.5,1.6-0...",
+              "          <path class=\"st5\" d=\"M245,111.2h0.4C245.4,111.2,245.3,111.2,245,111.2\"></path>",
+              "        </g>",
+              "      </g>",
+              "      <path class=\"st5\" d=\"M301.7,146.2l-41.2-54v52.9c0,1-0.8,1.8-1.8,1.8c0,0,0,0,0,0h-15.2c-1,0-1....",
+              "      \t\tc0-1,0.8-1.8,1.8-1.8h14.8c0.6,0,1.1,0.3,1.4,0.7l39.8,52.3V62.6c0-1,0.8-1.8,1.8-1.8h15.1c1,0...",
+              "      \t\tc0,1-0.8,1.8-1.8,1.8c0,0,0,0,0,0h-13.5C302.6,146.9,302.1,146.6,301.7,146.2\"></path>",
+              "      <path class=\"st5\" d=\"M412.2,145.8l-7.5-18.2h-36.3l-7.4,18.2c-0.3,0.7-0.9,1.1-1.6,1.2h-15.4c-1...",
+              "      \t\tc0-0.2,0.1-0.5,0.1-0.7l35.4-83.1c0.3-0.7,0.9-1.1,1.6-1.1h15.1c0.7,0,1.3,0.4,1.6,1.1l35.4,83...",
+              "      \t\tc-0.2,0.1-0.5,0.1-0.7,0.1h-15.9C413.1,146.9,412.5,146.4,412.2,145.8 M386.6,82.9l-11.4,27.9H...",
+              "      <path class=\"st5\" d=\"M507.3,146.1l-17.9-26.7h-14.9v25.8c0,1-0.8,1.8-1.8,1.8h-15.4c-1,0-1.8-0....",
+              "      \t\tc0-1,0.8-1.8,1.8-1.8h37.6c20.3,0,32.5,10.7,32.5,28.4v0.2c0,13.9-7.5,22.6-18.4,26.7l19.1,28c...",
+              "      \t\tc-0.3,0.2-0.6,0.3-1,0.3h-17.9C508.2,146.9,507.6,146.6,507.3,146.1 M508.2,90.2c0-8.1-5.7-12....",
+              "      \t\tc9.3,0,14.5-4.9,14.5-12.2L508.2,90.2z\"></path>",
+              "      <path class=\"st5\" d=\"M621,145.8l-7.4-18.2h-36.4l-7.4,18.2c-0.2,0.7-0.9,1.2-1.6,1.2h-15.4c-1,0...",
+              "      \t\tc0-0.2,0-0.5,0.1-0.7l35.4-83.1c0.3-0.7,0.9-1.1,1.6-1.1h15.1c0.7,0,1.4,0.4,1.6,1.1l35.4,83.1...",
+              "      \t\tc-0.2,0.1-0.5,0.1-0.7,0.1h-15.9C621.9,146.9,621.2,146.4,621,145.8 M595.4,82.9L584,110.8h22....",
+              "      <path class=\"st5\" d=\"M667.1,145.1V62.6c0-1,0.8-1.8,1.8-1.8l0,0h15.4c1,0,1.8,0.8,1.8,1.8c0,0,0...",
+              "      \t\tc1,0,1.8,0.8,1.8,1.7c0,0,0,0,0,0v13.7c0,1-0.8,1.8-1.8,1.8c0,0,0,0,0,0h-58.3C667.9,146.8,667...",
+              "      \t\tC667.1,145.1,667.1,145.1,667.1,145.1\"></path>",
+              "      <path class=\"st6\" d=\"M249.1,182.8h-4v6.5h-3.6v-20.2h8c4.7,0,7.7,2.7,7.7,6.8C257.2,180.5,253.6...",
+              "      \t\th-4.1v7.3h4.1c2.7,0,4.4-1.5,4.4-3.7C253.6,173.6,251.9,172.3,249.2,172.3\"></path>",
+              "      <path class=\"st6\" d=\"M282.5,189.3l-5-7.1h-4.5v7.1h-3.6v-20.2h9c4.6,0,7.5,2.5,7.5,6.4c0.1,3-1....",
+              "      \t\t M278.3,172.3h-5.2v6.8h5.2c2.5,0,4.2-1.3,4.2-3.4S280.9,172.3,278.3,172.3\"></path>",
+              "      <path class=\"st6\" d=\"M308.8,189.7c-5.8-0.1-10.4-4.8-10.3-10.6c0.1-5.8,4.8-10.4,10.6-10.3c5.7,...",
+              "      \t\tc0.1,5.7-4.4,10.4-10.1,10.5C309.2,189.7,309,189.7,308.8,189.7 M308.8,172c-3.8,0-6.8,3.1-6.8...",
+              "      \t\tc-0.2,3.8,2.8,7.1,6.6,7.2c0.1,0,0.2,0,0.3,0c3.8,0,6.8-3.1,6.8-6.9c0-0.1,0-0.2,0-0.3c0.2-3.8...",
+              "      \t\tC309,172,309,172,308.8,172\"></path>",
+              "      <rect x=\"331.5\" y=\"178.8\" class=\"st6\" width=\"8.6\" height=\"3.4\"></rect>",
+              "      <path class=\"st6\" d=\"M362.3,189.7c-5.8-0.2-10.3-5.1-10.1-10.9c0.2-5.5,4.7-9.9,10.2-10.1c3-0.1...",
+              "      \t\tc-1.5-1.6-3.5-2.5-5.7-2.5c-3.8,0.1-6.8,3.2-6.7,6.9c0,0.1,0,0.2,0,0.2c0,4,2.8,7.2,6.7,7.2c2....",
+              "      \t\tC368.5,188.5,365.4,189.8,362.3,189.7\"></path>",
+              "      <polygon class=\"st6\" points=\"386.5,180.8 386.5,189.3 383,189.3 383,169.1 386.5,169.1 386.5,17...",
+              "      \t\t399.7,169.1 399.7,189.3 396.2,189.3 396.2,180.8 \t\"></polygon>",
+              "      <path class=\"st6\" d=\"M423.3,189.7c-5.8-0.1-10.4-4.8-10.3-10.6c0.1-5.8,4.8-10.4,10.6-10.3c5.7,...",
+              "      \t\tc0.1,5.7-4.4,10.4-10.1,10.5C423.7,189.7,423.5,189.7,423.3,189.7 M423.3,172c-3.8,0-6.8,3.1-6...",
+              "      \t\tc-0.2,3.8,2.8,7.1,6.6,7.2c0.1,0,0.2,0,0.3,0c3.8,0,6.8-3.1,6.8-6.9c0-0.1,0-0.2,0-0.3c0.2-3.8...",
+              "      \t\tC423.5,172,423.4,172,423.3,172\"></path>",
+              "      <rect x=\"447.1\" y=\"169.1\" class=\"st6\" width=\"3.5\" height=\"20.2\"></rect>",
+              "      <path class=\"st6\" d=\"M474.2,189.7c-5.8-0.2-10.3-5.1-10.1-10.9c0.2-5.5,4.7-9.9,10.2-10.1c3-0.1...",
+              "      \t\tc-1.5-1.6-3.5-2.5-5.7-2.5c-3.8,0.1-6.8,3.1-6.7,6.9c0,0.1,0,0.2,0,0.3c0,4,2.8,7.2,6.7,7.2c2....",
+              "      \t\tC480.3,188.5,477.3,189.8,474.2,189.7\"></path>",
+              "      <polygon class=\"st6\" points=\"509.8,172.3 498.4,172.3 498.4,177.6 508.5,177.6 508.5,180.7 498....",
+              "      \t\t510,189.3 494.8,189.3 494.8,169.1 509.8,169.1 \t\"></polygon>",
+              "      <path class=\"st6\" d=\"M559.7,189.3h-3.8l-2-4.9h-9.6l-2.1,4.9h-3.6l8.9-20.4h3.3L559.7,189.3z M5...",
+              "      \t\tL549.1,173.2z\"></path>",
+              "      <polygon class=\"st6\" points=\"581.7,184.4 581.6,184.4 575.3,174.9 575.3,189.3 571.8,189.3 571....",
+              "      \t\t587.9,169.1 591.7,169.1 591.7,189.3 588.1,189.3 588.1,174.8 \t\"></polygon>",
+              "      <polygon class=\"st6\" points=\"620.6,172.3 609.2,172.3 609.2,177.6 619.3,177.6 619.3,180.7 609....",
+              "      \t\t620.7,189.3 605.6,189.3 605.6,169.1 620.6,169.1 \t\"></polygon>",
+              "      <path class=\"st6\" d=\"M646.7,189.3l-5-7.1h-4.5v7.1h-3.5v-20.2h9c4.6,0,7.5,2.5,7.5,6.4c0.1,3-1....",
+              "      \t\t M642.4,172.3h-5.2v6.8h5.2c2.5,0,4.2-1.3,4.2-3.4S645,172.3,642.4,172.3\"></path>",
+              "      <rect x=\"663.5\" y=\"169.1\" class=\"st6\" width=\"3.5\" height=\"20.2\"></rect>",
+              "      <path class=\"st6\" d=\"M690.5,189.7c-5.8-0.2-10.3-5.1-10.1-10.9c0.2-5.5,4.7-9.9,10.2-10.1c3-0.1...",
+              "      \t\tc-1.5-1.6-3.5-2.5-5.7-2.5c-3.8,0.1-6.8,3.2-6.7,6.9c0,0.1,0,0.2,0,0.3c0,4,2.8,7.2,6.7,7.2c2....",
+              "      \t\tC696.7,188.5,693.6,189.8,690.5,189.7\"></path>",
+              "      <path class=\"st6\" d=\"M730.5,189.3h-3.8l-2-4.9h-9.6l-2.1,4.9h-3.6l8.9-20.4h3.2L730.5,189.3z M7...",
+              "      \t\tL719.9,173.2z\"></path>",
+              "    </g>",
+              "  </svg>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/header[1]/div[2]/div[1]/div[2]/div[2]/ul[1]/li[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://www.facebook.com/naralprochoiceamerica\" target=\"_blank\">",
+              "  <i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 11,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/header[1]/div[2]/div[1]/div[2]/div[2]/ul[1]/li[2]/a[1]",
+            "codeLines": [
+              "<a href=\"https://twitter.com/naral\" target=\"_blank\">",
+              "  <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 25,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"\" class=\"learn-more\">",
+              "  <svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org...",
+              "    <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-...",
+              "    \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "    <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17...",
+              "  </svg>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 28,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://twitter.com/NARAL/status/1484217213573910530\" class=\"news-link\" target=\"_blank\"></..."
+            ]
+          }
+        },
+        {
+          "index": 51,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://www.facebook.com/naralprochoiceamerica\" target=\"_blank\">",
+              "  <i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 52,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "codeLines": [
+              "<a href=\"https://twitter.com/naral\" target=\"_blank\">",
+              "  <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 53,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "codeLines": [
+              "<a href=\"https://www.linkedin.com/company/naral-pro-choice-america\" target=\"_blank\">",
+              "  <i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 54,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+            "codeLines": [
+              "<a href=\"http://prochoiceamerica.tumblr.com/\" target=\"_blank\">",
+              "  <i class=\"fa fa-tumblr\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 55,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+            "codeLines": [
+              "<a href=\"https://www.instagram.com/prochoiceamerica/\" target=\"_blank\">",
+              "  <i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 56,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+            "codeLines": [
+              "<a href=\"https://www.youtube.com/prochoiceamerica\" target=\"_blank\">",
+              "  <i class=\"fa fa-youtube-play\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 57,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+            "codeLines": [
+              "<a href=\"https://medium.com/@NARAL\" target=\"_blank\">",
+              "  <i class=\"fa fa-medium\" aria-hidden=\"true\"></i>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 641,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <g>",
+              "      <g>",
+              "        <path class=\"st0\" d=\"M18,46\"></path>",
+              "        <polyline class=\"st0\" points=\"16,38 16,5 54,5 54,38 \t\t\t\"></polyline>",
+              "        <polyline class=\"st0\" points=\"59,26 66,26 66,66 4,66 4,26 11,26 \t\t\t\"></polyline>",
+              "        <polyline class=\"st0\" points=\"66,66 35,42 4,66 \t\t\t\"></polyline>",
+              "        <line class=\"st0\" x1=\"5\" y1=\"27\" x2=\"22\" y2=\"44\"></line>",
+              "        <line class=\"st0\" x1=\"65\" y1=\"27\" x2=\"48\" y2=\"44\"></line>",
+              "        <line class=\"st0\" x1=\"35\" y1=\"60\" x2=\"35\" y2=\"60\"></line>",
+              "        <line class=\"st0\" x1=\"39\" y1=\"60\" x2=\"39\" y2=\"60\"></line>",
+              "        <line class=\"st0\" x1=\"31\" y1=\"60\" x2=\"31\" y2=\"60\"></line>",
+              "        <circle class=\"st0\" cx=\"35\" cy=\"26\" r=\"10\"></circle>",
+              "        <line class=\"st0\" x1=\"21\" y1=\"10\" x2=\"49\" y2=\"10\"></line>",
+              "        <polyline class=\"st0\" points=\"40,23 34,29 30,25 \t\t\t\"></polyline>",
+              "      </g>",
+              "    </g>",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 642,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <g>",
+              "      <path class=\"st0\" d=\"M23,39.5\"></path>",
+              "      <g>",
+              "        <path class=\"st0\" d=\"M23,37.4\"></path>",
+              "        <path class=\"st0\" d=\"M14.9,37.4H24l11.1,4.1h9.1c1.7,0,3,1.4,3,3.1s-1.4,3.1-3,3.1H33.1c-1.7,...",
+              "        <path class=\"st0\" d=\"M46.3,46.6l16.2-5.1c1.7,0,3,1.4,3,3.1c0,1-1,2.1-1,2.1L39.2,60h-2l-17.2...",
+              "        <path class=\"st0\" d=\"M1.7,35.3h12.2c0.6,0,1,0.5,1,1v18.5c0,0.6-0.5,1-1,1H1.7\"></path>",
+              "      </g>",
+              "      <path class=\"st0\" d=\"M55.4,12.7c0,10.8-15.2,19.5-15.2,19.5S25,23.5,25,12.7c0-10.9,15.2-12.9,1...",
+              "      \t\t\tC40.2-0.1,55.4,1.9,55.4,12.7z\"></path>",
+              "    </g>",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 643,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[3]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <g>",
+              "      <g>",
+              "        <polyline class=\"st0\" points=\"33,51 2,51 2,11 65,11 65,37 \t\t\t\"></polyline>",
+              "        <rect x=\"20\" y=\"17\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"31\" y=\"17\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"42\" y=\"17\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"53\" y=\"17\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"9\" y=\"28\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"20\" y=\"28\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"31\" y=\"28\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"42\" y=\"28\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"53\" y=\"28\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"9\" y=\"39\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"20\" y=\"39\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <rect x=\"31\" y=\"39\" class=\"st1\" width=\"5\" height=\"5\"></rect>",
+              "        <polyline class=\"st0\" points=\"2,11 2,2 65,2 65,11 \t\t\t\"></polyline>",
+              "        <polyline class=\"st0\" points=\"59,49 51,57 47,53 \t\t\t\"></polyline>",
+              "        <circle class=\"st0\" cx=\"53\" cy=\"53\" r=\"14\"></circle>",
+              "      </g>",
+              "    </g>",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 644,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[4]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <g>",
+              "      <g>",
+              "        <polyline class=\"st0\" points=\"8.7,35.2 8.7,29 2.5,29 \t\t\t\"></polyline>",
+              "        <polyline class=\"st0\" points=\"36.6,8.3 36.6,1.1 1.4,1.1 1.4,29 8.7,36.2 13.8,36.2 \t\t\t\"></po...",
+              "        <line class=\"st0\" x1=\"1.4\" y1=\"5.2\" x2=\"36.6\" y2=\"5.2\"></line>",
+              "      </g>",
+              "      <g>",
+              "        <polyline class=\"st0\" points=\"59.3,46.6 67.6,46.6 67.6,13.5 32.4,13.5 32.4,25.9 \t\t\t\"></poly...",
+              "        <line class=\"st0\" x1=\"32.4\" y1=\"17.6\" x2=\"67.6\" y2=\"17.6\"></line>",
+              "      </g>",
+              "      <g>",
+              "        <rect x=\"19\" y=\"31.1\" class=\"st0\" width=\"35.1\" height=\"32\"></rect>",
+              "        <line class=\"st0\" x1=\"19\" y1=\"35.2\" x2=\"54.1\" y2=\"35.2\"></line>",
+              "        <polygon class=\"st0\" points=\"42.9,48.6 31.1,55.7 31.1,41.6 \t\t\t\"></polygon>",
+              "      </g>",
+              "      <line class=\"st0\" x1=\"14.9\" y1=\"11.4\" x2=\"26.2\" y2=\"11.4\"></line>",
+              "      <line class=\"st0\" x1=\"7.6\" y1=\"11.4\" x2=\"10.7\" y2=\"11.4\"></line>",
+              "      <line class=\"st0\" x1=\"23.1\" y1=\"15.6\" x2=\"26.2\" y2=\"15.6\"></line>",
+              "      <line class=\"st0\" x1=\"7.6\" y1=\"15.6\" x2=\"19\" y2=\"15.6\"></line>",
+              "      <line class=\"st0\" x1=\"7.6\" y1=\"19.7\" x2=\"26.2\" y2=\"19.7\"></line>",
+              "      <line class=\"st0\" x1=\"7.6\" y1=\"23.8\" x2=\"14.9\" y2=\"23.8\"></line>",
+              "      <path class=\"st0\" d=\"M37.6,22.8c2.1,0,2.1,2.1,4.1,2.1c2.1,0,2.1-2.1,4.1-2.1c2.1,0,2.1,2.1,4.1...",
+              "      \t\t\tc2.1,0,2.1,2.1,4.1,2.1c2.1,0,2.1-2.1,4.1-2.1\"></path>",
+              "    </g>",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 645,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[5]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M209.8,18c-49.1,0-89,39.9-89,89s39.9,89,89,89s89-39.9,89-89S258.9,18,209.8,18z M209.8,18...",
+              "  \ts36.1-80.5,80.5-80.5s80.5,36.1,80.5,80.5S254.2,187.5,209.8,187.5z\"></path>",
+              "  <path d=\"M251.7,134.7l-13.9-14.2c-1.8-1.8-4.3-2.8-6.9-2.8c-2.7,0-5.3,1-7.3,3l-5.6,5.6c-5.9-3.1-11...",
+              "  \tc-4.6-4.7-8.5-10-11.6-15.9l5.6-5.6c4-3.9,4.1-10.2,0.2-14.2l-14-14c-1.8-1.8-4.4-2.8-6.9-2.8c-2.7,...",
+              "  \tc-0.2,0.2-0.4,0.4-0.6,0.7l-0.2,0.4c-1.5,1.9-2.6,4-3.5,6.2c-0.8,2.1-1.3,4.3-1.6,6.5c-2,16.3,5.3,3...",
+              "  \tc23.2,23.2,43.1,25.1,48.6,25.1c0.1,0,0.1,0,0.2,0c0.6,0,1.2,0,1.8-0.1c2.2-0.3,4.4-0.8,6.5-1.6c2.3...",
+              "  \tl3.5-3.4C255.5,145.1,255.6,138.7,251.7,134.7z M246.4,143.4l-3,3l-0.6,0.5c-1.4,1.1-2.9,1.9-4.5,2....",
+              "  \tc-0.1,0-0.5,0-1.2,0c-4.8,0-22.1-1.6-43.3-22.9c-17.9-17.9-24.5-30.7-22.8-44.5c0.2-1.6,0.6-3.1,1.1...",
+              "  \tl0.3-0.4l3.2-3.2c0.5-0.5,1.2-0.8,2-0.8c0.6,0,1.2,0.2,1.6,0.6l13.8,14c1,1,0.9,2.7-0.1,3.7l-7.6,7....",
+              "  \tl1.1,1.9c3.4,6.7,7.9,12.8,13.1,18.2c5.3,5.2,11.4,9.6,18,13l2.1,1.2c1.5,0.8,3.3,0.5,4.4-0.7l7.5-7...",
+              "  \tc0.6,0,1.2,0.2,1.6,0.7l14,14c0.4,0.4,0.7,1,0.7,1.7C247.2,142.2,246.9,142.9,246.4,143.4z\"></path>",
+              "  <path d=\"M215.9,72.9c15.4,0,28,12.6,28,28c0,2.1,1.7,3.7,3.7,3.7c2.1,0,3.7-1.7,3.7-3.7c0-19.5-15.9...",
+              "  \tc-2.1,0-3.7,1.7-3.7,3.7C212.2,71.2,213.9,72.9,215.9,72.9z\"></path>",
+              "  <path d=\"M213,86.4c9.6,0,17.4,7.8,17.4,17.4c0,2.1,1.7,3.7,3.7,3.7c2.1,0,3.7-1.7,3.7-3.7c0-13.7-11...",
+              "  \tc-2.1,0-3.7,1.7-3.7,3.7C209.3,84.7,211,86.4,213,86.4z\"></path>",
+              "  <path d=\"M125.8,227H10.1V72.3h92.5c0.8-3,1.7-5.9,2.7-8.8H10.1V41.2h107.2c1.8-3,3.8-5.9,5.9-8.8H1....",
+              "  \tc-3.1-3.1-6-6.4-8.8-9.9V227z M125.9,273.7L125.9,273.7H10.1v-37.9h115.8V273.7z\"></path>",
+              "  <rect x=\"52.4\" y=\"48\" width=\"31.1\" height=\"8.8\"></rect>",
+              "  <path d=\"M67.9,267c6.7,0,12.2-5.5,12.2-12.2s-5.5-12.2-12.2-12.2s-12.2,5.5-12.2,12.2C55.8,261.5,61...",
+              "  \tc1.9,0,3.4,1.5,3.4,3.4s-1.5,3.4-3.4,3.4s-3.4-1.5-3.4-3.4C64.6,252.9,66.1,251.4,67.9,251.4z\"></pa...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 646,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[6]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <g>",
+              "      <g>",
+              "        <path class=\"st0\" d=\"M17.9,59.2c-4.3-2.9-7.5-6.7-9-11.2\"></path>",
+              "        <path class=\"st0\" d=\"M44.2,63.1c-2.7,0.7-5.7,1.1-8.8,1.1c-3.1,0-6-0.4-8.7-1.1\"></path>",
+              "        <path class=\"st0\" d=\"M51.8,25.3c6.6,3.9,10.9,10.2,10.9,17.3c0,6.7-3.8,12.6-9.8,16.6\"></path...",
+              "        <path class=\"st0\" d=\"M12.4,48H3.7c-1.2,0-2.2-1-2.2-2.2v-6.5c0-1.2,1-2.2,2.2-2.2h4.4c1.2-3.7...",
+              "        \t\t\t\tc3-1.2,5.5-2.2,8.8-2.2\"></path>",
+              "        <path class=\"st0\" d=\"M33.2,25.3c6.2,0,12,1.1,16.4,4.3\"></path>",
+              "        <polyline class=\"st0\" points=\"26.7,59.9 26.7,68.5 17.9,68.5 17.9,54.5 \t\t\t\"></polyline>",
+              "        <polyline class=\"st0\" points=\"52.9,54.5 52.9,68.5 44.2,68.5 44.2,59.9 \t\t\t\"></polyline>",
+              "        <path class=\"st0\" d=\"M24.5,35c0,2.4-2,4.3-4.4,4.3s-4.4-1.9-4.4-4.3\"></path>",
+              "        <path class=\"st0\" d=\"M69.3,36.1c0,3.6-2.9,6.5-6.6,6.5\"></path>",
+              "        <g>",
+              "          <line class=\"st0\" x1=\"44.2\" y1=\"7\" x2=\"44.2\" y2=\"0.5\"></line>",
+              "          <line class=\"st0\" x1=\"39.8\" y1=\"12.4\" x2=\"39.8\" y2=\"7\"></line>",
+              "          <line class=\"st0\" x1=\"44.2\" y1=\"10.2\" x2=\"44.2\" y2=\"11.3\"></line>",
+              "          <line class=\"st0\" x1=\"39.8\" y1=\"2.7\" x2=\"39.8\" y2=\"3.7\"></line>",
+              "          <path class=\"st0\" d=\"M37.6,25.3c-0.7-0.9-1.1-2-1.1-3.2c0-3,2.4-5.4,5.5-5.4c3,0,5.5,2.4,5....",
+              "        </g>",
+              "        <line class=\"st0\" x1=\"0.4\" y1=\"68.5\" x2=\"70.4\" y2=\"68.5\"></line>",
+              "      </g>",
+              "    </g>",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 647,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 649,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/nav[1]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 651,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/nav[1]/ul[1]/li[3]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg id=\"Layer_1\" class=\"store-icon\" data-name=\"Layer 1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox...",
+              "  <path d=\"M29.3,21,31,29H26l-1.6-8ZM72,29H67l1.7-8h5.2ZM64.7,45,66,37h4l-2.1,8ZM45,37v8H41.4L40,37...",
+              "  <path d=\"M42,71.5c0,6-9,6-9,0s9-6,9,0\"></path>",
+              "  <path d=\"M66,71.5c0,6-9,6-9,0s9-6,9,0\"></path>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 652,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/div[1]/header[1]/div[2]/div[1]/div[1]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <style type=\"text/css\">",
+              "    .st2{fill:#2E1E53;}",
+              "    \t.st3{fill:#7F3E88;}",
+              "    \t.st4{clip-path:url(#SVGID_2_);}",
+              "    \t.st5{fill:#FFFFFF;}",
+              "    \t.st6{fill:#F3F3F3;}",
+              "  </style>",
+              "  <g>",
+              "    <path class=\"st00\" d=\"M974.8,44.5h23.9v6.3h-17v6.7h15v6.3h-15v12.1h-6.9V44.5z\"></path>",
+              "    <path class=\"st00\" d=\"M1017.6,44.5h14.3c4,0,7,1.1,9.1,3.2c1.8,1.9,2.8,4.5,2.7,7.2V55c0.1,2.2-0....",
+              "    \t\tc-1.3,1.6-3,2.8-4.9,3.5l7.7,11.2h-8.1l-6.7-10h-5.4v10h-6.9L1017.6,44.5z M1031.5,59.7c1.4,0.1,...",
+              "    \t\tc0.9-0.8,1.4-2,1.4-3.2v-0.1c0.1-1.3-0.4-2.5-1.4-3.3c-1.2-0.8-2.6-1.2-4-1.1h-6.9v9H1031.5z\"></...",
+              "    <path class=\"st00\" d=\"M1063.4,44.5h23.6v6.1h-16.8V57h14.8v6.1h-14.8v6.6h17v6.1h-23.8L1063.4,44....",
+              "    <path class=\"st00\" d=\"M1106.9,44.5h23.6v6.1h-16.8V57h14.8v6.1h-14.8v6.6h17v6.1H1107L1106.9,44.5...",
+              "    <path class=\"st00\" d=\"M1150.4,44.5h12.2c2.3,0,4.6,0.4,6.8,1.2c2,0.7,3.7,1.9,5.3,3.3c1.5,1.4,2.6...",
+              "    \t\tv0.1c0,2.1-0.4,4.2-1.2,6.2c-0.8,1.9-2,3.6-3.4,5c-1.5,1.4-3.3,2.6-5.3,3.3c-2.2,0.8-4.5,1.2-6.8...",
+              "    \t\tv18.9h5.3c1.3,0,2.6-0.2,3.8-0.7c2.3-0.9,4-2.6,4.9-4.9c0.5-1.2,0.7-2.5,0.7-3.8v-0.1c0-1.3-0.2-...",
+              "    \t\tc-0.9-2.3-2.6-4-4.9-4.9c-1.2-0.5-2.5-0.7-3.8-0.7L1157.2,50.7z\"></path>",
+              "    <path class=\"st00\" d=\"M1214.1,76.4c-2.3,0-4.6-0.4-6.7-1.3c-2-0.8-3.7-2-5.3-3.5c-1.5-1.4-2.7-3.2...",
+              "    \t\tv-0.1c0-2.2,0.4-4.3,1.3-6.3c1.7-3.9,4.8-7,8.8-8.6c4.3-1.7,9.1-1.7,13.4,0c2,0.8,3.7,2,5.3,3.5c...",
+              "    \t\tc0.8,2,1.2,4.1,1.2,6.3v0.1c0,2.2-0.4,4.3-1.3,6.3c-1.7,3.9-4.8,7-8.8,8.6C1218.7,76,1216.4,76.4...",
+              "    \t\tc1.3,0,2.6-0.2,3.8-0.8c1.1-0.5,2.1-1.2,2.9-2.1c0.8-0.9,1.5-2,2-3.1c0.5-1.2,0.7-2.5,0.7-3.8v-0...",
+              "    \t\tc-0.9-2.3-2.7-4.2-5-5.3c-1.2-0.5-2.5-0.8-3.8-0.8c-1.3,0-2.6,0.2-3.8,0.8c-1.1,0.5-2.1,1.2-2.9,...",
+              "    \t\tc-0.5,1.2-0.7,2.5-0.7,3.8v0.1c0,1.3,0.2,2.6,0.7,3.8c0.4,1.2,1.1,2.2,2,3.1C1209.2,69,1211.6,70...",
+              "    <path class=\"st00\" d=\"M1250.4,44.5h7.4l8.2,13.3l8.2-13.3h7.4v31.3h-6.9V55.4l-8.8,13.4h-0.2l-8.7...",
+              "    <path class=\"st00\" d=\"M1329.9,44.5h6.9v31.3h-6.9V44.5z\"></path>",
+              "    <path class=\"st00\" d=\"M1369.3,76.3c-2.4,0-4.8-0.4-7-1.2c-2.3-0.8-4.5-2.1-6.3-3.8l4.1-4.9c1.3,1....",
+              "    \t\tc1.2,0.1,2.3-0.2,3.3-0.8c0.8-0.5,1.2-1.3,1.2-2.2v-0.1c0-0.4-0.1-0.8-0.3-1.2c-0.2-0.4-0.6-0.8-...",
+              "    \t\tc-0.8-0.3-1.9-0.6-3.2-1c-1.6-0.4-3-0.9-4.3-1.3c-1.2-0.4-2.3-1-3.3-1.7c-0.9-0.7-1.6-1.6-2.1-2....",
+              "    \t\tc-0.1-2.6,1.1-5.1,3-6.9c1-0.9,2.2-1.5,3.5-2c1.4-0.5,2.9-0.7,4.4-0.7c2.2,0,4.3,0.3,6.3,1c1.9,0...",
+              "    \t\tc-1.3-0.9-2.7-1.7-4.1-2.3c-1.3-0.5-2.6-0.8-4-0.8c-1.1-0.1-2.1,0.2-3,0.8c-0.6,0.5-1,1.2-1,2v0....",
+              "    \t\tc0.3,0.4,0.6,0.8,1.1,1c0.7,0.4,1.4,0.6,2.1,0.9c0.9,0.3,2,0.6,3.3,1c1.4,0.4,2.9,0.8,4.2,1.4c1....",
+              "    \t\tc0.8,0.7,1.5,1.6,2,2.6c0.5,1.1,0.7,2.3,0.6,3.5v0.1c0,1.4-0.3,2.8-0.9,4.1c-0.5,1.2-1.3,2.2-2.4...",
+              "    \t\tC1372.4,76,1370.9,76.3,1369.3,76.3z\"></path>",
+              "    <path class=\"st00\" d=\"M1427.1,44.5h23.9v6.3h-17v6.7h15v6.3h-15v12.1h-6.9L1427.1,44.5z\"></path>",
+              "    <path class=\"st00\" d=\"M1485.2,76.4c-2.3,0-4.6-0.4-6.7-1.3c-2-0.8-3.8-2-5.3-3.5c-1.5-1.5-2.7-3.2...",
+              "    \t\tv-0.1c0-2.2,0.4-4.3,1.3-6.3c1.7-3.9,4.8-7,8.8-8.6c4.3-1.7,9.1-1.7,13.4,0c2,0.8,3.7,2,5.3,3.5c...",
+              "    \t\tc0.8,2,1.2,4.1,1.2,6.3v0.1c0,2.2-0.4,4.3-1.3,6.3c-1.7,3.9-4.8,7-8.8,8.6C1489.7,76,1487.5,76.4...",
+              "    \t\tc1.3,0,2.6-0.2,3.8-0.8c1.1-0.5,2.1-1.2,2.9-2.1c0.8-0.9,1.5-2,2-3.1c0.5-1.2,0.7-2.5,0.7-3.8v-0...",
+              "    \t\tc-0.4-1.2-1.1-2.2-2-3.1c-0.9-0.9-1.9-1.6-3-2.1c-1.2-0.5-2.5-0.8-3.8-0.8c-1.3,0-2.6,0.2-3.8,0....",
+              "    \t\tc-0.8,0.9-1.5,2-2,3.1c-0.5,1.2-0.7,2.5-0.7,3.8v0.1c0,1.3,0.2,2.6,0.7,3.8c0.4,1.2,1.1,2.2,2,3....",
+              "    \t\tC1482.7,69.8,1484,70.1,1485.3,70.1L1485.3,70.1z\"></path>",
+              "    <path class=\"st00\" d=\"M1521.5,44.5h14.3c4,0,7,1.1,9.1,3.2c1.8,1.9,2.8,4.5,2.7,7.2V55c0.1,2.2-0....",
+              "    \t\tc-1.3,1.6-3,2.8-4.9,3.5l7.7,11.2h-8.1l-6.7-10h-5.4v10h-6.9L1521.5,44.5z M1535.4,59.7c1.4,0.1,...",
+              "    \t\tc0.9-0.8,1.4-2,1.4-3.2v-0.1c0.1-1.3-0.4-2.5-1.4-3.3c-1.2-0.8-2.6-1.2-4-1.1h-6.9v9H1535.4z\"></...",
+              "    <path class=\"st00\" d=\"M833.8,113.5h79.1V139h-48.6v9.4h45.3v22.4h-45.3v10.1h49.3v25.5h-79.7V113....",
+              "    <path class=\"st00\" d=\"M915.1,113.5h34.7l18,52.1l18-52.1h34.2l-37.6,93.4h-29.7L915.1,113.5z\"></p...",
+              "    <path class=\"st00\" d=\"M1023.9,113.5h79.1V139h-48.6v9.4h45.3v22.4h-45.3v10.1h49.3v25.5h-79.7L102...",
+              "    <path class=\"st00\" d=\"M1112,113.5h45.3c8.3,0,15.1,0.9,20.5,2.8c4.8,1.6,9.2,4.2,12.9,7.7c2.8,2.7...",
+              "    \t\tc1.5,4,2.2,8.2,2.1,12.5v0.3c0,6.8-1.6,12.5-4.9,17.2c-3.4,4.8-8,8.6-13.4,11.1l21.6,31.5H1167l-...",
+              "    \t\t M1156.3,157.6c3.7,0,6.6-0.8,8.7-2.4c2.1-1.5,3.3-4,3.2-6.6v-0.3c0-3-1.1-5.2-3.2-6.7c-2.1-1.5-...",
+              "    \t\tL1156.3,157.6z\"></path>",
+              "    <path class=\"st00\" d=\"M1230.9,173.4l-35-59.9h34.7l15.9,30.5l16-30.5h34.3l-35,59.5v33.2h-31L1230...",
+              "    <path class=\"st11\" d=\"M1306.7,113.5h41.6c10.7,0,18.8,2.7,24.2,8.2c4.1,4.1,6.4,9.6,6.2,15.4v0.3c...",
+              "    \t\tc-0.7,2.1-1.7,4-2.9,5.8c-1.2,1.6-2.6,3.1-4.2,4.3c-1.6,1.2-3.3,2.3-5,3.2c5,1.6,9.6,4.3,13.3,7....",
+              "    \t\tc0.1,3.8-0.8,7.6-2.4,11c-1.6,3.2-4,5.9-7,7.9c-3.3,2.2-6.9,3.9-10.8,4.8c-4.6,1.2-9.4,1.7-14.1,...",
+              "    \t\t M1362.4,139.8c0.1-3.4-1.4-6.7-4.2-8.7c-2.8-2.1-6.8-3.1-12.1-3.1h-23.4v24.8h22.2c5.3,0,9.5-1,...",
+              "    \t\tL1362.4,139.8z M1367.6,178.8c0.1-3.7-1.6-7.2-4.7-9.2c-3.1-2.2-7.9-3.2-14.4-3.2h-25.8v25.5h27c...",
+              "    \t\ts4.8-5.3,4.8-9.5L1367.6,178.8z\"></path>",
+              "    <path class=\"st11\" d=\"M1446.4,207.8c-6.7,0.1-13.4-1.2-19.6-3.8c-5.7-2.4-10.9-5.9-15.2-10.3c-4.3...",
+              "    \t\tc-2.4-5.9-3.6-12.1-3.6-18.5v-0.3c0-6.3,1.2-12.6,3.6-18.5c2.3-5.7,5.7-10.9,10.1-15.2c9.2-9.3,2...",
+              "    \t\tc6.7-0.1,13.4,1.2,19.6,3.8c11.5,4.8,20.5,13.9,25.2,25.5c2.4,5.9,3.6,12.1,3.6,18.5v0.3c0,6.3-1...",
+              "    \t\tc-2.3,5.7-5.7,10.9-10.1,15.2C1472.1,202.9,1459.5,208.1,1446.4,207.8L1446.4,207.8z M1446.7,192...",
+              "    \t\tc2.8-3,5-6.5,6.4-10.3c1.6-4.1,2.4-8.4,2.3-12.7v-0.3c0-4.4-0.8-8.7-2.3-12.7c-1.5-3.9-3.7-7.4-6...",
+              "    \t\tc-4-1.7-8.4-2.6-12.7-2.6c-8.5-0.1-16.7,3.3-22.5,9.5c-2.8,3-5,6.5-6.4,10.3c-1.6,4.1-2.3,8.4-2....",
+              "    \t\tc1.5,3.9,3.7,7.4,6.5,10.5c2.8,3,6.2,5.4,10,7.1C1438,191.9,1442.3,192.8,1446.7,192.7L1446.7,19...",
+              "    <path class=\"st11\" d=\"M1514.8,113.5h34.6c6.8-0.1,13.6,1.1,20,3.5c5.8,2.2,11.1,5.5,15.6,9.7c4.4,...",
+              "    \t\tc2.4,5.8,3.6,12,3.6,18.2v0.3c0.1,6.3-1.2,12.5-3.6,18.3c-2.3,5.5-5.8,10.6-10.1,14.7c-4.5,4.2-9...",
+              "    \t\tc-6.4,2.4-13.2,3.7-20,3.6h-34.6V113.5z M1531,128.4v63h18.3c4.5,0.1,9-0.7,13.2-2.3c3.8-1.4,7.3...",
+              "    \t\tc2.8-2.8,5-6.2,6.5-9.9c1.6-4,2.4-8.2,2.3-12.5v-0.3c0-4.3-0.8-8.6-2.3-12.6c-1.5-3.7-3.7-7.1-6....",
+              "    \t\tc-4.2-1.6-8.7-2.4-13.2-2.4L1531,128.4z\"></path>",
+              "    <path class=\"st11\" d=\"M1637,169.7l-36.8-56.2h19.3l25.8,40.9l26.2-40.9h18.7l-36.8,55.8v36.9H1637...",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"st2\" d=\"M779.6,229.6H191.2V20h551.6c20.3,0,36.8,16.5,36.8,36.8L779.6,229.6z\"></pat...",
+              "    <path class=\"st3\" d=\"M191.2,229.6H45.8C25.5,229.6,9,213.1,9,192.7l0,0V20h182.2V229.6z\"></path>",
+              "    <g>",
+              "      <defs>",
+              "        <path id=\"SVGID_1_\" d=\"M9,20v172.7c0,20.3,16.5,36.8,36.8,36.8c0,0,0,0,0,0h145.4V20H9z\"></pa...",
+              "      </defs>",
+              "      <clipPath id=\"SVGID_2_\">",
+              "        <use xlink:href=\"#SVGID_1_\" style=\"overflow:visible;\"></use>",
+              "      </clipPath>",
+              "      <g class=\"st4\">",
+              "        <path class=\"st5\" d=\"M117,220.8c-10.8-10-25.1-17.5-33.6-33.6c5.5,2.7,18.1,1.7,23.9,0.5c5.8-...",
+              "        \t\t\t\tc4.1-5.5,4.8-10.6,6.2-19.5c1.4-8.9,10.7-13.3,10.7-13.3s-1-4-7.3-5.9c-6.3-2-9.5-0.4-13.3...",
+              "        \t\t\t\tc-0.2,1.8-0.4,3.5-0.4,5.3c0.2,2.9,0.9,5.7,2.1,8.3c1.9,4.8,3.1,9.8,3.5,14.9c0.1,5.4-1.6,...",
+              "        \t\t\t\tc-2.1-0.3-3.5-0.8-2.3-1.6c0.8-0.6,2.6-0.5,5.8-1c2-0.3,4.9-1.2,6.3-2.9c-2.5-2.6-6.1-2.8-...",
+              "        \t\t\t\tc-1.4,0.4-1.9-0.5-1-1.4c0.9-0.9,5.6-2.3,8.4-2.7c1.6-0.2,3.2-0.2,4.8,0c0,0-0.7-4.1-4.6-4...",
+              "        \t\t\t\tc0,0-2.9-3.9,0.1-5.3c2-0.9,2.5,1.4,4.6,1.4c3.5,0,5.5-2.6,5.5-7.8c0-10.4,0.9-21,6.9-23.9...",
+              "        \t\t\t\tc-6-2.6-11.7-5.7-17.1-9.3c-4.7-3.3-8.7-7.5-12-12.2c0,0,0.9,2.3-3.1,6.7s-15,7.1-21.8,12....",
+              "        \t\t\t\tc2.1-5.7,10.1-7.9,13.5-8.5c-0.8-0.9-1.8-1.6-3-2c-0.2-0.1-0.3-0.3-0.3-0.6c0.1-0.1,0.2-0....",
+              "        \t\t\t\tc3.8,1.2,4.4,5.1,4.7,8.2c0.3,3.1-0.7,4.8-2.9,4.7c-2.2-0.1-5.9-2.2-9.1-2.1c-3.2,0.1-4.2,...",
+              "        \t\t\t\tc0,0-7,3.5-7.3,8.7c-0.2,5.2,2.5,11.3,2.4,13.6c-0.1,2.2-1,2.8-2.5,3s-2.8-1.2-3.1,0.3c-0....",
+              "        \t\t\t\tc-0.8,1-1,2.4-0.7,3.6c0.7,2.1,2.9,3.2,5,2.5c0,0,0.1,0,0.1,0c2.8-0.8,2.9-4.4,2.9-4.4c1.7...",
+              "        \t\t\t\tc0,0-1.7,11.6-3.3,21.2c-0.8,4.8,0.4,9.7,3.3,13.6c7.4,10.1,13.9,17.2,20.6,21.5c8.3,5.3,1...",
+              "        \t\t\t\tC132.9,240.2,127.8,230.8,117,220.8\"></path>",
+              "        <path class=\"st5\" d=\"M229.7,51.6L229.7,51.6\"></path>",
+              "        <path class=\"st5\" d=\"M165.4,93.6c0,0,63.6-41.7,64.3-42c-0.8,0.4-65.1,27.4-70.9,28.8c-4.7-7....",
+              "        \t\t\t\tc0,0-43.6,49-48.5,53.8c-7.6-4.2-19.3-5.1-19.3-5.1l-11.6-70.1c0,0-4.2,64.1-4,70.1c-14.2,...",
+              "        \t\t\t\tc0,0,36.3,59.9,39.3,63c-5.2,3.9-10.6,12.7-10.6,12.7L-10,74c0,0,51.4,20.2,57.4,23.5c-1,3...",
+              "        \t\t\t\tc0,0,50.9-7.4,54.3-8c1.1,3,2.7,5.8,4.7,8.2c-1.5,2.6-2.4,5.4-2.7,8.4c-0.6,9,6.6,6.7,8.8,...",
+              "        \t\t\t\tc4.3-1.6,8-12.7,20-17.8c8.8-3.7,19.8-8,22-15.4c2.2,4.4,12,10.8,20.3,12.7c14.4,3.3,24.3,...",
+              "        \t\t\t\tc10,6.1,13.2,17.9,13.8,20.2c0.2,0.7,0.3,1.2,0.3,1.2c2.3-7.9,2.8-21.5,2.8-21.5s68.8-6.9,...",
+              "        \t\t\t\tC167.7,96.6,165.4,93.6,165.4,93.6 M56.1,120.6c-0.6-0.9-1.4-1.8-2.2-2.5c-1.2-1-2.1-0.9-2...",
+              "        \t\t\t\tc1.5,1.5,2.8,3,4.1,4.6L56.1,120.6z M57.2,115.2c-0.9-1.3-1.8-2.5-2.9-3.6c-1.5-1.6-3.1-2....",
+              "        \t\t\t\tc2.5,2,5,6.5,5,6.5L57.2,115.2z M59.4,109.1c-1.1-1.7-2.2-3.4-3.5-4.9c-1.6-1.9-3.8-2.7-4-...",
+              "        \t\t\t\tc1.9,0.8,3.2,3.2,4.5,5.1c1.2,1.7,2.4,3.9,2.4,3.9L59.4,109.1z M62.1,103.5c-1-2.4-2.2-4.7...",
+              "        \t\t\t\tc0.3-1.8,1-3.6,2.6-2.2c1.6,1.4,2.9,3.2,3.9,5.1c1,2,3.2,5.7,3.2,5.7L62.1,103.5z M66.2,97...",
+              "        \t\t\t\tc-1.5-2.8-5.2-4.8-4.4-6.4s2.6-3.5,4.3-1.8c2,2.1,3.5,4.7,4.3,7.4c0.5,1.8,1.2,3.6,2,5.3L6...",
+              "        \t\t\t\tc0,0-1.6-4.5-2.9-7.5c-1.3-3-5-6.2-4-8.1c1-1.9,4.1-4.2,5.5-2.7c1.3,1.5,3.3,6.3,4,10c0.7,...",
+              "        \t\t\t\t M79.1,89.5c-0.5-3-1.2-5.9-2-8.8c-1.1-3.5-4.3-8.2-2.4-9.7c1.9-1.5,6-3.4,7.3,0.1c1.3,3.5...",
+              "        \t\t\t\tL79.1,89.5z M88.4,86.8c0,0-0.6-5.5-1.1-10.1c-0.5-4.3-2.4-8.2-0.7-9.8c1.7-1.6,7.4-2,7.7,...",
+              "        \t\t\t\tc0.1,3.1,0.2,7.9,0.2,7.9L88.4,86.8z M166.2,118.5c0.8,0.7,1.2,2.1-0.1,3.7c-1,1.3-1.9,2.4...",
+              "        \t\t\t\tc0.3-0.9,0.8-1.8,1.3-2.6C164.5,119.7,165.3,117.8,166.2,118.5 M163.3,103.4c1.6,0.9,2.1,2...",
+              "        \t\t\t\tc-0.5-0.8-1-1.6-1.5-2.4c0.7-1.8,1.5-3.6,2.4-5.3C159.6,104.8,161.7,102.5,163.3,103.4 M15...",
+              "        \t\t\t\tc0.1,0.6,0,1.1-0.3,1.6c-1.2,1.4-3.6,2.6-4.8,5c-1.2,2.3-2.3,5-2.3,5l-2.1-2.9c0,0,1.2-4.8...",
+              "        \t\t\t\tC157.4,96.2,157.5,96.2,159.2,95.8 M155.7,87.9c2-0.1,3.1,2.9,1.2,4.8c-1.9,1.9-4.3,3.1-5....",
+              "        \t\t\t\tc0.5-2.7,1.6-5.3,3.2-7.5C152.8,88.7,153.7,88,155.7,87.9 M147.9,80.3c2-0.5,5.6,1.8,3.5,4...",
+              "        \t\t\t\tc-0.9,2.2-1.3,3.5-1.3,3.5l-3.6-2.9c0.6-3.2,1.6-6.2,3.1-9.1C145.5,81.7,146,80.8,147.9,80...",
+              "        \t\t\t\tc2.9,0.6,4.4,2.2,3.4,4.4c-1.4,3.5-2.6,7.1-3.6,10.7c-0.3,1.2-0.6,2.4-0.7,3.6l-5.8-3.1c0,...",
+              "        \t\t\t\tC135.1,75.8,135.7,73,138.5,73.6 M122.9,73.6c0.6-2.9,1.2-6.4,4-5.8c2.7,0.7,6.3,1.2,5.4,4...",
+              "        \t\t\t\tc-0.6,3.3-0.7,4.5-0.7,4.5l-7.3-2C121.3,86.5,122.3,76.5,122.9,73.6 M110.9,69.5c0.5-3.1,1...",
+              "        \t\t\t\tc0.5,1.7-0.6,5.5-0.9,10c-0.3,4.5-0.8,8.8-0.8,8.8l-8-0.9C110.3,80,110.5,74.7,110.9,69.5 ...",
+              "        \t\t\t\ts-1.3-9.1,1.3-9.9c2.6-0.8,7.1-1.2,7.2,3.7c0.1,2.2-0.2,16.8-0.2,16.8L99.2,85.5z M159.5,1...",
+              "        \t\t\t\tc1.2-2.1,2.6-3.8,3.6-2.8c1.1,1.1,1.1,2.8,0,3.9c0,0,0,0-0.1,0.1c-1.5,1.7-2.8,3.5-3.9,5.5...",
+              "        \t\t\t\t M166.8,129.7l-1.3,2.1c-0.3-0.9-0.6-2-1-3c0.3-0.6,0.6-1.4,0.8-1.9c0.5-1,1.1-1.5,1.6-0.7...",
+              "        <path class=\"st5\" d=\"M245,111.2h0.4C245.4,111.2,245.3,111.2,245,111.2\"></path>",
+              "      </g>",
+              "    </g>",
+              "    <path class=\"st5\" d=\"M301.7,146.2l-41.2-54v52.9c0,1-0.8,1.8-1.8,1.8c0,0,0,0,0,0h-15.2c-1,0-1.8-...",
+              "    \t\tc0-1,0.8-1.8,1.8-1.8h14.8c0.6,0,1.1,0.3,1.4,0.7l39.8,52.3V62.6c0-1,0.8-1.8,1.8-1.8h15.1c1,0,1...",
+              "    \t\tc0,1-0.8,1.8-1.8,1.8c0,0,0,0,0,0h-13.5C302.6,146.9,302.1,146.6,301.7,146.2\"></path>",
+              "    <path class=\"st5\" d=\"M412.2,145.8l-7.5-18.2h-36.3l-7.4,18.2c-0.3,0.7-0.9,1.1-1.6,1.2h-15.4c-1,0...",
+              "    \t\tc0-0.2,0.1-0.5,0.1-0.7l35.4-83.1c0.3-0.7,0.9-1.1,1.6-1.1h15.1c0.7,0,1.3,0.4,1.6,1.1l35.4,83.1...",
+              "    \t\tc-0.2,0.1-0.5,0.1-0.7,0.1h-15.9C413.1,146.9,412.5,146.4,412.2,145.8 M386.6,82.9l-11.4,27.9H39...",
+              "    <path class=\"st5\" d=\"M507.3,146.1l-17.9-26.7h-14.9v25.8c0,1-0.8,1.8-1.8,1.8h-15.4c-1,0-1.8-0.8-...",
+              "    \t\tc0-1,0.8-1.8,1.8-1.8h37.6c20.3,0,32.5,10.7,32.5,28.4v0.2c0,13.9-7.5,22.6-18.4,26.7l19.1,28c0....",
+              "    \t\tc-0.3,0.2-0.6,0.3-1,0.3h-17.9C508.2,146.9,507.6,146.6,507.3,146.1 M508.2,90.2c0-8.1-5.7-12.3-...",
+              "    \t\tc9.3,0,14.5-4.9,14.5-12.2L508.2,90.2z\"></path>",
+              "    <path class=\"st5\" d=\"M621,145.8l-7.4-18.2h-36.4l-7.4,18.2c-0.2,0.7-0.9,1.2-1.6,1.2h-15.4c-1,0-1...",
+              "    \t\tc0-0.2,0-0.5,0.1-0.7l35.4-83.1c0.3-0.7,0.9-1.1,1.6-1.1h15.1c0.7,0,1.4,0.4,1.6,1.1l35.4,83.1c0...",
+              "    \t\tc-0.2,0.1-0.5,0.1-0.7,0.1h-15.9C621.9,146.9,621.2,146.4,621,145.8 M595.4,82.9L584,110.8h22.9L...",
+              "    <path class=\"st5\" d=\"M667.1,145.1V62.6c0-1,0.8-1.8,1.8-1.8l0,0h15.4c1,0,1.8,0.8,1.8,1.8c0,0,0,0...",
+              "    \t\tc1,0,1.8,0.8,1.8,1.7c0,0,0,0,0,0v13.7c0,1-0.8,1.8-1.8,1.8c0,0,0,0,0,0h-58.3C667.9,146.8,667.1...",
+              "    \t\tC667.1,145.1,667.1,145.1,667.1,145.1\"></path>",
+              "    <path class=\"st6\" d=\"M249.1,182.8h-4v6.5h-3.6v-20.2h8c4.7,0,7.7,2.7,7.7,6.8C257.2,180.5,253.6,1...",
+              "    \t\th-4.1v7.3h4.1c2.7,0,4.4-1.5,4.4-3.7C253.6,173.6,251.9,172.3,249.2,172.3\"></path>",
+              "    <path class=\"st6\" d=\"M282.5,189.3l-5-7.1h-4.5v7.1h-3.6v-20.2h9c4.6,0,7.5,2.5,7.5,6.4c0.1,3-1.9,...",
+              "    \t\t M278.3,172.3h-5.2v6.8h5.2c2.5,0,4.2-1.3,4.2-3.4S280.9,172.3,278.3,172.3\"></path>",
+              "    <path class=\"st6\" d=\"M308.8,189.7c-5.8-0.1-10.4-4.8-10.3-10.6c0.1-5.8,4.8-10.4,10.6-10.3c5.7,0....",
+              "    \t\tc0.1,5.7-4.4,10.4-10.1,10.5C309.2,189.7,309,189.7,308.8,189.7 M308.8,172c-3.8,0-6.8,3.1-6.8,6...",
+              "    \t\tc-0.2,3.8,2.8,7.1,6.6,7.2c0.1,0,0.2,0,0.3,0c3.8,0,6.8-3.1,6.8-6.9c0-0.1,0-0.2,0-0.3c0.2-3.8-2...",
+              "    \t\tC309,172,309,172,308.8,172\"></path>",
+              "    <rect x=\"331.5\" y=\"178.8\" class=\"st6\" width=\"8.6\" height=\"3.4\"></rect>",
+              "    <path class=\"st6\" d=\"M362.3,189.7c-5.8-0.2-10.3-5.1-10.1-10.9c0.2-5.5,4.7-9.9,10.2-10.1c3-0.1,5...",
+              "    \t\tc-1.5-1.6-3.5-2.5-5.7-2.5c-3.8,0.1-6.8,3.2-6.7,6.9c0,0.1,0,0.2,0,0.2c0,4,2.8,7.2,6.7,7.2c2.2,...",
+              "    \t\tC368.5,188.5,365.4,189.8,362.3,189.7\"></path>",
+              "    <polygon class=\"st6\" points=\"386.5,180.8 386.5,189.3 383,189.3 383,169.1 386.5,169.1 386.5,177....",
+              "    \t\t399.7,169.1 399.7,189.3 396.2,189.3 396.2,180.8 \t\"></polygon>",
+              "    <path class=\"st6\" d=\"M423.3,189.7c-5.8-0.1-10.4-4.8-10.3-10.6c0.1-5.8,4.8-10.4,10.6-10.3c5.7,0....",
+              "    \t\tc0.1,5.7-4.4,10.4-10.1,10.5C423.7,189.7,423.5,189.7,423.3,189.7 M423.3,172c-3.8,0-6.8,3.1-6.8...",
+              "    \t\tc-0.2,3.8,2.8,7.1,6.6,7.2c0.1,0,0.2,0,0.3,0c3.8,0,6.8-3.1,6.8-6.9c0-0.1,0-0.2,0-0.3c0.2-3.8-2...",
+              "    \t\tC423.5,172,423.4,172,423.3,172\"></path>",
+              "    <rect x=\"447.1\" y=\"169.1\" class=\"st6\" width=\"3.5\" height=\"20.2\"></rect>",
+              "    <path class=\"st6\" d=\"M474.2,189.7c-5.8-0.2-10.3-5.1-10.1-10.9c0.2-5.5,4.7-9.9,10.2-10.1c3-0.1,5...",
+              "    \t\tc-1.5-1.6-3.5-2.5-5.7-2.5c-3.8,0.1-6.8,3.1-6.7,6.9c0,0.1,0,0.2,0,0.3c0,4,2.8,7.2,6.7,7.2c2.2,...",
+              "    \t\tC480.3,188.5,477.3,189.8,474.2,189.7\"></path>",
+              "    <polygon class=\"st6\" points=\"509.8,172.3 498.4,172.3 498.4,177.6 508.5,177.6 508.5,180.7 498.4,...",
+              "    \t\t510,189.3 494.8,189.3 494.8,169.1 509.8,169.1 \t\"></polygon>",
+              "    <path class=\"st6\" d=\"M559.7,189.3h-3.8l-2-4.9h-9.6l-2.1,4.9h-3.6l8.9-20.4h3.3L559.7,189.3z M549...",
+              "    \t\tL549.1,173.2z\"></path>",
+              "    <polygon class=\"st6\" points=\"581.7,184.4 581.6,184.4 575.3,174.9 575.3,189.3 571.8,189.3 571.8,...",
+              "    \t\t587.9,169.1 591.7,169.1 591.7,189.3 588.1,189.3 588.1,174.8 \t\"></polygon>",
+              "    <polygon class=\"st6\" points=\"620.6,172.3 609.2,172.3 609.2,177.6 619.3,177.6 619.3,180.7 609.2,...",
+              "    \t\t620.7,189.3 605.6,189.3 605.6,169.1 620.6,169.1 \t\"></polygon>",
+              "    <path class=\"st6\" d=\"M646.7,189.3l-5-7.1h-4.5v7.1h-3.5v-20.2h9c4.6,0,7.5,2.5,7.5,6.4c0.1,3-1.9,...",
+              "    \t\t M642.4,172.3h-5.2v6.8h5.2c2.5,0,4.2-1.3,4.2-3.4S645,172.3,642.4,172.3\"></path>",
+              "    <rect x=\"663.5\" y=\"169.1\" class=\"st6\" width=\"3.5\" height=\"20.2\"></rect>",
+              "    <path class=\"st6\" d=\"M690.5,189.7c-5.8-0.2-10.3-5.1-10.1-10.9c0.2-5.5,4.7-9.9,10.2-10.1c3-0.1,5...",
+              "    \t\tc-1.5-1.6-3.5-2.5-5.7-2.5c-3.8,0.1-6.8,3.2-6.7,6.9c0,0.1,0,0.2,0,0.3c0,4,2.8,7.2,6.7,7.2c2.2,...",
+              "    \t\tC696.7,188.5,693.6,189.8,690.5,189.7\"></path>",
+              "    <path class=\"st6\" d=\"M730.5,189.3h-3.8l-2-4.9h-9.6l-2.1,4.9h-3.6l8.9-20.4h3.2L730.5,189.3z M719...",
+              "    \t\tL719.9,173.2z\"></path>",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 691,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[4]/div[1]/div[1]/a[1]/span[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 692,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 693,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]/div[2]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <path class=\"arrow1\" d=\"M0.2,11.6h23.6V0.2l23.3,20l-23.3,20V28.9H0.2V11.6z\"></path>",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"arrow2\" d=\"M26.8,46.1V34.8H3.2V17.5h23.6V6.2l23.3,20L26.8,46.1z M5.9,32.1h23.6v8.2...",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 694,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]/div[2]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <path class=\"arrow1\" d=\"M0.2,11.6h23.6V0.2l23.3,20l-23.3,20V28.9H0.2V11.6z\"></path>",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"arrow2\" d=\"M26.8,46.1V34.8H3.2V17.5h23.6V6.2l23.3,20L26.8,46.1z M5.9,32.1h23.6v8.2...",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 695,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 696,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[1]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 697,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[2]/div[1]/div[1]/a[1]/div[2]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <path class=\"arrow1\" d=\"M0.2,11.6h23.6V0.2l23.3,20l-23.3,20V28.9H0.2V11.6z\"></path>",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"arrow2\" d=\"M26.8,46.1V34.8H3.2V17.5h23.6V6.2l23.3,20L26.8,46.1z M5.9,32.1h23.6v8.2...",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 698,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[2]/div[1]/div[2]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <path class=\"arrow1\" d=\"M0.2,11.6h23.6V0.2l23.3,20l-23.3,20V28.9H0.2V11.6z\"></path>",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"arrow2\" d=\"M26.8,46.1V34.8H3.2V17.5h23.6V6.2l23.3,20L26.8,46.1z M5.9,32.1h23.6v8.2...",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 699,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[2]/div[1]/div[3]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <path class=\"arrow1\" d=\"M0.2,11.6h23.6V0.2l23.3,20l-23.3,20V28.9H0.2V11.6z\"></path>",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"arrow2\" d=\"M26.8,46.1V34.8H3.2V17.5h23.6V6.2l23.3,20L26.8,46.1z M5.9,32.1h23.6v8.2...",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 700,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[2]/div[1]/div[4]/a[1]/div[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <path class=\"arrow1\" d=\"M0.2,11.6h23.6V0.2l23.3,20l-23.3,20V28.9H0.2V11.6z\"></path>",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"arrow2\" d=\"M26.8,46.1V34.8H3.2V17.5h23.6V6.2l23.3,20L26.8,46.1z M5.9,32.1h23.6v8.2...",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 701,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[1]/div[1]/div[1]/div[1]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 702,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 755,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[2]/div[1]/div[1]/div[2]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 756,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/div[3]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <path class=\"arrow1\" d=\"M0.2,11.6h23.6V0.2l23.3,20l-23.3,20V28.9H0.2V11.6z\"></path>",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"arrow2\" d=\"M26.8,46.1V34.8H3.2V17.5h23.6V6.2l23.3,20L26.8,46.1z M5.9,32.1h23.6v8.2...",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 757,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <path d=\"M153.8,239.3c-4.4,0-8.7-1.7-12.1-5c-6.7-6.7-6.7-17.5,0-24.2l90.5-90.5l-90.5-90.5c-6.7-6....",
+              "  \ts17.5-6.7,24.2,0l114.6,114.6L165.9,234.3C162.6,237.6,158.2,239.3,153.8,239.3z\"></path>",
+              "  <path d=\"M256.4,136.7H17.1c-9.4,0-17.1-7.7-17.1-17.1s7.7-17.1,17.1-17.1h239.3c9.4,0,17.1,7.7,17.1...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 758,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[3]/a[1]/div[2]/svg[1]",
+            "codeLines": [
+              "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1...",
+              "  <g>",
+              "    <path class=\"arrow1\" d=\"M0.2,11.6h23.6V0.2l23.3,20l-23.3,20V28.9H0.2V11.6z\"></path>",
+              "  </g>",
+              "  <g>",
+              "    <path class=\"arrow2\" d=\"M26.8,46.1V34.8H3.2V17.5h23.6V6.2l23.3,20L26.8,46.1z M5.9,32.1h23.6v8.2...",
+              "  </g>",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 937,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h3",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/h3[1]",
+            "codeLines": [
+              "<h3>",
+              "  NARAL’s new rule for endorsements",
+              "</h3>"
+            ]
+          }
+        },
+        {
+          "index": 940,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h6",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/h6[1]",
+            "codeLines": [
+              "<h6>",
+              "  Follow NARAL Pro-Choice America",
+              "</h6>"
+            ]
+          }
+        },
+        {
+          "index": 944,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h5",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[2]/div[1]/div[2]/a[1]/h5[1]",
+            "codeLines": [
+              "<h5>",
+              "  Birth Control",
+              "</h5>"
+            ]
+          }
+        },
+        {
+          "index": 948,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h4",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]",
+            "codeLines": [
+              "<h4></h4>"
+            ]
+          }
+        },
+        {
+          "index": 1036,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Everyone should be able to decide if, when, how, and with whom they start or grow a family."
+            ]
+          }
+        },
+        {
+          "index": 1037,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/h5[1]/text()[1]",
+            "codeLines": [
+              "Sign the Petition"
+            ]
+          }
+        },
+        {
+          "index": 1045,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/text()[1]",
+            "codeLines": [
+              "By taking this action you are affirming your membership in NARAL Pro-Choice America."
+            ]
+          }
+        },
+        {
+          "index": 1046,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/a[1]/text()[1]",
+            "codeLines": [
+              "What's this?"
+            ]
+          }
+        },
+        {
+          "index": 1113,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r64",
+            "ruleSummary": "Heading has non-empty accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r64",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#headings-and-labels",
+                "chapter": "2.4.6",
+                "title": "Headings and Labels"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
+                "name": "H42",
+                "title": "Using h1-h6 to identify headings"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h4",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]",
+            "codeLines": [
+              "<h4></h4>"
+            ]
+          }
+        },
+        {
+          "index": 1219,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()[1]",
+            "codeLines": [
+              "Congressional Record on Reproductive Freedom"
+            ]
+          }
+        },
+        {
+          "index": 1220,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/span[1]/text()[1]",
+            "codeLines": [
+              "With our fundamental rights under unprecedented attack, it is more important than ever that our lea..."
+            ]
+          }
+        },
+        {
+          "index": 1225,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/h6[1]/text()[1]",
+            "codeLines": [
+              "Follow NARAL Pro-Choice America"
+            ]
+          }
+        },
+        {
+          "index": 1226,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Today, we released our annual Congressional Record on Reproductive Freedom, where you can find out ..."
+            ]
+          }
+        },
+        {
+          "index": 1227,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/small[1]/text()[1]",
+            "codeLines": [
+              "18 minutes ago"
+            ]
+          }
+        },
+        {
+          "index": 1228,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "8"
+            ]
+          }
+        },
+        {
+          "index": 1229,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[2]/div[1]/div[1]/div[2]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "in"
+            ]
+          }
+        },
+        {
+          "index": 1230,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/text()[1]",
+            "codeLines": [
+              "10"
+            ]
+          }
+        },
+        {
+          "index": 1238,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[1]/h3[1]/text()[1]",
+            "codeLines": [
+              "Freedom is for every body"
+            ]
+          }
+        },
+        {
+          "index": 1239,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Reproductive rights are essential for achieving gender equality. Reproductive freedom means having ..."
+            ]
+          }
+        },
+        {
+          "index": 1242,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[2]/div[1]/div[1]/div[2]/div[1]/text()[1]",
+            "codeLines": [
+              "States on the Issues"
+            ]
+          }
+        },
+        {
+          "index": 1243,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[2]/div[1]/div[1]/div[2]/h4[1]/text()[1]",
+            "codeLines": [
+              "Where does your state stand?"
+            ]
+          }
+        },
+        {
+          "index": 1244,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Everyone should be able to decide if, when, how, and with whom they start or grow a family."
+            ]
+          }
+        },
+        {
+          "index": 1245,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/h5[1]/text()[1]",
+            "codeLines": [
+              "Sign the Petition"
+            ]
+          }
+        },
+        {
+          "index": 1246,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[1]/label[1]/text()[1]",
+            "codeLines": [
+              "First Name"
+            ]
+          }
+        },
+        {
+          "index": 1247,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[1]/label[2]/text()[1]",
+            "codeLines": [
+              "Last Name"
+            ]
+          }
+        },
+        {
+          "index": 1248,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[1]/label[2]/small[1]/text()[1]",
+            "codeLines": [
+              "(Optional)"
+            ]
+          }
+        },
+        {
+          "index": 1249,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[1]/text()[1]",
+            "codeLines": [
+              "Email"
+            ]
+          }
+        },
+        {
+          "index": 1250,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[2]/text()[1]",
+            "codeLines": [
+              "Mobile phone"
+            ]
+          }
+        },
+        {
+          "index": 1251,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[2]/small[1]/text()[1]",
+            "codeLines": [
+              "(Optional)"
+            ]
+          }
+        },
+        {
+          "index": 1252,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[3]/label[1]/text()[1]",
+            "codeLines": [
+              "Zip Code"
+            ]
+          }
+        },
+        {
+          "index": 1253,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/text()[1]",
+            "codeLines": [
+              "By taking this action you are affirming your membership in NARAL Pro-Choice America."
+            ]
+          }
+        },
+        {
+          "index": 1278,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()[1]",
+            "codeLines": [
+              "Congressional Record on Reproductive Freedom"
+            ]
+          }
+        },
+        {
+          "index": 1279,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/span[1]/text()[1]",
+            "codeLines": [
+              "With our fundamental rights under unprecedented attack, it is more important than ever that our lea..."
+            ]
+          }
+        },
+        {
+          "index": 1284,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/h6[1]/text()[1]",
+            "codeLines": [
+              "Follow NARAL Pro-Choice America"
+            ]
+          }
+        },
+        {
+          "index": 1285,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Today, we released our annual Congressional Record on Reproductive Freedom, where you can find out ..."
+            ]
+          }
+        },
+        {
+          "index": 1286,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/small[1]/text()[1]",
+            "codeLines": [
+              "18 minutes ago"
+            ]
+          }
+        },
+        {
+          "index": 1297,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[1]/h3[1]/text()[1]",
+            "codeLines": [
+              "Freedom is for every body"
+            ]
+          }
+        },
+        {
+          "index": 1298,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Reproductive rights are essential for achieving gender equality. Reproductive freedom means having ..."
+            ]
+          }
+        },
+        {
+          "index": 1301,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[2]/div[1]/div[1]/div[2]/div[1]/text()[1]",
+            "codeLines": [
+              "States on the Issues"
+            ]
+          }
+        },
+        {
+          "index": 1302,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[2]/div[1]/div[1]/div[2]/h4[1]/text()[1]",
+            "codeLines": [
+              "Where does your state stand?"
+            ]
+          }
+        },
+        {
+          "index": 1303,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Everyone should be able to decide if, when, how, and with whom they start or grow a family."
+            ]
+          }
+        },
+        {
+          "index": 1304,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/h5[1]/text()[1]",
+            "codeLines": [
+              "Sign the Petition"
+            ]
+          }
+        },
+        {
+          "index": 1305,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[1]/label[1]/text()[1]",
+            "codeLines": [
+              "First Name"
+            ]
+          }
+        },
+        {
+          "index": 1306,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[1]/label[2]/text()[1]",
+            "codeLines": [
+              "Last Name"
+            ]
+          }
+        },
+        {
+          "index": 1307,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[1]/label[2]/small[1]/text()[1]",
+            "codeLines": [
+              "(Optional)"
+            ]
+          }
+        },
+        {
+          "index": 1308,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[1]/text()[1]",
+            "codeLines": [
+              "Email"
+            ]
+          }
+        },
+        {
+          "index": 1309,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[2]/text()[1]",
+            "codeLines": [
+              "Mobile phone"
+            ]
+          }
+        },
+        {
+          "index": 1310,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[2]/small[1]/text()[1]",
+            "codeLines": [
+              "(Optional)"
+            ]
+          }
+        },
+        {
+          "index": 1311,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[3]/label[1]/text()[1]",
+            "codeLines": [
+              "Zip Code"
+            ]
+          }
+        },
+        {
+          "index": 1312,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/text()[1]",
+            "codeLines": [
+              "By taking this action you are affirming your membership in NARAL Pro-Choice America."
+            ]
+          }
+        },
+        {
+          "index": 1356,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p style=\"opacity: 0.5768; transform: translate(0%, 1.2696%) translate3d(0px, 0px, 0px);\">",
+              "  <span style=\"font-weight: 400;\">",
+              "    With our fundamental rights under unprecedented attack, it is more important than ever that our...",
+              "  </span>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1357,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  NARAL Pro-Choice America will not endorse or support any senator who refuses to find a path forwa...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1358,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  If you’re with us, call your senators and demand they pass the Freedom to Vote: John R. Lewis Act",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1359,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/p[3]",
+            "codeLines": [
+              "<p>",
+              "  Call 833-712-2727 NOW!",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1360,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Text NARAL to 59791 to join our SMS texting list!",
+              "  Message frequency varies, Message and data rates apply. Reply STOP to quit. Terms of Service & Pr...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1361,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  \"Stacey Abrams is the champion Georgians need and deserve. There is no one better to protect Geor...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1362,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"message\">",
+              "  Today, we released our annual Congressional Record on Reproductive Freedom, where you can find ou...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1363,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[2]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  For over 50 years, NARAL has led the fight for reproductive freedom, including the right to acces...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1364,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[2]/div[1]/div[1]/div[2]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  NARAL is powered by our 2.5 million members in every state and congressional district. We represe...",
+              "  <strong>",
+              "    every",
+              "  </strong>",
+              "  body should have the freedom to make the best decision for themselves about if, when, and how to ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1366,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Legislators across the country are creating laws that can have a huge impact on your ability to g...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1367,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  GA",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1368,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Everyone should be able to decide if, when, how, and with whom they start or grow a family.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1373,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p style=\"opacity: 0.5768; transform: translate(0%, 1.2696%) translate3d(0px, 0px, 0px);\">",
+              "  <span style=\"font-weight: 400;\">",
+              "    With our fundamental rights under unprecedented attack, it is more important than ever that our...",
+              "  </span>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1374,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  NARAL Pro-Choice America will not endorse or support any senator who refuses to find a path forwa...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1375,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  If you’re with us, call your senators and demand they pass the Freedom to Vote: John R. Lewis Act",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1376,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[1]/p[3]",
+            "codeLines": [
+              "<p>",
+              "  Call 833-712-2727 NOW!",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1377,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Text NARAL to 59791 to join our SMS texting list!",
+              "  Message frequency varies, Message and data rates apply. Reply STOP to quit. Terms of Service & Pr...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1378,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  \"Stacey Abrams is the champion Georgians need and deserve. There is no one better to protect Geor...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1379,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"message\">",
+              "  Today, we released our annual Congressional Record on Reproductive Freedom, where you can find ou...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1380,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[2]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  For over 50 years, NARAL has led the fight for reproductive freedom, including the right to acces...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1381,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[2]/div[1]/div[1]/div[2]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  NARAL is powered by our 2.5 million members in every state and congressional district. We represe...",
+              "  <strong>",
+              "    every",
+              "  </strong>",
+              "  body should have the freedom to make the best decision for themselves about if, when, and how to ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1382,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Reproductive rights are essential for achieving gender equality. Reproductive freedom means havin...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1383,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[4]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Legislators across the country are creating laws that can have a huge impact on your ability to g...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1384,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  GA",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1385,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Everyone should be able to decide if, when, how, and with whom they start or grow a family.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1386,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  <span>",
+              "    NARAL Pro-Choice America",
+              "  </span>",
+              "  <br>",
+              "  1725 Eye Street, NW Suite 900",
+              "  <br>",
+              "  Washington, DC 20006",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1387,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Main number: 202.973.3000",
+              "  <br>",
+              "  Main fax: 202.973.3096",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1388,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Paid for by NARAL Pro-Choice America, www.ProChoiceAmerica.org, and not authorized by any candida...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1389,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  <a href=\"http://www.wideeyecreative.com\" target=\"_blank\">",
+              "    Site by Wide Eye",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1730,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h5",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[2]/div[1]/div[2]/a[1]/h5[1]",
+            "codeLines": [
+              "<h5>",
+              "  Birth Control",
+              "</h5>"
+            ]
+          }
+        },
+        {
+          "index": 1731,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h5",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[2]/div[1]/div[3]/a[1]/h5[1]",
+            "codeLines": [
+              "<h5>",
+              "  Fighting Pregnancy Discrimination",
+              "</h5>"
+            ]
+          }
+        },
+        {
+          "index": 1732,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h5",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[2]/div[1]/div[4]/a[1]/h5[1]",
+            "codeLines": [
+              "<h5>",
+              "  Paid Family Leave",
+              "</h5>"
+            ]
+          }
+        },
+        {
+          "index": 1755,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r80",
+            "ruleSummary": "Paragraphs of text do not have line heights defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r80",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/main[1]/section[3]/div[3]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Reproductive rights are essential for achieving gender equality. Reproductive freedom means havin...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1761,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r80",
+            "ruleSummary": "Paragraphs of text do not have line heights defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r80",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Paid for by NARAL Pro-Choice America, www.ProChoiceAmerica.org, and not authorized by any candida...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1762,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r80",
+            "ruleSummary": "Paragraphs of text do not have line heights defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r80",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  <a href=\"http://www.wideeyecreative.com\" target=\"_blank\">",
+              "    Site by Wide Eye",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1766,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[1]/label[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" autocomplete=\"given-name\" x-autocompletetype=\"given-name\" required=\"\" title=\"Fir..."
+            ]
+          }
+        },
+        {
+          "index": 1767,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[1]/label[2]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" autocomplete=\"family-name\" x-autocompletetype=\"surname\" false=\"\" title=\"Last Nam..."
+            ]
+          }
+        },
+        {
+          "index": 1768,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[1]/input[1]",
+            "codeLines": [
+              "<input type=\"email\" autocomplete=\"email\" x-autocompletetype=\"email\" pattern=\"^([\\w!#$%&'*+\\-\\/=?\\^`..."
+            ]
+          }
+        },
+        {
+          "index": 1769,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[2]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"iti__selected-flag\" role=\"combobox\" aria-controls=\"iti-0__country-listbox\" aria-owns=\"i...",
+              "  <div class=\"iti__flag iti__us\"></div>",
+              "  <div class=\"iti__arrow\"></div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 1770,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[2]/label[2]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"tel\" class=\"intl-phone-MobilePhone\" name=\"MobilePhone\" title=\"Mobile phone\" data-intl-..."
+            ]
+          }
+        },
+        {
+          "index": 1771,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/section[1]/form[1]/fieldset[1]/div[1]/div[3]/label[1]/input[1]",
+            "codeLines": [
+              "<input type=\"tel\" autocomplete=\"postal-code\" x-autocompletetype=\"postal-code\" pattern=\"^\\d{5}([\\-]\\..."
+            ]
+          }
+        },
+        {
+          "index": 1807,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      7
+    ]
+  ]
+}

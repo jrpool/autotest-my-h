@@ -1,0 +1,528 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0gn",
+  "logCount": 1,
+  "logSize": 51,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.amwater.com/",
+      "what": "American Water Works (NALFX)",
+      "result": "https://www.amwater.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.amwater.com/",
+      "result": [
+        {
+          "index": 158,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r2",
+            "ruleSummary": "Images have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r2",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#non-text-content",
+                "chapter": "1.1.1",
+                "title": "Non-text Content"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+                "name": "G94",
+                "title": "Providing short text alternative for non-text content that serves the same purpose"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G95",
+                "name": "G95",
+                "title": "Providing short text alternatives that provide a brief description of the non-text"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "img",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[2]/div[1]/div[1]/section[2]/login-widget[1]/div[1]/div[2]/div[1]/img[1]",
+            "codeLines": [
+              "<img src=\"/application/themes/base/images/truck.png\" class=\"lw-truck-icon\">"
+            ]
+          }
+        },
+        {
+          "index": 185,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r21",
+            "ruleSummary": "role attributes have a valid value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r21",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+                "name": "ARIA4",
+                "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+                "name": "G108",
+                "title": "Using markup features to expose the name and role, allow user-settable properties"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "role",
+            "path": "/html[1]/body[1]/div[1]/button[2]/@role",
+            "codeLines": [
+              "role=\"options\""
+            ]
+          }
+        },
+        {
+          "index": 365,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h3",
+            "path": "/html[1]/body[1]/main[1]/div[4]/section[1]/a[1]/div[1]/h3[1]",
+            "codeLines": [
+              "<h3 class=\"callout__title\">",
+              "  Business Development",
+              "</h3>"
+            ]
+          }
+        },
+        {
+          "index": 434,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "About Cookies On This Site"
+            ]
+          }
+        },
+        {
+          "index": 435,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/text()[1]",
+            "codeLines": [
+              "We use technologies to enhance your experience on our site. Visit our"
+            ]
+          }
+        },
+        {
+          "index": 436,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Privacy Policy"
+            ]
+          }
+        },
+        {
+          "index": 437,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/text()[2]",
+            "codeLines": [
+              "to learn more or manage your preferences in"
+            ]
+          }
+        },
+        {
+          "index": 438,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/a[2]/text()[1]",
+            "codeLines": [
+              "Cookie Options"
+            ]
+          }
+        },
+        {
+          "index": 439,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/text()[3]",
+            "codeLines": [
+              ". By using our site, you agree to our use of these technologies."
+            ]
+          }
+        },
+        {
+          "index": 440,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/button[1]/text()[1]",
+            "codeLines": [
+              "I Understand"
+            ]
+          }
+        },
+        {
+          "index": 441,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/button[2]/text()[1]",
+            "codeLines": [
+              "Cookie Options"
+            ]
+          }
+        },
+        {
+          "index": 493,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[2]/div[1]/div[1]/section[1]/h1[1]/p[1]/sup[1]/text()[1]",
+            "codeLines": [
+              "Welcome to American Water"
+            ]
+          }
+        },
+        {
+          "index": 494,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Go to Your State Site"
+            ]
+          }
+        },
+        {
+          "index": 497,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[2]/div[1]/div[1]/section[2]/login-widget[1]/div[1]/div[2]/div[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Get Service Now"
+            ]
+          }
+        },
+        {
+          "index": 515,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/section[2]/div[1]/div[1]/nav[1]/span[1]/text()[1]",
+            "codeLines": [
+              "|"
+            ]
+          }
+        },
+        {
+          "index": 526,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[2]/div[1]/div[1]/section[1]/h1[1]/p[1]/sup[1]/text()[1]",
+            "codeLines": [
+              "Welcome to American Water"
+            ]
+          }
+        },
+        {
+          "index": 527,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Go to Your State Site"
+            ]
+          }
+        },
+        {
+          "index": 548,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/section[2]/div[1]/div[1]/nav[1]/span[1]/text()[1]",
+            "codeLines": [
+              "|"
+            ]
+          }
+        },
+        {
+          "index": 663,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[2]/div[1]/div[1]/section[2]/login-widget[1]/div[1]/form[1]/div[1]/section[1]/input[1]",
+            "codeLines": [
+              "<input aria-label=\"User ID\" autocomplete=\"username\" placeholder=\"User ID\" class=\"input flex-1\" name..."
+            ]
+          }
+        },
+        {
+          "index": 693,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      7
+    ]
+  ]
+}

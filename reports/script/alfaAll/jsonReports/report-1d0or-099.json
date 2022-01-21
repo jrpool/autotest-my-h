@@ -1,0 +1,1008 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0or",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.shimano.com/jp/index.html",
+      "what": "Shimano (NALFX)",
+      "result": "https://www.shimano.com/jp/index.html"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.shimano.com/jp/index.html",
+      "result": [
+        {
+          "index": 6,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[3]/a[1]",
+            "codeLines": [
+              "<a id=\"header_search\" href=\"#\">",
+              "  <img src=\"/jp/img/header/magnifying-glass.svg\" alt=\"\" width=\"18\" height=\"18\">",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 31,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r12",
+            "ruleSummary": "Buttons have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r12",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/div[1]/button[1]",
+            "codeLines": [
+              "<button class=\"footer_anniversary_button\"></button>"
+            ]
+          }
+        },
+        {
+          "index": 80,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r2",
+            "ruleSummary": "Images have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r2",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#non-text-content",
+                "chapter": "1.1.1",
+                "title": "Non-text Content"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+                "name": "G94",
+                "title": "Providing short text alternative for non-text content that serves the same purpose"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G95",
+                "name": "G95",
+                "title": "Providing short text alternatives that provide a brief description of the non-text"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "img",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[1]/img[1]",
+            "codeLines": [
+              "<img src=\"/jp/img/index/lnk01.png\" width=\"550\" height=\"119\">"
+            ]
+          }
+        },
+        {
+          "index": 81,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r2",
+            "ruleSummary": "Images have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r2",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#non-text-content",
+                "chapter": "1.1.1",
+                "title": "Non-text Content"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+                "name": "G94",
+                "title": "Providing short text alternative for non-text content that serves the same purpose"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G95",
+                "name": "G95",
+                "title": "Providing short text alternatives that provide a brief description of the non-text"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "img",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[2]/img[1]",
+            "codeLines": [
+              "<img src=\"/jp/img/index/lnk02.png\" width=\"550\" height=\"119\">"
+            ]
+          }
+        },
+        {
+          "index": 115,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r4",
+            "ruleSummary": "<html> document elements have a lang attribute",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r4",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#language-of-page",
+                "chapter": "3.1.1",
+                "title": "Language of Page"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+                "name": "H57",
+                "title": "Using the language attribute on the HTML element"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "html",
+            "path": "/html[1]",
+            "codeLines": [
+              "<html>",
+              "...",
+              "</html>"
+            ]
+          }
+        },
+        {
+          "index": 152,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "新着情報"
+            ]
+          }
+        },
+        {
+          "index": 153,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1]/text()[1]",
+            "codeLines": [
+              "一覧を見る"
+            ]
+          }
+        },
+        {
+          "index": 154,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "当社拠点における新型コロナウイルス感染者発生状況について（2022年1月～）"
+            ]
+          }
+        },
+        {
+          "index": 155,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[1]/div[1]/span[1]/div[1]/text()[1]",
+            "codeLines": [
+              "2022年01月20日"
+            ]
+          }
+        },
+        {
+          "index": 156,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[1]/div[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "お知らせ"
+            ]
+          }
+        },
+        {
+          "index": 157,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[2]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "弊社を装った偽サイト 閉鎖のお知らせ"
+            ]
+          }
+        },
+        {
+          "index": 158,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[2]/div[1]/span[1]/div[1]/text()[1]",
+            "codeLines": [
+              "2021年12月15日"
+            ]
+          }
+        },
+        {
+          "index": 159,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[2]/div[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "お知らせ"
+            ]
+          }
+        },
+        {
+          "index": 160,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[3]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "シマノ トリコロール プロジェクト ページを公開しました"
+            ]
+          }
+        },
+        {
+          "index": 161,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[3]/div[1]/span[1]/div[1]/text()[1]",
+            "codeLines": [
+              "2021年12月07日"
+            ]
+          }
+        },
+        {
+          "index": 162,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[3]/div[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "お知らせ"
+            ]
+          }
+        },
+        {
+          "index": 163,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "トピックス"
+            ]
+          }
+        },
+        {
+          "index": 164,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "シマノ公式サイト判定機能を追加しました"
+            ]
+          }
+        },
+        {
+          "index": 165,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[1]/div[1]/span[1]/div[1]/text()[1]",
+            "codeLines": [
+              "2021年12月07日"
+            ]
+          }
+        },
+        {
+          "index": 166,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[1]/div[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "お知らせ"
+            ]
+          }
+        },
+        {
+          "index": 167,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[2]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "第115期　第3四半期報告書を掲載しました。"
+            ]
+          }
+        },
+        {
+          "index": 168,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[2]/div[1]/span[1]/div[1]/text()[1]",
+            "codeLines": [
+              "2021年11月11日"
+            ]
+          }
+        },
+        {
+          "index": 169,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[2]/div[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "IR"
+            ]
+          }
+        },
+        {
+          "index": 170,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[3]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "2021年 12月期 第3四半期決算短信を掲載しました。"
+            ]
+          }
+        },
+        {
+          "index": 171,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[3]/div[1]/span[1]/div[1]/text()[1]",
+            "codeLines": [
+              "2021年10月26日"
+            ]
+          }
+        },
+        {
+          "index": 172,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[2]/div[1]/a[3]/div[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "IR"
+            ]
+          }
+        },
+        {
+          "index": 173,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[1]/div[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "TECHNOLOGY"
+            ]
+          }
+        },
+        {
+          "index": 174,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[1]/div[1]/div[2]/text()[1]",
+            "codeLines": [
+              "堺の金属加工技術の伝統と誇りを、"
+            ]
+          }
+        },
+        {
+          "index": 175,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[1]/div[1]/div[2]/text()[2]",
+            "codeLines": [
+              "最先端の技術で受け継いでいく。"
+            ]
+          }
+        },
+        {
+          "index": 176,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[2]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "History of"
+            ]
+          }
+        },
+        {
+          "index": 177,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[2]/div[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "INNOVATION"
+            ]
+          }
+        },
+        {
+          "index": 178,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[2]/div[1]/div[2]/text()[1]",
+            "codeLines": [
+              "確かな発想は、新たな常識を創る。"
+            ]
+          }
+        },
+        {
+          "index": 224,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/div[1]/button[1]",
+            "codeLines": [
+              "<button class=\"footer_anniversary_button\"></button>"
+            ]
+          }
+        },
+        {
+          "index": 226,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/nav[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Corporate Topics"
+            ]
+          }
+        },
+        {
+          "index": 227,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/nav[1]/div[1]/text()[2]",
+            "codeLines": [
+              "コーポレート・トピックス"
+            ]
+          }
+        },
+        {
+          "index": 232,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[2]/small[1]/text()[1]",
+            "codeLines": [
+              "© SHIMANO INC. ALL RIGHTS RESERVED"
+            ]
+          }
+        },
+        {
+          "index": 273,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/nav[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Corporate Topics"
+            ]
+          }
+        },
+        {
+          "index": 274,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/nav[1]/div[1]/text()[2]",
+            "codeLines": [
+              "コーポレート・トピックス"
+            ]
+          }
+        },
+        {
+          "index": 279,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[2]/small[1]/text()[1]",
+            "codeLines": [
+              "© SHIMANO INC. ALL RIGHTS RESERVED"
+            ]
+          }
+        },
+        {
+          "index": 289,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[3]/a[2]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  History of",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 291,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/header[1]/div[1]/div[1]/h1[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"header_countdown_text\">",
+              "  <a href=\"/jp/100th/\" target=\"_blank\" class=\"header_countdown_link\">",
+              "    <span class=\"header_countdown_alt\">",
+              "      シマノは",
+              "      <br>",
+              "      <span class=\"header_countdown_em\">",
+              "        100周年",
+              "      </span>",
+              "      を迎えました",
+              "    </span>",
+              "    <span class=\"header_countdown_arrow header_countdown_arrow--after\">",
+              "      特設サイトはこちら",
+              "    </span>",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 407,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      7
+    ]
+  ]
+}

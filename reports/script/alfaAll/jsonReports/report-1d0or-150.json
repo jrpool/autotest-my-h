@@ -1,0 +1,3595 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0or",
+  "logCount": 1,
+  "logSize": 46,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://unwatch.org/",
+      "what": "UN Watch",
+      "result": "https://unwatch.org/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://unwatch.org/",
+      "result": [
+        {
+          "index": 2,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"/\">",
+              "  <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ...",
+              "    <g>",
+              "      <path class=\"st0\" d=\"M10.01,1.59c0.63,0,1.14,0.12,1.54,0.36c0.4,0.24,0.59,0.68,0.59,1.32v7.27...",
+              "      \t\tc-0.65,0.67-1.7,1-3.14,1c-1.19,0-2.09-0.34-2.68-1.03c-0.6-0.69-0.89-1.79-0.89-3.3V4.07c0-0....",
+              "      \t\tC4.81,1.8,5.31,1.59,6.1,1.59V1.11l-5.16,0v0.48c0.58,0.06,0.97,0.17,1.17,0.35c0.15,0.14,0.23...",
+              "      \t\tc0,1.57,0.41,2.76,1.23,3.56c0.93,0.92,2.39,1.38,4.37,1.38c1.4,0,2.5-0.35,3.31-1.04c0.92-0.7...",
+              "      \t\tc0-0.49,0.15-0.89,0.46-1.21c0.31-0.32,0.73-0.48,1.26-0.48V1.11l-4.33,0V1.59z\"></path>",
+              "      <path class=\"st0\" d=\"M26.5,1.59c0.71,0,1.19,0.17,1.44,0.5c0.18,0.24,0.27,0.63,0.27,1.18v8.5L1...",
+              "      \t\tc0.29,0,0.63,0.15,1,0.46c0.31,0.25,0.59,0.56,0.86,0.94v10.19c0,0.36-0.08,0.63-0.24,0.81c-0....",
+              "      \t\tv0.48l4.2,0v-0.48c-0.63,0-1.07-0.06-1.34-0.19c-0.35-0.17-0.52-0.46-0.52-0.9V3.6l10.58,11.31...",
+              "      \t\tc0-0.58,0.08-0.99,0.23-1.23c0.26-0.42,0.81-0.62,1.63-0.62V1.11l-4.2,0V1.59z\"></path>",
+              "      <path class=\"st0\" d=\"M73.85,1.59V1.11l-3.74,0v0.48c0.61,0,1.04,0.08,1.29,0.23c0.25,0.15,0.38,...",
+              "      \t\tc0,0.19-0.04,0.46-0.11,0.81l-2.51,8.38l-2.98-8.54c-0.06-0.31-0.1-0.54-0.1-0.71c0-0.36,0.13-...",
+              "      \t\tc0.27-0.15,0.69-0.22,1.26-0.22V1.11l-5.75,0v0.48c0.53,0,0.94,0.12,1.25,0.37c0.26,0.21,0.52,...",
+              "      \t\tl-3.42-9.12c-0.12-0.28-0.18-0.49-0.18-0.64c0-0.24,0.12-0.39,0.36-0.47c0.24-0.08,0.65-0.11,1...",
+              "      \t\tc0.49,0,0.85,0.23,1.1,0.69c0.21,0.54,0.42,1.08,0.63,1.62l4.19,11.32h0.48l3.27-9.47l3.27,9.4...",
+              "      \t\tC72.75,2.21,73.28,1.59,73.85,1.59\"></path>",
+              "      <path class=\"st0\" d=\"M77.42,13.17c-0.21,0.21-0.45,0.37-0.73,0.49c-0.28,0.12-0.58,0.18-0.91,0....",
+              "      \t\tc-0.32-0.24-0.48-0.55-0.48-0.91c0-0.43,0.28-0.84,0.84-1.23c0.56-0.39,1.34-0.75,2.34-1.09V13...",
+              "      \t\tc-0.1,0.15-0.23,0.22-0.37,0.22c-0.28,0-0.42-0.31-0.42-0.92V8.07c0-0.75-0.16-1.27-0.48-1.56c...",
+              "      \t\tc-0.78,0-1.65,0.27-2.61,0.8c-0.97,0.54-1.45,1.1-1.45,1.68c0,0.22,0.05,0.41,0.16,0.55c0.1,0....",
+              "      \t\tc0.32,0,0.56-0.07,0.73-0.21c0.25-0.21,0.38-0.61,0.38-1.21c0-0.36,0.14-0.65,0.43-0.88c0.28-0...",
+              "      \t\tc0.3,0,0.55,0.07,0.74,0.22c0.19,0.15,0.28,0.39,0.28,0.72v2.15c-0.78,0.24-1.46,0.49-2.06,0.7...",
+              "      \t\tc0,0.68,0.24,1.17,0.73,1.46c0.31,0.18,0.69,0.27,1.14,0.27c0.37,0,0.8-0.13,1.27-0.38c0.47-0....",
+              "      \t\tc0.17,0.47,0.38,0.83,0.63,1.06c0.25,0.23,0.56,0.35,0.94,0.35c0.33,0,0.65-0.16,0.95-0.47c0.3...",
+              "      \t\tC79.93,13.55,79.88,13.73,79.77,13.87\"></path>",
+              "      <path class=\"st0\" d=\"M86.62,13.28c-0.26,0.18-0.53,0.36-0.79,0.54c-0.26,0.15-0.55,0.23-0.87,0....",
+              "      \t\tc-0.25-0.26-0.37-0.67-0.37-1.23V7.47l2.49,0l0.48-1.09l-2.97,0V4.66l-2.63,2.81l1.09,0v5.42c0...",
+              "      \t\tc0.38,0.32,0.86,0.48,1.46,0.48c0.53,0,1.04-0.13,1.54-0.4c0.5-0.26,0.84-0.59,1.02-0.96C86.72...",
+              "      <path class=\"st0\" d=\"M91.38,6.38c0.76,0,1.3,0.41,1.62,1.23c0.32,0.82,0.6,1.23,0.83,1.23c0.29,...",
+              "      \t\tc0.17-0.17,0.25-0.37,0.25-0.6c0-0.64-0.36-1.16-1.08-1.56c-0.82-0.46-1.65-0.69-2.5-0.69c-1.3...",
+              "      \t\tC87.43,8.1,87.1,9.15,87.1,10.4c0,1.25,0.35,2.31,1.04,3.19c0.76,0.97,1.78,1.46,3.04,1.46c0.7...",
+              "      \t\tc0.78-0.46,1.38-1.3,1.79-2.53l-0.29-0.17c-0.26,0.63-0.65,1.1-1.15,1.43c-0.5,0.33-1.03,0.49-...",
+              "      \t\tc-0.58-0.65-0.87-1.56-0.87-2.73c0-1.47,0.28-2.53,0.85-3.17C90.13,6.62,90.68,6.38,91.38,6.38...",
+              "      <path class=\"st0\" d=\"M104.09,13.99c-0.1-0.12-0.15-0.44-0.15-0.96V8.55c0-0.72-0.28-1.34-0.83-1...",
+              "      \t\tc-0.53,0-1.04,0.13-1.55,0.39c-0.51,0.26-0.97,0.64-1.38,1.16V0.94l-2.51,0.92v0.31c0.43,0.13,...",
+              "      \t\tc0.1,0.11,0.15,0.36,0.15,0.75c0,0.07,0,0.17,0,0.29c0,0.13,0,0.29,0,0.48v8.81c0,0.64-0.07,1....",
+              "      \t\tc-0.13,0.15-0.48,0.22-1.06,0.22v0.48l4.08,0v-0.48c-0.53,0-0.87-0.1-1.02-0.29c-0.15-0.19-0.2...",
+              "      \t\tc0.37-0.44,0.73-0.76,1.08-0.96c0.35-0.19,0.69-0.29,1.04-0.29c0.54,0,1,0.24,1.37,0.71c0.37,0...",
+              "      \t\tc0,0.46-0.06,0.76-0.17,0.92c-0.15,0.21-0.52,0.31-1.09,0.31v0.48l4.08,0v-0.48C104.61,14.26,1...",
+              "      <path class=\"st0\" d=\"M42.69,9.09c0.25-0.02,0.06,0.31,0.27,0.28c0.09-0.26-0.01-0.23,0.28-0.23c...",
+              "      \t\tc0.02-0.13-0.22-0.32-0.34-0.37c-0.21-0.08-0.38,0.11-0.46-0.14c-0.05-0.17,0.04-0.34,0-0.5c-0...",
+              "      \t\tc0.22-0.13,0.35,0.1,0.45-0.25c0.07-0.25-0.11-0.22-0.23-0.36c-0.23-0.26,0.18-0.25,0.23-0.45c...",
+              "      \t\tc-0.06-0.09-0.17-0.06-0.24-0.14l-0.01,0c-0.12,0.05-0.27,0.13-0.38,0.22c-0.13,0.1-0.18,0.29-...",
+              "      \t\tc-0.19,0.09-0.37-0.05-0.57-0.05c-0.09,0-0.21,0.02-0.3,0c-0.08-0.02-0.13-0.11-0.21-0.12c-0.2...",
+              "      \t\tc-0.06,0.14-0.19,0.23-0.31,0.32c-0.14,0.1-0.22,0.16-0.31,0.31c-0.06,0.11-0.23,0.34-0.21,0.4...",
+              "      \t\tc0.06,0.04,0.16,0.05,0.22,0.08c0.07,0.04,0.07,0.12,0.19,0.13c0.01,0.11-0.05,0.37,0,0.46c0.1...",
+              "      \t\tc0.03-0.18,0.17-0.26,0.31-0.1c0.06,0.07,0.03,0.14,0.07,0.21C41.59,9,41.62,8.99,41.7,9.05c0....",
+              "      \t\tC42.59,9.3,42.49,9.1,42.69,9.09\"></path>",
+              "      <path class=\"st0\" d=\"M41.09,11.16c-0.32-0.07-0.27-0.56-0.33-0.82c-0.04-0.16-0.15-0.16-0.24-0....",
+              "      \t\tc0.02-0.17,0.02-0.39,0-0.55C40.45,9.08,40.3,9,40.14,8.95c-0.15-0.05-0.16-0.02-0.27-0.11c-0....",
+              "      \t\tc-0.2-0.02-0.25,0.2-0.36,0.33c-0.07,0.08-0.08,0.1-0.13,0.18c-0.03,0.06-0.13,0.17-0.14,0.21c...",
+              "      \t\tc-0.13-0.01-0.1-0.12-0.19-0.18c-0.1-0.05-0.2-0.01-0.29,0.03c-0.08,0.03-0.08,0.07-0.2,0.09c-...",
+              "      \t\tc-0.16,0.02-0.13,0.01-0.23,0.1c-0.04,0.04-0.15,0.2-0.17,0.26c0,0.02,0.02,0.02,0.04,0.03c-0....",
+              "      \t\tc0.07,0.15-0.04,0.21,0.17,0.19c0.11-0.01,0.19-0.14,0.33-0.08c0.08,0.03,0.2,0.15,0.26,0.24c0...",
+              "      \t\tc0.12,0.07,0.18,0.06,0.32,0.1c0.32,0.1,0.08,0.48,0.41,0.53c-0.02,0.23,0.02,0.18,0.2,0.32c0....",
+              "      \t\tc0.16,0.01,0.33,0.07,0.49,0.04c0.21-0.04,0.17-0.2,0.29-0.33c0.1-0.13,0.26-0.21,0.42-0.09c0....",
+              "      \t\tc0.06-0.03,0.06-0.21,0.08-0.26c0.07-0.18,0.11-0.22-0.03-0.39C41.4,11.14,41.31,11.21,41.09,1...",
+              "      <path class=\"st0\" d=\"M47.47,8.68c-0.01-0.2-0.42-0.09-0.52-0.16c-0.13-0.08-0.1-0.34-0.1-0.49c0...",
+              "      \t\tc0.13-0.07,0.3-0.1,0.31-0.29c0.01-0.15-0.18-0.32-0.28-0.4c-0.14-0.12-0.22-0.08-0.42-0.12c-0...",
+              "      \t\tc-0.3-0.13-0.23,0.32-0.49,0.24c-0.05-0.11-0.16-0.34-0.24-0.42c-0.07-0.08-0.24-0.1-0.33-0.17...",
+              "      \t\tc-0.13-0.17-0.18-0.22-0.4-0.18c-0.16,0.03-0.25,0.05-0.37,0.15c-0.25,0.27,0.04,0.69,0.19,0.9...",
+              "      \t\tc0.02,0.03,0.1,0.06,0.11,0.09c0.02,0.04-0.01,0.09,0,0.13c0.04,0.1,0.14,0.26,0.12,0.39c-0.01...",
+              "      \t\tc-0.01,0.1,0.07,0.14,0.1,0.23c0.03,0.11-0.03,0.29-0.04,0.38c-0.02,0.17,0.02,0.35-0.13,0.48c...",
+              "      \t\tc-0.07,0-0.1,0.03-0.17,0.05c-0.01,0.17-0.17,0.11-0.28,0.18c-0.06,0.04-0.04,0.11-0.07,0.15c-...",
+              "      \t\tc-0.03,0.21,0.39,0.31,0.35,0.54c0.1,0.02,0.16-0.03,0.25-0.06c0.09-0.03,0.13-0.06,0.25-0.07c...",
+              "      \t\tc0.2,0.06,0.35,0.09,0.48,0.22c0.08,0.08,0.05,0.1,0.18,0.13c0.08,0.02,0.16-0.01,0.24,0.01c0....",
+              "      \t\tc0.08,0,0.1-0.1,0.16-0.11c0.19-0.04,0.26,0.23,0.46,0.1c0.1-0.06,0.18-0.36,0.14-0.48c-0.04-0...",
+              "      \t\tc-0.06-0.1-0.18-0.31-0.17-0.41c0.01-0.16,0.22-0.23,0.31-0.35c0.09,0.18,0.19,0.22,0.33,0.12c...",
+              "      \t\tC47.28,8.78,47.48,8.79,47.47,8.68\"></path>",
+              "      <path class=\"st0\" d=\"M46.65,12.39c-0.03-0.12,0.1-0.11,0.12-0.2c0.02-0.09-0.03-0.16-0.04-0.25c...",
+              "      \t\tc-0.07-0.11-0.11-0.07-0.14-0.2c-0.02-0.08,0.01-0.18,0-0.27c-0.01-0.21-0.01-0.13-0.15-0.22c-...",
+              "      \t\tc-0.16-0.07-0.33-0.06-0.46-0.2c-0.09-0.09-0.14-0.33-0.29-0.24c-0.14,0.08-0.08,0.4-0.38,0.26...",
+              "      \t\tc-0.14-0.01-0.36,0.07-0.47-0.02h-0.04c-0.31-0.1-0.52,0.03-0.79,0.2c-0.08,0.05-0.12,0.13-0.2...",
+              "      \t\tc-0.09,0.04-0.18,0.01-0.27,0.06c-0.13,0.07-0.25,0.2-0.2,0.35c0.02,0.06,0.11,0.11,0.13,0.17c...",
+              "      \t\tc0.04,0.12,0.15,0.36,0.26,0.46c0.16,0.14,0.32,0.16,0.51,0.2c0.17,0.03,0.24,0.2,0.41,0.21c0....",
+              "      \t\tc0.02-0.26-0.03-0.25,0.24-0.29c0.05-0.01,0.17-0.1,0.23,0c0.06,0.09-0.06,0.13-0.08,0.19c-0.0...",
+              "      \t\tc0.02,0.02,0.1,0,0.13,0.02c0.05,0.03,0.03,0.06,0.06,0.1c0.06,0.07,0.08,0.13,0.16,0.19c0.07,...",
+              "      \t\tc0.16,0.14-0.03,0.22,0.03,0.43c0.05,0.15,0.16,0.34,0.31,0.27c0.07-0.03,0.1-0.13,0.18-0.17c0...",
+              "      \t\tc0.17-0.07,0.33-0.04,0.46-0.18c0.11-0.12,0.12-0.26,0.3-0.3c-0.01-0.08,0.05-0.12,0.05-0.19c0...",
+              "      \t\tC46.78,12.47,46.67,12.46,46.65,12.39\"></path>",
+              "      <path class=\"st0\" d=\"M47.74,11.28c-0.08-0.1-0.29-0.01-0.23-0.23h-0.02c-0.08-0.06-0.28-0.14-0....",
+              "      \t\tc-0.03,0.05,0.01,0.32,0.02,0.39c0,0.14,0.04,0.28,0.11,0.37c0.04,0.05,0.13,0.07,0.16,0.12c0....",
+              "      \t\tc0.12,0.15,0.2,0.08,0.27-0.05c0.03-0.05,0.09-0.12,0.09-0.19c0-0.11-0.05-0.09-0.07-0.19C47.7...",
+              "      <path class=\"st0\" d=\"M47.59,6.77c0.06,0.06,0.13,0.2,0.16,0.29c0.01,0,0.05,0,0.05,0c0.05-0.19,...",
+              "      \t\tc-0.09-0.04-0.14-0.1-0.25-0.02c-0.02,0.01-0.02,0.12-0.04,0.15c-0.02,0.02-0.14-0.01-0.14,0.0...",
+              "      <path class=\"st0\" d=\"M46.13,4.24c-0.16-0.06-0.31-0.04-0.33,0.17c0,0.02,0.03,0.25,0.04,0.28c0....",
+              "      \t\tC46.08,4.96,46.34,5.01,46.5,5c-0.02-0.12,0.18-0.29,0-0.35V4.63C46.38,4.45,46.35,4.33,46.13,...",
+              "      <path class=\"st0\" d=\"M47.07,5.5C47,5.45,47.01,5.36,46.95,5.31c-0.08-0.08-0.2-0.05-0.18-0.19l-...",
+              "      \t\tc-0.1,0.02-0.16,0.14-0.14,0.24c0.03,0.11,0.13,0.15,0.22,0.21c0.12,0.08,0.33,0.23,0.52,0.19C...",
+              "      <path class=\"st0\" d=\"M45.53,3.21c0.03,0.05,0.11,0.06,0.15,0.11c0.05,0.06,0.06,0.12,0.11,0.17c...",
+              "      \t\tc0.04,0.06,0.02,0.13,0.06,0.19c0.02,0.03,0.16,0.14,0.19,0.16c0.05,0.03,0.14,0.02,0.18,0.06c...",
+              "      \t\tc0.03,0.04,0.12,0.07,0.17,0.1c0.11,0.07,0.25-0.01,0.27,0.15c-0.03-0.01,0,0.05,0.01,0.06c0.2...",
+              "      \t\tc0.04,0.06,0.12,0.08,0.15,0.14c0.03,0.05,0,0.15,0.02,0.2c0.02,0.06,0.09,0.09,0.12,0.17c0.02...",
+              "      \t\tc-0.01,0.09-0.04,0.12-0.04,0.22c0,0,0.05,0.24,0.05,0.24c0.13,0.18,0.23,0.05,0.26-0.05c0.03-...",
+              "      \t\tc0.15-0.01,0.19,0.23,0.29,0.3c0.11,0.09,0.37,0.18,0.53,0.22c0.1-0.05,0.09-0.07,0.1-0.16c0.0...",
+              "      \t\tc-0.16-0.12-0.14-0.25-0.21-0.41c-0.02-0.05-0.08-0.07-0.1-0.11C48.35,5.05,48.37,5,48.35,4.96...",
+              "      \t\tc-0.04-0.05-0.15-0.11-0.19-0.16c-0.05-0.08-0.02-0.13-0.05-0.21c-0.03-0.07-0.12-0.13-0.15-0....",
+              "      \t\tc-0.06-0.1-0.09-0.15-0.17-0.24c-0.04-0.04-0.08-0.05-0.11-0.1c-0.02-0.03,0.01-0.09,0-0.11c-0...",
+              "      \t\tc-0.1-0.06-0.12-0.1-0.21-0.17c-0.05-0.04-0.18-0.17-0.22-0.19c-0.08-0.05-0.17-0.04-0.22-0.11...",
+              "      \t\tc-0.2,0.03-0.18,0.08-0.33,0.2C45.57,3.04,45.42,3.03,45.53,3.21\"></path>",
+              "      <path class=\"st0\" d=\"M49.54,8.07c0,2.83-1.91,5.22-4.51,5.96c-0.55,0.05-1.02,0.15-1.97,0.09c-0...",
+              "      \t\tc-2.6-0.74-4.51-3.13-4.51-5.96c0-2.64,1.66-4.89,3.99-5.79c0.72-0.08,1.45-0.12,2.2-0.12c0.75...",
+              "      \t\tC47.88,3.18,49.54,5.43,49.54,8.07 M54.76,6.15c0,0,0.29-0.01-0.05-0.6l-0.06-0.1C52.89,2.67,4...",
+              "      \t\tc-5.1,0-9.57,1.97-11.32,4.76l-0.06,0.1c-0.34,0.59-0.05,0.6-0.05,0.6c0.3,0.07,0.95-0.55,0.95...",
+              "      \t\tC38,3.63,36.74,5.7,36.74,8.07c0,2.49,1.38,4.66,3.42,5.78c-3.03-0.48-5.62-1.64-7.29-3.19c0,0...",
+              "      \t\tc0,0-0.29,0.01,0.05,0.6l0.06,0.1c1.75,2.78,6.23,4.76,11.32,4.76c5.09,0,9.53-1.97,11.28-4.76...",
+              "      \t\tc0.34-0.59,0.05-0.6,0.05-0.6c-0.3-0.07-0.95,0.55-0.95,0.55c-1.67,1.55-4.25,2.71-7.29,3.19c2...",
+              "      \t\tc0-2.37-1.26-4.44-3.14-5.61c2.91,0.51,5.39,1.64,7,3.14C53.81,5.6,54.46,6.22,54.76,6.15\"></p...",
+              "    </g>",
+              "  </svg>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 16,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"ytp-title-channel-name\" target=\"_blank\" href=\"\"></a>"
+            ]
+          }
+        },
+        {
+          "index": 18,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://unwatch.org/database\" tabindex=\"0\">",
+              "  <img loading=\"eager\" id=\"n2-ss-2item3\" alt=\"\" class=\"skip-lazy lazy loaded\" width=\"372\" height=\"2...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 19,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://unwatch.org/category/issue/united-nations/\">",
+              "  <img width=\"730\" height=\"370\" src=\"https://unwatch.org/wp-content/uploads/2020/06/Screen-Shot-202...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 20,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://unwatch.org/category/human-rights/\">",
+              "  <img width=\"730\" height=\"370\" src=\"https://unwatch.org/wp-content/uploads/2020/06/Screen-Shot-202...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 21,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://unwatch.org/category/country/israel/\">",
+              "  <img width=\"730\" height=\"370\" src=\"https://unwatch.org/wp-content/uploads/2020/06/Screen-Shot-202...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 22,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://unwatch.org/category/antisemitism/\">",
+              "  <img width=\"730\" height=\"370\" src=\"https://unwatch.org/wp-content/uploads/2020/06/Screen-Shot-202...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 23,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"elementor-post__thumbnail__link\" href=\"https://unwatch.org/facebook-threatens-to-cancel-h...",
+              "  <div class=\"elementor-post__thumbnail elementor-fit-height\">",
+              "    <img width=\"350\" height=\"185\" src=\"https://unwatch.org/wp-content/uploads/2022/01/Mark-Zuckerbe...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 26,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[2]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"elementor-post__thumbnail__link\" href=\"https://unwatch.org/lawmakers-rights-activists-urg...",
+              "  <div class=\"elementor-post__thumbnail elementor-fit-height\">",
+              "    <img width=\"350\" height=\"185\" src=\"https://unwatch.org/wp-content/uploads/2021/12/HK-arrest-dec...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 29,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"elementor-post__thumbnail__link\" href=\"https://unwatch.org/unhrc-chair-nazhat-khan-must-c...",
+              "  <div class=\"elementor-post__thumbnail elementor-fit-height\">",
+              "    <img width=\"350\" height=\"185\" src=\"https://unwatch.org/wp-content/uploads/2021/12/Screen_Shot_2...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 32,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[4]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"elementor-post__thumbnail__link\" href=\"https://unwatch.org/the-top-10-worst-u-n-actions-o...",
+              "  <div class=\"elementor-post__thumbnail elementor-fit-height\">",
+              "    <img width=\"350\" height=\"185\" src=\"https://unwatch.org/wp-content/uploads/2020/07/xi-and-guterr...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 35,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[5]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"elementor-post__thumbnail__link\" href=\"https://unwatch.org/good-news-thanks-to-un-watch-p...",
+              "  <div class=\"elementor-post__thumbnail elementor-fit-height\">",
+              "    <img width=\"350\" height=\"185\" src=\"https://unwatch.org/wp-content/uploads/2021/12/unrwa_protest...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 38,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[6]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"elementor-post__thumbnail__link\" href=\"https://unwatch.org/un-completes-14-resolutions-on...",
+              "  <div class=\"elementor-post__thumbnail elementor-fit-height\">",
+              "    <img width=\"350\" height=\"185\" src=\"https://unwatch.org/wp-content/uploads/2021/12/UNGA_vote_363...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 41,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[7]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"elementor-post__thumbnail__link\" href=\"https://unwatch.org/cnn-reports-on-geneva-summit-c...",
+              "  <div class=\"elementor-post__thumbnail elementor-fit-height\">",
+              "    <img width=\"350\" height=\"185\" src=\"https://unwatch.org/wp-content/uploads/2021/12/Jimmy-Lai-in-...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 44,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[8]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"elementor-post__thumbnail__link\" href=\"https://unwatch.org/un-condemns-israel-6-times-res...",
+              "  <div class=\"elementor-post__thumbnail elementor-fit-height\">",
+              "    <img width=\"350\" height=\"185\" src=\"https://unwatch.org/wp-content/uploads/2021/12/Israeli-rep-3...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 571,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "ul",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/nav[1]/ul[1]",
+            "codeLines": [
+              "<ul id=\"menu-1-6e1afc47\" class=\"elementor-nav-menu\" data-smartmenus-id=\"16427002774624019\">",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor has-submenu\" id=\"sm-16427002774624019-1...",
+              "      About Us",
+              "      <span class=\"sub-arrow\">",
+              "        <i class=\"fa\"></i>",
+              "      </span>",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\" id=\"sm-16427002774624019-2\" role=\"group\" aria...",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-8951\">",
+              "        <a href=\"https://unwatch.org/about-us/written-content/\" class=\"elementor-sub-item\">",
+              "          Our Work",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6375\">",
+              "        <a href=\"https://unwatch.org/about-us/mission-history/\" class=\"elementor-sub-item\">",
+              "          Mission & History",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6360\">",
+              "        <a href=\"https://unwatch.org/about-us/chairmans-welcome/\" class=\"elementor-sub-item\">",
+              "          Chairman: Alfred H. Moses",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-25539\">",
+              "        <a href=\"https://unwatch.org/home/hillelneuer/\" class=\"elementor-sub-item\">",
+              "          Executive Director: Hillel Neuer",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6363\">",
+              "        <a href=\"https://unwatch.org/founder-morris-b-abram-2/\" class=\"elementor-sub-item\">",
+              "          Founder: Morris B. Abram",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children men...",
+              "        <a href=\"#\" class=\"elementor-sub-item elementor-item-anchor has-submenu\" id=\"sm-16427002774...",
+              "          Careers",
+              "          <span class=\"sub-arrow\">",
+              "            <i class=\"fa\"></i>",
+              "          </span>",
+              "        </a>",
+              "        <ul class=\"sub-menu elementor-nav-menu--dropdown\" id=\"sm-16427002774624019-4\" role=\"group\" ...",
+              "          <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545206\">",
+              "            <a href=\"https://unwatch.org/careers/current-openings/\" class=\"elementor-sub-item\">",
+              "              Current Openings",
+              "            </a>",
+              "          </li>",
+              "          <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545207\">",
+              "            <a href=\"https://unwatch.org/internships/\" class=\"elementor-sub-item\">",
+              "              Internships",
+              "            </a>",
+              "          </li>",
+              "        </ul>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-6465\">",
+              "    <a href=\"https://unwatch.org/tag/petitions/\" class=\"elementor-item\">",
+              "      Take Action",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor has-submenu\" id=\"sm-16427002774624019-5...",
+              "      Media",
+              "      <span class=\"sub-arrow\">",
+              "        <i class=\"fa\"></i>",
+              "      </span>",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\" id=\"sm-16427002774624019-6\" role=\"group\" aria...",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529644\">",
+              "        <a href=\"/tag/press-release/\" class=\"elementor-sub-item\">",
+              "          Press Releases",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529645\">",
+              "        <a href=\"/tag/in-the-news/\" class=\"elementor-sub-item\">",
+              "          In the News",
+              "        </a>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor has-submenu\" id=\"sm-16427002774624019-7...",
+              "      Resources",
+              "      <span class=\"sub-arrow\">",
+              "        <i class=\"fa\"></i>",
+              "      </span>",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\" id=\"sm-16427002774624019-8\" role=\"group\" aria...",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545599\">",
+              "        <a href=\"https://unwatch.org/news/\" class=\"elementor-sub-item\">",
+              "          Blog",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-545520\">",
+              "        <a href=\"https://unwatch.org/database\" class=\"elementor-sub-item\">",
+              "          UN Watch Database",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529651\">",
+              "        <a href=\"/tag/reports\" class=\"elementor-sub-item\">",
+              "          Reports",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529656\">",
+              "        <a href=\"/videos/\" class=\"elementor-sub-item\">",
+              "          Videos",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-551064\">",
+              "        <a href=\"https://unwatch.org/tag/uncharted-podcast/\" class=\"elementor-sub-item\">",
+              "          Podcasts",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-551058\">",
+              "        <a href=\"https://unwatch.org/durban-4/\" class=\"elementor-sub-item\">",
+              "          Durban 4",
+              "        </a>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-6453\">",
+              "    <a href=\"https://civicrm.unwatch.org/Sign_up\" class=\"elementor-item\">",
+              "      Sign Up",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"donate_menu_highlight menu-item menu-item-type-custom menu-item-object-custom menu-ite...",
+              "    <a href=\"https://civicrm.unwatch.org/donate_now\" class=\"elementor-item\">",
+              "      Donate",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-8119\">",
+              "    <a href=\"https://civicrm.unwatch.org/contact_us\" class=\"elementor-item\">",
+              "      Contact",
+              "    </a>",
+              "  </li>",
+              "</ul>"
+            ]
+          }
+        },
+        {
+          "index": 580,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "ul",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/nav[2]/ul[1]",
+            "codeLines": [
+              "<ul id=\"menu-2-6e1afc47\" class=\"elementor-nav-menu\" data-smartmenus-id=\"16427002774677363\">",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor has-submenu\" id=\"sm-16427002774677363-1...",
+              "      About Us",
+              "      <span class=\"sub-arrow\">",
+              "        <i class=\"fa\"></i>",
+              "      </span>",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\" id=\"sm-16427002774677363-2\" role=\"group\" aria...",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-8951\">",
+              "        <a href=\"https://unwatch.org/about-us/written-content/\" class=\"elementor-sub-item\">",
+              "          Our Work",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6375\">",
+              "        <a href=\"https://unwatch.org/about-us/mission-history/\" class=\"elementor-sub-item\">",
+              "          Mission & History",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6360\">",
+              "        <a href=\"https://unwatch.org/about-us/chairmans-welcome/\" class=\"elementor-sub-item\">",
+              "          Chairman: Alfred H. Moses",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-25539\">",
+              "        <a href=\"https://unwatch.org/home/hillelneuer/\" class=\"elementor-sub-item\">",
+              "          Executive Director: Hillel Neuer",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6363\">",
+              "        <a href=\"https://unwatch.org/founder-morris-b-abram-2/\" class=\"elementor-sub-item\">",
+              "          Founder: Morris B. Abram",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children men...",
+              "        <a href=\"#\" class=\"elementor-sub-item elementor-item-anchor has-submenu\" id=\"sm-16427002774...",
+              "          Careers",
+              "          <span class=\"sub-arrow\">",
+              "            <i class=\"fa\"></i>",
+              "          </span>",
+              "        </a>",
+              "        <ul class=\"sub-menu elementor-nav-menu--dropdown\" id=\"sm-16427002774677363-4\" role=\"group\" ...",
+              "          <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545206\">",
+              "            <a href=\"https://unwatch.org/careers/current-openings/\" class=\"elementor-sub-item\">",
+              "              Current Openings",
+              "            </a>",
+              "          </li>",
+              "          <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545207\">",
+              "            <a href=\"https://unwatch.org/internships/\" class=\"elementor-sub-item\">",
+              "              Internships",
+              "            </a>",
+              "          </li>",
+              "        </ul>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-6465\">",
+              "    <a href=\"https://unwatch.org/tag/petitions/\" class=\"elementor-item\">",
+              "      Take Action",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor has-submenu\" id=\"sm-16427002774677363-5...",
+              "      Media",
+              "      <span class=\"sub-arrow\">",
+              "        <i class=\"fa\"></i>",
+              "      </span>",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\" id=\"sm-16427002774677363-6\" role=\"group\" aria...",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529644\">",
+              "        <a href=\"/tag/press-release/\" class=\"elementor-sub-item\">",
+              "          Press Releases",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529645\">",
+              "        <a href=\"/tag/in-the-news/\" class=\"elementor-sub-item\">",
+              "          In the News",
+              "        </a>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor has-submenu\" id=\"sm-16427002774677363-7...",
+              "      Resources",
+              "      <span class=\"sub-arrow\">",
+              "        <i class=\"fa\"></i>",
+              "      </span>",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\" id=\"sm-16427002774677363-8\" role=\"group\" aria...",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545599\">",
+              "        <a href=\"https://unwatch.org/news/\" class=\"elementor-sub-item\">",
+              "          Blog",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-545520\">",
+              "        <a href=\"https://unwatch.org/database\" class=\"elementor-sub-item\">",
+              "          UN Watch Database",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529651\">",
+              "        <a href=\"/tag/reports\" class=\"elementor-sub-item\">",
+              "          Reports",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529656\">",
+              "        <a href=\"/videos/\" class=\"elementor-sub-item\">",
+              "          Videos",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-551064\">",
+              "        <a href=\"https://unwatch.org/tag/uncharted-podcast/\" class=\"elementor-sub-item\">",
+              "          Podcasts",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-551058\">",
+              "        <a href=\"https://unwatch.org/durban-4/\" class=\"elementor-sub-item\">",
+              "          Durban 4",
+              "        </a>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-6453\">",
+              "    <a href=\"https://civicrm.unwatch.org/Sign_up\" class=\"elementor-item\">",
+              "      Sign Up",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"donate_menu_highlight menu-item menu-item-type-custom menu-item-object-custom menu-ite...",
+              "    <a href=\"https://civicrm.unwatch.org/donate_now\" class=\"elementor-item\">",
+              "      Donate",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-8119\">",
+              "    <a href=\"https://civicrm.unwatch.org/contact_us\" class=\"elementor-item\">",
+              "      Contact",
+              "    </a>",
+              "  </li>",
+              "</ul>"
+            ]
+          }
+        },
+        {
+          "index": 589,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "ul",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/nav[1]/ul[1]",
+            "codeLines": [
+              "<ul id=\"menu-1-6e1afc47\" class=\"elementor-nav-menu\">",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor\">",
+              "      About Us",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\">",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-8951\">",
+              "        <a href=\"https://unwatch.org/about-us/written-content/\" class=\"elementor-sub-item\">",
+              "          Our Work",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6375\">",
+              "        <a href=\"https://unwatch.org/about-us/mission-history/\" class=\"elementor-sub-item\">",
+              "          Mission & History",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6360\">",
+              "        <a href=\"https://unwatch.org/about-us/chairmans-welcome/\" class=\"elementor-sub-item\">",
+              "          Chairman: Alfred H. Moses",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-25539\">",
+              "        <a href=\"https://unwatch.org/home/hillelneuer/\" class=\"elementor-sub-item\">",
+              "          Executive Director: Hillel Neuer",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6363\">",
+              "        <a href=\"https://unwatch.org/founder-morris-b-abram-2/\" class=\"elementor-sub-item\">",
+              "          Founder: Morris B. Abram",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children men...",
+              "        <a href=\"#\" class=\"elementor-sub-item elementor-item-anchor\">",
+              "          Careers",
+              "        </a>",
+              "        <ul class=\"sub-menu elementor-nav-menu--dropdown\">",
+              "          <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545206\">",
+              "            <a href=\"https://unwatch.org/careers/current-openings/\" class=\"elementor-sub-item\">",
+              "              Current Openings",
+              "            </a>",
+              "          </li>",
+              "          <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545207\">",
+              "            <a href=\"https://unwatch.org/internships/\" class=\"elementor-sub-item\">",
+              "              Internships",
+              "            </a>",
+              "          </li>",
+              "        </ul>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-6465\">",
+              "    <a href=\"https://unwatch.org/tag/petitions/\" class=\"elementor-item\">",
+              "      Take Action",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor\">",
+              "      Media",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\">",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529644\">",
+              "        <a href=\"/tag/press-release/\" class=\"elementor-sub-item\">",
+              "          Press Releases",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529645\">",
+              "        <a href=\"/tag/in-the-news/\" class=\"elementor-sub-item\">",
+              "          In the News",
+              "        </a>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor\">",
+              "      Resources",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\">",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545599\">",
+              "        <a href=\"https://unwatch.org/news/\" class=\"elementor-sub-item\">",
+              "          Blog",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-545520\">",
+              "        <a href=\"https://unwatch.org/database\" class=\"elementor-sub-item\">",
+              "          UN Watch Database",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529651\">",
+              "        <a href=\"/tag/reports\" class=\"elementor-sub-item\">",
+              "          Reports",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529656\">",
+              "        <a href=\"/videos/\" class=\"elementor-sub-item\">",
+              "          Videos",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-551064\">",
+              "        <a href=\"https://unwatch.org/tag/uncharted-podcast/\" class=\"elementor-sub-item\">",
+              "          Podcasts",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-551058\">",
+              "        <a href=\"https://unwatch.org/durban-4/\" class=\"elementor-sub-item\">",
+              "          Durban 4",
+              "        </a>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-6453\">",
+              "    <a href=\"https://civicrm.unwatch.org/Sign_up\" class=\"elementor-item\">",
+              "      Sign Up",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"donate_menu_highlight menu-item menu-item-type-custom menu-item-object-custom menu-ite...",
+              "    <a href=\"https://civicrm.unwatch.org/donate_now\" class=\"elementor-item\">",
+              "      Donate",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-8119\">",
+              "    <a href=\"https://civicrm.unwatch.org/contact_us\" class=\"elementor-item\">",
+              "      Contact",
+              "    </a>",
+              "  </li>",
+              "</ul>"
+            ]
+          }
+        },
+        {
+          "index": 590,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "ul",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/nav[2]/ul[1]",
+            "codeLines": [
+              "<ul id=\"menu-2-6e1afc47\" class=\"elementor-nav-menu\">",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor\">",
+              "      About Us",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\">",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-8951\">",
+              "        <a href=\"https://unwatch.org/about-us/written-content/\" class=\"elementor-sub-item\">",
+              "          Our Work",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6375\">",
+              "        <a href=\"https://unwatch.org/about-us/mission-history/\" class=\"elementor-sub-item\">",
+              "          Mission & History",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6360\">",
+              "        <a href=\"https://unwatch.org/about-us/chairmans-welcome/\" class=\"elementor-sub-item\">",
+              "          Chairman: Alfred H. Moses",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-25539\">",
+              "        <a href=\"https://unwatch.org/home/hillelneuer/\" class=\"elementor-sub-item\">",
+              "          Executive Director: Hillel Neuer",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-6363\">",
+              "        <a href=\"https://unwatch.org/founder-morris-b-abram-2/\" class=\"elementor-sub-item\">",
+              "          Founder: Morris B. Abram",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children men...",
+              "        <a href=\"#\" class=\"elementor-sub-item elementor-item-anchor\">",
+              "          Careers",
+              "        </a>",
+              "        <ul class=\"sub-menu elementor-nav-menu--dropdown\">",
+              "          <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545206\">",
+              "            <a href=\"https://unwatch.org/careers/current-openings/\" class=\"elementor-sub-item\">",
+              "              Current Openings",
+              "            </a>",
+              "          </li>",
+              "          <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545207\">",
+              "            <a href=\"https://unwatch.org/internships/\" class=\"elementor-sub-item\">",
+              "              Internships",
+              "            </a>",
+              "          </li>",
+              "        </ul>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-6465\">",
+              "    <a href=\"https://unwatch.org/tag/petitions/\" class=\"elementor-item\">",
+              "      Take Action",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor\">",
+              "      Media",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\">",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529644\">",
+              "        <a href=\"/tag/press-release/\" class=\"elementor-sub-item\">",
+              "          Press Releases",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529645\">",
+              "        <a href=\"/tag/in-the-news/\" class=\"elementor-sub-item\">",
+              "          In the News",
+              "        </a>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-it...",
+              "    <a href=\"#\" class=\"elementor-item elementor-item-anchor\">",
+              "      Resources",
+              "    </a>",
+              "    <ul class=\"sub-menu elementor-nav-menu--dropdown\">",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-545599\">",
+              "        <a href=\"https://unwatch.org/news/\" class=\"elementor-sub-item\">",
+              "          Blog",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-545520\">",
+              "        <a href=\"https://unwatch.org/database\" class=\"elementor-sub-item\">",
+              "          UN Watch Database",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529651\">",
+              "        <a href=\"/tag/reports\" class=\"elementor-sub-item\">",
+              "          Reports",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-529656\">",
+              "        <a href=\"/videos/\" class=\"elementor-sub-item\">",
+              "          Videos",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-551064\">",
+              "        <a href=\"https://unwatch.org/tag/uncharted-podcast/\" class=\"elementor-sub-item\">",
+              "          Podcasts",
+              "        </a>",
+              "      </li>",
+              "      <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-551058\">",
+              "        <a href=\"https://unwatch.org/durban-4/\" class=\"elementor-sub-item\">",
+              "          Durban 4",
+              "        </a>",
+              "      </li>",
+              "    </ul>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-6453\">",
+              "    <a href=\"https://civicrm.unwatch.org/Sign_up\" class=\"elementor-item\">",
+              "      Sign Up",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"donate_menu_highlight menu-item menu-item-type-custom menu-item-object-custom menu-ite...",
+              "    <a href=\"https://civicrm.unwatch.org/donate_now\" class=\"elementor-item\">",
+              "      Donate",
+              "    </a>",
+              "  </li>",
+              "  <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-8119\">",
+              "    <a href=\"https://civicrm.unwatch.org/contact_us\" class=\"elementor-item\">",
+              "      Contact",
+              "    </a>",
+              "  </li>",
+              "</ul>"
+            ]
+          }
+        },
+        {
+          "index": 720,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Three Decades of Fighting for Truth at the United Nations"
+            ]
+          }
+        },
+        {
+          "index": 721,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[3]/button[1]/div[2]/text()[1]",
+            "codeLines": [
+              "Watch later"
+            ]
+          }
+        },
+        {
+          "index": 722,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[3]/button[2]/div[2]/text()[1]",
+            "codeLines": [
+              "Share"
+            ]
+          }
+        },
+        {
+          "index": 774,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r61",
+            "ruleSummary": "Documents start with a level 1 heading",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r61",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 802,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/input[1]",
+            "codeLines": [
+              "<input placeholder=\"Search...\" class=\"elementor-search-form__input\" type=\"search\" name=\"s\" title=\"S..."
+            ]
+          }
+        },
+        {
+          "index": 804,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"ytp-title-channel-logo\" target=\"_blank\" href=\"https://www.youtube.com/channel/UC0BEdffpLE..."
+            ]
+          }
+        },
+        {
+          "index": 805,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"ytp-title-channel-name\" target=\"_blank\" href=\"\"></a>"
+            ]
+          }
+        },
+        {
+          "index": 806,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[3]/button[1]",
+            "codeLines": [
+              "<button class=\"ytp-watch-later-button ytp-button ytp-show-watch-later-title\" data-tooltip-opaque=\"t...",
+              "  <div class=\"ytp-watch-later-icon\">",
+              "    <svg height=\"100%\" version=\"1.1\" viewBox=\"0 0 36 36\" width=\"100%\">",
+              "      <use class=\"ytp-svg-shadow\" href=\"#ytp-id-24\"></use>",
+              "      <path class=\"ytp-svg-fill\" d=\"M18,8 C12.47,8 8,12.47 8,18 C8,23.52 12.47,28 18,28 C23.52,28 2...",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"ytp-watch-later-title\">",
+              "    Watch later",
+              "  </div>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 807,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[3]/button[2]",
+            "codeLines": [
+              "<button class=\"ytp-button ytp-share-button ytp-share-button-visible ytp-show-share-title\" title=\"Sh...",
+              "  <div class=\"ytp-share-icon\">",
+              "    <svg height=\"100%\" version=\"1.1\" viewBox=\"0 0 36 36\" width=\"100%\">",
+              "      <use class=\"ytp-svg-shadow\" href=\"#ytp-id-27\"></use>",
+              "      <path class=\"ytp-svg-fill\" d=\"m 20.20,14.19 0,-4.45 7.79,7.79 -7.79,7.79 0,-4.56 C 16.27,20.6...",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"ytp-share-title\">",
+              "    Share",
+              "  </div>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 808,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[4]/button[1]",
+            "codeLines": [
+              "<button class=\"ytp-large-play-button ytp-button\" aria-label=\"Play\">",
+              "  <svg height=\"100%\" version=\"1.1\" viewBox=\"0 0 68 48\" width=\"100%\">",
+              "    <path class=\"ytp-large-play-button-bg\" d=\"M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,...",
+              "    <path d=\"M 45,24 27,14 27,34\" fill=\"#fff\"></path>",
+              "  </svg>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 809,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"ytp-impression-link\" aria-label=\"Watch on YouTube\" target=\"_blank\" href=\"https://www.yout...",
+              "  <div class=\"ytp-impression-link-content\" aria-hidden=\"true\">",
+              "    <div class=\"ytp-impression-link-text\">",
+              "      Watch on",
+              "    </div>",
+              "    <div class=\"ytp-impression-link-logo\">",
+              "      <svg height=\"100%\" version=\"1.1\" viewBox=\"0 0 110 26\" width=\"100%\">",
+              "        <use class=\"ytp-svg-shadow\" href=\"#ytp-id-30\"></use>",
+              "        <path class=\"ytp-svg-fill\" d=\"M 16.68,.99 C 13.55,1.03 7.02,1.16 4.99,1.68 c -1.49,.4 -2.59...",
+              "      </svg>",
+              "    </div>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 810,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"n2-section-smartslider fitvidsignore n2_clear\" data-ssid=\"2\" tabindex=\"0\" role=\"region\"...",
+              "  <div id=\"n2-ss-2-align\" class=\"n2-ss-align\">",
+              "    <div class=\"n2-padding\">",
+              "      <div id=\"n2-ss-2\" data-creator=\"Smart Slider 3\" data-responsive=\"auto\" class=\"n2-ss-slider n2...",
+              "        <div class=\"n2-ss-slider-wrapper-inside\">",
+              "          <div class=\"n2-ss-slider-1 n2_ss__touch_element n2-ow\" style=\"cursor: grab; touch-action:...",
+              "            <div class=\"n2-ss-slider-2 n2-ow\">",
+              "              <div class=\"n2-ss-slider-3 n2-ow\" style=\"\">",
+              "                <div class=\"n2-ss-slide-backgrounds n2-ow-all\">",
+              "                  <div class=\"n2-ss-slide-background\" data-public-id=\"1\" data-mode=\"fill\" style=\"tr...",
+              "                    <div data-color=\"RGBA(0,28,56,1)\" style=\"background-color: RGBA(0,28,56,1);\" cl...",
+              "                  </div>",
+              "                  <div class=\"n2-ss-slide-background\" data-public-id=\"2\" data-mode=\"fill\" style=\"tr...",
+              "                    <div data-color=\"RGBA(0,28,56,1)\" style=\"background-color: RGBA(0,28,56,1);\" cl...",
+              "                  </div>",
+              "                  <div class=\"n2-ss-slide-background\" data-public-id=\"3\" data-mode=\"fill\" style=\"tr...",
+              "                    <div data-color=\"RGBA(0,28,56,1)\" style=\"background-color: RGBA(0,28,56,1);\" cl...",
+              "                  </div>",
+              "                </div>",
+              "                <div class=\"n2-ss-slider-4 n2-ow\">",
+              "                  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 420\" data-related-devic...",
+              "                  <div data-first=\"1\" data-slide-duration=\"0\" data-id=\"3\" data-slide-public-id=\"1\" ...",
+              "                    <div role=\"note\" class=\"n2-ss-slide--focus\" tabindex=\"-1\">",
+              "                      Slide 1",
+              "                    </div>",
+              "                    <div class=\"n2-ss-layers-container n2-ss-slide-limiter n2-ow\">",
+              "                      <div class=\"n2-ss-layer n2-ow n-uc-O3gSGwbRTojA\" data-sstype=\"slide\" data-pm=...",
+              "                        <div class=\"n2-ss-layer n2-ow n-uc-16610d53ccff8\" data-pm=\"default\" data-ss...",
+              "                          <div class=\"n2-ss-section-main-content n2-ss-layer-with-background n2-ss-...",
+              "                            <div class=\"n2-ss-layer n2-ow n-uc-K1dMGztFCm2l\" data-pm=\"normal\" data-...",
+              "                              <div id=\"n2-ss-2item1\" class=\"n2-font-1bec769e3c22ddc350d66309185d410...",
+              "                                Who We Are",
+              "                              </div>",
+              "                            </div>",
+              "                            <div class=\"n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n...",
+              "                              <div class=\"n2-ss-layer-row n2-ss-layer-with-background n-uc-1ffdd3a3...",
+              "                                <div class=\"n2-ss-layer-row-inner \">",
+              "                                  <div class=\"n2-ss-layer n2-ow n-uc-1b107a6f87d0c\" data-pm=\"defaul...",
+              "                                    <div class=\"n2-ss-layer-col n2-ss-layer-with-background n2-ss-l...",
+              "                                      <div class=\"n2-ss-layer n2-ow n-uc-uGhJdo2DPVLp\" data-pm=\"nor...",
+              "                                        <div class=\"n2-ss-item-content n2-ss-text n2-ow-all\">",
+              "                                          <div class=\"\">",
+              "                                            <p class=\"n2-font-e961125d38e5cbe9f82ab00240162739-para...",
+              "                                              Founded in 1993, UN Watch, a non-governmental organiz...",
+              "                                              <br>",
+              "                                              <br>",
+              "                                              Headquartered next to the UN human rights apparatus i...",
+              "                                              <br>",
+              "                                              <br>",
+              "                                              UN Watch stands at the forefront in combating racism,...",
+              "                                            </p>",
+              "                                          </div>",
+              "                                        </div>",
+              "                                      </div>",
+              "                                    </div>",
+              "                                  </div>",
+              "                                  <div class=\"n2-ss-layer n2-ow n-uc-154ef3d9a8625\" data-pm=\"defaul...",
+              "                                    <div class=\"n2-ss-layer-col n2-ss-layer-with-background n2-ss-l...",
+              "                                      <div class=\"n2-ss-layer n2-ow n-uc-tjinudQJJ0MC\" data-pm=\"nor...",
+              "                                        <div class=\" n2-ss-item-image-content n2-ss-item-content n2...",
+              "                                          <a href=\"https://unwatch.org/database\" tabindex=\"0\">",
+              "                                            <img loading=\"eager\" id=\"n2-ss-2item3\" alt=\"\" class=\"sk...",
+              "                                          </a>",
+              "                                        </div>",
+              "                                      </div>",
+              "                                    </div>",
+              "                                  </div>",
+              "                                </div>",
+              "                              </div>",
+              "                            </div>",
+              "                          </div>",
+              "                        </div>",
+              "                      </div>",
+              "                    </div>",
+              "                  </div>",
+              "                  <div data-slide-duration=\"0\" data-id=\"6\" data-slide-public-id=\"2\" data-title=\"Sli...",
+              "                    <div role=\"note\" class=\"n2-ss-slide--focus\" tabindex=\"-1\">",
+              "                      Slide 1",
+              "                    </div>",
+              "                    <div class=\"n2-ss-layers-container n2-ss-slide-limiter n2-ow\">",
+              "                      <div class=\"n2-ss-layer n2-ow n-uc-idepckCMO42T\" data-sstype=\"slide\" data-pm=...",
+              "                        <div class=\"n2-ss-layer n2-ow n-uc-VgwYyADHhjjh\" data-pm=\"default\" data-sst...",
+              "                          <div class=\"n2-ss-section-main-content n2-ss-layer-with-background n2-ss-...",
+              "                            <div class=\"n2-ss-layer n2-ow n-uc-4orP3yT3oahy\" data-pm=\"normal\" data-...",
+              "                              <div id=\"n2-ss-2item4\" class=\"n2-font-1bec769e3c22ddc350d66309185d410...",
+              "                                What We Do",
+              "                              </div>",
+              "                            </div>",
+              "                            <div class=\"n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n...",
+              "                              <div class=\"n2-ss-layer-row n2-ss-layer-with-background n-uc-5UUWI09Z...",
+              "                                <div class=\"n2-ss-layer-row-inner \">",
+              "                                  <div class=\"n2-ss-layer n2-ow n-uc-ZN8u7Yug5NFr\" data-pm=\"default...",
+              "                                    <div class=\"n2-ss-layer-col n2-ss-layer-with-background n2-ss-l...",
+              "                                      <div class=\"n2-ss-layer n2-ow n-uc-9L3QUTCMTev9\" data-pm=\"nor...",
+              "                                        <div class=\"n2-ss-item-content n2-ss-text n2-ow-all\">",
+              "                                          <div class=\"\">",
+              "                                            <p class=\"n2-font-e961125d38e5cbe9f82ab00240162739-para...",
+              "                                              Monitor the UN by the yardstick of its own charter",
+              "                                              <br>",
+              "                                              <br>",
+              "                                              Combat antisemitism & anti-Israel bias at the UN",
+              "                                              <br>",
+              "                                              <br>",
+              "                                              Protect human rights for victims worldwide",
+              "                                            </p>",
+              "                                          </div>",
+              "                                        </div>",
+              "                                      </div>",
+              "                                    </div>",
+              "                                  </div>",
+              "                                  <div class=\"n2-ss-layer n2-ow n-uc-OcfzzFovbQZN\" data-pm=\"default...",
+              "                                    <div class=\"n2-ss-layer-col n2-ss-layer-with-background n2-ss-l...",
+              "                                      <div class=\"n2-ss-layer n2-ow n-uc-2Nb5phbCwNMw\" data-pm=\"nor...",
+              "                                        <div class=\" n2-ss-item-image-content n2-ss-item-content n2...",
+              "                                          <a href=\"https://unwatch.org/database/\" tabindex=\"-1\">",
+              "                                            <img id=\"n2-ss-2item6\" alt=\"\" class=\"skip-lazy lazy\" lo...",
+              "                                          </a>",
+              "                                        </div>",
+              "                                      </div>",
+              "                                    </div>",
+              "                                  </div>",
+              "                                </div>",
+              "                              </div>",
+              "                            </div>",
+              "                          </div>",
+              "                        </div>",
+              "                      </div>",
+              "                    </div>",
+              "                  </div>",
+              "                  <div data-slide-duration=\"0\" data-id=\"7\" data-slide-public-id=\"3\" data-title=\"Sli...",
+              "                    <div role=\"note\" class=\"n2-ss-slide--focus\" tabindex=\"-1\">",
+              "                      Slide 1",
+              "                    </div>",
+              "                    <div class=\"n2-ss-layers-container n2-ss-slide-limiter n2-ow\">",
+              "                      <div class=\"n2-ss-layer n2-ow n-uc-8MlsY4mJls5E\" data-sstype=\"slide\" data-pm=...",
+              "                        <div class=\"n2-ss-layer n2-ow n-uc-B4q4kzMw6Yp2\" data-pm=\"default\" data-sst...",
+              "                          <div class=\"n2-ss-section-main-content n2-ss-layer-with-background n2-ss-...",
+              "                            <div class=\"n2-ss-layer n2-ow n-uc-klriBN2O3GPt\" data-pm=\"normal\" data-...",
+              "                              <div id=\"n2-ss-2item7\" class=\"n2-font-1bec769e3c22ddc350d66309185d410...",
+              "                                How We Do It",
+              "                              </div>",
+              "                            </div>",
+              "                            <div class=\"n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n...",
+              "                              <div class=\"n2-ss-layer-row n2-ss-layer-with-background n-uc-Cfh9KIyY...",
+              "                                <div class=\"n2-ss-layer-row-inner \">",
+              "                                  <div class=\"n2-ss-layer n2-ow n-uc-w9zvirc35PhZ\" data-pm=\"default...",
+              "                                    <div class=\"n2-ss-layer-col n2-ss-layer-with-background n2-ss-l...",
+              "                                      <div class=\"n2-ss-layer n2-ow n-uc-9UyrbryH9V1z\" data-pm=\"nor...",
+              "                                        <div class=\"n2-ss-item-content n2-ss-text n2-ow-all\">",
+              "                                          <div class=\"\">",
+              "                                            <p class=\"n2-font-f61527de25f385500db736ffca49d442-para...",
+              "                                              <strong>",
+              "                                                Diplomacy :",
+              "                                              </strong>",
+              "                                              Advocacy at highest levels or government to effect ch...",
+              "                                              <br>",
+              "                                              <br>",
+              "                                              <strong>",
+              "                                                UN Testimony :",
+              "                                              </strong>",
+              "                                              Deliver high-impact testimony before UN sessions to c...",
+              "                                              <br>",
+              "                                              <br>",
+              "                                              <strong>",
+              "                                                Publications :",
+              "                                              </strong>",
+              "                                              Publish detailed reports, studies and in-depth resear...",
+              "                                              <br>",
+              "                                              <br>",
+              "                                              <strong>",
+              "                                                Campaigns :",
+              "                                              </strong>",
+              "                                              Achieve international condemnation of bigoted actions...",
+              "                                            </p>",
+              "                                          </div>",
+              "                                        </div>",
+              "                                      </div>",
+              "                                    </div>",
+              "                                  </div>",
+              "                                  <div class=\"n2-ss-layer n2-ow n-uc-SznKMy1nyYlO\" data-pm=\"default...",
+              "                                    <div class=\"n2-ss-layer-col n2-ss-layer-with-background n2-ss-l...",
+              "                                      <div class=\"n2-ss-layer n2-ow n-uc-vslbjEJoEbyW\" data-pm=\"nor...",
+              "                                        <div class=\" n2-ss-item-image-content n2-ss-item-content n2...",
+              "                                          <a href=\"https://unwatch.org/database/\" tabindex=\"-1\">",
+              "                                            <img id=\"n2-ss-2item9\" alt=\"\" class=\"skip-lazy lazy\" lo...",
+              "                                          </a>",
+              "                                        </div>",
+              "                                      </div>",
+              "                                    </div>",
+              "                                  </div>",
+              "                                </div>",
+              "                              </div>",
+              "                            </div>",
+              "                          </div>",
+              "                        </div>",
+              "                      </div>",
+              "                    </div>",
+              "                  </div>",
+              "                </div>",
+              "              </div>",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"n2-ss-slider-controls n2-ss-slider-controls-absolute-left-center\">",
+              "            <div style=\"--widget-offset:15px;\" class=\"n2-ss-widget nextend-arrow n2-ow-all nextend-...",
+              "              <img loading=\"lazy\" width=\"32\" height=\"32\" class=\"skip-lazy lazy loaded\" data-skip-la...",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"n2-ss-slider-controls n2-ss-slider-controls-absolute-right-center\">",
+              "            <div style=\"--widget-offset:15px;\" class=\"n2-ss-widget nextend-arrow n2-ow-all nextend-...",
+              "              <img loading=\"lazy\" width=\"32\" height=\"32\" class=\"skip-lazy lazy loaded\" data-skip-la...",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"n2-ss-slider-controls n2-ss-slider-controls-absolute-center-bottom\">",
+              "            <div style=\"--widget-offset:10px;\" class=\"n2-ss-widget n2-ss-control-bullet n2-ow-all n...",
+              "              <div class=\" nextend-bullet-bar n2-bar-justify-content-center\">",
+              "                <div>",
+              "                  <div class=\"n2-bullet n2-style-bcef68443b2682444059e693254dd628-dot n2-active\" ro...",
+              "                </div>",
+              "                <div>",
+              "                  <div class=\"n2-bullet n2-style-bcef68443b2682444059e693254dd628-dot\" tabindex=\"0\"...",
+              "                </div>",
+              "                <div>",
+              "                  <div class=\"n2-bullet n2-style-bcef68443b2682444059e693254dd628-dot\" tabindex=\"0\"...",
+              "                </div>",
+              "              </div>",
+              "            </div>",
+              "          </div>",
+              "        </div>",
+              "      </div>",
+              "      <ss3-loader></ss3-loader>",
+              "    </div>",
+              "  </div>",
+              "  <div class=\"n2_clear\"></div>",
+              "  <script>",
+              "    _N2.r([\"documentReady\",\"smartslider-frontend\",\"SmartSliderWidgetArrowImage\",\"SmartSliderWidgetB...",
+              "  </script>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 811,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"https://unwatch.org/database\" tabindex=\"0\">",
+              "  <img loading=\"eager\" id=\"n2-ss-2item3\" alt=\"\" class=\"skip-lazy lazy loaded\" width=\"372\" height=\"2...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 812,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+            "codeLines": [
+              "<div style=\"--widget-offset:15px;\" class=\"n2-ss-widget nextend-arrow n2-ow-all nextend-arrow-previo...",
+              "  <img loading=\"lazy\" width=\"32\" height=\"32\" class=\"skip-lazy lazy loaded\" data-skip-lazy=\"1\" src=\"...",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 813,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]",
+            "codeLines": [
+              "<div style=\"--widget-offset:15px;\" class=\"n2-ss-widget nextend-arrow n2-ow-all nextend-arrow-next  ...",
+              "  <img loading=\"lazy\" width=\"32\" height=\"32\" class=\"skip-lazy lazy loaded\" data-skip-lazy=\"1\" src=\"...",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 851,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Your Voice at the United Nations"
+            ]
+          }
+        },
+        {
+          "index": 852,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Who We Are"
+            ]
+          }
+        },
+        {
+          "index": 853,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Founded in 1993, UN Watch, a non-governmental organization, influences decision-makers, educates wo..."
+            ]
+          }
+        },
+        {
+          "index": 854,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[3]",
+            "codeLines": [
+              "Headquartered next to the UN human rights apparatus in Geneva, UN Watch works with civil society, d..."
+            ]
+          }
+        },
+        {
+          "index": 855,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[5]",
+            "codeLines": [
+              "UN Watch stands at the forefront in combating racism, antisemitism and anti-Israeli prejudice at th..."
+            ]
+          }
+        },
+        {
+          "index": 856,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "CLICK HERE TO SIGN THE PETITION & FIGHT BACK! GENEVA, January 17, 2022 — An international human rig..."
+            ]
+          }
+        },
+        {
+          "index": 857,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "January 17, 2022"
+            ]
+          }
+        },
+        {
+          "index": 858,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[2]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Photo: Stand News acting Chief Editor Patrick Lam is escorted by police as they leave after the pol..."
+            ]
+          }
+        },
+        {
+          "index": 859,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[2]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 30, 2021"
+            ]
+          }
+        },
+        {
+          "index": 860,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[3]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "GENEVA, December 28, 2021 — UN Human Rights Council president Nazhat Shameem Khan should condemn to..."
+            ]
+          }
+        },
+        {
+          "index": 861,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[3]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 29, 2021"
+            ]
+          }
+        },
+        {
+          "index": 862,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[4]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "10. UN Review Praises Slave-Holding Mauritania’s Human Rights Record When Mauritania came up for a ..."
+            ]
+          }
+        },
+        {
+          "index": 863,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[4]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 26, 2021"
+            ]
+          }
+        },
+        {
+          "index": 864,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[5]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Rare good news: Thanks to UN Watch’s relentless campaign, UNRWA teachers are now complaining that t..."
+            ]
+          }
+        },
+        {
+          "index": 865,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[5]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 23, 2021"
+            ]
+          }
+        },
+        {
+          "index": 866,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[6]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "NEW YORK, Dec. 17, 2021 — The UN General Assembly will condemn Israel today in two separate resolut..."
+            ]
+          }
+        },
+        {
+          "index": 867,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[6]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 17, 2021"
+            ]
+          }
+        },
+        {
+          "index": 868,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[7]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Great: CNN's Christiane Amanpour reports on our Geneva Summit campaign for jailed Hong Kong newspap..."
+            ]
+          }
+        },
+        {
+          "index": 869,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[7]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 12, 2021"
+            ]
+          }
+        },
+        {
+          "index": 870,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[8]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "NEW YORK, Dec. 9, 2021 — The United Nations General Assembly today is slated to adopt six resolutio..."
+            ]
+          }
+        },
+        {
+          "index": 871,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[8]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 10, 2021"
+            ]
+          }
+        },
+        {
+          "index": 893,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Your Voice at the United Nations"
+            ]
+          }
+        },
+        {
+          "index": 894,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Who We Are"
+            ]
+          }
+        },
+        {
+          "index": 895,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Founded in 1993, UN Watch, a non-governmental organization, influences decision-makers, educates wo..."
+            ]
+          }
+        },
+        {
+          "index": 896,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[3]",
+            "codeLines": [
+              "Headquartered next to the UN human rights apparatus in Geneva, UN Watch works with civil society, d..."
+            ]
+          }
+        },
+        {
+          "index": 897,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[5]",
+            "codeLines": [
+              "UN Watch stands at the forefront in combating racism, antisemitism and anti-Israeli prejudice at th..."
+            ]
+          }
+        },
+        {
+          "index": 898,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "CLICK HERE TO SIGN THE PETITION & FIGHT BACK! GENEVA, January 17, 2022 — An international human rig..."
+            ]
+          }
+        },
+        {
+          "index": 899,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "January 17, 2022"
+            ]
+          }
+        },
+        {
+          "index": 900,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[2]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Photo: Stand News acting Chief Editor Patrick Lam is escorted by police as they leave after the pol..."
+            ]
+          }
+        },
+        {
+          "index": 901,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[2]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 30, 2021"
+            ]
+          }
+        },
+        {
+          "index": 902,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[3]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "GENEVA, December 28, 2021 — UN Human Rights Council president Nazhat Shameem Khan should condemn to..."
+            ]
+          }
+        },
+        {
+          "index": 903,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[3]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 29, 2021"
+            ]
+          }
+        },
+        {
+          "index": 904,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[4]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "10. UN Review Praises Slave-Holding Mauritania’s Human Rights Record When Mauritania came up for a ..."
+            ]
+          }
+        },
+        {
+          "index": 905,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[4]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 26, 2021"
+            ]
+          }
+        },
+        {
+          "index": 906,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[5]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Rare good news: Thanks to UN Watch’s relentless campaign, UNRWA teachers are now complaining that t..."
+            ]
+          }
+        },
+        {
+          "index": 907,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[5]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 23, 2021"
+            ]
+          }
+        },
+        {
+          "index": 908,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[6]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "NEW YORK, Dec. 17, 2021 — The UN General Assembly will condemn Israel today in two separate resolut..."
+            ]
+          }
+        },
+        {
+          "index": 909,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[6]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 17, 2021"
+            ]
+          }
+        },
+        {
+          "index": 910,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[7]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Great: CNN's Christiane Amanpour reports on our Geneva Summit campaign for jailed Hong Kong newspap..."
+            ]
+          }
+        },
+        {
+          "index": 911,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[7]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 12, 2021"
+            ]
+          }
+        },
+        {
+          "index": 912,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[8]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "NEW YORK, Dec. 9, 2021 — The United Nations General Assembly today is slated to adopt six resolutio..."
+            ]
+          }
+        },
+        {
+          "index": 913,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[8]/div[1]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "December 10, 2021"
+            ]
+          }
+        },
+        {
+          "index": 940,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"n2-font-e961125d38e5cbe9f82ab00240162739-paragraph   \">",
+              "  Founded in 1993, UN Watch, a non-governmental organization, influences decision-makers, educates ...",
+              "  <br>",
+              "  <br>",
+              "  Headquartered next to the UN human rights apparatus in Geneva, UN Watch works with civil society,...",
+              "  <br>",
+              "  <br>",
+              "  UN Watch stands at the forefront in combating racism, antisemitism and anti-Israeli prejudice at ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 951,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  CLICK HERE TO SIGN THE PETITION & FIGHT BACK! GENEVA, January 17, 2022 — An international human r...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 952,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[2]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Photo: Stand News acting Chief Editor Patrick Lam is escorted by police as they leave after the p...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 953,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[3]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  GENEVA, December 28, 2021 — UN Human Rights Council president Nazhat Shameem Khan should condemn ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 954,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[4]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  10. UN Review Praises Slave-Holding Mauritania’s Human Rights Record When Mauritania came up for ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 955,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[5]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Rare good news: Thanks to UN Watch’s relentless campaign, UNRWA teachers are now complaining that...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 956,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[6]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  NEW YORK, Dec. 17, 2021 — The UN General Assembly will condemn Israel today in two separate resol...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 957,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[7]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Great: CNN's Christiane Amanpour reports on our Geneva Summit campaign for jailed Hong Kong newsp...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 958,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/div[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[8]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  NEW YORK, Dec. 9, 2021 — The United Nations General Assembly today is slated to adopt six resolut...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1083,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h3",
+            "path": "/html[1]/body[1]/div[3]/div[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[1]",
+            "codeLines": [
+              "<h3 class=\"elementor-heading-title elementor-size-default\">",
+              "  Copyright © 2014 - UN Watch | Your voice at the UN.",
+              "</h3>"
+            ]
+          }
+        },
+        {
+          "index": 1084,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h3",
+            "path": "/html[1]/body[1]/div[3]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h3[1]",
+            "codeLines": [
+              "<h3 class=\"elementor-heading-title elementor-size-default\">",
+              "  <a href=\"https://unwatch.org/privacy-statement/\">",
+              "    Privacy Statement",
+              "  </a>",
+              "</h3>"
+            ]
+          }
+        },
+        {
+          "index": 1101,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/input[1]",
+            "codeLines": [
+              "<input placeholder=\"Search...\" class=\"elementor-search-form__input\" type=\"search\" name=\"s\" title=\"S..."
+            ]
+          }
+        },
+        {
+          "index": 1102,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Three Decades of Fighting for Truth at the United Nations"
+            ]
+          }
+        },
+        {
+          "index": 1168,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      11
+    ]
+  ]
+}

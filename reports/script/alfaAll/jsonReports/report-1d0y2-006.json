@@ -1,0 +1,2076 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 7,
+  "logSize": 348,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.transalt.org/",
+      "what": "Transportation Alternatives",
+      "result": "https://www.transalt.org/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.transalt.org/",
+      "result": [
+        {
+          "index": 57,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"/writing/how-affordable-accessible-micromobility-will-help-new-york-city-recover\" class=\"",
+              "          summary-thumbnail-container",
+              "          sqs-gallery-image-container",
+              "          ",
+              "        \" data-title=\"How Affordable, Accessible Micromobility Will Help New York City Recover\" dat...",
+              "  <div class=\"summary-thumbnail img-wrapper\" data-animation-role=\"image\" style=\"overflow: hidden; p...",
+              "    <!-- First Image in Post -->",
+              "    <img data-src=\"https://images.squarespace-cdn.com/content/v1/5cab9d9b65a707a9b36f4b6c/161547598...",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 111,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r12",
+            "ruleSummary": "Buttons have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r12",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[4]/header[1]/div[1]/div[3]/div[1]/form[1]/button[1]",
+            "codeLines": [
+              "<button class=\"Header-search-form-submit\" type=\"submit\" data-test=\"template-search\">",
+              "  <svg class=\"Icon Icon--search--small\" viewBox=\"0 0 15 15\">",
+              "    <use xlink:href=\"/assets/ui-icons.svg#search-icon--small\"></use>",
+              "  </svg>",
+              "  <svg class=\"Icon Icon--search\" viewBox=\"0 0 20 20\">",
+              "    <use xlink:href=\"/assets/ui-icons.svg#search-icon\"></use>",
+              "  </svg>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 349,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r2",
+            "ruleSummary": "Images have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r2",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#non-text-content",
+                "chapter": "1.1.1",
+                "title": "Non-text Content"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+                "name": "G94",
+                "title": "Providing short text alternative for non-text content that serves the same purpose"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G95",
+                "name": "G95",
+                "title": "Providing short text alternatives that provide a brief description of the non-text"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "img",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]/div[1]/img[1]",
+            "codeLines": [
+              "<img data-src=\"https://images.squarespace-cdn.com/content/v1/5cab9d9b65a707a9b36f4b6c/1615475985817..."
+            ]
+          }
+        },
+        {
+          "index": 558,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r39",
+            "ruleSummary": "Image filename is accessible name for image",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r39",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#non-text-content",
+                "chapter": "1.1.1",
+                "title": "Non-text Content"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+                "name": "G94",
+                "title": "Providing short text alternative for non-text content that serves the same purpose"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G95",
+                "name": "G95",
+                "title": "Providing short text alternatives that provide a brief description of the non-text"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "img",
+            "path": "/html[1]/body[1]/div[4]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/figure[1]/div[1]/div[1]/img[1]",
+            "codeLines": [
+              "<img class=\"thumb-image loaded\" data-src=\"https://images.squarespace-cdn.com/content/v1/5cab9d9b65a..."
+            ]
+          }
+        },
+        {
+          "index": 595,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Transportation Alternatives supports Black Lives Matter. What does this mean in relation to our adv..."
+            ]
+          }
+        },
+        {
+          "index": 839,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Transportation Alternatives supports Black Lives Matter. What does this mean in relation to our adv..."
+            ]
+          }
+        },
+        {
+          "index": 841,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "NYC 25x25"
+            ]
+          }
+        },
+        {
+          "index": 843,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Seven Steps to Save Our Health, Our Safety, Our Environment, and Our Economy by Making Better Use o..."
+            ]
+          }
+        },
+        {
+          "index": 846,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Open Streets Forever"
+            ]
+          }
+        },
+        {
+          "index": 849,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Too Fast, Too Furious"
+            ]
+          }
+        },
+        {
+          "index": 857,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Aug 6, 2021"
+            ]
+          }
+        },
+        {
+          "index": 858,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Mar 24, 2021"
+            ]
+          }
+        },
+        {
+          "index": 859,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Mar 22, 2021"
+            ]
+          }
+        },
+        {
+          "index": 860,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Mar 11, 2021"
+            ]
+          }
+        },
+        {
+          "index": 861,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Feb 11, 2021"
+            ]
+          }
+        },
+        {
+          "index": 862,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jan 26, 2021"
+            ]
+          }
+        },
+        {
+          "index": 863,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jan 12, 2021"
+            ]
+          }
+        },
+        {
+          "index": 864,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Dec 16, 2020"
+            ]
+          }
+        },
+        {
+          "index": 865,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Dec 11, 2020"
+            ]
+          }
+        },
+        {
+          "index": 866,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[4]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Nov 12, 2020"
+            ]
+          }
+        },
+        {
+          "index": 867,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/h3[1]/text()[1]",
+            "codeLines": [
+              "PRESS RELEASES & STATEMENTS"
+            ]
+          }
+        },
+        {
+          "index": 868,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jan 17, 2022"
+            ]
+          }
+        },
+        {
+          "index": 869,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jan 2, 2022"
+            ]
+          }
+        },
+        {
+          "index": 870,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Dec 25, 2021"
+            ]
+          }
+        },
+        {
+          "index": 871,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Dec 20, 2021"
+            ]
+          }
+        },
+        {
+          "index": 872,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Dec 14, 2021"
+            ]
+          }
+        },
+        {
+          "index": 873,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Dec 10, 2021"
+            ]
+          }
+        },
+        {
+          "index": 874,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Nov 22, 2021"
+            ]
+          }
+        },
+        {
+          "index": 875,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[8]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Nov 4, 2021"
+            ]
+          }
+        },
+        {
+          "index": 876,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Nov 2, 2021"
+            ]
+          }
+        },
+        {
+          "index": 877,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Oct 26, 2021"
+            ]
+          }
+        },
+        {
+          "index": 878,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[11]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Oct 20, 2021"
+            ]
+          }
+        },
+        {
+          "index": 879,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[12]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Oct 12, 2021"
+            ]
+          }
+        },
+        {
+          "index": 880,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[13]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Oct 11, 2021"
+            ]
+          }
+        },
+        {
+          "index": 881,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[14]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Oct 6, 2021"
+            ]
+          }
+        },
+        {
+          "index": 882,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[15]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Sep 27, 2021"
+            ]
+          }
+        },
+        {
+          "index": 883,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[16]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Sep 14, 2021"
+            ]
+          }
+        },
+        {
+          "index": 884,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[17]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Sep 14, 2021"
+            ]
+          }
+        },
+        {
+          "index": 885,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[18]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Sep 12, 2021"
+            ]
+          }
+        },
+        {
+          "index": 886,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[19]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Aug 25, 2021"
+            ]
+          }
+        },
+        {
+          "index": 887,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[20]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Aug 10, 2021"
+            ]
+          }
+        },
+        {
+          "index": 888,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[21]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jul 22, 2021"
+            ]
+          }
+        },
+        {
+          "index": 889,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[22]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jul 21, 2021"
+            ]
+          }
+        },
+        {
+          "index": 890,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[23]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jun 30, 2021"
+            ]
+          }
+        },
+        {
+          "index": 891,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[24]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jun 24, 2021"
+            ]
+          }
+        },
+        {
+          "index": 892,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[25]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jun 21, 2021"
+            ]
+          }
+        },
+        {
+          "index": 893,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[26]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jun 16, 2021"
+            ]
+          }
+        },
+        {
+          "index": 894,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[27]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jun 11, 2021"
+            ]
+          }
+        },
+        {
+          "index": 895,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[28]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jun 10, 2021"
+            ]
+          }
+        },
+        {
+          "index": 896,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[29]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jun 10, 2021"
+            ]
+          }
+        },
+        {
+          "index": 897,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[6]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[30]/div[1]/div[3]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "Jun 3, 2021"
+            ]
+          }
+        },
+        {
+          "index": 906,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Transportation Alternatives supports Black Lives Matter. What does this mean in relation to our adv..."
+            ]
+          }
+        },
+        {
+          "index": 1005,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Transportation Alternatives supports Black Lives Matter. What does this mean in relation to our a...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1006,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  NYC 25x25",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1008,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Seven Steps to Save Our Health, Our Safety, Our Environment, and Our Economy by Making Better Use...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1010,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Open Streets Forever",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1012,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Too Fast, Too Furious",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1014,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p style=\"color:white;font-size:25px;line-height:1.2em\">",
+              "  Streets and sidewalks make up 80% of our public space in New York City. We’ve won many transforma...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1015,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p style=\"text-align:center;white-space:pre-wrap;\" class=\"\">",
+              "  <strong>",
+              "    Subscribe to get the latest news from Transportation Alternatives",
+              "  </strong>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1016,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p style=\"color:white;font-size:25px;line-height:1.2em\">",
+              "  Comprised of individuals who have lost loved ones or been injured in a crash, Families for Safe S...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1017,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Transportation Alternatives’ mission is to reclaim New York City’s streets from the automobile an...",
+              "  <br>",
+              "  <a href=\"https://support.transalt.org/give/331911/#!/donation/checkout\" target=\"_blank\">",
+              "    Support our work",
+              "  </a>",
+              "  .",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1018,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p style=\"text-align:right;white-space:pre-wrap;\" class=\"\">",
+              "  111 John Street, Suite 260",
+              "  <br>",
+              "  New York, NY 10038",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1019,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/p[2]",
+            "codeLines": [
+              "<p style=\"text-align:right;white-space:pre-wrap;\" class=\"\">",
+              "  <a href=\"tel:2126298080\" target=\"_blank\">",
+              "    (212) 629-8080",
+              "  </a>",
+              "  <br>",
+              "  <a href=\"mailto:info@transalt.org\">",
+              "    info@transalt.org",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1020,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/footer[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  © 1997-2021 Transportation Alternatives",
+              "  <br>",
+              "  <a href=\"/privacypolicy\">",
+              "    Privacy Policy",
+              "  </a>",
+              "  | Transportation Alternatives is a registered 501(c)(3) non-profit",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1021,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Transportation Alternatives supports Black Lives Matter. What does this mean in relation to our a...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1022,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  NYC 25x25",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1023,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/figure[1]/figcaption[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Our challenge to New York City’s next leaders is this: How will you give the streets back to peop...",
+              "  <a href=\"https://nyc25x25.org\" target=\"_blank\">",
+              "    Read the report.",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1024,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Seven Steps to Save Our Health, Our Safety, Our Environment, and Our Economy by Making Better Use...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1025,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/figure[1]/figcaption[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Transportation Alternatives and Families for Safe Streets’ policy platform for New York City Mayo...",
+              "  <a href=\"https://transalt.org/7steps\">",
+              "    Read the agenda",
+              "  </a>",
+              "  .",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1026,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Open Streets Forever",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1027,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/figure[1]/figcaption[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  New York City's Open Street are popular, beloved, effective, and lifesaving. But, our new researc...",
+              "  <a href=\"https://www.transalt.org/open-streets-forever-nyc\" target=\"\">",
+              "    Read the report",
+              "  </a>",
+              "  .",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1028,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/figure[1]/figcaption[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Too Fast, Too Furious",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1029,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/figure[1]/figcaption[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"\" style=\"white-space:pre-wrap;\">",
+              "  Speeding drivers are a leading cause of death and injury on New York City streets, yet today, cit...",
+              "  <a href=\"/toofast\" target=\"_blank\">",
+              "    Read the report",
+              "  </a>",
+              "  .",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1030,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p style=\"color:white;font-size:25px;line-height:1.2em\">",
+              "  Streets and sidewalks make up 80% of our public space in New York City. We’ve won many transforma...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1031,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[4]/div[2]/div[1]/main[1]/section[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p style=\"color:white;font-size:25px;line-height:1.2em\">",
+              "  Comprised of individuals who have lost loved ones or been injured in a crash, Families for Safe S...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1361,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      12
+    ]
+  ]
+}

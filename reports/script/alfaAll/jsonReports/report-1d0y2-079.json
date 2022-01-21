@@ -1,0 +1,36 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.walmart.com/",
+      "what": "Walmart",
+      "error": "ERROR: Navigation redirected",
+      "result": "https://www.walmart.com/blocked?url=Lw==&uuid=21f8b15b-7a1c-11ec-8122-75455176546f&vid=&g=b"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "result": "ERROR: Page URL wrong (https://www.walmart.com/blocked?url=Lw==&uuid=21f8b15b-7a1c-11ec-8122-75455176546f&vid=&g=b)"
+    }
+  ],
+  "testTimes": []
+}

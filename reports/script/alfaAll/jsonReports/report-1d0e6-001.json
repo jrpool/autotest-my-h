@@ -1,0 +1,92 @@
+{
+  "script": "alfa",
+  "batch": "alfaAll",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0e6",
+  "logCount": 3,
+  "logSize": 481,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.accessibilityassociation.org/s/",
+      "what": "IAAP",
+      "result": "https://www.accessibilityassociation.org/s/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.accessibilityassociation.org/s/",
+      "result": [
+        {
+          "index": 60,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r59",
+            "ruleSummary": "Documents have headings",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r59",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 91,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      6
+    ]
+  ]
+}

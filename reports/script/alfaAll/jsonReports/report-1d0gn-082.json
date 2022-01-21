@@ -1,0 +1,2341 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0gn",
+  "logCount": 4,
+  "logSize": 212,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 1,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.clearwayenergygroup.com/",
+      "what": "Clearway Energy (NALFX)",
+      "result": "https://www.clearwayenergygroup.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.clearwayenergygroup.com/",
+      "result": [
+        {
+          "index": 30,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[4]/div[1]/div[1]/div[2]/a[1]",
+            "codeLines": [
+              "<a href=\"https://www.clearwayenergygroup.com/about-clearway/\" target=\"\">",
+              "  <img class=\"img-fluid center-block lazyloaded\" data-src=\"https://13snzg20cri73sadjs27bo1q-wpengin...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 81,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r13",
+            "ruleSummary": "<iframe> elements have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r13",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "iframe",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/iframe[1]",
+            "codeLines": [
+              "<iframe src=\"https://player.vimeo.com/video/400330778?autoplay=0&loop=1&title=0&byline=0&portrait=0...",
+              "  #document",
+              "    <!doctype html>",
+              "    <html lang=\"en\">",
+              "      <head>",
+              "        <meta charset=\"utf-8\">",
+              "        <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,user-scalable=yes\">",
+              "        <link rel=\"canonical\" href=\"https://vimeo.com/400330778\">",
+              "        <title>",
+              "          This is Clearway from Clearway Energy Group on Vimeo",
+              "        </title>",
+              "        <style>",
+              "          body, html, .player, .fallback { overflow: hidden; width: 100%; height: 100%; margin: 0; ...",
+              "        </style>",
+              "        <script src=\"https://f.vimeocdn.com/p/3.48.4/js/player.js\"></script>",
+              "        <script async src=\"https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js\"></script>",
+              "        <script>",
+              "          !function(){if('PerformanceLongTaskTiming' in window){var g=window.__tti={e:[]}; g.o=new ...",
+              "        </script>",
+              "        <!--[if IE]><script>var cacheBuster = '?' + Math.round((Math.random() * 1000) + new Date()....",
+              "        <link rel=\"stylesheet\" href=\"https://f.vimeocdn.com/p/3.48.4/css/player.css\">",
+              "        <style data-player=\"4d184b2b-8430-4b8c-9ca8-757de4fb47d4\"></style>",
+              "      </head>",
+              "      <body class=\"vp-center\">",
+              "        <div class=\"vp-placeholder vp-placeholder-fadeout\" style=\"visibility: visible;\">",
+              "          <style>",
+              "            .vp-placeholder, .vp-placeholder-thumb, .vp-placeholder-thumb::before, .vp-placeholder-...",
+              "          </style>",
+              "          <style>",
+              "            .vp-placeholder-thumb { overflow: hidden; width: 100%; max-height: 100%; margin: auto; ...",
+              "          </style>",
+              "          <div class=\"vp-placeholder-thumb\"></div>",
+              "          <div class=\"vp-placeholder-carousel\"></div>",
+              "          <script>",
+              "            (function(document) { var placeholder = document.querySelector('.vp-placeholder'); var ...",
+              "          </script>",
+              "        </div>",
+              "        <div id=\"player\" class=\"player player-4d184b2b-8430-4b8c-9ca8-757de4fb47d4 js-player-fullsc...",
+              "          <div class=\"vp-video-wrapper transparent\">",
+              "            <div class=\"vp-video\">",
+              "              <div class=\"vp-telecine invisible\">",
+              "                <video preload=\"none\" tabindex=\"-1\" loop=\"\" disablepictureinpicture=\"\" style=\"\"></v...",
+              "              </div>",
+              "            </div>",
+              "            <div class=\"vp-preview vp-preview-cover\" data-thumb=\"https://i.vimeocdn.com/video/86873...",
+              "            <div class=\"vp-shade vp-shade-invisible\"></div>",
+              "            <div class=\"vp-nudge-shade vp-nudge-shade-left vp-nudge-shade-invisible\"></div>",
+              "            <div class=\"vp-nudge-shade vp-nudge-shade-right vp-nudge-shade-invisible\"></div>",
+              "            <div class=\"vp-spin vp-spin-invisible\">",
+              "              <svg class=\"vp-spin-trace\" viewBox=\"0 0 50 50\" focusable=\"false\">",
+              "                <circle cx=\"50%\" cy=\"50%\" r=\"20\"></circle>",
+              "              </svg>",
+              "              <svg class=\"vp-spin-circle\" viewBox=\"0 0 50 50\" focusable=\"false\">",
+              "                <circle cx=\"50%\" cy=\"50%\" r=\"20\"></circle>",
+              "              </svg>",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"vp-text-alert-wrapper hidden\">",
+              "            <div class=\"vp-alert-text\"></div>",
+              "            <div class=\"vp-alert-time\">",
+              "              <div class=\"vp-live-start-time-title\"></div>",
+              "              <div class=\"vp-live-start-time-body\"></div>",
+              "              <div class=\"vp-live-start-time-footer\"></div>",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"vp-target\"></div>",
+              "          <div class=\"vp-captions hidden with-controls opacity-100 color-black edge-none\" hidden=\"\"...",
+              "          <div class=\"vp-cards-wrapper\">",
+              "            <div class=\"vp-cards\"></div>",
+              "          </div>",
+              "          <div class=\"vp-outro-wrapper hidden\" hidden=\"\">",
+              "            <div class=\"vp-outro\" role=\"dialog\"></div>",
+              "          </div>",
+              "          <div class=\"vp-controls-wrapper\">",
+              "            <div class=\"vp-badge invisible hidden\" hidden=\"\"></div>",
+              "            <div class=\"vp-title\">",
+              "              <header class=\"vp-title-header\">",
+              "                <div class=\"headers\"></div>",
+              "              </header>",
+              "            </div>",
+              "            <div class=\"vp-controls\">",
+              "              <button type=\"button\" class=\"play rounded-box state-paused\" aria-label=\"Play\">",
+              "                <div class=\"tiny-bars\">",
+              "                  <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 65 40\" focusable=\"false\">",
+              "                    <defs>",
+              "                      <clipPath id=\"rounded-border\">",
+              "                        <rect height=\"100%\" width=\"100%\" x=\"0\" y=\"0\" rx=\"5\"></rect>",
+              "                      </clipPath>",
+              "                      <pattern id=\"tiny-buffer\" patternUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"10...",
+              "                        <line x1=\"5\" y1=\"-1\" x2=\"-5\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-...",
+              "                        <line x1=\"10\" y1=\"-1\" x2=\"0\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-...",
+              "                        <line x1=\"15\" y1=\"-1\" x2=\"5\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-...",
+              "                      </pattern>",
+              "                    </defs>",
+              "                    <g clip-path=\"url(#rounded-border)\">",
+              "                      <rect class=\"buffer hidden\" height=\"3\" width=\"110%\" x=\"0\" y=\"37\" fill=\"url(#t...",
+              "                      <rect class=\"loaded\" height=\"3\" width=\"0\" x=\"0\" y=\"37\" fill=\"#666\"></rect>",
+              "                      <rect class=\"played fill\" height=\"3\" width=\"0\" x=\"0\" y=\"37\"></rect>",
+              "                    </g>",
+              "                  </svg>",
+              "                </div>",
+              "                <div class=\"play-icon\">",
+              "                  <svg viewBox=\"0 0 20 20\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hi...",
+              "                    <polygon class=\"fill\" points=\"1,0 20,10 1,20\"></polygon>",
+              "                  </svg>",
+              "                </div>",
+              "                <div class=\"pause-icon\">",
+              "                  <svg viewBox=\"0 0 20 20\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hi...",
+              "                    <rect class=\"fill\" width=\"6\" height=\"20\" x=\"0\" y=\"0\"></rect>",
+              "                    <rect class=\"fill\" width=\"6\" height=\"20\" x=\"12\" y=\"0\"></rect>",
+              "                  </svg>",
+              "                </div>",
+              "                <div class=\"replay-icon\">",
+              "                  <svg viewBox=\"-387 605 16 16\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" ar...",
+              "                    <path class=\"fill\" d=\"M-387 606v4c0 .6.4 1 1 1h4c.6 0 1-.4 1-1s-.4-1-1-1h-1.5c1...",
+              "                  </svg>",
+              "                </div>",
+              "              </button>",
+              "              <div class=\"play-bar rounded-box\">",
+              "                <div class=\"vp-live-status\">",
+              "                  <div class=\"vp-live-status-circle offline\"></div>",
+              "                  <span>",
+              "                    LIVE",
+              "                  </span>",
+              "                </div>",
+              "                <div class=\"vp-live-viewer-count\">",
+              "                  <div class=\"vp-live-viewer-count-person\">",
+              "                    <svg width=\"12\" height=\"14\" viewBox=\"0 0 12 14\">",
+              "                      <g transform=\"translate(-5 -4)\" fill=\"#FFF\" fill-rule=\"evenodd\">",
+              "                        <circle cx=\"11\" cy=\"7\" r=\"3\"></circle>",
+              "                        <path d=\"M9 12h4a4 4 0 0 1 4 4v2H5v-2a4 4 0 0 1 4-4z\"></path>",
+              "                      </g>",
+              "                    </svg>",
+              "                  </div>",
+              "                  <span class=\"vp-live-viewer-count-value\">",
+              "                    0",
+              "                  </span>",
+              "                </div>",
+              "                <div class=\"vp-progress\">",
+              "                  <div class=\"focus-target\" role=\"slider\" aria-label=\"Progress Bar\" aria-valuemin=\"...",
+              "                  <div class=\"loaded\"></div>",
+              "                  <div class=\"played\"></div>",
+              "                  <div class=\"cuepoints\"></div>",
+              "                  <div class=\"chapters\"></div>",
+              "                  <div class=\"thumb-preview invisible hidden\" role=\"presentation\" aria-hidden=\"true...",
+              "                    <div class=\"thumb\"></div>",
+              "                  </div>",
+              "                  <div class=\"ghost-timecode invisible hidden\" role=\"presentation\" aria-hidden=\"tru...",
+              "                    <div class=\"box\">",
+              "                      00:00",
+              "                    </div>",
+              "                  </div>",
+              "                  <div class=\"timecode\" role=\"presentation\" aria-hidden=\"true\">",
+              "                    <div class=\"box\">",
+              "                      02:04",
+              "                    </div>",
+              "                  </div>",
+              "                </div>",
+              "                <div class=\"volume\" role=\"slider\" title=\"Volume (use up/down arrow keys to change)\"...",
+              "                  <div></div>",
+              "                  <div></div>",
+              "                  <div></div>",
+              "                  <div></div>",
+              "                  <div></div>",
+              "                </div>",
+              "                <button type=\"button\" class=\"vp-prefs js-prefs\" aria-haspopup=\"true\" aria-label=\"Se...",
+              "                  <svg class=\"icon-gear\" viewBox=\"0 0 16 16\" preserveAspectRatio=\"xMidYMid\" focusab...",
+              "                    <defs>",
+              "                      <clipPath id=\"icon-gear-mask-hd\">",
+              "                        <polygon points=\"19 9.422 19 0 0 0 0 16 4.996 16 6 9.422 19 9.422\"></polygo...",
+              "                      </clipPath>",
+              "                      <clipPath id=\"icon-gear-mask-4k\">",
+              "                        <polygon points=\"19 0 0 0 0 16 .656 16 7.641 9.422 19 9.422\"></polygon>",
+              "                      </clipPath>",
+              "                    </defs>",
+              "                    <g class=\"icon-gear-group\">",
+              "                      <path class=\"icon-gear-cog fill\" d=\"M8.75,0 L7.25,0 C6.69771525,0 6.25,0.4477...",
+              "                    </g>",
+              "                    <g class=\"icon-gear-text icon-gear-text-hd\">",
+              "                      <polygon class=\"fill\" points=\"10.17 12.38 10.46 10.43 12.22 10.43 11.36 16 9....",
+              "                      <path class=\"fill\" d=\"M17.82,11.23 C17.65,10.98 17.32,10.43 15.93,10.43 L13.3...",
+              "                    </g>",
+              "                    <g class=\"icon-gear-text icon-gear-text-4k\">",
+              "                      <polygon class=\"fill\" points=\"11.82 10.29 13.58 10.29 13.19 12.17 13.19 12.17...",
+              "                      <path class=\"fill\" d=\"M7.86,14.9 L5.31,14.9 L5.61,13.41 L8.78,10.41 L10.36,10...",
+              "                    </g>",
+              "                  </svg>",
+              "                </button>",
+              "                <button type=\"button\" class=\"pip hidden enter\" title=\"Enter Picture-in-Picture\" dat...",
+              "                  <svg class=\"pip-icon\" viewBox=\"0 0 16 12\">",
+              "                    <polygon class=\"fill\" points=\"6 8 1 8 1 1 14 1 14 6 15 6 15 0 0 0 0 9 6 9 6 8\">...",
+              "                    <rect class=\"fill\" x=\"7\" y=\"7\" width=\"9\" height=\"5\"></rect>",
+              "                    <polyline class=\"fill enter\" transform=\"translate(4, 4) rotate(180) translate(-...",
+              "                    <polyline class=\"fill return\" points=\"5.33 2 5.33 3 3.67 3 5.67 5 5 5.67 3 3.67...",
+              "                  </svg>",
+              "                </button>",
+              "                <button type=\"button\" class=\"fullscreen\" aria-label=\"Enter full screen\">",
+              "                  <div class=\"fullscreen-icon\">",
+              "                    <svg viewBox=\"0 0 12 12\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-...",
+              "                      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" trans...",
+              "                      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" trans...",
+              "                      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" trans...",
+              "                      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" trans...",
+              "                    </svg>",
+              "                  </div>",
+              "                  <div class=\"unfullscreen-icon\">",
+              "                    <svg viewBox=\"0 0 12 12\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-...",
+              "                      <title id=\"unfullscreen-icon-title\">",
+              "                        undefined",
+              "                      </title>",
+              "                      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 ...",
+              "                      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 ...",
+              "                      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 ...",
+              "                      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 ...",
+              "                    </svg>",
+              "                  </div>",
+              "                </button>",
+              "                <div class=\"logo\">",
+              "                  <a href=\"https://vimeo.com/400330778?embedded=true&source=vimeo_logo&owner=110244...",
+              "                    <svg viewBox=\"0 0 140 40\" preserveAspectRatio=\"xMidYMid\" role=\"img\" focusable=\"...",
+              "                      <title id=\"logo-icon-title\">",
+              "                        Vimeo",
+              "                      </title>",
+              "                      <g>",
+              "                        <path class=\"fill logo-v\" d=\"M31.277 18.832c-.14 3.052-2.27 7.229-6.39 12.5...",
+              "                        <path class=\"fill logo-i\" d=\"M50.613 28.713c-1.313 2.484-3.119 4.733-5.417 ...",
+              "                        <path class=\"fill logo-m\" d=\"M94.543 28.713c-1.314 2.484-3.117 4.733-5.416 ...",
+              "                        <path class=\"fill logo-e\" d=\"M120.922 28.642c-1.361 2.249-4.033 4.495-8.02 ...",
+              "                        <path class=\"fill logo-o\" d=\"M140.018 23.926c-.189 4.31-1.781 8.031-4.783 1...",
+              "                      </g>",
+              "                    </svg>",
+              "                  </a>",
+              "                </div>",
+              "              </div>",
+              "            </div>",
+              "            <div class=\"vp-sidedock hidden\" hidden=\"\">",
+              "              <div class=\"box\">",
+              "                <label class=\"rounded-box hidden like-label\" role=\"presentation\">",
+              "                  <span>",
+              "                    Like",
+              "                  </span>",
+              "                </label>",
+              "                <button type=\"button\" class=\"like-button rounded-box\" aria-label=\"Like (this opens ...",
+              "                  <svg class=\"like-icon\" viewBox=\"0 0 110 81\" preserveAspectRatio=\"xMidYMid\" focusa...",
+              "                    <path class=\"fill\" d=\"M82.496 1c-14.698 0-25.969 11.785-27.496 13.457-1.526-1.6...",
+              "                  </svg>",
+              "                </button>",
+              "              </div>",
+              "              <div class=\"box\">",
+              "                <label class=\"rounded-box hidden watch-later-label\" role=\"presentation\">",
+              "                  <span>",
+              "                    Add to Watch Later",
+              "                  </span>",
+              "                </label>",
+              "                <button type=\"button\" class=\"watch-later-button rounded-box\" aria-label=\"Add to Wat...",
+              "                  <svg class=\"watch-later-icon\" viewBox=\"0 0 20 20\" preserveAspectRatio=\"xMidYMid\" ...",
+              "                    <polyline class=\"fill hour-hand\" points=\"9.64,4.68 10.56,4.68 11.28,11.21 8.93,...",
+              "                    <polyline class=\"fill minute-hand\" points=\"14.19,13.65 13.7,14.14 8.58,10.4 10....",
+              "                    <circle class=\"stroke\" cx=\"10\" cy=\"10\" r=\"8\" stroke-width=\"2\"></circle>",
+              "                  </svg>",
+              "                </button>",
+              "              </div>",
+              "              <div class=\"box\">",
+              "                <label class=\"rounded-box hidden share-label\" role=\"presentation\">",
+              "                  <span>",
+              "                    Share",
+              "                  </span>",
+              "                </label>",
+              "                <button type=\"button\" class=\"share-button rounded-box\" aria-label=\"Share\">",
+              "                  <svg class=\"share-icon\" viewBox=\"0 0 20 20\" preserveAspectRatio=\"xMidYMid\" focusa...",
+              "                    <polygon class=\"fill\" points=\"20,0 0,12 5,15 17,4 7,16 7,19 9,17 14,20\"></polyg...",
+              "                  </svg>",
+              "                </button>",
+              "              </div>",
+              "            </div>",
+              "            <div class=\"vp-unmute hidden\" hidden=\"\">",
+              "              <button type=\"button\" class=\"vp-unmute-button\">",
+              "                <svg class=\"vp-icon-muted\" fill=\"none\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org...",
+              "                  <path d=\"m14 2.2002c1.1263 0.22862 2.1838 0.64652 3.1379 1.2191l-1.5866 1.4104c-0...",
+              "                </svg>",
+              "                <span class=\"vp-unmute-button-title\">",
+              "                  Click to Unmute",
+              "                </span>",
+              "              </button>",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"vp-overlay-wrapper hidden\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"v...",
+              "            <div class=\"vp-overlay-bg\"></div>",
+              "            <div class=\"vp-overlay-cell\">",
+              "              <div class=\"vp-overlay\"></div>",
+              "              <div class=\"vp-overlay-icon-wrapper hidden\">",
+              "                <div class=\"vp-overlay-icon\"></div>",
+              "              </div>",
+              "              <div class=\"vp-overlay-logo logo\"></div>",
+              "            </div>",
+              "            <nav>",
+              "              <button type=\"button\" class=\"vp-nav-prevButton js-back cloaked\" aria-label=\"Back\">",
+              "                <svg class=\"icon-prev\" viewBox=\"0 0 27 48\" preserveAspectRatio=\"xMidYMid\" focusable...",
+              "                  <path class=\"fill\" d=\"M7.243,24L26.414,4.828c0.781-0.781,0.781-2.047,0-2.828L25,0...",
+              "                </svg>",
+              "              </button>",
+              "              <button type=\"button\" class=\"vp-nav-closeButton js-close\" aria-label=\"Close overlay\">",
+              "                <svg viewBox=\"0 0 24 24\">",
+              "                  <path class=\"fill\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17.1404 6.79289C16...",
+              "                </svg>",
+              "              </button>",
+              "            </nav>",
+              "          </div>",
+              "          <div class=\"vp-notification-wrapper hidden\" hidden=\"\">",
+              "            <div class=\"vp-notification-cell\">",
+              "              <div class=\"vp-notification\" role=\"dialog\" aria-live=\"assertive\"></div>",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"vp-stats-debug rounded-box hidden\" aria-hidden=\"true\" hidden=\"\"></div>",
+              "          <div class=\"vp-nudge-wrapper hidden\"></div>",
+              "          <span id=\"new-window\" hidden=\"\">",
+              "            This opens in a new window.",
+              "          </span>",
+              "          <div class=\"vp-alert hidden\" role=\"alertdialog\" aria-atomic=\"true\" hidden=\"\">",
+              "            <button data-close=\"\" aria-label=\"Close alert\" class=\"close\">",
+              "              <svg class=\"icon-close\" viewBox=\"0 0 64 64\" preserveAspectRatio=\"xMidYMid\" focusable=...",
+              "                <path class=\"fill\" d=\"M60 48.796l-16.812-16.796 16.812-16.796-11.204-11.204-16.796 ...",
+              "              </svg>",
+              "            </button>",
+              "          </div>",
+              "        </div>",
+              "        <script>",
+              "          (function(document, player) { var config = {\"cdn_url\":\"https://f.vimeocdn.com\",\"vimeo_api...",
+              "        </script>",
+              "      </body>",
+              "    </html>",
+              "</iframe>"
+            ]
+          }
+        },
+        {
+          "index": 983,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r18",
+            "ruleSummary": "aria-* states and properties are allowed",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r18",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+                "name": "ARIA5",
+                "title": "Using WAI-ARIA state and property attributes to expose the state of a user interface"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "aria-expanded",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/@aria-expanded",
+            "codeLines": [
+              "aria-expanded=\"true\""
+            ]
+          }
+        },
+        {
+          "index": 985,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r18",
+            "ruleSummary": "aria-* states and properties are allowed",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r18",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+                "name": "ARIA5",
+                "title": "Using WAI-ARIA state and property attributes to expose the state of a user interface"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "aria-expanded",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/@aria-expanded",
+            "codeLines": [
+              "aria-expanded=\"true\""
+            ]
+          }
+        },
+        {
+          "index": 987,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r18",
+            "ruleSummary": "aria-* states and properties are allowed",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r18",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+                "name": "ARIA5",
+                "title": "Using WAI-ARIA state and property attributes to expose the state of a user interface"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "aria-expanded",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/@aria-expanded",
+            "codeLines": [
+              "aria-expanded=\"true\""
+            ]
+          }
+        },
+        {
+          "index": 989,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r18",
+            "ruleSummary": "aria-* states and properties are allowed",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r18",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+                "name": "ARIA5",
+                "title": "Using WAI-ARIA state and property attributes to expose the state of a user interface"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "aria-expanded",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/@aria-expanded",
+            "codeLines": [
+              "aria-expanded=\"true\""
+            ]
+          }
+        },
+        {
+          "index": 1149,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/header[1]/div[1]/nav[1]/h1[1]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg id=\"a579eda8-e0fc-4831-86d8-e960b25a387d\" data-name=\"artwork\" xmlns=\"http://www.w3.org/2000/sv...",
+              "  <rect x=\"30.74\" width=\"60.85\" height=\"61.17\" style=\"fill:#ffd100\"></rect>",
+              "  <path d=\"M30.58,61.17A30.59,30.59,0,0,0,61.17,91.75V30.58A30.6,30.6,0,0,0,30.58,61.17Z\" transform...",
+              "  <path d=\"M61.17,30.58V91.75a30.59,30.59,0,0,0,0-61.17Z\" transform=\"translate(-30.58 -30.58)\" styl...",
+              "  <path d=\"M167.61,48.48a15.12,15.12,0,0,0-7.76-2.1c-8.68,0-14.45,6.25-14.45,14.71,0,8.84,6.36,14.7...",
+              "  <path d=\"M172.82,42.4h5.07V79.9h-5.07Z\" transform=\"translate(-30.58 -30.58)\" style=\"fill:#231f20\"...",
+              "  <path d=\"M205.86,78.77a21.05,21.05,0,0,1-8.68,1.78c-9.75,0-14.23-5.93-14.23-14.88,0-8.14,5.12-13....",
+              "  <path d=\"M214.26,54.35a17.48,17.48,0,0,1,9.05-2.58c7.87,0,11.05,3.88,11.05,11.37V74.51a42.57,42.5...",
+              "  <path d=\"M240.28,52.41H245v4.26h.11a8.21,8.21,0,0,1,7.51-4.9,5,5,0,0,1,2.33.37v4.42a6,6,0,0,0-2.2...",
+              "  <path d=\"M290.67,79.9H284.8L278,56.83h-.11L271.29,79.9h-5.87l-8.51-27.49h5.55l6,22.75h.11l6.68-22...",
+              "  <path d=\"M302.3,54.35a17.48,17.48,0,0,1,9.05-2.58c7.87,0,11,3.88,11,11.37V74.51a42.57,42.57,0,0,0...",
+              "  <path d=\"M327,87.2a7.64,7.64,0,0,0,2.37.43c4.53,0,6.07-6.11,6.07-6.65a15.62,15.62,0,0,0-1-2.91l-9...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 1263,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "svg",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]/svg[1]",
+            "codeLines": [
+              "<svg id=\"a579eda8-e0fc-4831-86d8-e960b25a387d\" data-name=\"artwork\" xmlns=\"http://www.w3.org/2000/sv...",
+              "  <rect x=\"30.74\" width=\"60.85\" height=\"61.17\" style=\"fill:#ffd100\"></rect>",
+              "  <path d=\"M30.58,61.17A30.59,30.59,0,0,0,61.17,91.75V30.58A30.6,30.6,0,0,0,30.58,61.17Z\" transform...",
+              "  <path d=\"M61.17,30.58V91.75a30.59,30.59,0,0,0,0-61.17Z\" transform=\"translate(-30.58 -30.58)\" styl...",
+              "  <path d=\"M167.61,48.48a15.12,15.12,0,0,0-7.76-2.1c-8.68,0-14.45,6.25-14.45,14.71,0,8.84,6.36,14.7...",
+              "  <path d=\"M172.82,42.4h5.07V79.9h-5.07Z\" transform=\"translate(-30.58 -30.58)\" style=\"fill:#231f20\"...",
+              "  <path d=\"M205.86,78.77a21.05,21.05,0,0,1-8.68,1.78c-9.75,0-14.23-5.93-14.23-14.88,0-8.14,5.12-13....",
+              "  <path d=\"M214.26,54.35a17.48,17.48,0,0,1,9.05-2.58c7.87,0,11.05,3.88,11.05,11.37V74.51a42.57,42.5...",
+              "  <path d=\"M240.28,52.41H245v4.26h.11a8.21,8.21,0,0,1,7.51-4.9,5,5,0,0,1,2.33.37v4.42a6,6,0,0,0-2.2...",
+              "  <path d=\"M290.67,79.9H284.8L278,56.83h-.11L271.29,79.9h-5.87l-8.51-27.49h5.55l6,22.75h.11l6.68-22...",
+              "  <path d=\"M302.3,54.35a17.48,17.48,0,0,1,9.05-2.58c7.87,0,11,3.88,11,11.37V74.51a42.57,42.57,0,0,0...",
+              "  <path d=\"M327,87.2a7.64,7.64,0,0,0,2.37.43c4.53,0,6.07-6.11,6.07-6.65a15.62,15.62,0,0,0-1-2.91l-9...",
+              "</svg>"
+            ]
+          }
+        },
+        {
+          "index": 1401,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h4",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]",
+            "codeLines": [
+              "<h4>",
+              "  <a href=\"https://twitter.com/ClearwayEnergy\" target=\"_blank\">",
+              "    ClearwayEnergy",
+              "  </a>",
+              "</h4>"
+            ]
+          }
+        },
+        {
+          "index": 1404,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h4",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[10]/div[1]/div[1]/div[1]/h4[1]",
+            "codeLines": [
+              "<h4 class=\"longer-cta-text\" style=\"text-align: center;\">",
+              "  Interested in learning more?",
+              "</h4>"
+            ]
+          }
+        },
+        {
+          "index": 1416,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "About Clearway"
+            ]
+          }
+        },
+        {
+          "index": 1417,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/ul[1]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "What We Do"
+            ]
+          }
+        },
+        {
+          "index": 1418,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Our Vision & Values"
+            ]
+          }
+        },
+        {
+          "index": 1419,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/ul[1]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "Our Leadership"
+            ]
+          }
+        },
+        {
+          "index": 1420,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/ul[1]/li[4]/a[1]/text()[1]",
+            "codeLines": [
+              "Our People"
+            ]
+          }
+        },
+        {
+          "index": 1421,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/ul[1]/li[5]/a[1]/text()[1]",
+            "codeLines": [
+              "Our Partners"
+            ]
+          }
+        },
+        {
+          "index": 1422,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/ul[1]/li[6]/a[1]/text()[1]",
+            "codeLines": [
+              "Our Public Affiliate"
+            ]
+          }
+        },
+        {
+          "index": 1423,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/ul[1]/li[7]/a[1]/text()[1]",
+            "codeLines": [
+              "ESG at Clearway"
+            ]
+          }
+        },
+        {
+          "index": 1424,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Our Projects"
+            ]
+          }
+        },
+        {
+          "index": 1425,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/ul[1]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Operating Assets"
+            ]
+          }
+        },
+        {
+          "index": 1426,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Development Projects"
+            ]
+          }
+        },
+        {
+          "index": 1427,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/ul[1]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "Community Solar & Distributed Solar"
+            ]
+          }
+        },
+        {
+          "index": 1428,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/ul[1]/li[4]/a[1]/text()[1]",
+            "codeLines": [
+              "Utility-Scale Wind & Solar"
+            ]
+          }
+        },
+        {
+          "index": 1429,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "Our Customers"
+            ]
+          }
+        },
+        {
+          "index": 1430,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/ul[1]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Utilities"
+            ]
+          }
+        },
+        {
+          "index": 1431,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Business & Government"
+            ]
+          }
+        },
+        {
+          "index": 1432,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/ul[1]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "Residential"
+            ]
+          }
+        },
+        {
+          "index": 1433,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]/text()[1]",
+            "codeLines": [
+              "Newsroom"
+            ]
+          }
+        },
+        {
+          "index": 1434,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Press Releases"
+            ]
+          }
+        },
+        {
+          "index": 1435,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "In the News"
+            ]
+          }
+        },
+        {
+          "index": 1436,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "Blog"
+            ]
+          }
+        },
+        {
+          "index": 1437,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[4]/a[1]/text()[1]",
+            "codeLines": [
+              "Social Media"
+            ]
+          }
+        },
+        {
+          "index": 1438,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[5]/a[1]/text()[1]",
+            "codeLines": [
+              "Join Our Team"
+            ]
+          }
+        },
+        {
+          "index": 1439,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[6]/a[1]/text()[1]",
+            "codeLines": [
+              "Contact Us"
+            ]
+          }
+        },
+        {
+          "index": 1535,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/header[1]/div[1]/nav[1]/div[1]/button[1]",
+            "codeLines": [
+              "<button class=\"primary-nav\" aria-label=\"Site Navigation\" aria-expanded=\"false\">",
+              "  <span></span>",
+              "  <span></span>",
+              "  <span></span>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 1538,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]",
+            "codeLines": [
+              "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\" aria-ha...",
+              "  <a href=\"https://www.clearwayenergygroup.com/about-clearway/\">",
+              "    About Clearway",
+              "  </a>",
+              "  <span class=\"mobile-expand\">",
+              "    <i class=\"rico-angle-down-light\"></i>",
+              "  </span>",
+              "  <ul class=\"sub-menu\">",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/about-clearway/what-we-do/\">",
+              "        What We Do",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/about-clearway/our-vision-values/\">",
+              "        Our Vision & Values",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/about-clearway/our-leadership/\">",
+              "        Our Leadership",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/about-clearway/our-people/\">",
+              "        Our People",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/about-clearway/our-partners/\">",
+              "        Our Partners",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/about-clearway/our-public-affiliate/\">",
+              "        Our Public Affiliate",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/esg/\">",
+              "        ESG at Clearway",
+              "      </a>",
+              "    </li>",
+              "  </ul>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 1547,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[2]",
+            "codeLines": [
+              "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\" aria-ha...",
+              "  <a href=\"https://www.clearwayenergygroup.com/our-projects/\">",
+              "    Our Projects",
+              "  </a>",
+              "  <span class=\"mobile-expand\">",
+              "    <i class=\"rico-angle-down-light\"></i>",
+              "  </span>",
+              "  <ul class=\"sub-menu\">",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/our-projects/operating-assets/\">",
+              "        Operating Assets",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/our-projects/development-projects/\">",
+              "        Development Projects",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/our-projects/community-solar-distributed-solar/\"...",
+              "        Community Solar & Distributed Solar",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/our-projects/utility-scale-wind-solar/\">",
+              "        Utility-Scale Wind & Solar",
+              "      </a>",
+              "    </li>",
+              "  </ul>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 1553,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[3]",
+            "codeLines": [
+              "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\" aria-ha...",
+              "  <a href=\"https://www.clearwayenergygroup.com/our-customers/\">",
+              "    Our Customers",
+              "  </a>",
+              "  <span class=\"mobile-expand\">",
+              "    <i class=\"rico-angle-down-light\"></i>",
+              "  </span>",
+              "  <ul class=\"sub-menu\">",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/our-customers/utilities/\">",
+              "        Utilities",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/our-customers/business-government/\">",
+              "        Business & Government",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/our-customers/residential-community-solar/\">",
+              "        Residential",
+              "      </a>",
+              "    </li>",
+              "  </ul>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 1558,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[4]",
+            "codeLines": [
+              "<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\" aria-ha...",
+              "  <a href=\"https://www.clearwayenergygroup.com/newsroom/\">",
+              "    Newsroom",
+              "  </a>",
+              "  <span class=\"mobile-expand\">",
+              "    <i class=\"rico-angle-down-light\"></i>",
+              "  </span>",
+              "  <ul class=\"sub-menu\">",
+              "    <li class=\"menu-item menu-item-type-taxonomy menu-item-object-category\">",
+              "      <a href=\"/press-releases/\">",
+              "        Press Releases",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-taxonomy menu-item-object-category\">",
+              "      <a href=\"/in-the-news/\">",
+              "        In the News",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-taxonomy menu-item-object-category\">",
+              "      <a href=\"/blog/\">",
+              "        Blog",
+              "      </a>",
+              "    </li>",
+              "    <li class=\"menu-item menu-item-type-post_type menu-item-object-page\">",
+              "      <a href=\"https://www.clearwayenergygroup.com/newsroom/social-media/\">",
+              "        Social Media",
+              "      </a>",
+              "    </li>",
+              "  </ul>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 1568,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/button[1]",
+            "codeLines": [
+              "<button type=\"button\" class=\"play rounded-box state-paused\" aria-label=\"Play\">",
+              "  <div class=\"tiny-bars\">",
+              "    <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 65 40\" focusable=\"false\">",
+              "      <defs>",
+              "        <clipPath id=\"rounded-border\">",
+              "          <rect height=\"100%\" width=\"100%\" x=\"0\" y=\"0\" rx=\"5\"></rect>",
+              "        </clipPath>",
+              "        <pattern id=\"tiny-buffer\" patternUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"10\" height=\"10\" ...",
+              "          <line x1=\"5\" y1=\"-1\" x2=\"-5\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-linecap=\"butt\"...",
+              "          <line x1=\"10\" y1=\"-1\" x2=\"0\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-linecap=\"butt\"...",
+              "          <line x1=\"15\" y1=\"-1\" x2=\"5\" y2=\"10\" stroke-width=\"2\" stroke=\"#666\" stroke-linecap=\"butt\"...",
+              "        </pattern>",
+              "      </defs>",
+              "      <g clip-path=\"url(#rounded-border)\">",
+              "        <rect class=\"buffer hidden\" height=\"3\" width=\"110%\" x=\"0\" y=\"37\" fill=\"url(#tiny-buffer)\"><...",
+              "        <rect class=\"loaded\" height=\"3\" width=\"0\" x=\"0\" y=\"37\" fill=\"#666\"></rect>",
+              "        <rect class=\"played fill\" height=\"3\" width=\"0\" x=\"0\" y=\"37\"></rect>",
+              "      </g>",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"play-icon\">",
+              "    <svg viewBox=\"0 0 20 20\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hidden=\"true\">",
+              "      <polygon class=\"fill\" points=\"1,0 20,10 1,20\"></polygon>",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"pause-icon\">",
+              "    <svg viewBox=\"0 0 20 20\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hidden=\"true\">",
+              "      <rect class=\"fill\" width=\"6\" height=\"20\" x=\"0\" y=\"0\"></rect>",
+              "      <rect class=\"fill\" width=\"6\" height=\"20\" x=\"12\" y=\"0\"></rect>",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"replay-icon\">",
+              "    <svg viewBox=\"-387 605 16 16\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hidden=\"tru...",
+              "      <path class=\"fill\" d=\"M-387 606v4c0 .6.4 1 1 1h4c.6 0 1-.4 1-1s-.4-1-1-1h-1.5c1.1-1.2 2.7-2 4...",
+              "    </svg>",
+              "  </div>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 1571,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/button[1]",
+            "codeLines": [
+              "<button type=\"button\" class=\"vp-prefs js-prefs\" aria-haspopup=\"true\" aria-label=\"Settings\">",
+              "  <svg class=\"icon-gear\" viewBox=\"0 0 16 16\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-...",
+              "    <defs>",
+              "      <clipPath id=\"icon-gear-mask-hd\">",
+              "        <polygon points=\"19 9.422 19 0 0 0 0 16 4.996 16 6 9.422 19 9.422\"></polygon>",
+              "      </clipPath>",
+              "      <clipPath id=\"icon-gear-mask-4k\">",
+              "        <polygon points=\"19 0 0 0 0 16 .656 16 7.641 9.422 19 9.422\"></polygon>",
+              "      </clipPath>",
+              "    </defs>",
+              "    <g class=\"icon-gear-group\">",
+              "      <path class=\"icon-gear-cog fill\" d=\"M8.75,0 L7.25,0 C6.69771525,0 6.25,0.44771525 6.25,1 L6.2...",
+              "    </g>",
+              "    <g class=\"icon-gear-text icon-gear-text-hd\">",
+              "      <polygon class=\"fill\" points=\"10.17 12.38 10.46 10.43 12.22 10.43 11.36 16 9.6 16 9.95 13.76 ...",
+              "      <path class=\"fill\" d=\"M17.82,11.23 C17.65,10.98 17.32,10.43 15.93,10.43 L13.37,10.43 L12.51,1...",
+              "    </g>",
+              "    <g class=\"icon-gear-text icon-gear-text-4k\">",
+              "      <polygon class=\"fill\" points=\"11.82 10.29 13.58 10.29 13.19 12.17 13.19 12.17 15.19 10.27 17....",
+              "      <path class=\"fill\" d=\"M7.86,14.9 L5.31,14.9 L5.61,13.41 L8.78,10.41 L10.36,10.41 L9.72,13.51 ...",
+              "    </g>",
+              "  </svg>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 1572,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/button[3]",
+            "codeLines": [
+              "<button type=\"button\" class=\"fullscreen\" aria-label=\"Enter full screen\">",
+              "  <div class=\"fullscreen-icon\">",
+              "    <svg viewBox=\"0 0 12 12\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-hidden=\"true\">",
+              "      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" transform=\"translate(...",
+              "      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" transform=\"translate(...",
+              "      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" transform=\"translate(...",
+              "      <polyline class=\"fill\" points=\"6,6 5.9,2 4.9,3 2.9,1 1,2.9 3,4.9 2,5.9\" transform=\"translate(...",
+              "    </svg>",
+              "  </div>",
+              "  <div class=\"unfullscreen-icon\">",
+              "    <svg viewBox=\"0 0 12 12\" preserveAspectRatio=\"xMidYMid\" focusable=\"false\" aria-labelledby=\"unfu...",
+              "      <title id=\"unfullscreen-icon-title\">",
+              "        undefined",
+              "      </title>",
+              "      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 -5,-1.1\" transfo...",
+              "      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 -5,-1.1\" transfo...",
+              "      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 -5,-1.1\" transfo...",
+              "      <polyline class=\"fill\" points=\"-1,-1 -1.1,-5 -2.1,-4 -4.1,-6 -6,-4.1 -4,-2.1 -5,-1.1\" transfo...",
+              "    </svg>",
+              "  </div>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 1573,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/div[5]/a[1]",
+            "codeLines": [
+              "<a href=\"https://vimeo.com/400330778?embedded=true&source=vimeo_logo&owner=110244094\" target=\"_blan...",
+              "  <svg viewBox=\"0 0 140 40\" preserveAspectRatio=\"xMidYMid\" role=\"img\" focusable=\"false\" aria-labell...",
+              "    <title id=\"logo-icon-title\">",
+              "      Vimeo",
+              "    </title>",
+              "    <g>",
+              "      <path class=\"fill logo-v\" d=\"M31.277 18.832c-.14 3.052-2.27 7.229-6.39 12.531-4.259 5.536-7.8...",
+              "      <path class=\"fill logo-i\" d=\"M50.613 28.713c-1.313 2.484-3.119 4.733-5.417 6.748-3.143 2.718-...",
+              "      <path class=\"fill logo-m\" d=\"M94.543 28.713c-1.314 2.484-3.117 4.733-5.416 6.748-3.145 2.718-...",
+              "      <path class=\"fill logo-e\" d=\"M120.922 28.642c-1.361 2.249-4.033 4.495-8.02 6.743-4.971 2.856-...",
+              "      <path class=\"fill logo-o\" d=\"M140.018 23.926c-.189 4.31-1.781 8.031-4.783 11.169-3.002 3.137-...",
+              "    </g>",
+              "  </svg>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1621,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()[1]",
+            "codeLines": [
+              "Clearway Energy Group"
+            ]
+          }
+        },
+        {
+          "index": 1622,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "A world powered by clean energy"
+            ]
+          }
+        },
+        {
+          "index": 1624,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/p[1]/text()[1]",
+            "codeLines": [
+              "Clearway’s vision is a world powered by clean energy. Our more than 600 employees work every day to..."
+            ]
+          }
+        },
+        {
+          "index": 1632,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Our Projects"
+            ]
+          }
+        },
+        {
+          "index": 1633,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Clearway’s operating footprint and development pipeline include utility-scale wind and solar assets..."
+            ]
+          }
+        },
+        {
+          "index": 1634,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[6]/div[1]/div[2]/h2[1]/text()[1]",
+            "codeLines": [
+              "Who We Serve"
+            ]
+          }
+        },
+        {
+          "index": 1635,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[6]/div[1]/div[2]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "At our company’s foundation are our customers and our partners. Hand in hand with utilities, busine..."
+            ]
+          }
+        },
+        {
+          "index": 1636,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[2]/p[1]/text()[1]",
+            "codeLines": [
+              "Congrats to our Hawai’i construction team for installing the very last solar panel at our Mililani ..."
+            ]
+          }
+        },
+        {
+          "index": 1637,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[3]/text()[1]",
+            "codeLines": [
+              "Jan 19, 2022 05:41 pm"
+            ]
+          }
+        },
+        {
+          "index": 1638,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[8]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Join Our Team"
+            ]
+          }
+        },
+        {
+          "index": 1639,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[8]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Clearway employs over 600 people across our main offices in San Francisco, Scottsdale, Houston, Pri..."
+            ]
+          }
+        },
+        {
+          "index": 1641,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[2]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "The overlapping circle and square are registered service marks of Clearway Energy Group LLC."
+            ]
+          }
+        },
+        {
+          "index": 1642,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[5]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "©2022 Clearway Energy Group LLC.  All rights reserved."
+            ]
+          }
+        },
+        {
+          "index": 1661,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()[1]",
+            "codeLines": [
+              "Clearway Energy Group"
+            ]
+          }
+        },
+        {
+          "index": 1662,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "A world powered by clean energy"
+            ]
+          }
+        },
+        {
+          "index": 1672,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Our Projects"
+            ]
+          }
+        },
+        {
+          "index": 1674,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[6]/div[1]/div[2]/h2[1]/text()[1]",
+            "codeLines": [
+              "Who We Serve"
+            ]
+          }
+        },
+        {
+          "index": 1677,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[3]/text()[1]",
+            "codeLines": [
+              "Jan 19, 2022 05:41 pm"
+            ]
+          }
+        },
+        {
+          "index": 1678,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[8]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Join Our Team"
+            ]
+          }
+        },
+        {
+          "index": 1682,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[2]/div[5]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "©2022 Clearway Energy Group LLC.  All rights reserved."
+            ]
+          }
+        },
+        {
+          "index": 1728,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Clearway’s vision is a world powered by clean energy. Our more than 600 employees work every day ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1814,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h4",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[5]/ul[1]/li[1]/h4[1]",
+            "codeLines": [
+              "<h4>",
+              "  <a href=\"https://www.clearwayenergygroup.com/join-our-team/\">",
+              "    Join Our Team",
+              "  </a>",
+              "</h4>"
+            ]
+          }
+        },
+        {
+          "index": 1821,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r80",
+            "ruleSummary": "Paragraphs of text do not have line heights defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r80",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Clearway’s vision is a world powered by clean energy. Our more than 600 employees work every day ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1825,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"s\" class=\"form-control\" placeholder=\"Search Clearway Energy Group\">"
+            ]
+          }
+        },
+        {
+          "index": 1826,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/div[3]/div[1]",
+            "codeLines": [
+              "<div class=\"focus-target\" role=\"slider\" aria-label=\"Progress Bar\" aria-valuemin=\"0\" aria-valuemax=\"..."
+            ]
+          }
+        },
+        {
+          "index": 1827,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/div[2]/div[7]/div[3]/div[1]/div[4]",
+            "codeLines": [
+              "<div class=\"volume\" role=\"slider\" title=\"Volume (use up/down arrow keys to change)\" aria-valuemin=\"...",
+              "  <div></div>",
+              "  <div></div>",
+              "  <div></div>",
+              "  <div></div>",
+              "  <div></div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 1828,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()[1]",
+            "codeLines": [
+              "Clearway Energy Group"
+            ]
+          }
+        },
+        {
+          "index": 1829,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "A world powered by clean energy"
+            ]
+          }
+        },
+        {
+          "index": 1853,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      7
+    ]
+  ]
+}

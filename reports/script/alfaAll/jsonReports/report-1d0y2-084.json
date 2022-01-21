@@ -1,0 +1,2115 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.blankrome.com/",
+      "what": "Blank Rome home",
+      "result": "https://www.blankrome.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.blankrome.com/",
+      "result": [
+        {
+          "index": 92,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r13",
+            "ruleSummary": "<iframe> elements have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r13",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "iframe",
+            "path": "/html[1]/body[1]/div[1]/div[3]/footer[1]/div[1]/div[1]/div[2]/iframe[1]",
+            "codeLines": [
+              "<iframe src=\"https://preferences.blankrome.com/login/login-iframe.aspx\" frameborder=\"0\" style=\"min-...",
+              "  #document",
+              "    <!doctype html>",
+              "    <!--[if lt IE 7 ]> <html class=\"no-js ie6\"> <![endif]-->",
+              "    <!--[if IE 7 ]> <html class=\"no-js ie7\"> <![endif]-->",
+              "    <!--[if IE 8 ]> <html class=\"no-js ie8\"> <![endif]-->",
+              "    <!--[if IE 9 ]> <html class=\"no-js ie9\"> <![endif]-->",
+              "    <!--[if (gt IE 9)|!(IE)]><!-->",
+              "    <html class=\"no-js\">",
+              "      <!--<![endif]-->",
+              "      <head>",
+              "        <style type=\"text/css\">",
+              "          @charset \"UTF-8\";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloa...",
+              "        </style>",
+              "        <meta name=\"description\" content=\" \">",
+              "        <meta name=\"twitter:description\" content=\" \">",
+              "        <title>",
+              "          Blank Rome LLP | Preference Manager | Login iFrame",
+              "        </title>",
+              "        <meta charset=\"utf-8\">",
+              "        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+              "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=yes\">",
+              "        <!--<script type=\"text/javascript\" src=\"/_js/jquery-1.11.2.min.js\"></script>-->",
+              "        <script type=\"text/javascript\" src=\"/_js/angular-1.4.7.min.js\"></script>",
+              "        <script type=\"text/javascript\" src=\"/_js/app.js\"></script>",
+              "        <script type=\"text/javascript\" src=\"/_js/controllers/tabController.js\"></script>",
+              "        <!--<script type=\"text/javascript\" src=\"/_js/main.js\"></script>-->",
+              "        <link rel=\"stylesheet\" type=\"text/css\" href=\"/_css/components/bootstrap.css\">",
+              "        <link rel=\"stylesheet\" type=\"text/css\" href=\"/_css/default.css\">",
+              "        <meta prefix=\"og: http://ogp.me/ns#\" property=\"og:description\" content=\" \">",
+              "        <meta prefix=\"og: http://ogp.me/ns#\" property=\"og:image\" content=\"\">",
+              "        <meta name=\"twitter:image\" content=\"\">",
+              "      </head>",
+              "      <body class=\"login login--iframe ng-scope\" ng-app=\"vxChartApp\">",
+              "        <div class=\"wrapper\">",
+              "          <div class=\"login-container\">",
+              "            <div class=\"login-box login-box--iframe ng-scope\" ng-controller=\"tabController\">",
+              "              <ul class=\"tabs\">",
+              "                <li ng-class=\"{selected: tab == 'tab-one'}\">",
+              "                  <a href=\"javascript:void(0)\" ng-click=\"tabbing('tab-one')\">",
+              "                    Login",
+              "                  </a>",
+              "                </li>",
+              "                <li ng-class=\"{selected: tab == 'tab-two'}\" class=\"selected\">",
+              "                  <a href=\"javascript:void(0)\" ng-click=\"tabbing('tab-two')\">",
+              "                    Register",
+              "                  </a>",
+              "                </li>",
+              "              </ul>",
+              "              <div class=\"content-area\">",
+              "                <div class=\"login-content ng-hide\" ng-show=\"tab == 'tab-one'\">",
+              "                  <header>",
+              "                    <h2>",
+              "                      If you have an existing account, sign in with your email and password.",
+              "                    </h2>",
+              "                  </header>",
+              "                  <section class=\"form\">",
+              "                    <div class=\"loginError\" style=\"padding-bottom:10px;color:#FF0000\"></div>",
+              "                    <div id=\"login-form-container\">",
+              "                      <form action=\"/API/Login\" method=\"post\" class=\"form ng-pristine ng-valid\" rol...",
+              "                        <p class=\"form-group\">",
+              "                          <label id=\"LoginBox_LoginEmailAddressLabel\" for=\"LoginEmailAddress\">",
+              "                            Email",
+              "                          </label>",
+              "                          <input name=\"LoginBox$LoginEmailAddress\" type=\"text\" id=\"LoginBox_LoginEm...",
+              "                        </p>",
+              "                        <p class=\"form-group\">",
+              "                          <label id=\"LoginBox_LoginPasswordLabel\" for=\"LoginPassword\">",
+              "                            Password",
+              "                          </label>",
+              "                          <input name=\"LoginBox$LoginPassword\" type=\"password\" id=\"LoginBox_LoginPa...",
+              "                        </p>",
+              "                        <p class=\"form-group\">",
+              "                          <input type=\"submit\" class=\"btn btn-default branded_button\" value=\"Login\"...",
+              "                        </p>",
+              "                      </form>",
+              "                    </div>",
+              "                    <script>",
+              "                      document.querySelector('#login-form-container form').addEventListener('submit...",
+              "                        this.target = '_blank';",
+              "                        localStorage.setItem('register--current-tab', 'tab-one');",
+              "                      });",
+              "                    </script>",
+              "                    <div class=\"forgot-password\">",
+              "                      <p>",
+              "                        <a href=\"/forgotten-password/forgotten-password.aspx\">",
+              "                          Forgot your password?",
+              "                        </a>",
+              "                      </p>",
+              "                    </div>",
+              "                    <!--<a href='/API/LinkedInLoginInitiator?action=login'>",
+              "                        ",
+              "                        <img alt=\"Connect With LinkedIn\" src=\"/_images/Sign-In-small---Default copy...",
+              "                    ",
+              "                    ",
+              "                    </a>-->",
+              "                    <!--<div class=\"linkedin-login\">",
+              "                    \t<span>Log In With</span>",
+              "                    \t<a href=\"/API/LinkedInLoginInitiator?action=login\">",
+              "                    \t\t<img src=\"../_images/button-linkedin-login.jpg\" alt=\"LinkedIn\">",
+              "                    \t</a>",
+              "                    </div>-->",
+              "                  </section>",
+              "                </div>",
+              "                <div class=\"register-content\" ng-show=\"tab == 'tab-two'\">",
+              "                  <header>",
+              "                    <h2>",
+              "                      Enter details to create an account",
+              "                    </h2>",
+              "                  </header>",
+              "                  <section class=\"form\">",
+              "                    <div class=\"\"></div>",
+              "                    <form method=\"post\" action=\"/API/AlumniRegisterProfile\" accept-charset=\"utf-8\" ...",
+              "                      <p class=\"form-group\">",
+              "                        <label for=\"IAForm_FirstName\">",
+              "                          First Name",
+              "                        </label>",
+              "                        <input type=\"text\" value=\"\" id=\"IAForm_FirstName\" class=\"form-control requi...",
+              "                      </p>",
+              "                      <p class=\"form-group\">",
+              "                        <label for=\"IAForm_LastName\">",
+              "                          Last Name",
+              "                        </label>",
+              "                        <input type=\"text\" value=\"\" id=\"IAForm_LastName\" class=\"form-control requir...",
+              "                      </p>",
+              "                      <p class=\"form-group\">",
+              "                        <label for=\"VxForm_Email\">",
+              "                          Email",
+              "                        </label>",
+              "                        <input type=\"text\" value=\"\" id=\"IAForm_Email\" class=\"form-control email req...",
+              "                      </p>",
+              "                      <div class=\"form-group row hide\">",
+              "                        <div class=\"col-sm-offset-3\">",
+              "                          <input type=\"radio\" name=\"FolderSitePageId\" value=\"4801\" style=\"width:20p...",
+              "                          Preference Manager",
+              "                        </div>",
+              "                      </div>",
+              "                      <p class=\"form-group\">",
+              "                        <input class=\"btn btn-default branded_button join-now\" type=\"submit\" value=...",
+              "                      </p>",
+              "                    </form>",
+              "                  </section>",
+              "                </div>",
+              "              </div>",
+              "            </div>",
+              "          </div>",
+              "        </div>",
+              "        <!--<script>",
+              "        window.onload = function() {",
+              "          document.getElementById(\"LoginBox_LoginEmailAddress\").focus();",
+              "        };",
+              "        </script>-->",
+              "        <!-- ReportSnippetChartInitBlockStart -->",
+              "        <!-- ReportSnippetChartInitBlockEnd -->",
+              "      </body>",
+              "    </html>",
+              "</iframe>"
+            ]
+          }
+        },
+        {
+          "index": 317,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r17",
+            "ruleSummary": "Elements with aria-hidden='true' are not focusable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r17",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a href=\"/news/blank-rome-announces-2022-promotions-11-partners-1-counsel\" class=\"button | button-r...",
+              "  Learn more",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 366,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "nav",
+            "path": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/nav[1]",
+            "codeLines": [
+              "<nav role=\"navigation\" aria-labelledby=\"block-blankrome-main-menu-menu\" id=\"block-blankrome-main-me...",
+              "  <h2 class=\"visually-hidden\" id=\"block-blankrome-main-menu-menu\">",
+              "    Main navigation",
+              "  </h2>",
+              "  <ul>",
+              "    <li>",
+              "      <a href=\"/people/a\" data-drupal-link-system-path=\"people/a\">",
+              "        People",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/services-and-industries\" data-drupal-link-system-path=\"services-and-industries\">",
+              "        Services & Industries",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/news-and-events\" data-drupal-link-system-path=\"news-and-events\">",
+              "        News & Events",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/diversity-inclusion\" data-drupal-link-system-path=\"node/887\">",
+              "        Diversity & Inclusion",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/pro-bono\" data-drupal-link-system-path=\"node/872\">",
+              "        Pro Bono",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/careers\" data-drupal-link-system-path=\"node/892\">",
+              "        Careers",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/about-us\" data-drupal-link-system-path=\"node/869\">",
+              "        About Us",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/special-topics/coronavirus-covid-19-task-force\" data-drupal-link-system-path=\"node/...",
+              "        Coronavirus Task Force",
+              "      </a>",
+              "    </li>",
+              "  </ul>",
+              "</nav>"
+            ]
+          }
+        },
+        {
+          "index": 367,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h2",
+            "path": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/nav[1]/h2[1]",
+            "codeLines": [
+              "<h2 class=\"visually-hidden\" id=\"block-blankrome-main-menu-menu\">",
+              "  Main navigation",
+              "</h2>"
+            ]
+          }
+        },
+        {
+          "index": 374,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "nav",
+            "path": "/html[1]/body[1]/div[1]/header[2]/div[1]/div[2]/nav[1]/div[1]/nav[1]",
+            "codeLines": [
+              "<nav role=\"navigation\" aria-labelledby=\"block-blankrome-main-menu-menu\" id=\"block-blankrome-main-me...",
+              "  <h2 class=\"visually-hidden\" id=\"block-blankrome-main-menu-menu\">",
+              "    Main navigation",
+              "  </h2>",
+              "  <ul>",
+              "    <li>",
+              "      <a href=\"/people/a\" data-drupal-link-system-path=\"people/a\">",
+              "        People",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/services-and-industries\" data-drupal-link-system-path=\"services-and-industries\">",
+              "        Services & Industries",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/news-and-events\" data-drupal-link-system-path=\"news-and-events\">",
+              "        News & Events",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/diversity-inclusion\" data-drupal-link-system-path=\"node/887\">",
+              "        Diversity & Inclusion",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/pro-bono\" data-drupal-link-system-path=\"node/872\">",
+              "        Pro Bono",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/careers\" data-drupal-link-system-path=\"node/892\">",
+              "        Careers",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/about-us\" data-drupal-link-system-path=\"node/869\">",
+              "        About Us",
+              "      </a>",
+              "    </li>",
+              "    <li>",
+              "      <a href=\"/special-topics/coronavirus-covid-19-task-force\" data-drupal-link-system-path=\"node/...",
+              "        Coronavirus Task Force",
+              "      </a>",
+              "    </li>",
+              "  </ul>",
+              "</nav>"
+            ]
+          }
+        },
+        {
+          "index": 375,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h2",
+            "path": "/html[1]/body[1]/div[1]/header[2]/div[1]/div[2]/nav[1]/div[1]/nav[1]/h2[1]",
+            "codeLines": [
+              "<h2 class=\"visually-hidden\" id=\"block-blankrome-main-menu-menu\">",
+              "  Main navigation",
+              "</h2>"
+            ]
+          }
+        },
+        {
+          "index": 484,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h3",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/div[1]/div[1]/div[1]/h3[1]",
+            "codeLines": [
+              "<h3 class=\"caps\">",
+              "  <a href=\"/news/blank-rome-announces-2022-promotions-11-partners-1-counsel\" hreflang=\"en\">",
+              "    Blank Rome Announces 2022 Promotions: 11 Partners, 1 Of Counsel",
+              "  </a>",
+              "</h3>"
+            ]
+          }
+        },
+        {
+          "index": 491,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h6",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/h6[1]",
+            "codeLines": [
+              "<h6>",
+              "  Find an Attorney",
+              "</h6>"
+            ]
+          }
+        },
+        {
+          "index": 547,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/h6[1]/text()[1]",
+            "codeLines": [
+              "Find an Attorney"
+            ]
+          }
+        },
+        {
+          "index": 548,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "A"
+            ]
+          }
+        },
+        {
+          "index": 549,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "B"
+            ]
+          }
+        },
+        {
+          "index": 550,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "C"
+            ]
+          }
+        },
+        {
+          "index": 551,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[4]/a[1]/text()[1]",
+            "codeLines": [
+              "D"
+            ]
+          }
+        },
+        {
+          "index": 552,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[5]/a[1]/text()[1]",
+            "codeLines": [
+              "E"
+            ]
+          }
+        },
+        {
+          "index": 553,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[6]/a[1]/text()[1]",
+            "codeLines": [
+              "F"
+            ]
+          }
+        },
+        {
+          "index": 554,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[7]/a[1]/text()[1]",
+            "codeLines": [
+              "G"
+            ]
+          }
+        },
+        {
+          "index": 555,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[8]/a[1]/text()[1]",
+            "codeLines": [
+              "H"
+            ]
+          }
+        },
+        {
+          "index": 556,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[9]/a[1]/text()[1]",
+            "codeLines": [
+              "I"
+            ]
+          }
+        },
+        {
+          "index": 557,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[10]/a[1]/text()[1]",
+            "codeLines": [
+              "J"
+            ]
+          }
+        },
+        {
+          "index": 558,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[11]/a[1]/text()[1]",
+            "codeLines": [
+              "K"
+            ]
+          }
+        },
+        {
+          "index": 559,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[12]/a[1]/text()[1]",
+            "codeLines": [
+              "L"
+            ]
+          }
+        },
+        {
+          "index": 560,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[13]/a[1]/text()[1]",
+            "codeLines": [
+              "M"
+            ]
+          }
+        },
+        {
+          "index": 561,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[14]/a[1]/text()[1]",
+            "codeLines": [
+              "N"
+            ]
+          }
+        },
+        {
+          "index": 562,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[15]/a[1]/text()[1]",
+            "codeLines": [
+              "O"
+            ]
+          }
+        },
+        {
+          "index": 563,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[16]/a[1]/text()[1]",
+            "codeLines": [
+              "P"
+            ]
+          }
+        },
+        {
+          "index": 564,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[17]/a[1]/text()[1]",
+            "codeLines": [
+              "Q"
+            ]
+          }
+        },
+        {
+          "index": 565,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[18]/a[1]/text()[1]",
+            "codeLines": [
+              "R"
+            ]
+          }
+        },
+        {
+          "index": 566,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[19]/a[1]/text()[1]",
+            "codeLines": [
+              "S"
+            ]
+          }
+        },
+        {
+          "index": 567,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[20]/a[1]/text()[1]",
+            "codeLines": [
+              "T"
+            ]
+          }
+        },
+        {
+          "index": 568,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[21]/a[1]/text()[1]",
+            "codeLines": [
+              "U"
+            ]
+          }
+        },
+        {
+          "index": 569,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[22]/a[1]/text()[1]",
+            "codeLines": [
+              "V"
+            ]
+          }
+        },
+        {
+          "index": 570,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[23]/a[1]/text()[1]",
+            "codeLines": [
+              "W"
+            ]
+          }
+        },
+        {
+          "index": 571,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[24]/a[1]/text()[1]",
+            "codeLines": [
+              "X"
+            ]
+          }
+        },
+        {
+          "index": 572,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[25]/a[1]/text()[1]",
+            "codeLines": [
+              "Y"
+            ]
+          }
+        },
+        {
+          "index": 573,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[26]/a[1]/text()[1]",
+            "codeLines": [
+              "Z"
+            ]
+          }
+        },
+        {
+          "index": 590,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Login"
+            ]
+          }
+        },
+        {
+          "index": 591,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Register"
+            ]
+          }
+        },
+        {
+          "index": 610,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r61",
+            "ruleSummary": "Documents start with a level 1 heading",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r61",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 718,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"\" id=\"IAForm_FirstName\" class=\"form-control required\" name=\"IAForm_FirstN..."
+            ]
+          }
+        },
+        {
+          "index": 719,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[2]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"\" id=\"IAForm_LastName\" class=\"form-control required\" name=\"IAForm_LastNam..."
+            ]
+          }
+        },
+        {
+          "index": 720,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[3]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"\" id=\"IAForm_Email\" class=\"form-control email required\" name=\"IAForm_busi..."
+            ]
+          }
+        },
+        {
+          "index": 721,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[4]/input[1]",
+            "codeLines": [
+              "<input class=\"btn btn-default branded_button join-now\" type=\"submit\" value=\"Join Now\">"
+            ]
+          }
+        },
+        {
+          "index": 732,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "There have been some changes to data protection laws, so we have updated our"
+            ]
+          }
+        },
+        {
+          "index": 733,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[1]/text()[2]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 734,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[2]/text()[1]",
+            "codeLines": [
+              "We use cookies on our website to make our site work better.  If you continue to use our site, we as..."
+            ]
+          }
+        },
+        {
+          "index": 735,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[3]/text()[1]",
+            "codeLines": [
+              "To understand more about how we use cookies, or to change your preferences and browser settings, pl..."
+            ]
+          }
+        },
+        {
+          "index": 736,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[3]/text()[2]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 737,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/div[1]/div[1]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "December 15, 2021"
+            ]
+          }
+        },
+        {
+          "index": 739,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/section[1]/div[1]/div[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Newsletter"
+            ]
+          }
+        },
+        {
+          "index": 740,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/section[1]/div[1]/div[2]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Media Coverage"
+            ]
+          }
+        },
+        {
+          "index": 741,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/section[1]/div[1]/div[3]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Press Release"
+            ]
+          }
+        },
+        {
+          "index": 742,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/section[1]/div[1]/div[4]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Media Coverage"
+            ]
+          }
+        },
+        {
+          "index": 743,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/section[1]/div[1]/div[5]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Newsletter"
+            ]
+          }
+        },
+        {
+          "index": 744,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/section[1]/div[1]/div[6]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Award"
+            ]
+          }
+        },
+        {
+          "index": 745,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/h6[1]/text()[1]",
+            "codeLines": [
+              "Find an Attorney"
+            ]
+          }
+        },
+        {
+          "index": 751,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/footer[1]/div[2]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "© 2022, Blank Rome LLP. Some Rights Reserved. Attorney Advertising."
+            ]
+          }
+        },
+        {
+          "index": 752,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/footer[1]/div[2]/div[1]/p[1]/text()[2]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 753,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/footer[1]/div[2]/div[1]/p[1]/text()[3]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 754,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/footer[1]/div[2]/div[1]/p[1]/text()[4]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 755,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/footer[1]/div[2]/div[1]/p[1]/text()[5]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 765,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "There have been some changes to data protection laws, so we have updated our"
+            ]
+          }
+        },
+        {
+          "index": 766,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[1]/text()[2]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 767,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[2]/text()[1]",
+            "codeLines": [
+              "We use cookies on our website to make our site work better.  If you continue to use our site, we as..."
+            ]
+          }
+        },
+        {
+          "index": 768,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[3]/text()[1]",
+            "codeLines": [
+              "To understand more about how we use cookies, or to change your preferences and browser settings, pl..."
+            ]
+          }
+        },
+        {
+          "index": 769,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[1]/div[1]/p[3]/text()[2]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 770,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/main[1]/div[2]/div[1]/div[1]/div[1]/time[1]/text()[1]",
+            "codeLines": [
+              "December 15, 2021"
+            ]
+          }
+        },
+        {
+          "index": 778,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/h6[1]/text()[1]",
+            "codeLines": [
+              "Find an Attorney"
+            ]
+          }
+        },
+        {
+          "index": 816,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[1]",
+            "codeLines": [
+              "<p class=\"form-group\">",
+              "  <label for=\"IAForm_FirstName\">",
+              "    First Name",
+              "  </label>",
+              "  <input type=\"text\" value=\"\" id=\"IAForm_FirstName\" class=\"form-control required\" name=\"IAForm_Firs...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 817,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[2]",
+            "codeLines": [
+              "<p class=\"form-group\">",
+              "  <label for=\"IAForm_LastName\">",
+              "    Last Name",
+              "  </label>",
+              "  <input type=\"text\" value=\"\" id=\"IAForm_LastName\" class=\"form-control required\" name=\"IAForm_LastN...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 818,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[3]",
+            "codeLines": [
+              "<p class=\"form-group\">",
+              "  <label for=\"VxForm_Email\">",
+              "    Email",
+              "  </label>",
+              "  <input type=\"text\" value=\"\" id=\"IAForm_Email\" class=\"form-control email required\" name=\"IAForm_bu...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 819,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[4]",
+            "codeLines": [
+              "<p class=\"form-group\">",
+              "  <input class=\"btn btn-default branded_button join-now\" type=\"submit\" value=\"Join Now\">",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 918,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r8",
+            "ruleSummary": "Form fields have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r8",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/header[2]/div[1]/div[2]/nav[1]/div[2]/form[1]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" name=\"searchrequest\" autocomplete=\"off\">"
+            ]
+          }
+        },
+        {
+          "index": 926,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/form[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" placeholder=\"Search people, services, keyword...\" autocomplete=\"off\">"
+            ]
+          }
+        },
+        {
+          "index": 927,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/header[2]/div[1]/div[2]/nav[1]/div[2]/form[1]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" name=\"searchrequest\" autocomplete=\"off\">"
+            ]
+          }
+        },
+        {
+          "index": 928,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"\" id=\"IAForm_FirstName\" class=\"form-control required\" name=\"IAForm_FirstN..."
+            ]
+          }
+        },
+        {
+          "index": 929,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[2]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"\" id=\"IAForm_LastName\" class=\"form-control required\" name=\"IAForm_LastNam..."
+            ]
+          }
+        },
+        {
+          "index": 930,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/form[1]/p[3]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"\" id=\"IAForm_Email\" class=\"form-control email required\" name=\"IAForm_busi..."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      7
+    ]
+  ]
+}

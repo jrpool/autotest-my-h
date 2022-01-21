@@ -1,0 +1,785 @@
+{
+  "script": "alfa",
+  "batch": "alfaAll",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0e6",
+  "logCount": 1,
+  "logSize": 46,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://convergeaccessibility.com/",
+      "what": "Converge Accessibility",
+      "result": "https://convergeaccessibility.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://convergeaccessibility.com/",
+      "result": [
+        {
+          "index": 267,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r18",
+            "ruleSummary": "aria-* states and properties are allowed",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r18",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+                "name": "ARIA5",
+                "title": "Using WAI-ARIA state and property attributes to expose the state of a user interface"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "aria-expanded",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/nav[1]/div[1]/div[2]/ul[1]/@aria-expanded",
+            "codeLines": [
+              "aria-expanded=\"true\""
+            ]
+          }
+        },
+        {
+          "index": 483,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "script",
+            "path": "/html[1]/body[1]/script[22]",
+            "codeLines": [
+              "<script type=\"text/javascript\" id=\"cf-form-front-js-extra\">",
+              "  /* <![CDATA[ */",
+              "  var CF_API_DATA = {\"rest\":{\"root\":\"https:\\/\\/convergeaccessibility.com\\/wp-json\\/cf-api\\/v2\\/\",\"r...",
+              "  /* ]]> */",
+              "</script>"
+            ]
+          }
+        },
+        {
+          "index": 485,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "script",
+            "path": "/html[1]/body[1]/script[24]",
+            "codeLines": [
+              "<script type=\"text/javascript\" id=\"cf-form-front-js-extra\">",
+              "  /* <![CDATA[ */",
+              "  var CF_API_DATA = {\"rest\":{\"root\":\"https:\\/\\/convergeaccessibility.com\\/wp-json\\/cf-api\\/v2\\/\",\"r...",
+              "  var CFFIELD_CONFIG = {\"1\":{\"configs\":{\"fld_2758980\":{\"type\":\"html\",\"id\":\"fld_2758980_1\",\"default\"...",
+              "  /* ]]> */",
+              "</script>"
+            ]
+          }
+        },
+        {
+          "index": 596,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Skip to main content"
+            ]
+          }
+        },
+        {
+          "index": 597,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/ul[1]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "Skip to footer"
+            ]
+          }
+        },
+        {
+          "index": 712,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Narrowing the Digital Divide"
+            ]
+          }
+        },
+        {
+          "index": 713,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Make Web Accessibility Simple"
+            ]
+          }
+        },
+        {
+          "index": 714,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Would you like to avoid litigation, win new customers, and build social responsibility— all at the ..."
+            ]
+          }
+        },
+        {
+          "index": 717,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Expert witnesses can increase your risk if they are not sensitive to the current legal issues in we..."
+            ]
+          }
+        },
+        {
+          "index": 719,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Making your current site accessible is easier than you might think. We can help you make your websi..."
+            ]
+          }
+        },
+        {
+          "index": 721,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[3]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Easily build accessibility into your development lifecycle and stay ahead of accessibility challeng..."
+            ]
+          }
+        },
+        {
+          "index": 722,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[1]/blockquote[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Our team members have each worked in web accessibility for over 20 years from the legal and technic..."
+            ]
+          }
+        },
+        {
+          "index": 723,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/article[2]/blockquote[1]/p[1]/text()[1]",
+            "codeLines": [
+              "No team combines legal and technical expertise like Converge Accessibility."
+            ]
+          }
+        },
+        {
+          "index": 725,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/label[1]/text()[1]",
+            "codeLines": [
+              "First Name"
+            ]
+          }
+        },
+        {
+          "index": 726,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/label[1]/text()[1]",
+            "codeLines": [
+              "Last Name"
+            ]
+          }
+        },
+        {
+          "index": 727,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[3]/label[1]/text()[1]",
+            "codeLines": [
+              "Email Address"
+            ]
+          }
+        },
+        {
+          "index": 728,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Our team members have each worked in web accessibility for over 20 years from the legal and technic..."
+            ]
+          }
+        },
+        {
+          "index": 729,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/nav[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Converge Accessibility"
+            ]
+          }
+        },
+        {
+          "index": 731,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[4]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "© 2022"
+            ]
+          }
+        },
+        {
+          "index": 732,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[4]/div[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "|"
+            ]
+          }
+        },
+        {
+          "index": 742,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Make Web Accessibility Simple"
+            ]
+          }
+        },
+        {
+          "index": 743,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Would you like to avoid litigation, win new customers, and build social responsibility— all at the ..."
+            ]
+          }
+        },
+        {
+          "index": 772,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"site-description\">",
+              "  Narrowing the Digital Divide",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 780,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"site-description\">",
+              "  Narrowing the Digital Divide",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 836,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input required=\"\" type=\"text\" data-field=\"fld_8768091\" class=\" form-control\" id=\"fld_8768091_1\" na..."
+            ]
+          }
+        },
+        {
+          "index": 837,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/div[1]/input[1]",
+            "codeLines": [
+              "<input required=\"\" type=\"text\" data-field=\"fld_9970286\" class=\" form-control\" id=\"fld_9970286_1\" na..."
+            ]
+          }
+        },
+        {
+          "index": 838,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[3]/div[1]/input[1]",
+            "codeLines": [
+              "<input required=\"\" type=\"email\" data-field=\"fld_6009157\" class=\" form-control\" id=\"fld_6009157_1\" n..."
+            ]
+          }
+        },
+        {
+          "index": 839,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[2]/div[1]/form[1]/label[1]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" class=\"search-field\" placeholder=\"Search …\" value=\"\" name=\"s\">"
+            ]
+          }
+        },
+        {
+          "index": 854,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      7
+    ]
+  ]
+}

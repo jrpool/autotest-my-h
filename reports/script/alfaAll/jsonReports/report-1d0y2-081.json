@@ -1,0 +1,2721 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 10,
+  "logSize": 1054,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.walgreens.com/",
+      "what": "Walgreens",
+      "result": "https://www.walgreens.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.walgreens.com/",
+      "result": [
+        {
+          "index": 179,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r14",
+            "ruleSummary": "Visible labels are included in accessible names",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r14",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#label-in-name",
+                "chapter": "2.5.3",
+                "title": "Label in Name"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G208",
+                "name": "G208",
+                "title": "Including the text of the visible label as part of the accessible name"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/a[1]",
+            "codeLines": [
+              "<a id=\"termsOfuse-link\" href=\"/topic/help/generalhelp/termsofuse.jsp?foot=terms\" aria-label=\"Terms ...",
+              "  <strong>",
+              "    Terms of Use",
+              "  </strong>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 180,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r14",
+            "ruleSummary": "Visible labels are included in accessible names",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r14",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#label-in-name",
+                "chapter": "2.5.3",
+                "title": "Label in Name"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G208",
+                "name": "G208",
+                "title": "Including the text of the visible label as part of the accessible name"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[4]/div[1]/div[2]/section[1]/div[1]/p[1]/a[1]",
+            "codeLines": [
+              "<a aria-label=\"Walgreens.com Offer Details\" href=\"/topic/promotion/offer-details.jsp\">",
+              "  Walgreens.com/Offerdetails",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 2369,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r2",
+            "ruleSummary": "Images have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r2",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#non-text-content",
+                "chapter": "1.1.1",
+                "title": "Non-text Content"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+                "name": "G94",
+                "title": "Providing short text alternative for non-text content that serves the same purpose"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G95",
+                "name": "G95",
+                "title": "Providing short text alternatives that provide a brief description of the non-text"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "img",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[2]/img[1]",
+            "codeLines": [
+              "<img class=\"hero__photo CA__hide-on-mobile\" src=\"/images/adaptive/sp1/2127826_01162022_Photo_Wag_HP..."
+            ]
+          }
+        },
+        {
+          "index": 4585,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"hero__content at-element-marker\" id=\"Monetate_HP-RP-Hero\">",
+              "  <style>",
+              "    .hero__img_at img {",
+              "        margin-left: 0;",
+              "    }",
+              "    ",
+              "    .highlight__message {",
+              "        background-image:",
+              "            url(/images/adaptive/sp/1585961_031721_WAG_HP_yellow_highlight.png)",
+              "            !important;",
+              "        width: 100% !important;",
+              "        background-size: contain !important;",
+              "        /* max-width: 300px; */",
+              "        /* max-height: 200px; */",
+              "        background-repeat: no-repeat !important;",
+              "        background-position-y: center !important;",
+              "        padding: 0px 20px;",
+              "        margin-left: 0px !important;",
+              "    }",
+              "    ",
+              "    .highlight__message-inner {",
+              "        margin-left: 0px !important;",
+              "    }",
+              "    ",
+              "    @media ( min-width : 768px) {",
+              "        .CA__hide-on-mobile {",
+              "            display: block !important;",
+              "        }",
+              "        .CA__show-on-mobile {",
+              "            display: none !important;",
+              "        }",
+              "        .rp-tar__full-width {",
+              "            background: url(/images/adaptive/sp1/2127826_011621_WAG_HWBOGO_Homepage_Tablet_test.jpg...",
+              "            background-position-y: 0px;",
+              "            background-size: cover;",
+              "            background-repeat: no-repeat;",
+              "        }",
+              "    }",
+              "    ",
+              "    @media ( min-width : 1024px) and (max-width: 1199px) {",
+              "        .rp-tar__full-width {",
+              "            background-position: -90px !important;",
+              "        }",
+              "    }",
+              "    ",
+              "    @media ( min-width : 1024px) {",
+              "        .rp-tar__full-width {",
+              "            position: relative;",
+              "            width: 100% !important;",
+              "            padding-bottom: 50px;",
+              "            padding-top: 50px;",
+              "            background-position: 0;",
+              "            background-size: cover !important;",
+              "            background: url(/images/adaptive/sp1/2127826_011621_WAG_HWBOGO_Homepage_Desktop_test.jp...",
+              "        }",
+              "    }",
+              "    ",
+              "    @media ( max-width : 767px) {",
+              "        .hero .hero__img_at {",
+              "            min-height: 420px;",
+              "            max-height: 420px;",
+              "        }",
+              "        .rp-hero__text {",
+              "            border-bottom-right-radius: 16px;",
+              "            border-bottom-left-radius: 16px;",
+              "        }",
+              "        .CA__show-on-mobile {",
+              "            display: block !important;",
+              "        }",
+              "        .CA__hide-on-mobile {",
+              "            display: none !important;",
+              "        }",
+              "        .rp-hero__text {",
+              "            /*Gray White",
+              "            background: #fafaf7;*/",
+              "            /* Light Blue */",
+              "            background: #c2e8ff; ",
+              "    \t\tcolor: #000;",
+              "            /*Dark Blue ",
+              "            background: #323264;",
+              "            color: #fff; */",
+              "            /*Denim",
+              "            background: #284b9b;",
+              "            color: #fff;*/",
+              "            /*Sienna",
+              "             background: #eD8B00;",
+              "             color: #fff;*/",
+              "            /*black",
+              "          background: #000;",
+              "          color: #fff; */",
+              "            /*Red",
+              "            background: #E62600;",
+              "            color: #fff;  */",
+              "        }",
+              "        .hero .hero__img_at {",
+              "            min-height: 420px;",
+              "            max-height: 420px;",
+              "        }",
+              "    }",
+              "    ",
+              "    @media ( max-width : 667px) {",
+              "        .hero .hero__img_at {",
+              "            min-height: 280px;",
+              "            max-height: 280px;",
+              "        }",
+              "    }",
+              "    ",
+              "    @media ( min-width : 767px) and (max-width: 1023px) {",
+              "        #Monetate_HP-RP-Hero .hero__img img {",
+              "            margin-left: 0 !important;",
+              "        }",
+              "        .CA-RP__show-on-tablet {",
+              "            display: block !important;",
+              "        }",
+              "    }",
+              "    ",
+              "    @media ( min-width : 1024px) and (max-width: 1150px) {",
+              "        #Monetate_HP-RP-Hero .hero__img img {",
+              "            margin-left: -150px !important;",
+              "        }",
+              "        .CA-RP__show-on-tablet {",
+              "            display: block !important;",
+              "        }",
+              "    }",
+              "    ",
+              "    @media ( min-width : 1367px) {",
+              "        .CA-RP__show-on-tablet {",
+              "            display: none !important;",
+              "        }",
+              "    }",
+              "    @media ( max-width : 369px) {",
+              "    \t.btn__pair {flex-direction: column;}",
+              "    \t.btn__pair a, .btn__pair button {margin:0px 0px 10px 0px;}",
+              "    }",
+              "  </style>",
+              "  <div class=\"hero__content\" id=\"Monetate_HP-RP-Hero\" style=\"\">",
+              "    <div class=\"hero__text rp-hero__text\" style=\"width: 100%;\">",
+              "      <div class=\"hero__text--content\" style=\"width: 90%; padding:0px;\">",
+              "        <!-- Desktop -->",
+              "        <div class=\"CA__hide-on-mobile\" style=\"padding-top: 0px;\">",
+              "          <div class=\"content__item\" style=\"align-items: left;\">",
+              "            <div class=\"heading highlight__message-inner\">",
+              "              <div class=\"heading heading__large\" style=\"margin-bottom: 0; color: #323264;\">",
+              "                <span>",
+              "                  Revamp your routine",
+              "                </span>",
+              "              </div>",
+              "              <div class=\"heading heading__marketing--medium\" style=\"color: #323264;\">",
+              "                <strong>",
+              "                  BOGO FREE &",
+              "                  <br>",
+              "                  BOGO 50% off",
+              "                </strong>",
+              "              </div>",
+              "              <div class=\"heading heading__large\" style=\"margin-bottom: 0; color: #323264;\">",
+              "                <span>",
+              "                  select vitamins & supplements",
+              "                </span>",
+              "              </div>",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"content__item\" style=\"margin: 0px 0px; align-items: left;\">",
+              "            <span class=\"btn__wrap\" style=\"margin-top: 14px;\">",
+              "              <a role=\"button\" href=\"/topic/promotion/vitamin1.jsp?ban=dl_dlhp_01162022_Hero_Vitami...",
+              "                <span class=\"btn btn__red\">",
+              "                  <span>",
+              "                    Shop now",
+              "                  </span>",
+              "                </span>",
+              "              </a>",
+              "            </span>",
+              "          </div>",
+              "        </div>",
+              "        <!-- Mobile -->",
+              "        <div class=\"content CA__show-on-mobile\" style=\"padding: 20px 0px;\">",
+              "          <div class=\"content__item\">",
+              "            <div class=\"heading heading__large\" style=\"margin-bottom: 0; color: #323264;\">",
+              "              <span>",
+              "                Revamp your routine",
+              "              </span>",
+              "            </div>",
+              "            <div class=\"heading heading__marketing--medium\" style=\"color: #323264;\">",
+              "              <strong>",
+              "                BOGO FREE &",
+              "                <br>",
+              "                BOGO 50% off",
+              "              </strong>",
+              "            </div>",
+              "            <div class=\"heading heading__large\" style=\"margin-bottom: 0; color: #323264;\">",
+              "              <span>",
+              "                select vitamins & supplements",
+              "              </span>",
+              "            </div>",
+              "          </div>",
+              "          <div class=\"content__item\" style=\"margin-top: 15px;\">",
+              "            <span class=\"btn__wrap\" style=\"margin-top: 14px;\">",
+              "              <a role=\"button\" href=\"/topic/promotion/vitamin1.jsp?ban=dl_dlhp_01162022_Hero_Vitami...",
+              "                <span class=\"btn btn__red\">",
+              "                  <span>",
+              "                    Shop now",
+              "                  </span>",
+              "                </span>",
+              "              </a>",
+              "            </span>",
+              "          </div>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "    <!-- Image -->",
+              "    <div class=\"hero__img hero__img_at CA__show-on-mobile\">",
+              "      <img class=\"hero__photo hide-on-desktop CA__show-on-mobile\" style=\"z-index: 0\" alt=\"\" src=\"/i...",
+              "    </div>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 4586,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"hero__content\" id=\"Monetate_HP-RP-Hero\" style=\"\">",
+              "  <div class=\"hero__text rp-hero__text\" style=\"width: 100%;\">",
+              "    <div class=\"hero__text--content\" style=\"width: 90%; padding:0px;\">",
+              "      <!-- Desktop -->",
+              "      <div class=\"CA__hide-on-mobile\" style=\"padding-top: 0px;\">",
+              "        <div class=\"content__item\" style=\"align-items: left;\">",
+              "          <div class=\"heading highlight__message-inner\">",
+              "            <div class=\"heading heading__large\" style=\"margin-bottom: 0; color: #323264;\">",
+              "              <span>",
+              "                Revamp your routine",
+              "              </span>",
+              "            </div>",
+              "            <div class=\"heading heading__marketing--medium\" style=\"color: #323264;\">",
+              "              <strong>",
+              "                BOGO FREE &",
+              "                <br>",
+              "                BOGO 50% off",
+              "              </strong>",
+              "            </div>",
+              "            <div class=\"heading heading__large\" style=\"margin-bottom: 0; color: #323264;\">",
+              "              <span>",
+              "                select vitamins & supplements",
+              "              </span>",
+              "            </div>",
+              "          </div>",
+              "        </div>",
+              "        <div class=\"content__item\" style=\"margin: 0px 0px; align-items: left;\">",
+              "          <span class=\"btn__wrap\" style=\"margin-top: 14px;\">",
+              "            <a role=\"button\" href=\"/topic/promotion/vitamin1.jsp?ban=dl_dlhp_01162022_Hero_Vitamins...",
+              "              <span class=\"btn btn__red\">",
+              "                <span>",
+              "                  Shop now",
+              "                </span>",
+              "              </span>",
+              "            </a>",
+              "          </span>",
+              "        </div>",
+              "      </div>",
+              "      <!-- Mobile -->",
+              "      <div class=\"content CA__show-on-mobile\" style=\"padding: 20px 0px;\">",
+              "        <div class=\"content__item\">",
+              "          <div class=\"heading heading__large\" style=\"margin-bottom: 0; color: #323264;\">",
+              "            <span>",
+              "              Revamp your routine",
+              "            </span>",
+              "          </div>",
+              "          <div class=\"heading heading__marketing--medium\" style=\"color: #323264;\">",
+              "            <strong>",
+              "              BOGO FREE &",
+              "              <br>",
+              "              BOGO 50% off",
+              "            </strong>",
+              "          </div>",
+              "          <div class=\"heading heading__large\" style=\"margin-bottom: 0; color: #323264;\">",
+              "            <span>",
+              "              select vitamins & supplements",
+              "            </span>",
+              "          </div>",
+              "        </div>",
+              "        <div class=\"content__item\" style=\"margin-top: 15px;\">",
+              "          <span class=\"btn__wrap\" style=\"margin-top: 14px;\">",
+              "            <a role=\"button\" href=\"/topic/promotion/vitamin1.jsp?ban=dl_dlhp_01162022_Hero_Vitamins...",
+              "              <span class=\"btn btn__red\">",
+              "                <span>",
+              "                  Shop now",
+              "                </span>",
+              "              </span>",
+              "            </a>",
+              "          </span>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "  </div>",
+              "  <!-- Image -->",
+              "  <div class=\"hero__img hero__img_at CA__show-on-mobile\">",
+              "    <img class=\"hero__photo hide-on-desktop CA__show-on-mobile\" style=\"z-index: 0\" alt=\"\" src=\"/ima...",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 4591,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/valentine's-day/ID=20001731-tier1\" data-reactid=\"20\" tabindex...",
+              "  <div class=\"product__img\" data-reactid=\"21\">",
+              "    <!-- react-text: 22 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-reactid=\"23\" class=\"\" src=\"https://pics.drugstore.com/prodimg/627618/155.jpg\" ...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"24\">",
+              "    <strong class=\"itemName\" data-reactid=\"25\">",
+              "      Valentine's Day",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4592,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/contact-lenses/ID=359432-tier2clense\" data-reactid=\"27\" tabin...",
+              "  <div class=\"product__img\" data-reactid=\"28\">",
+              "    <!-- react-text: 29 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-reactid=\"30\" class=\"\" src=\"https://pics.drugstore.com/prodimg/528844/155.jpg\" ...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"31\">",
+              "    <strong class=\"itemName\" data-reactid=\"32\">",
+              "      Contact Lenses",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4593,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/beauty/ID=359434-tier1\" data-reactid=\"34\" tabindex=\"0\">",
+              "  <div class=\"product__img\" data-reactid=\"35\">",
+              "    <!-- react-text: 36 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-reactid=\"37\" class=\"\" src=\"https://pics.drugstore.com/prodimg/605801/155.jpg\" ...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"38\">",
+              "    <strong class=\"itemName\" data-reactid=\"39\">",
+              "      Beauty",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4594,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/personal-care/ID=359436-tier1\" data-reactid=\"41\" tabindex=\"0\"...",
+              "  <div class=\"product__img\" data-reactid=\"42\">",
+              "    <!-- react-text: 43 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-reactid=\"44\" class=\"\" src=\"https://pics.drugstore.com/prodimg/540117/155.jpg\" ...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"45\">",
+              "    <strong class=\"itemName\" data-reactid=\"46\">",
+              "      Personal Care",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4595,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/medicines-and-treatments/ID=359438-tier1\" data-reactid=\"48\" t...",
+              "  <div class=\"product__img\" data-reactid=\"49\">",
+              "    <!-- react-text: 50 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-reactid=\"51\" class=\"\" src=\"https://pics.drugstore.com/prodimg/491380/155.jpg\" ...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"52\">",
+              "    <strong class=\"itemName\" data-reactid=\"53\">",
+              "      Medicines & Treatments",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4596,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/vitamins-and-supplements/ID=359441-tier1\" data-reactid=\"55\" t...",
+              "  <div class=\"product__img\" data-reactid=\"56\">",
+              "    <!-- react-text: 57 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-reactid=\"58\" class=\"\" src=\"https://pics.drugstore.com/prodimg/204304/155.jpg\" ...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"59\">",
+              "    <strong class=\"itemName\" data-reactid=\"60\">",
+              "      Vitamins & Supplements",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4597,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/home-health-care-solutions/ID=359443-tier1\" data-reactid=\"62\"...",
+              "  <div class=\"product__img\" data-reactid=\"63\">",
+              "    <!-- react-text: 64 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/616197/100.jpg\" data-reactid=\"65\" cla...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"66\">",
+              "    <strong class=\"itemName\" data-reactid=\"67\">",
+              "      Home Health Care Solutions",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4598,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/pet/ID=20000612-tier1\" data-reactid=\"69\" tabindex=\"-1\">",
+              "  <div class=\"product__img\" data-reactid=\"70\">",
+              "    <!-- react-text: 71 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/451048/450.jpg\" data-reactid=\"72\" cla...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"73\">",
+              "    <strong class=\"itemName\" data-reactid=\"74\">",
+              "      Pet",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4599,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/home-goods/ID=359453-tier1\" data-reactid=\"76\" tabindex=\"-1\">",
+              "  <div class=\"product__img\" data-reactid=\"77\">",
+              "    <!-- react-text: 78 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/628430/450.jpg\" data-reactid=\"79\" cla...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"80\">",
+              "    <strong class=\"itemName\" data-reactid=\"81\">",
+              "      Home Goods",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4600,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/electronics-and-office/ID=20000781-tier1\" data-reactid=\"83\" t...",
+              "  <div class=\"product__img\" data-reactid=\"84\">",
+              "    <!-- react-text: 85 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/603894/450.jpg\" data-reactid=\"86\" cla...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"87\">",
+              "    <strong class=\"itemName\" data-reactid=\"88\">",
+              "      Electronics & Office",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4601,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/household-essentials/ID=20000910-tier1\" data-reactid=\"90\" tab...",
+              "  <div class=\"product__img\" data-reactid=\"91\">",
+              "    <!-- react-text: 92 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/632209/155.jpg\" data-reactid=\"93\" cla...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"94\">",
+              "    <strong class=\"itemName\" data-reactid=\"95\">",
+              "      Household Essentials",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4602,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/fall-and-winter/ID=20001231-tier1\" data-reactid=\"97\" tabindex...",
+              "  <div class=\"product__img\" data-reactid=\"98\">",
+              "    <!-- react-text: 99 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/636254/155.jpg\" data-reactid=\"100\" cl...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"101\">",
+              "    <strong class=\"itemName\" data-reactid=\"102\">",
+              "      Fall & Winter",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4603,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/grocery/ID=359451-tier1\" data-reactid=\"104\" tabindex=\"-1\">",
+              "  <div class=\"product__img\" data-reactid=\"105\">",
+              "    <!-- react-text: 106 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/616111/155.jpg\" data-reactid=\"107\" cl...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"108\">",
+              "    <strong class=\"itemName\" data-reactid=\"109\">",
+              "      Grocery",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4604,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/toys-games-and-books/ID=20001469-tier1\" data-reactid=\"111\" ta...",
+              "  <div class=\"product__img\" data-reactid=\"112\">",
+              "    <!-- react-text: 113 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/624392/155.jpg\" data-reactid=\"114\" cl...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"115\">",
+              "    <strong class=\"itemName\" data-reactid=\"116\">",
+              "      Toys, Games & Books",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4605,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[15]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/baby-and-kids/ID=359449-tier1\" data-reactid=\"118\" tabindex=\"-...",
+              "  <div class=\"product__img\" data-reactid=\"119\">",
+              "    <!-- react-text: 120 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/607342/155.jpg\" data-reactid=\"121\" cl...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"122\">",
+              "    <strong class=\"itemName\" data-reactid=\"123\">",
+              "      Baby & Kids",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4606,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/gift-cards/ID=20001459-tier1\" data-reactid=\"125\" tabindex=\"-1...",
+              "  <div class=\"product__img\" data-reactid=\"126\">",
+              "    <!-- react-text: 127 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/506246/155.jpg\" data-reactid=\"128\" cl...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"129\">",
+              "    <strong class=\"itemName\" data-reactid=\"130\">",
+              "      Gift Cards",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4607,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[17]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/fitness-and-nutrition/ID=359447-tier1\" data-reactid=\"132\" tab...",
+              "  <div class=\"product__img\" data-reactid=\"133\">",
+              "    <!-- react-text: 134 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/560629/155.jpg\" data-reactid=\"135\" cl...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"136\">",
+              "    <strong class=\"itemName\" data-reactid=\"137\">",
+              "      Fitness & Nutrition",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4608,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[9]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]/a[1]",
+            "codeLines": [
+              "<a id=\"shopByCategory\" href=\"/store/c/natural-and-organic/ID=359459-tier1\" data-reactid=\"139\" tabin...",
+              "  <div class=\"product__img\" data-reactid=\"140\">",
+              "    <!-- react-text: 141 -->",
+              "    <!-- /react-text -->",
+              "    <img alt=\"\" data-lazy=\"https://pics.drugstore.com/prodimg/326860/155.jpg\" data-reactid=\"142\" cl...",
+              "  </div>",
+              "  <div class=\"product__img-text\" data-reactid=\"143\">",
+              "    <strong class=\"itemName\" data-reactid=\"144\">",
+              "      Natural & Organic",
+              "    </strong>",
+              "  </div>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 4803,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div role=\"heading\" aria-level=\"3\">",
+              "  <strong>",
+              "    FREE shipping",
+              "  </strong>",
+              "  on all prescription refills",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 4827,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Nearest store:"
+            ]
+          }
+        },
+        {
+          "index": 4828,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/div[1]/div[2]/div[1]/span[1]/div[1]/div[1]/a[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Selected store"
+            ]
+          }
+        },
+        {
+          "index": 4829,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/div[1]/div[2]/div[1]/span[1]/div[1]/div[1]/a[1]/span[1]/strong[1]/text()[1]",
+            "codeLines": [
+              "383 W 31ST ST, NEW YORK, NY"
+            ]
+          }
+        },
+        {
+          "index": 5148,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/main[1]/div[4]/div[1]/button[1]",
+            "codeLines": [
+              "<button aria-describedby=\"scrollToTop\" id=\"topBtn\" class=\"btt btn__back-to-top hide backtoTopButton...",
+              "  <span class=\"hide\">",
+              "    <span class=\"icon icon__arrow-up\">",
+              "      <svg aria-hidden=\"true\" focusable=\"false\">",
+              "        <use xlink:href=\"/images/adaptive/livestyleguide/walgreens.com/v3.0/themes/images/icons/sym...",
+              "      </svg>",
+              "    </span>",
+              "    <span class=\"body-copy__fourteen\" id=\"scrollToTop\">",
+              "      TOP",
+              "    </span>",
+              "  </span>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 5238,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/strong[1]/text()[1]",
+            "codeLines": [
+              "vaccination &"
+            ]
+          }
+        },
+        {
+          "index": 5239,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/strong[1]/text()[2]",
+            "codeLines": [
+              "testing destination"
+            ]
+          }
+        },
+        {
+          "index": 5240,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Revamp your routine"
+            ]
+          }
+        },
+        {
+          "index": 5241,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/strong[1]/text()[1]",
+            "codeLines": [
+              "BOGO FREE &"
+            ]
+          }
+        },
+        {
+          "index": 5242,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/strong[1]/text()[2]",
+            "codeLines": [
+              "BOGO 50% off"
+            ]
+          }
+        },
+        {
+          "index": 5243,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/span[1]/text()[1]",
+            "codeLines": [
+              "select vitamins & supplements"
+            ]
+          }
+        },
+        {
+          "index": 5245,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Share the love"
+            ]
+          }
+        },
+        {
+          "index": 5246,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/strong[1]/text()[1]",
+            "codeLines": [
+              "40% off"
+            ]
+          }
+        },
+        {
+          "index": 5247,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/strong[1]/text()[2]",
+            "codeLines": [
+              "Everything Photo"
+            ]
+          }
+        },
+        {
+          "index": 5250,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/strong[1]/text()[1]",
+            "codeLines": [
+              "We care about Medicare"
+            ]
+          }
+        },
+        {
+          "index": 5251,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/strong[1]/text()[2]",
+            "codeLines": [
+              "so you don’t have to"
+            ]
+          }
+        },
+        {
+          "index": 5252,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Fill with us and save."
+            ]
+          }
+        },
+        {
+          "index": 5253,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "‡ $0 copays apply to Tier 1 generic drugs in select plans"
+            ]
+          }
+        },
+        {
+          "index": 5254,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/text()[2]",
+            "codeLines": [
+              "where Walgreens is a Preferred Pharmacy."
+            ]
+          }
+        },
+        {
+          "index": 5262,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/span[1]/label[1]/text()[1]",
+            "codeLines": [
+              "Email Address"
+            ]
+          }
+        },
+        {
+          "index": 5269,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/span[1]/label[1]/text()[1]",
+            "codeLines": [
+              "ZIP code"
+            ]
+          }
+        },
+        {
+          "index": 5273,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/label[1]/text()[1]",
+            "codeLines": [
+              "Enter email for weekly deals"
+            ]
+          }
+        },
+        {
+          "index": 5352,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/strong[1]/text()[1]",
+            "codeLines": [
+              "vaccination &"
+            ]
+          }
+        },
+        {
+          "index": 5353,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/strong[1]/text()[2]",
+            "codeLines": [
+              "testing destination"
+            ]
+          }
+        },
+        {
+          "index": 5354,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Revamp your routine"
+            ]
+          }
+        },
+        {
+          "index": 5355,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/strong[1]/text()[1]",
+            "codeLines": [
+              "BOGO FREE &"
+            ]
+          }
+        },
+        {
+          "index": 5356,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/strong[1]/text()[2]",
+            "codeLines": [
+              "BOGO 50% off"
+            ]
+          }
+        },
+        {
+          "index": 5357,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/span[1]/text()[1]",
+            "codeLines": [
+              "select vitamins & supplements"
+            ]
+          }
+        },
+        {
+          "index": 5359,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "Share the love"
+            ]
+          }
+        },
+        {
+          "index": 5360,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/strong[1]/text()[1]",
+            "codeLines": [
+              "40% off"
+            ]
+          }
+        },
+        {
+          "index": 5361,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/strong[1]/text()[2]",
+            "codeLines": [
+              "Everything Photo"
+            ]
+          }
+        },
+        {
+          "index": 5364,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/strong[1]/text()[1]",
+            "codeLines": [
+              "We care about Medicare"
+            ]
+          }
+        },
+        {
+          "index": 5365,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/strong[1]/text()[2]",
+            "codeLines": [
+              "so you don’t have to"
+            ]
+          }
+        },
+        {
+          "index": 5366,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Fill with us and save."
+            ]
+          }
+        },
+        {
+          "index": 5367,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "‡ $0 copays apply to Tier 1 generic drugs in select plans"
+            ]
+          }
+        },
+        {
+          "index": 5368,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/text()[2]",
+            "codeLines": [
+              "where Walgreens is a Preferred Pharmacy."
+            ]
+          }
+        },
+        {
+          "index": 5376,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/span[1]/label[1]/text()[1]",
+            "codeLines": [
+              "Email Address"
+            ]
+          }
+        },
+        {
+          "index": 5383,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/span[1]/label[1]/text()[1]",
+            "codeLines": [
+              "ZIP code"
+            ]
+          }
+        },
+        {
+          "index": 5387,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/label[1]/text()[1]",
+            "codeLines": [
+              "Enter email for weekly deals"
+            ]
+          }
+        },
+        {
+          "index": 5396,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r70",
+            "ruleSummary": "No obsolete or deprecated elements are used",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r70",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 6286,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h2",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/h2[3]",
+            "codeLines": [
+              "<h2 class=\"font__sixteen\">",
+              "  <a href=\"/topic/information/access-to-services.jsp\">",
+              "    Accessibility Notice",
+              "  </a>",
+              "</h2>"
+            ]
+          }
+        },
+        {
+          "index": 6289,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h2",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/h2[2]",
+            "codeLines": [
+              "<h2 class=\"font__sixteen\">",
+              "  <a href=\"/businesssolutions/home/home.jsp\">",
+              "    Business Solutions",
+              "  </a>",
+              "</h2>"
+            ]
+          }
+        },
+        {
+          "index": 6302,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/header[1]/div[1]/nav[1]/div[1]/div[1]/div[3]/form[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"\" id=\"ntt-placeholder\" class=\"blue-shadow\" name=\"Ntt\" placeholder=\"Search..."
+            ]
+          }
+        },
+        {
+          "index": 6303,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/span[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"email\" id=\"emailAddress\" maxlength=\"100\" aria-describedby=\"commentErrorEma..."
+            ]
+          }
+        },
+        {
+          "index": 6304,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/span[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"searchCriteria\" id=\"searchCriteria\" required=\"\">"
+            ]
+          }
+        },
+        {
+          "index": 6305,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" id=\"input-1\" style=\"\" required=\"\" aria-label=\"Enter email for weekly deals\" name..."
+            ]
+          }
+        },
+        {
+          "index": 6306,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/header[1]/div[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/a[1]/span[1]/strong[1]/text()[1]",
+            "codeLines": [
+              "Account"
+            ]
+          }
+        },
+        {
+          "index": 6323,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/span[1]/a[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Shop now"
+            ]
+          }
+        },
+        {
+          "index": 6337,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/a[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Get creative"
+            ]
+          }
+        },
+        {
+          "index": 6344,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[1]/div[11]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/a[1]/span[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Get started"
+            ]
+          }
+        },
+        {
+          "index": 6368,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/button[1]/text()[1]",
+            "codeLines": [
+              "Sign up"
+            ]
+          }
+        },
+        {
+          "index": 6371,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Join FREE now"
+            ]
+          }
+        },
+        {
+          "index": 6377,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/button[1]/text()[1]",
+            "codeLines": [
+              "Search"
+            ]
+          }
+        },
+        {
+          "index": 6378,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/button[1]/span[1]/text()[1]",
+            "codeLines": [
+              "Sign up"
+            ]
+          }
+        },
+        {
+          "index": 6439,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r90",
+            "ruleSummary": "Element with presentational children has no focusable content",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r90",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "span",
+            "path": "/html[1]/body[1]/div[3]/div[1]/div[2]/div[1]/span[1]",
+            "codeLines": [
+              "<span role=\"button\" class=\"tool-tip__trigger\" tabindex=\"0\" aria-describedby=\"tool-tip__text-1\">",
+              "  <div class=\"tool-tip__contain\">",
+              "    <div class=\"nudge-container\">",
+              "      <a class=\"store-trigger\" aria-expanded=\"false\" role=\"button\" href=\"#!\" tabindex=\"0\" style=\"wi...",
+              "        <span class=\"inner-focus\" tabindex=\"-1\">",
+              "          <span class=\"sr-only\">",
+              "            Selected store",
+              "          </span>",
+              "          <strong class=\"\">",
+              "            383 W 31ST ST, NEW YORK, NY",
+              "          </strong>",
+              "          <span class=\"icon icon__arrow-down\" style=\"width: 16px; height: 16px;\">",
+              "            <svg aria-hidden=\"true\" focusable=\"false\">",
+              "              <use href=\"/images/adaptive/livestyleguide/walgreens.com/v3.0/themes/images/icons/sym...",
+              "            </svg>",
+              "          </span>",
+              "        </span>",
+              "      </a>",
+              "    </div>",
+              "    <div id=\"tool-tip__text-1\" class=\"tool-tip__overlay\" role=\"tooltip\" title=\"help information\" ar...",
+              "      <p>",
+              "        We see you have a shopping history at . Tap update to select this store for a more personal...",
+              "        <a href=\"#!\" class=\"link__cta updateStoreLink\">",
+              "          <strong>",
+              "            Update store",
+              "          </strong>",
+              "          <span class=\"icon icon__arrow-right\">",
+              "            <svg>",
+              "              <use href=\"/images/adaptive/livestyleguide/walgreens.com/v3.0/themes/images/icons/sym...",
+              "            </svg>",
+              "          </span>",
+              "        </a>",
+              "      </p>",
+              "      <button class=\"btn action__dismiss-nudge buttom icon icon__dismiss-v2 btn-close-icon\">",
+              "        <svg role=\"img\" class=\"svg-close-icon\" aria-label=\"Close notification\">",
+              "          <use href=\"/images/adaptive/livestyleguide/walgreens.com/v3.0/themes/images/icons/symbol-...",
+              "        </svg>",
+              "      </button>",
+              "    </div>",
+              "  </div>",
+              "</span>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      21
+    ]
+  ]
+}

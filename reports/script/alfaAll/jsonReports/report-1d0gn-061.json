@@ -1,0 +1,124 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0gn",
+  "logCount": 65,
+  "logSize": 4108,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 1,
+  "visitRejectionCount": 2,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.bell.ca/",
+      "what": "BCE (Bell Canada) (VEIGX)",
+      "result": "https://www.bell.ca/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.bell.ca/",
+      "result": [
+        {
+          "index": 34,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r4",
+            "ruleSummary": "<html> document elements have a lang attribute",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r4",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#language-of-page",
+                "chapter": "3.1.1",
+                "title": "Language of Page"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+                "name": "H57",
+                "title": "Using the language attribute on the HTML element"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "html",
+            "path": "/html[1]",
+            "codeLines": [
+              "<html>",
+              "...",
+              "</html>"
+            ]
+          }
+        },
+        {
+          "index": 67,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r70",
+            "ruleSummary": "No obsolete or deprecated elements are used",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r70",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 85,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      4
+    ]
+  ]
+}

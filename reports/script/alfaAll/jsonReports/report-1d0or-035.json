@@ -1,0 +1,1341 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0or",
+  "logCount": 9,
+  "logSize": 820,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.inovalon.com/",
+      "what": "Inovalon (CCVAX)",
+      "result": "https://www.inovalon.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.inovalon.com/",
+      "result": [
+        {
+          "index": 245,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r17",
+            "ruleSummary": "Elements with aria-hidden='true' are not focusable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r17",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[5]/button[1]",
+            "codeLines": [
+              "<button aria-hidden=\"true\">",
+              "  x",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 246,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r17",
+            "ruleSummary": "Elements with aria-hidden='true' are not focusable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r17",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[5]/input[1]",
+            "codeLines": [
+              "<input aria-hidden=\"true\">"
+            ]
+          }
+        },
+        {
+          "index": 331,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r2",
+            "ruleSummary": "Images have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r2",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#non-text-content",
+                "chapter": "1.1.1",
+                "title": "Non-text Content"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+                "name": "G94",
+                "title": "Providing short text alternative for non-text content that serves the same purpose"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G95",
+                "name": "G95",
+                "title": "Providing short text alternatives that provide a brief description of the non-text"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "img",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/img[1]",
+            "codeLines": [
+              "<img class=\"a-left control-c prev slick-prev slick-arrow\" src=\"https://www.inovalon.com/wp-content/..."
+            ]
+          }
+        },
+        {
+          "index": 332,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r2",
+            "ruleSummary": "Images have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r2",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#non-text-content",
+                "chapter": "1.1.1",
+                "title": "Non-text Content"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
+                "name": "G94",
+                "title": "Providing short text alternative for non-text content that serves the same purpose"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G95",
+                "name": "G95",
+                "title": "Providing short text alternatives that provide a brief description of the non-text"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "img",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/img[2]",
+            "codeLines": [
+              "<img class=\"a-right control-c next slick-next slick-arrow\" src=\"https://www.inovalon.com/wp-content..."
+            ]
+          }
+        },
+        {
+          "index": 663,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r61",
+            "ruleSummary": "Documents start with a level 1 heading",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r61",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 664,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r62",
+            "ruleSummary": "Links in blocks of text are distinguishable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r62",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#use-of-color",
+                "chapter": "1.4.1",
+                "title": "Use of Color"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/p[1]/a[1]",
+            "codeLines": [
+              "<a href=\"tel:8778318171\">",
+              "  877-831-8171",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 665,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r62",
+            "ruleSummary": "Links in blocks of text are distinguishable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r62",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#use-of-color",
+                "chapter": "1.4.1",
+                "title": "Use of Color"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/p[2]/a[1]",
+            "codeLines": [
+              "<a href=\"tel:3018094000\">",
+              "  301-809-4000",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 733,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Inovalon Announces Expanded"
+            ]
+          }
+        },
+        {
+          "index": 734,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/h2[1]/text()[2]",
+            "codeLines": [
+              "Partnership with Walmart"
+            ]
+          }
+        },
+        {
+          "index": 759,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[8]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "© 2022 Inovalon. All rights reserved."
+            ]
+          }
+        },
+        {
+          "index": 767,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Inovalon Announces Expanded"
+            ]
+          }
+        },
+        {
+          "index": 768,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/h2[1]/text()[2]",
+            "codeLines": [
+              "Partnership with Walmart"
+            ]
+          }
+        },
+        {
+          "index": 793,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[8]/div[1]/div[1]/text()[1]",
+            "codeLines": [
+              "© 2022 Inovalon. All rights reserved."
+            ]
+          }
+        },
+        {
+          "index": 824,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[5]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Ready. Set. Analyze.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 825,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[5]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 826,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Real-World Healthcare Data",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 827,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 828,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[7]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Platform",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 829,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[7]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 830,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[8]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Driving Value",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 831,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[8]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 832,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[9]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Empowering the Point of Care",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 833,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r72",
+            "ruleSummary": "Paragraphs of text are not all uppercase",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r72",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[9]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 846,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[3]/a[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Inovalon is a leading provider of cloud-based platforms empowering data-driven healthcare.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 847,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[3]/a[2]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  We empower payers, providers, pharmacy and life sciences organizations and virtually anyone who p...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 848,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[3]/a[3]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  We harness the power of cloud-based data and technology to improve the quality and economics of h...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 849,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[5]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Ready. Set. Analyze.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 850,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[5]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 851,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Real-World Healthcare Data",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 852,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 853,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[7]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Platform",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 854,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[7]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 855,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[8]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Driving Value",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 856,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[8]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 857,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[9]/div[1]/a[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Empowering the Point of Care",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 858,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[1]/div[9]/div[1]/a[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Learn More",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 859,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[5]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"home_numbers_subtitle\">",
+              "  Driving value for our customers with the nation’s most comprehensive dataset",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 860,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[6]/div[1]/a[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Real-time comprehensive patient-specific data and analytical insights to empower your healthcare ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 861,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[6]/div[1]/a[2]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Improve patient outcomes & value-based contract performance.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 862,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[6]/div[1]/a[3]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Smart device access and guaranteed web connectivity for your members to participate in a virtual ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 863,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[6]/div[2]/a[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Read Full Release",
+              "  <img src=\"https://www.inovalon.com/wp-content/themes/active-master-v2/images/readmore_arrow.svg\" ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 864,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[6]/div[2]/a[2]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Read Full Release",
+              "  <img src=\"https://www.inovalon.com/wp-content/themes/active-master-v2/images/readmore_arrow.svg\" ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 865,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[6]/div[6]/div[2]/a[3]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Read Full Release",
+              "  <img src=\"https://www.inovalon.com/wp-content/themes/active-master-v2/images/readmore_arrow.svg\" ...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 866,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Direct Sales:",
+              "  <a href=\"tel:8778318171\">",
+              "    877-831-8171",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 867,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  General Inquiries:",
+              "  <a href=\"tel:3018094000\">",
+              "    301-809-4000",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 868,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/p[3]",
+            "codeLines": [
+              "<p>",
+              "  <a href=\"/contact/inquiries/\">",
+              "    Contact Us",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 869,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/p[4]",
+            "codeLines": [
+              "<p>",
+              "  <a href=\"mailto:media@inovalon.com\">",
+              "    Media Inquiries",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 870,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/div[7]/div[1]/div[4]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Inovalon is a leading provider of cloud-based platforms empowering data-driven healthcare.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1184,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      8
+    ]
+  ]
+}

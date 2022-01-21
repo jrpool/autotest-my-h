@@ -1,0 +1,1354 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0or",
+  "logCount": 4,
+  "logSize": 1280,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.selective.com/",
+      "what": "Selective (CCVAX)",
+      "result": "https://www.selective.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.selective.com/",
+      "result": [
+        {
+          "index": 235,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r17",
+            "ruleSummary": "Elements with aria-hidden='true' are not focusable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r17",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[2]/ul[1]/li[2]",
+            "codeLines": [
+              "<li aria-hidden=\"true\" role=\"presentation\" aria-selected=\"false\" aria-controls=\"navigation01\" id=\"s...",
+              "  <button type=\"button\" data-role=\"none\" role=\"button\" tabindex=\"0\">",
+              "    2",
+              "    <span class=\"invisible nextSlide\">",
+              "      Click here to change the slide",
+              "    </span>",
+              "  </button>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 245,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r18",
+            "ruleSummary": "aria-* states and properties are allowed",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r18",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+                "name": "ARIA5",
+                "title": "Using WAI-ARIA state and property attributes to expose the state of a user interface"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "aria-selected",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[2]/ul[1]/li[1]/@aria-selected",
+            "codeLines": [
+              "aria-selected=\"true\""
+            ]
+          }
+        },
+        {
+          "index": 374,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/header[1]/section[4]/article[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]",
+            "codeLines": [
+              "<div id=\"mobi-chk-agents\" class=\"chk_remmber checkbox\">",
+              "  <legend class=\"invisible\">",
+              "    Customers",
+              "  </legend>",
+              "  <label class=\"checked\">",
+              "    <input type=\"checkbox\" name=\"\" value=\"\" checked>",
+              "    Remember Me",
+              "  </label>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 379,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/header[1]/section[4]/article[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]",
+            "codeLines": [
+              "<div id=\"mobi-chk-agents\" class=\"chk_remmber checkbox\">",
+              "  <legend class=\"invisible\">",
+              "    Agents",
+              "  </legend>",
+              "  <label class=\"checked\">",
+              "    <input type=\"checkbox\" name=\"\" value=\"\" checked>",
+              "    Remember Me",
+              "  </label>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 384,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/header[1]/section[4]/article[3]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]",
+            "codeLines": [
+              "<div id=\"mobi-chk-agents\" class=\"chk_remmber checkbox\">",
+              "  <legend class=\"invisible\">",
+              "    Employees",
+              "  </legend>",
+              "  <label class=\"checked\">",
+              "    <input type=\"checkbox\" name=\"\" value=\"\" checked>",
+              "    Remember Me",
+              "  </label>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 386,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"global_banner_item d-md-flex slick-slide slick-current slick-active\" data-slick-index=\"...",
+              "  <div class=\"global_banner_item_bg \" style=\"background-image: url('/~/media/Images/S/Selective-V2/...",
+              "  <div class=\"container-fluid\">",
+              "    <div class=\"row align-items-md-center\">",
+              "      <div class=\"offset-1 col-md-10 col-10\">",
+              "        <div class=\"banner_text_wrapper \">",
+              "          <h1 class=\"banner_title\">",
+              "            Be uniquely",
+              "            <br>",
+              "            insured.",
+              "          </h1>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 387,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[1]/div[1]/div[2]",
+            "codeLines": [
+              "<div class=\"global_banner_item d-md-flex slick-slide\" data-slick-index=\"1\" aria-hidden=\"true\" tabin...",
+              "  <div class=\"global_banner_item_bg \" style=\"background-image: url('/~/media/Images/S/Selective-V2/...",
+              "  <div class=\"container-fluid\">",
+              "    <div class=\"row align-items-md-center\">",
+              "      <div class=\"offset-1 col-md-10 col-10\">",
+              "        <div class=\"banner_text_wrapper \">",
+              "          <h1 class=\"banner_title\">",
+              "            Insurance  for Business",
+              "          </h1>",
+              "          <div class=\"banner_description\">",
+              "            Your business faces risks every day. That’s why Selective offers a wide range of busine...",
+              "          </div>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 388,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[2]/ul[1]/li[1]",
+            "codeLines": [
+              "<li class=\"slick-active\" aria-hidden=\"false\" role=\"presentation\" aria-selected=\"true\" aria-controls...",
+              "  <button type=\"button\" data-role=\"none\" role=\"button\" tabindex=\"0\">",
+              "    1",
+              "    <span class=\"invisible currentSlide\">",
+              "      Current slide button",
+              "    </span>",
+              "  </button>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 389,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[2]/ul[1]/li[2]",
+            "codeLines": [
+              "<li aria-hidden=\"true\" role=\"presentation\" aria-selected=\"false\" aria-controls=\"navigation01\" id=\"s...",
+              "  <button type=\"button\" data-role=\"none\" role=\"button\" tabindex=\"0\">",
+              "    2",
+              "    <span class=\"invisible nextSlide\">",
+              "      Click here to change the slide",
+              "    </span>",
+              "  </button>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 392,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[1]/div[3]/div[2]/input[1]",
+            "codeLines": [
+              "<input type=\"hidden\" id=\"_publicUserType\" name=\"_publicUserType\" value=\"\">"
+            ]
+          }
+        },
+        {
+          "index": 393,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[1]/div[3]/div[2]/input[2]",
+            "codeLines": [
+              "<input type=\"hidden\" id=\"_publicPass\" name=\"_publicPass\" value=\"\">"
+            ]
+          }
+        },
+        {
+          "index": 394,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[1]/div[3]/div[2]/input[3]",
+            "codeLines": [
+              "<input type=\"hidden\" id=\"_publicUser\" name=\"_publicUser\" value=\"\">"
+            ]
+          }
+        },
+        {
+          "index": 395,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[1]/div[3]/div[2]/input[4]",
+            "codeLines": [
+              "<input type=\"hidden\" id=\"ScreenResolution\" name=\"ScreenResolution\" value=\"1792 x 1120\">"
+            ]
+          }
+        },
+        {
+          "index": 397,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[2]/input[1]",
+            "codeLines": [
+              "<input type=\"hidden\" id=\"_publicUserType\" name=\"_publicUserType\">"
+            ]
+          }
+        },
+        {
+          "index": 398,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[2]/input[2]",
+            "codeLines": [
+              "<input type=\"hidden\" id=\"_publicPass\" name=\"_publicPass\">"
+            ]
+          }
+        },
+        {
+          "index": 399,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[2]/input[3]",
+            "codeLines": [
+              "<input type=\"hidden\" id=\"_publicUser\" name=\"_publicUser\">"
+            ]
+          }
+        },
+        {
+          "index": 400,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[2]/input[4]",
+            "codeLines": [
+              "<input type=\"text\" id=\"ScreenResolution\" name=\"ScreenResolution\" style=\"dispaly:none;\">"
+            ]
+          }
+        },
+        {
+          "index": 424,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r42",
+            "ruleSummary": "Elements with a role have required parent",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r42",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[2]/ul[1]/li[1]",
+            "codeLines": [
+              "<li class=\"slick-active\" aria-hidden=\"false\" role=\"presentation\" aria-selected=\"true\" aria-controls...",
+              "  <button type=\"button\" data-role=\"none\" role=\"button\" tabindex=\"0\">",
+              "    1",
+              "    <span class=\"invisible currentSlide\">",
+              "      Current slide button",
+              "    </span>",
+              "  </button>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 455,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r47",
+            "ruleSummary": "<meta name='viewport'> elements do not prevent zoom",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r47",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#reflow",
+                "chapter": "1.4.10",
+                "title": "Reflow"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "meta",
+            "path": "/html[1]/head[1]/meta[6]",
+            "codeLines": [
+              "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">"
+            ]
+          }
+        },
+        {
+          "index": 680,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "About selective"
+            ]
+          }
+        },
+        {
+          "index": 681,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "When you choose Selective, you choose more than an insurance policy. You choose"
+            ]
+          }
+        },
+        {
+          "index": 682,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[2]",
+            "codeLines": [
+              "who are here for you before, during, and after an"
+            ]
+          }
+        },
+        {
+          "index": 683,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[3]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 702,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r68",
+            "ruleSummary": "Elements with a role have required children",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r68",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "ul",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[2]/ul[1]",
+            "codeLines": [
+              "<ul class=\"slick-dots\" style=\"\" role=\"tablist\">",
+              "  <li class=\"slick-active\" aria-hidden=\"false\" role=\"presentation\" aria-selected=\"true\" aria-contro...",
+              "    <button type=\"button\" data-role=\"none\" role=\"button\" tabindex=\"0\">",
+              "      1",
+              "      <span class=\"invisible currentSlide\">",
+              "        Current slide button",
+              "      </span>",
+              "    </button>",
+              "  </li>",
+              "  <li aria-hidden=\"true\" role=\"presentation\" aria-selected=\"false\" aria-controls=\"navigation01\" id=...",
+              "    <button type=\"button\" data-role=\"none\" role=\"button\" tabindex=\"0\">",
+              "      2",
+              "      <span class=\"invisible nextSlide\">",
+              "        Click here to change the slide",
+              "      </span>",
+              "    </button>",
+              "  </li>",
+              "</ul>"
+            ]
+          }
+        },
+        {
+          "index": 711,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "About selective"
+            ]
+          }
+        },
+        {
+          "index": 712,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "When you choose Selective, you choose more than an insurance policy. You choose"
+            ]
+          }
+        },
+        {
+          "index": 713,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[2]",
+            "codeLines": [
+              "who are here for you before, during, and after an"
+            ]
+          }
+        },
+        {
+          "index": 714,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[3]",
+            "codeLines": [
+              "."
+            ]
+          }
+        },
+        {
+          "index": 765,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/form[1]/div[3]/section[1]/div[1]/div[1]/div[2]/p[1]",
+            "codeLines": [
+              "<p class=\"h4\">",
+              "  Moratorium Messages for Kentucky & Tennessee Customers",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 775,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[7]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  4.5",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 778,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/form[1]/div[3]/footer[1]/section[1]/div[1]/div[1]/div[3]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Get Social:",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 891,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r78",
+            "ruleSummary": "Headings of same level have text content between them",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r78",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h3",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[2]/div[1]/div[2]/div[1]/div[1]/a[3]/div[1]/h3[1]",
+            "codeLines": [
+              "<h3 class=\"product_item_title\">",
+              "  floods",
+              "</h3>"
+            ]
+          }
+        },
+        {
+          "index": 900,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r8",
+            "ruleSummary": "Form fields have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r8",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"slick-track\" style=\"opacity: 1; width: 5120px;\" role=\"listbox\">",
+              "  <div class=\"global_banner_item d-md-flex slick-slide slick-current slick-active\" data-slick-index...",
+              "    <div class=\"global_banner_item_bg \" style=\"background-image: url('/~/media/Images/S/Selective-V...",
+              "    <div class=\"container-fluid\">",
+              "      <div class=\"row align-items-md-center\">",
+              "        <div class=\"offset-1 col-md-10 col-10\">",
+              "          <div class=\"banner_text_wrapper \">",
+              "            <h1 class=\"banner_title\">",
+              "              Be uniquely",
+              "              <br>",
+              "              insured.",
+              "            </h1>",
+              "          </div>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "  </div>",
+              "  <div class=\"global_banner_item d-md-flex slick-slide\" data-slick-index=\"1\" aria-hidden=\"true\" tab...",
+              "    <div class=\"global_banner_item_bg \" style=\"background-image: url('/~/media/Images/S/Selective-V...",
+              "    <div class=\"container-fluid\">",
+              "      <div class=\"row align-items-md-center\">",
+              "        <div class=\"offset-1 col-md-10 col-10\">",
+              "          <div class=\"banner_text_wrapper \">",
+              "            <h1 class=\"banner_title\">",
+              "              Insurance  for Business",
+              "            </h1>",
+              "            <div class=\"banner_description\">",
+              "              Your business faces risks every day. That’s why Selective offers a wide range of busi...",
+              "            </div>",
+              "          </div>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 901,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r8",
+            "ruleSummary": "Form fields have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r8",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"slick-track\" role=\"listbox\" style=\"opacity: 1; width: 840px;\">",
+              "  <div class=\"image_or_video_item slick-slide slick-current slick-active\" data-slick-index=\"0\" aria...",
+              "    <div class=\"about_module_video\" style=\"background-image: url(/~/media/Images/S/Selective-V2/hom...",
+              "      <a href=\"//www.youtube.com/watch?edufilter=NULL&v=FyzTd2-gmM4\" class=\"play_button icon-triang...",
+              "        <span class=\"invisible\">",
+              "          Click to play video",
+              "        </span>",
+              "      </a>",
+              "    </div>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 917,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/form[1]/div[3]/header[1]/section[2]/div[1]/div[1]/div[1]/div[2]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"Search\" class=\"search-query search-txt\" id=\"searchTextbox\" name=\"searchTe..."
+            ]
+          }
+        },
+        {
+          "index": 918,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"slick-track\" style=\"opacity: 1; width: 5120px;\" role=\"listbox\">",
+              "  <div class=\"global_banner_item d-md-flex slick-slide slick-current slick-active\" data-slick-index...",
+              "    <div class=\"global_banner_item_bg \" style=\"background-image: url('/~/media/Images/S/Selective-V...",
+              "    <div class=\"container-fluid\">",
+              "      <div class=\"row align-items-md-center\">",
+              "        <div class=\"offset-1 col-md-10 col-10\">",
+              "          <div class=\"banner_text_wrapper \">",
+              "            <h1 class=\"banner_title\">",
+              "              Be uniquely",
+              "              <br>",
+              "              insured.",
+              "            </h1>",
+              "          </div>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "  </div>",
+              "  <div class=\"global_banner_item d-md-flex slick-slide\" data-slick-index=\"1\" aria-hidden=\"true\" tab...",
+              "    <div class=\"global_banner_item_bg \" style=\"background-image: url('/~/media/Images/S/Selective-V...",
+              "    <div class=\"container-fluid\">",
+              "      <div class=\"row align-items-md-center\">",
+              "        <div class=\"offset-1 col-md-10 col-10\">",
+              "          <div class=\"banner_text_wrapper \">",
+              "            <h1 class=\"banner_title\">",
+              "              Insurance  for Business",
+              "            </h1>",
+              "            <div class=\"banner_description\">",
+              "              Your business faces risks every day. That’s why Selective offers a wide range of busi...",
+              "            </div>",
+              "          </div>",
+              "        </div>",
+              "      </div>",
+              "    </div>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 919,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"slick-track\" role=\"listbox\" style=\"opacity: 1; width: 840px;\">",
+              "  <div class=\"image_or_video_item slick-slide slick-current slick-active\" data-slick-index=\"0\" aria...",
+              "    <div class=\"about_module_video\" style=\"background-image: url(/~/media/Images/S/Selective-V2/hom...",
+              "      <a href=\"//www.youtube.com/watch?edufilter=NULL&v=FyzTd2-gmM4\" class=\"play_button icon-triang...",
+              "        <span class=\"invisible\">",
+              "          Click to play video",
+              "        </span>",
+              "      </a>",
+              "    </div>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 994,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r86",
+            "ruleSummary": "Elements that are marked as decorative are not exposed to assistive technologies",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r86",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "li",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[1]/div[1]/div[2]/ul[1]/li[1]",
+            "codeLines": [
+              "<li class=\"slick-active\" aria-hidden=\"false\" role=\"presentation\" aria-selected=\"true\" aria-controls...",
+              "  <button type=\"button\" data-role=\"none\" role=\"button\" tabindex=\"0\">",
+              "    1",
+              "    <span class=\"invisible currentSlide\">",
+              "      Current slide button",
+              "    </span>",
+              "  </button>",
+              "</li>"
+            ]
+          }
+        },
+        {
+          "index": 997,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 1002,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r90",
+            "ruleSummary": "Element with presentational children has no focusable content",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r90",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#info-and-relationships",
+                "chapter": "1.3.1",
+                "title": "Info and Relationships"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[3]/article[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"image_or_video_item slick-slide slick-current slick-active\" data-slick-index=\"0\" aria-h...",
+              "  <div class=\"about_module_video\" style=\"background-image: url(/~/media/Images/S/Selective-V2/home/...",
+              "    <a href=\"//www.youtube.com/watch?edufilter=NULL&v=FyzTd2-gmM4\" class=\"play_button icon-triangle...",
+              "      <span class=\"invisible\">",
+              "        Click to play video",
+              "      </span>",
+              "    </a>",
+              "  </div>",
+              "</div>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      8
+    ]
+  ]
+}

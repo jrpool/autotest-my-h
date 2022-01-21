@@ -1,0 +1,1815 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 196,
+  "logSize": 8466,
+  "prohibitedCount": 1,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.childrensdefense.org/",
+      "what": "Children’s Defense Fund",
+      "result": "https://www.childrensdefense.org/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.childrensdefense.org/",
+      "result": [
+        {
+          "index": 52,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r12",
+            "ruleSummary": "Buttons have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r12",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/div[3]/header[1]/div[1]/div[1]/div[1]/div[2]/div[3]/button[1]",
+            "codeLines": [
+              "<button id=\"search-button\" class=\"reset-button\" role=\"button\">",
+              "  <i class=\"fa fa-search\"></i>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 54,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r13",
+            "ruleSummary": "<iframe> elements have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r13",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "iframe",
+            "path": "/html[1]/body[1]/div[1]/iframe[1]",
+            "codeLines": [
+              "<iframe class=\"lp-bar__iframe\" scrolling=\"no\" frameborder=\"0\" src=\"//childrensdefense.lpages.co/ser...",
+              "  #document",
+              "    <!doctype html>",
+              "    <html lang=\"en\">",
+              "      <head>",
+              "        <meta charset=\"utf-8\">",
+              "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+              "        <meta name=\"description\" content=\"Page Not Found\">",
+              "        <title>",
+              "          404 Not Found",
+              "        </title>",
+              "        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\">",
+              "        <link rel=\"preload\" as=\"style\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wgh...",
+              "        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;60...",
+              "        <script>",
+              "          function disableSearch() {",
+              "                  try {",
+              "                    window.localStorage.setItem(\"enableSearch\", \"0\");",
+              "                    renderWithoutSearch();",
+              "                    var searchContainer = document.getElementById(\"hotspots\")",
+              "                    searchContainer && searchContainer.remove();",
+              "                  } catch (e) {}",
+              "                }",
+              "          ",
+              "                function checkSearchEnabled() {",
+              "                  try {",
+              "                    return window.localStorage.getItem(\"enableSearch\") !== \"0\";",
+              "                  } catch (e) {}",
+              "                  return true;",
+              "                }",
+              "          ",
+              "                function renderWithSearch() {",
+              "                  document.getElementById(\"description\").innerHTML =",
+              "                    '<p id=\"description\">But we&#39;ve found these search results for you instead o...",
+              "                    'You can <a href=\"javascript:disableSearch()\">change this setting</a> if you&#3...",
+              "                    'a simple error message next time.</p>';",
+              "          ",
+              "                  document.getElementById(\"search-results-section\").insertAdjacentHTML(",
+              "                    \"afterbegin\",",
+              "                    \"<h2>Search Results</h2>\"",
+              "                  )",
+              "          ",
+              "                  var api = new HotspotsAPI(\"E839B9FE51F6\", {});",
+              "                  api.showTerms({",
+              "                    elementId: \"hotspots-search\",",
+              "                    templateName: {",
+              "                      template: \"sb_lp\",",
+              "                      version: \"latest\"",
+              "                    },",
+              "                    qc: \"Search Box\",",
+              "                    numOfResults: 1,",
+              "                    extraParams: {",
+              "                      sectionId: \"SCC3D0C3E8C3F5\",",
+              "                    }",
+              "                  });",
+              "                  api.showSERP({",
+              "                    elementId: \"hotspots-content\",",
+              "                    templateName: {",
+              "                      template: \"adserppyc\",",
+              "                      version: \"latest\"",
+              "                    },",
+              "                    searchTerm: window.location.hostname,",
+              "                    qc: \"Domain Match\",",
+              "                    numOfResults: 3,",
+              "                    extraParams: {",
+              "                      sectionId: \"SCC5FDC609C611\",",
+              "                    }",
+              "                  });",
+              "                }",
+              "          ",
+              "                function renderWithoutSearch() {",
+              "                  document.getElementById(\"description\").textContent =",
+              "                    'The page you’re looking for may have been moved. ' +",
+              "                    'Double-check that you have the right web address and give it another go!';",
+              "                }",
+              "          ",
+              "                function render(searchEnabled) {",
+              "                  if (searchEnabled) {",
+              "                    renderWithSearch();",
+              "                  } else {",
+              "                    renderWithoutSearch();",
+              "                  }",
+              "                }",
+              "        </script>",
+              "        <style>",
+              "          html,",
+              "                body {",
+              "                  color: rgb(87, 84, 82);",
+              "                  font-family: \"Open Sans\", sans-serif;",
+              "                  font-size: 1em;",
+              "                  line-height: 1.5;",
+              "                  margin: 0;",
+              "                  padding: 0;",
+              "                  -moz-osx-font-smoothing: grayscale;",
+              "                  -webkit-font-smoothing: antialiased;",
+              "                  -ms-text-size-adjust: 100%;",
+              "                  -webkit-text-size-adjust: 100%;",
+              "                }",
+              "                main {",
+              "                  display: flex;",
+              "                  flex-direction: column;",
+              "                  margin: 0 auto;",
+              "                  min-height: 100vh;",
+              "                  padding: 1rem 1rem;",
+              "                  max-width: 1440px;",
+              "                }",
+              "                header {",
+              "                  background-color: rgb(247, 247, 247);",
+              "                  padding: 1.125rem 1.125rem 1.188rem 1.125rem;",
+              "                  display: flex;",
+              "                  align-items: center;",
+              "                  align-content: center;",
+              "                }",
+              "                .spacer {",
+              "                  flex-grow: 1;",
+              "                }",
+              "                a.button,",
+              "                a.button:hover,",
+              "                a.button:visited {",
+              "                  border-radius: 2rem;",
+              "                  border: 0.188em solid #d1c6f9;",
+              "                  color: #603eff;",
+              "                  display: inline-block;",
+              "                  font-size: 1.125rem;",
+              "                  font-weight: 600;",
+              "                  line-height: 1;",
+              "                  padding: 0.625rem 1.125rem 0.688rem;",
+              "                  text-decoration: none;",
+              "                  white-space: nowrap;",
+              "                }",
+              "                a.button:hover {",
+              "                  color: #fff;",
+              "                  background-color: #603eff;",
+              "                  border-color: #603eff;",
+              "                }",
+              "                h1 {",
+              "                  font-size: 2rem;",
+              "                  line-height: 1.625;",
+              "                  margin: 0;",
+              "                  text-align: center;",
+              "                }",
+              "                h2 {",
+              "                  font-size: 1.75rem;",
+              "                  margin: 1.5rem 0;",
+              "                  border-bottom: 1px solid #979797;",
+              "                }",
+              "                section {",
+              "                  padding: 0 2%;",
+              "                }",
+              "                article {",
+              "                  margin: 0 auto;",
+              "                  width: 100%;",
+              "                  background: #fff;",
+              "                }",
+              "                article > p {",
+              "                  color: rgb(15, 12, 9);",
+              "                  font-size: 1rem;",
+              "                  line-height: 1.75;",
+              "                  margin: 1.5rem 0;",
+              "                }",
+              "                #hotspots-search {",
+              "                  padding-top: 0.5rem;",
+              "                }",
+              "                #hotspots-content {",
+              "                  padding-left: 1rem;",
+              "                }",
+              "                a:hover {",
+              "                  text-decoration: none;",
+              "                }",
+              "                @media (max-width: 359px) {",
+              "                  svg #logo-text {",
+              "                    display: none;",
+              "                  }",
+              "                }",
+              "        </style>",
+              "        <script src=\"https://d2fcz6pgmhcecl.cloudfront.net/latest/hotspots.js\"></script>",
+              "      </head>",
+              "      <body>",
+              "        <header>",
+              "          <svg width=\"145\" height=\"24\">",
+              "            <path d=\"M31.884 15.218l-3.996-2.09-11.668 6.105a.446.446 0 01-.415 0L4.138 13.127.142 ...",
+              "            <g id=\"logo-text\" fill=\"#000019\" fill-rule=\"evenodd\">",
+              "              <path d=\"M91.288 9.543c-.397-.506-.993-.903-1.853-.903-2.162 0-2.603 2.05-2.603 3.703...",
+              "              <path d=\"M126.02 9.234c-.397-.419-.992-.684-1.786-.684-1.456 0-2.559 1.036-2.69 2.601...",
+              "            </g>",
+              "          </svg>",
+              "          <div class=\"spacer\"></div>",
+              "          <a class=\"button\" href=\"https://www.leadpages.com/free-trial?utm_source=leadpages&utm_med...",
+              "            Get Leadpages",
+              "          </a>",
+              "        </header>",
+              "        <main>",
+              "          <section>",
+              "            <h1>",
+              "              We couldn't find that page",
+              "            </h1>",
+              "            <p id=\"description\">",
+              "              <p id=\"description\">",
+              "                But we've found these search results for you instead of displaying an error message...",
+              "                <a href=\"javascript:disableSearch()\">",
+              "                  change this setting",
+              "                </a>",
+              "                if you'd prefer a simple error message next time.",
+              "              </p>",
+              "            </p>",
+              "          </section>",
+              "          <div id=\"hotspots\">",
+              "            <section>",
+              "              <div id=\"hotspots-search\"></div>",
+              "            </section>",
+              "            <section id=\"search-results-section\">",
+              "              <h2>",
+              "                Search Results",
+              "              </h2>",
+              "              <div id=\"hotspots-content\"></div>",
+              "            </section>",
+              "          </div>",
+              "        </main>",
+              "        <script>",
+              "          render(checkSearchEnabled());",
+              "        </script>",
+              "      </body>",
+              "    </html>",
+              "</iframe>"
+            ]
+          }
+        },
+        {
+          "index": 528,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/section[1]/p[1]",
+            "codeLines": [
+              "<p id=\"description\">",
+              "  <p id=\"description\">",
+              "    But we've found these search results for you instead of displaying an error message. You can",
+              "    <a href=\"javascript:disableSearch()\">",
+              "      change this setting",
+              "    </a>",
+              "    if you'd prefer a simple error message next time.",
+              "  </p>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 529,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r3",
+            "ruleSummary": "id attributes have a unique value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r3",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#parsing",
+                "chapter": "4.1.1",
+                "title": "Parsing"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H93",
+                "name": "H93",
+                "title": "Ensuring that id attributes are unique on a Web page"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/section[1]/p[1]/p[1]",
+            "codeLines": [
+              "<p id=\"description\">",
+              "  But we've found these search results for you instead of displaying an error message. You can",
+              "  <a href=\"javascript:disableSearch()\">",
+              "    change this setting",
+              "  </a>",
+              "  if you'd prefer a simple error message next time.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 957,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h3",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[1]",
+            "codeLines": [
+              "<h3 class=\"title-heading-left\" style=\"margin:0;font-size:1em;\">",
+              "  Child Tax Credit Resources",
+              "</h3>"
+            ]
+          }
+        },
+        {
+          "index": 968,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h4",
+            "path": "/html[1]/body[1]/div[3]/div[3]/footer[1]/div[1]/div[1]/div[1]/section[1]/h4[1]",
+            "codeLines": [
+              "<h4 class=\"widget-title\">",
+              "  About Us",
+              "</h4>"
+            ]
+          }
+        },
+        {
+          "index": 1076,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r61",
+            "ruleSummary": "Documents start with a level 1 heading",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r61",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 1104,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "select",
+            "path": "/html[1]/body[1]/div[3]/header[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/select[1]",
+            "codeLines": [
+              "<select onchange=\"document.location.href=this.value\">",
+              "  <option>",
+              "    Select",
+              "  </option>",
+              "  <option value=\"https://www.cdfca.org/\">",
+              "    California",
+              "  </option>",
+              "  <option value=\"https://www.cdf-mn.org/\">",
+              "    Minnesota",
+              "  </option>",
+              "  <option value=\"https://www.cdfny.org/\">",
+              "    New York",
+              "  </option>",
+              "  <option value=\"https://www.cdfohio.org/\">",
+              "    Ohio",
+              "  </option>",
+              "  <option value=\"https://www.cdf-sro.org/\">",
+              "    Southern Regional Office",
+              "  </option>",
+              "  <option value=\"https://www.cdftexas.org/\">",
+              "    Texas",
+              "  </option>",
+              "  <option value=\"https://www.childrensdefense.org/\">",
+              "    National",
+              "  </option>",
+              "</select>"
+            ]
+          }
+        },
+        {
+          "index": 1111,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-large button-custom button-1 cdf-purp...",
+              "  <span class=\"fusion-button-text\">",
+              "    Take Action",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1112,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-medium button-custom button-2 cdf-whi...",
+              "  <span class=\"fusion-button-text\">",
+              "    Learn More",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1113,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-medium button-custom button-3 cdf-whi...",
+              "  <span class=\"fusion-button-text\">",
+              "    Read More",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1114,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-medium button-custom button-4 cdf-whi...",
+              "  <span class=\"fusion-button-text\">",
+              "    Read More",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1115,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-medium button-custom button-5 cdf-whi...",
+              "  <span class=\"fusion-button-text\">",
+              "    Explore the report",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1116,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-large button-custom button-6 cdf-red-...",
+              "  <span class=\"fusion-button-text\">",
+              "    Donate Monthly",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1117,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-medium button-custom button-7 cdf-red...",
+              "  <span class=\"fusion-button-text\">",
+              "    Learn more",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1118,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-medium button-custom button-8 cdf-ora...",
+              "  <span class=\"fusion-button-text\">",
+              "    Invest in Children",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1119,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[1]/div[1]/span[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"input_1.3\" id=\"input_13_1_3\" value=\"\" aria-required=\"true\" placeholder=\"Fi..."
+            ]
+          }
+        },
+        {
+          "index": 1120,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[1]/div[1]/span[2]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"input_1.6\" id=\"input_13_1_6\" value=\"\" aria-required=\"true\" placeholder=\"La..."
+            ]
+          }
+        },
+        {
+          "index": 1121,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[2]/div[1]/input[1]",
+            "codeLines": [
+              "<input name=\"input_3\" id=\"input_13_3\" type=\"email\" value=\"\" class=\"large\" placeholder=\"Email\" aria-..."
+            ]
+          }
+        },
+        {
+          "index": 1122,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[3]/div[1]/span[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"input_2.5\" id=\"input_13_2_5\" value=\"\" placeholder=\"Zip\" aria-required=\"tru..."
+            ]
+          }
+        },
+        {
+          "index": 1123,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[4]/div[1]/input[1]",
+            "codeLines": [
+              "<input name=\"input_8\" id=\"input_13_8\" type=\"tel\" value=\"\" class=\"large\" placeholder=\"Phone #\" aria-..."
+            ]
+          }
+        },
+        {
+          "index": 1124,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[2]/input[1]",
+            "codeLines": [
+              "<input type=\"submit\" id=\"gform_submit_button_13\" class=\"gform_button button\" value=\"Sign Up\" onclic..."
+            ]
+          }
+        },
+        {
+          "index": 1125,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-medium button-custom button-9 cdf-blu...",
+              "  <span class=\"fusion-button-text\">",
+              "    Join the Movement",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1126,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-medium button-custom button-10 cdf-gr...",
+              "  <span class=\"fusion-button-text\">",
+              "    Read Child Watch",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1127,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/a[1]",
+            "codeLines": [
+              "<a class=\"fusion-button button-flat fusion-button-pill button-large button-custom button-11 cdf-red...",
+              "  <span class=\"fusion-button-text\">",
+              "    Our Impact",
+              "  </span>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 1157,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "Take Action to Protect the Right to Vote"
+            ]
+          }
+        },
+        {
+          "index": 1162,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[1]/text()[1]",
+            "codeLines": [
+              "Dr. King’s Choice…and Ours"
+            ]
+          }
+        },
+        {
+          "index": 1163,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/p[1]/text()[1]",
+            "codeLines": [
+              "Read Rev. Dr. Wilson’s message about how CDF is living Dr. King’s legacy in 2022."
+            ]
+          }
+        },
+        {
+          "index": 1164,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[1]/text()[1]",
+            "codeLines": [
+              "Raising Democracy"
+            ]
+          }
+        },
+        {
+          "index": 1165,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/p[1]/text()[1]",
+            "codeLines": [
+              "Child well-being, racial justice, and democracy are codependent. Read Rev. Dr. Wilson’s recent lett..."
+            ]
+          }
+        },
+        {
+          "index": 1166,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[1]/text()[1]",
+            "codeLines": [
+              "Report: The State of America’s Children® 2021"
+            ]
+          }
+        },
+        {
+          "index": 1167,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/p[1]/text()[1]",
+            "codeLines": [
+              "Our recent report and factsheets provide an overview of how children are faring to improve policies..."
+            ]
+          }
+        },
+        {
+          "index": 1171,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/p[1]/text()[1]",
+            "codeLines": [
+              "We fight to make sure every child in America has everything they need to thrive. Fixing America’s s..."
+            ]
+          }
+        },
+        {
+          "index": 1173,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/p[1]/text()[1]",
+            "codeLines": [
+              "Your gift is put to immediate use to help all children, especially our most vulnerable. CDF is high..."
+            ]
+          }
+        },
+        {
+          "index": 1174,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/h2[1]/text()[1]",
+            "codeLines": [
+              "Count me in!"
+            ]
+          }
+        },
+        {
+          "index": 1175,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/p[1]/text()[1]",
+            "codeLines": [
+              "Be a champion for every child. Sign up for updates about how we work to fight for children and ways..."
+            ]
+          }
+        },
+        {
+          "index": 1177,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/p[1]/text()[1]",
+            "codeLines": [
+              "More than 150,000 children have experienced our transformative literacy and cultural enrichment pro..."
+            ]
+          }
+        },
+        {
+          "index": 1179,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/p[1]/text()[1]",
+            "codeLines": [
+              "Our founder and lifelong advocate for disadvantaged Americans, Marian Wright Edelman writes Child W..."
+            ]
+          }
+        },
+        {
+          "index": 1212,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[1]/text()[1]",
+            "codeLines": [
+              "Dr. King’s Choice…and Ours"
+            ]
+          }
+        },
+        {
+          "index": 1213,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/p[1]/text()[1]",
+            "codeLines": [
+              "Read Rev. Dr. Wilson’s message about how CDF is living Dr. King’s legacy in 2022."
+            ]
+          }
+        },
+        {
+          "index": 1215,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/p[1]/text()[1]",
+            "codeLines": [
+              "Child well-being, racial justice, and democracy are codependent. Read Rev. Dr. Wilson’s recent lett..."
+            ]
+          }
+        },
+        {
+          "index": 1217,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/p[1]/text()[1]",
+            "codeLines": [
+              "Our recent report and factsheets provide an overview of how children are faring to improve policies..."
+            ]
+          }
+        },
+        {
+          "index": 1224,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/h2[1]/text()[1]",
+            "codeLines": [
+              "Count me in!"
+            ]
+          }
+        },
+        {
+          "index": 1225,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/p[1]/text()[1]",
+            "codeLines": [
+              "Be a champion for every child. Sign up for updates about how we work to fight for children and ways..."
+            ]
+          }
+        },
+        {
+          "index": 1269,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h1[1]/p[1]",
+            "codeLines": [
+              "<p style=\"text-align: center;\">",
+              "  The Children’s Defense Fund is fighting to make",
+              "  <br>",
+              "  sure every child in America has what they need to thrive.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1280,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h2[1]/p[1]",
+            "codeLines": [
+              "<p style=\"text-align: center;\">",
+              "  “One ultimate goal [of CDF Freedom Schools] is for kids to actually be excited about learning and...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1283,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r74",
+            "ruleSummary": "Paragraphs of text do not have font sizes defined in absolute units",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r74",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[3]/div[3]/footer[2]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  The Children’s Defense Fund is a 501(c)(3) nonprofit organization. Our Federal Tax ID number is 5...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 1387,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r8",
+            "ruleSummary": "Form fields have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r8",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "select",
+            "path": "/html[1]/body[1]/div[3]/header[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/select[1]",
+            "codeLines": [
+              "<select onchange=\"document.location.href=this.value\">",
+              "  <option>",
+              "    Select",
+              "  </option>",
+              "  <option value=\"https://www.cdfca.org/\">",
+              "    California",
+              "  </option>",
+              "  <option value=\"https://www.cdf-mn.org/\">",
+              "    Minnesota",
+              "  </option>",
+              "  <option value=\"https://www.cdfny.org/\">",
+              "    New York",
+              "  </option>",
+              "  <option value=\"https://www.cdfohio.org/\">",
+              "    Ohio",
+              "  </option>",
+              "  <option value=\"https://www.cdf-sro.org/\">",
+              "    Southern Regional Office",
+              "  </option>",
+              "  <option value=\"https://www.cdftexas.org/\">",
+              "    Texas",
+              "  </option>",
+              "  <option value=\"https://www.childrensdefense.org/\">",
+              "    National",
+              "  </option>",
+              "</select>"
+            ]
+          }
+        },
+        {
+          "index": 1396,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "select",
+            "path": "/html[1]/body[1]/div[3]/header[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/select[1]",
+            "codeLines": [
+              "<select onchange=\"document.location.href=this.value\">",
+              "  <option>",
+              "    Select",
+              "  </option>",
+              "  <option value=\"https://www.cdfca.org/\">",
+              "    California",
+              "  </option>",
+              "  <option value=\"https://www.cdf-mn.org/\">",
+              "    Minnesota",
+              "  </option>",
+              "  <option value=\"https://www.cdfny.org/\">",
+              "    New York",
+              "  </option>",
+              "  <option value=\"https://www.cdfohio.org/\">",
+              "    Ohio",
+              "  </option>",
+              "  <option value=\"https://www.cdf-sro.org/\">",
+              "    Southern Regional Office",
+              "  </option>",
+              "  <option value=\"https://www.cdftexas.org/\">",
+              "    Texas",
+              "  </option>",
+              "  <option value=\"https://www.childrensdefense.org/\">",
+              "    National",
+              "  </option>",
+              "</select>"
+            ]
+          }
+        },
+        {
+          "index": 1397,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[1]/div[1]/span[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"input_1.3\" id=\"input_13_1_3\" value=\"\" aria-required=\"true\" placeholder=\"Fi..."
+            ]
+          }
+        },
+        {
+          "index": 1398,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[1]/div[1]/span[2]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"input_1.6\" id=\"input_13_1_6\" value=\"\" aria-required=\"true\" placeholder=\"La..."
+            ]
+          }
+        },
+        {
+          "index": 1399,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[2]/div[1]/input[1]",
+            "codeLines": [
+              "<input name=\"input_3\" id=\"input_13_3\" type=\"email\" value=\"\" class=\"large\" placeholder=\"Email\" aria-..."
+            ]
+          }
+        },
+        {
+          "index": 1400,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[3]/div[1]/span[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" name=\"input_2.5\" id=\"input_13_2_5\" value=\"\" placeholder=\"Zip\" aria-required=\"tru..."
+            ]
+          }
+        },
+        {
+          "index": 1401,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[3]/main[1]/div[1]/section[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/form[1]/div[1]/ul[1]/li[4]/div[1]/input[1]",
+            "codeLines": [
+              "<input name=\"input_8\" id=\"input_13_8\" type=\"tel\" value=\"\" class=\"large\" placeholder=\"Phone #\" aria-..."
+            ]
+          }
+        },
+        {
+          "index": 1470,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      12
+    ]
+  ]
+}

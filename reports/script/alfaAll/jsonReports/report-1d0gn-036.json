@@ -1,0 +1,914 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0gn",
+  "logCount": 10,
+  "logSize": 374,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://reta-vortaro.de/revo/dlg/index-1g.html",
+      "what": "Reta Vortaro",
+      "result": "https://reta-vortaro.de/revo/dlg/index-1g.html"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://reta-vortaro.de/revo/dlg/index-1g.html",
+      "result": [
+        {
+          "index": 1155,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r4",
+            "ruleSummary": "<html> document elements have a lang attribute",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r4",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#language-of-page",
+                "chapter": "3.1.1",
+                "title": "Language of Page"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+                "name": "H57",
+                "title": "Using the language attribute on the HTML element"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "html",
+            "path": "/html[1]",
+            "codeLines": [
+              "<html>",
+              "...",
+              "</html>"
+            ]
+          }
+        },
+        {
+          "index": 1249,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r53",
+            "ruleSummary": "Headings are structured",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r53",
+            "requirements": []
+          },
+          "target": {
+            "type": "element",
+            "tagName": "h3",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/h3[1]",
+            "codeLines": [
+              "<h3>",
+              "  kun difinoj, ekzemploj,",
+              "      tradukoj, indeksoj, tezaŭro ",
+              "      kaj reta redaktado.",
+              "</h3>"
+            ]
+          }
+        },
+        {
+          "index": 1714,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/nav[1]/form[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" id=\"x:q\" name=\"q\" maxlength=\"55\" placeholder=\"ĵokeroj: % (pluraj) kaj _ (unu)\"..."
+            ]
+          }
+        },
+        {
+          "index": 1716,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/nav[1]/form[1]/button[7]",
+            "codeLines": [
+              "<button id=\"x:nav_srch_btn\" title=\"serĉu\">",
+              "  <svg id=\"x:revo_icon\" class=\"revo_icon\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xl...",
+              "    <style type=\"text/css\">",
+              "      .bg {",
+              "                        fill: rgb(85.2%,64.5%,12.5%);",
+              "                        stroke: none;",
+              "                      }",
+              "    </style>",
+              "    <circle cx=\"50\" cy=\"54.49\" r=\"40.5\" class=\"bg\"></circle>",
+              "    <path d=\"M37.53 47.02C38.10 47.23,42.57 51.17,43.14 51.38C47.24 52.87,45.86 70.34,43.14 75.06C4...",
+              "                           58.33,82.49 59.36,80.68 49.09C79.24 40.95,74.636536 33.72,67.86 28.98C61...",
+              "                           29.86,24.48 36.63C19.74 43.39,17.88 51.77,19.31 59.90C20.75 68.04,25.36 ...",
+              "                           84.03,67.85 80.85,72.38 76.16C69.07 74.95,66.53 72.22,65.57 68.83\" style...",
+              "    <path d=\"M69.31 40.79C69.31 39.30,68.72 37.87,67.67 36.82C66.62 35.77,65.19 35.18,63.70 35.18C6...",
+              "                           37.87,58.10 39.30,58.10 40.79C58.10 42.27,58.69 43.70,59.74 44.75C60.79 ...",
+              "                           44.75C68.72 43.70,69.31 42.27,69.31 40.79Z\" style=\"fill: rgb(0.0%,0.0%,0...",
+              "  </svg>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 2095,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[1]/form[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" id=\"w:q\" name=\"q\" maxlength=\"255\" placeholder=\"vorto...\">"
+            ]
+          }
+        },
+        {
+          "index": 2097,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "button",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[1]/form[1]/button[1]",
+            "codeLines": [
+              "<button id=\"w:revo_sercho\" value=\"revo\" title=\"serĉu\">",
+              "  <svg id=\"w:revo_icon\" class=\"revo_icon\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xl...",
+              "    <style type=\"text/css\">",
+              "      .bg {",
+              "                  fill: rgb(85.2%,64.5%,12.5%);",
+              "                  stroke: none;",
+              "                }",
+              "    </style>",
+              "    <circle cx=\"50\" cy=\"54.49\" r=\"40.5\" class=\"bg\"></circle>",
+              "    <path d=\"M37.53 47.02C38.10 47.23,42.57 51.17,43.14 51.38C47.24 52.87,45.86 70.34,43.14 75.06C4...",
+              "                    58.33,82.49 59.36,80.68 49.09C79.24 40.95,74.636536 33.72,67.86 28.98C61.10 24....",
+              "                    29.86,24.48 36.63C19.74 43.39,17.88 51.77,19.31 59.90C20.75 68.04,25.36 75.27,3...",
+              "                    84.03,67.85 80.85,72.38 76.16C69.07 74.95,66.53 72.22,65.57 68.83\" style=\"strok...",
+              "                round;stroke-miterlimit: 10.00;fill: none;\"></path>",
+              "    <path d=\"M69.31 40.79C69.31 39.30,68.72 37.87,67.67 36.82C66.62 35.77,65.19 35.18,63.70 35.18C6...",
+              "                    37.87,58.10 39.30,58.10 40.79C58.10 42.27,58.69 43.70,59.74 44.75C60.79 45.80,6...",
+              "                    44.75C68.72 43.70,69.31 42.27,69.31 40.79Z\" style=\"fill: rgb(0.0%,0.0%,0.0%);st...",
+              "  </svg>",
+              "</button>"
+            ]
+          }
+        },
+        {
+          "index": 2292,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/nav[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]",
+            "codeLines": [
+              "<p style=\"font-size: 120%\">",
+              "  <b>",
+              "    <span class=\"literoj\" lang=\"eo\">",
+              "      <a href=\"../inx/kap_a.html\">",
+              "        a",
+              "      </a>",
+              "      <a href=\"../inx/kap_b.html\">",
+              "        b",
+              "      </a>",
+              "      <a href=\"../inx/kap_c.html\">",
+              "        c",
+              "      </a>",
+              "      <a href=\"../inx/kap_cx.html\">",
+              "        ĉ",
+              "      </a>",
+              "      <a href=\"../inx/kap_d.html\">",
+              "        d",
+              "      </a>",
+              "      <a href=\"../inx/kap_e.html\">",
+              "        e",
+              "      </a>",
+              "      <a href=\"../inx/kap_f.html\">",
+              "        f",
+              "      </a>",
+              "      <a href=\"../inx/kap_g.html\">",
+              "        g",
+              "      </a>",
+              "      <a href=\"../inx/kap_gx.html\">",
+              "        ĝ",
+              "      </a>",
+              "      <a href=\"../inx/kap_h.html\">",
+              "        h",
+              "      </a>",
+              "      <a href=\"../inx/kap_hx.html\">",
+              "        ĥ",
+              "      </a>",
+              "      <a href=\"../inx/kap_i.html\">",
+              "        i",
+              "      </a>",
+              "      <a href=\"../inx/kap_j.html\">",
+              "        j",
+              "      </a>",
+              "      <a href=\"../inx/kap_jx.html\">",
+              "        ĵ",
+              "      </a>",
+              "      <a href=\"../inx/kap_k.html\">",
+              "        k",
+              "      </a>",
+              "      <a href=\"../inx/kap_l.html\">",
+              "        l",
+              "      </a>",
+              "      <a href=\"../inx/kap_m.html\">",
+              "        m",
+              "      </a>",
+              "      <a href=\"../inx/kap_n.html\">",
+              "        n",
+              "      </a>",
+              "      <a href=\"../inx/kap_o.html\">",
+              "        o",
+              "      </a>",
+              "      <a href=\"../inx/kap_p.html\">",
+              "        p",
+              "      </a>",
+              "      <a href=\"../inx/kap_r.html\">",
+              "        r",
+              "      </a>",
+              "      <a href=\"../inx/kap_s.html\">",
+              "        s",
+              "      </a>",
+              "      <a href=\"../inx/kap_sx.html\">",
+              "        ŝ",
+              "      </a>",
+              "      <a href=\"../inx/kap_t.html\">",
+              "        t",
+              "      </a>",
+              "      <a href=\"../inx/kap_u.html\">",
+              "        u",
+              "      </a>",
+              "      <a href=\"../inx/kap_ux.html\">",
+              "        ŭ",
+              "      </a>",
+              "      <a href=\"../inx/kap_v.html\">",
+              "        v",
+              "      </a>",
+              "      <a href=\"../inx/kap_z.html\">",
+              "        z",
+              "      </a>",
+              "      <a href=\"../inx/kap_0.html\">",
+              "        ?",
+              "      </a>",
+              "    </span>",
+              "  </b>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2308,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  <span id=\"t:nombroj\">",
+              "    Ni nun provizas 31698 kapvortojn kun 489787 tradukoj.",
+              "  </span>",
+              "  Jen iru al",
+              "  <a id=\"w:hazarda\" href=\"#\">",
+              "    iu ajn kapvorto",
+              "  </a>",
+              "  aŭ",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2309,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Por trovi artikolon vi povas uzi la indeksojn en",
+              "      la aparta kadro aŭ uzi unu el la serĉiloj:",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2310,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[1]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  Se via retumilo subtenas rapidserĉon,",
+              "      vi povas",
+              "  <a href=\"https://revuloj.github.io/temoj/sercho\">",
+              "    aldoni Retan Vortaron al la serĉilolisto",
+              "  </a>",
+              "  .",
+              "      Tiel vi povos serĉi vorton sen unue navigi al centra paĝo de Revo.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2311,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[1]/p[3]",
+            "codeLines": [
+              "<p>",
+              "  Cetere vi ankaŭ povas uzi la superserĉon",
+              "  <a title=\"Superserĉo per ViVo\" target=\"_new\" href=\"http://kono.be/vivo\">",
+              "    ViVo",
+              "  </a>",
+              "  por samtempe trarigardi plurajn Esperanto-vortarojn.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2312,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[1]/p[4]",
+            "codeLines": [
+              "<p>",
+              "  Se vi bezonas serĉi en kondiĉoj sen retkonekto, per poŝtelefono aŭ komputilo,",
+              "      vi povas konsulti la manlibron pri kiel",
+              "  <a target=\"_new\" href=\" https://revuloj.github.io/temoj/operaciumoj\">",
+              "    uzi Revon en diversaj sistemoj",
+              "  </a>",
+              "  .",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2313,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[2]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  En la tradicio de Plena Vortaro kaj Plena Ilustrita Vortaro ni uzas precipe ",
+              "      la samajn",
+              "  <a title=\"Mallongigoj\" href=\"../dok/mallongigoj.html\" target=\"indekso\">",
+              "    vortarajn mallongigojn",
+              "  </a>",
+              "  .",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2314,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[2]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  Atentu ne konfuzi la liston de tiuj vortaraj mallongigoj kun la",
+              "  <a href=\"/revo/inx/mallong.html\" target=\"indekso\">",
+              "    indekso de mallongigoj",
+              "  </a>",
+              "  , kiuj",
+              "      rilatas al la kapvortoj (landoj, elementoj, monunuoj kc).",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2315,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[2]/p[3]",
+            "codeLines": [
+              "<p>",
+              "  Krome ni havas",
+              "  <a title=\"Bibliografio\" target=\"indekso\" href=\"../dok/bibliogr.html\">",
+              "    bibliografion",
+              "  </a>",
+              "  por referenci al gravaj verkoj, el kiuj ni citas.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2316,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[3]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  ... progresigi la vortaron kun",
+              "  <a target=\"_new\" href=\"../dok/copying.txt\">",
+              "    libera",
+              "  </a>",
+              "  ,",
+              "        ampleksa kaj aktuala enhavo,",
+              "  <a target=\"_new\" href=\"https://revuloj.github.io/temoj/redinfo\">",
+              "    aliĝu al nia rondo de redaktantoj",
+              "  </a>",
+              "  .",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2317,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[3]/p[2]",
+            "codeLines": [
+              "<p>",
+              "  Por faciligi la redaktadon ni provizas diversajn",
+              "  <a href=\"https://revuloj.github.io/manlibroj.html\" target=\"_new\">",
+              "    manlibrojn",
+              "  </a>",
+              "  ,",
+              "  <a href=\"https://revuloj.github.io/respondoj.html\" target=\"_new\">",
+              "    respondojn",
+              "  </a>",
+              "  ,",
+              "  <a href=\"https://revuloj.github.io/listoj.html\" target=\"_new\">",
+              "    listojn",
+              "  </a>",
+              "  kaj",
+              "  <a href=\"https://revaj.steloj.de/akrido/\" target=\"_new\">",
+              "    tekstanalizilon",
+              "  </a>",
+              "  .",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2318,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[3]/p[3]",
+            "codeLines": [
+              "<p>",
+              "  Regule kaj aŭtomate ni aktualigas la liston de",
+              "  <a href=\"/revo/inx/shanghoj.html\" target=\"indekso\">",
+              "    ŝanĝitaj artikoloj",
+              "  </a>",
+              "  ,",
+              "  <a href=\"/revo/inx/eraroj.html\" target=\"indekso\">",
+              "    strukturaj eraroj",
+              "  </a>",
+              "  ,",
+              "  <a href=\"/revo/inx/statistiko.html\" target=\"indekso\">",
+              "    statistikon",
+              "  </a>",
+              "  ,",
+              "  <a href=\"https://revaj.steloj.de/revokontrolo/\" target=\"_new\">",
+              "    vortkontrolo",
+              "  </a>",
+              "  k.a.",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2319,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/main[1]/div[2]/footer[1]/p[1]",
+            "codeLines": [
+              "<p class=\"piedlinio\">",
+              "  <a class=\"redakto\" title=\"Datumprotekta deklaro\" href=\"../dok/datumprotekto.html\">",
+              "    datumprotekto",
+              "  </a>",
+              "  |",
+              "  <a class=\"redakto\" title=\"Permeso de uzado\" target=\"_new\" href=\"../dok/copying.txt\">",
+              "    permeso",
+              "  </a>",
+              "  |",
+              "  <a class=\"redakto\" title=\"Superserĉo per ViVo\" target=\"_new\" href=\"http://kono.be/vivo\">",
+              "    ViVo",
+              "  </a>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 2340,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/nav[1]/form[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" id=\"x:q\" name=\"q\" maxlength=\"55\" placeholder=\"ĵokeroj: % (pluraj) kaj _ (unu)\"..."
+            ]
+          }
+        },
+        {
+          "index": 2341,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/main[1]/div[2]/article[1]/details[1]/form[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" id=\"w:q\" name=\"q\" maxlength=\"255\" placeholder=\"vorto...\">"
+            ]
+          }
+        },
+        {
+          "index": 2342,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/footer[1]/p[1]/a[1]/text()[1]",
+            "codeLines": [
+              "datumprotekto"
+            ]
+          }
+        },
+        {
+          "index": 2343,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/footer[1]/p[1]/a[2]/text()[1]",
+            "codeLines": [
+              "permeso"
+            ]
+          }
+        },
+        {
+          "index": 2344,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r83",
+            "ruleSummary": "Text nodes are not clipped when text is resized",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r83",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#resize-text",
+                "chapter": "1.4.4",
+                "title": "Resize text"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/main[1]/div[2]/footer[1]/p[1]/a[3]/text()[1]",
+            "codeLines": [
+              "ViVo"
+            ]
+          }
+        },
+        {
+          "index": 2375,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      6
+    ]
+  ]
+}

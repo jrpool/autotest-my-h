@@ -1,0 +1,1163 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0y2",
+  "logCount": 0,
+  "logSize": 0,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://freedom.press/",
+      "what": "Freedom of the Press Foundation",
+      "result": "https://freedom.press/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://freedom.press/",
+      "result": [
+        {
+          "index": 17,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/section[1]/h2[1]/a[1]",
+            "codeLines": [
+              "<a href=\"/news/feed/\">",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" class=\"icon icon--black icon--link...",
+              "    <path d=\"M576 1344q0 80-56 136t-136 56-136-56-56-136 56-136 136-56 136 56 56 136zm512 123q2 28-...",
+              "  </svg>",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 298,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r4",
+            "ruleSummary": "<html> document elements have a lang attribute",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r4",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#language-of-page",
+                "chapter": "3.1.1",
+                "title": "Language of Page"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+                "name": "H57",
+                "title": "Using the language attribute on the HTML element"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "html",
+            "path": "/html[1]",
+            "codeLines": [
+              "<html class=\" flexbox flexboxlegacy csstransforms\">",
+              "...",
+              "</html>"
+            ]
+          }
+        },
+        {
+          "index": 375,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/b[1]/text()[1]",
+            "codeLines": [
+              "Freedom of the Press Foundation"
+            ]
+          }
+        },
+        {
+          "index": 376,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "protects, defends, and empowers public-interest journalism in the 21st century."
+            ]
+          }
+        },
+        {
+          "index": 377,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/h2[1]/text()[1]",
+            "codeLines": [
+              "News & Advocacy"
+            ]
+          }
+        },
+        {
+          "index": 378,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Get the latest news on secrecy, surveillance, and whistleblowers."
+            ]
+          }
+        },
+        {
+          "index": 379,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[2]/h2[1]/text()[1]",
+            "codeLines": [
+              "Press Freedom Tracker"
+            ]
+          }
+        },
+        {
+          "index": 380,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[2]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Systematically documenting press freedom violations in the United States."
+            ]
+          }
+        },
+        {
+          "index": 381,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[3]/h2[1]/text()[1]",
+            "codeLines": [
+              "Guides & Training"
+            ]
+          }
+        },
+        {
+          "index": 382,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[3]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "How-to guides on how to protect yourself in the age of mass surveillance."
+            ]
+          }
+        },
+        {
+          "index": 383,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[4]/h2[1]/text()[1]",
+            "codeLines": [
+              "SecureDrop"
+            ]
+          }
+        },
+        {
+          "index": 384,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[4]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Enabling secure communication between journalists and anonymous sources."
+            ]
+          }
+        },
+        {
+          "index": 429,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[1]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "News & Advocacy"
+            ]
+          }
+        },
+        {
+          "index": 430,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[1]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Guides & Training"
+            ]
+          }
+        },
+        {
+          "index": 431,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[1]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "Projects"
+            ]
+          }
+        },
+        {
+          "index": 432,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[2]/li[1]/a[1]/text()[1]",
+            "codeLines": [
+              "Donate"
+            ]
+          }
+        },
+        {
+          "index": 433,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[2]/li[2]/a[1]/text()[1]",
+            "codeLines": [
+              "Store"
+            ]
+          }
+        },
+        {
+          "index": 434,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[2]/li[3]/a[1]/text()[1]",
+            "codeLines": [
+              "Contact"
+            ]
+          }
+        },
+        {
+          "index": 435,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[2]/li[4]/a[1]/text()[1]",
+            "codeLines": [
+              "About"
+            ]
+          }
+        },
+        {
+          "index": 436,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[3]/li[1]/a[1]/text()[2]",
+            "codeLines": [
+              "Twitter"
+            ]
+          }
+        },
+        {
+          "index": 437,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r57",
+            "ruleSummary": "Perceivable text content is included in a landmark",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r57",
+            "requirements": []
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[2]/ul[3]/li[2]/a[1]/text()[2]",
+            "codeLines": [
+              "Facebook"
+            ]
+          }
+        },
+        {
+          "index": 442,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r62",
+            "ruleSummary": "Links in blocks of text are distinguishable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r62",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#use-of-color",
+                "chapter": "1.4.1",
+                "title": "Use of Color"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/p[1]/a[1]",
+            "codeLines": [
+              "<a href=\"#\">",
+              "  Tor",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 443,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r62",
+            "ruleSummary": "Links in blocks of text are distinguishable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r62",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#use-of-color",
+                "chapter": "1.4.1",
+                "title": "Use of Color"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/p[2]/a[1]",
+            "codeLines": [
+              "<a href=\"https://creativecommons.org/licenses/by/4.0/\">",
+              "  Creative Commons 4.0 Attribution International",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 473,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[3]/div[2]/form[1]/div[2]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" name=\"query\" id=\"headerSearch\" placeholder=\"Search Freedom of the Press\">"
+            ]
+          }
+        },
+        {
+          "index": 505,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r65",
+            "ruleSummary": "Element in sequential focus order has visible focus",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r65",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#focus-visible",
+                "chapter": "2.4.7",
+                "title": "Focus Visible"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[2]/form[1]/input[1]",
+            "codeLines": [
+              "<input class=\"sidebar-search-input\" id=\"sidebarSearch\" type=\"search\" name=\"query\" placeholder=\"Sear..."
+            ]
+          }
+        },
+        {
+          "index": 515,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/b[1]/text()[1]",
+            "codeLines": [
+              "Freedom of the Press Foundation"
+            ]
+          }
+        },
+        {
+          "index": 516,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "protects, defends, and empowers public-interest journalism in the 21st century."
+            ]
+          }
+        },
+        {
+          "index": 524,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/section[1]/form[1]/div[2]/label[1]/text()[1]",
+            "codeLines": [
+              "Email Address"
+            ]
+          }
+        },
+        {
+          "index": 529,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/addr[1]/p[1]/text()[1]",
+            "codeLines": [
+              "601 Van Ness Ave."
+            ]
+          }
+        },
+        {
+          "index": 530,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/addr[1]/p[1]/text()[2]",
+            "codeLines": [
+              "Suite E731"
+            ]
+          }
+        },
+        {
+          "index": 531,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/addr[1]/p[1]/text()[3]",
+            "codeLines": [
+              "San Francisco, CA 94102"
+            ]
+          }
+        },
+        {
+          "index": 532,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/p[1]/text()[2]",
+            "codeLines": [
+              "fpfjxcrmw437h6z2xl3w4czl55kvkmxpapg37bbopsafdu7q454byxid.onion"
+            ]
+          }
+        },
+        {
+          "index": 533,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/p[2]/text()[1]",
+            "codeLines": [
+              "This work licensed under a"
+            ]
+          }
+        },
+        {
+          "index": 534,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/p[2]/text()[2]",
+            "codeLines": [
+              "License"
+            ]
+          }
+        },
+        {
+          "index": 542,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/b[1]/text()[1]",
+            "codeLines": [
+              "Freedom of the Press Foundation"
+            ]
+          }
+        },
+        {
+          "index": 543,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "protects, defends, and empowers public-interest journalism in the 21st century."
+            ]
+          }
+        },
+        {
+          "index": 551,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/section[1]/form[1]/div[2]/label[1]/text()[1]",
+            "codeLines": [
+              "Email Address"
+            ]
+          }
+        },
+        {
+          "index": 610,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[3]/section[1]/div[1]/a[1]/section[1]/div[2]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Through this widely used open source platform, we are enabling whistleblowers to communicate anon...",
+              "  <br>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 611,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[3]/section[1]/div[1]/a[2]/section[1]/div[2]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  We are systematically documenting press freedom violations in the United States. A partnership wi...",
+              "  <br>",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 612,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[3]/section[1]/div[1]/a[3]/section[1]/div[2]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  By archiving threatened outlets, we are preventing billionaires from deciding what news is fit to...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 613,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[3]/section[1]/div[1]/a[4]/section[1]/div[2]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  An open source app that anyone can use to protect personal spaces and possessions using a smartph...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 614,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[3]/section[1]/div[1]/a[5]/section[1]/div[2]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  In order to make the public aware of its importance, we are highlighting news stories that are on...",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 675,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[3]/div[2]/form[1]/div[2]/input[1]",
+            "codeLines": [
+              "<input type=\"search\" name=\"query\" id=\"headerSearch\" placeholder=\"Search Freedom of the Press\">"
+            ]
+          }
+        },
+        {
+          "index": 676,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/section[1]/form[1]/div[1]/input[1]",
+            "codeLines": [
+              "<input type=\"text\" value=\"\" name=\"FULLNAME\" class=\"form-control\" id=\"mce-MMERGE6\">"
+            ]
+          }
+        },
+        {
+          "index": 677,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/section[1]/form[1]/div[2]/input[1]",
+            "codeLines": [
+              "<input type=\"email\" class=\"form-control square-right\" id=\"mce-EMAIL\" placeholder=\"alice@freedom.pre..."
+            ]
+          }
+        },
+        {
+          "index": 678,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "input",
+            "path": "/html[1]/body[1]/div[1]/div[2]/form[1]/input[1]",
+            "codeLines": [
+              "<input class=\"sidebar-search-input\" id=\"sidebarSearch\" type=\"search\" name=\"query\" placeholder=\"Sear..."
+            ]
+          }
+        },
+        {
+          "index": 709,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      4
+    ]
+  ]
+}

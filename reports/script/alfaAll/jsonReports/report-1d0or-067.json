@@ -1,0 +1,944 @@
+{
+  "script": "alfa",
+  "batch": "alfaAllRest",
+  "what": "alfa",
+  "strict": true,
+  "testDate": "2022-01-20",
+  "timeStamp": "1d0or",
+  "logCount": 1,
+  "logSize": 177,
+  "prohibitedCount": 0,
+  "visitTimeoutCount": 0,
+  "visitRejectionCount": 0,
+  "presses": 0,
+  "amountRead": 0,
+  "acts": [
+    {
+      "type": "launch",
+      "which": "chromium",
+      "what": "used for most tests"
+    },
+    {
+      "type": "url",
+      "which": "https://www.naspers.com/",
+      "what": "Naspers (AMDWX)",
+      "result": "https://www.naspers.com/"
+    },
+    {
+      "type": "test",
+      "which": "alfa",
+      "what": "alfa",
+      "url": "https://www.naspers.com/",
+      "result": [
+        {
+          "index": 15,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r11",
+            "ruleSummary": "Links have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r11",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-in-context",
+                "chapter": "2.4.4",
+                "title": "Link Purpose (In Context)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#link-purpose-link-only",
+                "chapter": "2.4.9",
+                "title": "Link Purpose (Link Only)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G91",
+                "name": "G91",
+                "title": "Providing link text that describes the purpose of a link"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[1]/div[4]/a[1]",
+            "codeLines": [
+              "<a href=\"javascript:void(0)\" data-open=\"videoModal\" class=\"btn btn--link js-start-video\" aria-contr...",
+              "  <img src=\"/NaspersPortal/media/Naspers/LeadingIcons/play-icon-white.png\" alt=\"\" role=\"presentatio...",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 225,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r18",
+            "ruleSummary": "aria-* states and properties are allowed",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r18",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5",
+                "name": "ARIA5",
+                "title": "Using WAI-ARIA state and property attributes to expose the state of a user interface"
+              }
+            ]
+          },
+          "target": {
+            "type": "attribute",
+            "tagName": "aria-expanded",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/@aria-expanded",
+            "codeLines": [
+              "aria-expanded=\"false\""
+            ]
+          }
+        },
+        {
+          "index": 484,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r4",
+            "ruleSummary": "<html> document elements have a lang attribute",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r4",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#language-of-page",
+                "chapter": "3.1.1",
+                "title": "Language of Page"
+              },
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+                "name": "H57",
+                "title": "Using the language attribute on the HTML element"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "html",
+            "path": "/html[1]",
+            "codeLines": [
+              "<html>",
+              "...",
+              "</html>"
+            ]
+          }
+        },
+        {
+          "index": 612,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r59",
+            "ruleSummary": "Documents have headings",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r59",
+            "requirements": []
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        },
+        {
+          "index": 616,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r62",
+            "ruleSummary": "Links in blocks of text are distinguishable",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r62",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#use-of-color",
+                "chapter": "1.4.1",
+                "title": "Use of Color"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "a",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[6]/p[1]/a[1]",
+            "codeLines": [
+              "<a href=\"mailto:communications@naspers.com\">",
+              "  communications@naspers.com",
+              "</a>"
+            ]
+          }
+        },
+        {
+          "index": 678,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[1]/div[4]/div[1]/text()[1]",
+            "codeLines": [
+              "Naspers is a global internet group and one of the largest technology investors in the world"
+            ]
+          }
+        },
+        {
+          "index": 681,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "14 January 2022"
+            ]
+          }
+        },
+        {
+          "index": 682,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[1]/div[1]/span[2]/p[1]/text()[1]",
+            "codeLines": [
+              "INTRO"
+            ]
+          }
+        },
+        {
+          "index": 683,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[2]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "21 December 2021"
+            ]
+          }
+        },
+        {
+          "index": 684,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[2]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "20 December 2021"
+            ]
+          }
+        },
+        {
+          "index": 685,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[2]/div[3]/span[1]/text()[1]",
+            "codeLines": [
+              "17 December 2021"
+            ]
+          }
+        },
+        {
+          "index": 686,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[2]/div[4]/span[1]/text()[1]",
+            "codeLines": [
+              "14 December 2021"
+            ]
+          }
+        },
+        {
+          "index": 687,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "We invest in talented founders and companies with the ambition to expand globally"
+            ]
+          }
+        },
+        {
+          "index": 689,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "All our results, reports, investor information and tools in one place"
+            ]
+          }
+        },
+        {
+          "index": 690,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r66",
+            "ruleSummary": "Text outside widget has enhanced contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r66",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Keep up with news and thoughts from across the Naspers family"
+            ]
+          }
+        },
+        {
+          "index": 707,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[1]/div[4]/div[1]/text()[1]",
+            "codeLines": [
+              "Naspers is a global internet group and one of the largest technology investors in the world"
+            ]
+          }
+        },
+        {
+          "index": 710,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[1]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "14 January 2022"
+            ]
+          }
+        },
+        {
+          "index": 711,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[1]/div[1]/span[2]/p[1]/text()[1]",
+            "codeLines": [
+              "INTRO"
+            ]
+          }
+        },
+        {
+          "index": 712,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[2]/div[1]/span[1]/text()[1]",
+            "codeLines": [
+              "21 December 2021"
+            ]
+          }
+        },
+        {
+          "index": 713,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[2]/div[2]/span[1]/text()[1]",
+            "codeLines": [
+              "20 December 2021"
+            ]
+          }
+        },
+        {
+          "index": 714,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[2]/div[3]/span[1]/text()[1]",
+            "codeLines": [
+              "17 December 2021"
+            ]
+          }
+        },
+        {
+          "index": 715,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[1]/div[5]/div[2]/div[4]/span[1]/text()[1]",
+            "codeLines": [
+              "14 December 2021"
+            ]
+          }
+        },
+        {
+          "index": 716,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "We invest in talented founders and companies with the ambition to expand globally"
+            ]
+          }
+        },
+        {
+          "index": 718,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "All our results, reports, investor information and tools in one place"
+            ]
+          }
+        },
+        {
+          "index": 719,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r69",
+            "ruleSummary": "Text outside widget has minimum contrast",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r69",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-minimum",
+                "chapter": "1.4.3",
+                "title": "Contrast (Minimum)"
+              },
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#contrast-enhanced",
+                "chapter": "1.4.6",
+                "title": "Contrast (Enhanced)"
+              }
+            ]
+          },
+          "target": {
+            "type": "text",
+            "tagName": "",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/p[1]/text()[1]",
+            "codeLines": [
+              "Keep up with news and thoughts from across the Naspers family"
+            ]
+          }
+        },
+        {
+          "index": 742,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"big\">",
+              "  We invest in talented founders and companies with the ambition to expand globally",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 743,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p class=\"big\">",
+              "  We recruit the world's best talent to build outstanding companies and products",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 744,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  All our results, reports, investor information and tools in one place",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 745,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r73",
+            "ruleSummary": "Paragraphs of text have sufficient line height",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r73",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#visual-presentation",
+                "chapter": "1.4.8",
+                "title": "Visual Presentation"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "p",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[4]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/p[1]",
+            "codeLines": [
+              "<p>",
+              "  Keep up with news and thoughts from across the Naspers family",
+              "</p>"
+            ]
+          }
+        },
+        {
+          "index": 826,
+          "verdict": "failed",
+          "rule": {
+            "ruleID": "r8",
+            "ruleSummary": "Form fields have an accessible name",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r8",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#name-role-value",
+                "chapter": "4.1.2",
+                "title": "Name, Role, Value"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[3]/div[1]/div[1]/div[3]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"slick-track\" role=\"listbox\" style=\"opacity: 1; width: 40000px; transform: translate3d(-...",
+              "  <img src=\"/NaspersPortal/media/Naspers/companies/Prosus_Wordmark.jpg?ext=.jpg\" data-test=\"True\" a...",
+              "  <img src=\"/NaspersPortal/media/Naspers/companies/M24_PNG.png?ext=.png\" data-test=\"True\" alt=\"Medi...",
+              "  <img src=\"/NaspersPortal/media/Naspers/companies/Takealot-RGB.png?ext=.png\" data-test=\"True\" alt=...",
+              "  <img src=\"/getmedia/93126341-c9d4-4889-93be-cb4d09222dfa/Mr-D.aspx?width=200&height=200&ext=.png\"...",
+              "  <img src=\"/getmedia/7642f6c5-f26f-4fe9-b10b-f32c97ccefa6/2200-Naspers-labs-logo_CMYK-01.aspx?widt...",
+              "  <img src=\"/NaspersPortal/media/Naspers/companies/Naspers_Foundry_black.jpg?ext=.jpg\" data-test=\"T...",
+              "  <img src=\"/getmedia/bb8dd624-9c7c-40bd-99b9-4ae60dd4c11b/superbalist.aspx?width=200&height=200&ex...",
+              "  <img src=\"/getmedia/6c6e9cf2-7297-4bfd-a4c6-e9d926f0fcd0/SweepSouth.aspx?width=200&height=40&ext=...",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 839,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r82",
+            "ruleSummary": "Error message describes invalid form field value",
+            "scope": "component",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r82",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/TR/WCAG/#error-identification",
+                "chapter": "3.3.1",
+                "title": "Error Identification"
+              }
+            ]
+          },
+          "target": {
+            "type": "element",
+            "tagName": "div",
+            "path": "/html[1]/body[1]/form[1]/div[5]/div[1]/div[2]/main[1]/div[3]/div[1]/div[1]/div[3]/div[1]/div[1]",
+            "codeLines": [
+              "<div class=\"slick-track\" role=\"listbox\" style=\"opacity: 1; width: 40000px; transform: translate3d(-...",
+              "  <img src=\"/NaspersPortal/media/Naspers/companies/Prosus_Wordmark.jpg?ext=.jpg\" data-test=\"True\" a...",
+              "  <img src=\"/NaspersPortal/media/Naspers/companies/M24_PNG.png?ext=.png\" data-test=\"True\" alt=\"Medi...",
+              "  <img src=\"/NaspersPortal/media/Naspers/companies/Takealot-RGB.png?ext=.png\" data-test=\"True\" alt=...",
+              "  <img src=\"/getmedia/93126341-c9d4-4889-93be-cb4d09222dfa/Mr-D.aspx?width=200&height=200&ext=.png\"...",
+              "  <img src=\"/getmedia/7642f6c5-f26f-4fe9-b10b-f32c97ccefa6/2200-Naspers-labs-logo_CMYK-01.aspx?widt...",
+              "  <img src=\"/NaspersPortal/media/Naspers/companies/Naspers_Foundry_black.jpg?ext=.jpg\" data-test=\"T...",
+              "  <img src=\"/getmedia/bb8dd624-9c7c-40bd-99b9-4ae60dd4c11b/superbalist.aspx?width=200&height=200&ex...",
+              "  <img src=\"/getmedia/6c6e9cf2-7297-4bfd-a4c6-e9d926f0fcd0/SweepSouth.aspx?width=200&height=40&ext=...",
+              "</div>"
+            ]
+          }
+        },
+        {
+          "index": 921,
+          "verdict": "cantTell",
+          "rule": {
+            "ruleID": "r87",
+            "ruleSummary": "First focusable element is link to main content",
+            "scope": "page",
+            "uri": "https://alfa.siteimprove.com/rules/sia-r87",
+            "requirements": [
+              {
+                "uri": "https://www.w3.org/WAI/WCAG21/Techniques/general/G1",
+                "name": "G1",
+                "title": "Adding a link at the top of each page that goes directly to the main content area"
+              }
+            ]
+          },
+          "target": {
+            "type": "document",
+            "tagName": "",
+            "path": "/",
+            "codeLines": [
+              "#document",
+              "  <!doctype html>",
+              "...",
+              "  </html>"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "testTimes": [
+    [
+      "alfa",
+      6
+    ]
+  ]
+}
