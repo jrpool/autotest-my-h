@@ -6,4 +6,6 @@ const options = {
   script: '../../scripts/testaro.json'
 };
 const {handleRequest} = require('../../../testaro/index');
-handleRequest(options);
+handleRequest(options).then(() => {
+  console.log('Executor run');
+});
